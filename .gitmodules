@@ -292,3 +292,6 @@
 [submodule "SunamoYouTube"]
 	path = SunamoYouTube
 	url = git@github.com:sunamo/SunamoYouTube.git
+[submodule "SunamoXliffParser"]
+	path = SunamoXliffParser
+	url = git@github.com:sunamo/SunamoXliffParser.git
