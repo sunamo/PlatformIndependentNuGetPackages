@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <tags>robots.txt parser generator</tags>
+    <releaseNotes>Updated nuspec</releaseNotes>
+    <version>1.0.11</version>
+
+    <id>SunamoRobotsTxt</id>
+    <title>SunamoRobotsTxt</title>
+    <authors>sunamo</authors>
+      <description>Robots.txt parser and generator which I'm using on www.sunamo.cz and other sites.</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+	  <icon>SunamoRobotsTxt.png</icon>
+    <projectUrl>https://github.com/sunamo/SunamoRobotsTxt</projectUrl>
+	  <repository type="git" url="https://github.com/sunamo/SunamoRobotsTxt" />
+	  <readme>readme.md</readme>
+    <copyright>sunamo</copyright>
+	  <dependencies>
+		  <group targetFramework="net7.0" />
+	  </dependencies>
+  </metadata>
+    <files>
+	    <file src="SunamoRobotsTxt.png" />
+        <file src="readme.md" />
+    </files>
+</package>

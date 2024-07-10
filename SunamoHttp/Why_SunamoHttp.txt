@@ -1,0 +1,13 @@
+﻿because in uwp app is not implicitly HttpWebRequest, only HttpClient
+And problems with HttpWebRequest in UWP apps
+
+BUt SunamoHttp I cant use in UWP, there is many class like FS, AsyncHelper, etc.
+tím pádem SunamoHttp nemusím nikde includovat
+ale už ho nechám tady kdy se náhodou později hodil
+
+
+Find package which contains HttpRequest - Page.Request is also HttpRequest
+System.Net.Http
+System.Net.Requests
+Microsoft.AspNetCore.Http.Abstractions 2.2.0 - ano ale balík je z roku 2018
+Microsoft.AspNetCore.Http - 2.2.2, z 2019, instaluje také Microsoft.AspNetCore.Http.Abstractions

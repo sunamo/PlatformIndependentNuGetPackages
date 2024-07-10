@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+	<metadata>
+		<version>1.0.9</version>
+		<releaseNotes>Updated nuspec</releaseNotes>
+
+		<tags>convert TeX LaTeX syntax to unicode</tags>
+		<description>Convert TeX syntax to unicode</description>
+
+		<id>SunamoLaTeX</id>
+		<title>SunamoLaTeX</title>
+		<authors>sunamo</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<icon>SunamoLaTeX.png</icon>
+		<projectUrl>https://github.com/sunamo/SunamoLaTeX</projectUrl>
+		<repository type="git" url="https://github.com/sunamo/SunamoLaTeX" />
+		<readme>readme.md</readme>
+		<copyright>sunamo</copyright>
+	</metadata>
+	<files>
+		<file src="SunamoLaTeX.png" />
+		<file src="readme.md" />
+	</files>
+</package>

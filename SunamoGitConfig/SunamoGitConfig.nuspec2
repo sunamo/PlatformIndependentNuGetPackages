@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SunamoGitConfig</id>
+    <version>1.0.0</version>
+    <title>SunamoGitConfig</title>
+    <authors>sunamo</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+	  <icon>SunamoGitConfig.png</icon>
+    <projectUrl>https://github.com/sunamo/SunamoGitConfig</projectUrl>
+	  <repository type="git" url="https://github.com/sunamo/SunamoGitConfig" />
+	  <readme>readme.md</readme>
+    <releaseNotes>Updated nuspec</releaseNotes>
+    <copyright>sunamo</copyright>
+      <tags>git config serialize deserialize</tags>
+      <dependencies>
+      <group targetFramework="net7.0" />
+    </dependencies>
+  </metadata>
+    <files>
+	    <file src="SunamoGitConfig.png" />
+        <file src="readme.md" />
+    </files>
+</package>

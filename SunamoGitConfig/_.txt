@@ -1,0 +1,1 @@
+﻿dělal jsem si detailní analýzu jak to má být a zjistil jsem že asi není žádný git config parser. Jediné co existuje jako nuget package: https://www.nuget.org/packages/Retyped.parse-git-config nemá zdrojáky. 

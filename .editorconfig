@@ -1,0 +1,14 @@
+﻿root = true
+
+[*.cs]
+
+#Note that syntax option = rule:severity can be deprecated in future. https://stackoverflow.com/a/71415242/9327173
+
+# SA1413: Use trailing comma in multi-line initializers
+dotnet_diagnostic.SA1413.severity = none
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0160-ide0161
+# tady to má být file_scoped:error - pak nemám červenou vlnovku u file_scoped
+csharp_style_namespace_declarations = file_scoped:error
+# Namespace does not match folder structure (IDE0130)
+dotnet_diagnostic.IDE0130.severity = error
+dotnet_style_namespace_match_folder = true

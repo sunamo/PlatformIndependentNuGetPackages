@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+	<metadata>
+		<version>1.1.0</version>
+		<releaseNotes>Updated nuspec</releaseNotes>
+
+		<tags>parser generator ruleset</tags>
+		<description>Parser and generator for *.ruleset files in Visual Studio.</description>
+
+		<id>SunamoRuleset</id>
+		<title>SunamoRuleset</title>
+		<authors>sunamo</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<icon>SunamoRuleset.png</icon>
+		<projectUrl>https://github.com/sunamo/SunamoRuleset</projectUrl>
+		<repository type="git" url="https://github.com/sunamo/SunamoRuleset" />
+		<readme>readme.md</readme>
+		<copyright>sunamo</copyright>
+	</metadata>
+	<files>
+		<file src="SunamoRuleset.png" />
+		<file src="readme.md" />
+	</files>
+</package>
