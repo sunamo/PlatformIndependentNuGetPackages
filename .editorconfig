@@ -1,7 +1,7 @@
 ﻿root = true
 
 [*.cs]
-
+dotnet_diagnostic.CS1591.severity = none
 #Note that syntax option = rule:severity can be deprecated in future. https://stackoverflow.com/a/71415242/9327173
 
 # SA1413: Use trailing comma in multi-line initializers.zakomentováno, musím napsat koment proč je to zakomentováno
