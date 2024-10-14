@@ -190,9 +190,6 @@
 [submodule "SunamoRegex"]
 	path = SunamoRegex
 	url = git@github.com:sunamo/SunamoRegex.git
-[submodule "SunamoRoslyn"]
-	path = SunamoRoslyn
-	url = git@github.com:sunamo/SunamoRoslyn.git
 [submodule "SunamoRss"]
 	path = SunamoRss
 	url = git@github.com:sunamo/SunamoRss.git
@@ -385,3 +382,6 @@
 [submodule "SunamoXlfKeys"]
 	path = SunamoXlfKeys
 	url = git@github.com:sunamo/SunamoXlfKeys.git
+[submodule "SunamoGoogleMyMaps"]
+	path = SunamoGoogleMyMaps
+	url = git@github.com:sunamo/SunamoGoogleMyMaps.git
