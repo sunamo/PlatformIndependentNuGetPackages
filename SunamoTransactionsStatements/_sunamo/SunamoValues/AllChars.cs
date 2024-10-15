@@ -1,5 +1,4 @@
-namespace SunamoValues;
-
+namespace SunamoTransactionsStatements._sunamo.SunamoValues;
 public class AllChars
 {
     public const char comma = ',';

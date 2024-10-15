@@ -1,22 +1,14 @@
-namespace SunamoExceptions;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
+namespace SunamoTransactionsStatements._sunamo.SunamoExceptions;
 partial class ThrowEx
 {
     public static string FullNameOfExecutedCode()
     {
         var placeOfExc = Exceptions.PlaceOfException();
-
         var f = FullNameOfExecutedCode(placeOfExc.Item1, placeOfExc.Item2, true);
         return f;
     }
-
     private static string FullNameOfExecutedCode(object type, string methodName, bool fromThrowEx = false)
     {
         if (methodName == null)
@@ -44,9 +36,8 @@ partial class ThrowEx
             var t = type.GetType();
             typeFullName = t.FullName ?? "Type cannot be get via type.GetType()";
         }
-        return string.Concat(typeFullName, AllStrings.dot, methodName);
+        return string.Concat(typeFullName, ".", methodName);
     }
-
     public static bool ThrowIsNotNull(string? exception, bool reallyThrow = true)
     {
         if (exception == null)
@@ -60,7 +51,6 @@ partial class ThrowEx
         }
         return false;
     }
-
     public static bool ThrowIsNotNull(Exception exception, bool reallyThrow = true)
     {
         if (exception != null)
@@ -70,7 +60,6 @@ partial class ThrowEx
         }
         return true;
     }
-
     public static bool ThrowIsNotNull<A, B>(Func<string, A, B, string?> f, A ex, B message)
     {
         var exc = f(FullNameOfExecutedCode(), ex, message);
