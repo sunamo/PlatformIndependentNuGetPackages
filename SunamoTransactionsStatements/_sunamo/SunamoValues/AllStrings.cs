@@ -1,5 +1,4 @@
-namespace SunamoValues;
-
+namespace SunamoTransactionsStatements._sunamo.SunamoValues;
 public class AllStrings
 {
     public const string dot = ".";

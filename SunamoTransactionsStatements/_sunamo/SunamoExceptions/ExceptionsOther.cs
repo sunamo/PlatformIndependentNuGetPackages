@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SunamoExceptions;
+namespace SunamoTransactionsStatements._sunamo.SunamoExceptions;
 partial class Exceptions
 {
     private static string CheckBefore(string before)
     {
         return string.IsNullOrWhiteSpace(before) ? "" : before + ": ";
     }
-
     public static string TextOfExceptions(Exception ex, bool alsoInner = true)
     {
-        if (ex == null) return Consts.se;
+        if (ex == null) return "";
         StringBuilder sb = new();
-        sb.Append(Consts.Exception);
+        sb.Append("Exception:");
         sb.AppendLine(ex.Message);
         if (alsoInner)
             while (ex.InnerException != null)
@@ -27,14 +20,12 @@ partial class Exceptions
         var r = sb.ToString();
         return r;
     }
-
-    public static Tuple<string, string, string> PlaceOfException(
+    internal static Tuple<string, string, string> PlaceOfException(
 bool fillAlsoFirstTwo = true)
     {
         StackTrace st = new();
         var v = st.ToString();
         var l = v.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
-
         l.RemoveAt(0);
         var i = 0;
         string type = string.Empty;
@@ -50,8 +41,6 @@ bool fillAlsoFirstTwo = true)
                 }
             if (item.StartsWith("at System."))
             {
-
-
                 l.Add(string.Empty);
                 l.Add(string.Empty);
                 break;
@@ -59,20 +48,16 @@ bool fillAlsoFirstTwo = true)
         }
         return new Tuple<string, string, string>(type, methodName, string.Join(Environment.NewLine, l));
     }
-
-    public static void TypeAndMethodName(string l, out string type, out string methodName)
+    internal static void TypeAndMethodName(string l, out string type, out string methodName)
     {
         var s2 = l.Split("at ")[1].Trim();
         var s = s2.Split("(")[0];
-
-
-        var p = s.Split(new char[] { AllChars.dot }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        var p = s.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries).ToList();
         methodName = p[^1];
         p.RemoveAt(p.Count - 1);
-        type = string.Join(AllStrings.dot, p);
+        type = string.Join(".", p);
     }
-
-    public static string CallingMethod(int v = 1)
+    internal static string CallingMethod(int v = 1)
     {
         StackTrace stackTrace = new();
         var methodBase = stackTrace.GetFrame(v)?.GetMethod();

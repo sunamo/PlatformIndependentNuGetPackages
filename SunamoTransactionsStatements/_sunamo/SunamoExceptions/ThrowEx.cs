@@ -1,14 +1,14 @@
-using System.Diagnostics;
-using System.Reflection;
-
-namespace SunamoExceptions;
+namespace SunamoTransactionsStatements._sunamo.SunamoExceptions;
 public partial class ThrowEx
 {
+    public static bool KeyAlreadyExists<T, U>(Dictionary<T, U> dict, T key, string nameOfDict)
+    {
+        return ThrowIsNotNull(Exceptions.KeyAlreadyExists(FullNameOfExecutedCode(), key, nameOfDict));
+    }
     public static bool NotContains(string text, params string[] shouldContains)
     {
         return ThrowIsNotNull(Exceptions.NotContains(FullNameOfExecutedCode(), text, shouldContains));
     }
-
     public static bool IsNotAllowed(string what)
     {
         return ThrowIsNotNull(Exceptions.IsNotAllowed(FullNameOfExecutedCode(), what));
@@ -17,7 +17,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.BadFormatOfElementInList(FullNameOfExecutedCode(), elVal, listName, SH_NullToStringOrDefault));
     }
-
     public static bool IsTheSame(string fst, string sec)
     {
         return ThrowIsNotNull(Exceptions.IsTheSame(FullNameOfExecutedCode(), fst, sec));
@@ -27,13 +26,6 @@ public partial class ThrowEx
         return ThrowIsNotNull(Exceptions.WrongNumberOfElements(FullNameOfExecutedCode(), requireElements,
         nameCount, ele));
     }
-
-
-
-
-
-
-
     public static bool DirectoryWasntFound(string folder)
     {
         return ThrowIsNotNull(Exceptions.DirectoryWasntFound(FullNameOfExecutedCode(), folder));
@@ -55,7 +47,7 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.WrongExtension(FullNameOfExecutedCode(), path, ext));
     }
-    public static bool DuplicatedElements(string nameOfVariable, IList<string> d, string message = Consts.se)
+    public static bool DuplicatedElements(string nameOfVariable, IList<string> d, string message = "")
     {
         return ThrowIsNotNull(Exceptions.DuplicatedElements(FullNameOfExecutedCode(), nameOfVariable, d, message));
     }
@@ -69,10 +61,6 @@ public partial class ThrowEx
         Exceptions.IsNotPositiveNumber(FullNameOfExecutedCode(), nameOfVariable, n)
         );
     }
-
-
-
-
     public static bool NotExists(string item)
     {
         return ThrowIsNotNull(
@@ -85,15 +73,6 @@ public partial class ThrowEx
         Exceptions.Socket(FullNameOfExecutedCode(), socketError)
         );
     }
-
-
-
-
-
-
-
-
-
     public static bool NotFoundTranSlationKeyWithCustomError(string message)
     {
         return Custom(message);
@@ -102,23 +81,19 @@ public partial class ThrowEx
     {
         return Custom(message);
     }
-
     public static bool InvalidExactlyLength(string variableName, int length, int requiredLenght)
     {
         return ThrowIsNotNull(Exceptions.InvalidExactlyLength(FullNameOfExecutedCode(), variableName, length, requiredLenght));
     }
-
     public static bool LockedByBitLocker(string path, Func<char, bool> IsLockedByBitLocker)
     {
         return ThrowIsNotNull(Exceptions.LockedByBitLocker(FullNameOfExecutedCode(), path, IsLockedByBitLocker));
-
     }
     public static bool CallingSyncMethodInAsyncApp()
     {
         return Custom("Calling sync method in async app");
     }
-
-    public static bool ExcAsArg(Exception ex, string message = Consts.se)
+    public static bool ExcAsArg(Exception ex, string message = "")
     {
         return ThrowIsNotNull(Exceptions.ExcAsArg, ex, message);
     }
@@ -138,7 +113,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.ArgumentOutOfRange, s);
     }
-
     public static bool InvalidCast(string v)
     {
         return ThrowIsNotNull(Exceptions.InvalidCast, v);
@@ -155,7 +129,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.FtpSecurityNotAvailable, v);
     }
-
     public static bool FtpMissingSocket(Exception ex)
     {
         return ThrowIsNotNull(Exceptions.FtpMissingSocket, ex);
@@ -164,35 +137,27 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.UriFormat, url, uhIsUri);
     }
-
     public static bool Format(string v)
     {
         return ThrowIsNotNull(Exceptions.Format, v);
     }
-
-
     public static bool UncommentAfterNugetsFinished()
     {
         return ThrowIsNotNull(FullNameOfExecutedCode());
     }
-
-
     public static bool FileAlreadyExists(string file)
     {
         return ThrowIsNotNull(Exceptions.FileAlreadyExists, file);
     }
-
     public static bool ListNullOrEmpty<T>(string variableName, IEnumerable<T>? t)
     {
         return ThrowIsNotNull(Exceptions.ListNullOrEmpty(FullNameOfExecutedCode(), variableName, t));
     }
-
     public static bool IsOdd(string colName, ICollection e)
     {
         var f = Exceptions.IsOdd;
         return ThrowIsNotNull(f, colName, e);
     }
-
     public static bool DifferentCountInListsTU<T, U>(string namefc, List<T> countfc, string namesc, List<U> countsc)
     {
         return ThrowIsNotNull(Exceptions.DifferentCountInLists(FullNameOfExecutedCode(), namefc, countfc.Count, namesc,
@@ -208,18 +173,16 @@ public partial class ThrowEx
         return ThrowIsNotNull(Exceptions.DifferentCountInLists(FullNameOfExecutedCode(), namefc, countfc, namesc,
         countsc));
     }
-    public static bool Custom(string message, bool reallyThrow = true, string v2 = Consts.se)
+    public static bool Custom(string message, bool reallyThrow = true, string v2 = "")
     {
-        var joined = string.Join(Consts.se, message, v2);
+        var joined = string.Join("", message, v2);
         var str = Exceptions.Custom(FullNameOfExecutedCode(), joined);
         return ThrowIsNotNull(str, reallyThrow);
     }
-
     public static bool IsNotWindowsPathFormat(string argName, string argValue, bool raiseIsNotWindowsPathFormat, Func<string, bool> SunamoFileSystem_IsWindowsPathFormat)
     {
         return ThrowIsNotNull(Exceptions.IsNotWindowsPathFormat(FullNameOfExecutedCode(), argName, argValue, raiseIsNotWindowsPathFormat, SunamoFileSystem_IsWindowsPathFormat));
     }
-
     public static bool IsNullOrEmpty(string argName, string argValue)
     {
         return ThrowIsNotNull(Exceptions.IsNullOrWhitespace(FullNameOfExecutedCode(), argName, argValue));
@@ -228,7 +191,7 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.IsNullOrWhitespace(FullNameOfExecutedCode(), argName, argValue));
     }
-    public static bool ArgumentOutOfRangeException(string paramName, string message = Consts.se)
+    public static bool ArgumentOutOfRangeException(string paramName, string message = "")
     {
         return ThrowIsNotNull(Exceptions.ArgumentOutOfRangeException(FullNameOfExecutedCode(), paramName, message));
     }
@@ -237,20 +200,8 @@ public partial class ThrowEx
         return ThrowIsNotNull(Exceptions.IsNull(FullNameOfExecutedCode(), variableName, variable));
     }
 #pragma warning disable
-
-
-
-
-
     public static Action<string, string> writeServerError;
 #pragma warning enable
-
-
-
-
-
-
-
     public static bool NotImplementedCase(object niCase)
     {
         return ThrowIsNotNull(Exceptions.NotImplementedCase, niCase);
@@ -259,7 +210,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.NotImplementedMethod);
     }
-
     public static bool StartIsHigherThanEnd(int start, int end)
     {
         return ThrowIsNotNull(Exceptions.StartIsHigherThanEnd(FullNameOfExecutedCode(), start, end));
@@ -268,16 +218,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.FolderCannotBeDeleted(FullNameOfExecutedCode(), repairedBlogPostsFolder, ex));
     }
-
-
-
-
-
-
-
-
-
-
     public static bool KeyNotFound<T, U>(IDictionary<T, U> en, string dictName, T key)
     {
         return ThrowIsNotNull(Exceptions.KeyNotFound(FullNameOfExecutedCode(), en, dictName,
@@ -291,7 +231,6 @@ public partial class ThrowEx
     {
         return Custom("Extensions is not supported: " + extension);
     }
-
     public static bool BadMappedXaml(string nameControl, string additionalInfo)
     {
         return ThrowIsNotNull(Exceptions.BadMappedXaml(FullNameOfExecutedCode(), nameControl, additionalInfo));
@@ -302,13 +241,6 @@ public partial class ThrowEx
         return ThrowIsNotNull(Exceptions.CannotCreateDateTime(FullNameOfExecutedCode(), year, month, day, hour, minute,
         seconds, ex));
     }
-
-
-
-
-
-
-
     public static bool FileDoesntExists(string fulLPath)
     {
         return ThrowIsNotNull(Exceptions.FileExists(FullNameOfExecutedCode(), fulLPath));
@@ -326,12 +258,6 @@ public partial class ThrowEx
     {
         return Custom(Exceptions.TextOfExceptions(ex));
     }
-
-
-
-
-
-
     public static bool DirectoryExists(string path)
     {
         return ThrowIsNotNull(Exceptions.DirectoryExists(FullNameOfExecutedCode(), path));
@@ -344,7 +270,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.HaveAllInnerSameCount(FullNameOfExecutedCode(), elements));
     }
-
     public static bool NameIsNotSetted(string nameControl, string nameFromProperty)
     {
         return ThrowIsNotNull(Exceptions.NameIsNotSetted(FullNameOfExecutedCode(), nameControl, nameFromProperty));
@@ -358,8 +283,7 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.DoesntHaveRequiredType(FullNameOfExecutedCode(), variableName));
     }
-
-    public static bool MoreThanOneElement(string listName, int count, string moreInfo = Consts.se)
+    public static bool MoreThanOneElement(string listName, int count, string moreInfo = "")
     {
         var fn = FullNameOfExecutedCode();
         var exc = Exceptions.MoreThanOneElement(fn, listName, count, moreInfo);
@@ -369,7 +293,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.NotInt(FullNameOfExecutedCode(), what, value));
     }
-
     public static bool IsNotNull(string variableName, object variable)
     {
         return ThrowIsNotNull(Exceptions.IsNotNull(FullNameOfExecutedCode(), variableName, variable));
@@ -389,14 +312,6 @@ public partial class ThrowEx
         return ThrowIsNotNull(
         Exceptions.StringContainsUnallowedSubstrings(FullNameOfExecutedCode(), input, unallowedStrings));
     }
-
-
-
-
-
-
-
-
     public static bool InvalidParameter(string valueVar, string nameVar)
     {
         return ThrowIsNotNull(Exceptions.InvalidParameter(FullNameOfExecutedCode(), valueVar, nameVar));
@@ -405,7 +320,6 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.ElementCantBeFound(FullNameOfExecutedCode(), nameCollection, element));
     }
-
     public static bool NotSupported()
     {
         return ThrowIsNotNull(Exceptions.NotSupported(FullNameOfExecutedCode()));
@@ -418,7 +332,7 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.WasNotKeysHandler(FullNameOfExecutedCode(), name, keysHandler));
     }
-    public static bool IsEmpty(IEnumerable folders, string colName, string additionalMessage = Consts.stringEmpty)
+    public static bool IsEmpty(IEnumerable folders, string colName, string additionalMessage = "")
     {
         return ThrowIsNotNull(Exceptions.IsEmpty(FullNameOfExecutedCode(), folders, colName, additionalMessage));
     }
@@ -432,14 +346,6 @@ public partial class ThrowEx
         return ThrowIsNotNull(Exceptions.RepeatAfterTimeXTimesFailed(FullNameOfExecutedCode(), times,
         timeoutInMs, address, sharedAlgorithmSlastError));
     }
-
-
-
-
-
-
-
-
     public static bool ElementWasntRemoved(string detailLocation, int before, int after)
     {
         return ThrowIsNotNull(Exceptions.ElementWasntRemoved(FullNameOfExecutedCode(), detailLocation, before, after));
@@ -465,17 +371,14 @@ public partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.CannotMoveFolder(FullNameOfExecutedCode(), item, nova, ex));
     }
-
     public static bool WasAlreadyInitialized()
     {
         return ThrowIsNotNull(FullNameOfExecutedCode() + " was already initialized!");
     }
-
     public static bool IsWindowsPathFormat(string input, Func<string, bool> isWindowsPathFormat)
     {
         return ThrowIsNotNull(Exceptions.IsWindowsPathFormat(FullNameOfExecutedCode(), input, isWindowsPathFormat));
     }
-
     public static bool FolderIsNotEmpty(string variableName, string path)
     {
         return ThrowIsNotNull(FullNameOfExecutedCode() +
