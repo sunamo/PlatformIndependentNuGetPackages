@@ -385,3 +385,6 @@
 [submodule "SunamoGoogleMyMaps"]
 	path = SunamoGoogleMyMaps
 	url = git@github.com:sunamo/SunamoGoogleMyMaps.git
+[submodule "SunamoTypes"]
+	path = SunamoTypes
+	url = git@github.com:sunamo/SunamoTypes.git
