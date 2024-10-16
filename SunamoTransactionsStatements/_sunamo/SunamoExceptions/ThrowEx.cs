@@ -324,7 +324,7 @@ internal partial class ThrowEx
     {
         return ThrowIsNotNull(Exceptions.NotSupported(FullNameOfExecutedCode()));
     }
-    internal static bool CheckBackslashEnd(string stacktrace, string r)
+    internal static bool CheckBackslashEnd(string r)
     {
         return ThrowIsNotNull(Exceptions.CheckBackSlashEnd(FullNameOfExecutedCode(), r));
     }
