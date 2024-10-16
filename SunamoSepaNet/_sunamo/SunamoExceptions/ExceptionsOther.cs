@@ -5,7 +5,7 @@ partial class Exceptions
     {
         return string.IsNullOrWhiteSpace(before) ? "" : before + ": ";
     }
-    public static string TextOfExceptions(Exception ex, bool alsoInner = true)
+    internal static string TextOfExceptions(Exception ex, bool alsoInner = true)
     {
         if (ex == null) return "";
         StringBuilder sb = new();

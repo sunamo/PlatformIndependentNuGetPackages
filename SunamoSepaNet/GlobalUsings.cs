@@ -1,5 +1,5 @@
 global using SunamoSepaNet._sunamo.SunamoExceptions;
-global using SunamoSepaNet._sunamo.SunamoValues;
+global using SunamoSepaNet;
 global using System;
 global using System.Linq;
 global using System.Text;

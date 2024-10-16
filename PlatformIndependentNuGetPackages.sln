@@ -72,8 +72,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringJoin", "SunamoS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringGetLines", "SunamoStringGetLines\SunamoStringGetLines.csproj", "{9D0E7372-AA9B-4842-8FCA-DEFC9AD2FF9B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringData", "SunamoStringData\SunamoStringData.csproj", "{1FD6C1C9-FBF1-4340-A619-62DE92168A82}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoString", "SunamoString\SunamoString.csproj", "{A6C88257-40E9-47D6-AEAE-7E7FED377238}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStopwatch", "SunamoStopwatch\SunamoStopwatch.csproj", "{B13DB99D-541E-4BA3-9B5D-03121D59BFE5}"
@@ -634,18 +632,6 @@ Global
 		{9D0E7372-AA9B-4842-8FCA-DEFC9AD2FF9B}.Release|x64.Build.0 = Release|Any CPU
 		{9D0E7372-AA9B-4842-8FCA-DEFC9AD2FF9B}.Release|x86.ActiveCfg = Release|Any CPU
 		{9D0E7372-AA9B-4842-8FCA-DEFC9AD2FF9B}.Release|x86.Build.0 = Release|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Debug|x64.Build.0 = Debug|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Debug|x86.Build.0 = Debug|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Release|x64.ActiveCfg = Release|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Release|x64.Build.0 = Release|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Release|x86.ActiveCfg = Release|Any CPU
-		{1FD6C1C9-FBF1-4340-A619-62DE92168A82}.Release|x86.Build.0 = Release|Any CPU
 		{A6C88257-40E9-47D6-AEAE-7E7FED377238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6C88257-40E9-47D6-AEAE-7E7FED377238}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C88257-40E9-47D6-AEAE-7E7FED377238}.Debug|x64.ActiveCfg = Debug|Any CPU
