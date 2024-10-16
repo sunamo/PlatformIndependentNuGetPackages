@@ -1,5 +1,5 @@
 global using SunamoTransactionsStatements._sunamo.SunamoExceptions;
-global using SunamoTransactionsStatements._sunamo.SunamoValues;
+global using SunamoTransactionsStatements;
 global using System;
 global using System.Linq;
 global using System.Text;

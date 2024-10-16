@@ -1,7 +1,7 @@
 namespace SunamoTransactionsStatements._sunamo.SunamoExceptions;
 partial class Exceptions
 {
-    public static string? IsNullOrWhitespace(string before, string argName, string argValue)
+    internal static string? IsNullOrWhitespace(string before, string argName, string argValue)
     {
         string addParams;
         if (argValue == null)

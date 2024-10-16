@@ -1,9 +1,9 @@
+namespace SunamoSepaNet._sunamo.SunamoExceptions;
 using System.Diagnostics;
 
-namespace SunamoSepaNet._sunamo.SunamoExceptions;
 partial class ThrowEx
 {
-    public static string FullNameOfExecutedCode()
+    internal static string FullNameOfExecutedCode()
     {
         var placeOfExc = Exceptions.PlaceOfException();
         var f = FullNameOfExecutedCode(placeOfExc.Item1, placeOfExc.Item2, true);
@@ -38,7 +38,7 @@ partial class ThrowEx
         }
         return string.Concat(typeFullName, ".", methodName);
     }
-    public static bool ThrowIsNotNull(string? exception, bool reallyThrow = true)
+    internal static bool ThrowIsNotNull(string? exception, bool reallyThrow = true)
     {
         if (exception == null)
         {
@@ -51,7 +51,7 @@ partial class ThrowEx
         }
         return false;
     }
-    public static bool ThrowIsNotNull(Exception exception, bool reallyThrow = true)
+    internal static bool ThrowIsNotNull(Exception exception, bool reallyThrow = true)
     {
         if (exception != null)
         {
@@ -60,17 +60,17 @@ partial class ThrowEx
         }
         return true;
     }
-    public static bool ThrowIsNotNull<A, B>(Func<string, A, B, string?> f, A ex, B message)
+    internal static bool ThrowIsNotNull<A, B>(Func<string, A, B, string?> f, A ex, B message)
     {
         var exc = f(FullNameOfExecutedCode(), ex, message);
         return ThrowIsNotNull(exc);
     }
-    public static bool ThrowIsNotNull<A>(Func<string, A, string?> f, A o)
+    internal static bool ThrowIsNotNull<A>(Func<string, A, string?> f, A o)
     {
         var exc = f(FullNameOfExecutedCode(), o);
         return ThrowIsNotNull(exc);
     }
-    public static bool ThrowIsNotNull(Func<string, string?> f)
+    internal static bool ThrowIsNotNull(Func<string, string?> f)
     {
         var exc = f(FullNameOfExecutedCode());
         return ThrowIsNotNull(exc);
