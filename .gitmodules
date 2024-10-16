@@ -388,3 +388,6 @@
 [submodule "SunamoTypes"]
 	path = SunamoTypes
 	url = git@github.com:sunamo/SunamoTypes.git
+[submodule "SunamoResult"]
+	path = SunamoResult
+	url = git@github.com:sunamo/SunamoResult.git
