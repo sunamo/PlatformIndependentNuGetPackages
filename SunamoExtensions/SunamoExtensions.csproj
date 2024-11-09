@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>24.11.8.1</Version>
+    <Description>Almost all extensions method which I'm using</Description>
+    <Authors>www.sunamo.cz</Authors>
+    <Copyright>www.sunamo.cz</Copyright>
+    <PackageProjectUrl>https://sunamo.cz/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sunamo/SunamoExtensions.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReleaseNotes>Added method</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Properties" />
+    <Folder Include="_linked\SunamoExtensions\" />
+    <Folder Include="_sunamo\SunamoExceptions\" />
+    <None Include="readme.md" Pack="True" PackagePath="." />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);ASYNC;SunamoExtensions;SunamoExtensions.csproj</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants);ASYNC;SunamoExtensions;SunamoExtensions.csproj</DefineConstants>
+  </PropertyGroup>
+</Project>
