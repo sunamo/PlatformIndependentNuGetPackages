@@ -403,3 +403,6 @@
 [submodule "SunamoThreading"]
 	path = SunamoThreading
 	url = git@github.com:sunamo/SunamoThreading.git
+[submodule "SunamoTextIndexing"]
+	path = SunamoTextIndexing
+	url = git@github.com:sunamo/SunamoTextIndexing.git
