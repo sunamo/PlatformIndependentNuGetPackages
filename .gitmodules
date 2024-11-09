@@ -391,3 +391,9 @@
 [submodule "SunamoResult"]
 	path = SunamoResult
 	url = git@github.com:sunamo/SunamoResult.git
+[submodule "SunamoGpx"]
+	path = SunamoGpx
+	url = git@github.com:sunamo/SunamoGpx.git
+[submodule "SunamoSelenium"]
+	path = SunamoSelenium
+	url = git@github.com:sunamo/SunamoSelenium.git
