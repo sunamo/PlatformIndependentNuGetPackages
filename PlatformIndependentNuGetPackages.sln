@@ -234,15 +234,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoResult", "SunamoResul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCsproj", "SunamoCsproj\SunamoCsproj.csproj", "{F6663AFC-12EA-47FB-B0C6-EDD1147645E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoSelenium", "SunamoSelenium\SunamoSelenium.csproj", "{75C1734D-50DC-4D40-B682-FC5BAD483594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoSelenium", "SunamoSelenium\SunamoSelenium.csproj", "{75C1734D-50DC-4D40-B682-FC5BAD483594}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoGpx", "SunamoGpx\SunamoGpx.csproj", "{10D15C69-DC77-4794-B7FE-43C754BF01E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGpx", "SunamoGpx\SunamoGpx.csproj", "{10D15C69-DC77-4794-B7FE-43C754BF01E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoGoogleMyMaps", "SunamoGoogleMyMaps\SunamoGoogleMyMaps.csproj", "{ED00F311-2822-4DE6-AB12-2241931900BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGoogleMyMaps", "SunamoGoogleMyMaps\SunamoGoogleMyMaps.csproj", "{ED00F311-2822-4DE6-AB12-2241931900BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoArgs", "SunamoArgs\SunamoArgs.csproj", "{4B1E3360-9653-4327-B539-6B8FC2C50621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoArgs", "SunamoArgs\SunamoArgs.csproj", "{4B1E3360-9653-4327-B539-6B8FC2C50621}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sunamo", "sunamo\Sunamo.csproj", "{63628AD4-8D55-4E49-99F2-F2704C42C2CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunamo", "sunamo\Sunamo.csproj", "{63628AD4-8D55-4E49-99F2-F2704C42C2CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoFilesIndex", "SunamoFilesIndex\SunamoFilesIndex.csproj", "{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoThreading", "SunamoThreading\SunamoThreading.csproj", "{21BDB870-AF16-4248-BC09-C2C2ECDDC135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoTextIndexing", "SunamoTextIndexing\SunamoTextIndexing.csproj", "{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1670,6 +1676,42 @@ Global
 		{63628AD4-8D55-4E49-99F2-F2704C42C2CF}.Release|x64.Build.0 = Release|Any CPU
 		{63628AD4-8D55-4E49-99F2-F2704C42C2CF}.Release|x86.ActiveCfg = Release|Any CPU
 		{63628AD4-8D55-4E49-99F2-F2704C42C2CF}.Release|x86.Build.0 = Release|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Debug|x64.Build.0 = Debug|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Debug|x86.Build.0 = Debug|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Release|x64.ActiveCfg = Release|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Release|x64.Build.0 = Release|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Release|x86.ActiveCfg = Release|Any CPU
+		{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}.Release|x86.Build.0 = Release|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Debug|x64.Build.0 = Debug|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Debug|x86.Build.0 = Debug|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Release|x64.ActiveCfg = Release|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Release|x64.Build.0 = Release|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Release|x86.ActiveCfg = Release|Any CPU
+		{21BDB870-AF16-4248-BC09-C2C2ECDDC135}.Release|x86.Build.0 = Release|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Debug|x64.Build.0 = Debug|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Debug|x86.Build.0 = Debug|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Release|x64.ActiveCfg = Release|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Release|x64.Build.0 = Release|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Release|x86.ActiveCfg = Release|Any CPU
+		{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
