@@ -406,3 +406,6 @@
 [submodule "SunamoTextIndexing"]
 	path = SunamoTextIndexing
 	url = git@github.com:sunamo/SunamoTextIndexing.git
+[submodule "SunamoEmoticons"]
+	path = SunamoEmoticons
+	url = git@github.com:sunamo/SunamoEmoticons.git
