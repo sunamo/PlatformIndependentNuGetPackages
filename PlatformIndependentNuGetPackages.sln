@@ -252,6 +252,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoTextIndexing", "Sunam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoEmoticons", "SunamoEmoticons\SunamoEmoticons.csproj", "{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoSecurity", "SunamoSecurity\SunamoSecurity.csproj", "{EFE94894-8388-47B8-A623-6866AE36DF4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1726,6 +1728,18 @@ Global
 		{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}.Release|x64.Build.0 = Release|Any CPU
 		{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}.Release|x86.ActiveCfg = Release|Any CPU
 		{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}.Release|x86.Build.0 = Release|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Debug|x64.Build.0 = Debug|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Debug|x86.Build.0 = Debug|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x64.ActiveCfg = Release|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x64.Build.0 = Release|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x86.ActiveCfg = Release|Any CPU
+		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
