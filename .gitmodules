@@ -400,3 +400,6 @@
 [submodule "SunamoFilesIndex"]
 	path = SunamoFilesIndex
 	url = git@github.com:sunamo/SunamoFilesIndex.git
+[submodule "SunamoThreading"]
+	path = SunamoThreading
+	url = git@github.com:sunamo/SunamoThreading.git
