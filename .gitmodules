@@ -409,3 +409,6 @@
 [submodule "SunamoEmoticons"]
 	path = SunamoEmoticons
 	url = git@github.com:sunamo/SunamoEmoticons.git
+[submodule "SunamoSecurity"]
+	path = SunamoSecurity
+	url = git@github.com:sunamo/SunamoSecurity.git
