@@ -244,15 +244,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoArgs", "SunamoArgs\Su
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunamo", "sunamo\Sunamo.csproj", "{63628AD4-8D55-4E49-99F2-F2704C42C2CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoFilesIndex", "SunamoFilesIndex\SunamoFilesIndex.csproj", "{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoFilesIndex", "SunamoFilesIndex\SunamoFilesIndex.csproj", "{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoThreading", "SunamoThreading\SunamoThreading.csproj", "{21BDB870-AF16-4248-BC09-C2C2ECDDC135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoThreading", "SunamoThreading\SunamoThreading.csproj", "{21BDB870-AF16-4248-BC09-C2C2ECDDC135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoTextIndexing", "SunamoTextIndexing\SunamoTextIndexing.csproj", "{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTextIndexing", "SunamoTextIndexing\SunamoTextIndexing.csproj", "{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoEmoticons", "SunamoEmoticons\SunamoEmoticons.csproj", "{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoEmoticons", "SunamoEmoticons\SunamoEmoticons.csproj", "{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoSecurity", "SunamoSecurity\SunamoSecurity.csproj", "{EFE94894-8388-47B8-A623-6866AE36DF4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoSecurity", "SunamoSecurity\SunamoSecurity.csproj", "{EFE94894-8388-47B8-A623-6866AE36DF4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRoslyn", "SunamoRoslyn\SunamoRoslyn.csproj", "{21CB2618-783E-4958-8EF2-C4F116FC6540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1740,6 +1742,18 @@ Global
 		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x64.Build.0 = Release|Any CPU
 		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x86.ActiveCfg = Release|Any CPU
 		{EFE94894-8388-47B8-A623-6866AE36DF4D}.Release|x86.Build.0 = Release|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Debug|x64.Build.0 = Debug|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Debug|x86.Build.0 = Debug|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Release|x64.ActiveCfg = Release|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Release|x64.Build.0 = Release|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Release|x86.ActiveCfg = Release|Any CPU
+		{21CB2618-783E-4958-8EF2-C4F116FC6540}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
