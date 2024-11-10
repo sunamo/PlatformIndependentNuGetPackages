@@ -412,3 +412,6 @@
 [submodule "SunamoSecurity"]
 	path = SunamoSecurity
 	url = git@github.com:sunamo/SunamoSecurity.git
+[submodule "SunamoRoslyn"]
+	path = SunamoRoslyn
+	url = git@github.com:sunamo/SunamoRoslyn.git
