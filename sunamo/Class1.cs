@@ -1,5 +1,4 @@
-﻿namespace Sunamo;
-
+namespace sunamo;
 public class Class1
 {
 
