@@ -415,3 +415,6 @@
 [submodule "SunamoRoslyn"]
 	path = SunamoRoslyn
 	url = git@github.com:sunamo/SunamoRoslyn.git
+[submodule "SunamoDependencyInjection"]
+	path = SunamoDependencyInjection
+	url = git@github.com:sunamo/SunamoDependencyInjection.git
