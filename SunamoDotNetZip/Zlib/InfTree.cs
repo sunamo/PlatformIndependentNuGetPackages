@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // Inftree.cs
 // ------------------------------------------------------------------
 //
@@ -62,8 +63,6 @@
 
 
 using System;
-namespace Ionic.Zlib
-{
         
         sealed class InfTree
         {
@@ -433,4 +432,3 @@ namespace Ionic.Zlib
                         }
                 }
         }
-}

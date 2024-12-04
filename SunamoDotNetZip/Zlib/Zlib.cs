@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // Zlib.cs
 // ------------------------------------------------------------------
 //
@@ -91,8 +92,6 @@
 using System;
 using Interop=System.Runtime.InteropServices;
 
-namespace Ionic.Zlib
-{
 
     /// <summary>
     /// Describes how to flush the current deflate operation.
@@ -545,4 +544,3 @@ namespace Ionic.Zlib
 
     }
 
-}

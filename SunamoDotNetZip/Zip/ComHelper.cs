@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ComHelper.cs
 // ------------------------------------------------------------------
 //
@@ -26,8 +27,6 @@
 
 using Interop=System.Runtime.InteropServices;
 
-namespace Ionic.Zip
-{
     /// <summary>
     /// This class exposes a set of COM-accessible wrappers for static
     /// methods available on the ZipFile class.  You don't need this
@@ -109,4 +108,3 @@ namespace Ionic.Zip
         }
 
     }
-}

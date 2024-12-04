@@ -1,9 +1,7 @@
-﻿using System.IO;
+namespace Ionic.Zip;
+using System.IO;
 using Interop = System.Runtime.InteropServices;
 
-namespace Ionic.Zip
-{
-    /// <summary>
     /// Helper class for file attribute operations.
     /// </summary>
     /// <example>
@@ -54,4 +52,3 @@ namespace Ionic.Zip
             return attributes & validAttributes;
         }
     }
-}

@@ -1,3 +1,4 @@
+namespace Ionic.BZip2;
 // BitWriter.cs
 // ------------------------------------------------------------------
 //
@@ -83,8 +84,6 @@
 using System;
 using System.IO;
 
-namespace Ionic.BZip2
-{
 
     internal class BitWriter
     {
@@ -245,4 +244,3 @@ namespace Ionic.BZip2
 
     }
 
-}

@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipFile.Save.cs
 // ------------------------------------------------------------------
 //
@@ -29,8 +30,6 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace Ionic.Zip
-{
 
     public partial class ZipFile
     {
@@ -501,7 +500,7 @@ namespace Ionic.Zip
         /// <code lang="C#">
         /// using (var zip = new Ionic.Zip.ZipFile())
         /// {
-        ///     zip.CompressionLevel= Ionic.Zlib.CompressionLevel.BestCompression;
+        ///     zip.CompressionLevel= CompressionLevel.BestCompression;
         ///     zip.Password = "VerySecret.";
         ///     zip.Encryption = EncryptionAlgorithm.WinZipAes128;
         ///     zip.AddFile(sourceFileName);
@@ -946,4 +945,3 @@ namespace Ionic.Zip
 
 
     }
-}

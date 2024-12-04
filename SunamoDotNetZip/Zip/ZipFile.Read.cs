@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipFile.Read.cs
 // ------------------------------------------------------------------
 //
@@ -29,8 +30,6 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace Ionic.Zip
-{
     /// <summary>
     ///   A class for collecting the various options that can be used when
     ///   Reading zip files for extraction or update.
@@ -1109,4 +1108,3 @@ namespace Ionic.Zip
 
     }
 
-}

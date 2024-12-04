@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipSegmentedStream.cs
 // ------------------------------------------------------------------
 //
@@ -28,8 +29,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Ionic.Zip
-{
     internal class ZipSegmentedStream : System.IO.Stream
     {
         enum RwMode
@@ -552,4 +551,3 @@ namespace Ionic.Zip
 
     }
 
-}

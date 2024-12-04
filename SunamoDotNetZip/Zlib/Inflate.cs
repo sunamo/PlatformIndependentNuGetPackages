@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // Inflate.cs
 // ------------------------------------------------------------------
 //
@@ -63,8 +64,6 @@
 
 
 using System;
-namespace Ionic.Zlib
-{
     sealed class InflateBlocks
     {
         private const int MANY = 1440;
@@ -1799,4 +1798,3 @@ namespace Ionic.Zlib
             return blocks.SyncPoint();
         }
     }
-}

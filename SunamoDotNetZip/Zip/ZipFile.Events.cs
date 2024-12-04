@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipFile.Events.cs
 // ------------------------------------------------------------------
 //
@@ -27,8 +28,6 @@
 using System;
 using System.IO;
 
-namespace Ionic.Zip
-{
     public partial class ZipFile
     {
         private string ArchiveNameForEvent
@@ -1216,4 +1215,3 @@ namespace Ionic.Zip
         #endregion
 
     }
-}

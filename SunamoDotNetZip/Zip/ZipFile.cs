@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipFile.cs
 //
 // Copyright (c) 2006-2010 Dino Chiesa
@@ -44,8 +45,6 @@ using System.Collections.Generic;
 using Interop = System.Runtime.InteropServices;
 
 
-namespace Ionic.Zip
-{
     /// <summary>
     ///   The ZipFile type represents a zip archive file.
     /// </summary>
@@ -396,9 +395,9 @@ namespace Ionic.Zip
         ///   parameter can affect the compression ratio and the speed of
         ///   compression but not the correctness of the compresssion.  For more
         ///   information see <see
-        ///   cref="Ionic.Zlib.CompressionStrategy">Ionic.Zlib.CompressionStrategy</see>.
+        ///   cref="CompressionStrategy">CompressionStrategy</see>.
         /// </remarks>
-        public Ionic.Zlib.CompressionStrategy Strategy
+        public CompressionStrategy Strategy
         {
             get { return _Strategy; }
             set { _Strategy = value; }
@@ -469,7 +468,7 @@ namespace Ionic.Zip
         ///    alone, and accept the default.
         ///  </para>
         /// </remarks>
-        public Ionic.Zlib.CompressionLevel CompressionLevel
+        public CompressionLevel CompressionLevel
         {
             get;
             set;
@@ -1987,7 +1986,7 @@ namespace Ionic.Zip
         ///   the <c>ZipFile</c> or on each <c>ZipEntry</c> to determine the level of
         ///   compression used. This is done at the time the entry is added to the
         ///   <c>ZipFile</c>. Setting the property to
-        ///   <c>Ionic.Zlib.CompressionLevel.None</c> means no compression will be used.
+        ///   <c>CompressionLevel.None</c> means no compression will be used.
         /// </para>
         ///
         /// <para>
@@ -2290,7 +2289,7 @@ namespace Ionic.Zip
         ///     using Encryption. This is primarily because encryption tends to slow
         ///     down the entire pipeline. Also, multi-threaded compression gives less
         ///     of an advantage when using lower compression levels, for example <see
-        ///     cref="Ionic.Zlib.CompressionLevel.BestSpeed"/>.  You may have to
+        ///     cref="CompressionLevel.BestSpeed"/>.  You may have to
         ///     perform some tests to determine the best approach for your situation.
         ///   </para>
         ///
@@ -2974,7 +2973,7 @@ namespace Ionic.Zip
             _StatusMessageTextWriter = statusMessageWriter;
             _contentsChanged = true;
             AddDirectoryWillTraverseReparsePoints = true;  // workitem 8617
-            CompressionLevel = Ionic.Zlib.CompressionLevel.Default;
+            CompressionLevel = CompressionLevel.Default;
             ParallelDeflateThreshold = 512 * 1024;
             // workitem 7685, 9868
             _entries = new Dictionary<string, ZipEntry>(StringComparer.Ordinal);
@@ -3753,7 +3752,7 @@ namespace Ionic.Zip
         internal string _Password;
         private bool _emitNtfsTimes = true;
         private bool _emitUnixTimes;
-        private Ionic.Zlib.CompressionStrategy _Strategy = Ionic.Zlib.CompressionStrategy.Default;
+        private CompressionStrategy _Strategy = CompressionStrategy.Default;
         private Ionic.Zip.CompressionMethod _compressionMethod = Ionic.Zip.CompressionMethod.Deflate;
         private bool _fileAlreadyExists;
         private string _temporaryFileName;
@@ -3778,7 +3777,7 @@ namespace Ionic.Zip
 
         private int _BufferSize = BufferSizeDefault;
 
-        internal Ionic.Zlib.ParallelDeflateOutputStream ParallelDeflater;
+        internal ParallelDeflateOutputStream ParallelDeflater;
         private long _ParallelDeflateThreshold;
         private int _maxBufferPairs = 16;
 
@@ -3924,7 +3923,7 @@ namespace Ionic.Zip
         AddOrUpdate
     }
 
-}
+
 
 
 
@@ -4044,4 +4043,3 @@ namespace Ionic.Zip
 //            9-15 year (since 1980)
 //
 // see http://msdn.microsoft.com/en-us/library/ms724274(VS.85).aspx
-

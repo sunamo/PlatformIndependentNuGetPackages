@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipDirEntry.cs
 // ------------------------------------------------------------------
 //
@@ -30,8 +31,6 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ionic.Zip
-{
 
     partial class ZipEntry
     {
@@ -391,4 +390,3 @@ namespace Ionic.Zip
     }
 
 
-}

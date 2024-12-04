@@ -1,12 +1,7 @@
-// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-// See the LICENSE file in the project root for more information.
-
+namespace Ionic.Zip.Deflate64;
 using System;
 using System.Diagnostics;
 
-namespace Ionic.Zip.Deflate64
-{
     // This class can be used to read bits from an byte array quickly.
     // Normally we get bits from 'bitBuffer' field and bitsInBuffer stores
     // the number of bits available in 'BitBuffer'.
@@ -204,4 +199,3 @@ namespace Ionic.Zip.Deflate64
             _bitsInBuffer = _bitsInBuffer - (_bitsInBuffer % 8);
         }
     }
-}

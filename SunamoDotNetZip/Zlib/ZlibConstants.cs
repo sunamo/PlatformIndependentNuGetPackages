@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // ZlibConstants.cs
 // ------------------------------------------------------------------
 //
@@ -63,8 +64,6 @@
 
 using System;
 
-namespace Ionic.Zlib
-{
     /// <summary>
     /// A bunch of constants used in the Zlib interface.
     /// </summary>
@@ -121,5 +120,4 @@ namespace Ionic.Zlib
         public const int WorkingBufferSizeMin = 1024;
     }
 
-}
 
