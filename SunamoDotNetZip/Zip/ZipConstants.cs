@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipConstants.cs
 // ------------------------------------------------------------------
 //
@@ -25,8 +26,6 @@
 
 using System;
 
-namespace Ionic.Zip
-{
   static class ZipConstants
   {      
     public const UInt32 PackedToRemovableMedia = 0x30304b50;
@@ -48,4 +47,3 @@ namespace Ionic.Zip
     public const UInt16 AesAlgId256 = 0x6610; 
 
   }
-}

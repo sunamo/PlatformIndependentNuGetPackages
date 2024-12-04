@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // CRC32.cs
 // ------------------------------------------------------------------
 //
@@ -29,8 +30,6 @@
 using System;
 using Interop = System.Runtime.InteropServices;
 
-namespace Ionic.Crc
-{
     /// <summary>
     ///   Computes a CRC-32. The CRC-32 algorithm is parameterized - you
     ///   can set the polynomial and enable or disable bit
@@ -824,4 +823,3 @@ namespace Ionic.Crc
 
     }
 
-}

@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // ZlibCodec.cs
 // ------------------------------------------------------------------
 //
@@ -67,8 +68,6 @@
 using System;
 using Interop=System.Runtime.InteropServices;
 
-namespace Ionic.Zlib
-{
     /// <summary>
     /// Encoder and Decoder for ZLIB and DEFLATE (IETF RFC1950 and RFC1951).
     /// </summary>
@@ -732,4 +731,3 @@ namespace Ionic.Zlib
         }
 
     }
-}

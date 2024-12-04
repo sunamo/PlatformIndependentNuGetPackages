@@ -1,14 +1,8 @@
-// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-// See the LICENSE file in the project root for more information.
-
+namespace Ionic.Zip.Deflate64;
 using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace Ionic.Zip.Deflate64
-{
-    // Deflate64Stream supports decompression of Deflate64 format only.
     internal sealed class Deflate64Stream : Stream
     {
         internal const int DefaultBufferSize = 8192;
@@ -212,4 +206,3 @@ namespace Ionic.Zip.Deflate64
             }
         }
     }
-}

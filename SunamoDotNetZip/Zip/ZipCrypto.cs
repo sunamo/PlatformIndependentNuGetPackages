@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipCrypto.cs
 // ------------------------------------------------------------------
 //
@@ -27,8 +28,6 @@
 
 using System;
 
-namespace Ionic.Zip
-{
     /// <summary>
     ///   This class implements the "traditional" or "classic" PKZip encryption,
     ///   which today is considered to be weak. On the other hand it is
@@ -336,7 +335,7 @@ namespace Ionic.Zip
 
         // private fields for the crypto stuff:
         private UInt32[] _Keys = { 0x12345678, 0x23456789, 0x34567890 };
-        private Ionic.Crc.CRC32 crc32 = new Ionic.Crc.CRC32();
+        private Ionic.Zlib.CRC32 crc32 = new Ionic.Zlib.CRC32();
 
     }
 
@@ -452,4 +451,3 @@ namespace Ionic.Zip
             throw new NotSupportedException();
         }
     }
-}

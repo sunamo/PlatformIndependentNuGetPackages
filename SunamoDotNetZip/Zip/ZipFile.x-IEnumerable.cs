@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipFile.x-IEnumerable.cs
 // ------------------------------------------------------------------
 //
@@ -25,8 +26,6 @@
 // ------------------------------------------------------------------
 
 
-namespace Ionic.Zip
-{
 
     // For some weird reason, the method with the DispId(-4) attribute, which is used as
     // the _NewEnum() method, and which is required to get enumeration to work from COM
@@ -151,4 +150,3 @@ namespace Ionic.Zip
         }
 
     }
-}

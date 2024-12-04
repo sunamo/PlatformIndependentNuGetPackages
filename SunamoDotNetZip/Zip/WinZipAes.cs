@@ -1,5 +1,4 @@
-//#define Trace
-
+namespace Ionic.Zip;
 // WinZipAes.cs
 // ------------------------------------------------------------------
 //
@@ -34,8 +33,6 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 
 #if AESCRYPTO
-namespace Ionic.Zip
-{
     /// <summary>
     ///   This is a helper class supporting WinZip AES encryption.
     ///   This class is intended for use only by the DotNetZip library.
@@ -935,5 +932,5 @@ namespace Ionic.Zip
 
         private object _outputLock = new Object();
     }
-}
+
 #endif

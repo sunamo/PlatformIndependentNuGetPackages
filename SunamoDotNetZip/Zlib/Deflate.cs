@@ -1,3 +1,4 @@
+namespace Ionic.Zlib;
 // Deflate.cs
 // ------------------------------------------------------------------
 //
@@ -69,8 +70,6 @@
 
 using System;
 
-namespace Ionic.Zlib
-{
 
     internal enum BlockState
     {
@@ -1876,4 +1875,3 @@ namespace Ionic.Zlib
         }
 
     }
-}

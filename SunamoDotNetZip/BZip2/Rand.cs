@@ -1,3 +1,4 @@
+namespace Ionic.BZip2;
 // Rand.cs
 // ------------------------------------------------------------------
 //
@@ -24,8 +25,6 @@
 // ------------------------------------------------------------------
 
 
-namespace Ionic.BZip2
-{
     internal static class Rand
     {
         private static int[] RNUMS =
@@ -96,4 +95,3 @@ namespace Ionic.BZip2
         }
     }
 
-}

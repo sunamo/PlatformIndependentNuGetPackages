@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // OffsetStream.cs
 // ------------------------------------------------------------------
 //
@@ -29,8 +30,6 @@
 using System;
 using System.IO;
 
-namespace Ionic.Zip
-{
     internal class OffsetStream : System.IO.Stream, System.IDisposable
     {
         private Int64 _originalPosition;
@@ -111,4 +110,3 @@ namespace Ionic.Zip
 
     }
 
-}

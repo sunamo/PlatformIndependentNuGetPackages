@@ -1,5 +1,4 @@
-//#define Trace
-
+namespace Ionic.Zlib;
 // ParallelDeflateOutputStream.cs
 // ------------------------------------------------------------------
 //
@@ -31,8 +30,6 @@ using Ionic.Zlib;
 using System.IO;
 
 
-namespace Ionic.Zlib
-{
     internal class WorkItem
     {
         public byte[] buffer;
@@ -45,7 +42,7 @@ namespace Ionic.Zlib
         public ZlibCodec compressor;
 
         public WorkItem(int size,
-                        Ionic.Zlib.CompressionLevel compressLevel,
+                        CompressionLevel compressLevel,
                         CompressionStrategy strategy,
                         int ix)
         {
@@ -74,7 +71,7 @@ namespace Ionic.Zlib
     /// </para>
     ///
     /// <para>
-    ///   This class is similar to <see cref="Ionic.Zlib.DeflateStream"/>, except
+    ///   This class is similar to <see cref="DeflateStream"/>, except
     ///   that this class is for compression only, and this implementation uses an
     ///   approach that employs multiple worker threads to perform the DEFLATE.  On
     ///   a multi-cpu or multi-core computer, the performance of this class can be
@@ -97,7 +94,7 @@ namespace Ionic.Zlib
     /// </para>
     ///
     /// </remarks>
-    /// <seealso cref="Ionic.Zlib.DeflateStream" />
+    /// <seealso cref="DeflateStream" />
     public class ParallelDeflateOutputStream : System.IO.Stream
     {
 
@@ -121,12 +118,12 @@ namespace Ionic.Zlib
         private int                         _lastWritten;
         private int                         _latestCompressed;
         private int                         _Crc32;
-        private Ionic.Crc.CRC32             _runningCrc;
+        private Ionic.Zlib.CRC32             _runningCrc;
         private object                      _latestLock = new object();
         private System.Collections.Generic.Queue<int>     _toWrite;
         private System.Collections.Generic.Queue<int>     _toFill;
         private Int64                       _totalBytesProcessed;
-        private Ionic.Zlib.CompressionLevel _compressLevel;
+        private CompressionLevel _compressLevel;
         private volatile Exception          _pendingException;
         private bool                        _handlingException;
         private object                      _eLock = new Object();  // protects _pendingException
@@ -166,7 +163,7 @@ namespace Ionic.Zlib
         /// </para>
         ///
         /// <para>
-        ///   This class is similar to <see cref="Ionic.Zlib.DeflateStream"/>,
+        ///   This class is similar to <see cref="DeflateStream"/>,
         ///   except that this implementation uses an approach that employs
         ///   multiple worker threads to perform the DEFLATE.  On a multi-cpu or
         ///   multi-core computer, the performance of this class can be
@@ -420,7 +417,7 @@ namespace Ionic.Zlib
         ///   memory but may result in less effective compression.  For example,
         ///   using the default buffer size of 128k, the compression delivered is
         ///   within 1% of the compression delivered by the single-threaded <see
-        ///   cref="Ionic.Zlib.DeflateStream"/>.  On the other hand, using a
+        ///   cref="DeflateStream"/>.  On the other hand, using a
         ///   BufferSize of 8k can result in a compressed data stream that is 5%
         ///   larger than that delivered by the single-threaded
         ///   <c>DeflateStream</c>.  Excessively small buffer sizes can also cause
@@ -488,7 +485,7 @@ namespace Ionic.Zlib
             }
 
             _newlyCompressedBlob = new AutoResetEvent(false);
-            _runningCrc = new Ionic.Crc.CRC32();
+            _runningCrc = new Ionic.Zlib.CRC32();
             _currentlyFilling = -1;
             _lastFilled = -1;
             _lastWritten = -1;
@@ -514,7 +511,7 @@ namespace Ionic.Zlib
         /// </para>
         ///
         /// <para>
-        ///   To decompress data, use the <see cref="Ionic.Zlib.DeflateStream"/> class.
+        ///   To decompress data, use the <see cref="DeflateStream"/> class.
         /// </para>
         ///
         /// </remarks>
@@ -867,7 +864,7 @@ namespace Ionic.Zlib
 
             _firstWriteDone = false;
             _totalBytesProcessed = 0L;
-            _runningCrc = new Ionic.Crc.CRC32();
+            _runningCrc = new Ionic.Zlib.CRC32();
             _isClosed= false;
             _currentlyFilling = -1;
             _lastFilled = -1;
@@ -1008,7 +1005,7 @@ namespace Ionic.Zlib
 
                     // repeatedly write buffers as they become ready
                     WorkItem workitem = null;
-                    Ionic.Zlib.CRC32 c= new Ionic.Zlib.CRC32();
+                    CRC32 c= new CRC32();
                     do
                     {
                         workitem = _pool[_nextToWrite % _pc];
@@ -1167,7 +1164,7 @@ namespace Ionic.Zlib
             try
             {
                 int myItem = workitem.index;
-                Ionic.Crc.CRC32 crc = new Ionic.Crc.CRC32();
+                Ionic.Zlib.CRC32 crc = new Ionic.Zlib.CRC32();
 
                 // calc CRC on the buffer
                 crc.SlurpBlock(workitem.buffer, 0, workitem.inputBytesAvailable);
@@ -1391,6 +1388,3 @@ namespace Ionic.Zlib
         }
 
     }
-
-}
-

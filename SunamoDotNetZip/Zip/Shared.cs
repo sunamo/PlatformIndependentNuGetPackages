@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // Shared.cs
 // ------------------------------------------------------------------
 //
@@ -26,8 +27,6 @@
 using System;
 using System.IO;
 
-namespace Ionic.Zip
-{
     /// <summary>
     /// Collects general purpose utility methods.
     /// </summary>
@@ -879,4 +878,3 @@ namespace Ionic.Zip
     }
 
 
-}

@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipInputStream.cs
 //
 // ------------------------------------------------------------------
@@ -35,8 +36,6 @@ using System.Collections.Generic;
 using System.IO;
 using Ionic.Zip;
 
-namespace  Ionic.Zip
-{
     /// <summary>
     ///   Provides a stream metaphor for reading zip files.
     /// </summary>
@@ -798,7 +797,7 @@ namespace  Ionic.Zip
         private bool _firstEntry;
         private bool _needSetup;
         private ZipContainer _container;
-        private Ionic.Crc.CrcCalculatorStream _crcStream;
+        private Ionic.Zlib.CrcCalculatorStream _crcStream;
         private Int64 _LeftToRead;
         internal String _Password;
         private Int64 _endOfEntry;
@@ -812,4 +811,3 @@ namespace  Ionic.Zip
 
 
 
-}

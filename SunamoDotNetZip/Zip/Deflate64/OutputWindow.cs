@@ -1,13 +1,7 @@
-// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-// See the LICENSE file in the project root for more information.
-
+namespace Ionic.Zip.Deflate64;
 using System;
 using System.Diagnostics;
 
-namespace Ionic.Zip.Deflate64
-{
-    /// <summary>
     /// This class maintains a window for decompressed output.
     /// We need to keep this because the decompressed information can be
     /// a literal or a length/distance pair. For length/distance pair,
@@ -153,4 +147,3 @@ namespace Ionic.Zip.Deflate64
             return copied;
         }
     }
-}

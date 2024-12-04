@@ -1,9 +1,8 @@
-﻿using System;
+namespace Ionic.Zip;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ionic.Zip
-{
     partial class ZipFile
     {
         private static System.Text.Encoding _defaultEncoding = null;
@@ -80,4 +79,3 @@ namespace Ionic.Zip
             }
         }
     }
-}

@@ -1,12 +1,7 @@
-// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-// See the LICENSE file in the project root for more information.
-
+namespace Ionic.Zip.Deflate64;
 using System.Diagnostics;
 using System.IO;
 
-namespace Ionic.Zip.Deflate64
-{
     // Strictly speaking this class is not a HuffmanTree, this class is
     // a lookup table combined with a HuffmanTree. The idea is to speed up
     // the lookup for short symbols (they should appear more frequently ideally.)
@@ -324,4 +319,3 @@ namespace Ionic.Zip.Deflate64
             return symbol;
         }
     }
-}

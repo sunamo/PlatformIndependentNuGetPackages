@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipFile.Extract.cs
 // ------------------------------------------------------------------
 //
@@ -29,8 +30,6 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace Ionic.Zip
-{
 
     public partial class ZipFile
     {
@@ -295,4 +294,3 @@ namespace Ionic.Zip
 
 
     }
-}

@@ -1,3 +1,4 @@
+namespace Ionic.Zip;
 // ZipEntry.Read.cs
 // ------------------------------------------------------------------
 //
@@ -28,8 +29,6 @@
 using System;
 using System.IO;
 
-namespace Ionic.Zip
-{
     public partial class ZipEntry
     {
         private int _readExtraDepth;
@@ -784,4 +783,3 @@ namespace Ionic.Zip
 
 
     }
-}

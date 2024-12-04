@@ -1,9 +1,4 @@
-// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-// See the LICENSE file in the project root for more information.
-
-namespace Ionic.Zip.Deflate64
-{
+namespace Ionic.Zip.Deflate64;
     internal interface IFileFormatReader
     {
         bool ReadHeader(InputBuffer input);
@@ -11,4 +6,3 @@ namespace Ionic.Zip.Deflate64
         void UpdateWithBytesRead(byte[] buffer, int offset, int bytesToCopy);
         void Validate();
     }
-}
