@@ -4,8 +4,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Description>.NET 9 fork for DotNetZip because have high security vulnerability</Description>
-    <Version>24.12.4.1</Version>
-    <PackageReleaseNotes>Push after fix tool</PackageReleaseNotes>
+    <Version>24.12.4.2</Version>
+    <PackageReleaseNotes>Remove unused parameter</PackageReleaseNotes>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
     <PackageProjectUrl>https://sunamo.cz/</PackageProjectUrl>
