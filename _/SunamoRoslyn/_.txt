@@ -1,0 +1,6 @@
+﻿Proč existují SunamoMicrosoftBuild (Microsoft.Build) a SunamoRoslyn (Microsoft.CodeAnalysis)
+
+Microsoft.Build je balíček, který poskytuje funkce pro buildování .NET aplikací. Zahrnuje nástroje pro kompilaci, spojení a balíčkování kódu.
+
+Microsoft.CodeAnalysis je balíček, který poskytuje funkce pro analýzu kódu. Zahrnuje nástroje pro nalezení chyb, bezpečnostních rizik a dalších problémů v kódu. Vlastní roslyn.
+
