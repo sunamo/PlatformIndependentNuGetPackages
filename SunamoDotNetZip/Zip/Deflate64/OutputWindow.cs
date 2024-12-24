@@ -20,13 +20,10 @@ using System.Diagnostics;
         private int _end;       // this is the position to where we should write next byte
         private int _bytesUsed; // The number of bytes in the output window which is not consumed.
 
-        internal void ClearBytesUsed()
-        {
-            _bytesUsed = 0;
-        }
+    internal void ClearBytesUsed() => _bytesUsed = 0;
 
-        /// <summary>Add a byte to output window.</summary>
-        public void Write(byte b)
+    /// <summary>Add a byte to output window.</summary>
+    public void Write(byte b)
         {
             Debug.Assert(_bytesUsed < WindowSize, "Can't add byte when window is full!");
             _window[_end++] = b;

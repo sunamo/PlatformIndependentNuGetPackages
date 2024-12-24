@@ -455,10 +455,9 @@ using System;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("DeflateStream");
-                return _baseStream._stream.CanRead;
-            }
+            return _disposed ? throw new ObjectDisposedException("DeflateStream") : _baseStream._stream.CanRead;
         }
+    }
 
         /// <summary>
         /// Indicates whether the stream supports Seek operations.
@@ -482,10 +481,9 @@ using System;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("DeflateStream");
-                return _baseStream._stream.CanWrite;
-            }
+            return _disposed ? throw new ObjectDisposedException("DeflateStream") : _baseStream._stream.CanWrite;
         }
+    }
 
         /// <summary>
         /// Flush the stream.
@@ -521,96 +519,84 @@ using System;
             {
                 if (this._baseStream._streamMode == ZlibBaseStream.StreamMode.Writer)
                     return this._baseStream._z.TotalBytesOut;
-                if (this._baseStream._streamMode == ZlibBaseStream.StreamMode.Reader)
-                    return this._baseStream._z.TotalBytesIn;
-                return 0;
-            }
-            set { throw new NotImplementedException(); }
+            return this._baseStream._streamMode == ZlibBaseStream.StreamMode.Reader ? _baseStream._z.TotalBytesIn : 0;
+        }
+        set { throw new NotImplementedException(); }
         }
 
-        /// <summary>
-        /// Read data from the stream.
-        /// </summary>
-        /// <remarks>
-        ///
-        /// <para>
-        ///   If you wish to use the <c>DeflateStream</c> to compress data while
-        ///   reading, you can create a <c>DeflateStream</c> with
-        ///   <c>CompressionMode.Compress</c>, providing an uncompressed data stream.
-        ///   Then call Read() on that <c>DeflateStream</c>, and the data read will be
-        ///   compressed as you read.  If you wish to use the <c>DeflateStream</c> to
-        ///   decompress data while reading, you can create a <c>DeflateStream</c> with
-        ///   <c>CompressionMode.Decompress</c>, providing a readable compressed data
-        ///   stream.  Then call Read() on that <c>DeflateStream</c>, and the data read
-        ///   will be decompressed as you read.
-        /// </para>
-        ///
-        /// <para>
-        ///   A <c>DeflateStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but not both.
-        /// </para>
-        ///
-        /// </remarks>
-        /// <param name="buffer">The buffer into which the read data should be placed.</param>
-        /// <param name="offset">the offset within that data array to put the first byte read.</param>
-        /// <param name="count">the number of bytes to read.</param>
-        /// <returns>the number of bytes actually read</returns>
-        public override int Read(byte[] buffer, int offset, int count)
-        {
-            if (_disposed) throw new ObjectDisposedException("DeflateStream");
-            return _baseStream.Read(buffer, offset, count);
-        }
+    /// <summary>
+    /// Read data from the stream.
+    /// </summary>
+    /// <remarks>
+    ///
+    /// <para>
+    ///   If you wish to use the <c>DeflateStream</c> to compress data while
+    ///   reading, you can create a <c>DeflateStream</c> with
+    ///   <c>CompressionMode.Compress</c>, providing an uncompressed data stream.
+    ///   Then call Read() on that <c>DeflateStream</c>, and the data read will be
+    ///   compressed as you read.  If you wish to use the <c>DeflateStream</c> to
+    ///   decompress data while reading, you can create a <c>DeflateStream</c> with
+    ///   <c>CompressionMode.Decompress</c>, providing a readable compressed data
+    ///   stream.  Then call Read() on that <c>DeflateStream</c>, and the data read
+    ///   will be decompressed as you read.
+    /// </para>
+    ///
+    /// <para>
+    ///   A <c>DeflateStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but not both.
+    /// </para>
+    ///
+    /// </remarks>
+    /// <param name="buffer">The buffer into which the read data should be placed.</param>
+    /// <param name="offset">the offset within that data array to put the first byte read.</param>
+    /// <param name="count">the number of bytes to read.</param>
+    /// <returns>the number of bytes actually read</returns>
+    public override int Read(byte[] buffer, int offset, int count) => _disposed ? throw new ObjectDisposedException("DeflateStream") : _baseStream.Read(buffer, offset, count);
 
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="offset">this is irrelevant, since it will always throw!</param>
-        /// <param name="origin">this is irrelevant, since it will always throw!</param>
-        /// <returns>irrelevant!</returns>
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="offset">this is irrelevant, since it will always throw!</param>
+    /// <param name="origin">this is irrelevant, since it will always throw!</param>
+    /// <returns>irrelevant!</returns>
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => throw new NotImplementedException();
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="value">this is irrelevant, since it will always throw!</param>
-        public override void SetLength(long value)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="value">this is irrelevant, since it will always throw!</param>
+    public override void SetLength(long value) => throw new NotImplementedException();
 
-        /// <summary>
-        ///   Write data to the stream.
-        /// </summary>
-        /// <remarks>
-        ///
-        /// <para>
-        ///   If you wish to use the <c>DeflateStream</c> to compress data while
-        ///   writing, you can create a <c>DeflateStream</c> with
-        ///   <c>CompressionMode.Compress</c>, and a writable output stream.  Then call
-        ///   <c>Write()</c> on that <c>DeflateStream</c>, providing uncompressed data
-        ///   as input.  The data sent to the output stream will be the compressed form
-        ///   of the data written.  If you wish to use the <c>DeflateStream</c> to
-        ///   decompress data while writing, you can create a <c>DeflateStream</c> with
-        ///   <c>CompressionMode.Decompress</c>, and a writable output stream.  Then
-        ///   call <c>Write()</c> on that stream, providing previously compressed
-        ///   data. The data sent to the output stream will be the decompressed form of
-        ///   the data written.
-        /// </para>
-        ///
-        /// <para>
-        ///   A <c>DeflateStream</c> can be used for <c>Read()</c> or <c>Write()</c>,
-        ///   but not both.
-        /// </para>
-        ///
-        /// </remarks>
-        ///
-        /// <param name="buffer">The buffer holding data to write to the stream.</param>
-        /// <param name="offset">the offset within that data array to find the first byte to write.</param>
-        /// <param name="count">the number of bytes to write.</param>
-        public override void Write(byte[] buffer, int offset, int count)
+    /// <summary>
+    ///   Write data to the stream.
+    /// </summary>
+    /// <remarks>
+    ///
+    /// <para>
+    ///   If you wish to use the <c>DeflateStream</c> to compress data while
+    ///   writing, you can create a <c>DeflateStream</c> with
+    ///   <c>CompressionMode.Compress</c>, and a writable output stream.  Then call
+    ///   <c>Write()</c> on that <c>DeflateStream</c>, providing uncompressed data
+    ///   as input.  The data sent to the output stream will be the compressed form
+    ///   of the data written.  If you wish to use the <c>DeflateStream</c> to
+    ///   decompress data while writing, you can create a <c>DeflateStream</c> with
+    ///   <c>CompressionMode.Decompress</c>, and a writable output stream.  Then
+    ///   call <c>Write()</c> on that stream, providing previously compressed
+    ///   data. The data sent to the output stream will be the decompressed form of
+    ///   the data written.
+    /// </para>
+    ///
+    /// <para>
+    ///   A <c>DeflateStream</c> can be used for <c>Read()</c> or <c>Write()</c>,
+    ///   but not both.
+    /// </para>
+    ///
+    /// </remarks>
+    ///
+    /// <param name="buffer">The buffer holding data to write to the stream.</param>
+    /// <param name="offset">the offset within that data array to find the first byte to write.</param>
+    /// <param name="count">the number of bytes to write.</param>
+    public override void Write(byte[] buffer, int offset, int count)
         {
             if (_disposed) throw new ObjectDisposedException("DeflateStream");
             _baseStream.Write(buffer, offset, count);
@@ -641,14 +627,12 @@ using System;
         /// <returns>The string in compressed form</returns>
         public static byte[] CompressString(String s)
         {
-            using (var ms = new System.IO.MemoryStream())
-            {
-                System.IO.Stream compressor =
-                    new DeflateStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
-                ZlibBaseStream.CompressString(s, compressor);
-                return ms.ToArray();
-            }
-        }
+        using var ms = new System.IO.MemoryStream();
+        System.IO.Stream compressor =
+            new DeflateStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
+        ZlibBaseStream.CompressString(s, compressor);
+        return ms.ToArray();
+    }
 
 
         /// <summary>
@@ -671,15 +655,13 @@ using System;
         /// <returns>The data in compressed form</returns>
         public static byte[] CompressBuffer(byte[] b)
         {
-            using (var ms = new System.IO.MemoryStream())
-            {
-                System.IO.Stream compressor =
-                    new DeflateStream( ms, CompressionMode.Compress, CompressionLevel.BestCompression );
+        using var ms = new System.IO.MemoryStream();
+        System.IO.Stream compressor =
+            new DeflateStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
 
-                ZlibBaseStream.CompressBuffer(b, compressor);
-                return ms.ToArray();
-            }
-        }
+        ZlibBaseStream.CompressBuffer(b, compressor);
+        return ms.ToArray();
+    }
 
 
         /// <summary>
@@ -698,14 +680,12 @@ using System;
         /// <returns>The uncompressed string</returns>
         public static String UncompressString(byte[] compressed)
         {
-            using (var input = new System.IO.MemoryStream(compressed))
-            {
-                System.IO.Stream decompressor =
-                    new DeflateStream(input, CompressionMode.Decompress);
+        using var input = new System.IO.MemoryStream(compressed);
+        System.IO.Stream decompressor =
+            new DeflateStream(input, CompressionMode.Decompress);
 
-                return ZlibBaseStream.UncompressString(compressed, decompressor);
-            }
-        }
+        return ZlibBaseStream.UncompressString(compressed, decompressor);
+    }
 
 
         /// <summary>
@@ -724,14 +704,12 @@ using System;
         /// <returns>The data in uncompressed form</returns>
         public static byte[] UncompressBuffer(byte[] compressed)
         {
-            using (var input = new System.IO.MemoryStream(compressed))
-            {
-                System.IO.Stream decompressor =
-                    new DeflateStream( input, CompressionMode.Decompress );
+        using var input = new System.IO.MemoryStream(compressed);
+        System.IO.Stream decompressor =
+            new DeflateStream(input, CompressionMode.Decompress);
 
-                return ZlibBaseStream.UncompressBuffer(compressed, decompressor);
-            }
-        }
+        return ZlibBaseStream.UncompressBuffer(compressed, decompressor);
+    }
 
     }
 

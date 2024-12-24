@@ -436,10 +436,9 @@ using System.IO;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("ZlibStream");
-                return _baseStream._stream.CanRead;
-            }
+            return _disposed ? throw new ObjectDisposedException("ZlibStream") : _baseStream._stream.CanRead;
         }
+    }
 
         /// <summary>
         /// Indicates whether the stream supports Seek operations.
@@ -462,10 +461,9 @@ using System.IO;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("ZlibStream");
-                return _baseStream._stream.CanWrite;
-            }
+            return _disposed ? throw new ObjectDisposedException("ZlibStream") : _baseStream._stream.CanWrite;
         }
+    }
 
         /// <summary>
         /// Flush the stream.
@@ -501,110 +499,98 @@ using System.IO;
             {
                 if (this._baseStream._streamMode == ZlibBaseStream.StreamMode.Writer)
                     return this._baseStream._z.TotalBytesOut;
-                if (this._baseStream._streamMode == ZlibBaseStream.StreamMode.Reader)
-                    return this._baseStream._z.TotalBytesIn;
-                return 0;
-            }
-
-            set { throw new NotSupportedException(); }
+            return this._baseStream._streamMode == ZlibBaseStream.StreamMode.Reader ? _baseStream._z.TotalBytesIn : 0;
         }
 
-        /// <summary>
-        /// Read data from the stream.
-        /// </summary>
-        ///
-        /// <remarks>
-        ///
-        /// <para>
-        ///   If you wish to use the <c>ZlibStream</c> to compress data while reading,
-        ///   you can create a <c>ZlibStream</c> with <c>CompressionMode.Compress</c>,
-        ///   providing an uncompressed data stream.  Then call <c>Read()</c> on that
-        ///   <c>ZlibStream</c>, and the data read will be compressed.  If you wish to
-        ///   use the <c>ZlibStream</c> to decompress data while reading, you can create
-        ///   a <c>ZlibStream</c> with <c>CompressionMode.Decompress</c>, providing a
-        ///   readable compressed data stream.  Then call <c>Read()</c> on that
-        ///   <c>ZlibStream</c>, and the data will be decompressed as it is read.
-        /// </para>
-        ///
-        /// <para>
-        ///   A <c>ZlibStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but
-        ///   not both.
-        /// </para>
-        ///
-        /// </remarks>
-        ///
-        /// <param name="buffer">
-        /// The buffer into which the read data should be placed.</param>
-        ///
-        /// <param name="offset">
-        /// the offset within that data array to put the first byte read.</param>
-        ///
-        /// <param name="count">the number of bytes to read.</param>
-        ///
-        /// <returns>the number of bytes read</returns>
-        public override int Read(byte[] buffer, int offset, int count)
-        {
-                if (_disposed) throw new ObjectDisposedException("ZlibStream");
-            return _baseStream.Read(buffer, offset, count);
+        set { throw new NotSupportedException(); }
         }
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotSupportedException"/>.
-        /// </summary>
-        /// <param name="offset">
-        ///   The offset to seek to....
-        ///   IF THIS METHOD ACTUALLY DID ANYTHING.
-        /// </param>
-        /// <param name="origin">
-        ///   The reference specifying how to apply the offset....  IF
-        ///   THIS METHOD ACTUALLY DID ANYTHING.
-        /// </param>
-        ///
-        /// <returns>nothing. This method always throws.</returns>
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotSupportedException();
-        }
+    /// <summary>
+    /// Read data from the stream.
+    /// </summary>
+    ///
+    /// <remarks>
+    ///
+    /// <para>
+    ///   If you wish to use the <c>ZlibStream</c> to compress data while reading,
+    ///   you can create a <c>ZlibStream</c> with <c>CompressionMode.Compress</c>,
+    ///   providing an uncompressed data stream.  Then call <c>Read()</c> on that
+    ///   <c>ZlibStream</c>, and the data read will be compressed.  If you wish to
+    ///   use the <c>ZlibStream</c> to decompress data while reading, you can create
+    ///   a <c>ZlibStream</c> with <c>CompressionMode.Decompress</c>, providing a
+    ///   readable compressed data stream.  Then call <c>Read()</c> on that
+    ///   <c>ZlibStream</c>, and the data will be decompressed as it is read.
+    /// </para>
+    ///
+    /// <para>
+    ///   A <c>ZlibStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but
+    ///   not both.
+    /// </para>
+    ///
+    /// </remarks>
+    ///
+    /// <param name="buffer">
+    /// The buffer into which the read data should be placed.</param>
+    ///
+    /// <param name="offset">
+    /// the offset within that data array to put the first byte read.</param>
+    ///
+    /// <param name="count">the number of bytes to read.</param>
+    ///
+    /// <returns>the number of bytes read</returns>
+    public override int Read(byte[] buffer, int offset, int count) => _disposed ? throw new ObjectDisposedException("ZlibStream") : _baseStream.Read(buffer, offset, count);
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotSupportedException"/>.
-        /// </summary>
-        /// <param name="value">
-        ///   The new value for the stream length....  IF
-        ///   THIS METHOD ACTUALLY DID ANYTHING.
-        /// </param>
-        public override void SetLength(long value)
-        {
-            throw new NotSupportedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotSupportedException"/>.
+    /// </summary>
+    /// <param name="offset">
+    ///   The offset to seek to....
+    ///   IF THIS METHOD ACTUALLY DID ANYTHING.
+    /// </param>
+    /// <param name="origin">
+    ///   The reference specifying how to apply the offset....  IF
+    ///   THIS METHOD ACTUALLY DID ANYTHING.
+    /// </param>
+    ///
+    /// <returns>nothing. This method always throws.</returns>
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => throw new NotSupportedException();
 
-        /// <summary>
-        /// Write data to the stream.
-        /// </summary>
-        ///
-        /// <remarks>
-        ///
-        /// <para>
-        ///   If you wish to use the <c>ZlibStream</c> to compress data while writing,
-        ///   you can create a <c>ZlibStream</c> with <c>CompressionMode.Compress</c>,
-        ///   and a writable output stream.  Then call <c>Write()</c> on that
-        ///   <c>ZlibStream</c>, providing uncompressed data as input.  The data sent to
-        ///   the output stream will be the compressed form of the data written.  If you
-        ///   wish to use the <c>ZlibStream</c> to decompress data while writing, you
-        ///   can create a <c>ZlibStream</c> with <c>CompressionMode.Decompress</c>, and a
-        ///   writable output stream.  Then call <c>Write()</c> on that stream,
-        ///   providing previously compressed data. The data sent to the output stream
-        ///   will be the decompressed form of the data written.
-        /// </para>
-        ///
-        /// <para>
-        ///   A <c>ZlibStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but not both.
-        /// </para>
-        /// </remarks>
-        /// <param name="buffer">The buffer holding data to write to the stream.</param>
-        /// <param name="offset">the offset within that data array to find the first byte to write.</param>
-        /// <param name="count">the number of bytes to write.</param>
-        public override void Write(byte[] buffer, int offset, int count)
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotSupportedException"/>.
+    /// </summary>
+    /// <param name="value">
+    ///   The new value for the stream length....  IF
+    ///   THIS METHOD ACTUALLY DID ANYTHING.
+    /// </param>
+    public override void SetLength(long value) => throw new NotSupportedException();
+
+    /// <summary>
+    /// Write data to the stream.
+    /// </summary>
+    ///
+    /// <remarks>
+    ///
+    /// <para>
+    ///   If you wish to use the <c>ZlibStream</c> to compress data while writing,
+    ///   you can create a <c>ZlibStream</c> with <c>CompressionMode.Compress</c>,
+    ///   and a writable output stream.  Then call <c>Write()</c> on that
+    ///   <c>ZlibStream</c>, providing uncompressed data as input.  The data sent to
+    ///   the output stream will be the compressed form of the data written.  If you
+    ///   wish to use the <c>ZlibStream</c> to decompress data while writing, you
+    ///   can create a <c>ZlibStream</c> with <c>CompressionMode.Decompress</c>, and a
+    ///   writable output stream.  Then call <c>Write()</c> on that stream,
+    ///   providing previously compressed data. The data sent to the output stream
+    ///   will be the decompressed form of the data written.
+    /// </para>
+    ///
+    /// <para>
+    ///   A <c>ZlibStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but not both.
+    /// </para>
+    /// </remarks>
+    /// <param name="buffer">The buffer holding data to write to the stream.</param>
+    /// <param name="offset">the offset within that data array to find the first byte to write.</param>
+    /// <param name="count">the number of bytes to write.</param>
+    public override void Write(byte[] buffer, int offset, int count)
         {
                 if (_disposed) throw new ObjectDisposedException("ZlibStream");
             _baseStream.Write(buffer, offset, count);
@@ -632,14 +618,12 @@ using System.IO;
         /// <returns>The string in compressed form</returns>
         public static byte[] CompressString(String s)
         {
-            using (var ms = new MemoryStream())
-            {
-                Stream compressor =
-                    new ZlibStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
-                ZlibBaseStream.CompressString(s, compressor);
-                return ms.ToArray();
-            }
-        }
+        using var ms = new MemoryStream();
+        Stream compressor =
+            new ZlibStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
+        ZlibBaseStream.CompressString(s, compressor);
+        return ms.ToArray();
+    }
 
 
         /// <summary>
@@ -660,15 +644,13 @@ using System.IO;
         /// <returns>The data in compressed form</returns>
         public static byte[] CompressBuffer(byte[] b)
         {
-            using (var ms = new MemoryStream())
-            {
-                Stream compressor =
-                    new ZlibStream( ms, CompressionMode.Compress, CompressionLevel.BestCompression );
+        using var ms = new MemoryStream();
+        Stream compressor =
+            new ZlibStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
 
-                ZlibBaseStream.CompressBuffer(b, compressor);
-                return ms.ToArray();
-            }
-        }
+        ZlibBaseStream.CompressBuffer(b, compressor);
+        return ms.ToArray();
+    }
 
 
         /// <summary>
@@ -685,14 +667,12 @@ using System.IO;
         /// <returns>The uncompressed string</returns>
         public static String UncompressString(byte[] compressed)
         {
-            using (var input = new MemoryStream(compressed))
-            {
-                Stream decompressor =
-                    new ZlibStream(input, CompressionMode.Decompress);
+        using var input = new MemoryStream(compressed);
+        Stream decompressor =
+            new ZlibStream(input, CompressionMode.Decompress);
 
-                return ZlibBaseStream.UncompressString(compressed, decompressor);
-            }
-        }
+        return ZlibBaseStream.UncompressString(compressed, decompressor);
+    }
 
 
         /// <summary>
@@ -709,14 +689,12 @@ using System.IO;
         /// <returns>The data in uncompressed form</returns>
         public static byte[] UncompressBuffer(byte[] compressed)
         {
-            using (var input = new MemoryStream(compressed))
-            {
-                Stream decompressor =
-                    new ZlibStream( input, CompressionMode.Decompress );
+        using var input = new MemoryStream(compressed);
+        Stream decompressor =
+            new ZlibStream(input, CompressionMode.Decompress);
 
-                return ZlibBaseStream.UncompressBuffer(compressed, decompressor);
-            }
-        }
+        return ZlibBaseStream.UncompressBuffer(compressed, decompressor);
+    }
 
     }
 

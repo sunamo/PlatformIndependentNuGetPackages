@@ -29,14 +29,9 @@ using System.IO;
         {
             get
             {
-                if (_stream == null)
-                {
-                    return false;
-                }
-
-                return _stream.CanRead;
-            }
+            return _stream == null ? false : _stream.CanRead;
         }
+    }
 
         public override bool CanWrite
         {
@@ -59,22 +54,13 @@ using System.IO;
             set { throw new NotSupportedException(); }
         }
 
-        public override void Flush()
-        {
-            EnsureNotDisposed();
-        }
+    public override void Flush() => EnsureNotDisposed();
 
-        public override long Seek(long offset, SeekOrigin origin)
-        {
-            throw new NotSupportedException();
-        }
+    public override long Seek(long offset, SeekOrigin origin) => throw new NotSupportedException();
 
-        public override void SetLength(long value)
-        {
-            throw new NotSupportedException();
-        }
+    public override void SetLength(long value) => throw new NotSupportedException();
 
-        public override int Read(byte[] array, int offset, int count)
+    public override int Read(byte[] array, int offset, int count)
         {
             ValidateParameters(array, offset, count);
             EnsureNotDisposed();
@@ -140,28 +126,16 @@ using System.IO;
                 ThrowStreamClosedException();
         }
 
-        private static void ThrowStreamClosedException()
-        {
-            throw new ObjectDisposedException(null, "ObjectDisposed_StreamClosed");
-        }
+    private static void ThrowStreamClosedException() => throw new ObjectDisposedException(null, "ObjectDisposed_StreamClosed");
 
-        public override IAsyncResult BeginRead(byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState)
-        {
-            throw new NotImplementedException();
-        }
+    public override IAsyncResult BeginRead(byte[] buffer, int offset, int count, AsyncCallback asyncCallback, object asyncState) => throw new NotImplementedException();
 
-        public override int EndRead(IAsyncResult asyncResult)
-        {
-            throw new NotImplementedException();
-        }
+    public override int EndRead(IAsyncResult asyncResult) => throw new NotImplementedException();
 
-        public override void Write(byte[] array, int offset, int count)
-        {
-            throw new InvalidOperationException("CannotWriteToDeflateStream");
-        }
+    public override void Write(byte[] array, int offset, int count) => throw new InvalidOperationException("CannotWriteToDeflateStream");
 
-        // This is called by Dispose:
-        private void PurgeBuffers(bool disposing)
+    // This is called by Dispose:
+    private void PurgeBuffers(bool disposing)
         {
             if (!disposing)
                 return;
@@ -194,8 +168,7 @@ using System.IO;
 
                     try
                     {
-                        if (_inflater != null)
-                            _inflater.Dispose();
+                        _inflater?.Dispose();
                     }
                     finally
                     {

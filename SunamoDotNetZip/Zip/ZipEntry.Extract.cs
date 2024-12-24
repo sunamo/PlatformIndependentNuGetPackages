@@ -70,10 +70,7 @@ public partial class ZipEntry
     /// </para>
     ///
     /// </remarks>
-    public void Extract()
-    {
-        InternalExtractToBaseDir(".", null, _container, _Source, FileName);
-    }
+    public void Extract() => InternalExtractToBaseDir(".", null, _container, _Source, FileName);
 
     /// <summary>
     ///   Extract the entry to a file in the filesystem, using the specified
@@ -120,10 +117,7 @@ public partial class ZipEntry
     ///   the stream to which the entry should be extracted.
     /// </param>
     ///
-    public void Extract(Stream stream)
-    {
-        InternalExtractToStream(stream, null, _container, _Source, FileName);
-    }
+    public void Extract(Stream stream) => InternalExtractToStream(stream, null, _container, _Source, FileName);
 
     /// <summary>
     ///   Extract the entry to the filesystem, starting at the specified base
@@ -176,10 +170,7 @@ public partial class ZipEntry
     ///   details about how the last modified time of the created file is set.
     /// </para>
     /// </remarks>
-    public void Extract(string baseDirectory)
-    {
-        InternalExtractToBaseDir(baseDirectory, null, _container, _Source, FileName);
-    }
+    public void Extract(string baseDirectory) => InternalExtractToBaseDir(baseDirectory, null, _container, _Source, FileName);
 
     /// <summary>
     ///   Extract the entry to the filesystem, starting at the specified base
@@ -293,10 +284,7 @@ public partial class ZipEntry
     /// </code>
     /// </example>
     /// <param name="password">The Password to use for decrypting the entry.</param>
-    public void ExtractWithPassword(string password)
-    {
-        InternalExtractToBaseDir(".", password, _container, _Source, FileName);
-    }
+    public void ExtractWithPassword(string password) => InternalExtractToBaseDir(".", password, _container, _Source, FileName);
 
     /// <summary>
     ///   Extract the entry to the filesystem, starting at the specified base
@@ -323,10 +311,7 @@ public partial class ZipEntry
     ///
     /// <param name="baseDirectory">The pathname of the base directory.</param>
     /// <param name="password">The Password to use for decrypting the entry.</param>
-    public void ExtractWithPassword(string baseDirectory, string password)
-    {
-        InternalExtractToBaseDir(baseDirectory, password, _container, _Source, FileName);
-    }
+    public void ExtractWithPassword(string baseDirectory, string password) => InternalExtractToBaseDir(baseDirectory, password, _container, _Source, FileName);
 
     /// <summary>
     ///   Extract the entry to a file in the filesystem, relative to the
@@ -403,10 +388,7 @@ public partial class ZipEntry
     /// <param name="password">
     ///   The password to use for decrypting the entry.
     /// </param>
-    public void ExtractWithPassword(Stream stream, string password)
-    {
-        InternalExtractToStream(stream, password, _container, _Source, FileName);
-    }
+    public void ExtractWithPassword(Stream stream, string password) => InternalExtractToStream(stream, password, _container, _Source, FileName);
 
     /// <summary>
     ///   Opens a readable stream corresponding to the zip entry in the
@@ -554,14 +536,11 @@ public partial class ZipEntry
     ///
     /// <param name="password">The password to use for decrypting the entry.</param>
     /// <returns>The Stream for reading.</returns>
-    public Ionic.Zlib.CrcCalculatorStream OpenReader(string password)
-    {
+    public Ionic.Zlib.CrcCalculatorStream OpenReader(string password) =>
         // workitem 10923
-        if (_container.ZipFile == null)
-            throw new InvalidOperationException("Use OpenReader() only with ZipFile.");
-
-        return InternalOpenReader(password);
-    }
+        _container.ZipFile == null
+            ? throw new InvalidOperationException("Use OpenReader() only with ZipFile.")
+            : InternalOpenReader(password);
 
     internal CrcCalculatorStream InternalOpenReader(string password)
     {
@@ -646,7 +625,7 @@ public partial class ZipEntry
     void InternalExtractToBaseDir(string baseDir, string password, ZipContainer zipContainer, ZipEntrySource zipEntrySource, string fileName)
     {
         if (baseDir == null)
-            throw new ArgumentNullException("baseDir");
+            throw new ArgumentNullException(nameof(baseDir));
 
         // workitem 7958
         if (zipContainer == null)
@@ -907,8 +886,7 @@ public partial class ZipEntry
 
     void EnsurePassword(string password)
     {
-        var p = password ?? _Password ?? _container.Password;
-        if (p == null) throw new BadPasswordException();
+        var p = (password ?? _Password ?? _container.Password) ?? throw new BadPasswordException();
         SetupCryptoForExtract(p);
     }
 
@@ -1104,7 +1082,7 @@ public partial class ZipEntry
 
     Stream GetExtractDecompressor(Stream input2)
     {
-        if (input2 == null) throw new ArgumentNullException("input2");
+        if (input2 == null) throw new ArgumentNullException(nameof(input2));
 
         // get a stream that either decompresses or not.
         switch (_CompressionMethod_FromZipFile)
@@ -1120,14 +1098,11 @@ public partial class ZipEntry
                     return new BZip2.BZip2InputStream(input2, true);
 #endif
         }
-
-        throw new Exception(string.Format("Failed to find decompressor matching {0}",
-            _CompressionMethod_FromZipFile));
     }
 
     Stream GetExtractDecryptor(Stream input)
     {
-        if (input == null) throw new ArgumentNullException("input");
+        if (input == null) throw new ArgumentNullException(nameof(input));
 
         Stream input2;
         if (_Encryption_FromZipFile == EncryptionAlgorithm.PkzipWeak)
@@ -1207,50 +1182,33 @@ public partial class ZipEntry
 
     static string GetUnsupportedAlgorithm(uint unsupportedAlgorithmId)
     {
-        string alg;
-        switch (unsupportedAlgorithmId)
+        string alg = unsupportedAlgorithmId switch
         {
-            case 0:
-                alg = "--";
-                break;
-            case 0x6601:
-                alg = "DES";
-                break;
-            case 0x6602: // - RC2 (version needed to extract < 5.2)
-                alg = "RC2";
-                break;
-            case 0x6603: // - 3DES 168
-                alg = "3DES-168";
-                break;
-            case 0x6609: // - 3DES 112
-                alg = "3DES-112";
-                break;
-            case 0x660E: // - AES 128
-                alg = "PKWare AES128";
-                break;
-            case 0x660F: // - AES 192
-                alg = "PKWare AES192";
-                break;
-            case 0x6610: // - AES 256
-                alg = "PKWare AES256";
-                break;
-            case 0x6702: // - RC2 (version needed to extract >= 5.2)
-                alg = "RC2";
-                break;
-            case 0x6720: // - Blowfish
-                alg = "Blowfish";
-                break;
-            case 0x6721: // - Twofish
-                alg = "Twofish";
-                break;
-            case 0x6801: // - RC4
-                alg = "RC4";
-                break;
-            case 0xFFFF: // - Unknown algorithm
-            default:
-                alg = String.Format("Unknown (0x{0:X4})", unsupportedAlgorithmId);
-                break;
-        }
+            0 => "--",
+            0x6601 => "DES",
+            // - RC2 (version needed to extract < 5.2)
+            0x6602 => "RC2",
+            // - 3DES 168
+            0x6603 => "3DES-168",
+            // - 3DES 112
+            0x6609 => "3DES-112",
+            // - AES 128
+            0x660E => "PKWare AES128",
+            // - AES 192
+            0x660F => "PKWare AES192",
+            // - AES 256
+            0x6610 => "PKWare AES256",
+            // - RC2 (version needed to extract >= 5.2)
+            0x6702 => "RC2",
+            // - Blowfish
+            0x6720 => "Blowfish",
+            // - Twofish
+            0x6721 => "Twofish",
+            // - RC4
+            0x6801 => "RC4",
+            // - Unknown algorithm
+            _ => String.Format("Unknown (0x{0:X4})", unsupportedAlgorithmId),
+        };
         return alg;
     }
 
@@ -1258,37 +1216,18 @@ public partial class ZipEntry
 
     static string GetUnsupportedCompressionMethod(short compressionMethod)
     {
-        string meth;
-        switch ((int)compressionMethod)
+        string meth = (int)compressionMethod switch
         {
-            case 0:
-                meth = "Store";
-                break;
-            case 1:
-                meth = "Shrink";
-                break;
-            case 8:
-                meth = "DEFLATE";
-                break;
-            case 9:
-                meth = "Deflate64";
-                break;
-            case 12:
-                meth = "BZIP2"; // only if BZIP not compiled in
-                break;
-            case 14:
-                meth = "LZMA";
-                break;
-            case 19:
-                meth = "LZ77";
-                break;
-            case 98:
-                meth = "PPMd";
-                break;
-            default:
-                meth = String.Format("Unknown (0x{0:X4})", compressionMethod);
-                break;
-        }
+            0 => "Store",
+            1 => "Shrink",
+            8 => "DEFLATE",
+            9 => "Deflate64",
+            12 => "BZIP2",// only if BZIP not compiled in
+            14 => "LZMA",
+            19 => "LZ77",
+            98 => "PPMd",
+            _ => String.Format("Unknown (0x{0:X4})", compressionMethod),
+        };
         return meth;
     }
 
@@ -1370,7 +1309,7 @@ public partial class ZipEntry
     /// </summary>
     bool IsDoneWithOutputToBaseDir(string baseDir, out string outFileName)
     {
-        if (baseDir == null) throw new ArgumentNullException("baseDir");
+        if (baseDir == null) throw new ArgumentNullException(nameof(baseDir));
         // Sometimes the name on the entry starts with a slash.
         // Rather than unpack to the root of the volume, we're going to
         // drop the slash and unpack to the specified base directory.
@@ -1378,10 +1317,10 @@ public partial class ZipEntry
 
         // workitem 11772: remove drive letter with separator
         if (f.IndexOf(':') == 1)
-            f = f.Substring(2);
+            f = f[2..];
 
         if (f.StartsWith("/"))
-            f = f.Substring(1);
+            f = f[1..];
 
         f = SharedUtilities.SanitizePath(f);
 
@@ -1425,10 +1364,7 @@ public partial class ZipEntry
     /// Validates that the args are consistent; returning whether the caller can return
     /// because it's done, or not (caller should continue)
     /// </summary>
-    bool IsDoneWithOutputToStream()
-    {
-        return IsDirectory || FileName.EndsWith("/");
-    }
+    bool IsDoneWithOutputToStream() => IsDirectory || FileName.EndsWith("/");
 
     #endregion
 

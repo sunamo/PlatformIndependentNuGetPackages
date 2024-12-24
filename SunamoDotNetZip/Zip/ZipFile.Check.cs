@@ -34,84 +34,81 @@ using System.Collections.Generic;
 
     public partial class ZipFile
     {
-        /// <summary>
-        ///   Checks a zip file to see if its directory is consistent.
-        /// </summary>
-        ///
-        /// <remarks>
-        ///
-        /// <para>
-        ///   In cases of data error, the directory within a zip file can get out
-        ///   of synch with the entries in the zip file.  This method checks the
-        ///   given zip file and returns true if this has occurred.
-        /// </para>
-        ///
-        /// <para> This method may take a long time to run for large zip files.  </para>
-        ///
-        /// <para>
-        ///   This method is not supported in the Reduced version of DotNetZip.
-        /// </para>
-        ///
-        /// <para>
-        ///   Developers using COM can use the <see
-        ///   cref="ComHelper.CheckZip(String)">ComHelper.CheckZip(String)</see>
-        ///   method.
-        /// </para>
-        ///
-        /// </remarks>
-        ///
-        /// <param name="zipFileName">The filename to of the zip file to check.</param>
-        ///
-        /// <returns>true if the named zip file checks OK. Otherwise, false. </returns>
-        ///
-        /// <seealso cref="FixZipDirectory(string)"/>
-        /// <seealso cref="CheckZip(string,bool,System.IO.TextWriter)"/>
-        public static bool CheckZip(string zipFileName)
-        {
-            return CheckZip(zipFileName, false, null);
-        }
+    /// <summary>
+    ///   Checks a zip file to see if its directory is consistent.
+    /// </summary>
+    ///
+    /// <remarks>
+    ///
+    /// <para>
+    ///   In cases of data error, the directory within a zip file can get out
+    ///   of synch with the entries in the zip file.  This method checks the
+    ///   given zip file and returns true if this has occurred.
+    /// </para>
+    ///
+    /// <para> This method may take a long time to run for large zip files.  </para>
+    ///
+    /// <para>
+    ///   This method is not supported in the Reduced version of DotNetZip.
+    /// </para>
+    ///
+    /// <para>
+    ///   Developers using COM can use the <see
+    ///   cref="ComHelper.CheckZip(String)">ComHelper.CheckZip(String)</see>
+    ///   method.
+    /// </para>
+    ///
+    /// </remarks>
+    ///
+    /// <param name="zipFileName">The filename to of the zip file to check.</param>
+    ///
+    /// <returns>true if the named zip file checks OK. Otherwise, false. </returns>
+    ///
+    /// <seealso cref="FixZipDirectory(string)"/>
+    /// <seealso cref="CheckZip(string,bool,System.IO.TextWriter)"/>
+    public static bool CheckZip(string zipFileName) => CheckZip(zipFileName, false, null);
 
 
-        /// <summary>
-        ///   Checks a zip file to see if its directory is consistent,
-        ///   and optionally fixes the directory if necessary.
-        /// </summary>
-        ///
-        /// <remarks>
-        ///
-        /// <para>
-        ///   In cases of data error, the directory within a zip file can get out of
-        ///   synch with the entries in the zip file.  This method checks the given
-        ///   zip file, and returns true if this has occurred. It also optionally
-        ///   fixes the zipfile, saving the fixed copy in <em>Name</em>_Fixed.zip.
-        /// </para>
-        ///
-        /// <para>
-        ///   This method may take a long time to run for large zip files.  It
-        ///   will take even longer if the file actually needs to be fixed, and if
-        ///   <c>fixIfNecessary</c> is true.
-        /// </para>
-        ///
-        /// <para>
-        ///   This method is not supported in the Reduced version of DotNetZip.
-        /// </para>
-        ///
-        /// </remarks>
-        ///
-        /// <param name="zipFileName">The filename to of the zip file to check.</param>
-        ///
-        /// <param name="fixIfNecessary">If true, the method will fix the zip file if
-        ///     necessary.</param>
-        ///
-        /// <param name="writer">
-        /// a TextWriter in which messages generated while checking will be written.
-        /// </param>
-        ///
-        /// <returns>true if the named zip is OK; false if the file needs to be fixed.</returns>
-        ///
-        /// <seealso cref="CheckZip(string)"/>
-        /// <seealso cref="FixZipDirectory(string)"/>
-        public static bool CheckZip(string zipFileName, bool fixIfNecessary,
+    /// <summary>
+    ///   Checks a zip file to see if its directory is consistent,
+    ///   and optionally fixes the directory if necessary.
+    /// </summary>
+    ///
+    /// <remarks>
+    ///
+    /// <para>
+    ///   In cases of data error, the directory within a zip file can get out of
+    ///   synch with the entries in the zip file.  This method checks the given
+    ///   zip file, and returns true if this has occurred. It also optionally
+    ///   fixes the zipfile, saving the fixed copy in <em>Name</em>_Fixed.zip.
+    /// </para>
+    ///
+    /// <para>
+    ///   This method may take a long time to run for large zip files.  It
+    ///   will take even longer if the file actually needs to be fixed, and if
+    ///   <c>fixIfNecessary</c> is true.
+    /// </para>
+    ///
+    /// <para>
+    ///   This method is not supported in the Reduced version of DotNetZip.
+    /// </para>
+    ///
+    /// </remarks>
+    ///
+    /// <param name="zipFileName">The filename to of the zip file to check.</param>
+    ///
+    /// <param name="fixIfNecessary">If true, the method will fix the zip file if
+    ///     necessary.</param>
+    ///
+    /// <param name="writer">
+    /// a TextWriter in which messages generated while checking will be written.
+    /// </param>
+    ///
+    /// <returns>true if the named zip is OK; false if the file needs to be fixed.</returns>
+    ///
+    /// <seealso cref="CheckZip(string)"/>
+    /// <seealso cref="FixZipDirectory(string)"/>
+    public static bool CheckZip(string zipFileName, bool fixIfNecessary,
                                     TextWriter writer)
 
         {
@@ -119,9 +116,11 @@ using System.Collections.Generic;
             bool isOk = true;
             try
             {
-                zip1 = new ZipFile();
-                zip1.FullScan = true;
-                zip1.Initialize(zipFileName);
+            zip1 = new ZipFile
+            {
+                FullScan = true
+            };
+            zip1.Initialize(zipFileName);
 
                 zip2 = ZipFile.Read(zipFileName);
 
@@ -134,40 +133,35 @@ using System.Collections.Generic;
                             if (e1._RelativeOffsetOfLocalHeader != e2._RelativeOffsetOfLocalHeader)
                             {
                                 isOk = false;
-                                if (writer != null)
-                                writer.WriteLine("{0}: mismatch in RelativeOffsetOfLocalHeader  (0x{1:X16} != 0x{2:X16})",
+                                writer?.WriteLine("{0}: mismatch in RelativeOffsetOfLocalHeader  (0x{1:X16} != 0x{2:X16})",
                                                         e1.FileName, e1._RelativeOffsetOfLocalHeader,
                                                         e2._RelativeOffsetOfLocalHeader);
                             }
                             if (e1._CompressedSize != e2._CompressedSize)
                             {
                                 isOk = false;
-                                if (writer != null)
-                                writer.WriteLine("{0}: mismatch in CompressedSize  (0x{1:X16} != 0x{2:X16})",
+                                writer?.WriteLine("{0}: mismatch in CompressedSize  (0x{1:X16} != 0x{2:X16})",
                                                         e1.FileName, e1._CompressedSize,
                                                         e2._CompressedSize);
                             }
                             if (e1._UncompressedSize != e2._UncompressedSize)
                             {
                                 isOk = false;
-                                if (writer != null)
-                                writer.WriteLine("{0}: mismatch in UncompressedSize  (0x{1:X16} != 0x{2:X16})",
+                                writer?.WriteLine("{0}: mismatch in UncompressedSize  (0x{1:X16} != 0x{2:X16})",
                                                         e1.FileName, e1._UncompressedSize,
                                                         e2._UncompressedSize);
                             }
                             if (e1.CompressionMethod != e2.CompressionMethod)
                             {
                                 isOk = false;
-                                if (writer != null)
-                                writer.WriteLine("{0}: mismatch in CompressionMethod  (0x{1:X4} != 0x{2:X4})",
+                                writer?.WriteLine("{0}: mismatch in CompressionMethod  (0x{1:X4} != 0x{2:X4})",
                                                         e1.FileName, e1.CompressionMethod,
                                                         e2.CompressionMethod);
                             }
                             if (e1.Crc != e2.Crc)
                             {
                                 isOk = false;
-                                if (writer != null)
-                                writer.WriteLine("{0}: mismatch in Crc32  (0x{1:X4} != 0x{2:X4})",
+                                writer?.WriteLine("{0}: mismatch in Crc32  (0x{1:X4} != 0x{2:X4})",
                                                         e1.FileName, e1.Crc,
                                                         e2.Crc);
                             }
@@ -190,8 +184,8 @@ using System.Collections.Generic;
             }
             finally
             {
-                if (zip1 != null) zip1.Dispose();
-                if (zip2 != null) zip2.Dispose();
+                zip1?.Dispose();
+                zip2?.Dispose();
             }
             return isOk;
         }
@@ -234,13 +228,11 @@ using System.Collections.Generic;
         /// <seealso cref="CheckZip(string,bool,System.IO.TextWriter)"/>
         public static void FixZipDirectory(string zipFileName)
         {
-            using (var zip = new ZipFile())
-            {
-                zip.FullScan = true;
-                zip.Initialize(zipFileName);
-                zip.Save(zipFileName);
-            }
-        }
+        using var zip = new ZipFile();
+        zip.FullScan = true;
+        zip.Initialize(zipFileName);
+        zip.Save(zipFileName);
+    }
 
 
 
@@ -334,7 +326,7 @@ using System.Collections.Generic;
                     builder.Append(string.Format("      CD64 offset: 0x{0:X16}\n", this._OffsetOfCentralDirectory64));
                 else
                     builder.Append(string.Format("        CD offset: 0x{0:X8}\n", this._OffsetOfCentralDirectory));
-                builder.Append("\n");
+                builder.Append('\n');
                 foreach (ZipEntry entry in this._entries.Values)
                 {
                     builder.Append(entry.Info);

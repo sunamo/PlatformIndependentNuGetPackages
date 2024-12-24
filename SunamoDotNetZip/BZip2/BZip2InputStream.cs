@@ -65,7 +65,7 @@ using System.IO;
     public class BZip2InputStream : System.IO.Stream
     {
         bool _disposed;
-        bool _leaveOpen;
+    readonly bool _leaveOpen;
         Int64 totalBytesRead;
         private int last;
 
@@ -80,7 +80,7 @@ using System.IO;
         private bool blockRandomised;
         private int bsBuff;
         private int bsLive;
-        private readonly Ionic.Zlib.CRC32 crc = new Ionic.Zlib.CRC32(true);
+        private readonly Ionic.Zlib.CRC32 crc = new(true);
         private int nInUse;
         private Stream input;
         private int currentChar = -1;
@@ -297,10 +297,9 @@ using System.IO;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("BZip2Stream");
-                return this.input.CanRead;
-            }
+            return _disposed ? throw new ObjectDisposedException("BZip2Stream") : input.CanRead;
         }
+    }
 
 
         /// <summary>
@@ -325,10 +324,9 @@ using System.IO;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("BZip2Stream");
-                return input.CanWrite;
-            }
+            return _disposed ? throw new ObjectDisposedException("BZip2Stream") : input.CanWrite;
         }
+    }
 
         /// <summary>
         /// Flush the stream.
@@ -365,45 +363,36 @@ using System.IO;
             set { throw new NotImplementedException(); }
         }
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="offset">this is irrelevant, since it will always throw!</param>
-        /// <param name="origin">this is irrelevant, since it will always throw!</param>
-        /// <returns>irrelevant!</returns>
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="offset">this is irrelevant, since it will always throw!</param>
+    /// <param name="origin">this is irrelevant, since it will always throw!</param>
+    /// <returns>irrelevant!</returns>
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => throw new NotImplementedException();
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="value">this is irrelevant, since it will always throw!</param>
-        public override void SetLength(long value)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="value">this is irrelevant, since it will always throw!</param>
+    public override void SetLength(long value) => throw new NotImplementedException();
 
-        /// <summary>
-        ///   Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name='buffer'>this parameter is never used</param>
-        /// <param name='offset'>this parameter is never used</param>
-        /// <param name='count'>this parameter is never used</param>
-        public override void Write(byte[] buffer, int offset, int count)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    ///   Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name='buffer'>this parameter is never used</param>
+    /// <param name='offset'>this parameter is never used</param>
+    /// <param name='count'>this parameter is never used</param>
+    public override void Write(byte[] buffer, int offset, int count) => throw new NotImplementedException();
 
 
-        /// <summary>
-        ///   Dispose the stream.
-        /// </summary>
-        /// <param name="disposing">
-        ///   indicates whether the Dispose method was invoked by user code.
-        /// </param>
-        protected override void Dispose(bool disposing)
+    /// <summary>
+    ///   Dispose the stream.
+    /// </summary>
+    /// <param name="disposing">
+    ///   indicates whether the Dispose method was invoked by user code.
+    /// </param>
+    protected override void Dispose(bool disposing)
         {
             try
             {
@@ -638,21 +627,15 @@ using System.IO;
             return bit != 0;
         }
 
-        private char bsGetUByte()
-        {
-            return (char) GetBits(8);
-        }
+    private char bsGetUByte() => (char)GetBits(8);
 
-        private uint bsGetInt()
-        {
-            return (uint)((((((GetBits(8) << 8) | GetBits(8)) << 8) | GetBits(8)) << 8) | GetBits(8));
-        }
+    private uint bsGetInt() => (uint)((((((GetBits(8) << 8) | GetBits(8)) << 8) | GetBits(8)) << 8) | GetBits(8));
 
 
-        /**
-         * Called by createHuffmanDecodingTables() exclusively.
-         */
-        private static void hbCreateDecodeTables(int[] limit,
+    /**
+     * Called by createHuffmanDecodingTables() exclusively.
+     */
+    private static void hbCreateDecodeTables(int[] limit,
                                                  int[] bbase, int[] perm,  char[] length,
                                                  int minLen, int maxLen, int alphaSize)
         {

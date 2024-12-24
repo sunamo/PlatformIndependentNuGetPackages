@@ -350,72 +350,69 @@ using Ionic.Zip;
         }
 
 
-        /// <summary>Provides a string representation of the instance.</summary>
-        /// <remarks>
-        ///   <para>
-        ///     This can be useful for debugging purposes.
-        ///   </para>
-        /// </remarks>
-        /// <returns>a string representation of the instance.</returns>
-        public override String ToString()
-        {
-            return String.Format ("ZipInputStream::{0}(leaveOpen({1})))", _name, _leaveUnderlyingStreamOpen);
-        }
+    /// <summary>Provides a string representation of the instance.</summary>
+    /// <remarks>
+    ///   <para>
+    ///     This can be useful for debugging purposes.
+    ///   </para>
+    /// </remarks>
+    /// <returns>a string representation of the instance.</returns>
+    public override String ToString() => String.Format("ZipInputStream::{0}(leaveOpen({1})))", _name, _leaveUnderlyingStreamOpen);
 
 
-        /// <summary>
-        ///   The text encoding to use when reading entries into the zip archive, for
-        ///   those entries whose filenames or comments cannot be encoded with the
-        ///   default (IBM437) encoding.
-        /// </summary>
-        ///
-        /// <remarks>
-        /// <para>
-        ///   In <see href="http://www.pkware.com/documents/casestudies/APPNOTE.TXT">its
-        ///   zip specification</see>, PKWare describes two options for encoding
-        ///   filenames and comments: using IBM437 or UTF-8.  But, some archiving tools
-        ///   or libraries do not follow the specification, and instead encode
-        ///   characters using the system default code page.  For example, WinRAR when
-        ///   run on a machine in Shanghai may encode filenames with the Big-5 Chinese
-        ///   (950) code page.  This behavior is contrary to the Zip specification, but
-        ///   it occurs anyway.
-        /// </para>
-        ///
-        /// <para>
-        ///   When using DotNetZip to read zip archives that use something other than
-        ///   UTF-8 or IBM437, set this property to specify the code page to use when
-        ///   reading encoded filenames and comments for each <c>ZipEntry</c> in the zip
-        ///   file.
-        /// </para>
-        ///
-        /// <para>
-        ///   This property is "provisional". When the entry in the zip archive is not
-        ///   explicitly marked as using UTF-8, then IBM437 is used to decode filenames
-        ///   and comments. If a loss of data would result from using IBM436 -
-        ///   specifically when encoding and decoding is not reflexive - the codepage
-        ///   specified here is used. It is possible, therefore, to have a given entry
-        ///   with a <c>Comment</c> encoded in IBM437 and a <c>FileName</c> encoded with
-        ///   the specified "provisional" codepage.
-        /// </para>
-        ///
-        /// <para>
-        ///   When a zip file uses an arbitrary, non-UTF8 code page for encoding, there
-        ///   is no standard way for the reader application - whether DotNetZip, WinZip,
-        ///   WinRar, or something else - to know which codepage has been used for the
-        ///   entries. Readers of zip files are not able to inspect the zip file and
-        ///   determine the codepage that was used for the entries contained within it.
-        ///   It is left to the application or user to determine the necessary codepage
-        ///   when reading zip files encoded this way.  If you use an incorrect codepage
-        ///   when reading a zipfile, you will get entries with filenames that are
-        ///   incorrect, and the incorrect filenames may even contain characters that
-        ///   are not legal for use within filenames in Windows. Extracting entries with
-        ///   illegal characters in the filenames will lead to exceptions. It's too bad,
-        ///   but this is just the way things are with code pages in zip files. Caveat
-        ///   Emptor.
-        /// </para>
-        ///
-        /// </remarks>
-        public System.Text.Encoding ProvisionalAlternateEncoding
+    /// <summary>
+    ///   The text encoding to use when reading entries into the zip archive, for
+    ///   those entries whose filenames or comments cannot be encoded with the
+    ///   default (IBM437) encoding.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// <para>
+    ///   In <see href="http://www.pkware.com/documents/casestudies/APPNOTE.TXT">its
+    ///   zip specification</see>, PKWare describes two options for encoding
+    ///   filenames and comments: using IBM437 or UTF-8.  But, some archiving tools
+    ///   or libraries do not follow the specification, and instead encode
+    ///   characters using the system default code page.  For example, WinRAR when
+    ///   run on a machine in Shanghai may encode filenames with the Big-5 Chinese
+    ///   (950) code page.  This behavior is contrary to the Zip specification, but
+    ///   it occurs anyway.
+    /// </para>
+    ///
+    /// <para>
+    ///   When using DotNetZip to read zip archives that use something other than
+    ///   UTF-8 or IBM437, set this property to specify the code page to use when
+    ///   reading encoded filenames and comments for each <c>ZipEntry</c> in the zip
+    ///   file.
+    /// </para>
+    ///
+    /// <para>
+    ///   This property is "provisional". When the entry in the zip archive is not
+    ///   explicitly marked as using UTF-8, then IBM437 is used to decode filenames
+    ///   and comments. If a loss of data would result from using IBM436 -
+    ///   specifically when encoding and decoding is not reflexive - the codepage
+    ///   specified here is used. It is possible, therefore, to have a given entry
+    ///   with a <c>Comment</c> encoded in IBM437 and a <c>FileName</c> encoded with
+    ///   the specified "provisional" codepage.
+    /// </para>
+    ///
+    /// <para>
+    ///   When a zip file uses an arbitrary, non-UTF8 code page for encoding, there
+    ///   is no standard way for the reader application - whether DotNetZip, WinZip,
+    ///   WinRar, or something else - to know which codepage has been used for the
+    ///   entries. Readers of zip files are not able to inspect the zip file and
+    ///   determine the codepage that was used for the entries contained within it.
+    ///   It is left to the application or user to determine the necessary codepage
+    ///   when reading zip files encoded this way.  If you use an incorrect codepage
+    ///   when reading a zipfile, you will get entries with filenames that are
+    ///   incorrect, and the incorrect filenames may even contain characters that
+    ///   are not legal for use within filenames in Windows. Extracting entries with
+    ///   illegal characters in the filenames will lead to exceptions. It's too bad,
+    ///   but this is just the way things are with code pages in zip files. Caveat
+    ///   Emptor.
+    /// </para>
+    ///
+    /// </remarks>
+    public System.Text.Encoding ProvisionalAlternateEncoding
         {
             get
             {
@@ -732,66 +729,57 @@ using Ionic.Zip;
             set { Seek(value, SeekOrigin.Begin); }
         }
 
-        /// <summary>
-        /// This is a no-op.
-        /// </summary>
-        public override void Flush()
-        {
-            throw new NotSupportedException("Flush");
-        }
+    /// <summary>
+    /// This is a no-op.
+    /// </summary>
+    public override void Flush() => throw new NotSupportedException("Flush");
 
 
-        /// <summary>
-        /// This method always throws a NotSupportedException.
-        /// </summary>
-        /// <param name="buffer">ignored</param>
-        /// <param name="offset">ignored</param>
-        /// <param name="count">ignored</param>
-        public override void Write(byte[] buffer, int offset, int count)
-        {
-            throw new NotSupportedException("Write");
-        }
+    /// <summary>
+    /// This method always throws a NotSupportedException.
+    /// </summary>
+    /// <param name="buffer">ignored</param>
+    /// <param name="offset">ignored</param>
+    /// <param name="count">ignored</param>
+    public override void Write(byte[] buffer, int offset, int count) => throw new NotSupportedException("Write");
 
 
-        /// <summary>
-        ///   This method seeks in the underlying stream.
-        /// </summary>
-        ///
-        /// <remarks>
-        /// <para>
-        ///   Call this method if you want to seek around within the zip file for random access.
-        /// </para>
-        ///
-        /// <para>
-        ///   Applications can intermix calls to <c>Seek()</c> with calls to <see
-        ///   cref="GetNextEntry()"/>.  After a call to <c>Seek()</c>,
-        ///   <c>GetNextEntry()</c> will get the next <c>ZipEntry</c> that falls after
-        ///   the current position in the input stream. You're on your own for finding
-        ///   out just where to seek in the stream, to get to the various entries.
-        /// </para>
-        ///
-        /// </remarks>
-        ///
-        /// <param name="offset">the offset point to seek to</param>
-        /// <param name="origin">the reference point from which to seek</param>
-        /// <returns>The new position</returns>
-        public override long Seek(long offset, SeekOrigin origin)
+    /// <summary>
+    ///   This method seeks in the underlying stream.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// <para>
+    ///   Call this method if you want to seek around within the zip file for random access.
+    /// </para>
+    ///
+    /// <para>
+    ///   Applications can intermix calls to <c>Seek()</c> with calls to <see
+    ///   cref="GetNextEntry()"/>.  After a call to <c>Seek()</c>,
+    ///   <c>GetNextEntry()</c> will get the next <c>ZipEntry</c> that falls after
+    ///   the current position in the input stream. You're on your own for finding
+    ///   out just where to seek in the stream, to get to the various entries.
+    /// </para>
+    ///
+    /// </remarks>
+    ///
+    /// <param name="offset">the offset point to seek to</param>
+    /// <param name="origin">the reference point from which to seek</param>
+    /// <returns>The new position</returns>
+    public override long Seek(long offset, SeekOrigin origin)
         {
             _findRequired= true;
             return _inputStream.Seek(offset, origin);
         }
 
-        /// <summary>
-        /// This method always throws a NotSupportedException.
-        /// </summary>
-        /// <param name="value">ignored</param>
-        public override void SetLength(long value)
-        {
-            throw new NotSupportedException();
-        }
+    /// <summary>
+    /// This method always throws a NotSupportedException.
+    /// </summary>
+    /// <param name="value">ignored</param>
+    public override void SetLength(long value) => throw new NotSupportedException();
 
 
-        private Stream _inputStream;
+    private Stream _inputStream;
         private System.Text.Encoding _provisionalAlternateEncoding;
         private ZipEntry _currentEntry;
         private bool _firstEntry;

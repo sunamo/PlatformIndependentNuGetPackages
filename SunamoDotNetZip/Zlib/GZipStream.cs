@@ -663,10 +663,9 @@ using System.IO;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("GZipStream");
-                return _baseStream._stream.CanRead;
-            }
+            return _disposed ? throw new ObjectDisposedException("GZipStream") : _baseStream._stream.CanRead;
         }
+    }
 
         /// <summary>
         /// Indicates whether the stream supports Seek operations.
@@ -690,10 +689,9 @@ using System.IO;
         {
             get
             {
-                if (_disposed) throw new ObjectDisposedException("GZipStream");
-                return _baseStream._stream.CanWrite;
-            }
+            return _disposed ? throw new ObjectDisposedException("GZipStream") : _baseStream._stream.CanWrite;
         }
+    }
 
         /// <summary>
         /// Flush the stream.
@@ -729,12 +727,12 @@ using System.IO;
             {
                 if (this._baseStream._streamMode == ZlibBaseStream.StreamMode.Writer)
                     return this._baseStream._z.TotalBytesOut + _headerByteCount;
-                if (this._baseStream._streamMode == ZlibBaseStream.StreamMode.Reader)
-                    return this._baseStream._z.TotalBytesIn + this._baseStream._gzipHeaderByteCount;
-                return 0;
-            }
+            return this._baseStream._streamMode == ZlibBaseStream.StreamMode.Reader
+                    ? this._baseStream._z.TotalBytesIn + this._baseStream._gzipHeaderByteCount
+                    : 0;
+        }
 
-            set { throw new NotImplementedException(); }
+        set { throw new NotImplementedException(); }
         }
 
         /// <summary>
@@ -787,49 +785,43 @@ using System.IO;
 
 
 
-        /// <summary>
-        ///   Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="offset">irrelevant; it will always throw!</param>
-        /// <param name="origin">irrelevant; it will always throw!</param>
-        /// <returns>irrelevant!</returns>
-        public override long Seek(long offset, SeekOrigin origin)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    ///   Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="offset">irrelevant; it will always throw!</param>
+    /// <param name="origin">irrelevant; it will always throw!</param>
+    /// <returns>irrelevant!</returns>
+    public override long Seek(long offset, SeekOrigin origin) => throw new NotImplementedException();
 
-        /// <summary>
-        ///   Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="value">irrelevant; this method will always throw!</param>
-        public override void SetLength(long value)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    ///   Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="value">irrelevant; this method will always throw!</param>
+    public override void SetLength(long value) => throw new NotImplementedException();
 
-        /// <summary>
-        ///   Write data to the stream.
-        /// </summary>
-        ///
-        /// <remarks>
-        /// <para>
-        ///   If you wish to use the <c>GZipStream</c> to compress data while writing,
-        ///   you can create a <c>GZipStream</c> with <c>CompressionMode.Compress</c>, and a
-        ///   writable output stream.  Then call <c>Write()</c> on that <c>GZipStream</c>,
-        ///   providing uncompressed data as input.  The data sent to the output stream
-        ///   will be the compressed form of the data written.
-        /// </para>
-        ///
-        /// <para>
-        ///   A <c>GZipStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but not
-        ///   both. Writing implies compression.  Reading implies decompression.
-        /// </para>
-        ///
-        /// </remarks>
-        /// <param name="buffer">The buffer holding data to write to the stream.</param>
-        /// <param name="offset">the offset within that data array to find the first byte to write.</param>
-        /// <param name="count">the number of bytes to write.</param>
-        public override void Write(byte[] buffer, int offset, int count)
+    /// <summary>
+    ///   Write data to the stream.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// <para>
+    ///   If you wish to use the <c>GZipStream</c> to compress data while writing,
+    ///   you can create a <c>GZipStream</c> with <c>CompressionMode.Compress</c>, and a
+    ///   writable output stream.  Then call <c>Write()</c> on that <c>GZipStream</c>,
+    ///   providing uncompressed data as input.  The data sent to the output stream
+    ///   will be the compressed form of the data written.
+    /// </para>
+    ///
+    /// <para>
+    ///   A <c>GZipStream</c> can be used for <c>Read()</c> or <c>Write()</c>, but not
+    ///   both. Writing implies compression.  Reading implies decompression.
+    /// </para>
+    ///
+    /// </remarks>
+    /// <param name="buffer">The buffer holding data to write to the stream.</param>
+    /// <param name="offset">the offset within that data array to find the first byte to write.</param>
+    /// <param name="count">the number of bytes to write.</param>
+    public override void Write(byte[] buffer, int offset, int count)
         {
             if (_disposed) throw new ObjectDisposedException("GZipStream");
             if (_baseStream._streamMode == ZlibBaseStream.StreamMode.Undefined)
@@ -851,7 +843,7 @@ using System.IO;
         #endregion
 
 
-        internal static readonly System.DateTime _unixEpoch = new System.DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        internal static readonly System.DateTime _unixEpoch = new(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         internal static readonly System.Text.Encoding iso8859dash1 = System.Text.Encoding.GetEncoding("iso-8859-1");
 
 
@@ -939,14 +931,12 @@ using System.IO;
         /// <returns>The string in compressed form</returns>
         public static byte[] CompressString(String s)
         {
-            using (var ms = new MemoryStream())
-            {
-                System.IO.Stream compressor =
-                    new GZipStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
-                ZlibBaseStream.CompressString(s, compressor);
-                return ms.ToArray();
-            }
-        }
+        using var ms = new MemoryStream();
+        System.IO.Stream compressor =
+            new GZipStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
+        ZlibBaseStream.CompressString(s, compressor);
+        return ms.ToArray();
+    }
 
 
         /// <summary>
@@ -967,15 +957,13 @@ using System.IO;
         /// <returns>The data in compressed form</returns>
         public static byte[] CompressBuffer(byte[] b)
         {
-            using (var ms = new MemoryStream())
-            {
-                System.IO.Stream compressor =
-                    new GZipStream( ms, CompressionMode.Compress, CompressionLevel.BestCompression );
+        using var ms = new MemoryStream();
+        System.IO.Stream compressor =
+            new GZipStream(ms, CompressionMode.Compress, CompressionLevel.BestCompression);
 
-                ZlibBaseStream.CompressBuffer(b, compressor);
-                return ms.ToArray();
-            }
-        }
+        ZlibBaseStream.CompressBuffer(b, compressor);
+        return ms.ToArray();
+    }
 
 
         /// <summary>
@@ -992,12 +980,10 @@ using System.IO;
         /// <returns>The uncompressed string</returns>
         public static String UncompressString(byte[] compressed)
         {
-            using (var input = new MemoryStream(compressed))
-            {
-                Stream decompressor = new GZipStream(input, CompressionMode.Decompress);
-                return ZlibBaseStream.UncompressString(compressed, decompressor);
-            }
-        }
+        using var input = new MemoryStream(compressed);
+        Stream decompressor = new GZipStream(input, CompressionMode.Decompress);
+        return ZlibBaseStream.UncompressString(compressed, decompressor);
+    }
 
 
         /// <summary>
@@ -1014,14 +1000,12 @@ using System.IO;
         /// <returns>The data in uncompressed form</returns>
         public static byte[] UncompressBuffer(byte[] compressed)
         {
-            using (var input = new System.IO.MemoryStream(compressed))
-            {
-                System.IO.Stream decompressor =
-                    new GZipStream( input, CompressionMode.Decompress );
+        using var input = new System.IO.MemoryStream(compressed);
+        System.IO.Stream decompressor =
+            new GZipStream(input, CompressionMode.Decompress);
 
-                return ZlibBaseStream.UncompressBuffer(compressed, decompressor);
-            }
-        }
+        return ZlibBaseStream.UncompressBuffer(compressed, decompressor);
+    }
 
 
     }

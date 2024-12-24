@@ -243,10 +243,7 @@ partial class ZipFile
     /// </example>
     ///
     /// <param name="selectionCriteria">The criteria for file selection</param>
-    public void AddSelectedFiles(String selectionCriteria)
-    {
-        this.AddSelectedFiles(selectionCriteria, ".", null, false);
-    }
+    public void AddSelectedFiles(String selectionCriteria) => this.AddSelectedFiles(selectionCriteria, ".", null, false);
 
     /// <summary>
     ///   Adds to the ZipFile a set of files from the disk that conform to the
@@ -303,10 +300,7 @@ partial class ZipFile
     /// <param name="recurseDirectories">
     ///   If true, the file selection will recurse into subdirectories.
     /// </param>
-    public void AddSelectedFiles(String selectionCriteria, bool recurseDirectories)
-    {
-        this.AddSelectedFiles(selectionCriteria, ".", null, recurseDirectories);
-    }
+    public void AddSelectedFiles(String selectionCriteria, bool recurseDirectories) => this.AddSelectedFiles(selectionCriteria, ".", null, recurseDirectories);
 
     /// <summary>
     ///   Adds to the ZipFile a set of files from a specified directory in the
@@ -361,10 +355,7 @@ partial class ZipFile
     /// <param name="directoryOnDisk">
     /// The name of the directory on the disk from which to select files.
     /// </param>
-    public void AddSelectedFiles(String selectionCriteria, String directoryOnDisk)
-    {
-        this.AddSelectedFiles(selectionCriteria, directoryOnDisk, null, false);
-    }
+    public void AddSelectedFiles(String selectionCriteria, String directoryOnDisk) => this.AddSelectedFiles(selectionCriteria, directoryOnDisk, null, false);
 
 
     /// <summary>
@@ -437,10 +428,7 @@ partial class ZipFile
     /// <param name="recurseDirectories">
     ///   If true, the file selection will recurse into subdirectories.
     /// </param>
-    public void AddSelectedFiles(String selectionCriteria, String directoryOnDisk, bool recurseDirectories)
-    {
-        this.AddSelectedFiles(selectionCriteria, directoryOnDisk, null, recurseDirectories);
-    }
+    public void AddSelectedFiles(String selectionCriteria, String directoryOnDisk, bool recurseDirectories) => this.AddSelectedFiles(selectionCriteria, directoryOnDisk, null, recurseDirectories);
 
 
     /// <summary>
@@ -504,10 +492,7 @@ partial class ZipFile
     /// </param>
     public void AddSelectedFiles(String selectionCriteria,
                                  String directoryOnDisk,
-                                 String directoryPathInArchive)
-    {
-        this.AddSelectedFiles(selectionCriteria, directoryOnDisk, directoryPathInArchive, false);
-    }
+                                 String directoryPathInArchive) => this.AddSelectedFiles(selectionCriteria, directoryOnDisk, directoryPathInArchive, false);
 
     /// <summary>
     ///   Adds to the ZipFile a selection of files from the specified directory on
@@ -573,14 +558,11 @@ partial class ZipFile
     public void AddSelectedFiles(String selectionCriteria,
                                  String directoryOnDisk,
                                  String directoryPathInArchive,
-                                 bool recurseDirectories)
-    {
-        _AddOrUpdateSelectedFiles(selectionCriteria,
+                                 bool recurseDirectories) => _AddOrUpdateSelectedFiles(selectionCriteria,
                                   directoryOnDisk,
                                   directoryPathInArchive,
                                   recurseDirectories,
                                   false);
-    }
 
     /// <summary>
     ///   Updates the ZipFile with a selection of files from the disk that conform
@@ -625,21 +607,14 @@ partial class ZipFile
     public void UpdateSelectedFiles(String selectionCriteria,
                                  String directoryOnDisk,
                                  String directoryPathInArchive,
-                                 bool recurseDirectories)
-    {
-        _AddOrUpdateSelectedFiles(selectionCriteria,
+                                 bool recurseDirectories) => _AddOrUpdateSelectedFiles(selectionCriteria,
                                   directoryOnDisk,
                                   directoryPathInArchive,
                                   recurseDirectories,
                                   true);
-    }
 
 
-    private string EnsureendInSlash(string s)
-    {
-        if (s.EndsWith("\\")) return s;
-        return s + "\\";
-    }
+    private string EnsureendInSlash(string s) => s.EndsWith("\\") ? s : s + "\\";
 
     private void _AddOrUpdateSelectedFiles(String selectionCriteria,
                                            String directoryOnDisk,
@@ -658,10 +633,10 @@ partial class ZipFile
         }
 
         // workitem 9176
-        while (directoryOnDisk.EndsWith("\\")) directoryOnDisk = directoryOnDisk.Substring(0, directoryOnDisk.Length - 1);
+        while (directoryOnDisk.EndsWith("\\")) directoryOnDisk = directoryOnDisk[..^1];
         if (Verbose) StatusMessageTextWriter.WriteLine("adding selection '{0}' from dir '{1}'...",
                                                            selectionCriteria, directoryOnDisk);
-        FileSelector ff = new FileSelector(selectionCriteria,
+        FileSelector ff = new(selectionCriteria,
                                                        AddDirectoryWillTraverseReparsePoints);
         var itemsToAdd = ff.SelectFiles(directoryOnDisk, recurseDirectories);
 
@@ -706,8 +681,7 @@ partial class ZipFile
         string upperString = original.ToUpper();
         string upperPattern = pattern.ToUpper();
         int p1 = upperString.IndexOf(upperPattern);
-        if (p1 != 0) return original;
-        return replacement + original.Substring(upperPattern.Length);
+        return p1 != 0 ? original : replacement + original[upperPattern.Length..];
     }
 
 #if NOT
@@ -797,7 +771,7 @@ partial class ZipFile
     /// <returns>a collection of ZipEntry objects that conform to the inclusion spec</returns>
     public ICollection<ZipEntry> SelectEntries(String selectionCriteria)
     {
-        FileSelector ff = new FileSelector(selectionCriteria,
+        FileSelector ff = new(selectionCriteria,
                                                        AddDirectoryWillTraverseReparsePoints);
         return ff.SelectEntries(this);
     }
@@ -870,7 +844,7 @@ partial class ZipFile
     /// <returns>a collection of ZipEntry objects that conform to the inclusion spec</returns>
     public ICollection<ZipEntry> SelectEntries(String selectionCriteria, string directoryPathInArchive)
     {
-        FileSelector ff = new FileSelector(selectionCriteria,
+        FileSelector ff = new(selectionCriteria,
                                                        AddDirectoryWillTraverseReparsePoints);
         return ff.SelectEntries(this, directoryPathInArchive);
     }
@@ -1259,30 +1233,20 @@ internal partial class NameCriterion : SelectionCriterion
 
 internal partial class SizeCriterion : SelectionCriterion
 {
-    internal override bool Evaluate(Ionic.Zip.ZipEntry entry)
-    {
-        return _Evaluate(entry.UncompressedSize);
-    }
+    internal override bool Evaluate(Ionic.Zip.ZipEntry entry) => _Evaluate(entry.UncompressedSize);
 }
 
 internal partial class TimeCriterion : SelectionCriterion
 {
     internal override bool Evaluate(Ionic.Zip.ZipEntry entry)
     {
-        DateTime x;
-        switch (Which)
+        var x = Which switch
         {
-            case WhichTime.atime:
-                x = entry.AccessedTime;
-                break;
-            case WhichTime.mtime:
-                x = entry.ModifiedTime;
-                break;
-            case WhichTime.ctime:
-                x = entry.CreationTime;
-                break;
-            default: throw new ArgumentException("??time");
-        }
+            WhichTime.atime => entry.AccessedTime,
+            WhichTime.mtime => entry.ModifiedTime,
+            WhichTime.ctime => entry.CreationTime,
+            _ => throw new ArgumentException("??time"),
+        };
         return _Evaluate(x);
     }
 }
@@ -1375,7 +1339,7 @@ public partial class FileSelector
     public ICollection<Ionic.Zip.ZipEntry> SelectEntries(Ionic.Zip.ZipFile zip)
     {
         if (zip == null)
-            throw new ArgumentNullException("zip");
+            throw new ArgumentNullException(nameof(zip));
 
         var list = new List<Ionic.Zip.ZipEntry>();
 
@@ -1430,16 +1394,16 @@ public partial class FileSelector
     public ICollection<Ionic.Zip.ZipEntry> SelectEntries(Ionic.Zip.ZipFile zip, string directoryPathInArchive)
     {
         if (zip == null)
-            throw new ArgumentNullException("zip");
+            throw new ArgumentNullException(nameof(zip));
 
         var list = new List<Ionic.Zip.ZipEntry>();
         // workitem 8559
-        string slashSwapped = (directoryPathInArchive == null) ? null : directoryPathInArchive.Replace("/", "\\");
+        string slashSwapped = directoryPathInArchive?.Replace("/", "\\");
         // workitem 9174
         if (slashSwapped != null)
         {
             while (slashSwapped.EndsWith("\\"))
-                slashSwapped = slashSwapped.Substring(0, slashSwapped.Length - 1);
+                slashSwapped = slashSwapped[..^1];
         }
         foreach (Ionic.Zip.ZipEntry e in zip)
         {

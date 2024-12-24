@@ -69,8 +69,7 @@ using System;
         private const int MANY = 1440;
 
         // Table for deflate from PKZIP's appnote.txt.
-        internal static readonly int[] border = new int[]
-        { 16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15 };
+        internal static readonly int[] border = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
 
         private enum InflateBlockMode
         {
@@ -96,7 +95,7 @@ using System;
         internal int[] bb = new int[1];                   // bit length tree depth
         internal int[] tb = new int[1];                   // bit length decoding tree
 
-        internal InflateCodes codes = new InflateCodes(); // if CODES, current state
+        internal InflateCodes codes = new(); // if CODES, current state
 
         internal int last;                                // true if this block is the last block
 
@@ -113,7 +112,7 @@ using System;
         internal System.Object checkfn;                   // check function
         internal uint check;                              // check on output
 
-        internal InfTree inftree = new InfTree();
+        internal InfTree inftree = new();
 
         internal InflateBlocks(ZlibCodec codec, System.Object checkfn, int w)
         {
@@ -543,8 +542,8 @@ using System;
 
                         tb[0] = -1;
                         {
-                            int[] bl = new int[] { 9 };  // must be <= 9 for lookahead assumptions
-                            int[] bd = new int[] { 6 }; // must be <= 9 for lookahead assumptions
+                            int[] bl = [9];  // must be <= 9 for lookahead assumptions
+                            int[] bd = [6]; // must be <= 9 for lookahead assumptions
                             int[] tl = new int[1];
                             int[] td = new int[1];
 
@@ -665,15 +664,12 @@ using System;
             readAt = writeAt = n;
         }
 
-        // Returns true if inflate is currently at the end of a block generated
-        // by Z_SYNC_FLUSH or Z_FULL_FLUSH.
-        internal int SyncPoint()
-        {
-            return mode == InflateBlockMode.LENS ? 1 : 0;
-        }
+    // Returns true if inflate is currently at the end of a block generated
+    // by Z_SYNC_FLUSH or Z_FULL_FLUSH.
+    internal int SyncPoint() => mode == InflateBlockMode.LENS ? 1 : 0;
 
-        // copy as much as possible from the sliding window to the output area
-        internal int Flush(int r)
+    // copy as much as possible from the sliding window to the output area
+    internal int Flush(int r)
         {
             int nBytes;
 
@@ -737,11 +733,11 @@ using System;
     internal static class InternalInflateConstants
     {
         // And'ing with mask[n] masks the lower n bits
-        internal static readonly int[] InflateMask = new int[] {
+        internal static readonly int[] InflateMask = [
             0x00000000, 0x00000001, 0x00000003, 0x00000007,
             0x0000000f, 0x0000001f, 0x0000003f, 0x0000007f,
             0x000000ff, 0x000001ff, 0x000003ff, 0x000007ff,
-            0x00000fff, 0x00001fff, 0x00003fff, 0x00007fff, 0x0000ffff };
+            0x00000fff, 0x00001fff, 0x00003fff, 0x00007fff, 0x0000ffff ];
     }
 
 
@@ -804,22 +800,19 @@ using System;
             int j;      // temporary storage
             int tindex; // temporary pointer
             int e;      // extra bits or operation
-            int b = 0;  // bit buffer
-            int k = 0;  // bits in bit buffer
-            int p = 0;  // input data pointer
-            int n;      // bytes available there
+        int n;      // bytes available there
             int q;      // output window write pointer
             int m;      // bytes to end of window or read pointer
             int f;      // pointer to copy strings from
 
             ZlibCodec z = blocks._codec;
 
-            // copy input/output information to locals (UPDATE macro restores)
-            p = z.NextIn;
-            n = z.AvailableBytesIn;
-            b = blocks.bitb;
-            k = blocks.bitk;
-            q = blocks.writeAt; m = q < blocks.readAt ? blocks.readAt - q - 1 : blocks.end - q;
+        // copy input/output information to locals (UPDATE macro restores)
+        int p = z.NextIn;
+        n = z.AvailableBytesIn;
+        int b = blocks.bitb;
+        int k = blocks.bitk;
+        q = blocks.writeAt; m = q < blocks.readAt ? blocks.readAt - q - 1 : blocks.end - q;
 
             // process input and output based on current state
             while (true)
@@ -1303,9 +1296,9 @@ using System;
                                         else
                                         {
                                             Array.Copy(s.window, r, s.window, q, e);
-                                            q += e; r += e; e = 0;
-                                        }
-                                        r = 0; // copy rest from start of window
+                                            q += e;
+                                    }
+                                    r = 0; // copy rest from start of window
                                     }
                                 }
 
@@ -1321,9 +1314,9 @@ using System;
                                 else
                                 {
                                     Array.Copy(s.window, r, s.window, q, c);
-                                    q += c; r += c; c = 0;
-                                }
-                                break;
+                                    q += c;
+                            }
+                            break;
                             }
                             else if ((e & 64) == 0)
                             {
@@ -1469,8 +1462,7 @@ using System;
 
         internal int End()
         {
-            if (blocks != null)
-                blocks.Free();
+            blocks?.Free();
             blocks = null;
             return ZlibConstants.Z_OK;
         }
@@ -1602,8 +1594,7 @@ using System;
 
                     case InflateManagerMode.DICT1:
                         if (_codec.AvailableBytesIn == 0) return r;
-                        r = f;
-                        _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
+                    _codec.AvailableBytesIn--; _codec.TotalBytesIn++;
                         expectedCheck += (uint)(_codec.InputBuffer[_codec.NextIn++] & 0x000000ff);
                         _codec._Adler32 = expectedCheck;
                         mode = InflateManagerMode.DICT0;
@@ -1728,7 +1719,7 @@ using System;
         }
 
 
-        private static readonly byte[] mark = new byte[] { 0, 0, 0xff, 0xff };
+        private static readonly byte[] mark = [0, 0, 0xff, 0xff];
 
         internal int Sync()
         {
@@ -1787,14 +1778,11 @@ using System;
         }
 
 
-        // Returns true if inflate is currently at the end of a block generated
-        // by Z_SYNC_FLUSH or Z_FULL_FLUSH. This function is used by one PPP
-        // implementation to provide an additional safety check. PPP uses Z_SYNC_FLUSH
-        // but removes the length bytes of the resulting empty stored block. When
-        // decompressing, PPP checks that at the end of input packet, inflate is
-        // waiting for these length bytes.
-        internal int SyncPoint(ZlibCodec z)
-        {
-            return blocks.SyncPoint();
-        }
-    }
+    // Returns true if inflate is currently at the end of a block generated
+    // by Z_SYNC_FLUSH or Z_FULL_FLUSH. This function is used by one PPP
+    // implementation to provide an additional safety check. PPP uses Z_SYNC_FLUSH
+    // but removes the length bytes of the resulting empty stored block. When
+    // decompressing, PPP checks that at the end of input packet, inflate is
+    // waiting for these length bytes.
+    internal int SyncPoint(ZlibCodec z) => blocks.SyncPoint();
+}

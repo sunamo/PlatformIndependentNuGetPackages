@@ -89,7 +89,7 @@ using System.IO;
     {
         uint accumulator;
         int nAccumulatedBits;
-        Stream output;
+    readonly Stream output;
         int totalBytesWrittenOut;
 
         public BitWriter(Stream s)
@@ -183,18 +183,15 @@ using System.IO;
         }
 
 
-        /// <summary>
-        ///   Write a full 8-bit byte into the output.
-        /// </summary>
-        public void WriteByte(byte b)
-        {
-            WriteBits(8, b);
-        }
+    /// <summary>
+    ///   Write a full 8-bit byte into the output.
+    /// </summary>
+    public void WriteByte(byte b) => WriteBits(8, b);
 
-        /// <summary>
-        ///   Write four 8-bit bytes into the output.
-        /// </summary>
-        public void WriteInt(uint u)
+    /// <summary>
+    ///   Write four 8-bit bytes into the output.
+    /// </summary>
+    public void WriteInt(uint u)
         {
             WriteBits(8, (u >> 24) & 0xff);
             WriteBits(8, (u >> 16) & 0xff);
@@ -202,35 +199,32 @@ using System.IO;
             WriteBits(8, u & 0xff);
         }
 
-        /// <summary>
-        ///   Write all available byte-aligned bytes.
-        /// </summary>
-        /// <remarks>
-        ///   <para>
-        ///     This method writes no new output, but flushes any accumulated
-        ///     bits. At completion, the accumulator may contain up to 7
-        ///     bits.
-        ///   </para>
-        ///   <para>
-        ///     This is necessary when re-assembling output from N independent
-        ///     compressors, one for each of N blocks. The output of any
-        ///     particular compressor will in general have some fragment of a byte
-        ///     remaining. This fragment needs to be accumulated into the
-        ///     parent BZip2OutputStream.
-        ///   </para>
-        /// </remarks>
-        public void Flush()
-        {
-            WriteBits(0,0);
-        }
+    /// <summary>
+    ///   Write all available byte-aligned bytes.
+    /// </summary>
+    /// <remarks>
+    ///   <para>
+    ///     This method writes no new output, but flushes any accumulated
+    ///     bits. At completion, the accumulator may contain up to 7
+    ///     bits.
+    ///   </para>
+    ///   <para>
+    ///     This is necessary when re-assembling output from N independent
+    ///     compressors, one for each of N blocks. The output of any
+    ///     particular compressor will in general have some fragment of a byte
+    ///     remaining. This fragment needs to be accumulated into the
+    ///     parent BZip2OutputStream.
+    ///   </para>
+    /// </remarks>
+    public void Flush() => WriteBits(0, 0);
 
 
-        /// <summary>
-        ///   Writes all available bytes, and emits padding for the final byte as
-        ///   necessary. This must be the last method invoked on an instance of
-        ///   BitWriter.
-        /// </summary>
-        public void FinishAndPad()
+    /// <summary>
+    ///   Writes all available bytes, and emits padding for the final byte as
+    ///   necessary. This must be the last method invoked on an instance of
+    ///   BitWriter.
+    /// </summary>
+    public void FinishAndPad()
         {
             Flush();
 

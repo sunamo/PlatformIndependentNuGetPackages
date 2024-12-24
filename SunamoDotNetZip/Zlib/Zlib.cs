@@ -288,16 +288,13 @@ using Interop=System.Runtime.InteropServices;
 
     internal class SharedUtils
     {
-        /// <summary>
-        /// Performs an unsigned bitwise right shift with the specified number
-        /// </summary>
-        /// <param name="number">Number to operate on</param>
-        /// <param name="bits">Ammount of bits to shift</param>
-        /// <returns>The resulting number from the shift operation</returns>
-        public static int URShift(int number, int bits)
-        {
-            return (int)((uint)number >> bits);
-        }
+    /// <summary>
+    /// Performs an unsigned bitwise right shift with the specified number
+    /// </summary>
+    /// <param name="number">Number to operate on</param>
+    /// <param name="bits">Ammount of bits to shift</param>
+    /// <returns>The resulting number from the shift operation</returns>
+    public static int URShift(int number, int bits) => (int)((uint)number >> bits);
 
 #if NOT
         /// <summary>
@@ -312,22 +309,22 @@ using Interop=System.Runtime.InteropServices;
         }
 #endif
 
-        /// <summary>
-        ///   Reads a number of characters from the current source TextReader and writes
-        ///   the data to the target array at the specified index.
-        /// </summary>
-        ///
-        /// <param name="sourceTextReader">The source TextReader to read from</param>
-        /// <param name="target">Contains the array of characteres read from the source TextReader.</param>
-        /// <param name="start">The starting index of the target array.</param>
-        /// <param name="count">The maximum number of characters to read from the source TextReader.</param>
-        ///
-        /// <returns>
-        ///   The number of characters read. The number will be less than or equal to
-        ///   count depending on the data available in the source TextReader. Returns -1
-        ///   if the end of the stream is reached.
-        /// </returns>
-        public static System.Int32 ReadInput(System.IO.TextReader sourceTextReader, byte[] target, int start, int count)
+    /// <summary>
+    ///   Reads a number of characters from the current source TextReader and writes
+    ///   the data to the target array at the specified index.
+    /// </summary>
+    ///
+    /// <param name="sourceTextReader">The source TextReader to read from</param>
+    /// <param name="target">Contains the array of characteres read from the source TextReader.</param>
+    /// <param name="start">The starting index of the target array.</param>
+    /// <param name="count">The maximum number of characters to read from the source TextReader.</param>
+    ///
+    /// <returns>
+    ///   The number of characters read. The number will be less than or equal to
+    ///   count depending on the data available in the source TextReader. Returns -1
+    ///   if the end of the stream is reached.
+    /// </returns>
+    public static System.Int32 ReadInput(System.IO.TextReader sourceTextReader, byte[] target, int start, int count)
         {
             // Returns 0 bytes if not enough space in target
             if (target.Length == 0) return 0;
@@ -345,17 +342,11 @@ using Interop=System.Runtime.InteropServices;
         }
 
 
-        internal static byte[] ToByteArray(System.String sourceString)
-        {
-            return System.Text.UTF8Encoding.UTF8.GetBytes(sourceString);
-        }
+    internal static byte[] ToByteArray(System.String sourceString) => System.Text.UTF8Encoding.UTF8.GetBytes(sourceString);
 
 
-        internal static char[] ToCharArray(byte[] byteArray)
-        {
-            return System.Text.UTF8Encoding.UTF8.GetChars(byteArray);
-        }
-    }
+    internal static char[] ToCharArray(byte[] byteArray) => System.Text.UTF8Encoding.UTF8.GetChars(byteArray);
+}
 
     internal static class InternalConstants
     {
@@ -382,7 +373,7 @@ using Interop=System.Runtime.InteropServices;
 
     internal sealed class StaticTree
     {
-        internal static readonly short[] lengthAndLiteralsTreeCodes = new short[] {
+        internal static readonly short[] lengthAndLiteralsTreeCodes = [
             12, 8, 140, 8, 76, 8, 204, 8, 44, 8, 172, 8, 108, 8, 236, 8,
             28, 8, 156, 8, 92, 8, 220, 8, 60, 8, 188, 8, 124, 8, 252, 8,
              2, 8, 130, 8, 66, 8, 194, 8, 34, 8, 162, 8, 98, 8, 226, 8,
@@ -419,13 +410,13 @@ using Interop=System.Runtime.InteropServices;
              8, 7, 72, 7, 40, 7, 104, 7, 24, 7, 88, 7, 56, 7, 120, 7,
              4, 7, 68, 7, 36, 7, 100, 7, 20, 7, 84, 7, 52, 7, 116, 7,
              3, 8, 131, 8, 67, 8, 195, 8, 35, 8, 163, 8, 99, 8, 227, 8
-        };
+        ];
 
-        internal static readonly short[] distTreeCodes = new short[] {
+        internal static readonly short[] distTreeCodes = [
             0, 5, 16, 5, 8, 5, 24, 5, 4, 5, 20, 5, 12, 5, 28, 5,
             2, 5, 18, 5, 10, 5, 26, 5, 6, 5, 22, 5, 14, 5, 30, 5,
             1, 5, 17, 5, 9, 5, 25, 5, 5, 5, 21, 5, 13, 5, 29, 5,
-            3, 5, 19, 5, 11, 5, 27, 5, 7, 5, 23, 5 };
+            3, 5, 19, 5, 11, 5, 27, 5, 7, 5, 23, 5 ];
 
         internal static readonly StaticTree Literals;
         internal static readonly StaticTree Distances;

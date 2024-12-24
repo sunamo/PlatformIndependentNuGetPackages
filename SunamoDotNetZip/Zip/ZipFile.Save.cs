@@ -217,8 +217,7 @@ using System.Collections.Generic;
                 foreach (var e in c)
                 {
                     var zss1 = e._archiveStream as ZipSegmentedStream;
-                    if (zss1 != null)
-                        zss1.Dispose();
+                    zss1?.Dispose();
                     e._archiveStream = null;
                 }
 
@@ -454,7 +453,7 @@ using System.Collections.Generic;
 
             _name = fileName;
             if (Directory.Exists(_name))
-                throw new ZipException("Bad Directory", new System.ArgumentException("That name specifies an existing directory. Please specify a filename.", "fileName"));
+                throw new ZipException("Bad Directory", new System.ArgumentException("That name specifies an existing directory. Please specify a filename.", nameof(fileName)));
             _contentsChanged = true;
             _fileAlreadyExists = File.Exists(_readName);
             Save();
@@ -553,9 +552,9 @@ using System.Collections.Generic;
         public void Save(Stream outputStream)
         {
             if (outputStream == null)
-                throw new ArgumentNullException("outputStream");
+                throw new ArgumentNullException(nameof(outputStream));
             if (!outputStream.CanWrite)
-                throw new ArgumentException("Must be a writable stream.", "outputStream");
+                throw new ArgumentException("Must be a writable stream.", nameof(outputStream));
 
             // if we had a filename to save to, we are now obliterating it.
             _name = null;
@@ -645,14 +644,14 @@ using System.Collections.Generic;
                 SizeOfCentralDirectory > 0xFFFFFFFF ||
                 Start > 0xFFFFFFFF;
 
-            byte[] a2 = null;
+        byte[] a2;
 
-            // emit ZIP64 extensions as required
-            if (needZip64CentralDirectory)
+        // emit ZIP64 extensions as required
+        if (needZip64CentralDirectory)
             {
                 if (zip64 == Zip64Option.Never)
                 {
-                    System.Diagnostics.StackFrame sf = new System.Diagnostics.StackFrame(1);
+                    System.Diagnostics.StackFrame sf = new(1);
                     if (sf.GetMethod().DeclaringType == typeof(ZipFile))
                         throw new ZipException("The archive requires a ZIP64 Central Directory. Consider setting the ZipFile.UseZip64WhenSaving property.");
                     else
@@ -703,10 +702,9 @@ using System.Collections.Generic;
                 // number of the disk with the start of the central directory
                 //Array.Copy(BitConverter.GetBytes((UInt16)startSegment), 0, a2, i, 2);
                 Array.Copy(BitConverter.GetBytes(thisSegment), 0, a2, i, 2);
-                i += 2;
-            }
+        }
 
-            s.Write(a2, 0, a2.Length);
+        s.Write(a2, 0, a2.Length);
 
             // reset the contiguous write property if necessary
             if (zss != null)
@@ -732,13 +730,12 @@ using System.Collections.Generic;
 
             var bytes = e.GetBytes(t);
             var t2 = e.GetString(bytes,0,bytes.Length);
-            if (t2.Equals(t)) return e;
-            return container.AlternateEncoding;
-        }
+        return t2.Equals(t) ? e : container.AlternateEncoding;
+    }
 
 
 
-        private static byte[] GenCentralDirectoryFooter(long StartOfCentralDirectory,
+    private static byte[] GenCentralDirectoryFooter(long StartOfCentralDirectory,
                                                         long EndOfCentralDirectory,
                                                         Zip64Option zip64,
                                                         int entryCount,
@@ -746,9 +743,8 @@ using System.Collections.Generic;
                                                         ZipContainer container)
         {
             System.Text.Encoding encoding = GetEncoding(container, comment);
-            int j = 0;
-            int bufferLength = 22;
-            byte[] block = null;
+        int bufferLength = 22;
+        byte[] block = null;
             Int16 commentLength = 0;
             if ((comment != null) && (comment.Length != 0))
             {
@@ -774,27 +770,28 @@ using System.Collections.Generic;
             bytes[i++] = 0;
             bytes[i++] = 0;
 
-            // handle ZIP64 extensions for the end-of-central-directory
-            if (entryCount >= 0xFFFF || zip64 == Zip64Option.Always)
-            {
-                // the ZIP64 version.
-                for (j = 0; j < 4; j++)
-                    bytes[i++] = 0xFF;
-            }
-            else
-            {
-                // the standard version.
-                // total number of entries in the central dir on this disk
-                bytes[i++] = (byte)(entryCount & 0x00FF);
-                bytes[i++] = (byte)((entryCount & 0xFF00) >> 8);
+        int j;
+        // handle ZIP64 extensions for the end-of-central-directory
+        if (entryCount >= 0xFFFF || zip64 == Zip64Option.Always)
+        {
+            // the ZIP64 version.
+            for (j = 0; j < 4; j++)
+                bytes[i++] = 0xFF;
+        }
+        else
+        {
+            // the standard version.
+            // total number of entries in the central dir on this disk
+            bytes[i++] = (byte)(entryCount & 0x00FF);
+            bytes[i++] = (byte)((entryCount & 0xFF00) >> 8);
 
-                // total number of entries in the central directory
-                bytes[i++] = (byte)(entryCount & 0x00FF);
-                bytes[i++] = (byte)((entryCount & 0xFF00) >> 8);
-            }
+            // total number of entries in the central directory
+            bytes[i++] = (byte)(entryCount & 0x00FF);
+            bytes[i++] = (byte)((entryCount & 0xFF00) >> 8);
+        }
 
-            // size of the central directory
-            Int64 SizeOfCentralDirectory = EndOfCentralDirectory - StartOfCentralDirectory;
+        // size of the central directory
+        Int64 SizeOfCentralDirectory = EndOfCentralDirectory - StartOfCentralDirectory;
 
             if (SizeOfCentralDirectory >= 0xFFFFFFFF || StartOfCentralDirectory >= 0xFFFFFFFF)
             {
@@ -839,9 +836,8 @@ using System.Collections.Generic;
                     {
                         bytes[i + j] = block[j];
                     }
-                    i += j;
-                }
             }
+        }
 
             //   s.Write(bytes, 0, i);
             return bytes;
@@ -924,9 +920,7 @@ using System.Collections.Generic;
             // total number of disks
             // (this will change later)
             Array.Copy(BitConverter.GetBytes(numSegments), 0, bytes, i, 4);
-            i+=4;
-
-            return bytes;
+        return bytes;
         }
 
 

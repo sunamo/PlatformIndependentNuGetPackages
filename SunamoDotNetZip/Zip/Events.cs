@@ -392,17 +392,21 @@ using System.Text;
 
         internal static ReadProgressEventArgs Before(string archiveName, int entriesTotal)
         {
-            var x = new ReadProgressEventArgs(archiveName, ZipProgressEventType.Reading_BeforeReadEntry);
-            x.EntriesTotal = entriesTotal;
-            return x;
+        var x = new ReadProgressEventArgs(archiveName, ZipProgressEventType.Reading_BeforeReadEntry)
+        {
+            EntriesTotal = entriesTotal
+        };
+        return x;
         }
 
         internal static ReadProgressEventArgs After(string archiveName, ZipEntry entry, int entriesTotal)
         {
-            var x = new ReadProgressEventArgs(archiveName, ZipProgressEventType.Reading_AfterReadEntry);
-            x.EntriesTotal = entriesTotal;
-            x.CurrentEntry = entry;
-            return x;
+        var x = new ReadProgressEventArgs(archiveName, ZipProgressEventType.Reading_AfterReadEntry)
+        {
+            EntriesTotal = entriesTotal,
+            CurrentEntry = entry
+        };
+        return x;
         }
 
         internal static ReadProgressEventArgs Started(string archiveName)
@@ -413,11 +417,13 @@ using System.Text;
 
         internal static ReadProgressEventArgs ByteUpdate(string archiveName, ZipEntry entry, Int64 bytesXferred, Int64 totalBytes)
         {
-            var x = new ReadProgressEventArgs(archiveName, ZipProgressEventType.Reading_ArchiveBytesRead);
-            x.CurrentEntry = entry;
-            x.BytesTransferred = bytesXferred;
-            x.TotalBytesToTransfer = totalBytes;
-            return x;
+        var x = new ReadProgressEventArgs(archiveName, ZipProgressEventType.Reading_ArchiveBytesRead)
+        {
+            CurrentEntry = entry,
+            BytesTransferred = bytesXferred,
+            TotalBytesToTransfer = totalBytes
+        };
+        return x;
         }
 
         internal static ReadProgressEventArgs Completed(string archiveName)
@@ -442,10 +448,12 @@ using System.Text;
 
         internal static AddProgressEventArgs AfterEntry(string archiveName, ZipEntry entry, int entriesTotal)
         {
-            var x = new AddProgressEventArgs(archiveName, ZipProgressEventType.Adding_AfterAddEntry);
-            x.EntriesTotal = entriesTotal;
-            x.CurrentEntry = entry;
-            return x;
+        var x = new AddProgressEventArgs(archiveName, ZipProgressEventType.Adding_AfterAddEntry)
+        {
+            EntriesTotal = entriesTotal,
+            CurrentEntry = entry
+        };
+        return x;
         }
 
         internal static AddProgressEventArgs Started(string archiveName)
@@ -467,7 +475,7 @@ using System.Text;
     /// </summary>
     public class SaveProgressEventArgs : ZipProgressEventArgs
     {
-        private int _entriesSaved;
+        private readonly int _entriesSaved;
 
         /// <summary>
         /// Constructor for the SaveProgressEventArgs.
@@ -494,12 +502,14 @@ using System.Text;
 
         internal static SaveProgressEventArgs ByteUpdate(string archiveName, ZipEntry entry, Int64 bytesXferred, Int64 totalBytes)
         {
-            var x = new SaveProgressEventArgs(archiveName, ZipProgressEventType.Saving_EntryBytesRead);
-            x.ArchiveName = archiveName;
-            x.CurrentEntry = entry;
-            x.BytesTransferred = bytesXferred;
-            x.TotalBytesToTransfer = totalBytes;
-            return x;
+        var x = new SaveProgressEventArgs(archiveName, ZipProgressEventType.Saving_EntryBytesRead)
+        {
+            ArchiveName = archiveName,
+            CurrentEntry = entry,
+            BytesTransferred = bytesXferred,
+            TotalBytesToTransfer = totalBytes
+        };
+        return x;
         }
 
         internal static SaveProgressEventArgs Started(string archiveName)
@@ -529,7 +539,7 @@ using System.Text;
     /// </summary>
     public class ExtractProgressEventArgs : ZipProgressEventArgs
     {
-        private int _entriesExtracted;
+        private readonly int _entriesExtracted;
         private string _target;
 
         /// <summary>
@@ -596,27 +606,33 @@ using System.Text;
 
         internal static ExtractProgressEventArgs ExtractAllStarted(string archiveName, string extractLocation)
         {
-            var x = new ExtractProgressEventArgs(archiveName, ZipProgressEventType.Extracting_BeforeExtractAll);
-            x._target = extractLocation;
-            return x;
+        var x = new ExtractProgressEventArgs(archiveName, ZipProgressEventType.Extracting_BeforeExtractAll)
+        {
+            _target = extractLocation
+        };
+        return x;
         }
 
         internal static ExtractProgressEventArgs ExtractAllCompleted(string archiveName, string extractLocation)
         {
-            var x = new ExtractProgressEventArgs(archiveName, ZipProgressEventType.Extracting_AfterExtractAll);
-            x._target = extractLocation;
-            return x;
+        var x = new ExtractProgressEventArgs(archiveName, ZipProgressEventType.Extracting_AfterExtractAll)
+        {
+            _target = extractLocation
+        };
+        return x;
         }
 
 
         internal static ExtractProgressEventArgs ByteUpdate(string archiveName, ZipEntry entry, Int64 bytesWritten, Int64 totalBytes)
         {
-            var x = new ExtractProgressEventArgs(archiveName, ZipProgressEventType.Extracting_EntryBytesWritten);
-            x.ArchiveName = archiveName;
-            x.CurrentEntry = entry;
-            x.BytesTransferred = bytesWritten;
-            x.TotalBytesToTransfer = totalBytes;
-            return x;
+        var x = new ExtractProgressEventArgs(archiveName, ZipProgressEventType.Extracting_EntryBytesWritten)
+        {
+            ArchiveName = archiveName,
+            CurrentEntry = entry,
+            BytesTransferred = bytesWritten,
+            TotalBytesToTransfer = totalBytes
+        };
+        return x;
         }
 
 

@@ -32,8 +32,8 @@ using System.IO;
 
     internal class OffsetStream : System.IO.Stream, System.IDisposable
     {
-        private Int64 _originalPosition;
-        private Stream _innerStream;
+        private readonly Int64 _originalPosition;
+        private readonly Stream _innerStream;
 
         public OffsetStream(Stream s)
             : base()
@@ -42,17 +42,11 @@ using System.IO;
             _innerStream = s;
         }
 
-        public override int Read(byte[] buffer, int offset, int count)
-        {
-            return _innerStream.Read(buffer, offset, count);
-        }
+    public override int Read(byte[] buffer, int offset, int count) => _innerStream.Read(buffer, offset, count);
 
-        public override void Write(byte[] buffer, int offset, int count)
-        {
-            throw new NotImplementedException();
-        }
+    public override void Write(byte[] buffer, int offset, int count) => throw new NotImplementedException();
 
-        public override bool CanRead
+    public override bool CanRead
         {
             get { return _innerStream.CanRead; }
         }
@@ -67,12 +61,9 @@ using System.IO;
             get { return false; }
         }
 
-        public override void Flush()
-        {
-            _innerStream.Flush();
-        }
+    public override void Flush() => _innerStream.Flush();
 
-        public override long Length
+    public override long Length
         {
             get
             {
@@ -87,26 +78,14 @@ using System.IO;
         }
 
 
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            return _innerStream.Seek(_originalPosition + offset, origin) - _originalPosition;
-        }
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => _innerStream.Seek(_originalPosition + offset, origin) - _originalPosition;
 
 
-        public override void SetLength(long value)
-        {
-            throw new NotImplementedException();
-        }
+    public override void SetLength(long value) => throw new NotImplementedException();
 
-        void IDisposable.Dispose()
-        {
-            Close();
-        }
+    void IDisposable.Dispose() => Close();
 
-        public override void Close()
-        {
-            base.Close();
-        }
+    public override void Close() => base.Close();
 
-    }
+}
 

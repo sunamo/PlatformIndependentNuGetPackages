@@ -71,7 +71,7 @@ using System.IO;
                                                     uint initialDiskNumber,
                                                     uint maxDiskNumber)
         {
-            ZipSegmentedStream zss = new ZipSegmentedStream()
+            ZipSegmentedStream zss = new()
                 {
                     rwMode = RwMode.ReadOnly,
                     CurrentSegment = initialDiskNumber,
@@ -87,14 +87,11 @@ using System.IO;
             return zss;
         }
 
-        public static ZipSegmentedStream ForWriting(string name, int maxSegmentSize)
-        {
-            return ForWriting(name, (long)maxSegmentSize);
-        }
+    public static ZipSegmentedStream ForWriting(string name, int maxSegmentSize) => ForWriting(name, (long)maxSegmentSize);
 
-        public static ZipSegmentedStream ForWriting(string name, long maxSegmentSize)
+    public static ZipSegmentedStream ForWriting(string name, long maxSegmentSize)
         {
-            ZipSegmentedStream zss = new ZipSegmentedStream()
+            ZipSegmentedStream zss = new()
                 {
                     rwMode = RwMode.Write,
                     CurrentSegment = 0,
@@ -207,21 +204,17 @@ using System.IO;
             }
         }
 
-        private string _NameForSegment(uint diskNumber)
-        {
-
-            return String.Format("{0}.z{1:D2}",
-                                 Path.Combine(Path.GetDirectoryName(_baseName),
-                                              Path.GetFileNameWithoutExtension(_baseName)),
-                                 diskNumber + 1);
-        }
+    private string _NameForSegment(uint diskNumber) => String.Format("{0}.z{1:D2}",
+                             Path.Combine(Path.GetDirectoryName(_baseName),
+                                          Path.GetFileNameWithoutExtension(_baseName)),
+                             diskNumber + 1);
 
 
-        // Returns the segment that WILL be current if writing
-        // a block of the given length.
-        // This isn't exactly true. It could roll over beyond
-        // this number.
-        public UInt32 ComputeSegment(int length)
+    // Returns the segment that WILL be current if writing
+    // a block of the given length.
+    // This isn't exactly true. It could roll over beyond
+    // this number.
+    public UInt32 ComputeSegment(int length)
         {
             if (_innerStream.Position + length > _maxSegmentSize)
                 // the block will go AT LEAST into the next segment
@@ -232,21 +225,15 @@ using System.IO;
         }
 
 
-        public override String ToString()
-        {
-            return String.Format("{0}[{1}][{2}], pos=0x{3:X})",
-                                 "ZipSegmentedStream", CurrentName,
-                                 rwMode.ToString(),
-                                 this.Position);
-        }
+    public override String ToString() => String.Format("{0}[{1}][{2}], pos=0x{3:X})",
+                             "ZipSegmentedStream", CurrentName,
+                             rwMode.ToString(),
+                             this.Position);
 
 
-        private void _SetReadStream()
+    private void _SetReadStream()
         {
-            if (_innerStream != null)
-            {
-                _innerStream.Dispose();
-            }
+            _innerStream?.Dispose();
 
             if (CurrentSegment + 1 == _maxDiskNumber)
                 _currentName = _baseName;
@@ -475,12 +462,9 @@ using System.IO;
             }
         }
 
-        public override void Flush()
-        {
-            _innerStream.Flush();
-        }
+    public override void Flush() => _innerStream.Flush();
 
-        public override long Length
+    public override long Length
         {
             get
             {

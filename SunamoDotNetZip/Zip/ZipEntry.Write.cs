@@ -27,6 +27,7 @@ namespace Ionic.Zip;
 
 using System;
 using System.IO;
+using System.Threading;
 using RE = System.Text.RegularExpressions;
 
     public partial class ZipEntry
@@ -634,12 +635,12 @@ using RE = System.Text.RegularExpressions;
             // and finally, we need to remove any leading .\
 
             string SlashFixed = FileName.Replace("\\", "/");
-            string s1 = null;
-            if ((_TrimVolumeFromFullyQualifiedPaths) && (FileName.Length >= 3)
+        string s1;
+        if ((_TrimVolumeFromFullyQualifiedPaths) && (FileName.Length >= 3)
                 && (FileName[1] == ':') && (SlashFixed[2] == '/'))
             {
                 // trim off volume letter, colon, and slash
-                s1 = SlashFixed.Substring(3);
+                s1 = SlashFixed[3..];
             }
             else if ((FileName.Length >= 4)
                      && ((SlashFixed[0] == '/') && (SlashFixed[1] == '/')))
@@ -647,13 +648,13 @@ using RE = System.Text.RegularExpressions;
                 int n = SlashFixed.IndexOf('/', 2);
                 if (n == -1)
                     throw new ArgumentException("The path for that entry appears to be badly formatted");
-                s1 = SlashFixed.Substring(n + 1);
+                s1 = SlashFixed[(n + 1)..];
             }
             else if ((FileName.Length >= 3)
                      && ((SlashFixed[0] == '.') && (SlashFixed[1] == '/')))
             {
                 // trim off dot and slash
-                s1 = SlashFixed.Substring(2);
+                s1 = SlashFixed[2..];
             }
             else
             {
@@ -763,14 +764,12 @@ using RE = System.Text.RegularExpressions;
             if (_aesCrypto_forWrite != null && (CompressedSize - _aesCrypto_forWrite.SizeOfEncryptionMetadata) <= UncompressedSize + 0x10) return false;
 #endif
 
-            if (_zipCrypto_forWrite != null && (CompressedSize - 12) <= UncompressedSize) return false;
-
-            return true;
-        }
+        return _zipCrypto_forWrite == null || (CompressedSize - 12) > UncompressedSize;
+    }
 
 
 
-        private void MaybeUnsetCompressionMethodForWriting(int cycle)
+    private void MaybeUnsetCompressionMethodForWriting(int cycle)
         {
             // if we've already tried with compression... turn it off this time
             if (cycle > 1)
@@ -1430,7 +1429,7 @@ using RE = System.Text.RegularExpressions;
                 // Sometimes s is a CountingStream. Doesn't matter. Wrap it with a
                 // counter anyway. We need to count at both levels.
 
-                CountingStream entryCounter = new CountingStream(s);
+                CountingStream entryCounter = new(s);
 
                 Stream encryptor;
                 Stream compressor;
@@ -1638,7 +1637,7 @@ using RE = System.Text.RegularExpressions;
 
                         // workitem 11131
                         // adjust the count on the CountingStream as necessary
-                        if (s1 != null) s1.Adjust(headerBytesToRetract);
+                        s1?.Adjust(headerBytesToRetract);
 
                         // subtract the size of the security header from the _LengthOfHeader
                         _LengthOfHeader -= headerBytesToRetract;
@@ -1842,14 +1841,12 @@ using RE = System.Text.RegularExpressions;
                 var zss = s as ZipSegmentedStream;
                 if (zss != null && _diskNumber != zss.CurrentSegment)
                 {
-                    // In this case the entry header is in a different file,
-                    // which has already been closed. Need to re-open it.
-                    using (Stream hseg = ZipSegmentedStream.ForUpdate(this._container.ZipFile.Name, _diskNumber))
-                    {
-                        hseg.Seek(this._RelativeOffsetOfLocalHeader, SeekOrigin.Begin);
-                        hseg.Write(_EntryHeader, 0, _EntryHeader.Length);
-                    }
-                }
+                // In this case the entry header is in a different file,
+                // which has already been closed. Need to re-open it.
+                using Stream hseg = ZipSegmentedStream.ForUpdate(this._container.ZipFile.Name, _diskNumber);
+                hseg.Seek(this._RelativeOffsetOfLocalHeader, SeekOrigin.Begin);
+                hseg.Write(_EntryHeader, 0, _EntryHeader.Length);
+            }
                 else
                 {
                     // seek in the raw output stream, to the beginning of the header for
@@ -1861,7 +1858,7 @@ using RE = System.Text.RegularExpressions;
                     s.Write(_EntryHeader, 0, _EntryHeader.Length);
 
                     // adjust the count on the CountingStream as necessary
-                    if (s1 != null) s1.Adjust(_EntryHeader.Length);
+                    s1?.Adjust(_EntryHeader.Length);
 
                     // seek in the raw output stream, to the end of the file data
                     // for this entry
@@ -2216,7 +2213,7 @@ using RE = System.Text.RegularExpressions;
                             s.SetLength(s.Position);
 
                             // Adjust the count on the CountingStream as necessary.
-                            if (cs1 != null) cs1.Adjust(_TotalEntrySize);
+                            cs1?.Adjust(_TotalEntrySize);
                         }
                     }
                     while (readAgain);
@@ -2246,7 +2243,7 @@ using RE = System.Text.RegularExpressions;
                                 s.Seek(delta, SeekOrigin.Current); // may throw
                                 long p2 = s.Position;
                                 s.SetLength(s.Position);  // to prevent garbage if this is the last entry
-                                if (cs1 != null) cs1.Adjust(p1 - p2);
+                                cs1?.Adjust(p1 - p2);
                             }
                             if (ZipErrorAction == ZipErrorAction.Skip)
                             {
@@ -2280,14 +2277,11 @@ using RE = System.Text.RegularExpressions;
         }
 
 
-        internal void StoreRelativeOffset()
-        {
-            _RelativeOffsetOfLocalHeader = _future_ROLH;
-        }
+    internal void StoreRelativeOffset() => _RelativeOffsetOfLocalHeader = _future_ROLH;
 
 
 
-        internal void NotifySaveComplete()
+    internal void NotifySaveComplete()
         {
             // When updating a zip file, there are two contexts for properties
             // like Encryption or CompressionMethod - the values read from the
@@ -2636,5 +2630,5 @@ using RE = System.Text.RegularExpressions;
             }
         }
 
-        private object _outputLock = new Object();
+        private readonly Lock _outputLock = new();
     }

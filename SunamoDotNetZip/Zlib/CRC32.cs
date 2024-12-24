@@ -70,24 +70,21 @@ using Interop = System.Runtime.InteropServices;
             }
         }
 
-        /// <summary>
-        /// Returns the CRC32 for the specified stream.
-        /// </summary>
-        /// <param name="input">The stream over which to calculate the CRC32</param>
-        /// <returns>the CRC32 calculation</returns>
-        public Int32 GetCrc32(System.IO.Stream input)
-        {
-            return GetCrc32AndCopy(input, null);
-        }
+    /// <summary>
+    /// Returns the CRC32 for the specified stream.
+    /// </summary>
+    /// <param name="input">The stream over which to calculate the CRC32</param>
+    /// <returns>the CRC32 calculation</returns>
+    public Int32 GetCrc32(System.IO.Stream input) => GetCrc32AndCopy(input, null);
 
-        /// <summary>
-        /// Returns the CRC32 for the specified stream, and writes the input into the
-        /// output stream.
-        /// </summary>
-        /// <param name="input">The stream over which to calculate the CRC32</param>
-        /// <param name="output">The stream into which to deflate the input</param>
-        /// <returns>the CRC32 calculation</returns>
-        public Int32 GetCrc32AndCopy(System.IO.Stream input, System.IO.Stream output)
+    /// <summary>
+    /// Returns the CRC32 for the specified stream, and writes the input into the
+    /// output stream.
+    /// </summary>
+    /// <param name="input">The stream over which to calculate the CRC32</param>
+    /// <param name="output">The stream into which to deflate the input</param>
+    /// <returns>the CRC32 calculation</returns>
+    public Int32 GetCrc32AndCopy(System.IO.Stream input, System.IO.Stream output)
         {
             if (input == null)
                 throw new Exception("The input stream must not be null.");
@@ -99,13 +96,13 @@ using Interop = System.Runtime.InteropServices;
 
                 _TotalBytesRead = 0;
                 int count = input.Read(buffer, 0, readSize);
-                if (output != null) output.Write(buffer, 0, count);
+                output?.Write(buffer, 0, count);
                 _TotalBytesRead += count;
                 while (count > 0)
                 {
                     SlurpBlock(buffer, 0, count);
                     count = input.Read(buffer, 0, readSize);
-                    if (output != null) output.Write(buffer, 0, count);
+                    output?.Write(buffer, 0, count);
                     _TotalBytesRead += count;
                 }
 
@@ -114,32 +111,26 @@ using Interop = System.Runtime.InteropServices;
         }
 
 
-        /// <summary>
-        ///   Get the CRC32 for the given (word,byte) combo.  This is a
-        ///   computation defined by PKzip for PKZIP 2.0 (weak) encryption.
-        /// </summary>
-        /// <param name="W">The word to start with.</param>
-        /// <param name="B">The byte to combine it with.</param>
-        /// <returns>The CRC-ized result.</returns>
-        public Int32 ComputeCrc32(Int32 W, byte B)
-        {
-            return _InternalComputeCrc32((UInt32)W, B);
-        }
+    /// <summary>
+    ///   Get the CRC32 for the given (word,byte) combo.  This is a
+    ///   computation defined by PKzip for PKZIP 2.0 (weak) encryption.
+    /// </summary>
+    /// <param name="W">The word to start with.</param>
+    /// <param name="B">The byte to combine it with.</param>
+    /// <returns>The CRC-ized result.</returns>
+    public Int32 ComputeCrc32(Int32 W, byte B) => _InternalComputeCrc32((UInt32)W, B);
 
-        internal Int32 _InternalComputeCrc32(UInt32 W, byte B)
-        {
-            return (Int32)(crc32Table[(W ^ B) & 0xFF] ^ (W >> 8));
-        }
+    internal Int32 _InternalComputeCrc32(UInt32 W, byte B) => (Int32)(crc32Table[(W ^ B) & 0xFF] ^ (W >> 8));
 
 
-        /// <summary>
-        /// Update the value for the running CRC32 using the given block of bytes.
-        /// This is useful when using the CRC32() class in a Stream.
-        /// </summary>
-        /// <param name="block">block of bytes to slurp</param>
-        /// <param name="offset">starting point in the block</param>
-        /// <param name="count">how many bytes within the block to slurp</param>
-        public void SlurpBlock(byte[] block, int offset, int count)
+    /// <summary>
+    /// Update the value for the running CRC32 using the given block of bytes.
+    /// This is useful when using the CRC32() class in a Stream.
+    /// </summary>
+    /// <param name="block">block of bytes to slurp</param>
+    /// <param name="offset">starting point in the block</param>
+    /// <param name="count">how many bytes within the block to slurp</param>
+    public void SlurpBlock(byte[] block, int offset, int count)
         {
             if (block == null)
                 throw new Exception("The data buffer must not be null.");
@@ -452,24 +443,21 @@ using Interop = System.Runtime.InteropServices;
             this.GenerateLookupTable();
         }
 
-        /// <summary>
-        ///   Reset the CRC-32 class - clear the CRC "remainder register."
-        /// </summary>
-        /// <remarks>
-        ///   <para>
-        ///     Use this when employing a single instance of this class to compute
-        ///     multiple, distinct CRCs on multiple, distinct data blocks.
-        ///   </para>
-        /// </remarks>
-        public void Reset()
-        {
-            _register = 0xFFFFFFFFU;
-        }
+    /// <summary>
+    ///   Reset the CRC-32 class - clear the CRC "remainder register."
+    /// </summary>
+    /// <remarks>
+    ///   <para>
+    ///     Use this when employing a single instance of this class to compute
+    ///     multiple, distinct CRCs on multiple, distinct data blocks.
+    ///   </para>
+    /// </remarks>
+    public void Reset() => _register = 0xFFFFFFFFU;
 
-        // private member vars
-        private UInt32 dwPolynomial;
+    // private member vars
+    private readonly UInt32 dwPolynomial;
         private Int64 _TotalBytesRead;
-        private bool reverseBits;
+        private readonly bool reverseBits;
         private UInt32[] crc32Table;
         private const int BUFFER_SIZE = 8192;
         private UInt32 _register = 0xFFFFFFFFU;
@@ -616,7 +604,7 @@ using Interop = System.Runtime.InteropServices;
         // value.
         CrcCalculatorStream(bool leaveOpen, Int64 length, System.IO.Stream stream, CRC32 crc32)
         {
-            if (stream == null) throw new ArgumentNullException("stream");
+            if (stream == null) throw new ArgumentNullException(nameof(stream));
             _innerStream = stream;
             _crc32 = crc32 ?? new CRC32();
             _lengthLimit = length;
@@ -738,25 +726,20 @@ using Interop = System.Runtime.InteropServices;
             get { return _innerStream.CanWrite; }
         }
 
-        /// <summary>
-        /// Flush the stream.
-        /// </summary>
-        public override void Flush()
-        {
-            _innerStream.Flush();
-        }
+    /// <summary>
+    /// Flush the stream.
+    /// </summary>
+    public override void Flush() => _innerStream.Flush();
 
-        /// <summary>
-        ///   Returns the length of the underlying stream.
-        /// </summary>
-        public override long Length
+    /// <summary>
+    ///   Returns the length of the underlying stream.
+    /// </summary>
+    public override long Length
         {
             get
             {
-                if (_lengthLimit == CrcCalculatorStream.UnsetLengthLimit)
-                    return _innerStream.Length;
-                else return _lengthLimit;
-            }
+            return _lengthLimit == CrcCalculatorStream.UnsetLengthLimit ? _innerStream.Length : _lengthLimit;
+        }
         }
 
         /// <summary>
@@ -770,35 +753,26 @@ using Interop = System.Runtime.InteropServices;
             set { throw new NotSupportedException(); }
         }
 
-        /// <summary>
-        /// Seeking is not supported on this stream. This method always throws
-        /// <see cref="NotSupportedException"/>
-        /// </summary>
-        /// <param name="offset">N/A</param>
-        /// <param name="origin">N/A</param>
-        /// <returns>N/A</returns>
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotSupportedException();
-        }
+    /// <summary>
+    /// Seeking is not supported on this stream. This method always throws
+    /// <see cref="NotSupportedException"/>
+    /// </summary>
+    /// <param name="offset">N/A</param>
+    /// <param name="origin">N/A</param>
+    /// <returns>N/A</returns>
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => throw new NotSupportedException();
 
-        /// <summary>
-        /// This method always throws
-        /// <see cref="NotSupportedException"/>
-        /// </summary>
-        /// <param name="value">N/A</param>
-        public override void SetLength(long value)
-        {
-            throw new NotSupportedException();
-        }
+    /// <summary>
+    /// This method always throws
+    /// <see cref="NotSupportedException"/>
+    /// </summary>
+    /// <param name="value">N/A</param>
+    public override void SetLength(long value) => throw new NotSupportedException();
 
 
-        void IDisposable.Dispose()
-        {
-            InnerClose();
-        }
+    void IDisposable.Dispose() => InnerClose();
 
-        private void InnerClose()
+    private void InnerClose()
         {
             if (!_leaveOpen)
             {

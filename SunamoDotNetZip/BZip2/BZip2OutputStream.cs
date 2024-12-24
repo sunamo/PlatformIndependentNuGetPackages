@@ -89,14 +89,14 @@ using System.IO;
     public class BZip2OutputStream : System.IO.Stream
     {
         int totalBytesWrittenIn;
-        bool leaveOpen;
+    readonly bool leaveOpen;
         BZip2Compressor compressor;
         uint combinedCRC;
         Stream output;
         BitWriter bw;
-        int blockSize100k;  // 0...9
+    readonly int blockSize100k;  // 0...9
 
-        private TraceBits desiredTrace = TraceBits.Crc | TraceBits.Write;
+        private readonly TraceBits desiredTrace = TraceBits.Crc | TraceBits.Write;
 
         /// <summary>
         ///   Constructs a new <c>BZip2OutputStream</c>, that sends its
@@ -186,12 +186,12 @@ using System.IO;
                 var msg = String.Format("blockSize={0} is out of range; must be between {1} and {2}",
                                         blockSize,
                                         BZip2.MinBlockSize, BZip2.MaxBlockSize);
-                throw new ArgumentException(msg, "blockSize");
+                throw new ArgumentException(msg, nameof(blockSize));
             }
 
             this.output = output;
             if (!this.output.CanWrite)
-                throw new ArgumentException("The stream is not writable.", "output");
+                throw new ArgumentException("The stream is not writable.", nameof(output));
 
             this.bw = new BitWriter(this.output);
             this.blockSize100k = blockSize;
@@ -426,10 +426,9 @@ using System.IO;
         {
             get
             {
-                if (this.output == null) throw new ObjectDisposedException("BZip2Stream");
-                return this.output.CanWrite;
-            }
+            return this.output == null ? throw new ObjectDisposedException("BZip2Stream") : output.CanWrite;
         }
+    }
 
         /// <summary>
         /// Reading this property always throws a <see cref="NotImplementedException"/>.
@@ -457,41 +456,32 @@ using System.IO;
             set { throw new NotImplementedException(); }
         }
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="offset">this is irrelevant, since it will always throw!</param>
-        /// <param name="origin">this is irrelevant, since it will always throw!</param>
-        /// <returns>irrelevant!</returns>
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="offset">this is irrelevant, since it will always throw!</param>
+    /// <param name="origin">this is irrelevant, since it will always throw!</param>
+    /// <returns>irrelevant!</returns>
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => throw new NotImplementedException();
 
-        /// <summary>
-        /// Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name="value">this is irrelevant, since it will always throw!</param>
-        public override void SetLength(long value)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    /// Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name="value">this is irrelevant, since it will always throw!</param>
+    public override void SetLength(long value) => throw new NotImplementedException();
 
-        /// <summary>
-        ///   Calling this method always throws a <see cref="NotImplementedException"/>.
-        /// </summary>
-        /// <param name='buffer'>this parameter is never used</param>
-        /// <param name='offset'>this parameter is never used</param>
-        /// <param name='count'>this parameter is never used</param>
-        /// <returns>never returns anything; always throws</returns>
-        public override int Read(byte[] buffer, int offset, int count)
-        {
-            throw new NotImplementedException();
-        }
+    /// <summary>
+    ///   Calling this method always throws a <see cref="NotImplementedException"/>.
+    /// </summary>
+    /// <param name='buffer'>this parameter is never used</param>
+    /// <param name='offset'>this parameter is never used</param>
+    /// <param name='count'>this parameter is never used</param>
+    /// <returns>never returns anything; always throws</returns>
+    public override int Read(byte[] buffer, int offset, int count) => throw new NotImplementedException();
 
 
-        // used only when Trace is defined
-        [Flags]
+    // used only when Trace is defined
+    [Flags]
         enum TraceBits : uint
         {
             None         = 0,

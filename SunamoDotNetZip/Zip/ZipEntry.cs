@@ -886,10 +886,7 @@ using Interop = System.Runtime.InteropServices;
                 }
 
                 _FileNameInArchive = filename;
-                if (_container != null)
-                {
-                    _container.ZipFile.NotifyEntryChanged();
-                }
+                _container?.ZipFile.NotifyEntryChanged();
 
                 _metadataChanged = true;
             }
@@ -1405,7 +1402,7 @@ using Interop = System.Runtime.InteropServices;
                 else if (CompressionLevel == CompressionLevel.None)
                     _CompressionLevel = CompressionLevel.Default;
 
-                if (_container.ZipFile != null) _container.ZipFile.NotifyEntryChanged();
+                _container.ZipFile?.NotifyEntryChanged();
                 _restreamRequiredOnSave = true;
             }
         }
@@ -1478,7 +1475,7 @@ using Interop = System.Runtime.InteropServices;
                 else
                     _CompressionMethod = (short)Ionic.Zip.CompressionMethod.Deflate;
 
-                if (_container.ZipFile != null) _container.ZipFile.NotifyEntryChanged();
+                _container.ZipFile?.NotifyEntryChanged();
                 _restreamRequiredOnSave = true;
             }
         }
@@ -1555,10 +1552,9 @@ using Interop = System.Runtime.InteropServices;
         {
             get
             {
-                if (UncompressedSize == 0) return 0;
-                return 100 * (1.0 - (1.0 * CompressedSize) / (1.0 * UncompressedSize));
-            }
+            return UncompressedSize == 0 ? 0 : 100 * (1.0 - (1.0 * CompressedSize) / (1.0 * UncompressedSize));
         }
+    }
 
         /// <summary>
         /// The 32-bit CRC (Cyclic Redundancy Check) on the contents of the ZipEntry.
@@ -1782,8 +1778,7 @@ using Interop = System.Runtime.InteropServices;
 
                 _Encryption = value;
                 _restreamRequiredOnSave = true;
-                if (_container.ZipFile != null)
-                    _container.ZipFile.NotifyEntryChanged();
+                _container.ZipFile?.NotifyEntryChanged();
             }
         }
 
@@ -2291,8 +2286,8 @@ using Interop = System.Runtime.InteropServices;
 
         internal static string NameInArchive(String filename, string directoryPathInArchive)
         {
-            string result = null;
-            if (directoryPathInArchive == null)
+        string result;
+        if (directoryPathInArchive == null)
                 result = filename;
 
             else
@@ -2314,50 +2309,33 @@ using Interop = System.Runtime.InteropServices;
             return result;
         }
 
-        // workitem 9073
-        internal static ZipEntry CreateFromNothing(String nameInArchive)
-        {
-            return Create(nameInArchive, ZipEntrySource.None, null, null);
-        }
+    // workitem 9073
+    internal static ZipEntry CreateFromNothing(String nameInArchive) => Create(nameInArchive, ZipEntrySource.None, null, null);
 
-        internal static ZipEntry CreateFromFile(String filename, string nameInArchive)
-        {
-            return Create(nameInArchive, ZipEntrySource.FileSystem, filename, null);
-        }
+    internal static ZipEntry CreateFromFile(String filename, string nameInArchive) => Create(nameInArchive, ZipEntrySource.FileSystem, filename, null);
 
-        internal static ZipEntry CreateForStream(String entryName, Stream s)
-        {
-            return Create(entryName, ZipEntrySource.Stream, s, null);
-        }
+    internal static ZipEntry CreateForStream(String entryName, Stream s) => Create(entryName, ZipEntrySource.Stream, s, null);
 
-        internal static ZipEntry CreateForWriter(String entryName, WriteDelegate d)
-        {
-            return Create(entryName, ZipEntrySource.WriteDelegate, d, null);
-        }
+    internal static ZipEntry CreateForWriter(String entryName, WriteDelegate d) => Create(entryName, ZipEntrySource.WriteDelegate, d, null);
 
-        internal static ZipEntry CreateForJitStreamProvider(string nameInArchive, OpenDelegate opener, CloseDelegate closer)
-        {
-            return Create(nameInArchive, ZipEntrySource.JitStream, opener, closer);
-        }
+    internal static ZipEntry CreateForJitStreamProvider(string nameInArchive, OpenDelegate opener, CloseDelegate closer) => Create(nameInArchive, ZipEntrySource.JitStream, opener, closer);
 
-        internal static ZipEntry CreateForZipOutputStream(string nameInArchive)
-        {
-            return Create(nameInArchive, ZipEntrySource.ZipOutputStream, null, null);
-        }
+    internal static ZipEntry CreateForZipOutputStream(string nameInArchive) => Create(nameInArchive, ZipEntrySource.ZipOutputStream, null, null);
 
 
-        private static ZipEntry Create(string nameInArchive, ZipEntrySource source, Object arg1, Object arg2)
+    private static ZipEntry Create(string nameInArchive, ZipEntrySource source, Object arg1, Object arg2)
         {
             if (String.IsNullOrEmpty(nameInArchive))
                 throw new Ionic.Zip.ZipException("The entry name must be non-null and non-empty.");
 
-            ZipEntry entry = new ZipEntry();
-
+        ZipEntry entry = new()
+        {
             // workitem 7071
             // workitem 7926 - "version made by" OS should be zero for compat with WinZip
-            entry._VersionMadeBy = (0 << 8) + 45; // indicates the attributes are FAT Attributes, and v4.5 of the spec
-            entry._Source = source;
-            entry._Mtime = entry._Atime = entry._Ctime = DateTime.UtcNow;
+            _VersionMadeBy = (0 << 8) + 45, // indicates the attributes are FAT Attributes, and v4.5 of the spec
+            _Source = source
+        };
+        entry._Mtime = entry._Atime = entry._Ctime = DateTime.UtcNow;
 
             if (source == ZipEntrySource.Stream)
             {
@@ -2614,15 +2592,12 @@ using Interop = System.Runtime.InteropServices;
 
 
 
-        /// <summary>Provides a string representation of the instance.</summary>
-        /// <returns>a string representation of the instance.</returns>
-        public override String ToString()
-        {
-            return String.Format("ZipEntry::{0}", FileName);
-        }
+    /// <summary>Provides a string representation of the instance.</summary>
+    /// <returns>a string representation of the instance.</returns>
+    public override String ToString() => String.Format("ZipEntry::{0}", FileName);
 
 
-        internal Stream ArchiveStream
+    internal Stream ArchiveStream
         {
             get
             {
@@ -2716,13 +2691,11 @@ using Interop = System.Runtime.InteropServices;
                 return sizeOfSaltAndPv;
             }
 #endif
-            if (a == EncryptionAlgorithm.PkzipWeak)
-                return 12;
-            throw new ZipException("internal error");
-        }
+        return a == EncryptionAlgorithm.PkzipWeak ? 12 : throw new ZipException("internal error");
+    }
 
 
-        internal long FileDataPosition
+    internal long FileDataPosition
         {
             get
             {
@@ -2760,7 +2733,7 @@ using Interop = System.Runtime.InteropServices;
         private bool _ntfsTimesAreSet;
         private bool _emitNtfsTimes = true;
         private bool _emitUnixTimes;  // by default, false
-        private bool _TrimVolumeFromFullyQualifiedPaths = true;  // by default, trim them.
+        private readonly bool _TrimVolumeFromFullyQualifiedPaths = true;  // by default, trim them.
         internal string _LocalFileName;
         private string _FileNameInArchive;
         internal Int16 _VersionNeeded;
@@ -2787,7 +2760,7 @@ using Interop = System.Runtime.InteropServices;
 #if NETSTANDARD2_0 || NETCOREAPP2_0
         private static System.Text.Encoding ibm437 = System.Text.CodePagesEncodingProvider.Instance.GetEncoding(1252);
 #else
-        private static System.Text.Encoding ibm437 = System.Text.Encoding.GetEncoding("IBM437");
+        private static readonly System.Text.Encoding ibm437 = System.Text.Encoding.GetEncoding("IBM437");
 #endif
         //private System.Text.Encoding _provisionalAlternateEncoding = System.Text.Encoding.GetEncoding("IBM437");
         private System.Text.Encoding _actualEncoding;
@@ -2820,9 +2793,9 @@ using Interop = System.Runtime.InteropServices;
         private bool _IsText; // workitem 7801
         private ZipEntryTimestamp _timestamp;
 
-        private static System.DateTime _unixEpoch = new System.DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-        private static System.DateTime _win32Epoch = System.DateTime.FromFileTimeUtc(0L);
-        private static System.DateTime _zeroHour = new System.DateTime(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        private static readonly System.DateTime _unixEpoch = new(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        private static readonly System.DateTime _win32Epoch = System.DateTime.FromFileTimeUtc(0L);
+        private static readonly System.DateTime _zeroHour = new(1, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
         private WriteDelegate _WriteDelegate;
         private OpenDelegate _OpenDelegate;

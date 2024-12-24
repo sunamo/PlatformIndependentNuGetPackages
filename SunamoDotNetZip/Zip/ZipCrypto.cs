@@ -63,7 +63,7 @@ using System;
 
         public static ZipCrypto ForWrite(string password)
         {
-            ZipCrypto z = new ZipCrypto();
+            ZipCrypto z = new();
             if (password == null)
                 throw new BadPasswordException("This entry requires a password.");
             z.InitCipher(password);
@@ -76,7 +76,7 @@ using System;
             System.IO.Stream s = e._archiveStream;
             e._WeakEncryptionHeader = new byte[12];
             byte[] eh = e._WeakEncryptionHeader;
-            ZipCrypto z = new ZipCrypto();
+            ZipCrypto z = new();
 
             if (password == null)
                 throw new BadPasswordException("This entry requires a password.");
@@ -192,10 +192,10 @@ using System;
         public byte[] DecryptMessage(byte[] cipherText, int length)
         {
             if (cipherText == null)
-                throw new ArgumentNullException("cipherText");
+                throw new ArgumentNullException(nameof(cipherText));
 
             if (length > cipherText.Length)
-                throw new ArgumentOutOfRangeException("length",
+                throw new ArgumentOutOfRangeException(nameof(length),
                                                       "Bad length during Decryption: the length parameter must be smaller than or equal to the size of the destination array.");
 
             byte[] plainText = new byte[length];
@@ -227,7 +227,7 @@ using System;
                 throw new ArgumentNullException("plaintext");
 
             if (length > plainText.Length)
-                throw new ArgumentOutOfRangeException("length",
+                throw new ArgumentOutOfRangeException(nameof(length),
                                                       "Bad length during Encryption: The length parameter must be smaller than or equal to the size of the destination array.");
 
             byte[] cipherText = new byte[length];
@@ -334,8 +334,8 @@ using System;
         //}
 
         // private fields for the crypto stuff:
-        private UInt32[] _Keys = { 0x12345678, 0x23456789, 0x34567890 };
-        private Ionic.Zlib.CRC32 crc32 = new Ionic.Zlib.CRC32();
+        private readonly UInt32[] _Keys = [0x12345678, 0x23456789, 0x34567890];
+        private readonly Ionic.Zlib.CRC32 crc32 = new();
 
     }
 
@@ -351,9 +351,9 @@ using System;
     /// </summary>
     internal class ZipCipherStream : System.IO.Stream
     {
-        private ZipCrypto _cipher;
-        private System.IO.Stream _s;
-        private CryptoMode _mode;
+        private readonly ZipCrypto _cipher;
+        private readonly System.IO.Stream _s;
+        private readonly CryptoMode _mode;
 
         /// <summary>  The constructor. </summary>
         /// <param name="s">The underlying stream</param>
@@ -361,7 +361,7 @@ using System;
         /// <param name="cipher">The pre-initialized ZipCrypto object.</param>
         public ZipCipherStream(System.IO.Stream s, ZipCrypto cipher, CryptoMode mode)
         {
-            if (s == null) throw new ArgumentNullException("s");
+            if (s == null) throw new ArgumentNullException(nameof(s));
             _cipher = cipher;
             _s = s;
             _mode = mode;
@@ -373,7 +373,7 @@ using System;
                 throw new NotSupportedException("This stream does not encrypt via Read()");
 
             if (buffer == null)
-                throw new ArgumentNullException("buffer");
+                throw new ArgumentNullException(nameof(buffer));
 
             byte[] db = new byte[count];
             int n = _s.Read(db, 0, count);
@@ -391,13 +391,13 @@ using System;
                 throw new NotSupportedException("This stream does not Decrypt via Write()");
 
             if (buffer == null)
-                throw new ArgumentNullException("buffer");
+                throw new ArgumentNullException(nameof(buffer));
 
             // workitem 7696
             if (count == 0) return;
 
-            byte[] plaintext = null;
-            if (offset != 0)
+        byte[] plaintext;
+        if (offset != 0)
             {
                 plaintext = new byte[count];
                 for (int i = 0; i < count; i++)
@@ -441,13 +441,7 @@ using System;
             get { throw new NotSupportedException(); }
             set { throw new NotSupportedException(); }
         }
-        public override long Seek(long offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotSupportedException();
-        }
+    public override long Seek(long offset, System.IO.SeekOrigin origin) => throw new NotSupportedException();
 
-        public override void SetLength(long value)
-        {
-            throw new NotSupportedException();
-        }
-    }
+    public override void SetLength(long value) => throw new NotSupportedException();
+}
