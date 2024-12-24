@@ -363,10 +363,7 @@ public class ZipOutputStream : Stream
     ///   </para>
     /// </remarks>
     /// <returns>a string representation of the instance.</returns>
-    public override String ToString()
-    {
-        return String.Format("ZipOutputStream::{0}(leaveOpen({1})))", _name, _leaveUnderlyingStreamOpen);
-    }
+    public override String ToString() => String.Format("ZipOutputStream::{0}(leaveOpen({1})))", _name, _leaveUnderlyingStreamOpen);
 
 
     /// <summary>
@@ -959,9 +956,7 @@ public class ZipOutputStream : Stream
     {
         get
         {
-            if (_alternateEncodingUsage == ZipOption.AsNecessary)
-                return _alternateEncoding;
-            return null;
+            return _alternateEncodingUsage == ZipOption.AsNecessary ? _alternateEncoding : null;
         }
         set
         {
@@ -1231,10 +1226,7 @@ public class ZipOutputStream : Stream
     /// <returns>
     /// true if an entry by the given name has already been written.
     /// </returns>
-    public bool ContainsEntry(string name)
-    {
-        return _entriesWritten.ContainsKey(SharedUtilities.NormalizePathForUseInZipFile(name));
-    }
+    public bool ContainsEntry(string name) => _entriesWritten.ContainsKey(SharedUtilities.NormalizePathForUseInZipFile(name));
 
 
     /// <summary>
@@ -1262,7 +1254,7 @@ public class ZipOutputStream : Stream
         if (buffer == null)
         {
             _exceptionPending = true;
-            throw new System.ArgumentNullException("buffer");
+            throw new System.ArgumentNullException(nameof(buffer));
         }
 
         if (_currentEntry == null)
@@ -1369,7 +1361,7 @@ public class ZipOutputStream : Stream
     public ZipEntry PutNextEntry(String entryName)
     {
         if (String.IsNullOrEmpty(entryName))
-            throw new ArgumentNullException("entryName");
+            throw new ArgumentNullException(nameof(entryName));
 
         if (_disposed)
         {
@@ -1503,8 +1495,8 @@ public class ZipOutputStream : Stream
                                                                                  _zip64,
                                                                                  Comment,
                                                                                  new ZipContainer(this));
-                Stream wrappedStream = null;
                 CountingStream cs = _outputStream as CountingStream;
+                Stream wrappedStream;
                 if (cs != null)
                 {
                     wrappedStream = cs.WrappedStream;
@@ -1569,10 +1561,7 @@ public class ZipOutputStream : Stream
     /// <param name="offset">ignored</param>
     /// <param name="count">ignored</param>
     /// <returns>nothing</returns>
-    public override int Read(byte[] buffer, int offset, int count)
-    {
-        throw new NotSupportedException("Read");
-    }
+    public override int Read(byte[] buffer, int offset, int count) => throw new NotSupportedException("Read");
 
     /// <summary>
     /// This method always throws a NotSupportedException.
@@ -1580,19 +1569,13 @@ public class ZipOutputStream : Stream
     /// <param name="offset">ignored</param>
     /// <param name="origin">ignored</param>
     /// <returns>nothing</returns>
-    public override long Seek(long offset, SeekOrigin origin)
-    {
-        throw new NotSupportedException("Seek");
-    }
+    public override long Seek(long offset, SeekOrigin origin) => throw new NotSupportedException("Seek");
 
     /// <summary>
     /// This method always throws a NotSupportedException.
     /// </summary>
     /// <param name="value">ignored</param>
-    public override void SetLength(long value)
-    {
-        throw new NotSupportedException();
-    }
+    public override void SetLength(long value) => throw new NotSupportedException();
 
 
     private EncryptionAlgorithm _encryption;
@@ -1642,9 +1625,9 @@ public class ZipOutputStream : Stream
 
 internal class ZipContainer
 {
-    private ZipFile _zf;
-    private ZipOutputStream _zos;
-    private ZipInputStream _zis;
+    private readonly ZipFile _zf;
+    private readonly ZipOutputStream _zos;
+    private readonly ZipInputStream _zis;
 
     public ZipContainer(Object o)
     {
@@ -1668,8 +1651,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf.Name;
-            if (_zis != null) throw new NotSupportedException();
-            return _zos.Name;
+            return _zis != null ? throw new NotSupportedException() : _zos.Name;
         }
     }
 
@@ -1678,8 +1660,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf._Password;
-            if (_zis != null) return _zis._Password;
-            return _zos._password;
+            return _zis != null ? _zis._Password : _zos._password;
         }
     }
 
@@ -1688,8 +1669,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf._zip64;
-            if (_zis != null) throw new NotSupportedException();
-            return _zos._zip64;
+            return _zis != null ? throw new NotSupportedException() : _zos._zip64;
         }
     }
 
@@ -1698,8 +1678,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf.BufferSize;
-            if (_zis != null) throw new NotSupportedException();
-            return 0;
+            return _zis != null ? throw new NotSupportedException() : 0;
         }
     }
 
@@ -1708,8 +1687,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf.ParallelDeflater;
-            if (_zis != null) return null;
-            return _zos.ParallelDeflater;
+            return _zis != null ? null : _zos.ParallelDeflater;
         }
         set
         {
@@ -1722,16 +1700,14 @@ internal class ZipContainer
     {
         get
         {
-            if (_zf != null) return _zf.ParallelDeflateThreshold;
-            return _zos.ParallelDeflateThreshold;
+            return _zf != null ? _zf.ParallelDeflateThreshold : _zos.ParallelDeflateThreshold;
         }
     }
     public int ParallelDeflateMaxBufferPairs
     {
         get
         {
-            if (_zf != null) return _zf.ParallelDeflateMaxBufferPairs;
-            return _zos.ParallelDeflateMaxBufferPairs;
+            return _zf != null ? _zf.ParallelDeflateMaxBufferPairs : _zos.ParallelDeflateMaxBufferPairs;
         }
     }
 
@@ -1740,8 +1716,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf.CodecBufferSize;
-            if (_zis != null) return _zis.CodecBufferSize;
-            return _zos.CodecBufferSize;
+            return _zis != null ? _zis.CodecBufferSize : _zos.CodecBufferSize;
         }
     }
 
@@ -1749,8 +1724,7 @@ internal class ZipContainer
     {
         get
         {
-            if (_zf != null) return _zf.Strategy;
-            return _zos.Strategy;
+            return _zf != null ? _zf.Strategy : _zos.Strategy;
         }
     }
 
@@ -1758,8 +1732,7 @@ internal class ZipContainer
     {
         get
         {
-            if (_zf != null) return _zf.UseZip64WhenSaving;
-            return _zos.EnableZip64;
+            return _zf != null ? _zf.UseZip64WhenSaving : _zos.EnableZip64;
         }
     }
 
@@ -1768,8 +1741,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return _zf.AlternateEncoding;
-            if (_zos != null) return _zos.AlternateEncoding;
-            return null;
+            return _zos != null ? _zos.AlternateEncoding : null;
         }
     }
     public System.Text.Encoding DefaultEncoding
@@ -1777,8 +1749,7 @@ internal class ZipContainer
         get
         {
             if (_zf != null) return ZipFile.DefaultEncoding;
-            if (_zos != null) return ZipOutputStream.DefaultEncoding;
-            return null;
+            return _zos != null ? ZipOutputStream.DefaultEncoding : null;
         }
     }
     public ZipOption AlternateEncodingUsage
@@ -1795,8 +1766,7 @@ internal class ZipContainer
     {
         get
         {
-            if (_zf != null) return _zf.ReadStream;
-            return _zis.ReadStream;
+            return _zf != null ? _zf.ReadStream : _zis.ReadStream;
         }
     }
 }

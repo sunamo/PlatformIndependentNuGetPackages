@@ -7,10 +7,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>$(DefineConstants);CA1822;ASYNC</DefineConstants>
-    <NoWarn>CA1822;CS1573;CS1572</NoWarn>
+    <NoWarn>CA1822;CS1573;CS1572;CS1570;CA1866;CA2249</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>$(DefineConstants);CA1822;ASYNC</DefineConstants>
-    <NoWarn>CA1822;CS1573;CS1572</NoWarn>
+    <NoWarn>CA1822;CS1573;CS1572;CS1570;CA1866;CA2249</NoWarn>
   </PropertyGroup>
 </Project>

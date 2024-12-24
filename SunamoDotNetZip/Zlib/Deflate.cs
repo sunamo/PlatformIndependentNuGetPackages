@@ -123,15 +123,12 @@ using System;
                 this.Flavor = flavor;
             }
 
-            public static Config Lookup(CompressionLevel level)
-            {
-                return Table[(int)level];
-            }
+        public static Config Lookup(CompressionLevel level) => Table[(int)level];
 
 
-            static Config()
+        static Config()
             {
-                Table = new Config[] {
+                Table = [
                     new Config(0, 0, 0, 0, DeflateFlavor.Store),
                     new Config(4, 4, 8, 4, DeflateFlavor.Fast),
                     new Config(4, 5, 16, 8, DeflateFlavor.Fast),
@@ -143,7 +140,7 @@ using System;
                     new Config(8, 32, 128, 256, DeflateFlavor.Slow),
                     new Config(32, 128, 258, 1024, DeflateFlavor.Slow),
                     new Config(32, 258, 258, 4096, DeflateFlavor.Slow),
-                };
+                ];
             }
 
             private static readonly Config[] Table;
@@ -152,8 +149,8 @@ using System;
 
         private CompressFunc DeflateFunction;
 
-        private static readonly System.String[] _ErrorMessage = new System.String[]
-        {
+        private static readonly System.String[] _ErrorMessage =
+        [
             "need dictionary",
             "stream end",
             "",
@@ -164,7 +161,7 @@ using System;
             "buffer error",
             "incompatible version",
             ""
-        };
+        ];
 
         // preset dictionary flag in zlib header
         private static readonly int PRESET_DICT = 0x20;
@@ -271,9 +268,9 @@ using System;
         internal short[] dyn_dtree;         // distance tree
         internal short[] bl_tree;           // Huffman tree for bit lengths
 
-        internal Tree treeLiterals = new Tree();  // desc for literal tree
-        internal Tree treeDistances = new Tree();  // desc for distance tree
-        internal Tree treeBitLengths = new Tree(); // desc for bit length tree
+        internal Tree treeLiterals = new();  // desc for literal tree
+        internal Tree treeDistances = new();  // desc for distance tree
+        internal Tree treeBitLengths = new(); // desc for bit length tree
 
         // number of codes at each bit length for an optimal tree
         internal short[] bl_count = new short[InternalConstants.MAX_BITS + 1];
@@ -962,15 +959,14 @@ using System;
             }
 
             flush_block_only(flush == FlushType.Finish);
-            if (_codec.AvailableBytesOut == 0)
-                return (flush == FlushType.Finish) ? BlockState.FinishStarted : BlockState.NeedMore;
+        return _codec.AvailableBytesOut == 0
+                ? (flush == FlushType.Finish) ? BlockState.FinishStarted : BlockState.NeedMore
+                : flush == FlushType.Finish ? BlockState.FinishDone : BlockState.BlockDone;
+    }
 
-            return flush == FlushType.Finish ? BlockState.FinishDone : BlockState.BlockDone;
-        }
 
-
-        // Send a stored block
-        internal void _tr_stored_block(int buf, int stored_len, bool eof)
+    // Send a stored block
+    internal void _tr_stored_block(int buf, int stored_len, bool eof)
         {
             send_bits((STORED_BLOCK << 1) + (eof ? 1 : 0), 3); // send block type
             copy_block(buf, stored_len, true); // with header
@@ -1256,11 +1252,8 @@ using System;
             flush_block_only(flush == FlushType.Finish);
             if (_codec.AvailableBytesOut == 0)
             {
-                if (flush == FlushType.Finish)
-                    return BlockState.FinishStarted;
-                else
-                    return BlockState.NeedMore;
-            }
+            return flush == FlushType.Finish ? BlockState.FinishStarted : BlockState.NeedMore;
+        }
             return flush == FlushType.Finish ? BlockState.FinishDone : BlockState.BlockDone;
         }
 
@@ -1409,11 +1402,8 @@ using System;
 
             if (_codec.AvailableBytesOut == 0)
             {
-                if (flush == FlushType.Finish)
-                    return BlockState.FinishStarted;
-                else
-                    return BlockState.NeedMore;
-            }
+            return flush == FlushType.Finish ? BlockState.FinishStarted : BlockState.NeedMore;
+        }
 
             return flush == FlushType.Finish ? BlockState.FinishDone : BlockState.BlockDone;
         }
@@ -1501,13 +1491,11 @@ using System;
             }
             while ((cur_match = (prev[cur_match & wmask] & 0xffff)) > limit && --chain_length != 0);
 
-            if (best_len <= lookahead)
-                return best_len;
-            return lookahead;
-        }
+        return best_len <= lookahead ? best_len : lookahead;
+    }
 
 
-        private bool Rfc1950BytesEmitted = false;
+    private bool Rfc1950BytesEmitted = false;
         private bool _WantRfc1950HeaderBytes = true;
         internal bool WantRfc1950HeaderBytes
         {
@@ -1516,22 +1504,13 @@ using System;
         }
 
 
-        internal int Initialize(ZlibCodec codec, CompressionLevel level)
-        {
-            return Initialize(codec, level, ZlibConstants.WindowBitsMax);
-        }
+    internal int Initialize(ZlibCodec codec, CompressionLevel level) => Initialize(codec, level, ZlibConstants.WindowBitsMax);
 
-        internal int Initialize(ZlibCodec codec, CompressionLevel level, int bits)
-        {
-            return Initialize(codec, level, bits, MEM_LEVEL_DEFAULT, CompressionStrategy.Default);
-        }
+    internal int Initialize(ZlibCodec codec, CompressionLevel level, int bits) => Initialize(codec, level, bits, MEM_LEVEL_DEFAULT, CompressionStrategy.Default);
 
-        internal int Initialize(ZlibCodec codec, CompressionLevel level, int bits, CompressionStrategy compressionStrategy)
-        {
-            return Initialize(codec, level, bits, MEM_LEVEL_DEFAULT, compressionStrategy);
-        }
+    internal int Initialize(ZlibCodec codec, CompressionLevel level, int bits, CompressionStrategy compressionStrategy) => Initialize(codec, level, bits, MEM_LEVEL_DEFAULT, compressionStrategy);
 
-        internal int Initialize(ZlibCodec codec, CompressionLevel level, int windowBits, int memLevel, CompressionStrategy strategy)
+    internal int Initialize(ZlibCodec codec, CompressionLevel level, int windowBits, int memLevel, CompressionStrategy strategy)
         {
             _codec = codec;
             _codec.Message = null;

@@ -123,30 +123,25 @@ namespace Ionic.Zip;
                 yield return e;
         }
 
-        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
+    System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => GetEnumerator();
 
 
-        /// <summary>
-        /// An IEnumerator, for use of a ZipFile in a foreach construct.
-        /// </summary>
-        ///
-        /// <remarks>
-        /// This method is included for COM support.  An application generally does not call
-        /// this method directly.  It is called implicitly by COM clients when enumerating
-        /// the entries in the ZipFile instance.  In VBScript, this is done with a <c>For Each</c>
-        /// statement.  In Javascript, this is done with <c>new Enumerator(zipfile)</c>.
-        /// </remarks>
-        ///
-        /// <returns>
-        /// The IEnumerator over the entries in the ZipFile.
-        /// </returns>
-        [System.Runtime.InteropServices.DispId(-4)]
-        public System.Collections.IEnumerator GetNewEnum()          // the name of this method is not significant
-        {
-            return GetEnumerator();
-        }
+    /// <summary>
+    /// An IEnumerator, for use of a ZipFile in a foreach construct.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// This method is included for COM support.  An application generally does not call
+    /// this method directly.  It is called implicitly by COM clients when enumerating
+    /// the entries in the ZipFile instance.  In VBScript, this is done with a <c>For Each</c>
+    /// statement.  In Javascript, this is done with <c>new Enumerator(zipfile)</c>.
+    /// </remarks>
+    ///
+    /// <returns>
+    /// The IEnumerator over the entries in the ZipFile.
+    /// </returns>
+    [System.Runtime.InteropServices.DispId(-4)]
+    public System.Collections.IEnumerator GetNewEnum()          // the name of this method is not significant
+=> GetEnumerator();
 
-    }
+}

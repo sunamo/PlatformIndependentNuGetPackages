@@ -48,14 +48,14 @@ using System.IO;
         protected internal System.IO.Stream _stream;
         protected internal CompressionStrategy Strategy = CompressionStrategy.Default;
 
-        // workitem 7159
-        Ionic.Zlib.CRC32 crc;
+    // workitem 7159
+    readonly Ionic.Zlib.CRC32 crc;
         protected internal string _GzipFileName;
         protected internal string _GzipComment;
         protected internal DateTime _GzipMtime;
         protected internal int _gzipHeaderByteCount;
 
-        internal int Crc32 { get { if (crc == null) return 0; return crc.Crc32Result; } }
+        internal int Crc32 { get { return crc == null ? 0 : crc.Crc32Result; } }
 
         public ZlibBaseStream(System.IO.Stream stream,
                               CompressionMode compressionMode,
@@ -127,8 +127,7 @@ using System.IO;
         {
             // workitem 7159
             // calculate the CRC on the unccompressed data  (before writing)
-            if (crc != null)
-                crc.SlurpBlock(buffer, offset, count);
+            crc?.SlurpBlock(buffer, offset, count);
 
             if (_streamMode == StreamMode.Undefined)
                 _streamMode = StreamMode.Writer;
@@ -142,8 +141,8 @@ using System.IO;
             z.InputBuffer = buffer;
             _z.NextIn = offset;
             _z.AvailableBytesIn = count;
-            bool done = false;
-            do
+        bool done;
+        do
             {
                 _z.OutputBuffer = workingBuffer;
                 _z.NextOut = 0;
@@ -175,8 +174,8 @@ using System.IO;
 
             if (_streamMode == StreamMode.Writer)
             {
-                bool done = false;
-                do
+            bool done;
+            do
                 {
                     _z.OutputBuffer = workingBuffer;
                     _z.NextOut = 0;
@@ -318,20 +317,10 @@ using System.IO;
             }
         }
 
-        public override void Flush()
-        {
-            _stream.Flush();
-        }
+    public override void Flush() => _stream.Flush();
 
-        public override System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
-        {
-            throw new NotImplementedException();
-            //_outStream.Seek(offset, origin);
-        }
-        public override void SetLength(System.Int64 value)
-        {
-            _stream.SetLength(value);
-        }
+    public override System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin) => throw new NotImplementedException();//_outStream.Seek(offset, origin);
+    public override void SetLength(System.Int64 value) => _stream.SetLength(value);
 
 
 #if NOT
@@ -346,7 +335,7 @@ using System.IO;
         }
 #endif
 
-        private bool nomoreinput = false;
+    private bool nomoreinput = false;
 
 
 
@@ -448,16 +437,15 @@ using System.IO;
 
             if (count == 0) return 0;
             if (nomoreinput && _wantCompress) return 0;  // workitem 8557
-            if (buffer == null) throw new ArgumentNullException("buffer");
-            if (count < 0) throw new ArgumentOutOfRangeException("count");
-            if (offset < buffer.GetLowerBound(0)) throw new ArgumentOutOfRangeException("offset");
-            if ((offset + count) > buffer.GetLength(0)) throw new ArgumentOutOfRangeException("count");
+            if (buffer == null) throw new ArgumentNullException(nameof(buffer));
+            if (count < 0) throw new ArgumentOutOfRangeException(nameof(count));
+            if (offset < buffer.GetLowerBound(0)) throw new ArgumentOutOfRangeException(nameof(offset));
+            if ((offset + count) > buffer.GetLength(0)) throw new ArgumentOutOfRangeException(nameof(count));
 
-            int rc = 0;
 
-            // set up the output of the deflate/inflate codec:
-            _z.OutputBuffer = buffer;
-            _z.NextOut = offset;
+        // set up the output of the deflate/inflate codec:
+        _z.OutputBuffer = buffer;
+        _z.NextOut = offset;
             _z.AvailableBytesOut = count;
 
             // This is necessary in case _workingBuffer has been resized. (new byte[])
@@ -465,39 +453,41 @@ using System.IO;
             // may initialize it.)
             _z.InputBuffer = workingBuffer;
 
-            do
+
+        int rc;
+        do
+        {
+            // need data in _workingBuffer in order to deflate/inflate.  Here, we check if we have any.
+            if ((_z.AvailableBytesIn == 0) && (!nomoreinput))
             {
-                // need data in _workingBuffer in order to deflate/inflate.  Here, we check if we have any.
-                if ((_z.AvailableBytesIn == 0) && (!nomoreinput))
-                {
-                    // No data available, so try to Read data from the captive stream.
-                    _z.NextIn = 0;
-                    _z.AvailableBytesIn = _stream.Read(_workingBuffer, 0, _workingBuffer.Length);
-                    if (_z.AvailableBytesIn == 0)
-                        nomoreinput = true;
+                // No data available, so try to Read data from the captive stream.
+                _z.NextIn = 0;
+                _z.AvailableBytesIn = _stream.Read(_workingBuffer, 0, _workingBuffer.Length);
+                if (_z.AvailableBytesIn == 0)
+                    nomoreinput = true;
 
-                }
-                // we have data in InputBuffer; now compress or decompress as appropriate
-                rc = (_wantCompress)
-                    ? _z.Deflate(_flushMode)
-                    : _z.Inflate(_flushMode);
-
-                if (nomoreinput && (rc == ZlibConstants.Z_BUF_ERROR))
-                    return 0;
-
-                if (rc != ZlibConstants.Z_OK && rc != ZlibConstants.Z_STREAM_END)
-                    throw new ZlibException(String.Format("{0}flating:  rc={1}  msg={2}", (_wantCompress ? "de" : "in"), rc, _z.Message));
-
-                if ((nomoreinput || rc == ZlibConstants.Z_STREAM_END) && (_z.AvailableBytesOut == count))
-                    break; // nothing more to read
             }
-            //while (_z.AvailableBytesOut == count && rc == ZlibConstants.Z_OK);
-            while (_z.AvailableBytesOut > 0 && !nomoreinput && rc == ZlibConstants.Z_OK);
+            // we have data in InputBuffer; now compress or decompress as appropriate
+            rc = (_wantCompress)
+                ? _z.Deflate(_flushMode)
+                : _z.Inflate(_flushMode);
+
+            if (nomoreinput && (rc == ZlibConstants.Z_BUF_ERROR))
+                return 0;
+
+            if (rc != ZlibConstants.Z_OK && rc != ZlibConstants.Z_STREAM_END)
+                throw new ZlibException(String.Format("{0}flating:  rc={1}  msg={2}", (_wantCompress ? "de" : "in"), rc, _z.Message));
+
+            if ((nomoreinput || rc == ZlibConstants.Z_STREAM_END) && (_z.AvailableBytesOut == count))
+                break; // nothing more to read
+        }
+        //while (_z.AvailableBytesOut == count && rc == ZlibConstants.Z_OK);
+        while (_z.AvailableBytesOut > 0 && !nomoreinput && rc == ZlibConstants.Z_OK);
 
 
-            // workitem 8557
-            // is there more room in output?
-            if (_z.AvailableBytesOut > 0)
+        // workitem 8557
+        // is there more room in output?
+        if (_z.AvailableBytesOut > 0)
             {
                 if (rc == ZlibConstants.Z_OK && _z.AvailableBytesIn == 0)
                 {
@@ -524,8 +514,7 @@ using System.IO;
             rc = (count - _z.AvailableBytesOut);
 
             // calculate CRC after reading
-            if (crc != null)
-                crc.SlurpBlock(buffer, offset, rc);
+            crc?.SlurpBlock(buffer, offset, rc);
 
             return rc;
         }
@@ -589,41 +578,37 @@ using System.IO;
             // workitem 8460
             byte[] working = new byte[1024];
             var encoding = System.Text.Encoding.UTF8;
-            using (var output = new MemoryStream())
+        using var output = new MemoryStream();
+        using (decompressor)
+        {
+            int n;
+            while ((n = decompressor.Read(working, 0, working.Length)) != 0)
             {
-                using (decompressor)
-                {
-                    int n;
-                    while ((n = decompressor.Read(working, 0, working.Length)) != 0)
-                    {
-                        output.Write(working, 0, n);
-                    }
-                }
-
-                // reset to allow read from start
-                output.Seek(0, SeekOrigin.Begin);
-                var sr = new StreamReader(output, encoding);
-                return sr.ReadToEnd();
+                output.Write(working, 0, n);
             }
         }
+
+        // reset to allow read from start
+        output.Seek(0, SeekOrigin.Begin);
+        var sr = new StreamReader(output, encoding);
+        return sr.ReadToEnd();
+    }
 
         public static byte[] UncompressBuffer(byte[] compressed, Stream decompressor)
         {
             // workitem 8460
             byte[] working = new byte[1024];
-            using (var output = new MemoryStream())
+        using var output = new MemoryStream();
+        using (decompressor)
+        {
+            int n;
+            while ((n = decompressor.Read(working, 0, working.Length)) != 0)
             {
-                using (decompressor)
-                {
-                    int n;
-                    while ((n = decompressor.Read(working, 0, working.Length)) != 0)
-                    {
-                        output.Write(working, 0, n);
-                    }
-                }
-                return output.ToArray();
+                output.Write(working, 0, n);
             }
         }
+        return output.ToArray();
+    }
 
     }
 

@@ -212,49 +212,43 @@ using Interop=System.Runtime.InteropServices;
             else throw new ZlibException("Invalid ZlibStreamFlavor.");
         }
 
-        /// <summary>
-        /// Initialize the inflation state. 
-        /// </summary>
-        /// <remarks>
-        /// It is not necessary to call this before using the ZlibCodec to inflate data; 
-        /// It is implicitly called when you call the constructor.
-        /// </remarks>
-        /// <returns>Z_OK if everything goes well.</returns>
-        public int InitializeInflate()
-        {
-            return InitializeInflate(this.WindowBits);
-        }
+    /// <summary>
+    /// Initialize the inflation state. 
+    /// </summary>
+    /// <remarks>
+    /// It is not necessary to call this before using the ZlibCodec to inflate data; 
+    /// It is implicitly called when you call the constructor.
+    /// </remarks>
+    /// <returns>Z_OK if everything goes well.</returns>
+    public int InitializeInflate() => InitializeInflate(this.WindowBits);
 
-        /// <summary>
-        /// Initialize the inflation state with an explicit flag to
-        /// govern the handling of RFC1950 header bytes.
-        /// </summary>
-        ///
-        /// <remarks>
-        /// By default, the ZLIB header defined in <see
-        /// href="http://www.ietf.org/rfc/rfc1950.txt">RFC 1950</see> is expected.  If
-        /// you want to read a zlib stream you should specify true for
-        /// expectRfc1950Header.  If you have a deflate stream, you will want to specify
-        /// false. It is only necessary to invoke this initializer explicitly if you
-        /// want to specify false.
-        /// </remarks>
-        ///
-        /// <param name="expectRfc1950Header">whether to expect an RFC1950 header byte
-        /// pair when reading the stream of data to be inflated.</param>
-        ///
-        /// <returns>Z_OK if everything goes well.</returns>
-        public int InitializeInflate(bool expectRfc1950Header)
-        {
-            return InitializeInflate(this.WindowBits, expectRfc1950Header);
-        }
+    /// <summary>
+    /// Initialize the inflation state with an explicit flag to
+    /// govern the handling of RFC1950 header bytes.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// By default, the ZLIB header defined in <see
+    /// href="http://www.ietf.org/rfc/rfc1950.txt">RFC 1950</see> is expected.  If
+    /// you want to read a zlib stream you should specify true for
+    /// expectRfc1950Header.  If you have a deflate stream, you will want to specify
+    /// false. It is only necessary to invoke this initializer explicitly if you
+    /// want to specify false.
+    /// </remarks>
+    ///
+    /// <param name="expectRfc1950Header">whether to expect an RFC1950 header byte
+    /// pair when reading the stream of data to be inflated.</param>
+    ///
+    /// <returns>Z_OK if everything goes well.</returns>
+    public int InitializeInflate(bool expectRfc1950Header) => InitializeInflate(this.WindowBits, expectRfc1950Header);
 
-        /// <summary>
-        /// Initialize the ZlibCodec for inflation, with the specified number of window bits. 
-        /// </summary>
-        /// <param name="windowBits">The number of window bits to use. If you need to ask what that is, 
-        /// then you shouldn't be calling this initializer.</param>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int InitializeInflate(int windowBits)
+    /// <summary>
+    /// Initialize the ZlibCodec for inflation, with the specified number of window bits. 
+    /// </summary>
+    /// <param name="windowBits">The number of window bits to use. If you need to ask what that is, 
+    /// then you shouldn't be calling this initializer.</param>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int InitializeInflate(int windowBits)
         {
             this.WindowBits = windowBits;            
             return InitializeInflate(windowBits, true);
@@ -287,87 +281,82 @@ using Interop=System.Runtime.InteropServices;
             return istate.Initialize(this, windowBits);
         }
 
-        /// <summary>
-        /// Inflate the data in the InputBuffer, placing the result in the OutputBuffer.
-        /// </summary>
-        /// <remarks>
-        /// You must have set InputBuffer and OutputBuffer, NextIn and NextOut, and AvailableBytesIn and 
-        /// AvailableBytesOut  before calling this method.
-        /// </remarks>
-        /// <example>
-        /// <code>
-        /// private void InflateBuffer()
-        /// {
-        ///     int bufferSize = 1024;
-        ///     byte[] buffer = new byte[bufferSize];
-        ///     ZlibCodec decompressor = new ZlibCodec();
-        /// 
-        ///     Console.WriteLine("\n============================================");
-        ///     Console.WriteLine("Size of Buffer to Inflate: {0} bytes.", CompressedBytes.Length);
-        ///     MemoryStream ms = new MemoryStream(DecompressedBytes);
-        /// 
-        ///     int rc = decompressor.InitializeInflate();
-        /// 
-        ///     decompressor.InputBuffer = CompressedBytes;
-        ///     decompressor.NextIn = 0;
-        ///     decompressor.AvailableBytesIn = CompressedBytes.Length;
-        /// 
-        ///     decompressor.OutputBuffer = buffer;
-        /// 
-        ///     // pass 1: inflate 
-        ///     do
-        ///     {
-        ///         decompressor.NextOut = 0;
-        ///         decompressor.AvailableBytesOut = buffer.Length;
-        ///         rc = decompressor.Inflate(FlushType.None);
-        /// 
-        ///         if (rc != ZlibConstants.Z_OK &amp;&amp; rc != ZlibConstants.Z_STREAM_END)
-        ///             throw new Exception("inflating: " + decompressor.Message);
-        /// 
-        ///         ms.Write(decompressor.OutputBuffer, 0, buffer.Length - decompressor.AvailableBytesOut);
-        ///     }
-        ///     while (decompressor.AvailableBytesIn &gt; 0 || decompressor.AvailableBytesOut == 0);
-        /// 
-        ///     // pass 2: finish and flush
-        ///     do
-        ///     {
-        ///         decompressor.NextOut = 0;
-        ///         decompressor.AvailableBytesOut = buffer.Length;
-        ///         rc = decompressor.Inflate(FlushType.Finish);
-        /// 
-        ///         if (rc != ZlibConstants.Z_STREAM_END &amp;&amp; rc != ZlibConstants.Z_OK)
-        ///             throw new Exception("inflating: " + decompressor.Message);
-        /// 
-        ///         if (buffer.Length - decompressor.AvailableBytesOut &gt; 0)
-        ///             ms.Write(buffer, 0, buffer.Length - decompressor.AvailableBytesOut);
-        ///     }
-        ///     while (decompressor.AvailableBytesIn &gt; 0 || decompressor.AvailableBytesOut == 0);
-        /// 
-        ///     decompressor.EndInflate();
-        /// }
-        ///
-        /// </code>
-        /// </example>
-        /// <param name="flush">The flush to use when inflating.</param>
-        /// <returns>Z_OK if everything goes well.</returns>
-        public int Inflate(FlushType flush)
-        {
-            if (istate == null)
-                throw new ZlibException("No Inflate State!");
-            return istate.Inflate(flush);
-        }
+    /// <summary>
+    /// Inflate the data in the InputBuffer, placing the result in the OutputBuffer.
+    /// </summary>
+    /// <remarks>
+    /// You must have set InputBuffer and OutputBuffer, NextIn and NextOut, and AvailableBytesIn and 
+    /// AvailableBytesOut  before calling this method.
+    /// </remarks>
+    /// <example>
+    /// <code>
+    /// private void InflateBuffer()
+    /// {
+    ///     int bufferSize = 1024;
+    ///     byte[] buffer = new byte[bufferSize];
+    ///     ZlibCodec decompressor = new ZlibCodec();
+    /// 
+    ///     Console.WriteLine("\n============================================");
+    ///     Console.WriteLine("Size of Buffer to Inflate: {0} bytes.", CompressedBytes.Length);
+    ///     MemoryStream ms = new MemoryStream(DecompressedBytes);
+    /// 
+    ///     int rc = decompressor.InitializeInflate();
+    /// 
+    ///     decompressor.InputBuffer = CompressedBytes;
+    ///     decompressor.NextIn = 0;
+    ///     decompressor.AvailableBytesIn = CompressedBytes.Length;
+    /// 
+    ///     decompressor.OutputBuffer = buffer;
+    /// 
+    ///     // pass 1: inflate 
+    ///     do
+    ///     {
+    ///         decompressor.NextOut = 0;
+    ///         decompressor.AvailableBytesOut = buffer.Length;
+    ///         rc = decompressor.Inflate(FlushType.None);
+    /// 
+    ///         if (rc != ZlibConstants.Z_OK &amp;&amp; rc != ZlibConstants.Z_STREAM_END)
+    ///             throw new Exception("inflating: " + decompressor.Message);
+    /// 
+    ///         ms.Write(decompressor.OutputBuffer, 0, buffer.Length - decompressor.AvailableBytesOut);
+    ///     }
+    ///     while (decompressor.AvailableBytesIn &gt; 0 || decompressor.AvailableBytesOut == 0);
+    /// 
+    ///     // pass 2: finish and flush
+    ///     do
+    ///     {
+    ///         decompressor.NextOut = 0;
+    ///         decompressor.AvailableBytesOut = buffer.Length;
+    ///         rc = decompressor.Inflate(FlushType.Finish);
+    /// 
+    ///         if (rc != ZlibConstants.Z_STREAM_END &amp;&amp; rc != ZlibConstants.Z_OK)
+    ///             throw new Exception("inflating: " + decompressor.Message);
+    /// 
+    ///         if (buffer.Length - decompressor.AvailableBytesOut &gt; 0)
+    ///             ms.Write(buffer, 0, buffer.Length - decompressor.AvailableBytesOut);
+    ///     }
+    ///     while (decompressor.AvailableBytesIn &gt; 0 || decompressor.AvailableBytesOut == 0);
+    /// 
+    ///     decompressor.EndInflate();
+    /// }
+    ///
+    /// </code>
+    /// </example>
+    /// <param name="flush">The flush to use when inflating.</param>
+    /// <returns>Z_OK if everything goes well.</returns>
+    public int Inflate(FlushType flush) => istate == null ? throw new ZlibException("No Inflate State!") : istate.Inflate(flush);
 
 
-        /// <summary>
-        /// Ends an inflation session. 
-        /// </summary>
-        /// <remarks>
-        /// Call this after successively calling Inflate().  This will cause all buffers to be flushed. 
-        /// After calling this you cannot call Inflate() without a intervening call to one of the
-        /// InitializeInflate() overloads.
-        /// </remarks>
-        /// <returns>Z_OK if everything goes well.</returns>
-        public int EndInflate()
+    /// <summary>
+    /// Ends an inflation session. 
+    /// </summary>
+    /// <remarks>
+    /// Call this after successively calling Inflate().  This will cause all buffers to be flushed. 
+    /// After calling this you cannot call Inflate() without a intervening call to one of the
+    /// InitializeInflate() overloads.
+    /// </remarks>
+    /// <returns>Z_OK if everything goes well.</returns>
+    public int EndInflate()
         {
             if (istate == null)
                 throw new ZlibException("No Inflate State!");
@@ -376,72 +365,64 @@ using Interop=System.Runtime.InteropServices;
             return ret;
         }
 
-        /// <summary>
-        /// I don't know what this does!
-        /// </summary>
-        /// <returns>Z_OK if everything goes well.</returns>
-        public int SyncInflate()
-        {
-            if (istate == null)
-                throw new ZlibException("No Inflate State!");
-            return istate.Sync();
-        }
+    /// <summary>
+    /// I don't know what this does!
+    /// </summary>
+    /// <returns>Z_OK if everything goes well.</returns>
+    public int SyncInflate() => istate == null ? throw new ZlibException("No Inflate State!") : istate.Sync();
 
-        /// <summary>
-        /// Initialize the ZlibCodec for deflation operation.
-        /// </summary>
-        /// <remarks>
-        /// The codec will use the MAX window bits and the default level of compression.
-        /// </remarks>
-        /// <example>
-        /// <code>
-        ///  int bufferSize = 40000;
-        ///  byte[] CompressedBytes = new byte[bufferSize];
-        ///  byte[] DecompressedBytes = new byte[bufferSize];
-        ///  
-        ///  ZlibCodec compressor = new ZlibCodec();
-        ///  
-        ///  compressor.InitializeDeflate(CompressionLevel.Default);
-        ///  
-        ///  compressor.InputBuffer = System.Text.ASCIIEncoding.ASCII.GetBytes(TextToCompress);
-        ///  compressor.NextIn = 0;
-        ///  compressor.AvailableBytesIn = compressor.InputBuffer.Length;
-        ///  
-        ///  compressor.OutputBuffer = CompressedBytes;
-        ///  compressor.NextOut = 0;
-        ///  compressor.AvailableBytesOut = CompressedBytes.Length;
-        ///  
-        ///  while (compressor.TotalBytesIn != TextToCompress.Length &amp;&amp; compressor.TotalBytesOut &lt; bufferSize)
-        ///  {
-        ///    compressor.Deflate(FlushType.None);
-        ///  }
-        ///  
-        ///  while (true)
-        ///  {
-        ///    int rc= compressor.Deflate(FlushType.Finish);
-        ///    if (rc == ZlibConstants.Z_STREAM_END) break;
-        ///  }
-        ///  
-        ///  compressor.EndDeflate();
-        ///   
-        /// </code>
-        /// </example>
-        /// <returns>Z_OK if all goes well. You generally don't need to check the return code.</returns>
-        public int InitializeDeflate()
-        {
-            return _InternalInitializeDeflate(true);
-        }
+    /// <summary>
+    /// Initialize the ZlibCodec for deflation operation.
+    /// </summary>
+    /// <remarks>
+    /// The codec will use the MAX window bits and the default level of compression.
+    /// </remarks>
+    /// <example>
+    /// <code>
+    ///  int bufferSize = 40000;
+    ///  byte[] CompressedBytes = new byte[bufferSize];
+    ///  byte[] DecompressedBytes = new byte[bufferSize];
+    ///  
+    ///  ZlibCodec compressor = new ZlibCodec();
+    ///  
+    ///  compressor.InitializeDeflate(CompressionLevel.Default);
+    ///  
+    ///  compressor.InputBuffer = System.Text.ASCIIEncoding.ASCII.GetBytes(TextToCompress);
+    ///  compressor.NextIn = 0;
+    ///  compressor.AvailableBytesIn = compressor.InputBuffer.Length;
+    ///  
+    ///  compressor.OutputBuffer = CompressedBytes;
+    ///  compressor.NextOut = 0;
+    ///  compressor.AvailableBytesOut = CompressedBytes.Length;
+    ///  
+    ///  while (compressor.TotalBytesIn != TextToCompress.Length &amp;&amp; compressor.TotalBytesOut &lt; bufferSize)
+    ///  {
+    ///    compressor.Deflate(FlushType.None);
+    ///  }
+    ///  
+    ///  while (true)
+    ///  {
+    ///    int rc= compressor.Deflate(FlushType.Finish);
+    ///    if (rc == ZlibConstants.Z_STREAM_END) break;
+    ///  }
+    ///  
+    ///  compressor.EndDeflate();
+    ///   
+    /// </code>
+    /// </example>
+    /// <returns>Z_OK if all goes well. You generally don't need to check the return code.</returns>
+    public int InitializeDeflate() => _InternalInitializeDeflate(true);
 
-        /// <summary>
-        /// Initialize the ZlibCodec for deflation operation, using the specified CompressionLevel.
-        /// </summary>
-        /// <remarks>
-        /// The codec will use the maximum window bits (15) and the specified
-        /// CompressionLevel.  It will emit a ZLIB stream as it compresses.
-        /// </remarks>
-        /// <param name="level">The compression level for the codec.</param>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int InitializeDeflate(CompressionLevel level)
+    /// <summary>
+    /// Initialize the ZlibCodec for deflation operation, using the specified CompressionLevel.
+    /// </summary>
+    /// <remarks>
+    /// The codec will use the maximum window bits (15) and the specified
+    /// CompressionLevel.  It will emit a ZLIB stream as it compresses.
+    /// </remarks>
+    /// <param name="level">The compression level for the codec.</param>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int InitializeDeflate(CompressionLevel level)
         {
             this.CompressLevel = level;
             return _InternalInitializeDeflate(true);
@@ -506,95 +487,92 @@ using Interop=System.Runtime.InteropServices;
         private int _InternalInitializeDeflate(bool wantRfc1950Header)
         {
             if (istate != null) throw new ZlibException("You may not call InitializeDeflate() after calling InitializeInflate().");
-            dstate = new DeflateManager();
-            dstate.WantRfc1950HeaderBytes = wantRfc1950Header;
-
-            return dstate.Initialize(this, this.CompressLevel, this.WindowBits, this.Strategy);
-        }
-
-        /// <summary>
-        /// Deflate one batch of data.
-        /// </summary>
-        /// <remarks>
-        /// You must have set InputBuffer and OutputBuffer before calling this method.
-        /// </remarks>
-        /// <example>
-        /// <code>
-        /// private void DeflateBuffer(CompressionLevel level)
-        /// {
-        ///     int bufferSize = 1024;
-        ///     byte[] buffer = new byte[bufferSize];
-        ///     ZlibCodec compressor = new ZlibCodec();
-        /// 
-        ///     Console.WriteLine("\n============================================");
-        ///     Console.WriteLine("Size of Buffer to Deflate: {0} bytes.", UncompressedBytes.Length);
-        ///     MemoryStream ms = new MemoryStream();
-        /// 
-        ///     int rc = compressor.InitializeDeflate(level);
-        /// 
-        ///     compressor.InputBuffer = UncompressedBytes;
-        ///     compressor.NextIn = 0;
-        ///     compressor.AvailableBytesIn = UncompressedBytes.Length;
-        /// 
-        ///     compressor.OutputBuffer = buffer;
-        /// 
-        ///     // pass 1: deflate 
-        ///     do
-        ///     {
-        ///         compressor.NextOut = 0;
-        ///         compressor.AvailableBytesOut = buffer.Length;
-        ///         rc = compressor.Deflate(FlushType.None);
-        /// 
-        ///         if (rc != ZlibConstants.Z_OK &amp;&amp; rc != ZlibConstants.Z_STREAM_END)
-        ///             throw new Exception("deflating: " + compressor.Message);
-        /// 
-        ///         ms.Write(compressor.OutputBuffer, 0, buffer.Length - compressor.AvailableBytesOut);
-        ///     }
-        ///     while (compressor.AvailableBytesIn &gt; 0 || compressor.AvailableBytesOut == 0);
-        /// 
-        ///     // pass 2: finish and flush
-        ///     do
-        ///     {
-        ///         compressor.NextOut = 0;
-        ///         compressor.AvailableBytesOut = buffer.Length;
-        ///         rc = compressor.Deflate(FlushType.Finish);
-        /// 
-        ///         if (rc != ZlibConstants.Z_STREAM_END &amp;&amp; rc != ZlibConstants.Z_OK)
-        ///             throw new Exception("deflating: " + compressor.Message);
-        /// 
-        ///         if (buffer.Length - compressor.AvailableBytesOut &gt; 0)
-        ///             ms.Write(buffer, 0, buffer.Length - compressor.AvailableBytesOut);
-        ///     }
-        ///     while (compressor.AvailableBytesIn &gt; 0 || compressor.AvailableBytesOut == 0);
-        /// 
-        ///     compressor.EndDeflate();
-        /// 
-        ///     ms.Seek(0, SeekOrigin.Begin);
-        ///     CompressedBytes = new byte[compressor.TotalBytesOut];
-        ///     ms.Read(CompressedBytes, 0, CompressedBytes.Length);
-        /// }
-        /// </code>
-        /// </example>
-        /// <param name="flush">whether to flush all data as you deflate. Generally you will want to 
-        /// use Z_NO_FLUSH here, in a series of calls to Deflate(), and then call EndDeflate() to 
-        /// flush everything. 
-        /// </param>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int Deflate(FlushType flush)
+        dstate = new DeflateManager
         {
-            if (dstate == null)
-                throw new ZlibException("No Deflate State!");
-            return dstate.Deflate(flush);
+            WantRfc1950HeaderBytes = wantRfc1950Header
+        };
+
+        return dstate.Initialize(this, this.CompressLevel, this.WindowBits, this.Strategy);
         }
 
-        /// <summary>
-        /// End a deflation session.
-        /// </summary>
-        /// <remarks>
-        /// Call this after making a series of one or more calls to Deflate(). All buffers are flushed.
-        /// </remarks>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int EndDeflate()
+    /// <summary>
+    /// Deflate one batch of data.
+    /// </summary>
+    /// <remarks>
+    /// You must have set InputBuffer and OutputBuffer before calling this method.
+    /// </remarks>
+    /// <example>
+    /// <code>
+    /// private void DeflateBuffer(CompressionLevel level)
+    /// {
+    ///     int bufferSize = 1024;
+    ///     byte[] buffer = new byte[bufferSize];
+    ///     ZlibCodec compressor = new ZlibCodec();
+    /// 
+    ///     Console.WriteLine("\n============================================");
+    ///     Console.WriteLine("Size of Buffer to Deflate: {0} bytes.", UncompressedBytes.Length);
+    ///     MemoryStream ms = new MemoryStream();
+    /// 
+    ///     int rc = compressor.InitializeDeflate(level);
+    /// 
+    ///     compressor.InputBuffer = UncompressedBytes;
+    ///     compressor.NextIn = 0;
+    ///     compressor.AvailableBytesIn = UncompressedBytes.Length;
+    /// 
+    ///     compressor.OutputBuffer = buffer;
+    /// 
+    ///     // pass 1: deflate 
+    ///     do
+    ///     {
+    ///         compressor.NextOut = 0;
+    ///         compressor.AvailableBytesOut = buffer.Length;
+    ///         rc = compressor.Deflate(FlushType.None);
+    /// 
+    ///         if (rc != ZlibConstants.Z_OK &amp;&amp; rc != ZlibConstants.Z_STREAM_END)
+    ///             throw new Exception("deflating: " + compressor.Message);
+    /// 
+    ///         ms.Write(compressor.OutputBuffer, 0, buffer.Length - compressor.AvailableBytesOut);
+    ///     }
+    ///     while (compressor.AvailableBytesIn &gt; 0 || compressor.AvailableBytesOut == 0);
+    /// 
+    ///     // pass 2: finish and flush
+    ///     do
+    ///     {
+    ///         compressor.NextOut = 0;
+    ///         compressor.AvailableBytesOut = buffer.Length;
+    ///         rc = compressor.Deflate(FlushType.Finish);
+    /// 
+    ///         if (rc != ZlibConstants.Z_STREAM_END &amp;&amp; rc != ZlibConstants.Z_OK)
+    ///             throw new Exception("deflating: " + compressor.Message);
+    /// 
+    ///         if (buffer.Length - compressor.AvailableBytesOut &gt; 0)
+    ///             ms.Write(buffer, 0, buffer.Length - compressor.AvailableBytesOut);
+    ///     }
+    ///     while (compressor.AvailableBytesIn &gt; 0 || compressor.AvailableBytesOut == 0);
+    /// 
+    ///     compressor.EndDeflate();
+    /// 
+    ///     ms.Seek(0, SeekOrigin.Begin);
+    ///     CompressedBytes = new byte[compressor.TotalBytesOut];
+    ///     ms.Read(CompressedBytes, 0, CompressedBytes.Length);
+    /// }
+    /// </code>
+    /// </example>
+    /// <param name="flush">whether to flush all data as you deflate. Generally you will want to 
+    /// use Z_NO_FLUSH here, in a series of calls to Deflate(), and then call EndDeflate() to 
+    /// flush everything. 
+    /// </param>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int Deflate(FlushType flush) => dstate == null ? throw new ZlibException("No Deflate State!") : dstate.Deflate(flush);
+
+    /// <summary>
+    /// End a deflation session.
+    /// </summary>
+    /// <remarks>
+    /// Call this after making a series of one or more calls to Deflate(). All buffers are flushed.
+    /// </remarks>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int EndDeflate()
         {
             if (dstate == null)
                 throw new ZlibException("No Deflate State!");
@@ -621,59 +599,48 @@ using Interop=System.Runtime.InteropServices;
         }
 
 
-        /// <summary>
-        /// Set the CompressionStrategy and CompressionLevel for a deflation session.
-        /// </summary>
-        /// <param name="level">the level of compression to use.</param>
-        /// <param name="strategy">the strategy to use for compression.</param>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int SetDeflateParams(CompressionLevel level, CompressionStrategy strategy)
-        {
-            if (dstate == null)
-                throw new ZlibException("No Deflate State!");
-            return dstate.SetParams(level, strategy);
-        }
+    /// <summary>
+    /// Set the CompressionStrategy and CompressionLevel for a deflation session.
+    /// </summary>
+    /// <param name="level">the level of compression to use.</param>
+    /// <param name="strategy">the strategy to use for compression.</param>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int SetDeflateParams(CompressionLevel level, CompressionStrategy strategy) => dstate == null ? throw new ZlibException("No Deflate State!") : dstate.SetParams(level, strategy);
 
 
-        /// <summary>
-        /// Set the dictionary to be used for either Inflation or Deflation.
-        /// </summary>
-        /// <param name="dictionary">The dictionary bytes to use.</param>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int SetDictionary(byte[] dictionary)
+    /// <summary>
+    /// Set the dictionary to be used for either Inflation or Deflation.
+    /// </summary>
+    /// <param name="dictionary">The dictionary bytes to use.</param>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int SetDictionary(byte[] dictionary)
         {
             if (istate != null)
                 return istate.SetDictionary(dictionary);
 
-            if (dstate != null)
-                return dstate.SetDictionary(dictionary);
+        return dstate != null ? dstate.SetDictionary(dictionary) : throw new ZlibException("No Inflate or Deflate state!");
+    }
 
-            throw new ZlibException("No Inflate or Deflate state!");
-        }
-
-        /// <summary>
-        /// Set the dictionary to be used for either Inflation or Deflation unconditionally.
-        /// </summary>
-        /// <remarks>Decoding a MSZip file requires the dictionary state to be set unconditionally
-        /// at the end of each block to the previous decoded data</remarks>
-        /// <param name="dictionary">The dictionary bytes to use.</param>
-        /// <returns>Z_OK if all goes well.</returns>
-        public int SetDictionaryUnconditionally(byte[] dictionary)
+    /// <summary>
+    /// Set the dictionary to be used for either Inflation or Deflation unconditionally.
+    /// </summary>
+    /// <remarks>Decoding a MSZip file requires the dictionary state to be set unconditionally
+    /// at the end of each block to the previous decoded data</remarks>
+    /// <param name="dictionary">The dictionary bytes to use.</param>
+    /// <returns>Z_OK if all goes well.</returns>
+    public int SetDictionaryUnconditionally(byte[] dictionary)
         {
             if (istate != null)
                 return istate.SetDictionary(dictionary, true);
 
-            if (dstate != null)
-                return dstate.SetDictionary(dictionary);
+        return dstate != null ? dstate.SetDictionary(dictionary) : throw new ZlibException("No Inflate or Deflate state!");
+    }
 
-            throw new ZlibException("No Inflate or Deflate state!");
-        }
-
-        // Flush as much pending output as possible. All deflate() output goes
-        // through this function so some applications may wish to modify it
-        // to avoid allocating a large strm->next_out buffer and copying into it.
-        // (See also read_buf()).
-        internal void flush_pending()
+    // Flush as much pending output as possible. All deflate() output goes
+    // through this function so some applications may wish to modify it
+    // to avoid allocating a large strm->next_out buffer and copying into it.
+    // (See also read_buf()).
+    internal void flush_pending()
         {
             int len = dstate.pendingCount;
 

@@ -92,14 +92,14 @@ using System.IO;
 
 internal class BZip2Compressor
 {
-    private int blockSize100k;  // 0...9
+    private readonly int blockSize100k;  // 0...9
     private int currentByte = -1;
     private int runLength = 0;
     private int last;  // index into the block of the last char processed
-    private int outBlockFillThreshold;
-    private CompressionState cstate;
-    private readonly Ionic.Zlib.CRC32 crc = new Ionic.Zlib.CRC32(true);
-    BitWriter bw;
+    private readonly int outBlockFillThreshold;
+    private readonly CompressionState cstate;
+    private readonly Ionic.Zlib.CRC32 crc = new(true);
+    readonly BitWriter bw;
     int runs;
 
     /*
@@ -131,9 +131,9 @@ internal class BZip2Compressor
      * Possibly because the number of elems to sort is usually small, typically
      * &lt;= 20.
      */
-    private static readonly int[] increments = { 1, 4, 13, 40, 121, 364, 1093, 3280,
+    private static readonly int[] increments = [ 1, 4, 13, 40, 121, 364, 1093, 3280,
                                                      9841, 29524, 88573, 265720, 797161,
-                                                     2391484 };
+                                                     2391484 ];
 
     /// <summary>
     ///   BZip2Compressor writes its compressed data out via a BitWriter. This
@@ -985,11 +985,8 @@ internal class BZip2Compressor
         }
     }
 
-    private static byte med3(byte a, byte b, byte c)
-    {
-        return (a < b) ? (b < c ? b : a < c ? c : a) : (b > c ? b : a > c ? c
+    private static byte med3(byte a, byte b, byte c) => (a < b) ? (b < c ? b : a < c ? c : a) : (b > c ? b : a > c ? c
                                                         : a);
-    }
 
 
     /**
@@ -1416,11 +1413,11 @@ internal class BZip2Compressor
                 int n1 = heap[1];
                 heap[1] = heap[nHeap];
                 nHeap--;
-
-                int yy = 0;
                 int zz = 1;
                 int tmp = heap[1];
 
+
+                int yy;
                 while (true)
                 {
                     yy = zz << 1;
@@ -1450,8 +1447,6 @@ internal class BZip2Compressor
                 int n2 = heap[1];
                 heap[1] = heap[nHeap];
                 nHeap--;
-
-                yy = 0;
                 zz = 1;
                 tmp = heap[1];
 
@@ -1495,8 +1490,6 @@ internal class BZip2Compressor
                 parent[nNodes] = -1;
                 nHeap++;
                 heap[nHeap] = nNodes;
-
-                tmp = 0;
                 zz = nHeap;
                 tmp = heap[zz];
                 int weight_tmp = weight[tmp];

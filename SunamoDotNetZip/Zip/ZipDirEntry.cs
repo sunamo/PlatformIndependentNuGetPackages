@@ -106,7 +106,7 @@ using System.Collections.Generic;
                 {
                     builder.Append(string.Format("           Comment: {0}\n", this._Comment));
                 }
-                builder.Append("\n");
+                builder.Append('\n');
                 return builder.ToString();
             }
         }
@@ -115,17 +115,14 @@ using System.Collections.Generic;
         // workitem 10330
         private class CopyHelper
         {
-            private static System.Text.RegularExpressions.Regex re =
-                new System.Text.RegularExpressions.Regex(" \\(copy (\\d+)\\)$");
+            private static readonly System.Text.RegularExpressions.Regex re =
+                new(" \\(copy (\\d+)\\)$");
 
             private static int callCount = 0;
 
-            internal static void Reset()
-            {
-                callCount = 0;
-            }
+        internal static void Reset() => callCount = 0;
 
-            internal static string AppendCopyToFileName(string f)
+        internal static string AppendCopyToFileName(string f)
             {
                 callCount++;
                 if (callCount > 25)
@@ -142,7 +139,7 @@ using System.Collections.Generic;
                     {
                         n = Int32.Parse(m.Groups[1].Value) + 1;
                         string copy = String.Format(" (copy {0})", n);
-                        f = f.Substring(0, m.Index) + copy;
+                        f = f[..m.Index] + copy;
                     }
                     else
                     {
@@ -153,17 +150,17 @@ using System.Collections.Generic;
                 else
                 {
                     //System.Console.WriteLine("HasExtension");
-                    System.Text.RegularExpressions.Match m = re.Match(f.Substring(0, r));
+                    System.Text.RegularExpressions.Match m = re.Match(f[..r]);
                     if (m.Success)
                     {
                         n = Int32.Parse(m.Groups[1].Value) + 1;
                         string copy = String.Format(" (copy {0})", n);
-                        f = f.Substring(0, m.Index) + copy + f.Substring(r);
+                        f = f[..m.Index] + copy + f[r..];
                     }
                     else
                     {
                         string copy = String.Format(" (copy {0})", n);
-                        f = f.Substring(0, r) + copy + f.Substring(r);
+                        f = f[..r] + copy + f[r..];
                     }
 
                     //System.Console.WriteLine("returning f({0})", f);
@@ -206,33 +203,32 @@ using System.Collections.Generic;
                 {
                     s.Seek(-4, System.IO.SeekOrigin.Current);
 
-                    // Getting "not a ZipDirEntry signature" here is not always wrong or an
-                    // error.  This can happen when walking through a zipfile.  After the
-                    // last ZipDirEntry, we expect to read an
-                    // EndOfCentralDirectorySignature.  When we get this is how we know
-                    // we've reached the end of the central directory.
-                    if (signature != ZipConstants.EndOfCentralDirectorySignature &&
+                // Getting "not a ZipDirEntry signature" here is not always wrong or an
+                // error.  This can happen when walking through a zipfile.  After the
+                // last ZipDirEntry, we expect to read an
+                // EndOfCentralDirectorySignature.  When we get this is how we know
+                // we've reached the end of the central directory.
+                return signature != ZipConstants.EndOfCentralDirectorySignature &&
                         signature != ZipConstants.Zip64EndOfCentralDirectoryRecordSignature &&
-                        signature != ZipConstants.ZipEntrySignature  // workitem 8299
-                        )
-                    {
-                        throw new BadReadException(String.Format("  Bad signature (0x{0:X8}) at position 0x{1:X8}", signature, s.Position));
-                    }
-                    return null;
-                }
+                        signature != ZipConstants.ZipEntrySignature
+                        ? throw new BadReadException(String.Format("  Bad signature (0x{0:X8}) at position 0x{1:X8}", signature, s.Position))
+                        : null;
+            }
 
-                int bytesRead = 42 + 4;
+            int bytesRead = 42 + 4;
                 byte[] block = new byte[42];
                 int n = s.Read(block, 0, block.Length);
                 if (n != block.Length) return null;
 
                 int i = 0;
-                ZipEntry zde = new ZipEntry();
-                zde.AlternateEncoding = expectedEncoding;
-                zde._Source = ZipEntrySource.ZipFile;
-                zde._container = new ZipContainer(zf);
+            ZipEntry zde = new()
+            {
+                AlternateEncoding = expectedEncoding,
+                _Source = ZipEntrySource.ZipFile,
+                _container = new ZipContainer(zf)
+            };
 
-                unchecked
+            unchecked
                 {
                     zde._VersionMadeBy = (short)(block[i++] + block[i++] * 256);
                     zde._VersionNeeded = (short)(block[i++] + block[i++] * 256);
@@ -368,18 +364,15 @@ using System.Collections.Generic;
         }
 
 
-        /// <summary>
-        /// Returns true if the passed-in value is a valid signature for a ZipDirEntry.
-        /// </summary>
-        /// <param name="signature">the candidate 4-byte signature value.</param>
-        /// <returns>true, if the signature is valid according to the PKWare spec.</returns>
-        internal static bool IsNotValidZipDirEntrySig(int signature)
-        {
-            return (signature != ZipConstants.ZipDirEntrySignature);
-        }
+    /// <summary>
+    /// Returns true if the passed-in value is a valid signature for a ZipDirEntry.
+    /// </summary>
+    /// <param name="signature">the candidate 4-byte signature value.</param>
+    /// <returns>true, if the signature is valid according to the PKWare spec.</returns>
+    internal static bool IsNotValidZipDirEntrySig(int signature) => (signature != ZipConstants.ZipDirEntrySignature);
 
 
-        private Int16 _VersionMadeBy;
+    private Int16 _VersionMadeBy;
         private Int16 _InternalFileAttrs;
         private Int32 _ExternalFileAttrs;
 
