@@ -421,3 +421,6 @@
 [submodule "SunamoPaths"]
 	path = SunamoPaths
 	url = git@github.com:sunamo/SunamoPaths.git
+[submodule "SunamoDotNetZip"]
+	path = SunamoDotNetZip
+	url = git@github.com:sunamo/SunamoDotNetZip.git
