@@ -604,8 +604,8 @@ using Interop = System.Runtime.InteropServices;
         // value.
         CrcCalculatorStream(bool leaveOpen, Int64 length, System.IO.Stream stream, CRC32 crc32)
         {
-            if (stream == null) throw new ArgumentNullException(nameof(stream));
-            _innerStream = stream;
+        ArgumentNullException.ThrowIfNull(stream);
+        _innerStream = stream;
             _crc32 = crc32 ?? new CRC32();
             _lengthLimit = length;
             _leaveOpen = leaveOpen;

@@ -191,10 +191,9 @@ using System;
         /// <returns>The plaintext.</returns>
         public byte[] DecryptMessage(byte[] cipherText, int length)
         {
-            if (cipherText == null)
-                throw new ArgumentNullException(nameof(cipherText));
+        ArgumentNullException.ThrowIfNull(cipherText);
 
-            if (length > cipherText.Length)
+        if (length > cipherText.Length)
                 throw new ArgumentOutOfRangeException(nameof(length),
                                                       "Bad length during Decryption: the length parameter must be smaller than or equal to the size of the destination array.");
 
@@ -223,10 +222,9 @@ using System;
         /// <returns>The ciphertext.</returns>
         public byte[] EncryptMessage(byte[] plainText, int length)
         {
-            if (plainText == null)
-                throw new ArgumentNullException("plaintext");
+        ArgumentNullException.ThrowIfNull(plainText);
 
-            if (length > plainText.Length)
+        if (length > plainText.Length)
                 throw new ArgumentOutOfRangeException(nameof(length),
                                                       "Bad length during Encryption: The length parameter must be smaller than or equal to the size of the destination array.");
 
@@ -361,8 +359,8 @@ using System;
         /// <param name="cipher">The pre-initialized ZipCrypto object.</param>
         public ZipCipherStream(System.IO.Stream s, ZipCrypto cipher, CryptoMode mode)
         {
-            if (s == null) throw new ArgumentNullException(nameof(s));
-            _cipher = cipher;
+        ArgumentNullException.ThrowIfNull(s);
+        _cipher = cipher;
             _s = s;
             _mode = mode;
         }
@@ -372,10 +370,9 @@ using System;
             if (_mode == CryptoMode.Encrypt)
                 throw new NotSupportedException("This stream does not encrypt via Read()");
 
-            if (buffer == null)
-                throw new ArgumentNullException(nameof(buffer));
+        ArgumentNullException.ThrowIfNull(buffer);
 
-            byte[] db = new byte[count];
+        byte[] db = new byte[count];
             int n = _s.Read(db, 0, count);
             byte[] decrypted = _cipher.DecryptMessage(db, n);
             for (int i = 0; i < n; i++)
@@ -390,11 +387,10 @@ using System;
             if (_mode == CryptoMode.Decrypt)
                 throw new NotSupportedException("This stream does not Decrypt via Write()");
 
-            if (buffer == null)
-                throw new ArgumentNullException(nameof(buffer));
+        ArgumentNullException.ThrowIfNull(buffer);
 
-            // workitem 7696
-            if (count == 0) return;
+        // workitem 7696
+        if (count == 0) return;
 
         byte[] plaintext;
         if (offset != 0)

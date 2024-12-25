@@ -14,9 +14,8 @@ using System.IO;
         // A specific constructor to allow decompression of Deflate64
         internal Deflate64Stream(Stream stream, long uncompressedSize = -1)
         {
-            if (stream == null)
-                throw new ArgumentNullException(nameof(stream));
-            if (!stream.CanRead)
+        ArgumentNullException.ThrowIfNull(stream);
+        if (!stream.CanRead)
                 throw new ArgumentException("NotSupported_UnreadableStream", nameof(stream));
 
             _inflater = new InflaterManaged(null, true, uncompressedSize);
@@ -107,10 +106,9 @@ using System.IO;
 
         private void ValidateParameters(byte[] array, int offset, int count)
         {
-            if (array == null)
-                throw new ArgumentNullException(nameof(array));
+        ArgumentNullException.ThrowIfNull(array);
 
-            if (offset < 0)
+        if (offset < 0)
                 throw new ArgumentOutOfRangeException(nameof(offset));
 
             if (count < 0)

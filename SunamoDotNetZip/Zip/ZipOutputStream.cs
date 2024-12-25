@@ -1495,9 +1495,8 @@ public class ZipOutputStream : Stream
                                                                                  _zip64,
                                                                                  Comment,
                                                                                  new ZipContainer(this));
-                CountingStream cs = _outputStream as CountingStream;
                 Stream wrappedStream;
-                if (cs != null)
+                if (_outputStream is CountingStream cs)
                 {
                     wrappedStream = cs.WrappedStream;
                     cs.Dispose();

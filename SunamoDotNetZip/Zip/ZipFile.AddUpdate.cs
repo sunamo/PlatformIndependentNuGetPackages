@@ -417,10 +417,9 @@ using System.Collections.Generic;
         /// <seealso cref="Ionic.Zip.ZipFile.RemoveSelectedEntries(String)" />
         public void RemoveEntries(System.Collections.Generic.ICollection<ZipEntry> entriesToRemove)
         {
-            if (entriesToRemove == null)
-                throw new ArgumentNullException(nameof(entriesToRemove));
+        ArgumentNullException.ThrowIfNull(entriesToRemove);
 
-            foreach (ZipEntry e in entriesToRemove)
+        foreach (ZipEntry e in entriesToRemove)
             {
                 this.RemoveEntry(e);
             }
@@ -441,10 +440,9 @@ using System.Collections.Generic;
         /// <seealso cref="Ionic.Zip.ZipFile.RemoveSelectedEntries(String)" />
         public void RemoveEntries(System.Collections.Generic.ICollection<String> entriesToRemove)
         {
-            if (entriesToRemove == null)
-                throw new ArgumentNullException(nameof(entriesToRemove));
+        ArgumentNullException.ThrowIfNull(entriesToRemove);
 
-            foreach (String e in entriesToRemove)
+        foreach (String e in entriesToRemove)
             {
                 this.RemoveEntry(e);
             }
@@ -646,10 +644,9 @@ using System.Collections.Generic;
                              bool preserveDirHierarchy,
                              String directoryPathInArchive)
         {
-            if (fileNames == null)
-                throw new ArgumentNullException(nameof(fileNames));
+        ArgumentNullException.ThrowIfNull(fileNames);
 
-            _addOperationCanceled = false;
+        _addOperationCanceled = false;
             OnAddStarted();
             if (preserveDirHierarchy)
             {
@@ -720,10 +717,9 @@ using System.Collections.Generic;
         /// <seealso cref="Ionic.Zip.ZipFile.AddSelectedFiles(String, String)" />
         public void UpdateFiles(System.Collections.Generic.IEnumerable<String> fileNames, String directoryPathInArchive)
         {
-            if (fileNames == null)
-                throw new ArgumentNullException(nameof(fileNames));
+        ArgumentNullException.ThrowIfNull(fileNames);
 
-            OnAddStarted();
+        OnAddStarted();
             foreach (var f in fileNames)
                 this.UpdateFile(f, directoryPathInArchive);
             OnAddCompleted();
