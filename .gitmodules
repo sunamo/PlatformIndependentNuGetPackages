@@ -424,3 +424,6 @@
 [submodule "SunamoDotNetZip"]
 	path = SunamoDotNetZip
 	url = git@github.com:sunamo/SunamoDotNetZip.git
+[submodule "SunamoMsSqlServer"]
+	path = SunamoMsSqlServer
+	url = git@github.com:sunamo/SunamoMsSqlServer.git
