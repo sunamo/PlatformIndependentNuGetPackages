@@ -836,56 +836,55 @@ using RE = System.Text.RegularExpressions;
         // write the header info for an entry
         internal void WriteHeader(Stream s, int cycle)
         {
-            // Must remember the offset, within the output stream, of this particular
-            // entry header.
-            //
-            // This is for 2 reasons:
-            //
-            //  1. so we can determine the RelativeOffsetOfLocalHeader (ROLH) for
-            //     use in the central directory.
-            //  2. so we can seek backward in case there is an error opening or reading
-            //     the file, and the application decides to skip the file. In this case,
-            //     we need to seek backward in the output stream to allow the next entry
-            //     to be added to the zipfile output stream.
-            //
-            // Normally you would just store the offset before writing to the output
-            // stream and be done with it.  But the possibility to use split archives
-            // makes this approach ineffective.  In split archives, each file or segment
-            // is bound to a max size limit, and each local file header must not span a
-            // segment boundary; it must be written contiguously.  If it will fit in the
-            // current segment, then the ROLH is just the current Position in the output
-            // stream.  If it won't fit, then we need a new file (segment) and the ROLH
-            // is zero.
-            //
-            // But we only can know if it is possible to write a header contiguously
-            // after we know the size of the local header, a size that varies with
-            // things like filename length, comments, and extra fields.  We have to
-            // compute the header fully before knowing whether it will fit.
-            //
-            // That takes care of item #1 above.  Now, regarding #2.  If an error occurs
-            // while computing the local header, we want to just seek backward. The
-            // exception handling logic (in the caller of WriteHeader) uses ROLH to
-            // scroll back.
-            //
-            // All this means we have to preserve the starting offset before computing
-            // the header, and also we have to compute the offset later, to handle the
-            // case of split archives.
+        // Must remember the offset, within the output stream, of this particular
+        // entry header.
+        //
+        // This is for 2 reasons:
+        //
+        //  1. so we can determine the RelativeOffsetOfLocalHeader (ROLH) for
+        //     use in the central directory.
+        //  2. so we can seek backward in case there is an error opening or reading
+        //     the file, and the application decides to skip the file. In this case,
+        //     we need to seek backward in the output stream to allow the next entry
+        //     to be added to the zipfile output stream.
+        //
+        // Normally you would just store the offset before writing to the output
+        // stream and be done with it.  But the possibility to use split archives
+        // makes this approach ineffective.  In split archives, each file or segment
+        // is bound to a max size limit, and each local file header must not span a
+        // segment boundary; it must be written contiguously.  If it will fit in the
+        // current segment, then the ROLH is just the current Position in the output
+        // stream.  If it won't fit, then we need a new file (segment) and the ROLH
+        // is zero.
+        //
+        // But we only can know if it is possible to write a header contiguously
+        // after we know the size of the local header, a size that varies with
+        // things like filename length, comments, and extra fields.  We have to
+        // compute the header fully before knowing whether it will fit.
+        //
+        // That takes care of item #1 above.  Now, regarding #2.  If an error occurs
+        // while computing the local header, we want to just seek backward. The
+        // exception handling logic (in the caller of WriteHeader) uses ROLH to
+        // scroll back.
+        //
+        // All this means we have to preserve the starting offset before computing
+        // the header, and also we have to compute the offset later, to handle the
+        // case of split archives.
 
-            var counter = s as CountingStream;
 
-            // workitem 8098: ok (output)
-            // This may change later, for split archives
+        // workitem 8098: ok (output)
+        // This may change later, for split archives
 
-            // Don't set _RelativeOffsetOfLocalHeader. Instead, set a temp variable.
-            // This allows for re-streaming, where a zip entry might be read from a
-            // zip archive (and maybe decrypted, and maybe decompressed) and then
-            // written to another zip archive, with different settings for
-            // compression method, compression level, or encryption algorithm.
-            _future_ROLH = (counter != null)
-                ? counter.ComputedPosition
-                : s.Position;
+        // Don't set _RelativeOffsetOfLocalHeader. Instead, set a temp variable.
+        // This allows for re-streaming, where a zip entry might be read from a
+        // zip archive (and maybe decrypted, and maybe decompressed) and then
+        // written to another zip archive, with different settings for
+        // compression method, compression level, or encryption algorithm.
+        _future_ROLH = (s is CountingStream counter)
+            ? counter.ComputedPosition
+            : s.Position;
 
-            int j = 0, i = 0;
+        int j = 0, i = 0;
 
             byte[] block = new byte[30];
 
@@ -1837,34 +1836,33 @@ using RE = System.Text.RegularExpressions;
             if ((_BitField & 0x0008) != 0x0008 ||
                  (this._Source == ZipEntrySource.ZipOutputStream && s.CanSeek))
             {
-                // seek back and rewrite the entry header
-                var zss = s as ZipSegmentedStream;
-                if (zss != null && _diskNumber != zss.CurrentSegment)
-                {
+            // seek back and rewrite the entry header
+            if (s is ZipSegmentedStream zss && _diskNumber != zss.CurrentSegment)
+            {
                 // In this case the entry header is in a different file,
                 // which has already been closed. Need to re-open it.
                 using Stream hseg = ZipSegmentedStream.ForUpdate(this._container.ZipFile.Name, _diskNumber);
                 hseg.Seek(this._RelativeOffsetOfLocalHeader, SeekOrigin.Begin);
                 hseg.Write(_EntryHeader, 0, _EntryHeader.Length);
             }
-                else
-                {
-                    // seek in the raw output stream, to the beginning of the header for
-                    // this entry.
-                    // workitem 8098: ok (output)
-                    s.Seek(this._RelativeOffsetOfLocalHeader, SeekOrigin.Begin);
+            else
+            {
+                // seek in the raw output stream, to the beginning of the header for
+                // this entry.
+                // workitem 8098: ok (output)
+                s.Seek(this._RelativeOffsetOfLocalHeader, SeekOrigin.Begin);
 
-                    // write the updated header to the output stream
-                    s.Write(_EntryHeader, 0, _EntryHeader.Length);
+                // write the updated header to the output stream
+                s.Write(_EntryHeader, 0, _EntryHeader.Length);
 
-                    // adjust the count on the CountingStream as necessary
-                    s1?.Adjust(_EntryHeader.Length);
+                // adjust the count on the CountingStream as necessary
+                s1?.Adjust(_EntryHeader.Length);
 
-                    // seek in the raw output stream, to the end of the file data
-                    // for this entry
-                    s.Seek(_CompressedSize, SeekOrigin.Current);
-                }
+                // seek in the raw output stream, to the end of the file data
+                // for this entry
+                s.Seek(_CompressedSize, SeekOrigin.Current);
             }
+        }
 
             // emit the descriptor - only if not a directory.
             if (((_BitField & 0x0008) == 0x0008) && !IsDirectory)
@@ -2582,17 +2580,16 @@ using RE = System.Text.RegularExpressions;
             }
 
 
-            // workitem 5616
-            // remember the offset, within the output stream, of this particular entry header.
-            // This may have changed if any of the other entries changed (eg, if a different
-            // entry was removed or added.)
-            var counter = outstream as CountingStream;
-            _RelativeOffsetOfLocalHeader = (counter != null)
-                ? counter.ComputedPosition
-                : outstream.Position;  // BytesWritten
+        // workitem 5616
+        // remember the offset, within the output stream, of this particular entry header.
+        // This may have changed if any of the other entries changed (eg, if a different
+        // entry was removed or added.)
+        _RelativeOffsetOfLocalHeader = (outstream is CountingStream counter)
+            ? counter.ComputedPosition
+            : outstream.Position;  // BytesWritten
 
-            // copy through the header, filedata, trailer, everything...
-            long remaining = this._TotalEntrySize;
+        // copy through the header, filedata, trailer, everything...
+        long remaining = this._TotalEntrySize;
             while (remaining > 0)
             {
                 int len = (remaining > bytes.Length) ? bytes.Length : (int)remaining;

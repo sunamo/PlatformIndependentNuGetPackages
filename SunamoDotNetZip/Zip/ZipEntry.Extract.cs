@@ -624,8 +624,7 @@ public partial class ZipEntry
     /// </summary>
     void InternalExtractToBaseDir(string baseDir, string password, ZipContainer zipContainer, ZipEntrySource zipEntrySource, string fileName)
     {
-        if (baseDir == null)
-            throw new ArgumentNullException(nameof(baseDir));
+        ArgumentNullException.ThrowIfNull(baseDir);
 
         // workitem 7958
         if (zipContainer == null)
@@ -809,8 +808,7 @@ public partial class ZipEntry
         }
         finally
         {
-            var zss = archiveStream as ZipSegmentedStream;
-            if (zss != null)
+            if (archiveStream is ZipSegmentedStream zss)
             {
                 // need to dispose it
                 zss.Dispose();
@@ -890,7 +888,7 @@ public partial class ZipEntry
         SetupCryptoForExtract(p);
     }
 
-    Stream OpenFileStream(string tmpPath, ref bool checkLaterForResetDirTimes)
+    FileStream OpenFileStream(string tmpPath, ref bool checkLaterForResetDirTimes)
     {
         var dirName = Path.GetDirectoryName(tmpPath);
         // ensure the target path exists
@@ -1082,7 +1080,7 @@ public partial class ZipEntry
 
     Stream GetExtractDecompressor(Stream input2)
     {
-        if (input2 == null) throw new ArgumentNullException(nameof(input2));
+        ArgumentNullException.ThrowIfNull(input2);
 
         // get a stream that either decompresses or not.
         switch (_CompressionMethod_FromZipFile)
@@ -1098,11 +1096,14 @@ public partial class ZipEntry
                     return new BZip2.BZip2InputStream(input2, true);
 #endif
         }
+
+        throw new Exception(string.Format("Failed to find decompressor matching {0}",
+            _CompressionMethod_FromZipFile));
     }
 
     Stream GetExtractDecryptor(Stream input)
     {
-        if (input == null) throw new ArgumentNullException(nameof(input));
+        ArgumentNullException.ThrowIfNull(input);
 
         Stream input2;
         if (_Encryption_FromZipFile == EncryptionAlgorithm.PkzipWeak)
@@ -1309,7 +1310,7 @@ public partial class ZipEntry
     /// </summary>
     bool IsDoneWithOutputToBaseDir(string baseDir, out string outFileName)
     {
-        if (baseDir == null) throw new ArgumentNullException(nameof(baseDir));
+        ArgumentNullException.ThrowIfNull(baseDir);
         // Sometimes the name on the entry starts with a slash.
         // Rather than unpack to the root of the volume, we're going to
         // drop the slash and unpack to the specified base directory.

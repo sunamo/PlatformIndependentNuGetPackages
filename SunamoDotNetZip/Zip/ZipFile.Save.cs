@@ -551,9 +551,8 @@ using System.Collections.Generic;
         /// </param>
         public void Save(Stream outputStream)
         {
-            if (outputStream == null)
-                throw new ArgumentNullException(nameof(outputStream));
-            if (!outputStream.CanWrite)
+        ArgumentNullException.ThrowIfNull(outputStream);
+        if (!outputStream.CanWrite)
                 throw new ArgumentException("Must be a writable stream.", nameof(outputStream));
 
             // if we had a filename to save to, we are now obliterating it.
@@ -609,25 +608,24 @@ using System.Collections.Generic;
             }
 
 
-            // We need to keep track of the start and
-            // Finish of the Central Directory Structure.
+        // We need to keep track of the start and
+        // Finish of the Central Directory Structure.
 
-            // Cannot always use WriteStream.Length or Position; some streams do
-            // not support these. (eg, ASP.NET Response.OutputStream) In those
-            // cases we have a CountingStream.
+        // Cannot always use WriteStream.Length or Position; some streams do
+        // not support these. (eg, ASP.NET Response.OutputStream) In those
+        // cases we have a CountingStream.
 
-            // Also, we cannot just set Start as s.Position bfore the write, and Finish
-            // as s.Position after the write.  In a split zip, the write may actually
-            // flip to the next segment.  In that case, Start will be zero.  But we
-            // don't know that til after we know the size of the thing to write.  So the
-            // answer is to compute the directory, then ask the ZipSegmentedStream which
-            // segment that directory would fall in, it it were written.  Then, include
-            // that data into the directory, and finally, write the directory to the
-            // output stream.
+        // Also, we cannot just set Start as s.Position bfore the write, and Finish
+        // as s.Position after the write.  In a split zip, the write may actually
+        // flip to the next segment.  In that case, Start will be zero.  But we
+        // don't know that til after we know the size of the thing to write.  So the
+        // answer is to compute the directory, then ask the ZipSegmentedStream which
+        // segment that directory would fall in, it it were written.  Then, include
+        // that data into the directory, and finally, write the directory to the
+        // output stream.
 
-            var output = s as CountingStream;
-            long Finish = (output != null) ? output.ComputedPosition : s.Position;  // BytesWritten
-            long Start = Finish - aLength;
+        long Finish = (s is CountingStream output) ? output.ComputedPosition : s.Position;  // BytesWritten
+        long Start = Finish - aLength;
 
             // need to know which segment the EOCD record starts in
             UInt32 startSegment = (zss != null)

@@ -1338,8 +1338,7 @@ public partial class FileSelector
     /// <returns>a collection of ZipEntry objects that conform to the criteria.</returns>
     public ICollection<Ionic.Zip.ZipEntry> SelectEntries(Ionic.Zip.ZipFile zip)
     {
-        if (zip == null)
-            throw new ArgumentNullException(nameof(zip));
+        ArgumentNullException.ThrowIfNull(zip);
 
         var list = new List<Ionic.Zip.ZipEntry>();
 
@@ -1393,8 +1392,7 @@ public partial class FileSelector
     /// <returns>a collection of ZipEntry objects that conform to the criteria.</returns>
     public ICollection<Ionic.Zip.ZipEntry> SelectEntries(Ionic.Zip.ZipFile zip, string directoryPathInArchive)
     {
-        if (zip == null)
-            throw new ArgumentNullException(nameof(zip));
+        ArgumentNullException.ThrowIfNull(zip);
 
         var list = new List<Ionic.Zip.ZipEntry>();
         // workitem 8559

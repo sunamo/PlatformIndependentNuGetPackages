@@ -2988,8 +2988,7 @@ IDisposable
     {
         get
         {
-            if (_zipEntriesAsList == null)
-                _zipEntriesAsList = new List<ZipEntry>(_entries.Values);
+            _zipEntriesAsList ??= new List<ZipEntry>(_entries.Values);
             return _zipEntriesAsList;
         }
     }
@@ -3434,8 +3433,7 @@ IDisposable
     {
         //if (!_entries.Values.Contains(entry))
         //    throw new ArgumentException("The entry you specified does not exist in the zip archive.");
-        if (entry == null)
-            throw new ArgumentNullException(nameof(entry));
+        ArgumentNullException.ThrowIfNull(entry);
 
         var path = SharedUtilities.NormalizePathForUseInZipFile(entry.FileName);
         _entries.Remove(path);
@@ -3844,11 +3842,6 @@ IDisposable
 /// </remarks>
 public enum Zip64Option
 {
-    /// <summary>
-    /// The default behavior, which is "Never".
-    /// (For COM clients, this is a 0 (zero).)
-    /// </summary>
-    Default = 0,
     /// <summary>
     /// Do not use ZIP64 extensions when writing zip archives.
     /// (For COM clients, this is a 0 (zero).)
