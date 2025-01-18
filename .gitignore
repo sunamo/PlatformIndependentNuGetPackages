@@ -5,7 +5,7 @@
 git.txt
 tickets.txt
 client_secret*.json
-sunamo/plain.txt
+plain.txt
 
 # User-specific files
 *.suo
