@@ -264,8 +264,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoDotNetZip", "SunamoDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoMsSqlServer", "SunamoMsSqlServer\SunamoMsSqlServer.csproj", "{595B3E4D-E7A0-4E2E-AF56-DD68453BC15C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoToNetCore", "SunamoToNetCore\SunamoToNetCore.csproj", "{C6E187A5-898E-49A1-880A-FA6555A77F5A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
