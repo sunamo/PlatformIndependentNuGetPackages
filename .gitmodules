@@ -196,9 +196,6 @@
 [submodule "SunamoShared"]
 	path = SunamoShared
 	url = git@github.com:sunamo/SunamoShared.git
-[submodule "SunamoSolutionsIndexer"]
-	path = SunamoSolutionsIndexer
-	url = git@github.com:sunamo/SunamoSolutionsIndexer.git
 [submodule "SunamoSqlite"]
 	path = SunamoSqlite
 	url = git@github.com:sunamo/SunamoSqlite.git
@@ -427,3 +424,6 @@
 [submodule "SunamoMsSqlServer"]
 	path = SunamoMsSqlServer
 	url = git@github.com:sunamo/SunamoMsSqlServer.git
+[submodule "SunamoTest"]
+	path = SunamoTest
+	url = git@github.com:sunamo/SunamoTest.git
