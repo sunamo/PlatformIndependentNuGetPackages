@@ -427,3 +427,6 @@
 [submodule "SunamoTest"]
 	path = SunamoTest
 	url = git@github.com:sunamo/SunamoTest.git
+[submodule "SunamoAzureDevOpsApi"]
+	path = SunamoAzureDevOpsApi
+	url = git@github.com:sunamo/SunamoAzureDevOpsApi.git
