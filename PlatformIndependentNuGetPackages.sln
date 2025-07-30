@@ -198,69 +198,69 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGetFolders", "SunamoG
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoDotnetCmdBuilder", "SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder.csproj", "{75DA3FDA-3301-4390-8BE5-A586457FE261}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLogging", "SunamoLogging\SunamoLogging.csproj", "{E482F69D-2EB6-4AFC-A3F2-E12ECEB2FF81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLogging", "SunamoLogging\SunamoLogging\SunamoLogging.csproj", "{E482F69D-2EB6-4AFC-A3F2-E12ECEB2FF81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoYaml", "SunamoYaml\SunamoYaml.csproj", "{A7647C3D-C98E-4DF9-9C1C-13E644381A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoYaml", "SunamoYaml\SunamoYaml\SunamoYaml.csproj", "{A7647C3D-C98E-4DF9-9C1C-13E644381A60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTidy", "SunamoTidy\SunamoTidy.csproj", "{5DCECDDF-12ED-4AFC-82AB-8FE87EB34AF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTidy", "SunamoTidy\SunamoTidy\SunamoTidy.csproj", "{5DCECDDF-12ED-4AFC-82AB-8FE87EB34AF4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCollectionsTo", "SunamoCollectionsTo\SunamoCollectionsTo.csproj", "{F8E57FA3-173B-4663-A87F-E507DC8FA4D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCollectionsTo", "SunamoCollectionsTo\SunamoCollectionsTo\SunamoCollectionsTo.csproj", "{F8E57FA3-173B-4663-A87F-E507DC8FA4D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoToUnixLineEnding", "SunamoToUnixLineEnding\SunamoToUnixLineEnding.csproj", "{7CB8F940-59B0-4607-BFC4-DF93A400B1A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoToUnixLineEnding", "SunamoToUnixLineEnding\SunamoToUnixLineEnding\SunamoToUnixLineEnding.csproj", "{7CB8F940-59B0-4607-BFC4-DF93A400B1A9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRuleset", "SunamoRuleset\SunamoRuleset.csproj", "{E26E70A9-1C74-4963-BF97-6B2B571E8A89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRuleset", "SunamoRuleset\SunamoRuleset\SunamoRuleset.csproj", "{E26E70A9-1C74-4963-BF97-6B2B571E8A89}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRobotsTxt", "SunamoRobotsTxt\SunamoRobotsTxt.csproj", "{EDA7F6BE-4EB1-44F9-8B50-6CF17622CCDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRobotsTxt", "SunamoRobotsTxt\SunamoRobotsTxt\SunamoRobotsTxt.csproj", "{EDA7F6BE-4EB1-44F9-8B50-6CF17622CCDA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoMathpix", "SunamoMathpix\SunamoMathpix.csproj", "{986215B2-30B8-4210-B9E7-577926573F60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoMathpix", "SunamoMathpix\SunamoMathpix\SunamoMathpix.csproj", "{986215B2-30B8-4210-B9E7-577926573F60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLaTeX", "SunamoLaTeX\SunamoLaTeX.csproj", "{8604ADDF-A634-49A4-AB50-70179F594F44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLaTeX", "SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj", "{8604ADDF-A634-49A4-AB50-70179F594F44}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGitConfig", "SunamoGitConfig\SunamoGitConfig.csproj", "{A676C015-1E7B-4F59-83FB-801DD4DB7DC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGitConfig", "SunamoGitConfig\SunamoGitConfig\SunamoGitConfig.csproj", "{A676C015-1E7B-4F59-83FB-801DD4DB7DC6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoEditorConfig", "SunamoEditorConfig\SunamoEditorConfig.csproj", "{8E4D4918-E274-4361-A3B7-9A2073BEF625}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoEditorConfig", "SunamoEditorConfig\SunamoEditorConfig\SunamoEditorConfig.csproj", "{8E4D4918-E274-4361-A3B7-9A2073BEF625}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCssGenerator", "SunamoCssGenerator\SunamoCssGenerator.csproj", "{7AE4CBDB-AEC3-4DC0-A64B-856076FBF0F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCssGenerator", "SunamoCssGenerator\SunamoCssGenerator\SunamoCssGenerator.csproj", "{7AE4CBDB-AEC3-4DC0-A64B-856076FBF0F6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoBazosCrawler", "SunamoBazosCrawler\SunamoBazosCrawler.csproj", "{AEBB23D5-4028-4A83-AD5B-5817A62FE8F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoBazosCrawler", "SunamoBazosCrawler\SunamoBazosCrawler\SunamoBazosCrawler.csproj", "{AEBB23D5-4028-4A83-AD5B-5817A62FE8F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTypes", "SunamoTypes\SunamoTypes.csproj", "{0442003C-72AF-4FCD-912D-FE03799B5F64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTypes", "SunamoTypes\SunamoTypes\SunamoTypes.csproj", "{0442003C-72AF-4FCD-912D-FE03799B5F64}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoResult", "SunamoResult\SunamoResult.csproj", "{34BB6397-D0DA-4EA1-B318-CF37CB868F39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoResult", "SunamoResult\SunamoResult\SunamoResult.csproj", "{34BB6397-D0DA-4EA1-B318-CF37CB868F39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCsproj", "SunamoCsproj\SunamoCsproj.csproj", "{F6663AFC-12EA-47FB-B0C6-EDD1147645E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoCsproj", "SunamoCsproj\SunamoCsproj\SunamoCsproj.csproj", "{F6663AFC-12EA-47FB-B0C6-EDD1147645E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoSelenium", "SunamoSelenium\SunamoSelenium.csproj", "{75C1734D-50DC-4D40-B682-FC5BAD483594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoSelenium", "SunamoSelenium\SunamoSelenium\SunamoSelenium.csproj", "{75C1734D-50DC-4D40-B682-FC5BAD483594}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGpx", "SunamoGpx\SunamoGpx.csproj", "{10D15C69-DC77-4794-B7FE-43C754BF01E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGpx", "SunamoGpx\SunamoGpx\SunamoGpx.csproj", "{10D15C69-DC77-4794-B7FE-43C754BF01E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGoogleMyMaps", "SunamoGoogleMyMaps\SunamoGoogleMyMaps.csproj", "{ED00F311-2822-4DE6-AB12-2241931900BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGoogleMyMaps", "SunamoGoogleMyMaps\SunamoGoogleMyMaps\SunamoGoogleMyMaps.csproj", "{ED00F311-2822-4DE6-AB12-2241931900BB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoArgs", "SunamoArgs\SunamoArgs\SunamoArgs.csproj", "{4B1E3360-9653-4327-B539-6B8FC2C50621}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoFilesIndex", "SunamoFilesIndex\SunamoFilesIndex.csproj", "{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoFilesIndex", "SunamoFilesIndex\SunamoFilesIndex\SunamoFilesIndex.csproj", "{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoThreading", "SunamoThreading\SunamoThreading.csproj", "{21BDB870-AF16-4248-BC09-C2C2ECDDC135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoThreading", "SunamoThreading\SunamoThreading\SunamoThreading.csproj", "{21BDB870-AF16-4248-BC09-C2C2ECDDC135}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTextIndexing", "SunamoTextIndexing\SunamoTextIndexing.csproj", "{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTextIndexing", "SunamoTextIndexing\SunamoTextIndexing\SunamoTextIndexing.csproj", "{2820F1A6-AE11-47F0-9CD1-ADDC8A7CD504}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoEmoticons", "SunamoEmoticons\SunamoEmoticons.csproj", "{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoEmoticons", "SunamoEmoticons\SunamoEmoticons\SunamoEmoticons.csproj", "{3FBA4623-91A6-4C8C-BFF2-912CAEC1E651}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoSecurity", "SunamoSecurity\SunamoSecurity.csproj", "{EFE94894-8388-47B8-A623-6866AE36DF4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoSecurity", "SunamoSecurity\SunamoSecurity\SunamoSecurity.csproj", "{EFE94894-8388-47B8-A623-6866AE36DF4D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRoslyn", "SunamoRoslyn\SunamoRoslyn.csproj", "{21CB2618-783E-4958-8EF2-C4F116FC6540}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoRoslyn", "SunamoRoslyn\SunamoRoslyn\SunamoRoslyn.csproj", "{21CB2618-783E-4958-8EF2-C4F116FC6540}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoDependencyInjection", "SunamoDependencyInjection\SunamoDependencyInjection.csproj", "{BCE1CB61-C83E-46E2-81AC-6A7237B4380B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoDependencyInjection", "SunamoDependencyInjection\SunamoDependencyInjection\SunamoDependencyInjection.csproj", "{BCE1CB61-C83E-46E2-81AC-6A7237B4380B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoPaths", "SunamoPaths\SunamoPaths.csproj", "{43DAEDDA-892F-4160-B5E3-F07C5789788D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoPaths", "SunamoPaths\SunamoPaths\SunamoPaths.csproj", "{43DAEDDA-892F-4160-B5E3-F07C5789788D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoDotNetZip", "SunamoDotNetZip\SunamoDotNetZip.csproj", "{4A79B4F0-7C98-42F2-B891-85FCEA752A8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoDotNetZip", "SunamoDotNetZip\SunamoDotNetZip\SunamoDotNetZip.csproj", "{4A79B4F0-7C98-42F2-B891-85FCEA752A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoMsSqlServer", "SunamoMsSqlServer\SunamoMsSqlServer.csproj", "{595B3E4D-E7A0-4E2E-AF56-DD68453BC15C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoMsSqlServer", "SunamoMsSqlServer\SunamoMsSqlServer\SunamoMsSqlServer.csproj", "{595B3E4D-E7A0-4E2E-AF56-DD68453BC15C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoTest", "SunamoTest\SunamoTest.csproj", "{C1C44BF5-0CDC-4AF6-A069-5FDF43B4E77A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoTest", "SunamoTest\SunamoTest\SunamoTest.csproj", "{C1C44BF5-0CDC-4AF6-A069-5FDF43B4E77A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoAzureDevOpsApi", "SunamoAzureDevOpsApi\SunamoAzureDevOpsApi.csproj", "{8D512B05-A4AE-05D0-8BBA-02A3CCF0BC2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoAzureDevOpsApi", "SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi.csproj", "{8D512B05-A4AE-05D0-8BBA-02A3CCF0BC2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
