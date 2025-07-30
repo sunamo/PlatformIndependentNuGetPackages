@@ -58,17 +58,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoThisApp", "SunamoThis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoTextOutputGenerator", "SunamoTextOutputGenerator\SunamoTextOutputGenerator\SunamoTextOutputGenerator.csproj", "{913722D7-BB3A-4439-A3F2-27164242E0F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringTrim", "SunamoStringTrim\SunamoStringTrim.csproj", "{08DF0FF5-648A-4C4F-9E56-B857FCBB9CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringTrim", "SunamoStringTrim\SunamoStringTrim\SunamoStringTrim.csproj", "{08DF0FF5-648A-4C4F-9E56-B857FCBB9CB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringSubstring", "SunamoStringSubstring\SunamoStringSubstring.csproj", "{9E5450A7-C67E-409A-926B-E9291DE98212}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringSubstring", "SunamoStringSubstring\SunamoStringSubstring\SunamoStringSubstring.csproj", "{9E5450A7-C67E-409A-926B-E9291DE98212}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringSplit", "SunamoStringSplit\SunamoStringSplit.csproj", "{367ED984-0E7F-4FA4-8A9E-6A5B32564E6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringSplit", "SunamoStringSplit\SunamoStringSplit\SunamoStringSplit.csproj", "{367ED984-0E7F-4FA4-8A9E-6A5B32564E6B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringReplace", "SunamoStringReplace\SunamoStringReplace.csproj", "{F10676EC-3BE7-43E9-86D3-32BE5E6B7A2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringReplace", "SunamoStringReplace\SunamoStringReplace\SunamoStringReplace.csproj", "{F10676EC-3BE7-43E9-86D3-32BE5E6B7A2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringJoin", "SunamoStringJoin\SunamoStringJoin.csproj", "{D6FA67A8-1291-4FC3-9254-244E7E8C35B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringJoin", "SunamoStringJoin\SunamoStringJoin\SunamoStringJoin.csproj", "{D6FA67A8-1291-4FC3-9254-244E7E8C35B4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringGetLines", "SunamoStringGetLines\SunamoStringGetLines.csproj", "{9D0E7372-AA9B-4842-8FCA-DEFC9AD2FF9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoStringGetLines", "SunamoStringGetLines\SunamoStringGetLines\SunamoStringGetLines.csproj", "{9D0E7372-AA9B-4842-8FCA-DEFC9AD2FF9B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoString", "SunamoString\SunamoString\SunamoString.csproj", "{A6C88257-40E9-47D6-AEAE-7E7FED377238}"
 EndProject
@@ -236,7 +236,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGpx", "SunamoGpx\Suna
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoGoogleMyMaps", "SunamoGoogleMyMaps\SunamoGoogleMyMaps.csproj", "{ED00F311-2822-4DE6-AB12-2241931900BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoArgs", "SunamoArgs\SunamoArgs.csproj", "{4B1E3360-9653-4327-B539-6B8FC2C50621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoArgs", "SunamoArgs\SunamoArgs\SunamoArgs.csproj", "{4B1E3360-9653-4327-B539-6B8FC2C50621}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoFilesIndex", "SunamoFilesIndex\SunamoFilesIndex.csproj", "{38C1B6F5-2808-4FBA-82BD-7CFB5D8C0D43}"
 EndProject
