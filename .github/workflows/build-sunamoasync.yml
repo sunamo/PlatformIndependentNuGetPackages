@@ -1,0 +1,67 @@
+name: Build SunamoAsync
+
+on:
+  push:
+    branches: [ "**" ]
+    paths:
+      - 'SunamoAsync/**'
+      - '.github/workflows/build-sunamoasync.yml'
+  pull_request:
+    branches: [ "**" ]
+    paths:
+      - 'SunamoAsync/**'
+      - '.github/workflows/build-sunamoasync.yml'
+
+jobs:
+  build:
+    name: Build SunamoAsync
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore SunamoAsync/SunamoAsync/SunamoAsync.csproj
+
+    - name: Build
+      run: dotnet build SunamoAsync/SunamoAsync/SunamoAsync.csproj --configuration Release --no-restore
+
+  test:
+    name: Test SunamoAsync.Tests
+    runs-on: ${{ matrix.os }}
+    needs: build
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore SunamoAsync/SunamoAsync.Tests/SunamoAsync.Tests.csproj
+
+    - name: Build tests
+      run: dotnet build SunamoAsync/SunamoAsync.Tests/SunamoAsync.Tests.csproj --configuration Release --no-restore
+
+    - name: Run tests
+      run: dotnet test SunamoAsync/SunamoAsync.Tests/SunamoAsync.Tests.csproj --configuration Release --no-build --verbosity normal
+      continue-on-error: true
