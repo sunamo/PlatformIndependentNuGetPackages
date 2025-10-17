@@ -430,3 +430,6 @@
 [submodule "SunamoTest"]
 	path = SunamoTest
 	url = git@github.com:sunamo/SunamoTest.git
+[submodule "SunamoAI"]
+	path = SunamoAI
+	url = git@github.com:sunamo/SunamoAI.git

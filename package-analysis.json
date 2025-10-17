@@ -1,0 +1,3861 @@
+{
+  "processed": [
+    {
+      "name": "SunamoAI",
+      "description": "",
+      "version": "",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Mscc.GenerativeAI",
+          "version": "2.2.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "*"
+        }
+      ],
+      "classes": [
+        "ClaudeApiService",
+        "ClaudeCliService",
+        "GeminiApiService"
+      ],
+      "methods": [
+        "CallClaudeApi",
+        "CallClaudeCli",
+        "CallGeminiApi"
+      ],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoArgs",
+      "description": "Shared library with data classes passed into methods as arguments",
+      "version": "25.7.24.2",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "DumpAsStringHeaderArgs",
+        "InvokeProcessArgs",
+        "RemoveStartingWithArgs"
+      ],
+      "methods": [],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoAsync",
+      "description": "Run async code as sync and vice versa",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AsyncHelper"
+      ],
+      "methods": [
+        "InvokeFuncTaskOrAction",
+        "GetResult",
+        "RunAsync",
+        "RunSyncWithoutReturnValue",
+        "BeginMessageLoop"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoAttributes",
+      "description": "Shared attributes for packages",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "DataMemberAttribute",
+        "IgnoreAttribute",
+        "InnerObjectAttribute",
+        "MessageIfFailAttribute",
+        "NotTranslateAttribute",
+        "ObjectObsoleteAttribute",
+        "ObjectParamsAllowedAttribute",
+        "ObjectParamsObsoleteAttribute",
+        "OuterObjectAttribute",
+        "OuterObjectMapping"
+      ],
+      "methods": [],
+      "fileCount": 16
+    },
+    {
+      "name": "SunamoAzureDevOpsApi",
+      "description": "Utilities for working with Azure DevOps",
+      "version": "25.6.5.2",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.TeamFoundationServer.Client",
+          "version": "19.225.1"
+        },
+        {
+          "name": "Microsoft.VisualStudio.Services.Client",
+          "version": "19.225.1"
+        },
+        {
+          "name": "Newtonsoft.Json",
+          "version": "13.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.5"
+        }
+      ],
+      "classes": [
+        "AzureDevOpsApiClient",
+        "AzureDevOpsApiParser",
+        "Project",
+        "Repositories",
+        "Value"
+      ],
+      "methods": [
+        "AzureDevOpsApiClient",
+        "LoadRepositories",
+        "ParseRepositories"
+      ],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoBazosCrawler",
+      "description": "parsing of advertisements from bazos.cz/.sk",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "HtmlAgilityPack",
+          "version": "1.12.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "BazosCrawlerHelper",
+        "DatingAd"
+      ],
+      "methods": [
+        "ParseFromOnline"
+      ],
+      "fileCount": 10
+    },
+    {
+      "name": "SunamoBts",
+      "description": "Advanced working with base .NET type (parsing etc.)",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "BTS",
+        "CAToNumber"
+      ],
+      "methods": [
+        "Replace",
+        "IsFloat",
+        "IsDouble",
+        "IsInt",
+        "IsLong",
+        "ToInt1",
+        "ToInt0",
+        "ToInt2"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoChar",
+      "description": "Methods for advanced working with char data type",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CharHelper",
+        "GeneralCharService",
+        "LetterAndDigitCharService",
+        "LetterAndDigitKeyCodeService",
+        "SpecialCharsService",
+        "SpecialKeyCodeServices",
+        "WhitespaceCharService"
+      ],
+      "methods": [
+        "SplitSpecial",
+        "SplitSpecialNone",
+        "IsSpecialChar",
+        "TypesOfUnicodeChars",
+        "IsUnicodeChar",
+        "ReturnRightPredicate",
+        "ConvertWhiteSpaceCodesToChars"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoCl",
+      "description": "Methods for show Countdown and other UI in cmd",
+      "version": "25.6.13.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.6"
+        },
+        {
+          "name": "CommandLineParser",
+          "version": "2.9.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Configuration.Json",
+          "version": "9.0.6"
+        },
+        {
+          "name": "Microsoft.Extensions.DependencyInjection",
+          "version": "9.0.6"
+        },
+        {
+          "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "version": "9.0.6"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging",
+          "version": "9.0.6"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Console",
+          "version": "9.0.6"
+        },
+        {
+          "name": "ShellProgressBar",
+          "version": "5.2.0"
+        },
+        {
+          "name": "TextCopy",
+          "version": "6.2.1"
+        },
+        {
+          "name": "WindowsAPICodePack-Shell",
+          "version": "1.1.1"
+        }
+      ],
+      "classes": [
+        "WriteListArgs",
+        "CLActions",
+        "ClFlasher",
+        "ClNotify"
+      ],
+      "methods": [
+        "Timer",
+        "WorkingDirectoryFromArgs",
+        "SelectFromVariants",
+        "LoadFromClipboardOrConsole",
+        "AskForFolder",
+        "MergeActions",
+        "WriteColor",
+        "Information",
+        "Error",
+        "Warning"
+      ],
+      "fileCount": 70
+    },
+    {
+      "name": "SunamoClearScript",
+      "description": "Wrapper around Microsoft.ClearScript offering easier work",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.ClearScript.Core",
+          "version": "7.5.0"
+        },
+        {
+          "name": "Microsoft.ClearScript.V8",
+          "version": "7.5.0"
+        },
+        {
+          "name": "Microsoft.ClearScript.V8.Native.win-x86",
+          "version": "7.5.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ClearScriptHelper"
+      ],
+      "methods": [
+        "Execute"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoClipboard",
+      "description": "Working with clipboard",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "TextCopy",
+          "version": "6.2.1"
+        }
+      ],
+      "classes": [
+        "ClipboardHelper"
+      ],
+      "methods": [
+        "GetText",
+        "GetLinesAllWhitespaces",
+        "GetLines",
+        "SetText",
+        "SetLines"
+      ],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoCollectionOnDrive",
+      "description": "A collection that maintains its content even in a permanent file",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CollectionOnDriveArgs",
+        "CollectionOnDrive",
+        "CollectionOnDriveT"
+      ],
+      "methods": [
+        "Load",
+        "RemoveAll",
+        "RemoveWithSave",
+        "ClearWithSave",
+        "Save",
+        "Init"
+      ],
+      "fileCount": 14
+    },
+    {
+      "name": "SunamoCollectionWithoutDuplicates",
+      "description": "Collection which automatically make Distinct",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CollectionWithoutDuplicates",
+        "CollectionWithoutDuplicatesStringComparing"
+      ],
+      "methods": [
+        "Add",
+        "AddRange",
+        "DumpAsString",
+        "Contains",
+        "Insert",
+        "RemoveAt",
+        "Clear",
+        "CopyTo"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoCollections",
+      "description": "",
+      "version": "",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Diacritics",
+          "version": "4.0.17"
+        },
+        {
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "17.6.0"
+        },
+        {
+          "name": "xunit",
+          "version": "2.4.2"
+        },
+        {
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.5"
+        },
+        {
+          "name": "coverlet.collector",
+          "version": "6.0.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "*"
+        }
+      ],
+      "classes": [
+        "CANew",
+        "ResultWithExceptionCollections",
+        "RemoveEmptyLinesService",
+        "RemoveStartingWithArgsCA"
+      ],
+      "methods": [
+        "OccurenceOfEveryLine",
+        "LastItem",
+        "InitFillWith",
+        "Count",
+        "Trim",
+        "ContainsAnyFromElementBool",
+        "ContainsAnyFromElement",
+        "ReturnWhichContainsIndexes",
+        "ContainsAnyFromArray",
+        "TwoDimensionParamsIntoOne"
+      ],
+      "fileCount": 38
+    },
+    {
+      "name": "SunamoCollectionsChangeContent",
+      "description": "Method for change content across whole collection",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CAChangeContent",
+        "ChangeContentArgs"
+      ],
+      "methods": [
+        "ChangeContent0",
+        "ChangeContentWithCondition"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoCollectionsGeneric",
+      "description": "Working with generic collections",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CAG",
+        "CAGConsts",
+        "BadGoodCollection",
+        "CollectionToEnd",
+        "CycleGenerator",
+        "CyclingCollection",
+        "D",
+        "DictionarySort",
+        "DictionaryWithList"
+      ],
+      "methods": [
+        "CompareListSanitizeStringOutput",
+        "TakeAnother",
+        "Add",
+        "AddRange",
+        "Clear",
+        "SetIretation",
+        "SetIretationWithoutEvent",
+        "Contains",
+        "ContainsKey",
+        "CopyTo"
+      ],
+      "fileCount": 41
+    },
+    {
+      "name": "SunamoCollectionsIndexesWithNull",
+      "description": "To change from arrays to List&lt;T&gt; to create the required number of dummy elements in List&lt;T&gt;",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CAIndexesWithNull"
+      ],
+      "methods": [
+        "IndexesWithNullOrEmpty",
+        "IndexesWithNull"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoCollectionsNonGeneric",
+      "description": "Non-generic collections. Low performance compared to generics.",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [],
+      "fileCount": 5
+    },
+    {
+      "name": "SunamoCollectionsTo",
+      "description": "For easier creation and transfer of collections between each other",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CollectionsHelperTo"
+      ],
+      "methods": [
+        "ToListString"
+      ],
+      "fileCount": 1
+    },
+    {
+      "name": "SunamoCollectionsValuesTableGrid",
+      "description": "Export to DataTable, flipping rows into columns and vice versa, checking if all rows / columns have the same value. Generic.",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ValuesTableGrid"
+      ],
+      "methods": [
+        "SwitchRowsAndColumn",
+        "ToDataTable",
+        "IsAllInColumn",
+        "IsAllInRow"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoColors",
+      "description": "Advanced working with colors",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SunamoColor",
+        "UtilsHex",
+        "SunamoColors"
+      ],
+      "methods": [
+        "ToHex",
+        "FromHex"
+      ],
+      "fileCount": 10
+    },
+    {
+      "name": "SunamoCompare",
+      "description": "Mainly sort collections by variours compare conditions",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SunamoComparer",
+        "Float",
+        "StringLength",
+        "Integer64",
+        "Integer",
+        "DT",
+        "IListCharLength",
+        "TWithIntSunamoComparer",
+        "TWithDtSunamoComparer",
+        "SunamoComparerICompare"
+      ],
+      "methods": [
+        "Desc",
+        "Asc",
+        "Compare"
+      ],
+      "fileCount": 12
+    },
+    {
+      "name": "SunamoConverters",
+      "description": "Converters between many formats and data types",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "BlobConverter",
+        "MultilineAsOneLine",
+        "PluralConverter",
+        "PropertyTypesConverter",
+        "BigEndianBitConverter",
+        "ConvertBase64",
+        "ConvertCamelConvention",
+        "ConvertCamelConventionWithNumbers",
+        "ConvertDayShortcutFullName",
+        "ConvertDayShortcutString"
+      ],
+      "methods": [
+        "ConvertTo",
+        "ConvertFrom",
+        "ToUInt16",
+        "ToUInt32",
+        "ToUInt64",
+        "To",
+        "From",
+        "IsCamel",
+        "ToConvention",
+        "IsCamelWithNumber"
+      ],
+      "fileCount": 41
+    },
+    {
+      "name": "SunamoCrypt",
+      "description": "Crypting with various crypting algorithms (Rijndael, Triple DES etc.)",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "BTS2",
+        "CryptHelper",
+        "RijndaelBytes",
+        "Rijndael",
+        "TripleDES",
+        "RC2",
+        "RijndaelString",
+        "CryptHelper2",
+        "IV",
+        "CryptData"
+      ],
+      "methods": [
+        "ConvertFromUtf8ToBytes",
+        "ConvertFromBytesToUtf8",
+        "ClearEndingsBytes",
+        "Decrypt",
+        "Encrypt",
+        "ApplyCryptData",
+        "EncryptRSA",
+        "DecryptRSA",
+        "GetRSAParametersFromXml",
+        "EncryptTripleDES"
+      ],
+      "fileCount": 15
+    },
+    {
+      "name": "SunamoCsproj",
+      "description": "Working with csprojs at one package",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CsprojConsts",
+        "CsprojHelper",
+        "CsprojNsHelper",
+        "CsprojData",
+        "DuplicatesInItemGroup",
+        "ForceValueForKey",
+        "ItemGroupElement",
+        "ItemGroupElements"
+      ],
+      "methods": [
+        "DetectDuplicatedProjectAndPackageReferences",
+        "CsprojPathFromName",
+        "AddLinkToCsproj",
+        "GetCsprojFromCsPath",
+        "RemoveDuplicatedProjectAndPackageReferences",
+        "CreateOrReplaceMicrosoft_Extensions_Logging_Abstractions",
+        "CreateOrReplaceItemGroupForReadmeMd",
+        "RemovePropertyGroupItem",
+        "AddPropertyGroupItemIfNotExists",
+        "RemoveSingleItemGroup"
+      ],
+      "fileCount": 27
+    },
+    {
+      "name": "SunamoCssGenerator",
+      "description": "Generating css for each of the common display resolutions",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CssGenerator",
+        "CssProps",
+        "CssResponsiveGenerator",
+        "CssProperty",
+        "StringBuilderExtensions",
+        "PropertiesConversions"
+      ],
+      "methods": [
+        "AddMediaMinMaxWidth",
+        "AddId",
+        "AddClass",
+        "AddTab",
+        "End",
+        "Width",
+        "Generate",
+        "CssProperty",
+        "TrimEnd",
+        "Convert"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoCsv",
+      "description": "Working with CSV (comma-separated values)",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CsvFile",
+        "CsvRecord",
+        "CsvRecords",
+        "CsvWriter",
+        "GoogleContactExportRow",
+        "GoogleContactsExport",
+        "SunamoCsvReader",
+        "to"
+      ],
+      "methods": [
+        "Strings",
+        "DateTimes",
+        "Objects",
+        "Populate",
+        "WriteCsv",
+        "Dispose",
+        "DateTime",
+        "ReadNextRecord",
+        "ReadIntoDataTable"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoData",
+      "description": "Shared packages across packages with instance data-holder classes",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Newtonsoft.Json",
+          "version": "13.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AB",
+        "ABC",
+        "ABL",
+        "ABP",
+        "ABS",
+        "ABT",
+        "AllItems",
+        "AsyncLoadingBase",
+        "CharFormatData",
+        "Templates"
+      ],
+      "methods": [
+        "Get",
+        "OnlyBsList",
+        "OnlyAs",
+        "OnlyBs",
+        "GetOnlyNumbers"
+      ],
+      "fileCount": 77
+    },
+    {
+      "name": "SunamoDateTime",
+      "description": "Working with date+time",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ConvertDateTimeToFileNamePostfix",
+        "ConvertDateTimeToFileNamePrefix",
+        "UnixDateConverter",
+        "DTOnlyNumber",
+        "DateTimeOrShort",
+        "FromToTDateTime",
+        "DTHelper",
+        "DTHelperCode",
+        "DTHelperCs",
+        "DTHelperEn"
+      ],
+      "methods": [
+        "ToConvention",
+        "To",
+        "From",
+        "Sh",
+        "Dt",
+        "IsValidTimeText",
+        "IsValidDateTimeText",
+        "IsValidDateText",
+        "ParseDateUSA",
+        "StringToDateTimeFormalizeDate"
+      ],
+      "fileCount": 38
+    },
+    {
+      "name": "SunamoDebugCollection",
+      "description": "List with some useful improvements for easier debugging",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "DebugCollection",
+        "DebugLongCollection"
+      ],
+      "methods": [],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoDebugIO",
+      "description": "Read input and write output to prenamed files in every app on sunamo's platform",
+      "version": "25.6.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "TextCopy",
+          "version": "6.2.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [
+        "CreatePathToFiles",
+        "InputHtml",
+        "Output2Open",
+        "OutputOpen",
+        "OutputJsonOpen",
+        "OutputHtmlOpen",
+        "InputOpen"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoDebugging",
+      "description": "Some BCl+mine code's helper classes for easier debugging",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "MemoryDebug",
+        "NameValueCollectionDebug",
+        "SqlServerHelperDebug",
+        "StringBuilderDebug",
+        "StringBuilderDebug2"
+      ],
+      "methods": [
+        "Init",
+        "WriteLine",
+        "OverallConsumedByThisMethod",
+        "Print",
+        "RowsInTables",
+        "StringBuilder",
+        "CheckValidity",
+        "CheckValidityWorker"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoDelegates",
+      "description": "Shared delegates across many packages",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [],
+      "fileCount": 34
+    },
+    {
+      "name": "SunamoDependencyInjection",
+      "description": "Helpers for DI",
+      "version": "25.6.19.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AddServicesEndingWithResult",
+        "ServiceNotFoundException",
+        "ServiceNotFoundExceptionT",
+        "IServiceCollectionExtensions",
+        "StaticLogger"
+      ],
+      "methods": [
+        "AddServicesEndingWithService",
+        "AddServicesEndingWith"
+      ],
+      "fileCount": 5
+    },
+    {
+      "name": "SunamoDevCode",
+      "description": "Another code mainly for working with C# in all ways. Will be in future merged with SunamoCode and SunamoCSharp.",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "CaseDotNet",
+          "version": "0.3.36"
+        },
+        {
+          "name": "CaseDotNet.Extensions",
+          "version": "0.2.46"
+        },
+        {
+          "name": "Diacritics",
+          "version": "3.3.29"
+        },
+        {
+          "name": "Google.Apis.Core",
+          "version": "1.69.0"
+        },
+        {
+          "name": "HtmlAgilityPack",
+          "version": "1.12.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "ResXResourceReader.NetStandard",
+          "version": "1.3.0"
+        },
+        {
+          "name": "TextCopy",
+          "version": "6.2.1"
+        }
+      ],
+      "classes": [
+        "DeleteTemporaryFilesFromSolution",
+        "AllProjectsSearchThrow",
+        "ApsHelper",
+        "ApsMainWindow",
+        "ApsPluginsAssemblies",
+        "ApsPluginStatic"
+      ],
+      "methods": [
+        "DeleteFolderWithTemporaryMovedFiles",
+        "ClearSolution",
+        "ClearProject",
+        "IsNotValidProjectFile",
+        "IsFolderSearchChecked",
+        "SetSearchFolderChecked",
+        "ExistsFolderSearchBySerie",
+        "GetSearchFolderNormalized",
+        "AddFolderSearch",
+        "WebAndNonWebProjects"
+      ],
+      "fileCount": 302
+    },
+    {
+      "name": "SunamoDictionary",
+      "description": "Your help for working with dictionary",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "TextGroupsData",
+        "TextOutputGeneratorDictionary"
+      ],
+      "methods": [
+        "SortedValuesWithKeyString",
+        "CalculateMedianAverageFloat",
+        "KeepOnlyKeys",
+        "CategoryParser",
+        "CreateTree",
+        "GetIfExists",
+        "AddOrSet",
+        "AppendLine",
+        "Header"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoDotNetZip",
+      "description": ".NET 9 fork for DotNetZip because have high security vulnerability",
+      "version": "25.6.16.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "System.Security.Permissions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Text.Encoding.CodePages",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "DotNet.ReproducibleBuilds",
+          "version": "1.2.25"
+        }
+      ],
+      "classes": [
+        "BZip2InputStream",
+        "BZip2OutputStream",
+        "ParallelBZip2OutputStream",
+        "ComHelper"
+      ],
+      "methods": [
+        "Reset",
+        "WriteBits",
+        "WriteByte",
+        "WriteInt",
+        "Flush",
+        "Fill",
+        "CompressAndWrite",
+        "MatchesSig",
+        "IsZipFile",
+        "IsZipFileWithExtract"
+      ],
+      "fileCount": 60
+    },
+    {
+      "name": "SunamoDotnetCmdBuilder",
+      "description": "Command generation with dotnet tool",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "Add",
+        "DotnetCmdBuilder",
+        "Nuget",
+        "Sln"
+      ],
+      "methods": [
+        "Add",
+        "AddPackage",
+        "Cd",
+        "Clean",
+        "Pack",
+        "Build",
+        "Nuget",
+        "Push",
+        "Sln",
+        "Remove"
+      ],
+      "fileCount": 9
+    },
+    {
+      "name": "SunamoEditorConfig",
+      "description": "Parser and generator for .editorconfig files",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "Definition",
+        "EditorConfigContent",
+        "EditorConfigHelper",
+        "ListHelper",
+        "MascBlock",
+        "RootBlock",
+        "StringHelper",
+        "ResultWithExceptionEditorConfig"
+      ],
+      "methods": [
+        "EditorConfigContent",
+        "Serialize",
+        "Deserialize",
+        "Trim",
+        "IsLineWithMasc",
+        "Parse",
+        "GetLines",
+        "Split",
+        "BetweenFirstAndSecondChar"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoEmbeddedResources",
+      "description": "Working with resources that have been added to the application as \"Embedded\"",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "EmbeddedResourcesH"
+      ],
+      "methods": [
+        "GetResourceName",
+        "GetString",
+        "GetStream"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoEmoticons",
+      "description": "Text emoticons for various types of moods",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "EmoticonsHelper"
+      ],
+      "methods": [
+        "GetAllEmotions"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "SunamoEnums",
+      "description": "Enums shared across many packages",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CustomStatusCode"
+      ],
+      "methods": [],
+      "fileCount": 56
+    },
+    {
+      "name": "SunamoEnumsHelper",
+      "description": "Getting values from enums with some options",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "EnumHelper"
+      ],
+      "methods": [
+        "GetNames"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoExceptions",
+      "description": "Library with templates for throwing exceptions",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ExceptionsExtensions"
+      ],
+      "methods": [
+        "CheckBefore",
+        "TextOfExceptions",
+        "TypeAndMethodName",
+        "AddParams",
+        "WasAlreadyInitialized",
+        "GetAllMessages",
+        "FolderDoesNotExists",
+        "ArgumentOutOfRangeException",
+        "ArrayElementContainsUnAllowedStrings",
+        "BadFormatOfElementInList"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoExtensions",
+      "description": "Almost all extensions method which I'm using",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AssertExtensions",
+        "DateTimeExtensions",
+        "SBH",
+        "HtmlNodeExtensions",
+        "IDictionaryExtensions",
+        "IListExtensions",
+        "ListExtensions",
+        "ListStringExtensions",
+        "ObjectExtensions",
+        "StringBuilderExtensions"
+      ],
+      "methods": [
+        "ToLongTimeString",
+        "ToShortTimeString",
+        "ToStringShortTimeNullable",
+        "FirstOrNull",
+        "Count",
+        "WhereNonGeneric",
+        "First2",
+        "Count3",
+        "RemoveMany",
+        "LeadingRange"
+      ],
+      "fileCount": 21
+    },
+    {
+      "name": "SunamoFileExtensions",
+      "description": "For working with extensions of files",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AllExtensions",
+        "AllExtensionsHelper",
+        "AllExtensionsHelperWithoutDot",
+        "AllExtensionsMethods",
+        "GetExtensionArgsFileExtensions",
+        "TypeOfExtensionAttribute",
+        "FSFileExtensions"
+      ],
+      "methods": [
+        "IsBinaryOrText",
+        "AllExtensionsInFolderByCategory",
+        "Initialize",
+        "FindTypeWithoutDot",
+        "NormalizeExtension2",
+        "GetConsts",
+        "IsExtension",
+        "GetExtension"
+      ],
+      "fileCount": 14
+    },
+    {
+      "name": "SunamoFileIO",
+      "description": "ReadAllText, WriteAllText etc. with some magic ability",
+      "version": "25.6.10.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "FileList",
+        "FileText",
+        "CloudProvidersHelper",
+        "EncodingHelper",
+        "Chars"
+      ],
+      "methods": [
+        "ReadAllLinesListAsync",
+        "ReadAllBytesListAsync",
+        "WriteAllLinesListAsync",
+        "WriteAllBytesListAsync",
+        "ReadAllText",
+        "WriteAllText",
+        "Init",
+        "OpenSyncAppIfNotRunning",
+        "PrintNamesForEncodingAsIsInSheet",
+        "DetectEncoding"
+      ],
+      "fileCount": 22
+    },
+    {
+      "name": "SunamoFileSystem",
+      "description": "Overall working with filesystem",
+      "version": "25.10.3.4",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Diacritics",
+          "version": "3.3.29"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AppPaths",
+        "GetExtensionArgs",
+        "FileSystemWatchers",
+        "FS"
+      ],
+      "methods": [
+        "GetStartupPath",
+        "GetFileInStartupPath",
+        "Start",
+        "Stop",
+        "IsAbsolutePath",
+        "CopyFolder",
+        "CreateUpfoldersPsysicallyUnlessThere",
+        "ExistsDirectory",
+        "CreateFoldersPsysicallyUnlessThere"
+      ],
+      "fileCount": 54
+    },
+    {
+      "name": "SunamoFilesIndex",
+      "description": "Index files/folders and getting them with conditions",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CheckBoxDataShared",
+        "TWithSize",
+        "FileIndex",
+        "FileItem",
+        "FolderItem"
+      ],
+      "methods": [
+        "GetFoldersWithName",
+        "FindAllFilesWithName",
+        "AddFolderRecursively",
+        "GetRelativeFolder",
+        "Nuke"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoFluentFtp",
+      "description": "Wrapper around FluentFtp library",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "FluentFTP",
+          "version": "52.1.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "FluentFtpAdds",
+        "FluentFtpWrapper",
+        "FluentFtpTest",
+        "DirectoriesToDeleteFluentFtp",
+        "PathSelectorFluentFtp"
+      ],
+      "methods": [
+        "TestBasicFunctionality",
+        "FluentFtp",
+        "setRemoteHost",
+        "getRemoteHost",
+        "setRemotePort",
+        "getRemotePort",
+        "setRemoteUser",
+        "DivideToTokens",
+        "RemoveLastTokenForce",
+        "RemoveLastToken"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoFtp",
+      "description": "Base classes and infrastructure for FTP clients",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Ftp.dll",
+          "version": "2.0.25070.2003"
+        },
+        {
+          "name": "System.Formats.Asn1",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "FtpHelper",
+        "PathSelector",
+        "FTP",
+        "FtpDllWrapper",
+        "FtpNet",
+        "CustomFtpCommands"
+      ],
+      "methods": [
+        "setRemoteHost",
+        "getRemoteHost",
+        "setRemotePort",
+        "getRemotePort",
+        "setRemoteUser",
+        "OnNewStatusNewFolder",
+        "OnUploadingNewStatus",
+        "OnNewStatus",
+        "UploadFiles",
+        "GetActualPath"
+      ],
+      "fileCount": 24
+    },
+    {
+      "name": "SunamoGetFiles",
+      "description": "Retrieving files with automatic exception catching and further processing after",
+      "version": "25.6.16.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "GetFilesEveryFolderArgs"
+      ],
+      "methods": [
+        "GetFiles",
+        "GetFilesEveryFolder",
+        "GetFilesSizes",
+        "GetFilesAsync",
+        "GetFilesWithoutNodeModules",
+        "GetFilesMoreMasc",
+        "FilesOfExtensions",
+        "FilterByGetFilesArgs",
+        "FilesOfExtension",
+        "FilesOfExtensionsArray"
+      ],
+      "fileCount": 26
+    },
+    {
+      "name": "SunamoGetFolders",
+      "description": "Retrieving folders with automatic exception catching and further processing after",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Text.RegularExpressions",
+          "version": "4.3.1"
+        },
+        {
+          "name": "WildcardMatch",
+          "version": "1.0.7"
+        }
+      ],
+      "classes": [
+        "GetFoldersEveryFolderArgs",
+        "GetFilesArgsGetFolders",
+        "GetFilesBaseArgsGetFolders",
+        "GetFilesEveryFolderArgsGetFolders"
+      ],
+      "methods": [
+        "GetFoldersEveryFolder",
+        "GetFoldersEveryFolderWhichContainsFiles"
+      ],
+      "fileCount": 18
+    },
+    {
+      "name": "SunamoGitConfig",
+      "description": "Serializer and deserializer for .git config files",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "BlockNames",
+        "RemoteKeys",
+        "ExistsNonExistsListGitConfig",
+        "GitConfigSectionData",
+        "GitConfigFileHelper",
+        "GitConfigSectionParser"
+      ],
+      "methods": [
+        "SetValue",
+        "GitConfigSectionData",
+        "Format",
+        "Save",
+        "Load",
+        "Parse",
+        "ParseBlocks",
+        "AddHeaderBlock",
+        "AddSettingsPair"
+      ],
+      "fileCount": 12
+    },
+    {
+      "name": "SunamoGoogleMyMaps",
+      "description": "Generate to import into Google My Maps and more",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ABSGoogleMyMaps",
+        "ABTGoogleMyMaps",
+        "GoogleMyMapsHelper"
+      ],
+      "methods": [
+        "CreateExportForGoogleMyMaps",
+        "CreateForGoogleMyMapsFromAddressRow"
+      ],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoGoogleSheets",
+      "description": "Parsing from and formatting to Google Sheets",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SheetsGeneratorTemplate",
+        "SheetsHelper",
+        "SheetsTable",
+        "FromToTGoogleSheets",
+        "FromToTSHGoogleSheets",
+        "StoreParsedApp"
+      ],
+      "methods": [
+        "AndroidAppComparing",
+        "SwitchRowsAndColumn",
+        "DataTableToString",
+        "ColumnsIds",
+        "CalculateMedianAverage",
+        "CalculateMedianFromTwoRows",
+        "SheetsTable",
+        "DeleteColumn",
+        "ParseRows",
+        "ParseRowsOfSections"
+      ],
+      "fileCount": 23
+    },
+    {
+      "name": "SunamoGpx",
+      "description": "Geocoding and more",
+      "version": "25.3.31.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "BlueToque.SharpGPX",
+          "version": "2.22.302"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Geo",
+          "version": "1.1.1"
+        },
+        {
+          "name": "SmartFormat.NET",
+          "version": "3.6.0"
+        }
+      ],
+      "classes": [
+        "Item",
+        "Position",
+        "RegionalStructure",
+        "GeocodeResponse",
+        "SunamoGpxService",
+        "SunamoMapyCzService"
+      ],
+      "methods": [
+        "Item",
+        "GenerateGpxFile",
+        "SunamoMapyCzService",
+        "AddressToCoords",
+        "AddressToCoordsSingle"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "SunamoHtml",
+      "description": "Many ways to work with XML (extensible markup language)",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "HtmlAgilityPack",
+          "version": "1.12.0"
+        },
+        {
+          "name": "TextCopy",
+          "version": "6.2.1"
+        }
+      ],
+      "classes": [
+        "BoilerplateMiddleArgs",
+        "BoilerplateStartArgs",
+        "HtmlGenerator",
+        "HtmlGenerator2",
+        "HtmlGeneratorExtended",
+        "HtmlGeneratorList",
+        "HtmlTableGenerator",
+        "HtmlTagTemplates",
+        "HtmlTemplates"
+      ],
+      "methods": [
+        "WriteBr",
+        "Calendar",
+        "GenerateHtmlCheckBoxesFromFiles",
+        "GalleryZoomInProfilePhoto",
+        "GetSelect",
+        "GetInputText",
+        "DetailAnchor",
+        "Detail",
+        "DetailNewLine",
+        "DetailMailto"
+      ],
+      "fileCount": 58
+    },
+    {
+      "name": "SunamoHttp",
+      "description": "Caching files locally to limit HTTP requests",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.AspNetCore.Http",
+          "version": "2.3.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "DownloadOrReadArgs",
+        "GetResponseArgs",
+        "HttpRequestData",
+        "HttpRequestDataHttp",
+        "UploadFile",
+        "HttpClientHelper",
+        "HttpResponseHelper"
+      ],
+      "methods": [
+        "GetResponseBytes",
+        "GetResponseText",
+        "GetResponseStream",
+        "DownloadOrReadWorker",
+        "DownloadOrRead",
+        "ExistsPage",
+        "IsNotFound",
+        "SomeError"
+      ],
+      "fileCount": 34
+    },
+    {
+      "name": "SunamoIni",
+      "description": "Work with .ini files used in Windows",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "sharpconfig",
+          "version": "3.2.9.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "IniFile"
+      ],
+      "methods": [
+        "IniWriteValue",
+        "IniReadValue",
+        "IniReadValueSharpConfig",
+        "InStartupPath"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoInterfaces",
+      "description": "Interfaces shared across many packages",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "HtmlAgilityPack",
+          "version": "1.12.0"
+        },
+        {
+          "name": "Newtonsoft.Json",
+          "version": "13.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [],
+      "fileCount": 92
+    },
+    {
+      "name": "SunamoJson",
+      "description": "Wrapper aroung Utf8Json, switching between different json libraries within one interface",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Newtonsoft.Json",
+          "version": "13.0.3"
+        }
+      ],
+      "classes": [
+        "ReadFromJsonFileArgs",
+        "WriteToJsonFileArgs",
+        "JsonGenerator",
+        "SerializerHelperJson"
+      ],
+      "methods": [
+        "Pair"
+      ],
+      "fileCount": 9
+    },
+    {
+      "name": "SunamoLaTeX",
+      "description": "Conversion of unicode characters into text symbols",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "LatexHelper"
+      ],
+      "methods": [
+        "ConvertToUnicode"
+      ],
+      "fileCount": 1
+    },
+    {
+      "name": "SunamoLang",
+      "description": "Support for language, independent of translating solution",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CountryLang",
+        "LocaleHelperLang",
+        "AppLang",
+        "AppLangHelper",
+        "AppLangHelperTests",
+        "AppLangConverter",
+        "CzechHelper",
+        "ResourcesDuo"
+      ],
+      "methods": [
+        "Init",
+        "GetCountryForLang2",
+        "GetLangForCountry2",
+        "GetLangForCountry",
+        "ToString",
+        "GetLang",
+        "GetLang3",
+        "GetCi",
+        "ItemsToAddToComboBox",
+        "GetLang3Test"
+      ],
+      "fileCount": 40
+    },
+    {
+      "name": "SunamoLogging",
+      "description": "Support for several logging system based on their output",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.5"
+        }
+      ],
+      "classes": [
+        "as",
+        "FileLogger",
+        "FileLoggerExtensions",
+        "FileLoggerProvider",
+        "ILoggerExtensions",
+        "InitApp",
+        "DebugLogger"
+      ],
+      "methods": [
+        "ClipboardOrDebug",
+        "WriteLineFormat",
+        "WriteCount",
+        "WriteList",
+        "WriteListOneRow",
+        "SavedToDrive",
+        "TryAFewSecondsLaterAfterFullyInitialized",
+        "Finished",
+        "EndRunTime",
+        "ResultCopiedToClipboard"
+      ],
+      "fileCount": 34
+    },
+    {
+      "name": "SunamoMail",
+      "description": "Sending mail with several providers (Seznam.cz, Gmail, etc.)",
+      "version": "25.6.9.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "MailKit",
+          "version": "4.11.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging",
+          "version": "9.0.3"
+        },
+        {
+          "name": "MimeKit",
+          "version": "4.11.0"
+        }
+      ],
+      "classes": [
+        "SmtpServerData",
+        "GoogleAppsMailbox",
+        "MailBox",
+        "SeznamMailbox"
+      ],
+      "methods": [
+        "Gmail",
+        "SeznamCz",
+        "SendEmail",
+        "SendCentrum",
+        "SendSeznam",
+        "SendSeznamMailkitWorker"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoMarkdown",
+      "description": "Wrapper around Html2Markdown library",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Html2Markdown",
+          "version": "7.0.3.11"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "MarkdownHelper"
+      ],
+      "methods": [
+        "ConvertToMarkDown",
+        "ConvertToMarkDownMy",
+        "ReplacePairTag"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoMathpix",
+      "description": "Converting images with math notation using mathpix.com to plain text",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.PowerShell.SDK",
+          "version": "7.5.0"
+        },
+        {
+          "name": "System.Formats.Asn1",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "MathpixHelper"
+      ],
+      "methods": [
+        "MathpixHelper",
+        "Text"
+      ],
+      "fileCount": 1
+    },
+    {
+      "name": "SunamoMime",
+      "description": "For processing MIME types",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "FileSignatures",
+          "version": "5.1.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SunamoMimeHelper"
+      ],
+      "methods": [
+        "Init",
+        "FileType"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoMsSqlServer",
+      "description": "Helpers and services for MS Sql Server",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Data.SqlClient",
+          "version": "6.0.1"
+        },
+        {
+          "name": "Microsoft.EntityFrameworkCore",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.EntityFrameworkCore.Relational",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "IdentityHelpers",
+        "MsSqlConnectHelper",
+        "MsSqlOneColumnService",
+        "MsSqlService",
+        "UniqueIdService",
+        "ResultWithExceptionMsSqlServer"
+      ],
+      "methods": [
+        "Open",
+        "Close",
+        "MsSqlOneColumnService",
+        "Int",
+        "MsSqlService",
+        "GetAndOpenConnection",
+        "DeleteAll",
+        "UniqueIdService",
+        "RevokeInsert",
+        "GrantInsert"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoMsgReader",
+      "description": "Wrapper aroung MsgReader package",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "MsgReader",
+          "version": "5.7.2"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "MsgExtHelper"
+      ],
+      "methods": [
+        "CreateInstance"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoNuGetProtocol",
+      "description": "Wrapper around NuGet.Protocol package",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "NuGet.Protocol",
+          "version": "6.13.2"
+        },
+        {
+          "name": "System.Formats.Asn1",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "NuGetProtocolHelper"
+      ],
+      "methods": [
+        "SearchNugetPackages",
+        "GetPackageVersions"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoNumbers",
+      "description": "Generating, calculating with numbers",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "xunit",
+          "version": "2.9.3"
+        }
+      ],
+      "classes": [
+        "Interval",
+        "SingleValue",
+        "LinearHelper",
+        "LowHighHelper",
+        "MH",
+        "NH",
+        "NHTests",
+        "Int",
+        "Double",
+        "NormalizeNumbers"
+      ],
+      "methods": [
+        "IsNumberInRange",
+        "GetStringListFromTo",
+        "GetListFromTo",
+        "Set",
+        "PrintDebug",
+        "HCF",
+        "LCF",
+        "GenerateIntervalInt",
+        "CalculateMedianAverageT",
+        "CalculateMedianAverage"
+      ],
+      "fileCount": 22
+    },
+    {
+      "name": "SunamoOctokit",
+      "description": "Wrapper around Octokit library",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Octokit",
+          "version": "14.0.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "OctokitHelper",
+        "ResultWithExceptionOctokit"
+      ],
+      "methods": [
+        "BasicAuth",
+        "TokenAuth",
+        "Init",
+        "CreateNewRepo"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoPInvoke",
+      "description": "Interop with classic WinAPI",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "GlobalKeyboardHookEventArgs",
+        "User32"
+      ],
+      "methods": [],
+      "fileCount": 28
+    },
+    {
+      "name": "SunamoPS",
+      "description": "Working with Powershell 7 - Invoking commands, return outputs etc.",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.PowerShell.SDK",
+          "version": "7.5.0"
+        },
+        {
+          "name": "System.Formats.Asn1",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "PowershellMethod",
+        "ErrorRecordHelper",
+        "ExceptionsExtensions",
+        "PowershellBuilder",
+        "PowershellHelper",
+        "PowershellParser",
+        "PowershellRunnerString",
+        "PS",
+        "PsOutput"
+      ],
+      "methods": [
+        "Text",
+        "GetAllMessages",
+        "Clear",
+        "AddRaw",
+        "AddRawLine",
+        "AddArg",
+        "Cd",
+        "FindDuplicatedMethodsInPs1File",
+        "ParseMethods",
+        "ProcessNames"
+      ],
+      "fileCount": 35
+    },
+    {
+      "name": "SunamoPackageJson",
+      "description": "Read and generating package.json",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Newtonsoft.Json",
+          "version": "13.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "Dependency",
+        "PackageJson",
+        "PackageJsonHelper"
+      ],
+      "methods": [
+        "GetVersionFromDepsOrDevDeps",
+        "Parse"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoParsing",
+      "description": "Parsing list, basic types or more complex structures",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ListParser",
+        "Parse",
+        "Byte",
+        "Double",
+        "Integer",
+        "Short",
+        "ParseDefault",
+        "ParserTwoValues",
+        "StaticParse",
+        "TryParse"
+      ],
+      "methods": [
+        "ParseByte",
+        "ParseDouble",
+        "ParseInt",
+        "ParseIntMaxValue",
+        "ParseShort",
+        "ToString",
+        "ParseString",
+        "GetString",
+        "GetInt",
+        "GetFloat"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoPaths",
+      "description": "Paths for internal use of sunamo's projects",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CompareFilesPaths",
+        "CompareTwoFilesHelper",
+        "DefaultPaths"
+      ],
+      "methods": [
+        "GetFile",
+        "Txt",
+        "Html",
+        "IsIgnored",
+        "InitAllPathsToProjects"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "SunamoPercentCalculator",
+      "description": "Can be used in ProgressBar etc.",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "PercentCalculator"
+      ],
+      "methods": [
+        "Create",
+        "AddOnePercent",
+        "ResetComputedSum",
+        "PercentFor"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoPlatformUwpInterop",
+      "description": "One of base foundation for sunamo's app platform - second is SunamoThisApp",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AppDataMethods",
+        "CachedSettings",
+        "CreateAppFoldersIfDontExistsArgs"
+      ],
+      "methods": [
+        "CreateAppFoldersIfDontExists",
+        "GetFileString",
+        "GetFileAppTypeAgnostic",
+        "GetRootFolderForApp",
+        "ReadFileOfSettingsDirectoryOrFile",
+        "ReadFileOfSettingsOther",
+        "CommonFolder",
+        "GetPathForSettingsFile",
+        "GetFolderWithAppsFiles",
+        "ReadFolderWithAppsFilesOrDefault"
+      ],
+      "fileCount": 24
+    },
+    {
+      "name": "SunamoRandom",
+      "description": "Generate random objects and values",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "RandomHelperList",
+        "RandomStringHelper",
+        "RandomStringHelperTests"
+      ],
+      "methods": [
+        "RandomFloat",
+        "RandomColorPart",
+        "RandomByte",
+        "RandomElementOfCollection",
+        "RandomStringWithoutSpecial",
+        "RandomInt2",
+        "RandomInt",
+        "GenerateNumbers",
+        "RandomString",
+        "RandomStringTest"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoReflection",
+      "description": "Advanced reflection for faster development",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "ObjectDumper.NET",
+          "version": "4.3.2"
+        },
+        {
+          "name": "YamlDotNet",
+          "version": "16.3.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "DumpAsStringArgs",
+        "ArrayExtensions",
+        "ArrayTraverse",
+        "ReferenceEqualityComparer",
+        "RH",
+        "RHCache",
+        "RHCopy",
+        "DumpAsStringHeaderArgsReflection",
+        "GetMemberArgs"
+      ],
+      "methods": [
+        "ForEach",
+        "Step",
+        "DumpAsXml",
+        "IsOrIsDeriveFromBaseClass",
+        "GetPropertyNames",
+        "FullPathCodeEntity",
+        "AssemblyWithName",
+        "Copy"
+      ],
+      "fileCount": 17
+    },
+    {
+      "name": "SunamoRegex",
+      "description": "Regex and wildcards helpers",
+      "version": "25.7.13.1",
+      "targetFramework": "net8.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "8.0.0"
+        },
+        {
+          "name": "xunit",
+          "version": "2.9.3"
+        }
+      ],
+      "classes": [
+        "RegexHelper",
+        "RegexHelperTests",
+        "Wildcard",
+        "WildcardHelper"
+      ],
+      "methods": [
+        "IsEmail",
+        "IsValidEmail",
+        "IsColor",
+        "IsYtVideoUri",
+        "ReplacePlainUrlWithLinks",
+        "IsUriTest",
+        "IsMatch",
+        "CreateInstance",
+        "WildcardToRegex",
+        "IsWildcard"
+      ],
+      "fileCount": 9
+    },
+    {
+      "name": "SunamoResult",
+      "description": "Result classes for convert methods with ref/out to async and more",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "MayExcHelper",
+        "OutRef",
+        "OutRef3",
+        "OutRef4",
+        "ResultWithException",
+        "ResultWithExceptionList"
+      ],
+      "methods": [
+        "MayExc"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoRobotsTxt",
+      "description": "Parse and generate robots.txt files",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "RobotsTxtBuilder"
+      ],
+      "methods": [
+        "Sitemap",
+        "Disallow",
+        "Allow",
+        "AddOrCreateIfDontExists",
+        "Save"
+      ],
+      "fileCount": 1
+    },
+    {
+      "name": "SunamoRoslyn",
+      "description": "Work with Roslyn platform",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.CodeAnalysis",
+          "version": "4.13.0"
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.CSharp",
+          "version": "4.13.0"
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.CSharp.Scripting",
+          "version": "4.13.0"
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.CSharp.Workspaces",
+          "version": "4.13.0"
+        },
+        {
+          "name": "Microsoft.CodeAnalysis.Workspaces.MSBuild",
+          "version": "4.13.0"
+        },
+        {
+          "name": "System.Formats.Asn1",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Text.Json",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Text.RegularExpressions",
+          "version": "4.3.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ChildNodes",
+        "ClassCodeElement",
+        "ClassCodeElements",
+        "CodeElement",
+        "CodeElements",
+        "NamespaceCodeElement",
+        "NamespaceCodeElements",
+        "SourceCodeElement",
+        "SourceFileTree"
+      ],
+      "methods": [
+        "Methods",
+        "MethodsDescendant",
+        "FieldsDescendant",
+        "VariablesDescendant",
+        "Method"
+      ],
+      "fileCount": 62
+    },
+    {
+      "name": "SunamoRss",
+      "description": "Wrapper around Microsoft.SyndicationFeed.ReaderWriter library",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.SyndicationFeed.ReaderWriter",
+          "version": "1.0.2"
+        },
+        {
+          "name": "System.Memory",
+          "version": "4.6.2"
+        },
+        {
+          "name": "System.Text.RegularExpressions",
+          "version": "4.3.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "RssHelper"
+      ],
+      "methods": [
+        "Latest5PostsFromRss"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoRuleset",
+      "description": "Managing *.ruleset files which use some IDE, FxCop, ReSharper and SonarQube",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "RulesetConsts",
+        "RulesetManager",
+        "RulesetRule",
+        "RulesetValues"
+      ],
+      "methods": [
+        "Type",
+        "ConvertToDotSyntax",
+        "Save",
+        "Parse",
+        "ToXml"
+      ],
+      "fileCount": 14
+    },
+    {
+      "name": "SunamoSecurity",
+      "description": "Helpers for SecureString, ProtectedData and more",
+      "version": "25.6.16.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "System.Security.Cryptography.ProtectedData",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CryptDelegates",
+        "ProtectedDataHelper",
+        "SecureStringHelper"
+      ],
+      "methods": [
+        "DecryptString",
+        "ToSecureString",
+        "ToSecureString2",
+        "ToInsecureString2",
+        "CreateCryptDelegates"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "SunamoSelenium",
+      "description": "Code base for easy work with Selenium",
+      "version": "25.8.22.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Microsoft.PowerShell.SDK",
+          "version": "7.5.0"
+        },
+        {
+          "name": "Selenium.Support",
+          "version": "4.30.0"
+        },
+        {
+          "name": "Selenium.WebDriver",
+          "version": "4.30.0"
+        },
+        {
+          "name": "DotNetSeleniumExtras.WaitHelpers",
+          "version": "3.11.0"
+        },
+        {
+          "name": "System.Management.Automation",
+          "version": "7.5.0"
+        }
+      ],
+      "classes": [
+        "ByHelper",
+        "ExceptionsExtensions",
+        "StringToUnixLineEndingExtensions",
+        "PsOutput",
+        "SeleniumHelper",
+        "CmpWorkaroundService",
+        "SeleniumNavigateService",
+        "SeleniumService"
+      ],
+      "methods": [
+        "ClassName",
+        "GetAllMessages",
+        "ToUnixLineEnding",
+        "InvokeAsync",
+        "ProcessErrorRecords",
+        "ProcessPSObjects",
+        "InitEdgeDriver",
+        "VerifyHuman",
+        "CmpWorkaroundService",
+        "LoginSeznamCz"
+      ],
+      "fileCount": 10
+    },
+    {
+      "name": "SunamoSerializer",
+      "description": "Management of txt files with data. Maybe even with headers.",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SF"
+      ],
+      "methods": [
+        "ParseUpToRequiredElementsLine",
+        "GetAllElementsFile",
+        "RemoveComments",
+        "WriteAllElementsToFile",
+        "PrepareToSerialization2"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoShared",
+      "description": "Many code (222 code files to 1/9/2024) which is waiting for separated to standalone packages",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Diacritics",
+          "version": "3.3.29"
+        },
+        {
+          "name": "Newtonsoft.Json",
+          "version": "13.0.3"
+        },
+        {
+          "name": "System.Security.Cryptography.ProtectedData",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CheckArgumentArgs",
+        "GetFileSystemEntriesArgs",
+        "GetFilesEveryFolderBgWorker",
+        "RandomStatuses",
+        "ColumnSizeHelper",
+        "Asymmetric",
+        "PublicKey",
+        "PrivateKey",
+        "CryptHelperAdvanced",
+        "DataCrypt"
+      ],
+      "methods": [
+        "SetStatusOfType",
+        "SetAllTypes",
+        "CalculateWidthOfColumnsAgain",
+        "LoadFromConfig",
+        "ToConfigSection",
+        "ExportToConfigFile",
+        "LoadFromXml",
+        "ToParameters",
+        "ToBase64",
+        "ToHex"
+      ],
+      "fileCount": 163
+    },
+    {
+      "name": "SunamoStopwatch",
+      "description": "Measuring time between operations",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "StopwatchHelper",
+        "StopwatchStatic"
+      ],
+      "methods": [
+        "SaveElapsed",
+        "Reset",
+        "Start",
+        "Stop",
+        "StopAndPrintElapsed",
+        "PrintElapsedAndContinue",
+        "CalculateAverageOfTakes",
+        "StopAndEllapsedMs"
+      ],
+      "fileCount": 9
+    },
+    {
+      "name": "SunamoString",
+      "description": "A large number of methods for string operations",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "Diacritics",
+          "version": "3.3.29"
+        }
+      ],
+      "classes": [
+        "BalancedBrackets",
+        "stack",
+        "StringDelegates",
+        "StringExtensions",
+        "LoremIpsumGenerator",
+        "SH",
+        "SHNotTranslateAble",
+        "TT"
+      ],
+      "methods": [
+        "areBracketsBalanced",
+        "push",
+        "Main",
+        "Contains",
+        "RemoveInvisibleChars",
+        "RemoveWhitespaceChars",
+        "FromSpace160To32",
+        "SplitAndKeep",
+        "Generate",
+        "ContainsCl"
+      ],
+      "fileCount": 49
+    },
+    {
+      "name": "SunamoStringFormat",
+      "description": "Format strings with characters other than {} for objects",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "SunamoString",
+          "version": "24.11.23.1"
+        }
+      ],
+      "classes": [
+        "SHFormat"
+      ],
+      "methods": [
+        "Format",
+        "Format2",
+        "Format3",
+        "Format34",
+        "Format4"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoStringGetLines",
+      "description": "Get lines from string",
+      "version": "25.8.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHGetLines",
+        "GetLinesArgs"
+      ],
+      "methods": [
+        "GetLines",
+        "GetLinesFromLinesWithOneRow"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoStringGetString",
+      "description": "Converting rows to a single string",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHGetString"
+      ],
+      "methods": [
+        "GetString",
+        "ListToString"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoStringJoin",
+      "description": "Joining more string into one in various formats",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHJoin"
+      ],
+      "methods": [
+        "JoinString",
+        "SubstringIfAvailable",
+        "RemoveAfterFirst",
+        "FirstLine",
+        "TrimStart"
+      ],
+      "fileCount": 10
+    },
+    {
+      "name": "SunamoStringJoinPairs",
+      "description": "Concatenation of pairs on one line with two definable delimiters",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHJoinPairs"
+      ],
+      "methods": [
+        "JoinPairs"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoStringParts",
+      "description": "Removing / keeping parts of the string according to the position of the substring in it",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHParts"
+      ],
+      "methods": [
+        "RemoveAfterLast",
+        "RemoveAfterFirstChar",
+        "RemoveAfterFirstFunc",
+        "RemoveAfterFirst",
+        "KeepAfterFirst"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoStringReplace",
+      "description": "Method for replacing inside strings",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHReplace"
+      ],
+      "methods": [
+        "ReplaceAllDoubleSpaceToSingle",
+        "SplitAdvanced",
+        "ReplaceRef",
+        "ReplaceFromEnd",
+        "ReplaceWhitespaces"
+      ],
+      "fileCount": 19
+    },
+    {
+      "name": "SunamoStringSplit",
+      "description": "Methods for splitting strings",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "SunamoChar",
+          "version": "23.12.30.2"
+        },
+        {
+          "name": "SunamoCollectionsGeneric",
+          "version": "23.12.30.1"
+        },
+        {
+          "name": "SunamoConsts",
+          "version": "24.1.1.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [
+        "RemoveWhichHaveWhitespaceAtBothSides",
+        "NullToStringOrDefault",
+        "Split",
+        "SplitAndKeepDelimiters",
+        "SplitAndReturnRegexMatches",
+        "SplitCharList",
+        "SplitChar",
+        "SplitNoneChar",
+        "SplitNoneCharList",
+        "SplitList"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoStringSubstring",
+      "description": "Methods for gets parts of the strings",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHSubstring",
+        "SubstringArgs"
+      ],
+      "methods": [
+        "SubstringStart",
+        "SubstringIfAvailableStart",
+        "Substring",
+        "SubstringIfAvailable"
+      ],
+      "fileCount": 7
+    },
+    {
+      "name": "SunamoStringTrim",
+      "description": "Methods for trimming strings",
+      "version": "25.7.6.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "SHTrim"
+      ],
+      "methods": [
+        "TrimStartingAndTrailingChars",
+        "TrimIsNotNull",
+        "TrimNewLineAndTab",
+        "TrimStartAndEnd",
+        "TrimEndSpaces"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "SunamoTest",
+      "description": "Helpers for unit tests",
+      "version": "25.3.16.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "TypeWithProperties",
+        "ExcTypes",
+        "TestData",
+        "TestDataCs",
+        "TestDataTxt",
+        "TestHelper",
+        "TestLogger",
+        "XmlTestsBase"
+      ],
+      "methods": [
+        "Init",
+        "DefaultFolderPath",
+        "FolderForTestFiles",
+        "TestFile",
+        "GetFileInProjectsFolder",
+        "IsEnabled"
+      ],
+      "fileCount": 24
+    },
+    {
+      "name": "SunamoText",
+      "description": "Working with text, e.g. converting decoded unicode strings \\{code} to one character",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "FormatOfString",
+        "UnicodeHelper"
+      ],
+      "methods": [
+        "GetParsedParts",
+        "HasFormat",
+        "DeescapeDecodeUnicode"
+      ],
+      "fileCount": 8
+    },
+    {
+      "name": "SunamoTextIndexing",
+      "description": "Fast searching in content of text files",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "FileForSearching",
+        "TextIndexing"
+      ],
+      "methods": [
+        "FileForSearching",
+        "Init",
+        "ReloadFiles"
+      ],
+      "fileCount": 2
+    },
+    {
+      "name": "SunamoTextOutputGenerator",
+      "description": "Generating string output in various formats",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CompareCollectionsResults",
+        "NpmBashBuilder",
+        "StaticSBNoThread",
+        "TextBuilder",
+        "TextGenerator",
+        "TextOutputGenerator",
+        "TextOutputGeneratorArgs",
+        "TextOutputGeneratorStatic",
+        "CompareCollectionsResult"
+      ],
+      "methods": [
+        "TextOutput",
+        "I",
+        "Clear",
+        "Append",
+        "Undo",
+        "AppendLine",
+        "Create",
+        "GenerateListWithPercent",
+        "EndRunTime",
+        "NoData"
+      ],
+      "fileCount": 17
+    },
+    {
+      "name": "SunamoThisApp",
+      "description": "One of base foundation for sunamo's app platform - second is SunamoPlatformUwpInterop",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "StatusHelperSunamo",
+        "ThisApp"
+      ],
+      "methods": [
+        "IsStatusMessage",
+        "NopeOrDebugTyped",
+        "SetName",
+        "SetStatusXlf",
+        "SetStatus",
+        "StatusFromText"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoThread",
+      "description": "For using in multi thread apps",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "CAThread"
+      ],
+      "methods": [
+        "ToListString",
+        "ToList"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoThreading",
+      "description": "Various types of thread pools and more",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "InputDownload",
+        "MultiStringDownloader",
+        "MyThreadPool",
+        "Pool",
+        "PoolLinkedList",
+        "ThreadPool",
+        "ThreadPoolEvent"
+      ],
+      "methods": [
+        "InputDownload",
+        "QueueUserWorkItem",
+        "SetPoolSize",
+        "Dispose",
+        "QueueTask",
+        "ThreadPoolEvent",
+        "PartiallyDone"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "SunamoTidy",
+      "description": "Wrapper around TidyHtml5ManagedRepack",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [],
+      "fileCount": 5
+    },
+    {
+      "name": "SunamoToUnixLineEnding",
+      "description": "Extension method for forced conversion of \\r\\n to \\n for use by the same applications on Windows and Linux",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "Consts2",
+        "IListToUnixLineEndingExtensions",
+        "StringToUnixLineEndingExtensions"
+      ],
+      "methods": [
+        "ToUnixLineEnding"
+      ],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoTwoWayDictionary",
+      "description": "Dictionary where every key is value and vice versa",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "TwoWayDictionary"
+      ],
+      "methods": [
+        "Add"
+      ],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoTypes",
+      "description": "Types of .NET classes (will be removed later)",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "Types",
+        "TypesDelegates",
+        "TypesList"
+      ],
+      "methods": [],
+      "fileCount": 3
+    },
+    {
+      "name": "SunamoUnderscore",
+      "description": "Static sharing data objects - for use only in my apps",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "RadioButtonsSql",
+        "_"
+      ],
+      "methods": [],
+      "fileCount": 12
+    },
+    {
+      "name": "SunamoUri",
+      "description": "For working with URL (Uniform Resource Locator / Identifier)",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "CaseDotNet",
+          "version": "0.3.36"
+        },
+        {
+          "name": "Diacritics",
+          "version": "3.3.29"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "QSHelper",
+        "UH"
+      ],
+      "methods": [
+        "GetParameter",
+        "RemoveQs",
+        "GetParameterSE",
+        "GetQS",
+        "GetNormalizeQS",
+        "RemoveLastChar",
+        "WhiteSpaceFromStart",
+        "RemoveHostAndProtocol",
+        "RemovePrefixHttpOrHttps",
+        "DebugLocalhost"
+      ],
+      "fileCount": 17
+    },
+    {
+      "name": "SunamoUriWebServices",
+      "description": "Search queries for many servers",
+      "version": "25.7.25.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AdsByPsc",
+        "AdsHkRegion",
+        "AdsMsRegion",
+        "AdsPhaRegion",
+        "AdsRegionBase",
+        "ITJobs",
+        "ChromeSearchShortcut",
+        "BatteryEshops",
+        "FurnitureInOvaWithBestRating",
+        "FurnitureInOvaPreffered"
+      ],
+      "methods": [
+        "BazosCz",
+        "FromChromeReplacement",
+        "HyperInzerceCz",
+        "BazarCz",
+        "Pha",
+        "SearchInAll",
+        "OpenUri",
+        "IsGithubRepo",
+        "GitClone",
+        "AzureRepoWebUIFullOrGithub"
+      ],
+      "fileCount": 18
+    },
+    {
+      "name": "SunamoValues",
+      "description": "Values shared across many packages",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "AllHtmlAttrs",
+        "AllHtmlAttrsValues",
+        "AllHtmlTags",
+        "CodeElementsConstants",
+        "ComparerConsts",
+        "DTConstants",
+        "DTFormats",
+        "GoogleApiCodes"
+      ],
+      "methods": [
+        "Initialize",
+        "Init"
+      ],
+      "fileCount": 54
+    },
+    {
+      "name": "SunamoVcf",
+      "description": "Working with VCF (Virtual Card File) file format",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "MixERP.Net.VCards",
+          "version": "1.0.7"
+        },
+        {
+          "name": "System.Net.Http",
+          "version": "4.3.4"
+        },
+        {
+          "name": "System.Text.Encodings.Web",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Text.RegularExpressions",
+          "version": "4.3.1"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "EnumHelperVcf",
+        "SunamoEmail",
+        "SunamoTelephone",
+        "SunamoVCard",
+        "VcfHelper"
+      ],
+      "methods": [
+        "TelephonesToString",
+        "EmailsToString",
+        "SunamoVCardsToVCards",
+        "Parse",
+        "Telephones"
+      ],
+      "fileCount": 12
+    },
+    {
+      "name": "SunamoWikipedia",
+      "description": "Parsing content from Wikipedia",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "HtmlAgilityPack",
+          "version": "1.12.0"
+        }
+      ],
+      "classes": [
+        "WikipediaHelper",
+        "HtmlTableParserWiki"
+      ],
+      "methods": [
+        "HtmlEntitiesList",
+        "ParseTable",
+        "ParseList",
+        "ColumnValues"
+      ],
+      "fileCount": 18
+    },
+    {
+      "name": "SunamoWinStd",
+      "description": "Windows-specific code on net9.0 moniker",
+      "version": "25.8.27.2",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        },
+        {
+          "name": "System.Management",
+          "version": "9.0.3"
+        },
+        {
+          "name": "TextCopy",
+          "version": "6.2.1"
+        }
+      ],
+      "classes": [
+        "FileUtil",
+        "ClipboardHelperWinStd",
+        "KnownFolders"
+      ],
+      "methods": [
+        "WhoIsLocking",
+        "Instance",
+        "ContainsText",
+        "GetLines",
+        "SetLines",
+        "SetList",
+        "PathsAndTargetsOfAll",
+        "Create",
+        "IsReparsePoint",
+        "Delete"
+      ],
+      "fileCount": 37
+    },
+    {
+      "name": "SunamoXlfKeys",
+      "description": "Constants used in my i18n applications",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [],
+      "methods": [],
+      "fileCount": 5
+    },
+    {
+      "name": "SunamoXliffParser",
+      "description": "Just fork from https://www.nuget.org/packages/fmdev.XliffParser, due to .NET 5+",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "ResXResourceReader.NetStandard",
+          "version": "1.3.0"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "ResXEntry",
+        "ResXFile",
+        "UpdateResult",
+        "XlfDocument"
+      ],
+      "methods": [
+        "CompareTo",
+        "Read",
+        "Write",
+        "GenerateDesignerFile",
+        "Any",
+        "AddFile",
+        "RemoveFile",
+        "SaveAsResX",
+        "UpdateFromSource",
+        "Update"
+      ],
+      "fileCount": 22
+    },
+    {
+      "name": "SunamoXml",
+      "description": "Working with XML",
+      "version": "25.6.7.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "XmlGenerator",
+        "XmlGeneratorNS2",
+        "XmlGeneratorResources",
+        "XmlGeneratorSelective",
+        "XmlTemplates",
+        "XH",
+        "XHelper",
+        "XmlHelper",
+        "XmlNamespacesHolder"
+      ],
+      "methods": [
+        "Length",
+        "WriteNonPairTagWith2Attrs",
+        "WriteNonPairTagWithAttr",
+        "Insert",
+        "AppendLine",
+        "WriteCData",
+        "WriteElementObject",
+        "WriteTagWithAttr",
+        "WriteRaw",
+        "TerminateTag"
+      ],
+      "fileCount": 20
+    },
+    {
+      "name": "SunamoYaml",
+      "description": "Working with yaml",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "Yaml"
+      ],
+      "methods": [],
+      "fileCount": 6
+    },
+    {
+      "name": "SunamoYouTube",
+      "description": "Working with YouTube",
+      "version": "25.3.29.1",
+      "targetFramework": "net9.0",
+      "dependencies": [
+        {
+          "name": "Google.Apis.YouTube.v3",
+          "version": "1.69.0.3707"
+        },
+        {
+          "name": "Microsoft.Extensions.Logging.Abstractions",
+          "version": "9.0.3"
+        }
+      ],
+      "classes": [
+        "YouTubeHelper"
+      ],
+      "methods": [
+        "GetYtCodesFromUri",
+        "CreateNewPlaylist"
+      ],
+      "fileCount": 8
+    }
+  ],
+  "errors": [],
+  "totalCount": 128,
+  "processedCount": 128,
+  "errorCount": 0
+}

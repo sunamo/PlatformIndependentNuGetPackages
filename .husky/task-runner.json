@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "name": "check-czech-characters",
+      "group": "pre-commit",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "./scripts/check-czech-characters.ps1",
+        "E:\vs\Projects\PlatformIndependentNuGetPackages"
+      ],
+      "pathMode": "absolute"
+    }
+  ]
+}

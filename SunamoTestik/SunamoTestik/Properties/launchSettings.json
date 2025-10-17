@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SunamoTestik": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:52520;http://localhost:52521"
+    }
+  }
+}
