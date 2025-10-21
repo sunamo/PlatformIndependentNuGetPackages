@@ -1,0 +1,518 @@
+{
+  "completed": [
+    {
+      "name": "SunamoAI",
+      "files": "0"
+    },
+    {
+      "name": "SunamoArgs",
+      "files": "0"
+    },
+    {
+      "name": "SunamoAsync",
+      "files": "0"
+    },
+    {
+      "name": "SunamoAttributes",
+      "files": "0"
+    },
+    {
+      "name": "SunamoAzureDevOpsApi",
+      "files": "0"
+    },
+    {
+      "name": "SunamoBazosCrawler",
+      "files": "0"
+    },
+    {
+      "name": "SunamoBts",
+      "files": "0"
+    },
+    {
+      "name": "SunamoChar",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCl",
+      "files": "0"
+    },
+    {
+      "name": "SunamoClearScript",
+      "files": "0"
+    },
+    {
+      "name": "SunamoClipboard",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionOnDrive",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionWithoutDuplicates",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollections",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionsChangeContent",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionsGeneric",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionsIndexesWithNull",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionsNonGeneric",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionsTo",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCollectionsValuesTableGrid",
+      "files": "0"
+    },
+    {
+      "name": "SunamoColors",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCompare",
+      "files": "0"
+    },
+    {
+      "name": "SunamoConverters",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCrypt",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCsproj",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCssGenerator",
+      "files": "0"
+    },
+    {
+      "name": "SunamoCsv",
+      "files": "0"
+    },
+    {
+      "name": "SunamoData",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDateTime",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDebugCollection",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDebugIO",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDebugging",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDelegates",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDependencyInjection",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDevCode",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDictionary",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDotNetZip",
+      "files": "0"
+    },
+    {
+      "name": "SunamoDotnetCmdBuilder",
+      "files": "0"
+    },
+    {
+      "name": "SunamoEditorConfig",
+      "files": "0"
+    },
+    {
+      "name": "SunamoEmbeddedResources",
+      "files": "0"
+    },
+    {
+      "name": "SunamoEmoticons",
+      "files": "0"
+    },
+    {
+      "name": "SunamoEnums",
+      "files": "0"
+    },
+    {
+      "name": "SunamoEnumsHelper",
+      "files": "0"
+    },
+    {
+      "name": "SunamoExceptions",
+      "files": "0"
+    },
+    {
+      "name": "SunamoExtensions",
+      "files": "0"
+    },
+    {
+      "name": "SunamoFileExtensions",
+      "files": "0"
+    },
+    {
+      "name": "SunamoFileIO",
+      "files": "0"
+    },
+    {
+      "name": "SunamoFileSystem",
+      "files": "0"
+    },
+    {
+      "name": "SunamoFilesIndex",
+      "files": "0"
+    },
+    {
+      "name": "SunamoFluentFtp",
+      "files": "0"
+    },
+    {
+      "name": "SunamoFtp",
+      "files": "0"
+    },
+    {
+      "name": "SunamoGetFiles",
+      "files": "0"
+    },
+    {
+      "name": "SunamoGetFolders",
+      "files": "0"
+    },
+    {
+      "name": "SunamoGitConfig",
+      "files": "0"
+    },
+    {
+      "name": "SunamoGoogleMyMaps",
+      "files": "0"
+    },
+    {
+      "name": "SunamoGoogleSheets",
+      "files": "0"
+    },
+    {
+      "name": "SunamoGpx",
+      "files": "0"
+    },
+    {
+      "name": "SunamoHtml",
+      "files": "0"
+    },
+    {
+      "name": "SunamoHttp",
+      "files": "0"
+    },
+    {
+      "name": "SunamoIni",
+      "files": "0"
+    },
+    {
+      "name": "SunamoInterfaces",
+      "files": "0"
+    },
+    {
+      "name": "SunamoJson",
+      "files": "0"
+    },
+    {
+      "name": "SunamoLaTeX",
+      "files": "0"
+    },
+    {
+      "name": "SunamoLang",
+      "files": "0"
+    },
+    {
+      "name": "SunamoLogging",
+      "files": "0"
+    },
+    {
+      "name": "SunamoMail",
+      "files": "0"
+    },
+    {
+      "name": "SunamoMarkdown",
+      "files": "0"
+    },
+    {
+      "name": "SunamoMathpix",
+      "files": "0"
+    },
+    {
+      "name": "SunamoMime",
+      "files": "0"
+    },
+    {
+      "name": "SunamoMsSqlServer",
+      "files": "0"
+    },
+    {
+      "name": "SunamoMsgReader",
+      "files": "0"
+    },
+    {
+      "name": "SunamoNuGetProtocol",
+      "files": "0"
+    },
+    {
+      "name": "SunamoNumbers",
+      "files": "0"
+    },
+    {
+      "name": "SunamoOctokit",
+      "files": "0"
+    },
+    {
+      "name": "SunamoPInvoke",
+      "files": "0"
+    },
+    {
+      "name": "SunamoPS",
+      "files": "0"
+    },
+    {
+      "name": "SunamoPackageJson",
+      "files": "0"
+    },
+    {
+      "name": "SunamoParsing",
+      "files": "0"
+    },
+    {
+      "name": "SunamoPaths",
+      "files": "0"
+    },
+    {
+      "name": "SunamoPercentCalculator",
+      "files": "0"
+    },
+    {
+      "name": "SunamoPlatformUwpInterop",
+      "files": "0"
+    },
+    {
+      "name": "SunamoRandom",
+      "files": "0"
+    },
+    {
+      "name": "SunamoReflection",
+      "files": "0"
+    },
+    {
+      "name": "SunamoRegex",
+      "files": "0"
+    },
+    {
+      "name": "SunamoResult",
+      "files": "0"
+    },
+    {
+      "name": "SunamoRobotsTxt",
+      "files": "0"
+    },
+    {
+      "name": "SunamoRoslyn",
+      "files": "0"
+    },
+    {
+      "name": "SunamoRss",
+      "files": "0"
+    },
+    {
+      "name": "SunamoRuleset",
+      "files": "0"
+    },
+    {
+      "name": "SunamoSecurity",
+      "files": "0"
+    },
+    {
+      "name": "SunamoSelenium",
+      "files": "0"
+    },
+    {
+      "name": "SunamoSerializer",
+      "files": "0"
+    },
+    {
+      "name": "SunamoShared",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStopwatch",
+      "files": "0"
+    },
+    {
+      "name": "SunamoString",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringFormat",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringGetLines",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringGetString",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringJoin",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringJoinPairs",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringParts",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringReplace",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringSplit",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringSubstring",
+      "files": "0"
+    },
+    {
+      "name": "SunamoStringTrim",
+      "files": "0"
+    },
+    {
+      "name": "SunamoTest",
+      "files": "0"
+    },
+    {
+      "name": "SunamoText",
+      "files": "0"
+    },
+    {
+      "name": "SunamoTextIndexing",
+      "files": "0"
+    },
+    {
+      "name": "SunamoTextOutputGenerator",
+      "files": "0"
+    },
+    {
+      "name": "SunamoThisApp",
+      "files": "0"
+    },
+    {
+      "name": "SunamoThread",
+      "files": "0"
+    },
+    {
+      "name": "SunamoThreading",
+      "files": "0"
+    },
+    {
+      "name": "SunamoTidy",
+      "files": "0"
+    },
+    {
+      "name": "SunamoToUnixLineEnding",
+      "files": "0"
+    },
+    {
+      "name": "SunamoTwoWayDictionary",
+      "files": "0"
+    },
+    {
+      "name": "SunamoTypes",
+      "files": "0"
+    },
+    {
+      "name": "SunamoUnderscore",
+      "files": "0"
+    },
+    {
+      "name": "SunamoUri",
+      "files": "0"
+    },
+    {
+      "name": "SunamoUriWebServices",
+      "files": "0"
+    },
+    {
+      "name": "SunamoValues",
+      "files": "0"
+    },
+    {
+      "name": "SunamoVcf",
+      "files": "0"
+    },
+    {
+      "name": "SunamoWikipedia",
+      "files": "0"
+    },
+    {
+      "name": "SunamoWinStd",
+      "files": "0"
+    },
+    {
+      "name": "SunamoXlfKeys",
+      "files": "0"
+    },
+    {
+      "name": "SunamoXliffParser",
+      "files": "0"
+    },
+    {
+      "name": "SunamoXml",
+      "files": "0"
+    },
+    {
+      "name": "SunamoYaml",
+      "files": "0"
+    },
+    {
+      "name": "SunamoYouTube",
+      "files": "0"
+    }
+  ],
+  "failed": [],
+  "skipped": []
+}

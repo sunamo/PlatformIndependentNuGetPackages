@@ -1,0 +1,1 @@
+- všechny složky které na této úrovni vytvoříš mi dej do složek začínající tečkou. tedy .scripts místo scripts.
