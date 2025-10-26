@@ -1,7 +1,15 @@
 {
-  "FilesWithHeader": 427,
-  "TotalFiles": 427,
-  "FilesWithoutHeader": [],
-  "CompletionPercentage": 100.0,
-  "FilesNotFound": []
+  "CompletionPercentage": 98.36,
+  "FilesWithHeader": 420,
+  "FilesNotFound": [],
+  "FilesWithoutHeader": [
+    "SunamoCl\\SunamoCl\\CLAllActions.cs",
+    "SunamoCl\\SunamoCl\\SunamoCmd\\Tables\\CmdTable.cs",
+    "SunamoCl\\SunamoCl\\SunamoCmd\\Tables\\TableParser.cs",
+    "SunamoCl\\SunamoCl\\SunamoCmdArgs\\Data\\CmdArgs.cs",
+    "SunamoCl\\SunamoCl\\SunamoCmdArgs_Cmd\\ProgramCommon.cs",
+    "SunamoCl\\SunamoCl\\_public\\FromToTSHCl.cs",
+    "SunamoCl\\SunamoCl\\_sunamo\\SunamoExceptions\\Exceptions.cs"
+  ],
+  "TotalFiles": 427
 }

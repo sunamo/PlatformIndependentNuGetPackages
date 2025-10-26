@@ -1,0 +1,417 @@
+Short Variable Issues - 10/22/2025 10:48:13
+================================================================================
+
+[SunamoBts]
+  SunamoBts/BTS.cs
+    Line 237: Typo: spaced comparison operator (> = or < =)
+      for (var index = plainTextBytes.Count - 1; index >= 0; index--)
+    Line 808: Typo: spaced comparison operator (> = or < =)
+      for (var index = input.Count - 1; index >= 0; index--)
+
+[SunamoChar]
+  SunamoChar/CharHelper.cs
+    Line 47: Typo: spaced comparison operator (> = or < =)
+      for (var index = splitted.Count() - 1; index >= 0; index--)
+
+[SunamoCollectionOnDrive]
+  SunamoCollectionOnDrive/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+
+[SunamoCollections]
+  SunamoCollections/CA.cs
+    Line 67: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 216: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 311: Typo: spaced comparison operator (> = or < =)
+      for (var index = mySites.Count - 1; index >= 0; index--)
+    Line 334: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 349: Typo: spaced comparison operator (> = or < =)
+      for (var index = mySites.Count - 1; index >= 0; index--)
+    Line 429: Typo: spaced comparison operator (> = or < =)
+      for (var index = removeLines.Count - 1; index >= 0; index--)
+    Line 890: Typo: spaced comparison operator (> = or < =)
+      for (var index = input.Count - 1; index >= 0; index--)
+    Line 946: Typo: spaced comparison operator (> = or < =)
+      for (var index = data.Count - 1; index >= 0; index--)
+    Line 1097: Typo: spaced comparison operator (> = or < =)
+      for (var index = files1.Count - 1; index >= 0; index--)
+    Line 1103: Typo: spaced comparison operator (> = or < =)
+      for (var index = files1.Count - 1; index >= 0; index--)
+    Line 1159: Typo: spaced comparison operator (> = or < =)
+      for (var index = mySites.Count - 1; index >= 0; index--)
+    Line 1303: Typo: spaced comparison operator (> = or < =)
+      for (var index = c2.Count - 1; index >= 0; index--)
+    Line 1310: Typo: spaced comparison operator (> = or < =)
+      for (var index = c1.Count - 1; index >= 0; index--)
+  SunamoCollections/CAGeneric.cs
+    Line 69: Typo: spaced comparison operator (> = or < =)
+      for (var index = result.Count - 1; index >= 0; index--)
+    Line 122: Typo: spaced comparison operator (> = or < =)
+      for (var index = decrypted.Count - 1; index >= 0; index--)
+    Line 211: Typo: spaced comparison operator (> = or < =)
+      for (var index = vr.Count - 1; index >= 0; index--)
+    Line 253: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < bl; ++index)
+    Line 331: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < bl; ++index)
+  SunamoCollections/Services/RemoveEmptyLinesService.cs
+    Line 30: Typo: spaced comparison operator (> = or < =)
+      for (var index = character.Count - 1; index >= 0; index--)
+
+[SunamoCollectionsChangeContent]
+  SunamoCollectionsChangeContent/CAChangeContent.cs
+    Line 13: Typo: spaced comparison operator (> = or < =)
+      for (var index = files_in.Count - 1; index >= 0; index--)
+
+[SunamoCollectionsGeneric]
+  SunamoCollectionsGeneric/CAG.cs
+    Line 133: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < value.GetLength(0); ++index)
+    Line 136: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < value.GetLength(0); ++index)
+    Line 214: Typo: spaced comparison operator (> = or < =)
+      for (var index = c2.Count - 1; index >= 0; index--)
+    Line 227: Typo: spaced comparison operator (> = or < =)
+      for (var index = c1.Count - 1; index >= 0; index--)
+    Line 440: Typo: spaced comparison operator (> = or < =)
+      for (var index = idKesek.Count - 1; index >= 0; index--)
+
+[SunamoColors]
+  SunamoColors/UtilsHex.cs
+    Line 33: Typo: spaced comparison operator (> = or < =)
+      for (var index = 0; index <= list - 1; index++) builder.Add(Convert.ToByte(hexEncoded.Substring(i * 2, 2), 16));
+
+[SunamoCrypt]
+  SunamoCrypt/BTS2.cs
+    Line 22: Typo: spaced comparison operator (> = or < =)
+      for (var index = plainTextBytes.Count - 1; index >= 0; index--)
+  SunamoCrypt/CryptHelper2.cs
+    Line 39: Typo: spaced comparison operator (> = or < =)
+      for (var index = 0; index <= iterations; index++)
+
+[SunamoCsproj]
+  SunamoCsproj/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoCsproj/CsprojNsHelper.cs
+    Line 192: Typo: spaced comparison operator (> = or < =)
+      for (var index = parameter.Length - 1; index >= 0; index--)
+
+[SunamoCssGenerator]
+  SunamoCssGenerator/Extensions/StringBuilderExtensions.cs
+    Line 12: Typo: spaced comparison operator (> = or < =)
+      for (var index = length - 1; index >= 0; index--)
+
+[SunamoData]
+  SunamoData/Data/ABC.cs
+    Line 66: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < setsNameValue.Length; index++) Add(AB.Get(setsNameValue[index].ToString(), setsNameValue[++index]));
+
+[SunamoDebugCollection]
+  SunamoDebugCollection/DebugLongCollection.cs
+    Line 14: Typo: spaced comparison operator (> = or < =)
+      for (var index = Count - 1; index >= Count - 100; index--) l2.Add(this[index]);
+
+[SunamoDevCode]
+  SunamoDevCode/_sunamo/SunamoCollections/CA.cs
+    Line 55: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 81: Typo: spaced comparison operator (> = or < =)
+      for (var index = mySites.Count - 1; index >= 0; index--)
+  SunamoDevCode/_sunamo/SunamoCollections/RemoveEmptyLinesService.cs
+    Line 30: Typo: spaced comparison operator (> = or < =)
+      for (var index = character.Count - 1; index >= 0; index--)
+  SunamoDevCode/_sunamo/SunamoExtensions/ListExtensions.cs
+    Line 15: Typo: spaced comparison operator (> = or < =)
+      for (var index = items.Count - 1; index >= 0; index--) list.Insert(0, items[index]);
+  SunamoDevCode/_sunamo/SunamoFileSystem/FS.cs
+    Line 383: Typo: spaced comparison operator (> = or < =)
+      for (var index = dirs.Length - 1; index >= 0; index--) TryDeleteDirectory(dirs[index]);
+  SunamoDevCode/CSharpParser.cs
+    Line 50: Typo: spaced comparison operator (> = or < =)
+      for (var index = lines.Count - 1; index >= 0; index--)
+
+[SunamoDictionary]
+  SunamoDictionary/DictionaryHelper.cs
+    Line 87: Typo: spaced comparison operator (> = or < =)
+      for (var index = ds.Keys.Count - 1; index >= 0; index--)
+    Line 307: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < p.Count; index++) result.Add(p[index], p[++index]);
+
+[SunamoEnumsHelper]
+  SunamoEnumsHelper/EnumHelper.cs
+    Line 78: Typo: spaced comparison operator (> = or < =)
+      for (var index = def; index <= max; index++)
+
+[SunamoExtensions]
+  SunamoExtensions/ListExtensions.cs
+    Line 44: Typo: spaced comparison operator (> = or < =)
+      for (var index = items.Count() - 1; index >= 0; index--) list.Insert(0, items[index]);
+  SunamoExtensions/ListStringExtensions.cs
+    Line 11: Typo: spaced comparison operator (> = or < =)
+      for (var index = lines.Count - 1; index >= 0; index--) list.Insert(dx, lines[index]);
+  SunamoExtensions/StringBuilderExtensions.cs
+    Line 13: Typo: spaced comparison operator (> = or < =)
+      for (var index = length - 1; index >= 0; index--)
+
+[SunamoFileIO]
+  SunamoFileIO/TF.cs
+    Line 176: Typo: spaced comparison operator (> = or < =)
+      for (var index = lines.Count - 1; index >= 0; index--)
+
+[SunamoFileSystem]
+  SunamoFileSystem/_sunamo/SunamoCollections/CA.cs
+    Line 64: Typo: spaced comparison operator (> = or < =)
+      for (var index = files1.Count - 1; index >= 0; index--)
+    Line 70: Typo: spaced comparison operator (> = or < =)
+      for (var index = files1.Count - 1; index >= 0; index--)
+  SunamoFileSystem/_sunamo/SunamoCollectionsChangeContent/CAChangeContent.cs
+    Line 24: Typo: spaced comparison operator (> = or < =)
+      for (var index = files_in.Count - 1; index >= 0; index--)
+  SunamoFileSystem/_sunamo/SunamoCollectionsGeneric/CAG.cs
+    Line 19: Typo: spaced comparison operator (> = or < =)
+      for (var index = collection2.Count - 1; index >= 0; index--)
+    Line 32: Typo: spaced comparison operator (> = or < =)
+      for (var index = collection1.Count - 1; index >= 0; index--)
+  SunamoFileSystem/_sunamo/SunamoGetFiles/FSGetFiles.cs
+    Line 82: Typo: spaced comparison operator (> = or < =)
+      for (var index = dirs.Count - 1; index >= 0; index--)
+    Line 158: Typo: spaced comparison operator (> = or < =)
+      for (var index = data.Count - 1; index >= 0; index--)
+  SunamoFileSystem/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoFileSystem/_sunamo/SunamoStringSplit/SHSplit.cs
+    Line 25: Typo: spaced comparison operator (> = or < =)
+      for (var index = chs.Count - 1; index >= 0; index--)
+  SunamoFileSystem/FS.cs
+    Line 396: Typo: spaced comparison operator (> = or < =)
+      for (var index = fs.Count - 1; index >= 0; index--)
+    Line 531: Typo: spaced comparison operator (> = or < =)
+      for (var index = filesFrom.Count - 1; index >= 0; index--)
+    Line 1214: Typo: spaced comparison operator (> = or < =)
+      for (var index = dirs.Length - 1; index >= 0; index--) TryDeleteDirectory(dirs[index]);
+    Line 1278: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 1329: Typo: spaced comparison operator (> = or < =)
+      for (var index = dirs.Length - 1; index >= 0; index--) TryDeleteDirectory(dirs[index]);
+
+[SunamoFtp]
+  SunamoFtp/FtpClients/FTP.cs
+    Line 1039: Typo: spaced comparison operator (> = or < =)
+      for (var index = 0; index < len && partCount <= 6; index++)
+
+[SunamoGetFiles]
+  SunamoGetFiles/FSGetFiles.cs
+    Line 88: Typo: spaced comparison operator (> = or < =)
+      for (var index = dirs.Count - 1; index >= 0; index--)
+    Line 173: Typo: spaced comparison operator (> = or < =)
+      for (var index = data.Count - 1; index >= 0; index--)
+
+[SunamoGetFolders]
+  SunamoGetFolders/_sunamo/SunamoCollections/CA.cs
+    Line 19: Typo: spaced comparison operator (> = or < =)
+      for (var index = files1.Count - 1; index >= 0; index--)
+    Line 25: Typo: spaced comparison operator (> = or < =)
+      for (var index = files1.Count - 1; index >= 0; index--)
+  SunamoGetFolders/_sunamo/SunamoCollectionsChangeContent/CAChangeContent.cs
+    Line 13: Typo: spaced comparison operator (> = or < =)
+      for (var index = files_in.Count - 1; index >= 0; index--)
+  SunamoGetFolders/FSGetFolders.cs
+    Line 27: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+  SunamoGetFolders/FSGetFoldersOther.cs
+    Line 24: Typo: spaced comparison operator (> = or < =)
+      for (var index = folders.Count - 1; index >= 0; index--)
+
+[SunamoGoogleSheets]
+  SunamoGoogleSheets/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoGoogleSheets/Clipboard/SheetsHelper.cs
+    Line 133: Typo: spaced comparison operator (> = or < =)
+      for (var index = result.Count - (1); index >= 0; index--)
+
+[SunamoHtml]
+  SunamoHtml/_public/SunamoXml/Generators/XmlGeneratorHtml.cs
+    Line 154: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < args.Count(); index++) parameter.Add(args[index], args[++index]);
+  SunamoHtml/_sunamo/SunamoCollectionsChangeContent/CAChangeContent.cs
+    Line 24: Typo: spaced comparison operator (> = or < =)
+      for (var index = files_in.Count - 1; index >= 0; index--)
+    Line 54: Typo: spaced comparison operator (> = or < =)
+      for (var index = files_in.Count - 1; index >= 0; index--)
+  SunamoHtml/_sunamo/SunamoString/SH.cs
+    Line 27: Typo: spaced comparison operator (> = or < =)
+      for (var index = parameter.Length - 1; index >= pl; index--)
+    Line 189: Typo: spaced comparison operator (> = or < =)
+      for (var index = to - 1; index >= 0; index--)
+    Line 270: Typo: spaced comparison operator (> = or < =)
+      for (var index = stred - 1; index >= 0; index--)
+  SunamoHtml/_sunamo/SunamoStringSplit/SHSplit.cs
+    Line 48: Typo: spaced comparison operator (> = or < =)
+      for (var index = bold.Count - 1; index >= 0; index--)
+  SunamoHtml/Html/HtmlHelperShared.cs
+    Line 546: Typo: spaced comparison operator (> = or < =)
+      for (var index = node.Attributes.Count - 1; index >= 0; index--)
+    Line 819: Typo: spaced comparison operator (> = or < =)
+      for (var index = node.Count - 1; index >= 0; index--)
+  SunamoHtml/Html/HtmlHelperText.cs
+    Line 36: Typo: spaced comparison operator (> = or < =)
+      for (var index = start.Count - 1; index >= 0; index--)
+  SunamoHtml/HtmlAgilityHelper.cs
+    Line 168: Typo: spaced comparison operator (> = or < =)
+      for (var index = textNodes.Count - 1; index >= 0; index--)
+
+[SunamoLang]
+  SunamoLang/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+
+[SunamoPS]
+  SunamoPS/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+
+[SunamoReflection]
+  SunamoReflection/ArrayTraverse.cs
+    Line 13: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < array.Rank; ++index) maxLengths[index] = array.GetLength(index) - 1;
+    Line 19: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < Position.Length; ++index)
+
+[SunamoRoslyn]
+  SunamoRoslyn.Tests/_sunamo/SHGetLines.cs
+    Line 29: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoRoslyn/_public/ABCRoslyn.cs
+    Line 63: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < setsNameValue.Length; index++) Add(ABRoslyn.Get(setsNameValue[index].ToString(), setsNameValue[++index]));
+  SunamoRoslyn/_public/CsFileFilterRoslyn.cs
+    Line 127: Short parameter name 'n'
+      public List<string> GetContainsByFlags(bool n)
+    Line 138: Short parameter name 'n'
+      public List<string> GetEndingByFlags(bool n)
+  SunamoRoslyn/_sunamo/CA.cs
+    Line 120: Typo: spaced comparison operator (> = or < =)
+      for (var index = mySites.Count - 1; index >= 0; index--)
+  SunamoRoslyn/_sunamo/SHGetLines.cs
+    Line 22: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+
+[SunamoRuleset]
+  SunamoRuleset/_sunamo/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+
+[SunamoSerializer]
+  SunamoSerializer/_sunamo/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoSerializer/SF.cs
+    Line 301: Typo: spaced comparison operator (> = or < =)
+      for (var index = elementsLines.Count - 1; index >= 0; index--)
+
+[SunamoString]
+  SunamoString/_sunamo/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoString/SH.cs
+    Line 242: Typo: spaced comparison operator (> = or < =)
+      for (var index = onlyLeft.Count - 1; index >= 0; index--) stringBuilder.Remove(onlyLeft[index], 1);
+    Line 292: Typo: spaced comparison operator (> = or < =)
+      for (var index = occR.Count - 1; index >= 0; index--)
+    Line 322: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 1011: Typo: spaced comparison operator (> = or < =)
+      for (var index = dxsColons.Count - 1; index >= 0; index--) stringBuilder.Insert(dxsColons[index] + 1, " ");
+    Line 1013: Typo: spaced comparison operator (> = or < =)
+      for (var index = dxsColons.Count - 1; index >= 0; index--) stringBuilder.Remove(dxsColons[index] + 1, 1);
+    Line 1018: Typo: spaced comparison operator (> = or < =)
+      for (var index = dxsColons.Count - 1; index >= 0; index--) stringBuilder.Insert(dxsColons[index], " ");
+    Line 1020: Typo: spaced comparison operator (> = or < =)
+      for (var index = dxsColons.Count - 1; index >= 0; index--) stringBuilder.Remove(dxsColons[index], 1);
+    Line 2634: Typo: spaced comparison operator (> = or < =)
+      for (var index = add.Count - 1; index >= 0; index--)
+    Line 3019: Typo: spaced comparison operator (> = or < =)
+      for (var index = stred - 1; index >= 0; index--)
+    Line 3089: Typo: spaced comparison operator (> = or < =)
+      for (var index = to - 1; index >= 0; index--)
+    Line 3152: Typo: spaced comparison operator (> = or < =)
+      for (var index = parameter.Length - 1; index >= pl; index--)
+    Line 3278: Typo: spaced comparison operator (> = or < =)
+      for (var index = p1.Length - 1; index >= 0; index--)
+
+[SunamoStringGetLines]
+  SunamoStringGetLines/SHGetLines.cs
+    Line 39: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+
+[SunamoStringReplace]
+  SunamoStringReplace/_sunamo/SH.cs
+    Line 45: Typo: spaced comparison operator (> = or < =)
+      for (var index = occR.Count - 1; index >= 0; index--)
+    Line 76: Typo: spaced comparison operator (> = or < =)
+      for (var index = list.Count - 1; index >= 0; index--)
+    Line 165: Typo: spaced comparison operator (> = or < =)
+      for (var index = onlyLeft.Count - 1; index >= 0; index--) stringBuilder.Remove(onlyLeft[index], 1);
+  SunamoStringReplace/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoStringReplace/SHReplace.cs
+    Line 80: Typo: spaced comparison operator (> = or < =)
+      for (var index = occ.Count - 1; index >= 0; index--) text = ReplaceByIndex(text, zaCo, occ[index], co.Length);
+    Line 263: Typo: spaced comparison operator (> = or < =)
+      for (var index = occ.Count - 1; index >= 0; index--)
+
+[SunamoStringSplit]
+  SunamoStringSplit/_sunamo/SunamoStringGetLines/SHGetLines.cs
+    Line 23: Typo: spaced comparison operator (> = or < =)
+      for (var index = d.Count - 1; index >= 0; index--)
+  SunamoStringSplit/SHSplit.cs
+    Line 22: Typo: spaced comparison operator (> = or < =)
+      for (var index = bold.Count - 1; index >= 0; index--)
+    Line 117: Typo: spaced comparison operator (> = or < =)
+      for (var index = bm.Count - 1; index >= 0; index--)
+    Line 537: Typo: spaced comparison operator (> = or < =)
+      for (var index = chs.Count - 1; index >= 0; index--)
+
+[SunamoStringTrim]
+  SunamoStringTrim/SHTrim.cs
+    Line 22: Typo: spaced comparison operator (> = or < =)
+      for (var index = html.Length - 1; index >= 0; index--)
+    Line 63: Typo: spaced comparison operator (> = or < =)
+      for (var index = target.Length - 1; index >= 0; index--)
+    Line 165: Typo: spaced comparison operator (> = or < =)
+      for (var index = nameSolution.Length - 1; index >= 0; index--)
+
+[SunamoThreading]
+  SunamoThreading/Pool.cs
+    Line 14: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < size; ++index)
+  SunamoThreading/PoolLinkedList.cs
+    Line 14: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < size; ++index)
+
+[SunamoUri]
+  SunamoUri/_sunamo/SunamoDictionary/DictionaryHelper.cs
+    Line 12: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < p.Count; index++) result.Add(p[index], p[++index]);
+
+[SunamoXml]
+  SunamoXml/Generators/XmlGenerator.cs
+    Line 164: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < args.Count(); index++) parameter.Add(args[index], args[++index]);
+  SunamoXml/Generators/XmlGeneratorNS2.cs
+    Line 66: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < p_2.Length; index++) stringBuilder.AppendFormat("{0}=\"{1}\"", p_2[index], p_2[++index]);
+    Line 109: Usage of 'i' when 'index' is declared in for loop
+      for (var index = 0; index < p_2.Length; index++) stringBuilder.AppendFormat("{0}=\"{1}\"", p_2[index], p_2[++index]);
+  SunamoXml/XmlNamespacesHolder.cs
+    Line 45: Typo: spaced comparison operator (> = or < =)
+      for (var index = root.Attributes.Count - 1; index >= 0; index--)
+
+

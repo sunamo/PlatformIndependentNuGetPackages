@@ -221,8 +221,15 @@ foreach ($submodule in $submodules) {
             -not $changedFilesHash.ContainsKey($_)
         }
 
-        # Filter only .cs files
-        $csFiles = $unmodifiedFiles | Where-Object { $_ -like "*.cs" }
+        # Filter only .cs files AND files that actually exist on disk
+        # EN: Filter .cs files, exclude obj/bin folders, and verify file exists
+        # CZ: Filtrovat .cs soubory, vyloučit obj/bin složky a ověřit že soubor existuje
+        $csFiles = $unmodifiedFiles | Where-Object {
+            $_ -like "*.cs" -and
+            $_ -notlike "*/obj/*" -and
+            $_ -notlike "*/bin/*" -and
+            (Test-Path (Join-Path $submodulePath $_))
+        }
 
         if ($csFiles.Count -gt 0) {
             Write-Host "  Found $($csFiles.Count) unmodified .cs files" -ForegroundColor White
@@ -233,6 +240,13 @@ foreach ($submodule in $submodules) {
                 $fullPath = Join-Path $submodulePath $file
                 Write-Host "    Opening: $file" -ForegroundColor Gray
 
+                # EN: Check if file exists before attempting to open
+                # CZ: Zkontrolovat zda soubor existuje před pokusem o otevření
+                if (-not (Test-Path $fullPath)) {
+                    Write-Host "      Warning: File not found at path: $fullPath" -ForegroundColor Yellow
+                    continue
+                }
+
                 try {
                     if ($useFallbackMethod) {
                         # EN: Use devenv.exe /Edit (opens new windows)
@@ -242,13 +256,24 @@ foreach ($submodule in $submodules) {
                     } else {
                         # EN: Open file in the existing VS instance via DTE
                         # CZ: Otevřít soubor v existující VS instanci přes DTE
+                        # EN: Ensure DTE object is still valid
+                        # CZ: Zajistit že DTE objekt je stále platný
+                        if ($null -eq $dte) {
+                            Write-Host "      Error: DTE object is null" -ForegroundColor Red
+                            continue
+                        }
+
                         # EN: Use "{7651A701-06E5-11D1-8EBD-00A0C90F26EA}" which is vsViewKindTextView
                         # CZ: Použít "{7651A701-06E5-11D1-8EBD-00A0C90F26EA}" což je vsViewKindTextView
-                        $dte.ItemOperations.OpenFile($fullPath, "{7651A701-06E5-11D1-8EBD-00A0C90F26EA}") | Out-Null
+                        $result = $dte.ItemOperations.OpenFile($fullPath, "{7651A701-06E5-11D1-8EBD-00A0C90F26EA}")
+                        if ($null -eq $result) {
+                            Write-Host "      Warning: OpenFile returned null for: $fullPath" -ForegroundColor Yellow
+                        }
                         Start-Sleep -Milliseconds 100
                     }
                 } catch {
-                    Write-Host "      Error opening file: $_" -ForegroundColor Red
+                    Write-Host "      Error opening file: $($_.Exception.Message)" -ForegroundColor Red
+                    Write-Host "      Full path attempted: $fullPath" -ForegroundColor DarkGray
                 }
             }
 
