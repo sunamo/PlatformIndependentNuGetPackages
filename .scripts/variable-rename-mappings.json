@@ -1,0 +1,28 @@
+{
+  "RemoveEmptyLinesService.cs": {
+    "c": "lines"
+  },
+  "CAToListString.cs": {
+    "s": "strings",
+    "enumerable2": "strings"
+  },
+  "CAParamsObsolete.cs": {
+    "para": "parameters",
+    "enumerable": "items"
+  },
+  "CANew.cs": {
+    "arr": "searchTerms"
+  },
+  "CAGeneric.cs": {
+    "divs": "elements",
+    "sourcelist": "sourceList",
+    "List": "list",
+    "v": "index",
+    "p1": "array",
+    "p2": "splitIndex"
+  },
+  "CAContainsElementsOrTheirPartsShared.cs": {
+    "list": "searchList",
+    "List": "searchList"
+  }
+}

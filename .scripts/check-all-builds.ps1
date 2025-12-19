@@ -1,17 +1,8 @@
-# EN: Check which .csproj files can be built and which cannot
-# CZ: Zkontrolovat které .csproj soubory lze zbuildovat a které ne
+# EN: Check which .csproj files can be built and which cannot (parallel version)
+# CZ: Zkontrolovat které .csproj soubory lze zbuildovat a které ne (paralelní verze)
 
 $rootPath = "E:\vs\Projects\PlatformIndependentNuGetPackages"
 Set-Location $rootPath
-
-Write-Host "=" * 100 -ForegroundColor Cyan
-Write-Host "CHECKING ALL CSPROJ BUILD STATUS" -ForegroundColor Yellow
-Write-Host "=" * 100 -ForegroundColor Cyan
-Write-Host ""
-
-$buildableProjects = @()
-$unbuildableProjects = @()
-$totalProjects = 0
 
 # EN: Get all submodule paths
 # CZ: Získat všechny cesty submodulů
@@ -24,8 +15,9 @@ if ($submodules.Count -eq 0) {
     exit
 }
 
-Write-Host "Testing builds across all submodules..." -ForegroundColor White
-Write-Host ""
+# EN: Collect all csproj files first
+# CZ: Nejprve sesbírat všechny csproj soubory
+$allCsprojFiles = @()
 
 foreach ($submodule in $submodules) {
     $submodulePath = Join-Path $rootPath $submodule
@@ -34,39 +26,46 @@ foreach ($submodule in $submodules) {
         continue
     }
 
-    # EN: Find all .csproj files in this submodule
-    # CZ: Najít všechny .csproj soubory v tomto submodulu
     $csprojFiles = Get-ChildItem -Path $submodulePath -Filter "*.csproj" -Recurse
-
     foreach ($csproj in $csprojFiles) {
-        $totalProjects++
-        $relativePath = $csproj.FullName.Substring($rootPath.Length + 1)
-
-        Write-Host "Testing: $relativePath" -ForegroundColor Gray -NoNewline
-
-        # EN: Try to build the project
-        # CZ: Zkusit zbuildovat projekt
-        $buildOutput = dotnet build $csproj.FullName 2>&1 | Out-String
-
-        if ($LASTEXITCODE -eq 0) {
-            Write-Host " - " -NoNewline
-            Write-Host "OK" -ForegroundColor Green
-            $buildableProjects += $relativePath
-        } else {
-            Write-Host " - " -NoNewline
-            Write-Host "FAILED" -ForegroundColor Red
-
-            # EN: Count errors
-            # CZ: Spočítat chyby
-            $errorCount = ($buildOutput | Select-String -Pattern "error CS\d+:").Matches.Count
-
-            $unbuildableProjects += [PSCustomObject]@{
-                Path = $relativePath
-                ErrorCount = $errorCount
-            }
-        }
+        $allCsprojFiles += $csproj.FullName
     }
 }
+
+$totalProjects = $allCsprojFiles.Count
+
+Write-Host "Building $totalProjects projects in parallel..." -ForegroundColor Yellow
+
+# EN: Run builds in parallel
+# CZ: Spustit buildy paralelně
+$results = $allCsprojFiles | ForEach-Object -Parallel {
+    $csprojPath = $_
+    $rootPath = $using:rootPath
+    $relativePath = $csprojPath.Substring($rootPath.Length + 1)
+
+    $buildOutput = dotnet build -c Debug $csprojPath 2>&1 | Out-String
+    $success = $LASTEXITCODE -eq 0
+
+    $errorCount = 0
+    $errorLines = @()
+    if (-not $success) {
+        $errorMatches = [regex]::Matches($buildOutput, "error CS\d+:[^\r\n]+")
+        $errorCount = $errorMatches.Count
+        $errorLines = $errorMatches | ForEach-Object { $_.Value.Trim() } | Select-Object -Unique
+    }
+
+    [PSCustomObject]@{
+        Path = $relativePath
+        Success = $success
+        ErrorCount = $errorCount
+        Errors = $errorLines
+    }
+} -ThrottleLimit 8
+
+# EN: Separate results
+# CZ: Rozdělit výsledky
+$buildableProjects = @($results | Where-Object { $_.Success } | ForEach-Object { $_.Path })
+$unbuildableProjects = @($results | Where-Object { -not $_.Success })
 
 Write-Host ""
 Write-Host "=" * 100 -ForegroundColor Cyan
@@ -98,9 +97,19 @@ $unbuildableProjects | Sort-Object -Property ErrorCount -Descending | ForEach-Ob
     Write-Host "($($_.ErrorCount) errors)" -ForegroundColor Yellow
 }
 
+# EN: Save unbuildable projects with their errors
+# CZ: Uložit nezbuilděné projekty s jejich chybami
+$unbuildableContent = @()
 $unbuildableProjects | Sort-Object -Property ErrorCount -Descending | ForEach-Object {
-    "$($_.Path) ($($_.ErrorCount) errors)"
-} | Out-File -FilePath $unbuildableListPath -Encoding UTF8
+    $unbuildableContent += "=" * 80
+    $unbuildableContent += "$($_.Path) ($($_.ErrorCount) errors)"
+    $unbuildableContent += "=" * 80
+    foreach ($err in $_.Errors) {
+        $unbuildableContent += "  $err"
+    }
+    $unbuildableContent += ""
+}
+$unbuildableContent | Out-File -FilePath $unbuildableListPath -Encoding UTF8
 
 Write-Host ""
 Write-Host "Results saved to:" -ForegroundColor White
