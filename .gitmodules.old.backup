@@ -1,0 +1,435 @@
+[submodule "SunamoArgs"]
+	path = SunamoArgs
+	url = git@github.com:sunamo/SunamoArgs.git
+[submodule "SunamoAttributes"]
+	path = SunamoAttributes
+	url = git@github.com:sunamo/SunamoAttributes.git
+[submodule "SunamoBts"]
+	path = SunamoBts
+	url = git@github.com:sunamo/SunamoBts.git
+[submodule "SunamoChar"]
+	path = SunamoChar
+	url = git@github.com:sunamo/SunamoChar.git
+[submodule "SunamoCl"]
+	path = SunamoCl
+	url = git@github.com:sunamo/SunamoCl.git
+[submodule "SunamoClearScript"]
+	path = SunamoClearScript
+	url = git@github.com:sunamo/SunamoClearScript.git
+[submodule "SunamoClipboard"]
+	path = SunamoClipboard
+	url = git@github.com:sunamo/SunamoClipboard.git
+[submodule "SunamoCmd"]
+	path = SunamoCmd
+	url = git@github.com:sunamo/SunamoCmd.git
+[submodule "SunamoCmdArgs"]
+	path = SunamoCmdArgs
+	url = git@github.com:sunamo/SunamoCmdArgs.git
+[submodule "SunamoCmdArgs.Cmd"]
+	path = SunamoCmdArgs.Cmd
+	url = git@github.com:sunamo/SunamoCmdArgs.Cmd.git
+[submodule "SunamoCollections"]
+	path = SunamoCollections
+	url = git@github.com:sunamo/SunamoCollections.git
+[submodule "SunamoCollectionsChangeContent"]
+	path = SunamoCollectionsChangeContent
+	url = git@github.com:sunamo/SunamoCollectionsChangeContent.git
+[submodule "SunamoCollectionsGeneric"]
+	path = SunamoCollectionsGeneric
+	url = git@github.com:sunamo/SunamoCollectionsGeneric.git
+[submodule "SunamoCollectionWithoutDuplicates"]
+	path = SunamoCollectionWithoutDuplicates
+	url = git@github.com:sunamo/SunamoCollectionWithoutDuplicates.git
+[submodule "SunamoColors"]
+	path = SunamoColors
+	url = git@github.com:sunamo/SunamoColors.git
+[submodule "SunamoCompare"]
+	path = SunamoCompare
+	url = git@github.com:sunamo/SunamoCompare.git
+[submodule "SunamoConsts"]
+	path = SunamoConsts
+	url = git@github.com:sunamo/SunamoConsts.git
+[submodule "SunamoConverters"]
+	path = SunamoConverters
+	url = git@github.com:sunamo/SunamoConverters.git
+[submodule "SunamoCrypt"]
+	path = SunamoCrypt
+	url = git@github.com:sunamo/SunamoCrypt.git
+[submodule "SunamoCSharp"]
+	path = SunamoCSharp
+	url = git@github.com:sunamo/SunamoCSharp.git
+[submodule "SunamoCsproj"]
+	path = SunamoCsproj
+	url = git@github.com:sunamo/SunamoCsproj.git
+[submodule "SunamoCsv"]
+	path = SunamoCsv
+	url = git@github.com:sunamo/SunamoCsv.git
+[submodule "SunamoData"]
+	path = SunamoData
+	url = git@github.com:sunamo/SunamoData.git
+[submodule "SunamoDateTime"]
+	path = SunamoDateTime
+	url = git@github.com:sunamo/SunamoDateTime.git
+[submodule "SunamoDebugCollection"]
+	path = SunamoDebugCollection
+	url = git@github.com:sunamo/SunamoDebugCollection.git
+[submodule "SunamoDebugging"]
+	path = SunamoDebugging
+	url = git@github.com:sunamo/SunamoDebugging.git
+[submodule "SunamoDebugIO"]
+	path = SunamoDebugIO
+	url = git@github.com:sunamo/SunamoDebugIO.git
+[submodule "SunamoDelegates"]
+	path = SunamoDelegates
+	url = git@github.com:sunamo/SunamoDelegates.git
+[submodule "SunamoDevCode"]
+	path = SunamoDevCode
+	url = git@github.com:sunamo/SunamoDevCode.git
+[submodule "SunamoDictionary"]
+	path = SunamoDictionary
+	url = git@github.com:sunamo/SunamoDictionary.git
+[submodule "SunamoEnums"]
+	path = SunamoEnums
+	url = git@github.com:sunamo/SunamoEnums.git
+[submodule "SunamoEnumsHelper"]
+	path = SunamoEnumsHelper
+	url = git@github.com:sunamo/SunamoEnumsHelper.git
+[submodule "SunamoExceptions"]
+	path = SunamoExceptions
+	url = git@github.com:sunamo/SunamoExceptions.git
+[submodule "SunamoExtensions"]
+	path = SunamoExtensions
+	url = git@github.com:sunamo/SunamoExtensions.git
+[submodule "SunamoFileExtensions"]
+	path = SunamoFileExtensions
+	url = git@github.com:sunamo/SunamoFileExtensions.git
+[submodule "SunamoFileIO"]
+	path = SunamoFileIO
+	url = git@github.com:sunamo/SunamoFileIO.git
+[submodule "SunamoFileSystem"]
+	path = SunamoFileSystem
+	url = git@github.com:sunamo/SunamoFileSystem.git
+[submodule "SunamoFluentFtp"]
+	path = SunamoFluentFtp
+	url = git@github.com:sunamo/SunamoFluentFtp.git
+[submodule "SunamoFtp"]
+	path = SunamoFtp
+	url = git@github.com:sunamo/SunamoFtp.git
+[submodule "SunamoGitBashBuilder"]
+	path = SunamoGitBashBuilder
+	url = git@github.com:sunamo/SunamoGitBashBuilder.git
+[submodule "SunamoGoogleSheets"]
+	path = SunamoGoogleSheets
+	url = git@github.com:sunamo/SunamoGoogleSheets.git
+[submodule "SunamoHtml"]
+	path = SunamoHtml
+	url = git@github.com:sunamo/SunamoHtml.git
+[submodule "SunamoI18N"]
+	path = SunamoI18N
+	url = git@github.com:sunamo/SunamoI18N.git
+[submodule "SunamoIni"]
+	path = SunamoIni
+	url = git@github.com:sunamo/SunamoIni.git
+[submodule "SunamoInterfaces"]
+	path = SunamoInterfaces
+	url = git@github.com:sunamo/SunamoInterfaces.git
+[submodule "SunamoLang"]
+	path = SunamoLang
+	url = git@github.com:sunamo/SunamoLang.git
+[submodule "SunamoLogging"]
+	path = SunamoLogging
+	url = git@github.com:sunamo/SunamoLogging.git
+[submodule "SunamoLogMessage"]
+	path = SunamoLogMessage
+	url = git@github.com:sunamo/SunamoLogMessage.git
+[submodule "SunamoMail"]
+	path = SunamoMail
+	url = git@github.com:sunamo/SunamoMail.git
+[submodule "SunamoMarkdown"]
+	path = SunamoMarkdown
+	url = git@github.com:sunamo/SunamoMarkdown.git
+[submodule "SunamoMime"]
+	path = SunamoMime
+	url = git@github.com:sunamo/SunamoMime.git
+[submodule "SunamoMsgReader"]
+	path = SunamoMsgReader
+	url = git@github.com:sunamo/SunamoMsgReader.git
+[submodule "SunamoNuGetProtocol"]
+	path = SunamoNuGetProtocol
+	url = git@github.com:sunamo/SunamoNuGetProtocol.git
+[submodule "SunamoNumbers"]
+	path = SunamoNumbers
+	url = git@github.com:sunamo/SunamoNumbers.git
+[submodule "SunamoOctokit"]
+	path = SunamoOctokit
+	url = git@github.com:sunamo/SunamoOctokit.git
+[submodule "SunamoPackageJson"]
+	path = SunamoPackageJson
+	url = git@github.com:sunamo/SunamoPackageJson.git
+[submodule "SunamoParsing"]
+	path = SunamoParsing
+	url = git@github.com:sunamo/SunamoParsing.git
+[submodule "SunamoPercentCalculator"]
+	path = SunamoPercentCalculator
+	url = git@github.com:sunamo/SunamoPercentCalculator.git
+[submodule "SunamoPInvoke"]
+	path = SunamoPInvoke
+	url = git@github.com:sunamo/SunamoPInvoke.git
+[submodule "SunamoPlatformUwpInterop"]
+	path = SunamoPlatformUwpInterop
+	url = git@github.com:sunamo/SunamoPlatformUwpInterop.git
+[submodule "SunamoPS"]
+	path = SunamoPS
+	url = git@github.com:sunamo/SunamoPS.git
+[submodule "SunamoRandom"]
+	path = SunamoRandom
+	url = git@github.com:sunamo/SunamoRandom.git
+[submodule "SunamoReflection"]
+	path = SunamoReflection
+	url = git@github.com:sunamo/SunamoReflection.git
+[submodule "SunamoRegex"]
+	path = SunamoRegex
+	url = git@github.com:sunamo/SunamoRegex.git
+[submodule "SunamoRss"]
+	path = SunamoRss
+	url = git@github.com:sunamo/SunamoRss.git
+[submodule "SunamoShared"]
+	path = SunamoShared
+	url = git@github.com:sunamo/SunamoShared.git
+[submodule "SunamoSqlite"]
+	path = SunamoSqlite
+	url = git@github.com:sunamo/SunamoSqlite.git
+[submodule "SunamoSqlServer"]
+	path = SunamoSqlServer
+	url = git@github.com:sunamo/SunamoSqlServer.git
+[submodule "SunamoStopwatch"]
+	path = SunamoStopwatch
+	url = git@github.com:sunamo/SunamoStopwatch.git
+[submodule "SunamoString"]
+	path = SunamoString
+	url = git@github.com:sunamo/SunamoString.git
+[submodule "SunamoStringData"]
+	path = SunamoStringData
+	url = git@github.com:sunamo/SunamoStringData.git
+[submodule "SunamoStringGetLines"]
+	path = SunamoStringGetLines
+	url = git@github.com:sunamo/SunamoStringGetLines.git
+[submodule "SunamoStringJoin"]
+	path = SunamoStringJoin
+	url = git@github.com:sunamo/SunamoStringJoin.git
+[submodule "SunamoStringReplace"]
+	path = SunamoStringReplace
+	url = git@github.com:sunamo/SunamoStringReplace.git
+[submodule "SunamoStringSplit"]
+	path = SunamoStringSplit
+	url = git@github.com:sunamo/SunamoStringSplit.git
+[submodule "SunamoStringSubstring"]
+	path = SunamoStringSubstring
+	url = git@github.com:sunamo/SunamoStringSubstring.git
+[submodule "SunamoStringTrim"]
+	path = SunamoStringTrim
+	url = git@github.com:sunamo/SunamoStringTrim.git
+[submodule "SunamoTextBuilder"]
+	path = SunamoTextBuilder
+	url = git@github.com:sunamo/SunamoTextBuilder.git
+[submodule "SunamoTextBuilderShared"]
+	path = SunamoTextBuilderShared
+	url = git@github.com:sunamo/SunamoTextBuilderShared.git
+[submodule "SunamoTextOutputGenerator"]
+	path = SunamoTextOutputGenerator
+	url = git@github.com:sunamo/SunamoTextOutputGenerator.git
+[submodule "SunamoTextOutputGeneratorShared"]
+	path = SunamoTextOutputGeneratorShared
+	url = git@github.com:sunamo/SunamoTextOutputGeneratorShared.git
+[submodule "SunamoThisApp"]
+	path = SunamoThisApp
+	url = git@github.com:sunamo/SunamoThisApp.git
+[submodule "SunamoThread"]
+	path = SunamoThread
+	url = git@github.com:sunamo/SunamoThread.git
+[submodule "SunamoTidy"]
+	path = SunamoTidy
+	url = git@github.com:sunamo/SunamoTidy.git
+[submodule "SunamoTwoWayDictionary"]
+	path = SunamoTwoWayDictionary
+	url = git@github.com:sunamo/SunamoTwoWayDictionary.git
+[submodule "SunamoTypeOfMessage"]
+	path = SunamoTypeOfMessage
+	url = git@github.com:sunamo/SunamoTypeOfMessage.git
+[submodule "SunamoUnderscore"]
+	path = SunamoUnderscore
+	url = git@github.com:sunamo/SunamoUnderscore.git
+[submodule "SunamoUri"]
+	path = SunamoUri
+	url = git@github.com:sunamo/SunamoUri.git
+[submodule "SunamoValues"]
+	path = SunamoValues
+	url = git@github.com:sunamo/SunamoValues.git
+[submodule "SunamoVcf"]
+	path = SunamoVcf
+	url = git@github.com:sunamo/SunamoVcf.git
+[submodule "SunamoWinStd"]
+	path = SunamoWinStd
+	url = git@github.com:sunamo/SunamoWinStd.git
+[submodule "SunamoXlf"]
+	path = SunamoXlf
+	url = git@github.com:sunamo/SunamoXlf.git
+[submodule "SunamoXlfEngine"]
+	path = SunamoXlfEngine
+	url = git@github.com:sunamo/SunamoXlfEngine.git
+[submodule "SunamoXml"]
+	path = SunamoXml
+	url = git@github.com:sunamo/SunamoXml.git
+[submodule "SunamoYaml"]
+	path = SunamoYaml
+	url = git@github.com:sunamo/SunamoYaml.git
+[submodule "SunamoYouTube"]
+	path = SunamoYouTube
+	url = git@github.com:sunamo/SunamoYouTube.git
+[submodule "SunamoXliffParser"]
+	path = SunamoXliffParser
+	url = git@github.com:sunamo/SunamoXliffParser.git
+[submodule "SunamoAsync"]
+	path = SunamoAsync
+	url = git@github.com:sunamo/SunamoAsync.git
+[submodule "SunamoBazosCrawler"]
+	path = SunamoBazosCrawler
+	url = git@github.com:sunamo/SunamoBazosCrawler.git
+[submodule "SunamoCollectionOnDrive"]
+	path = SunamoCollectionOnDrive
+	url = git@github.com:sunamo/SunamoCollectionOnDrive.git
+[submodule "SunamoCollectionsIndexesWithNull"]
+	path = SunamoCollectionsIndexesWithNull
+	url = git@github.com:sunamo/SunamoCollectionsIndexesWithNull.git
+[submodule "SunamoCollectionsNonGeneric"]
+	path = SunamoCollectionsNonGeneric
+	url = git@github.com:sunamo/SunamoCollectionsNonGeneric.git
+[submodule "SunamoCollectionsTo"]
+	path = SunamoCollectionsTo
+	url = git@github.com:sunamo/SunamoCollectionsTo.git
+[submodule "SunamoCollectionsValuesTableGrid"]
+	path = SunamoCollectionsValuesTableGrid
+	url = git@github.com:sunamo/SunamoCollectionsValuesTableGrid.git
+[submodule "SunamoCssGenerator"]
+	path = SunamoCssGenerator
+	url = git@github.com:sunamo/SunamoCssGenerator.git
+[submodule "SunamoDotnetCmdBuilder"]
+	path = SunamoDotnetCmdBuilder
+	url = git@github.com:sunamo/SunamoDotnetCmdBuilder.git
+[submodule "SunamoEditorConfig"]
+	path = SunamoEditorConfig
+	url = git@github.com:sunamo/SunamoEditorConfig.git
+[submodule "SunamoEmbeddedResources"]
+	path = SunamoEmbeddedResources
+	url = git@github.com:sunamo/SunamoEmbeddedResources.git
+[submodule "SunamoGetFiles"]
+	path = SunamoGetFiles
+	url = git@github.com:sunamo/SunamoGetFiles.git
+[submodule "SunamoGetFolders"]
+	path = SunamoGetFolders
+	url = git@github.com:sunamo/SunamoGetFolders.git
+[submodule "SunamoGitConfig"]
+	path = SunamoGitConfig
+	url = git@github.com:sunamo/SunamoGitConfig.git
+[submodule "SunamoHttp"]
+	path = SunamoHttp
+	url = git@github.com:sunamo/SunamoHttp.git
+[submodule "SunamoJson"]
+	path = SunamoJson
+	url = git@github.com:sunamo/SunamoJson.git
+[submodule "SunamoLaTeX"]
+	path = SunamoLaTeX
+	url = git@github.com:sunamo/SunamoLaTeX.git
+[submodule "SunamoMathpix"]
+	path = SunamoMathpix
+	url = git@github.com:sunamo/SunamoMathpix.git
+[submodule "SunamoRobotsTxt"]
+	path = SunamoRobotsTxt
+	url = git@github.com:sunamo/SunamoRobotsTxt.git
+[submodule "SunamoRuleset"]
+	path = SunamoRuleset
+	url = git@github.com:sunamo/SunamoRuleset.git
+[submodule "SunamoSerializer"]
+	path = SunamoSerializer
+	url = git@github.com:sunamo/SunamoSerializer.git
+[submodule "SunamoStringFormat"]
+	path = SunamoStringFormat
+	url = git@github.com:sunamo/SunamoStringFormat.git
+[submodule "SunamoStringGetString"]
+	path = SunamoStringGetString
+	url = git@github.com:sunamo/SunamoStringGetString.git
+[submodule "SunamoStringJoinPairs"]
+	path = SunamoStringJoinPairs
+	url = git@github.com:sunamo/SunamoStringJoinPairs.git
+[submodule "SunamoStringParts"]
+	path = SunamoStringParts
+	url = git@github.com:sunamo/SunamoStringParts.git
+[submodule "SunamoText"]
+	path = SunamoText
+	url = git@github.com:sunamo/SunamoText.git
+[submodule "SunamoToUnixLineEnding"]
+	path = SunamoToUnixLineEnding
+	url = git@github.com:sunamo/SunamoToUnixLineEnding.git
+[submodule "SunamoUriWebServices"]
+	path = SunamoUriWebServices
+	url = git@github.com:sunamo/SunamoUriWebServices.git
+[submodule "SunamoWikipedia"]
+	path = SunamoWikipedia
+	url = git@github.com:sunamo/SunamoWikipedia.git
+[submodule "SunamoXlfKeys"]
+	path = SunamoXlfKeys
+	url = git@github.com:sunamo/SunamoXlfKeys.git
+[submodule "SunamoGoogleMyMaps"]
+	path = SunamoGoogleMyMaps
+	url = git@github.com:sunamo/SunamoGoogleMyMaps.git
+[submodule "SunamoTypes"]
+	path = SunamoTypes
+	url = git@github.com:sunamo/SunamoTypes.git
+[submodule "SunamoResult"]
+	path = SunamoResult
+	url = git@github.com:sunamo/SunamoResult.git
+[submodule "SunamoGpx"]
+	path = SunamoGpx
+	url = git@github.com:sunamo/SunamoGpx.git
+[submodule "SunamoSelenium"]
+	path = SunamoSelenium
+	url = git@github.com:sunamo/SunamoSelenium.git
+[submodule "SunamoFilesIndex"]
+	path = SunamoFilesIndex
+	url = git@github.com:sunamo/SunamoFilesIndex.git
+[submodule "SunamoThreading"]
+	path = SunamoThreading
+	url = git@github.com:sunamo/SunamoThreading.git
+[submodule "SunamoTextIndexing"]
+	path = SunamoTextIndexing
+	url = git@github.com:sunamo/SunamoTextIndexing.git
+[submodule "SunamoEmoticons"]
+	path = SunamoEmoticons
+	url = git@github.com:sunamo/SunamoEmoticons.git
+[submodule "SunamoSecurity"]
+	path = SunamoSecurity
+	url = git@github.com:sunamo/SunamoSecurity.git
+[submodule "SunamoRoslyn"]
+	path = SunamoRoslyn
+	url = git@github.com:sunamo/SunamoRoslyn.git
+[submodule "SunamoDependencyInjection"]
+	path = SunamoDependencyInjection
+	url = git@github.com:sunamo/SunamoDependencyInjection.git
+[submodule "SunamoPaths"]
+	path = SunamoPaths
+	url = git@github.com:sunamo/SunamoPaths.git
+[submodule "SunamoDotNetZip"]
+	path = SunamoDotNetZip
+	url = git@github.com:sunamo/SunamoDotNetZip.git
+[submodule "SunamoMsSqlServer"]
+	path = SunamoMsSqlServer
+	url = git@github.com:sunamo/SunamoMsSqlServer.git
+[submodule "SunamoAzureDevOpsApi"]
+	path = SunamoAzureDevOpsApi
+	url = git@github.com:sunamo/SunamoAzureDevOpsApi.git
+[submodule "SunamoTest"]
+	path = SunamoTest
+	url = git@github.com:sunamo/SunamoTest.git
+[submodule "SunamoAI"]
+	path = SunamoAI
+	url = git@github.com:sunamo/SunamoAI.git

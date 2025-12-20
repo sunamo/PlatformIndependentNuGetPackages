@@ -1,7 +1,8 @@
 param(
     [Parameter(Mandatory=$true)]
     [string]$SolutionPath,
-    [switch]$ListOnly
+    [switch]$ListOnly,
+    [switch]$ForceDevenvEdit  # EN: Force use of devenv.exe /Edit instead of DTE | CZ: Vynuť použití devenv.exe /Edit místo DTE
 )
 
 # EN: Check if running in PowerShell 7+ (pwsh) - DTE automation works better in Windows PowerShell 5.1
@@ -26,6 +27,9 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
         if ($ListOnly) {
             $arguments += '-ListOnly'
         }
+        if ($ForceDevenvEdit) {
+            $arguments += '-ForceDevenvEdit'
+        }
 
         & $powershellPath @arguments
         exit $LASTEXITCODE
@@ -34,10 +38,172 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
     }
 }
 
-# EN: Find Visual Studio 2026 devenv.exe (prioritize VS 2026/18)
-# CZ: Najdi Visual Studio 2026 devenv.exe (prioritizuj VS 2026/18)
+# ============================================
+# FUNCTIONS / FUNKCE
+# ============================================
+
+# EN: Test if Visual Studio DTE is available in Running Object Table (ROT)
+# CZ: Testuj jestli je Visual Studio DTE dostupné v Running Object Table (ROT)
+function Test-DTEAvailability {
+    param([int]$ProcessId)
+
+    # EN: Try various ProgID formats
+    # CZ: Zkus různé ProgID formáty
+    $progIds = @(
+        "VisualStudio.DTE.18.0",              # VS 2026
+        "!VisualStudio.DTE.18.0:$ProcessId",  # VS 2026 (process-specific)
+        "VisualStudio.DTE.17.0",              # VS 2022
+        "!VisualStudio.DTE.17.0:$ProcessId",  # VS 2022 (process-specific)
+        "VisualStudio.DTE"                    # Generic fallback
+    )
+
+    foreach ($progId in $progIds) {
+        try {
+            $dte = [System.Runtime.InteropServices.Marshal]::GetActiveObject($progId)
+            if ($dte) {
+                return @{
+                    Available = $true
+                    ProgID = $progId
+                    DTE = $dte
+                }
+            }
+        } catch {
+            # EN: Continue to next ProgID
+            # CZ: Pokračuj na další ProgID
+        }
+    }
+
+    return @{
+        Available = $false
+        ProgID = $null
+        DTE = $null
+    }
+}
+
+# EN: Open files using devenv.exe /Edit command line (MOST ROBUST - works even without DTE in ROT)
+# CZ: Otevři soubory pomocí devenv.exe /Edit command line (NEJROBUSTNĚJŠÍ - funguje i bez DTE v ROT)
+function Open-FilesViaDevenvEdit {
+    param(
+        [string]$DevenvPath,
+        [array]$FilesToOpen,
+        [string]$SolutionPath
+    )
+
+    Write-Host "`n=== Using devenv.exe /Edit method (ROBUST) ===" -ForegroundColor Cyan
+    Write-Host "This method works even if DTE is not registered in ROT!" -ForegroundColor Green
+    Write-Host ""
+
+    # EN: First, ensure solution is open in existing VS instance
+    # CZ: Nejdřív zajisti že solution je otevřené v existující VS instanci
+    $vsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
+    if ($vsProcesses.Count -eq 0) {
+        Write-Host "No VS instance running. Opening solution first..." -ForegroundColor Yellow
+        Start-Process -FilePath $DevenvPath -ArgumentList "`"$SolutionPath`"" -Wait:$false
+        Write-Host "Waiting for Visual Studio to load (20 seconds)..." -ForegroundColor Cyan
+        Start-Sleep -Seconds 20
+    } else {
+        Write-Host "Found running VS instance (PID: $($vsProcesses[0].Id))" -ForegroundColor Green
+        Write-Host "Solution should be open: $SolutionPath" -ForegroundColor Cyan
+        Write-Host ""
+    }
+
+    # EN: Open files in batches (devenv.exe has command line length limit)
+    # CZ: Otevři soubory v dávkách (devenv.exe má limit délky command line)
+    $batchSize = 20  # EN: Safe batch size / CZ: Bezpečná velikost dávky
+    $totalFiles = $FilesToOpen.Count
+    $batchCount = [Math]::Ceiling($totalFiles / $batchSize)
+
+    Write-Host "Opening $totalFiles file(s) in $batchCount batch(es)..." -ForegroundColor Cyan
+    Write-Host ""
+
+    for ($i = 0; $i -lt $batchCount; $i++) {
+        $start = $i * $batchSize
+        $end = [Math]::Min($start + $batchSize, $totalFiles)
+        $batch = $FilesToOpen[$start..($end - 1)]
+
+        Write-Host "Batch $($i + 1)/$batchCount : Opening $($batch.Count) file(s)..." -ForegroundColor Yellow
+
+        # EN: Build arguments - /Edit opens files in existing instance
+        # CZ: Vytvoř argumenty - /Edit otevře soubory v existující instanci
+        $arguments = @('/Edit') + $batch
+
+        # EN: Start devenv.exe with /Edit - this will use existing instance
+        # CZ: Spusť devenv.exe s /Edit - použije existující instanci
+        try {
+            Start-Process -FilePath $DevenvPath -ArgumentList $arguments -Wait:$false
+            Write-Host "  Started devenv.exe /Edit for batch $($i + 1)" -ForegroundColor Green
+
+            # EN: Wait between batches to avoid overwhelming VS
+            # CZ: Počkej mezi dávkami aby VS nestihlo
+            if ($i -lt $batchCount - 1) {
+                Write-Host "  Waiting 2 seconds before next batch..." -ForegroundColor Gray
+                Start-Sleep -Seconds 2
+            }
+        } catch {
+            Write-Host "  ERROR: Failed to start devenv.exe: $($_.Exception.Message)" -ForegroundColor Red
+        }
+    }
+
+    Write-Host ""
+    Write-Host "Done! Files should now be opening in Visual Studio." -ForegroundColor Green
+    Write-Host "Note: It may take a few seconds for all files to appear." -ForegroundColor Yellow
+}
+
+# EN: Open files using DTE automation (legacy method, only works if VS is in ROT)
+# CZ: Otevři soubory pomocí DTE automation (legacy metoda, funguje pouze pokud je VS v ROT)
+function Open-FilesViaDTE {
+    param(
+        [object]$DTE,
+        [array]$FilesToOpen
+    )
+
+    Write-Host "`n=== Using DTE automation method ===" -ForegroundColor Cyan
+    Write-Host "Opening $($FilesToOpen.Count) files via DTE..." -ForegroundColor Cyan
+    Write-Host ""
+
+    $counter = 0
+    $vsViewKindTextView = "{7651A701-06E5-11D1-8EBD-00A0C90F26EA}"
+
+    foreach ($file in $FilesToOpen) {
+        $counter++
+        Write-Host "  [$counter/$($FilesToOpen.Count)] Opening: $(Split-Path -Leaf $file)" -ForegroundColor Gray
+
+        # EN: Check if DTE is still valid before each file operation
+        # CZ: Zkontroluj jestli je DTE stále platné před každou operací
+        if ($null -eq $DTE -or $null -eq $DTE.ItemOperations) {
+            Write-Host "    ERROR: DTE reference lost! Falling back to devenv.exe /Edit..." -ForegroundColor Red
+
+            # EN: Fall back to devenv.exe /Edit for remaining files
+            # CZ: Fallback na devenv.exe /Edit pro zbývající soubory
+            $remainingFiles = $FilesToOpen[$counter-1..($FilesToOpen.Count-1)]
+            $devenvPath = $DTE.FullName
+            Open-FilesViaDevenvEdit -DevenvPath $devenvPath -FilesToOpen $remainingFiles -SolutionPath ""
+            return
+        }
+
+        try {
+            $result = $DTE.ItemOperations.OpenFile($file, $vsViewKindTextView)
+            if ($null -eq $result) {
+                Write-Host "      Warning: OpenFile returned null" -ForegroundColor Yellow
+            }
+            Start-Sleep -Milliseconds 100
+        } catch {
+            Write-Host "      Error: $($_.Exception.Message)" -ForegroundColor Red
+        }
+    }
+
+    Write-Host ""
+    Write-Host "Done! Opened $($FilesToOpen.Count) file(s) via DTE." -ForegroundColor Green
+}
+
+# ============================================
+# MAIN SCRIPT / HLAVNÍ SKRIPT
+# ============================================
+
+# EN: Find Visual Studio devenv.exe (prioritize VS 2026)
+# CZ: Najdi Visual Studio devenv.exe (prioritizuj VS 2026)
 $vsEditions = @('Enterprise', 'Professional', 'Community', 'Preview')
-$vsYears = @('18', '2026', '2025', '2024', '2022')  # 18 = VS 2025/2026 Preview
+$vsYears = @('18', '2026', '2025', '2024', '2022')  # 18 = VS 2026 Preview
 $devenvPath = $null
 $vsVersion = $null
 
@@ -46,7 +212,7 @@ foreach ($year in $vsYears) {
         $testPath = "C:\Program Files\Microsoft Visual Studio\$year\$edition\Common7\IDE\devenv.exe"
         if (Test-Path $testPath) {
             $devenvPath = $testPath
-            $vsVersion = if ($year -eq '18') { 'VS 2026 Preview' } else { "VS $year" }
+            $vsVersion = if ($year -eq '18') { 'VS 2026' } else { "VS $year" }
             Write-Host "Found $vsVersion $edition" -ForegroundColor Green
             break
         }
@@ -135,343 +301,93 @@ if ($ListOnly) {
     foreach ($file in $filesToOpen) {
         Write-Host "  $file"
     }
-} else {
-    # EN: Confirm that user closed all tabs in Visual Studio
-    # CZ: Potvrď že uživatel zavřel všechny taby ve Visual Studio
-    Write-Host "`n============================================" -ForegroundColor Red
-    Write-Host "IMPORTANT / DŮLEŽITÉ:" -ForegroundColor Red
-    Write-Host "============================================" -ForegroundColor Red
-    Write-Host "EN: Please close ALL tabs in Visual Studio before continuing!" -ForegroundColor Yellow
-    Write-Host "CZ: Prosím zavři VŠECHNY taby ve Visual Studio před pokračováním!" -ForegroundColor Yellow
-    Write-Host "============================================" -ForegroundColor Red
-    Write-Host ""
-    $confirmation = Read-Host "EN: Have you closed all tabs? (Y/N) | CZ: Zavřel jsi všechny taby? (Y/N)"
+    exit 0
+}
 
-    if ($confirmation -ne 'Y' -and $confirmation -ne 'y') {
-        Write-Host "`nOperation cancelled. Please close all tabs and run the script again." -ForegroundColor Red
-        Write-Host "Operace zrušena. Prosím zavři všechny taby a spusť skript znovu." -ForegroundColor Red
-        exit 0
-    }
+# EN: Confirm that user closed all tabs in Visual Studio
+# CZ: Potvrď že uživatel zavřel všechny taby ve Visual Studio
+Write-Host "`n============================================" -ForegroundColor Red
+Write-Host "IMPORTANT / DŮLEŽITÉ:" -ForegroundColor Red
+Write-Host "============================================" -ForegroundColor Red
+Write-Host "EN: Please close ALL tabs in Visual Studio before continuing!" -ForegroundColor Yellow
+Write-Host "CZ: Prosím zavři VŠECHNY taby ve Visual Studio před pokračováním!" -ForegroundColor Yellow
+Write-Host "============================================" -ForegroundColor Red
+Write-Host ""
+$confirmation = Read-Host "EN: Have you closed all tabs? (Y/N) | CZ: Zavřel jsi všechny taby? (Y/N)"
 
-    Write-Host "`nOpening files in Visual Studio..." -ForegroundColor Yellow
+if ($confirmation -ne 'Y' -and $confirmation -ne 'y') {
+    Write-Host "`nOperation cancelled. Please close all tabs and run the script again." -ForegroundColor Red
+    Write-Host "Operace zrušena. Prosím zavři všechny taby a spusť skript znovu." -ForegroundColor Red
+    exit 0
+}
 
-    # EN: Function to get DTE using GetActiveObject with ProgID
-    # CZ: Funkce pro získání DTE pomocí GetActiveObject s ProgID
-    function Get-DTEFromProcess {
-        param([int]$ProcessId)
+Write-Host "`nOpening files in Visual Studio..." -ForegroundColor Yellow
+Write-Host ""
 
-        # EN: Try various ProgID formats with process ID
-        # CZ: Zkus různé ProgID formáty s process ID
-        $progIds = @(
-            "!VisualStudio.DTE.19.0:$ProcessId",  # VS 2026
-            "!VisualStudio.DTE.18.0:$ProcessId",  # VS 2025
-            "!VisualStudio.DTE.17.0:$ProcessId",  # VS 2022
-            "VisualStudio.DTE.19.0",              # VS 2026 (any instance)
-            "VisualStudio.DTE.18.0",              # VS 2025 (any instance)
-            "VisualStudio.DTE.17.0"               # VS 2022 (any instance)
-        )
+# ============================================
+# DETERMINE METHOD: DTE or devenv.exe /Edit
+# URČENÍ METODY: DTE nebo devenv.exe /Edit
+# ============================================
 
-        foreach ($progId in $progIds) {
-            try {
-                Write-Host "    Trying ProgID: $progId..." -ForegroundColor Gray
-                $dte = [System.Runtime.InteropServices.Marshal]::GetActiveObject($progId)
-                if ($dte) {
-                    Write-Host "    Successfully connected via ProgID: $progId" -ForegroundColor Green
-                    return $dte
-                }
-            } catch {
-                # EN: Continue to next ProgID
-                # CZ: Pokračuj na další ProgID
-            }
-        }
+$useDTE = $false
+$dte = $null
 
-        return $null
-    }
+if (-not $ForceDevenvEdit) {
+    # EN: Try to get DTE from Running Object Table
+    # CZ: Zkus získat DTE z Running Object Table
+    Write-Host "Checking if Visual Studio DTE is available in ROT..." -ForegroundColor Cyan
 
-    # EN: Try to get running Visual Studio 2026 instance via ROT
-    # CZ: Pokus o získání běžící instance Visual Studio 2026 přes ROT
-    $dte = $null
+    $vsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
+    if ($vsProcesses) {
+        $dteResult = Test-DTEAvailability -ProcessId $vsProcesses[0].Id
 
-    Write-Host "Looking for running Visual Studio 2026 instance..." -ForegroundColor Cyan
-
-    # EN: First, find devenv.exe processes from VS 2026 installation (folder 18 or 2026)
-    # CZ: Nejdřív najdi devenv.exe procesy z VS 2026 instalace (složka 18 nebo 2026)
-    $vs2026Processes = Get-Process -Name "devenv" -ErrorAction SilentlyContinue | Where-Object {
-        $_.Path -like "*Visual Studio\18\*" -or $_.Path -like "*Visual Studio\2026\*"
-    }
-
-    if ($vs2026Processes) {
-        Write-Host "  Found $($vs2026Processes.Count) VS 2026 process(es)" -ForegroundColor Green
-
-        # EN: Try to connect to VS 2026 process via GetActiveObject
-        # CZ: Zkusit se připojit k VS 2026 procesu přes GetActiveObject
-        foreach ($proc in $vs2026Processes) {
-            Write-Host "  Attempting to connect to PID $($proc.Id)..." -ForegroundColor Cyan
-            $dte = Get-DTEFromProcess -ProcessId $proc.Id
-
-            if ($dte) {
-                Write-Host "  Successfully connected to Visual Studio 2026 (PID: $($proc.Id), Version: $($dte.Version))" -ForegroundColor Green
-                break
-            } else {
-                Write-Host "    Could not connect to PID $($proc.Id)" -ForegroundColor Yellow
-            }
-        }
-
-        # EN: If DTE found, open solution in existing instance
-        # CZ: Pokud bylo DTE nalezeno, otevři solution v existující instanci
-        if ($dte) {
-            Write-Host "Opening solution in existing VS 2026 instance..." -ForegroundColor Cyan
-            try {
-                $dte.Solution.Open($SolutionPath)
-                Write-Host "Solution opened successfully!" -ForegroundColor Green
-                Write-Host "Waiting for solution to fully load (8 seconds)..." -ForegroundColor Cyan
-                Start-Sleep -Seconds 8
-
-                # EN: Re-acquire DTE reference after opening solution (solution load may invalidate reference)
-                # CZ: Znovu získej DTE referenci po otevření solution (načtení solution může invalidovat referenci)
-                Write-Host "Re-acquiring DTE reference after solution load..." -ForegroundColor Cyan
-                $tempDte = $null
-                foreach ($proc in $vs2026Processes) {
-                    $tempDte = Get-DTEFromProcess -ProcessId $proc.Id
-                    if ($tempDte) {
-                        $dte = $tempDte
-                        Write-Host "  DTE reference refreshed successfully!" -ForegroundColor Green
-                        break
-                    }
-                }
-
-                if (-not $dte) {
-                    Write-Error "Failed to re-acquire DTE reference after opening solution!"
-                    exit 1
-                }
-            } catch {
-                Write-Host "Warning: Could not open solution via DTE: $($_.Exception.Message)" -ForegroundColor Yellow
-            }
+        if ($dteResult.Available) {
+            Write-Host "  SUCCESS: DTE is available via ProgID: $($dteResult.ProgID)" -ForegroundColor Green
+            $dte = $dteResult.DTE
+            $useDTE = $true
+        } else {
+            Write-Host "  DTE NOT available in ROT (common in VS 2026 Preview)" -ForegroundColor Yellow
+            Write-Host "  Will use devenv.exe /Edit fallback instead" -ForegroundColor Yellow
         }
     } else {
-        Write-Host "  No VS 2026 processes found running." -ForegroundColor Yellow
-        Write-Host "  Checking for other VS versions..." -ForegroundColor Gray
-
-        # EN: Fallback to any VS version if VS 2026 not running
-        # CZ: Fallback na jakoukoliv verzi VS pokud VS 2026 neběží
-        $vsVersions = @(
-            "VisualStudio.DTE.19.0",  # VS 2026
-            "VisualStudio.DTE.18.0",  # VS 2025
-            "VisualStudio.DTE.17.0",  # VS 2022
-            "VisualStudio.DTE"        # Generic fallback
-        )
-
-        foreach ($progId in $vsVersions) {
-            try {
-                Write-Host "    Trying: $progId..." -ForegroundColor Gray
-                $dte = [System.Runtime.InteropServices.Marshal]::GetActiveObject($progId)
-                if ($dte) {
-                    Write-Host "Found Visual Studio instance (Version: $($dte.Version), ProgID: $progId)" -ForegroundColor Yellow
-                    Write-Host "WARNING: This is NOT VS 2026! Files will open in different VS version." -ForegroundColor Red
-                    break
-                }
-            } catch {
-                # EN: Continue to next version
-                # CZ: Pokračovat na další verzi
-            }
-        }
+        Write-Host "  No VS process running yet" -ForegroundColor Yellow
     }
-
-    # EN: Determine which method to use - CRITICAL: Must connect to DTE BEFORE opening files
-    # CZ: Určit kterou metodu použít - KRITICKÉ: Musíme se připojit k DTE PŘED otevřením souborů
-    $vs2026IsRunning = $vs2026Processes.Count -gt 0
-
-    # EN: If no DTE connection yet and VS is running, retry connection BEFORE starting to open files
-    # CZ: Pokud ještě není DTE připojení a VS běží, zkus se připojit PŘED začátkem otevírání souborů
-    if (-not $dte -and $vs2026IsRunning) {
-        Write-Host "`nVS 2026 is running but no DTE connection yet. Retrying connection..." -ForegroundColor Yellow
-        Write-Host "Waiting for VS to be ready (5 seconds)..." -ForegroundColor Cyan
-        Start-Sleep -Seconds 5
-
-        # EN: Try to connect via ROT to the VS instance - THIS MUST SUCCEED BEFORE OPENING FILES
-        # CZ: Zkus se připojit přes ROT k VS instanci - TOTO MUSÍ USPĚT PŘED OTEVŘENÍM SOUBORŮ
-        Write-Host "Attempting to connect via ROT..." -ForegroundColor Cyan
-        $retryCount = 0
-        $maxRetries = 10
-        while (-not $dte -and $retryCount -lt $maxRetries) {
-            $retryCount++
-            Write-Host "  Retry $retryCount of ${maxRetries}..." -ForegroundColor Gray
-
-            # EN: Get all devenv processes (any VS version now)
-            # CZ: Získej všechny devenv procesy (jakákoliv verze VS)
-            $allVsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
-
-            foreach ($proc in $allVsProcesses) {
-                $dte = Get-DTEFromProcess -ProcessId $proc.Id
-                if ($dte) {
-                    Write-Host "Successfully connected to Visual Studio via ROT (PID: $($proc.Id))!" -ForegroundColor Green
-
-                    # EN: Open solution in connected instance if not already open
-                    # CZ: Otevři solution v připojené instanci pokud ještě není otevřené
-                    if ($dte.Solution.FullName -ne $SolutionPath) {
-                        Write-Host "Opening solution in existing instance..." -ForegroundColor Cyan
-                        try {
-                            $dte.Solution.Open($SolutionPath)
-                            Write-Host "Waiting for solution to load (3 seconds)..." -ForegroundColor Cyan
-                            Start-Sleep -Seconds 3
-                        } catch {
-                            Write-Host "  Warning: Could not open solution: $($_.Exception.Message)" -ForegroundColor Yellow
-                        }
-                    }
-                    break
-                }
-            }
-
-            if ($dte) {
-                break
-            }
-
-            if ($retryCount -lt $maxRetries) {
-                Start-Sleep -Seconds 2
-            }
-        }
-
-        if (-not $dte) {
-            Write-Error "FATAL: Could not connect to Visual Studio via DTE after $maxRetries retries!"
-            Write-Host "Please ensure Visual Studio is fully loaded and responsive." -ForegroundColor Red
-            exit 1
-        }
-    }
-
-    # EN: If still no VS running, start new instance with solution
-    # CZ: Pokud stále neběží žádné VS, spusť novou instanci s solution
-    if (-not $dte -and -not $vs2026IsRunning) {
-        Write-Host "`nNo VS instance running. Starting new VS 2026 instance with solution..." -ForegroundColor Cyan
-        $vsProcess = Start-Process -FilePath $devenvPath -ArgumentList "`"$SolutionPath`"" -PassThru
-        Write-Host "Waiting for Visual Studio to fully load (15 seconds)..." -ForegroundColor Cyan
-        Start-Sleep -Seconds 15
-
-        # EN: Try to connect to the newly started instance
-        # CZ: Zkus se připojit k nově spuštěné instanci
-        $retryCount = 0
-        $maxRetries = 10
-        while (-not $dte -and $retryCount -lt $maxRetries) {
-            $retryCount++
-            Write-Host "  Connecting to new instance, retry $retryCount of ${maxRetries}..." -ForegroundColor Gray
-
-            $allVsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
-            foreach ($proc in $allVsProcesses) {
-                $dte = Get-DTEFromProcess -ProcessId $proc.Id
-                if ($dte) {
-                    Write-Host "Successfully connected to new Visual Studio instance!" -ForegroundColor Green
-                    break
-                }
-            }
-
-            if ($dte) {
-                break
-            }
-
-            if ($retryCount -lt $maxRetries) {
-                Start-Sleep -Seconds 2
-            }
-        }
-
-        if (-not $dte) {
-            Write-Error "FATAL: Could not connect to newly started Visual Studio instance!"
-            exit 1
-        }
-    }
-
-    # EN: At this point we MUST have a DTE connection
-    # CZ: V tomto bodě MUSÍME mít DTE připojení
-    if (-not $dte) {
-        Write-Error "FATAL: No DTE connection available. Cannot open files."
-        exit 1
-    }
-
-    # EN: Open files using DTE automation
-    # CZ: Otevři soubory pomocí DTE automation
-    Write-Host "`nOpening $($filesToOpen.Count) files via DTE..." -ForegroundColor Cyan
-    $counter = 0
-
-    foreach ($file in $filesToOpen) {
-        $counter++
-        Write-Host "  [$counter/$($filesToOpen.Count)] Opening: $(Split-Path -Leaf $file)" -ForegroundColor Gray
-
-        # EN: Check if DTE is still valid before each file operation
-        # CZ: Zkontroluj jestli je DTE stále platné před každou operací se souborem
-        if ($null -eq $dte -or $null -eq $dte.ItemOperations) {
-            Write-Host "      DTE reference lost (DTE null: $($null -eq $dte), ItemOps null: $($null -eq $dte.ItemOperations)), re-acquiring..." -ForegroundColor Yellow
-
-            # EN: Retry up to 3 times to get valid DTE with ItemOperations
-            # CZ: Zkus až 3x získat platné DTE s ItemOperations
-            $retryCount = 0
-            $maxRetries = 3
-            $validDte = $null
-
-            while ($retryCount -lt $maxRetries -and $null -eq $validDte) {
-                $retryCount++
-                Write-Host "      Re-acquire attempt $retryCount of $maxRetries..." -ForegroundColor Gray
-
-                $allVsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
-                foreach ($proc in $allVsProcesses) {
-                    $tempDte = Get-DTEFromProcess -ProcessId $proc.Id
-                    if ($tempDte) {
-                        # EN: Try to dismiss any open dialogs by sending Escape key to VS window
-                        # CZ: Zkus zavřít případné otevřené dialogy posláním Escape do VS okna
-                        try {
-                            Add-Type -AssemblyName System.Windows.Forms
-                            $vsWindows = Get-Process -Name "devenv" -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 }
-                            foreach ($vsWin in $vsWindows) {
-                                # EN: Send Escape key to close any blocking dialog
-                                # CZ: Pošli Escape pro zavření blokujícího dialogu
-                                $wshell = New-Object -ComObject WScript.Shell
-                                $wshell.AppActivate($vsWin.Id) | Out-Null
-                                Start-Sleep -Milliseconds 500
-                                $wshell.SendKeys("{ESC}")
-                                Start-Sleep -Milliseconds 500
-                            }
-                        } catch {
-                            # EN: Ignore errors from SendKeys
-                            # CZ: Ignoruj chyby z SendKeys
-                        }
-
-                        # EN: Wait for ItemOperations to become available
-                        # CZ: Počkej až bude ItemOperations dostupné
-                        Start-Sleep -Seconds 2
-
-                        if ($null -ne $tempDte.ItemOperations) {
-                            $validDte = $tempDte
-                            Write-Host "      DTE reference refreshed with valid ItemOperations!" -ForegroundColor Green
-                            break
-                        } else {
-                            Write-Host "      DTE obtained but ItemOperations still null, retrying..." -ForegroundColor Yellow
-                        }
-                    }
-                }
-
-                if ($null -eq $validDte -and $retryCount -lt $maxRetries) {
-                    Write-Host "      Waiting 3 seconds before retry..." -ForegroundColor Gray
-                    Start-Sleep -Seconds 3
-                }
-            }
-
-            if ($null -eq $validDte) {
-                Write-Host "      ERROR: Could not re-acquire valid DTE reference after $maxRetries attempts. Skipping remaining files." -ForegroundColor Red
-                break
-            }
-
-            $dte = $validDte
-        }
-
-        try {
-            # EN: Use DTE automation to open in existing instance - vsViewKindTextView GUID
-            # CZ: Použít DTE automation pro otevření v existující instanci - vsViewKindTextView GUID
-            $result = $dte.ItemOperations.OpenFile($file, "{7651A701-06E5-11D1-8EBD-00A0C90F26EA}")
-            if ($null -eq $result) {
-                Write-Host "      Warning: OpenFile returned null for: $file" -ForegroundColor Yellow
-            }
-            Start-Sleep -Milliseconds 100
-        } catch {
-            Write-Host "      Error opening file: $($_.Exception.Message)" -ForegroundColor Red
-        }
-    }
-
-    Write-Host "`nDone! Opened $($filesToOpen.Count) file(s) in Visual Studio." -ForegroundColor Green
+} else {
+    Write-Host "ForceDevenvEdit flag set - skipping DTE detection" -ForegroundColor Yellow
 }
+
+Write-Host ""
+
+# ============================================
+# OPEN FILES USING SELECTED METHOD
+# OTEVŘI SOUBORY POMOCÍ VYBRANÉ METODY
+# ============================================
+
+if ($useDTE) {
+    # EN: Method 1: DTE automation (legacy, only works if VS is in ROT)
+    # CZ: Metoda 1: DTE automation (legacy, funguje pouze pokud je VS v ROT)
+    try {
+        # EN: Ensure solution is open
+        # CZ: Zajisti že solution je otevřené
+        if ($dte.Solution.FullName -ne $SolutionPath) {
+            Write-Host "Opening solution via DTE..." -ForegroundColor Cyan
+            $dte.Solution.Open($SolutionPath)
+            Write-Host "Waiting for solution to load (5 seconds)..." -ForegroundColor Cyan
+            Start-Sleep -Seconds 5
+        }
+
+        Open-FilesViaDTE -DTE $dte -FilesToOpen $filesToOpen
+    } catch {
+        Write-Host "ERROR: DTE method failed: $($_.Exception.Message)" -ForegroundColor Red
+        Write-Host "Falling back to devenv.exe /Edit method..." -ForegroundColor Yellow
+        Open-FilesViaDevenvEdit -DevenvPath $devenvPath -FilesToOpen $filesToOpen -SolutionPath $SolutionPath
+    }
+} else {
+    # EN: Method 2: devenv.exe /Edit (ROBUST - works even without DTE in ROT!)
+    # CZ: Metoda 2: devenv.exe /Edit (ROBUSTNÍ - funguje i bez DTE v ROT!)
+    Open-FilesViaDevenvEdit -DevenvPath $devenvPath -FilesToOpen $filesToOpen -SolutionPath $SolutionPath
+}
+
+Write-Host "`n=== DONE ===" -ForegroundColor Green
+Write-Host "All files have been queued for opening in Visual Studio." -ForegroundColor Green
+Write-Host ""

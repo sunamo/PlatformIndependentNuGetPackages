@@ -1,194 +1,171 @@
 # Submodules Grouped by 10
 
-Total submodules: 145
+Total submodules: 135
 
 ## Group 1
 
+- SunamoAI
 - SunamoArgs
+- SunamoAsync
 - SunamoAttributes
+- SunamoAzureDevOpsApi
+- SunamoBazosCrawler
 - SunamoBts
 - SunamoChar
 - SunamoCl
 - SunamoClearScript
-- SunamoClipboard
-- SunamoCmd
-- SunamoCmdArgs
-- SunamoCmdArgs.Cmd
 
 ## Group 2
 
+- SunamoClipboard
+- SunamoCollectionOnDrive
 - SunamoCollections
 - SunamoCollectionsChangeContent
 - SunamoCollectionsGeneric
+- SunamoCollectionsIndexesWithNull
+- SunamoCollectionsNonGeneric
+- SunamoCollectionsTo
+- SunamoCollectionsValuesTableGrid
 - SunamoCollectionWithoutDuplicates
-- SunamoColors
-- SunamoCompare
-- SunamoConsts
-- SunamoConverters
-- SunamoCrypt
-- SunamoCSharp
 
 ## Group 3
 
+- SunamoColors
+- SunamoCompare
+- SunamoConverters
+- SunamoCrypt
 - SunamoCsproj
+- SunamoCssGenerator
 - SunamoCsv
 - SunamoData
 - SunamoDateTime
 - SunamoDebugCollection
-- SunamoDebugging
-- SunamoDebugIO
-- SunamoDelegates
-- SunamoDevCode
-- SunamoDictionary
 
 ## Group 4
 
+- SunamoDebugging
+- SunamoDebugIO
+- SunamoDelegates
+- SunamoDependencyInjection
+- SunamoDevCode
+- SunamoDictionary
+- SunamoDotnetCmdBuilder
+- SunamoDotNetZip
+- SunamoEditorConfig
+- SunamoEmbeddedResources
+
+## Group 5
+
+- SunamoEmoticons
 - SunamoEnums
 - SunamoEnumsHelper
 - SunamoExceptions
 - SunamoExtensions
 - SunamoFileExtensions
 - SunamoFileIO
+- SunamoFilesIndex
 - SunamoFileSystem
 - SunamoFluentFtp
-- SunamoFtp
-- SunamoGitBashBuilder
-
-## Group 5
-
-- SunamoGoogleSheets
-- SunamoHtml
-- SunamoI18N
-- SunamoIni
-- SunamoInterfaces
-- SunamoLang
-- SunamoLogging
-- SunamoLogMessage
-- SunamoMail
-- SunamoMarkdown
 
 ## Group 6
 
+- SunamoFtp
+- SunamoGetFiles
+- SunamoGetFolders
+- SunamoGitConfig
+- SunamoGoogleMyMaps
+- SunamoGoogleSheets
+- SunamoGpx
+- SunamoHtml
+- SunamoHttp
+- SunamoIni
+
+## Group 7
+
+- SunamoInterfaces
+- SunamoJson
+- SunamoLang
+- SunamoLaTeX
+- SunamoLogging
+- SunamoMail
+- SunamoMarkdown
+- SunamoMathpix
 - SunamoMime
 - SunamoMsgReader
+
+## Group 8
+
+- SunamoMsSqlServer
 - SunamoNuGetProtocol
 - SunamoNumbers
 - SunamoOctokit
 - SunamoPackageJson
 - SunamoParsing
+- SunamoPaths
 - SunamoPercentCalculator
 - SunamoPInvoke
 - SunamoPlatformUwpInterop
 
-## Group 7
+## Group 9
 
 - SunamoPS
 - SunamoRandom
 - SunamoReflection
 - SunamoRegex
+- SunamoResult
+- SunamoRobotsTxt
+- SunamoRoslyn
 - SunamoRss
+- SunamoRuleset
+- SunamoSecurity
+
+## Group 10
+
+- SunamoSelenium
+- SunamoSerializer
 - SunamoShared
-- SunamoSqlite
-- SunamoSqlServer
 - SunamoStopwatch
 - SunamoString
-
-## Group 8
-
-- SunamoStringData
+- SunamoStringFormat
 - SunamoStringGetLines
+- SunamoStringGetString
 - SunamoStringJoin
+- SunamoStringJoinPairs
+
+## Group 11
+
+- SunamoStringParts
 - SunamoStringReplace
 - SunamoStringSplit
 - SunamoStringSubstring
 - SunamoStringTrim
-- SunamoTextBuilder
-- SunamoTextBuilderShared
+- SunamoTest
+- SunamoText
+- SunamoTextIndexing
 - SunamoTextOutputGenerator
-
-## Group 9
-
-- SunamoTextOutputGeneratorShared
 - SunamoThisApp
-- SunamoThread
-- SunamoTidy
-- SunamoTwoWayDictionary
-- SunamoTypeOfMessage
-- SunamoUnderscore
-- SunamoUri
-- SunamoValues
-- SunamoVcf
-
-## Group 10
-
-- SunamoWinStd
-- SunamoXlf
-- SunamoXlfEngine
-- SunamoXml
-- SunamoYaml
-- SunamoYouTube
-- SunamoXliffParser
-- SunamoAsync
-- SunamoBazosCrawler
-- SunamoCollectionOnDrive
-
-## Group 11
-
-- SunamoCollectionsIndexesWithNull
-- SunamoCollectionsNonGeneric
-- SunamoCollectionsTo
-- SunamoCollectionsValuesTableGrid
-- SunamoCssGenerator
-- SunamoDotnetCmdBuilder
-- SunamoEditorConfig
-- SunamoEmbeddedResources
-- SunamoGetFiles
-- SunamoGetFolders
 
 ## Group 12
 
-- SunamoGitConfig
-- SunamoHttp
-- SunamoJson
-- SunamoLaTeX
-- SunamoMathpix
-- SunamoRobotsTxt
-- SunamoRuleset
-- SunamoSerializer
-- SunamoStringFormat
-- SunamoStringGetString
+- SunamoThread
+- SunamoThreading
+- SunamoTidy
+- SunamoToUnixLineEnding
+- SunamoTwoWayDictionary
+- SunamoTypes
+- SunamoUnderscore
+- SunamoUri
+- SunamoUriWebServices
+- SunamoValues
 
 ## Group 13
 
-- SunamoStringJoinPairs
-- SunamoStringParts
-- SunamoText
-- SunamoToUnixLineEnding
-- SunamoUriWebServices
+- SunamoVcf
 - SunamoWikipedia
+- SunamoWinStd
 - SunamoXlfKeys
-- SunamoGoogleMyMaps
-- SunamoTypes
-- SunamoResult
-
-## Group 14
-
-- SunamoGpx
-- SunamoSelenium
-- SunamoFilesIndex
-- SunamoThreading
-- SunamoTextIndexing
-- SunamoEmoticons
-- SunamoSecurity
-- SunamoRoslyn
-- SunamoDependencyInjection
-- SunamoPaths
-
-## Group 15
-
-- SunamoDotNetZip
-- SunamoMsSqlServer
-- SunamoAzureDevOpsApi
-- SunamoTest
-- SunamoAI
+- SunamoXliffParser
+- SunamoXml
+- SunamoYaml
+- SunamoYouTube
 
