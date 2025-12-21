@@ -43,8 +43,20 @@ foreach ($line in $projectLines) {
     }
 }
 
-# Sort by project name and display
-$results | Sort-Object Project | Format-Table -AutoSize
+# Group by TargetFrameworks and display
+$grouped = $results | Group-Object TargetFrameworks | Sort-Object Name
+
+foreach ($group in $grouped) {
+    Write-Host ""
+    Write-Host "================================================" -ForegroundColor Yellow
+    Write-Host "TargetFrameworks: $($group.Name)" -ForegroundColor Cyan
+    Write-Host "Count: $($group.Count)" -ForegroundColor Green
+    Write-Host "================================================" -ForegroundColor Yellow
+    Write-Host ""
+
+    $group.Group | Sort-Object Project | Select-Object Project | Format-Table -AutoSize
+}
 
 Write-Host ""
 Write-Host "Total projects: $($results.Count)" -ForegroundColor Green
+Write-Host "Total framework combinations: $($grouped.Count)" -ForegroundColor Green
