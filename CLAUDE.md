@@ -14,6 +14,21 @@
 - Nepoužívané parametry jsou mrtvý kód a zavádějící pro volající kód
 - Výjimka: virtuální/override metody kde parametr je vyžadován signatuřou
 
+#### KRITICKÉ: Jednopísmenné názvy jsou ZAKÁZANÉ!
+- **ABSOLUTNĚ ZAKÁZANÉ** jednopísmenné názvy (`t`, `v`, `s`, `l`, `e`, `d`, etc.) pro:
+  - ❌ Extension metody: `this Task t` → ✅ `this Task task`
+  - ❌ Lambda parametry: `task.ContinueWith(t => ...)` → ✅ `task.ContinueWith(completedTask => ...)`
+  - ❌ Parametry metod: `void Process(string s)` → ✅ `void Process(string text)`
+  - ❌ Override metody: `void Post(SendOrPostCallback d, object state)` → ✅ `void Post(SendOrPostCallback callback, object state)`
+  - ❌ Lokální proměnné: `var t = GetTask()` → ✅ `var task = GetTask()`
+- **JEDINÁ VÝJIMKA**: For/foreach loop indexy (`i`, `j`, `k`), `item` POUZE v foreach, a `_` (underscore discard):
+  ```csharp
+  for (int i = 0; i < count; i++)  // OK
+  foreach (var item in list)       // OK
+  Post(_ => done = true, null);    // OK - _ je discard pro nepoužívaný parametr
+  ```
+- **DŮVOD**: Jednopísmenné názvy jsou nekomunikativní a ztěžují čitelnost kódu!
+
 #### NEJČASTĚJŠÍ CHYBY (kontroluj VŽDY!)
 1. ❌ `item` jako parametr metody → ✅ `text`, `element`, `value` (item POUZE pro foreach!)
 2. ❌ Jednopísmenné parametry (`v`, `i`, `c`) → ✅ `text`, `foundIndex`, `character`
@@ -475,3 +490,86 @@ readonly static StringBuilder sbAdditionalInfo = new();
 internal readonly static StringBuilder AdditionalInfoInnerStringBuilder = new();
 internal readonly static StringBuilder AdditionalInfoStringBuilder = new();
 ```
+
+### Extension metody a Lambda výrazy - ŽÁDNÉ jednopísmenné názvy!
+
+#### ❌ ŠPATNĚ - JEDNOPÍSMENNÉ NÁZVY:
+```csharp
+internal static ConfiguredTaskAwaitable Conf(this Task t)
+{
+    return t.ConfigureAwait(true);
+}
+
+internal static void LogExceptions(this Task task)
+{
+    task.ContinueWith(t =>
+        {
+            var aggException = t.Exception.Flatten();
+            throw new Exception(Exceptions.TextOfExceptions(aggException));
+        },
+        TaskContinuationOptions.OnlyOnFaulted);
+}
+```
+**Proč je to špatně:**
+- `t` jako parametr extension metody je NEKOMUNIKATIVNÍ!
+- `t` v lambda výrazu je NEKOMUNIKATIVNÍ - co je `t`? Task? Terminated? Temp?
+
+#### ✅ SPRÁVNĚ - SAMOPOPISNÉ NÁZVY:
+```csharp
+internal static ConfiguredTaskAwaitable Conf(this Task task)
+{
+    return task.ConfigureAwait(true);
+}
+
+internal static void LogExceptions(this Task task)
+{
+    task.ContinueWith(completedTask =>
+        {
+            var aggException = completedTask.Exception.Flatten();
+            throw new Exception(Exceptions.TextOfExceptions(aggException));
+        },
+        TaskContinuationOptions.OnlyOnFaulted);
+}
+```
+**Proč je to správně:**
+- `task` jasně říká že jde o Task
+- `completedTask` v lambda říká že jde o dokončený task (kontext ContinueWith)
+- Kód je okamžitě srozumitelný i bez dokumentace!
+
+### Override metody - I ty musí mít samopopisné názvy!
+
+#### ❌ ŠPATNĚ - JEDNOPÍSMENNÝ PARAMETR V OVERRIDE:
+```csharp
+public override void Post(SendOrPostCallback d, object state)
+{
+    lock (items)
+    {
+        items.Enqueue(Tuple.Create(d, state));
+    }
+    workItemsWaiting.Set();
+}
+
+public override void Send(SendOrPostCallback d, object state)
+{
+    throw new Exception("WeCannotSendToOurSameThread");
+}
+```
+**Proč je to špatně:** `d` je NEKOMUNIKATIVNÍ - co je to `d`? Delegate? Data? Descriptor?
+
+#### ✅ SPRÁVNĚ - SAMOPOPISNÝ NÁZEV:
+```csharp
+public override void Post(SendOrPostCallback callback, object state)
+{
+    lock (items)
+    {
+        items.Enqueue(Tuple.Create(callback, state));
+    }
+    workItemsWaiting.Set();
+}
+
+public override void Send(SendOrPostCallback callback, object state)
+{
+    throw new Exception("WeCannotSendToOurSameThread");
+}
+```
+**Proč je to správně:** `callback` jasně říká že parametr je callback funkce!
