@@ -5,6 +5,8 @@
 ### Obecná pravidla
 
 #### KRITICKÉ: Komentář "variables names: ok"
+- **PRACUJ POUZE SE SOUBORY BEZ TOHOTO KOMENTÁŘE**: Při opravování názvů proměnných pracuj POUZE s .cs soubory které **NEMAJÍ** komentář `// variables names: ok` na začátku
+- **IGNORUJ SOUBORY S KOMENTÁŘEM**: Soubory které mají `// variables names: ok` jsou již zkontrolované uživatelem a NESMÍŠ je měnit
 - **NIKDY NEPŘIDÁVEJ** komentář `// variables names: ok` do souborů!
 - Tento komentář přidává POUZE uživatel při ruční kontrole
 - Tvoje práce je opravit všechny špatné názvy, NE označovat soubory jako hotové

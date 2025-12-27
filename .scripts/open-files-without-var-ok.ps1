@@ -1,8 +1,10 @@
 param(
     [Parameter(Mandatory=$true)]
-    [string]$SolutionPath,
+    [string]$SolutionDir,
+    [string]$VsVersion = "2022",  # EN: VS version (2022 or 2026) | CZ: VS verze (2022 nebo 2026)
     [switch]$ListOnly,
-    [switch]$ForceDevenvEdit  # EN: Force use of devenv.exe /Edit instead of DTE | CZ: Vynuť použití devenv.exe /Edit místo DTE
+    [switch]$ForceDevenvEdit,  # EN: Force use of devenv.exe /Edit instead of DTE | CZ: Vynuť použití devenv.exe /Edit místo DTE
+    [switch]$SkipConfirmation  # EN: Skip confirmation prompt (for non-interactive execution) | CZ: Přeskoč potvrzení (pro non-interaktivní spuštění)
 )
 
 # EN: Check if running in PowerShell 7+ (pwsh) - DTE automation works better in Windows PowerShell 5.1
@@ -22,13 +24,17 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
             '-NoProfile',
             '-ExecutionPolicy', 'Bypass',
             '-File', $scriptPath,
-            '-SolutionPath', $SolutionPath
+            '-SolutionDir', $SolutionDir,
+            '-VsVersion', $VsVersion
         )
         if ($ListOnly) {
             $arguments += '-ListOnly'
         }
         if ($ForceDevenvEdit) {
             $arguments += '-ForceDevenvEdit'
+        }
+        if ($SkipConfirmation) {
+            $arguments += '-SkipConfirmation'
         }
 
         & $powershellPath @arguments
@@ -200,20 +206,28 @@ function Open-FilesViaDTE {
 # MAIN SCRIPT / HLAVNÍ SKRIPT
 # ============================================
 
-# EN: Find Visual Studio devenv.exe (prioritize VS 2026)
-# CZ: Najdi Visual Studio devenv.exe (prioritizuj VS 2026)
+# EN: Find Visual Studio devenv.exe (prioritize version specified in $VsVersion parameter)
+# CZ: Najdi Visual Studio devenv.exe (prioritizuj verzi specifikovanou v $VsVersion parametru)
 $vsEditions = @('Enterprise', 'Professional', 'Community', 'Preview')
-$vsYears = @('18', '2026', '2025', '2024', '2022')  # 18 = VS 2026 Preview
+
+# EN: Prioritize VS years based on $VsVersion parameter
+# CZ: Prioritizuj VS roky na základě $VsVersion parametru
+if ($VsVersion -eq "2026") {
+    $vsYears = @('18', '2026', '2025', '2024', '2022')  # 18 = VS 2026 Preview
+} else {
+    $vsYears = @('2022', '2024', '2025', '2026', '18')  # Prioritize VS 2022
+}
+
 $devenvPath = $null
-$vsVersion = $null
+$vsVersionFound = $null
 
 foreach ($year in $vsYears) {
     foreach ($edition in $vsEditions) {
         $testPath = "C:\Program Files\Microsoft Visual Studio\$year\$edition\Common7\IDE\devenv.exe"
         if (Test-Path $testPath) {
             $devenvPath = $testPath
-            $vsVersion = if ($year -eq '18') { 'VS 2026' } else { "VS $year" }
-            Write-Host "Found $vsVersion $edition" -ForegroundColor Green
+            $vsVersionFound = if ($year -eq '18') { 'VS 2026' } else { "VS $year" }
+            Write-Host "Found $vsVersionFound $edition (requested: VS $VsVersion)" -ForegroundColor Green
             break
         }
     }
@@ -225,13 +239,17 @@ if (-not $devenvPath) {
     exit 1
 }
 
-# EN: If SolutionPath is a directory, construct .sln path from folder name
-# CZ: Pokud je SolutionPath složka, vytvoř cestu k .sln ze jména složky
-if (Test-Path $SolutionPath -PathType Container) {
-    $folderName = Split-Path -Leaf $SolutionPath
-    $SolutionPath = Join-Path $SolutionPath "$folderName.sln"
-    Write-Host "Detected directory input. Looking for: $SolutionPath" -ForegroundColor Cyan
+# EN: Construct .sln path from solution directory
+# CZ: Vytvoř cestu k .sln ze solution directory
+if (-not (Test-Path $SolutionDir -PathType Container)) {
+    Write-Error "Solution directory not found: $SolutionDir"
+    exit 1
 }
+
+$folderName = Split-Path -Leaf $SolutionDir
+$SolutionPath = Join-Path $SolutionDir "$folderName.sln"
+Write-Host "Solution directory: $SolutionDir" -ForegroundColor Cyan
+Write-Host "Looking for solution file: $SolutionPath" -ForegroundColor Cyan
 
 # EN: Validate solution file exists
 # CZ: Zkontroluj že solution soubor existuje
@@ -240,8 +258,7 @@ if (-not (Test-Path $SolutionPath)) {
     exit 1
 }
 
-$solutionDir = Split-Path -Parent $SolutionPath
-Write-Host "Solution directory: $solutionDir" -ForegroundColor Cyan
+$solutionDir = $SolutionDir
 
 # EN: Parse .sln file to get project paths
 # CZ: Parsuj .sln soubor pro získání cest k projektům
@@ -304,21 +321,27 @@ if ($ListOnly) {
     exit 0
 }
 
-# EN: Confirm that user closed all tabs in Visual Studio
-# CZ: Potvrď že uživatel zavřel všechny taby ve Visual Studio
-Write-Host "`n============================================" -ForegroundColor Red
-Write-Host "IMPORTANT / DŮLEŽITÉ:" -ForegroundColor Red
-Write-Host "============================================" -ForegroundColor Red
-Write-Host "EN: Please close ALL tabs in Visual Studio before continuing!" -ForegroundColor Yellow
-Write-Host "CZ: Prosím zavři VŠECHNY taby ve Visual Studio před pokračováním!" -ForegroundColor Yellow
-Write-Host "============================================" -ForegroundColor Red
-Write-Host ""
-$confirmation = Read-Host "EN: Have you closed all tabs? (Y/N) | CZ: Zavřel jsi všechny taby? (Y/N)"
+# EN: Confirm that user closed all tabs in Visual Studio (skip if running non-interactively)
+# CZ: Potvrď že uživatel zavřel všechny taby ve Visual Studio (přeskoč pokud běží non-interaktivně)
+if (-not $SkipConfirmation) {
+    Write-Host "`n============================================" -ForegroundColor Red
+    Write-Host "IMPORTANT / DŮLEŽITÉ:" -ForegroundColor Red
+    Write-Host "============================================" -ForegroundColor Red
+    Write-Host "EN: Please close ALL tabs in Visual Studio before continuing!" -ForegroundColor Yellow
+    Write-Host "CZ: Prosím zavři VŠECHNY taby ve Visual Studio před pokračováním!" -ForegroundColor Yellow
+    Write-Host "============================================" -ForegroundColor Red
+    Write-Host ""
+    $confirmation = Read-Host "EN: Have you closed all tabs? (Y/N) | CZ: Zavřel jsi všechny taby? (Y/N)"
 
-if ($confirmation -ne 'Y' -and $confirmation -ne 'y') {
-    Write-Host "`nOperation cancelled. Please close all tabs and run the script again." -ForegroundColor Red
-    Write-Host "Operace zrušena. Prosím zavři všechny taby a spusť skript znovu." -ForegroundColor Red
-    exit 0
+    if ($confirmation -ne 'Y' -and $confirmation -ne 'y') {
+        Write-Host "`nOperation cancelled. Please close all tabs and run the script again." -ForegroundColor Red
+        Write-Host "Operace zrušena. Prosím zavři všechny taby a spusť skript znovu." -ForegroundColor Red
+        exit 0
+    }
+} else {
+    Write-Host "`nSkipping confirmation (non-interactive mode)" -ForegroundColor Cyan
+    Write-Host "EN: Assuming all tabs are closed in Visual Studio" -ForegroundColor Yellow
+    Write-Host "CZ: Předpokládám že všechny taby jsou zavřené ve Visual Studio" -ForegroundColor Yellow
 }
 
 Write-Host "`nOpening files in Visual Studio..." -ForegroundColor Yellow

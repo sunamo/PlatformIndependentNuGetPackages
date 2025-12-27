@@ -54,7 +54,7 @@ foreach ($line in $content) {
     if ($inGroup -and $line -match "^## Group \d+$") {
         break
     }
-    if ($inGroup -and $line -match "^- (.+)$") {
+    if ($inGroup -and $line -match "^- ([^\s(]+)") {
         $submodules += $matches[1].Trim()
     }
 }
