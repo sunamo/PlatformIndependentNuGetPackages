@@ -13,12 +13,10 @@ Write-Host "`n========================================" -ForegroundColor Cyan
 Write-Host "KROK 1: Commituju zmeny v kazdem submodulu" -ForegroundColor Cyan
 Write-Host "========================================`n" -ForegroundColor Cyan
 
-# Ziskej vsechny submoduly
-$submodules = git submodule status | ForEach-Object {
-    if ($_ -match '^\s*[+-]?[a-f0-9]+\s+(.+?)\s+') {
-        $matches[1]
-    }
-}
+# Ziskej vsechny slozky ktere jsou git repozitare (nested repos)
+$submodules = Get-ChildItem -Directory | Where-Object {
+    Test-Path (Join-Path $_.FullName ".git")
+} | Select-Object -ExpandProperty Name
 
 $committedCount = 0
 $skippedCount = 0
