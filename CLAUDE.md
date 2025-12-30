@@ -575,3 +575,283 @@ public override void Send(SendOrPostCallback callback, object state)
 }
 ```
 **Proč je to správně:** `callback` jasně říká že parametr je callback funkce!
+
+## NOVÉ POZNATKY Z SUNAMO DATETIME PROJEKTU (2025-12-31)
+
+### KRITICKÉ: Internal members MUSÍ být PascalCase!
+
+**VŠECHNY `internal` members (fields, properties, methods, constants) MUSÍ používat PascalCase!**
+
+#### ❌ ŠPATNĚ - camelCase pro internal konstanty:
+```csharp
+internal class DTConstants
+{
+    internal const long secondsInMinute = 60;
+    internal const long secondsInHour = secondsInMinute * 60;
+    internal const long secondsInDay = secondsInHour * 24;
+    internal static readonly List<string> daysInWeekEN = new List<string> { "Monday", "Tuesday", ... };
+    internal static readonly List<string> monthsInYearEN = new List<string> { "January", "February", ... };
+    internal static DateTime unixTimeStartEpoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+}
+```
+**Proč je to špatně:** `internal` members jsou viditelné mimo třídu (v celém assembly), takže MUSÍ používat PascalCase podle C# konvencí!
+
+#### ✅ SPRÁVNĚ - PascalCase:
+```csharp
+internal class DTConstants
+{
+    internal const long SecondsInMinute = 60;
+    internal const long SecondsInHour = SecondsInMinute * 60;
+    internal const long SecondsInDay = SecondsInHour * 24;
+    internal static readonly List<string> DaysInWeekEN = new List<string> { "Monday", "Tuesday", ... };
+    internal static readonly List<string> MonthsInYearEN = new List<string> { "January", "February", ... };
+    internal static DateTime UnixTimeStartEpoch = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+}
+```
+
+**DŮLEŽITÉ:** Když přejmenuješ internal konstanty, MUSÍŠ najít a opravit VŠECHNA jejich použití v celém projektu!
+
+```powershell
+# Příklad: Najít všechna použití starých názvů
+rg "\b(secondsInMinute|secondsInHour|secondsInDay)\b"
+```
+
+### Další doménově specifické názvy nalezené v SunamoDateTime
+
+#### ❌ ŠPATNĚ - `altitudes` pro univerzální metodu:
+```csharp
+internal static List<int> ToInt2(IList altitudes, int requiredLength, int startFrom)
+{
+    return ToNumber<int>(BTS.TryParseInt, altitudes, requiredLength, startFrom);
+}
+```
+**Proč je to špatně:** `altitudes` (nadmořské výšky) je DOMÉNOVĚ SPECIFICKÝ název! Metoda je univerzální a může zpracovat jakoukoliv kolekci čísel - ceny výrobků, teploty, skóre, cokoliv!
+
+#### ✅ SPRÁVNĚ:
+```csharp
+internal static List<int> ToInt2(IList list, int requiredLength, int startFrom)
+{
+    return ToNumber<int>(BTS.TryParseInt, list, requiredLength, startFrom);
+}
+```
+
+#### ❌ ŠPATNĚ - `enumerable` pro IList:
+```csharp
+internal static List<T> ToNumber<T>(Func<string, T, T> tryParse, IList enumerable, int requiredLength)
+{
+    int enumerableCount = enumerable.Count;
+    foreach (var item in enumerable)
+    {
+        // ...
+    }
+}
+```
+**Proč je to špatně:** `enumerable` je MATOUCÍ - typ je `IList`, ne `IEnumerable`! Navíc je to příliš obecný název.
+
+#### ✅ SPRÁVNĚ:
+```csharp
+internal static List<T> ToNumber<T>(Func<string, T, T> tryParse, IList list, int requiredLength)
+{
+    int listCount = list.Count;
+    foreach (var item in list)
+    {
+        // ...
+    }
+}
+```
+
+### Další zkratky nalezené v SunamoDateTime
+
+#### ❌ ŠPATNĚ - zkratky v lokálních proměnných:
+```csharp
+List<T> vr = new List<T>(finalLength);  // vr = ???
+T y = default(T);                        // y = ???
+var yy = tryParse.Invoke(item.ToString(), y);  // yy = ???
+List<string> ts = GetValues();           // ts = ???
+long mal = 365;                          // mal = malý? (české slovo!)
+```
+
+#### ✅ SPRÁVNĚ - plné názvy:
+```csharp
+List<T> result = new List<T>(finalLength);
+T defaultValue = default(T);
+var parsedValue = tryParse.Invoke(item.ToString(), defaultValue);
+List<string> values = GetValues();
+long daysInYear = 365;
+```
+
+**Seznam zakázaných zkratek:**
+- `vr` → `result` (variable result)
+- `ret` → `result` (return value)
+- `ts` → `values` / `items` (to string?)
+- `sb` → `stringBuilder` (nebo `StringBuilder` pro internal)
+- `y`, `yy` → `defaultValue`, `parsedValue` (jednopísmenné)
+- `mal` → `daysInYear` (české slovo "málo")
+- `i` (mimo for loop) → `currentIndex` / `index`
+
+### Jednopísmenné proměnné mimo for loop - VŽDY ZAKÁZANÉ!
+
+#### ❌ ŠPATNĚ - `i` jako counter mimo for loop:
+```csharp
+T i = default(T);
+foreach (var item in list)
+{
+    if (i.CompareTo(startFrom) != 0)
+    {
+        continue;
+    }
+    // ... použití i jako counter
+}
+```
+**Proč je to špatně:** `i` je vyhrazeno POUZE pro indexy v `for` cyklech! Ve `foreach` nebo jako obecný counter je ZAKÁZANÉ!
+
+#### ✅ SPRÁVNĚ:
+```csharp
+T currentIndex = default(T);
+foreach (var item in list)
+{
+    if (currentIndex.CompareTo(startFrom) != 0)
+    {
+        continue;
+    }
+    // ... použití currentIndex jako counter
+}
+```
+
+### Checklist pro přejmenování internal konstant:
+
+1. ✅ **Najdi soubor s konstantami** (např. DTConstants.cs)
+2. ✅ **Přejmenuj všechny internal members na PascalCase**
+3. ✅ **Najdi VŠECHNA použití** starých názvů v projektu:
+   ```bash
+   rg "\b(starýNázev1|starýNázev2|starýNázev3)\b"
+   ```
+4. ✅ **Oprav VŠECHNA použití** na nové PascalCase názvy
+5. ✅ **Zkontroluj že nezůstaly žádné staré názvy**:
+   ```bash
+   rg "\b(starýNázev1|starýNázev2|starýNázev3)\b"  # Mělo by vrátit 0 výsledků
+   ```
+6. ✅ **Parametry metod s camelCase verzí** (např. `long secondsInHour` jako parametr) jsou OK - parametry jsou vždy camelCase!
+
+### České názvy s číselnými suffixy - DVOJITÝ PROBLÉM!
+
+Kombinace českého názvu + číselný suffix je **DVOJITĚ ŠPATNĚ**:
+
+#### ❌ ŠPATNĚ - ČESKÉ NÁZVY S ČÍSLY:
+```csharp
+public static DateTime IsValidDateTimeText(string datum)
+{
+    DateTime vr = DateTime.MinValue;
+    int indexMezery = datum.IndexOf(' ');
+    if (indexMezery != -1)
+    {
+        var datum2 = DateTime.Today;
+        var cas2 = DateTime.Today;
+        var datum3 = datum.Substring(0, indexMezery);
+        var cas3 = datum.Substring(indexMezery + 1);
+        // ...
+        if (datum2 != DateTime.MinValue && cas2 != DateTime.MinValue)
+        {
+            vr = new DateTime(datum2.Year, datum2.Month, datum2.Day, cas2.Hour, cas2.Minute, cas2.Second);
+        }
+    }
+    return vr;
+}
+```
+**Proč je to špatně:**
+- `datum` = ČESKÉ slovo (date)
+- `cas` = ČESKÉ slovo (time)
+- `indexMezery` = ČESKÉ slovo (mezery = space)
+- `datum2`, `cas2`, `datum3`, `cas3` = ČESKÉ názvy + číselné suffixy!
+- `vr` = zkratka (variable result)
+
+#### ✅ SPRÁVNĚ - ANGLICKÉ NÁZVY BEZ ČÍSEL:
+```csharp
+public static DateTime IsValidDateTimeText(string text)
+{
+    DateTime result = DateTime.MinValue;
+    int spaceIndex = text.IndexOf(' ');
+    if (spaceIndex != -1)
+    {
+        var parsedDate = DateTime.Today;
+        var parsedTime = DateTime.Today;
+        var dateText = text.Substring(0, spaceIndex);
+        var timeText = text.Substring(spaceIndex + 1);
+        // ...
+        if (parsedDate != DateTime.MinValue && parsedTime != DateTime.MinValue)
+        {
+            result = new DateTime(parsedDate.Year, parsedDate.Month, parsedDate.Day, parsedTime.Hour, parsedTime.Minute, parsedTime.Second);
+        }
+    }
+    return result;
+}
+```
+**Proč je to správně:**
+- `text` = anglický, obecný název pro string parametr
+- `result` = anglický, samopopisný název pro return value
+- `spaceIndex` = anglický, popisuje co obsahuje
+- `parsedDate`, `parsedTime` = anglické, vyjadřují co proměnná obsahuje (naparsované hodnoty)
+- `dateText`, `timeText` = anglické, vyjadřují co proměnná obsahuje (substring s datem/časem)
+- ŽÁDNÉ číselné suffixy!
+
+**Další české názvy pro indexy nalezené v SunamoDateTime:**
+- `indexTecky` → `dotIndex` ("tečky" = dots, genetiv plurálu od "tečka")
+- `indexMezery` → `spaceIndex` ("mezery" = space, genetiv singulár od "mezera")
+- `indexCiarky` → `commaIndex` ("čárky" = comma)
+
+### Public static fields s "x" prefixem - MUSÍ být PascalCase!
+
+#### ❌ ŠPATNĚ - camelCase s "x" prefixem:
+```csharp
+public static string xNotIndicated = "NotIndicated";
+public static string xfilesFounded = "filesFounded";
+```
+**Proč je to špatně:** `public` static fields MUSÍ být PascalCase! Prefix "x" (pravděpodobně znamená "export" nebo "external") sám o sobě je diskutabilní, ale pokud tam je, musí být velký.
+
+#### ✅ SPRÁVNĚ - PascalCase:
+```csharp
+public static string XNotIndicated = "NotIndicated";
+public static string XFilesFounded = "filesFounded";
+```
+**Nebo ještě lépe - bez "x" prefixu:**
+```csharp
+public static string NotIndicated = "NotIndicated";
+public static string FilesFounded = "filesFounded";
+```
+
+### Konvence pro speciální typy - SunamoDateTime
+
+#### Typ `LangsDt` - VŽDY pojmenovat `lang`
+
+V celém SunamoDateTime projektu platí:
+- **VŠECHNY** parametry typu `LangsDt` MUSÍ být pojmenovány `lang`, NIKDY `l`!
+
+#### ❌ ŠPATNĚ:
+```csharp
+public string ToString(LangsDt l)
+{
+    if (l == LangsDt.cs)
+        return ToStringDateTime(l);
+}
+
+public static string TimeToString(DateTime d, LangsDt l, DateTime dtMinVal)
+{
+    if (l == LangsDt.cs) { ... }
+}
+```
+
+#### ✅ SPRÁVNĚ:
+```csharp
+public string ToString(LangsDt lang)
+{
+    if (lang == LangsDt.cs)
+        return ToStringDateTime(lang);
+}
+
+public static string TimeToString(DateTime dateTime, LangsDt lang, DateTime dtMinVal)
+{
+    if (lang == LangsDt.cs) { ... }
+}
+```
+
+**Důvod:** `LangsDt` je doménově specifický typ který reprezentuje jazyk (Language). Název `lang` je standardní zkratka pro "language" a je dostatečně samopopisný. `l` je jednopísmenná zkratka která je ZAKÁZANÁ.
