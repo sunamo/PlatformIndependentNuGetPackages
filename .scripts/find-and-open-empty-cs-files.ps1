@@ -42,7 +42,7 @@ foreach ($submodule in $submodules) {
         $classContent = $withoutComments -replace 'using[^;]+;', '' -replace 'namespace[^;{]+;', '' -replace 'namespace[^{]+\{', '' -replace '\}$', ''
 
         $hasClass = $classContent -match 'class'
-        $hasMembers = $classContent -match '(\{(get|set);|\breturn\s+|\bnew\s+[\w<>]+\(|=[\w"(]|\w+\s+\w+\s*[=;(]|override\s+|virtual\s+|async\s+\w+\s*\()'
+        $hasMembers = $classContent -match '(\{\s*(get|set)\s*;|\breturn\s+|\bnew\s+[\w<>]+\(|=[\w"(]|\w+\s+\w+\s*[=;(]|override\s+|virtual\s+|async\s+\w+\s*\()'
 
         if ($hasClass -and -not $hasMembers) {
             $emptyFiles += @{ Path = $file.FullName; Reason = "Empty class"; Submodule = $submodule.Name }

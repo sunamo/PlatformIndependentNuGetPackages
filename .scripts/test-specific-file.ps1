@@ -17,7 +17,7 @@ Write-Host "`n=== After removing namespace ===" -ForegroundColor Yellow
 Write-Host $classContent
 
 $hasClass = $classContent -match 'class'
-$hasMembers = $classContent -match '(\{(get|set);|\breturn\s+|\bnew\s+[\w<>]+\(|=[\w"(]|\w+\s+\w+\s*[=;(]|override\s+|virtual\s+|async\s+\w+\s*\()'
+$hasMembers = $classContent -match '(\{\s*(get|set)\s*;|\breturn\s+|\bnew\s+[\w<>]+\(|=[\w"(]|\w+\s+\w+\s*[=;(]|override\s+|virtual\s+|async\s+\w+\s*\()'
 
 Write-Host "`n=== Detection ===" -ForegroundColor Yellow
 Write-Host "Has class: $hasClass"
