@@ -1,0 +1,33 @@
+# Target Frameworks
+
+## Current Configuration
+
+Target frameworks: `net10.0;net9.0`
+
+## Why net8.0 is not supported
+
+<!-- EN: Explain why this project cannot currently support net8.0 -->
+<!-- CZ: Vysvětli proč tento projekt aktuálně nemůže podporovat net8.0 -->
+
+[Doplň důvod zde - například:]
+- Dependency XYZ requires minimum net9.0
+- Uses API that was introduced in .NET 9
+- Package ABC version X.Y.Z is not compatible with net8.0
+
+## Requirements for net8.0 support
+
+<!-- EN: What would need to happen for this project to support net8.0 -->
+<!-- CZ: Co by muselo být splněno aby projekt mohl podporovat net8.0 -->
+
+[Doplň požadavky zde - například:]
+- Wait for dependency XYZ to release net8.0-compatible version
+- Refactor code to avoid .NET 9-specific APIs
+- Upgrade package ABC to version X.Y.Z or higher
+- Add conditional compilation for different framework versions
+
+## Notes
+
+<!-- EN: Additional notes about framework compatibility -->
+<!-- CZ: Další poznámky o kompatibilitě frameworků -->
+
+[Volitelné poznámky]

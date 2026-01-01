@@ -1,3 +1,7 @@
+param(
+    [int]$GroupNumber = 0
+)
+
 # Read groups from submodules-grouped.md
 $groupsFile = Join-Path $PSScriptRoot "submodules-grouped.md"
 $groupsContent = Get-Content $groupsFile -Raw
@@ -11,8 +15,10 @@ foreach ($line in (Get-Content $groupsFile)) {
         $currentGroup = [int]$Matches[1]
         $groups[$currentGroup] = @()
     }
-    elseif ($line -match '^- (.+)$' -and $null -ne $currentGroup) {
-        $groups[$currentGroup] += $Matches[1]
+    elseif ($line -match '^- ([^\s(]+)' -and $null -ne $currentGroup) {
+        # Extract project name without statistics (everything before space or parenthesis)
+        $projectName = $Matches[1].Trim()
+        $groups[$currentGroup] += $projectName
     }
 }
 
@@ -58,7 +64,11 @@ function Get-ProjectStats {
 $outputFile = Join-Path $PSScriptRoot "variable-renaming-progress.md"
 $output = @()
 
-$output += "# Variable Renaming Progress Report"
+if ($GroupNumber -gt 0) {
+    $output += "# Variable Renaming Progress Report - Group $GroupNumber"
+} else {
+    $output += "# Variable Renaming Progress Report"
+}
 $output += ""
 $output += "Progress of adding `// variables names: ok` comments to files."
 $output += ""
@@ -71,8 +81,20 @@ $totalWithComment = 0
 $projectsAt100 = 0
 $projectsAt0 = 0
 
+# Determine which groups to process
+$groupsToProcess = if ($GroupNumber -gt 0) {
+    if ($groups.ContainsKey($GroupNumber)) {
+        @($GroupNumber)
+    } else {
+        Write-Host "Group $GroupNumber not found in submodules-grouped.md" -ForegroundColor Red
+        exit 1
+    }
+} else {
+    $groups.Keys | Sort-Object
+}
+
 # Process each group
-foreach ($groupNum in ($groups.Keys | Sort-Object)) {
+foreach ($groupNum in $groupsToProcess) {
     $output += "## Group $groupNum"
     $output += ""
     $output += "| Project | Progress | Files | Percentage |"
@@ -119,12 +141,18 @@ foreach ($groupNum in ($groups.Keys | Sort-Object)) {
 # Summary
 $output += "## Summary"
 $output += ""
+$overallPercentage = if ($totalFiles -gt 0) {
+    [math]::Round(($totalWithComment / $totalFiles) * 100, 2)
+} else {
+    0
+}
+
 $output += "| Metric | Value |"
 $output += "|--------|-------|"
 $output += "| Total projects analyzed | $totalProjects |"
 $output += "| Total .cs files | $totalFiles |"
 $output += "| Files with comment | $totalWithComment |"
-$output += "| Overall percentage | $([math]::Round(($totalWithComment / $totalFiles) * 100, 2))% |"
+$output += "| Overall percentage | $overallPercentage% |"
 $output += "| Projects at 100% | $projectsAt100 |"
 $output += "| Projects at 0% | $projectsAt0 |"
 $output += "| Projects in progress | $($totalProjects - $projectsAt100 - $projectsAt0) |"
@@ -141,4 +169,15 @@ $output += "- ⚫ 0% complete"
 # Write to file
 $output | Out-File -FilePath $outputFile -Encoding UTF8
 
-Write-Host "Report generated: $outputFile"
+# Write to console
+Write-Host ""
+foreach ($line in $output) {
+    Write-Host $line
+}
+Write-Host ""
+
+if ($GroupNumber -gt 0) {
+    Write-Host "Report generated for Group $GroupNumber only: $outputFile" -ForegroundColor Green
+} else {
+    Write-Host "Report generated for all groups: $outputFile" -ForegroundColor Green
+}

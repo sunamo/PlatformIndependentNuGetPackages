@@ -17,13 +17,13 @@ Total submodules: 135
 
 ## Group 2
 
-- SunamoClipboard (33.33% - 2/6)
+- SunamoClipboanrd (33.33% - 2/6)
 - SunamoCollectionOnDrive (0% - 0/18)
 - SunamoCollections (6.52% - 3/46)
 - SunamoCollectionsChangeContent (0% - 0/10)
 - SunamoCollectionsGeneric (0% - 0/47)
 - SunamoCollectionsIndexesWithNull (0% - 0/9)
-- SunamoCollectionsNonGeneric (0% - 0/8)
+- SunamoCollectidonsNonGeneric (0% - 0/8)
 - SunamoCollectionsTo (0% - 0/4)
 - SunamoCollectionsValuesTableGrid (0% - 0/11)
 - SunamoCollectionWithoutDuplicates (0% - 0/14)
@@ -168,7 +168,6 @@ Total submodules: 135
 - SunamoXml (0% - 0/26)
 - SunamoYaml (0% - 0/10)
 - SunamoYouTube (0% - 0/11)
-
 
 ---
 

@@ -1,0 +1,15 @@
+Committing changes in all submodules...
+
+
+============================================
+SUMMARY
+============================================
+
+Committed: 0
+Skipped: 0
+Failed: 0
+
+Now update the main repository:
+  git add .
+  git commit -m 'feat: update all packages to 26.1.1.X with net10.0;net9.0;net8.0'
+  git push

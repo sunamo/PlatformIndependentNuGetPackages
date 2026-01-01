@@ -1,0 +1,12 @@
+Write-Error: E:\vs\Projects\PlatformIndependentNuGetPackages\.scripts\republish-nuget-packages.ps1:412
+Line |
+ 412 |  …  $success = Publish-NuGetPackage -ProjectPath $pkg.ProjectPath -Packa …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     |   Build failed for SunamoHtml
+
+Write-Error: E:\vs\Projects\PlatformIndependentNuGetPackages\.scripts\republish-nuget-packages.ps1:412
+Line |
+ 412 |  …  $success = Publish-NuGetPackage -ProjectPath $pkg.ProjectPath -Packa …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     |   Build failed for SunamoDevCode
+

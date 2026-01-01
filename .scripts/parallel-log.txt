@@ -1,0 +1,146 @@
+Starting parallel republishing with 8 concurrent jobs...
+
+Skipping SunamoFtp (already published)
+Skipping SunamoIni (already published)
+Skipping SunamoMarkdown (already published)
+Skipping SunamoCsv (already published)
+Skipping SunamoFluentFtp (already published)
+Skipping SunamoDebugIO (already published)
+Skipping SunamoMail (already published)
+Skipping SunamoPS (already published)
+Skipping SunamoClearScript (already published)
+Skipping SunamoDebugging (already published)
+Skipping SunamoPInvoke (already published)
+Skipping SunamoYouTube (already published)
+Skipping SunamoCrypt (already published)
+Skipping SunamoCl (already published)
+Skipping SunamoPackageJson (already published)
+Skipping SunamoWinStd (already published)
+Skipping SunamoXml (already published)
+Skipping SunamoVcf (already published)
+Skipping SunamoValues (already published)
+Skipping SunamoUri (already published)
+Skipping SunamoUnderscore (already published)
+Skipping SunamoTwoWayDictionary (already published)
+Skipping SunamoThread (already published)
+Skipping SunamoThisApp (already published)
+Skipping SunamoTextOutputGenerator (already published)
+Skipping SunamoStringTrim (already published)
+Skipping SunamoStringSubstring (already published)
+Skipping SunamoStringSplit (already published)
+Skipping SunamoStringReplace (already published)
+Skipping SunamoStringJoin (already published)
+Skipping SunamoStringGetLines (already published)
+Found 97 packages to publish
+
+
+============================================
+RESULTS
+============================================
+
+û SunamoRss - 26.1.1.3  26.1.1.51
+û SunamoStopwatch - 26.1.1.4  26.1.1.55
+û SunamoRegex - 26.1.1.1  26.1.1.50
+û SunamoPercentCalculator - 26.1.1.5  26.1.1.52
+û SunamoReflection - 26.1.1.2  26.1.1.53
+û SunamoString - 26.1.1.8  26.1.1.49
+û SunamoPlatformUwpInterop - 26.1.1.6  26.1.1.54
+û SunamoRandom - 26.1.1.7  26.1.1.56
+û SunamoNuGetProtocol - 26.1.1.13  26.1.1.68
+û SunamoParsing - 26.1.1.9  26.1.1.62
+û SunamoOctokit - 26.1.1.10  26.1.1.65
+û SunamoMime - 26.1.1.16  26.1.1.70
+û SunamoLang - 26.1.1.13  26.1.1.71
+û SunamoMsgReader - 26.1.1.12  26.1.1.67
+û SunamoNumbers - 26.1.1.14  26.1.1.66
+? SunamoHtml - Build failed
+? SunamoFileIO - Push failed: error: Could not find a part of the path 'E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\bin'.
+û SunamoFileSystem - 26.1.1.1  26.1.1.75
+û SunamoGoogleSheets - 26.1.1.19  26.1.1.74
+û SunamoExceptions - 26.1.1.21  26.1.1.83
+û SunamoFileExtensions - 26.1.1.19  26.1.1.78
+û SunamoInterfaces - 26.1.1.17  26.1.1.72
+û SunamoExtensions - 26.1.1.22  26.1.1.79
+û SunamoConverters - 26.1.1.29  26.1.1.100
+û SunamoEnumsHelper - 26.1.1.20  26.1.1.88
+û SunamoDictionary - 26.1.1.24  26.1.1.90
+û SunamoDebugCollection - 26.1.1.26  26.1.1.93
+û SunamoEnums - 26.1.1.23  26.1.1.89
+û SunamoDelegates - 26.1.1.25  26.1.1.92
+û SunamoDateTime - 26.1.1.27  26.1.1.99
+û SunamoCompare - 26.1.1.30  26.1.1.107
+û SunamoData - 26.1.1.28  26.1.1.98
+û SunamoClipboard - 26.1.1.36  26.1.1.120
+û SunamoColors - 26.1.1.31  26.1.1.109
+û SunamoCollectionsChangeContent - 26.1.1.34  26.1.1.115
+û SunamoCollectionsGeneric - 26.1.1.33  26.1.1.116
+û SunamoCollectionWithoutDuplicates - 26.1.1.32  26.1.1.110
+û SunamoCollections - 26.1.1.35  26.1.1.117
+û SunamoChar - 26.1.1.37  26.1.1.123
+û SunamoBts - 26.1.1.38  26.1.1.124
+û SunamoStringGetString - 26.1.1.42  26.1.1.134
+? SunamoDevCode - Build failed
+û SunamoStringParts - 26.1.1.44  26.1.1.137
+û SunamoAttributes - 26.1.1.39  26.1.1.126
+û SunamoStringJoinPairs - 26.1.1.46  26.1.1.140
+û SunamoCollectionsIndexesWithNull - 26.1.1.45  26.1.1.139
+û SunamoStringFormat - 26.1.1.43  26.1.1.135
+û SunamoSerializer - 26.1.1.41  26.1.1.133
+û SunamoCollectionsNonGeneric - 26.1.1.58  26.1.1.145
+û SunamoEmbeddedResources - 26.1.1.59  26.1.1.146
+û SunamoAsync - 26.1.1.48  26.1.1.143
+û SunamoXliffParser - 26.1.1.47  26.1.1.141
+û SunamoXlfKeys - 26.1.1.60  26.1.1.149
+û SunamoUriWebServices - 26.1.1.57  26.1.1.144
+û SunamoCollectionsValuesTableGrid - 26.1.1.61  26.1.1.150
+û SunamoCollectionOnDrive - 26.1.1.63  26.1.1.151
+û SunamoText - 26.1.1.64  26.1.1.153
+û SunamoHttp - 26.1.1.81  26.1.1.156
+û SunamoWikipedia - 26.1.1.80  26.1.1.155
+û SunamoJson - 26.1.1.76  26.1.1.154
+û SunamoGetFolders - 26.1.1.84  26.1.1.158
+û SunamoGetFiles - 26.1.1.82  26.1.1.157
+û SunamoShared - 26.1.1.69  26.1.1.152
+û SunamoDotnetCmdBuilder - 26.1.1.86  26.1.1.159
+û SunamoYaml - 26.1.1.87  26.1.1.161
+û SunamoLogging - 26.1.1.85  26.1.1.160
+û SunamoRobotsTxt - 26.1.1.97  26.1.1.166
+û SunamoCollectionsTo - 26.1.1.94  26.1.1.163
+û SunamoToUnixLineEnding - 26.1.1.95  26.1.1.165
+û SunamoRuleset - 26.1.1.96  26.1.1.164
+û SunamoTidy - 26.1.1.91  26.1.1.162
+û SunamoLaTeX - 26.1.1.101  26.1.1.168
+û SunamoGitConfig - 26.1.1.103  26.1.1.169
+û SunamoEditorConfig - 26.1.1.104  26.1.1.170
+û SunamoTypes - 26.1.1.108  26.1.1.173
+û SunamoBazosCrawler - 26.1.1.106  26.1.1.172
+û SunamoCssGenerator - 26.1.1.105  26.1.1.171
+û SunamoResult - 26.1.1.111  26.1.1.174
+û SunamoCsproj - 26.1.1.112  26.1.1.175
+û SunamoMathpix - 26.1.1.102  26.1.1.167
+û SunamoGpx - 26.1.1.114  26.1.1.177
+û SunamoFilesIndex - 26.1.1.121  26.1.1.180
+û SunamoArgs - 26.1.1.119  26.1.1.179
+û SunamoGoogleMyMaps - 26.1.1.118  26.1.1.178
+û SunamoThreading - 26.1.1.122  26.1.1.181
+û SunamoTextIndexing - 26.1.1.125  26.1.1.182
+û SunamoSecurity - 26.1.1.128  26.1.1.184
+û SunamoEmoticons - 26.1.1.127  26.1.1.183
+û SunamoDependencyInjection - 26.1.1.131  26.1.1.186
+û SunamoPaths - 26.1.1.132  26.1.1.187
+û SunamoMsSqlServer - 26.1.1.138  26.1.1.189
+û SunamoDotNetZip - 26.1.1.136  26.1.1.188
+û SunamoTest - 26.1.1.142  26.1.1.190
+û SunamoRoslyn - 26.1.1.129  26.1.1.185
+û SunamoAI - 26.1.1.148  26.1.1.192
+û SunamoAzureDevOpsApi - 26.1.1.147  26.1.1.191
+û SunamoSelenium - 26.1.1.113  26.1.1.176
+
+============================================
+SUMMARY
+============================================
+
+Successful: 94
+Skipped: 0
+Failed: 3
+Total: 97
