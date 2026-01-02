@@ -4,7 +4,8 @@ param(
     [string]$VsVersion = "2022",  # EN: VS version (2022 or 2026) | CZ: VS verze (2022 nebo 2026)
     [switch]$ListOnly,
     [switch]$ForceDevenvEdit,  # EN: Force use of devenv.exe /Edit instead of DTE | CZ: Vynuť použití devenv.exe /Edit místo DTE
-    [switch]$SkipConfirmation  # EN: Skip confirmation prompt (for non-interactive execution) | CZ: Přeskoč potvrzení (pro non-interaktivní spuštění)
+    [switch]$SkipConfirmation,  # EN: Skip confirmation prompt (for non-interactive execution) | CZ: Přeskoč potvrzení (pro non-interaktivní spuštění)
+    [switch]$DeleteEmptyFiles  # EN: Delete empty .cs files instead of opening them | CZ: Smaž prázdné .cs soubory místo jejich otevření
 )
 
 # EN: Check if running in PowerShell 7+ (pwsh) - DTE automation works better in Windows PowerShell 5.1
@@ -35,6 +36,9 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
         }
         if ($SkipConfirmation) {
             $arguments += '-SkipConfirmation'
+        }
+        if ($DeleteEmptyFiles) {
+            $arguments += '-DeleteEmptyFiles'
         }
 
         & $powershellPath @arguments
@@ -292,15 +296,68 @@ foreach ($projectPath in $projectPaths) {
 
 Write-Host "Found $($allCsFiles.Count) .cs file(s)" -ForegroundColor Cyan
 
-# EN: Filter files without "// variables names: ok"
-# CZ: Filtruj soubory bez "// variables names: ok"
+# EN: Filter files without "// variables names: ok" and handle empty files
+# CZ: Filtruj soubory bez "// variables names: ok" a zpracuj prázdné soubory
 $filesToOpen = @()
+$emptyFilesToDelete = @()
+
 foreach ($file in $allCsFiles) {
     $content = Get-Content $file.FullName -Raw -ErrorAction SilentlyContinue
-    # EN: Use -notlike for simple wildcard matching (more reliable than regex in PowerShell)
-    # CZ: Použij -notlike pro jednoduché wildcard matching (spolehlivější než regex v PowerShellu)
-    if ($content -notlike '*variables names: ok*') {
+
+    # EN: Handle null/empty content
+    # CZ: Zpracuj null/prázdný obsah
+    if ([string]::IsNullOrWhiteSpace($content)) {
+        if ($DeleteEmptyFiles) {
+            $emptyFilesToDelete += $file.FullName
+        } else {
+            $filesToOpen += $file.FullName
+        }
+        continue
+    }
+
+    # EN: Use regex for consistent matching with generate-progress-report.ps1
+    # CZ: Použij regex pro konzistentní matching s generate-progress-report.ps1
+    if ($content -notmatch '//\s*variables\s+names:\s*ok') {
         $filesToOpen += $file.FullName
+    }
+}
+
+# EN: Delete empty files if requested
+# CZ: Smaž prázdné soubory pokud je to požadováno
+if ($DeleteEmptyFiles -and $emptyFilesToDelete.Count -gt 0) {
+    Write-Host "`nFound $($emptyFilesToDelete.Count) empty .cs file(s):" -ForegroundColor Yellow
+    foreach ($emptyFile in $emptyFilesToDelete) {
+        Write-Host "  $emptyFile" -ForegroundColor Gray
+    }
+
+    if (-not $SkipConfirmation) {
+        Write-Host "`n============================================" -ForegroundColor Red
+        Write-Host "WARNING / VAROVÁNÍ:" -ForegroundColor Red
+        Write-Host "============================================" -ForegroundColor Red
+        Write-Host "EN: About to DELETE $($emptyFilesToDelete.Count) empty file(s)!" -ForegroundColor Yellow
+        Write-Host "CZ: Chystám se SMAZAT $($emptyFilesToDelete.Count) prázdný/é soubor/y!" -ForegroundColor Yellow
+        Write-Host "============================================" -ForegroundColor Red
+        Write-Host ""
+        $confirmation = Read-Host "EN: Proceed with deletion? (Y/N) | CZ: Pokračovat se smazáním? (Y/N)"
+
+        if ($confirmation -ne 'Y' -and $confirmation -ne 'y') {
+            Write-Host "`nDeletion cancelled." -ForegroundColor Red
+            Write-Host "Smazání zrušeno." -ForegroundColor Red
+            $emptyFilesToDelete = @()
+        }
+    }
+
+    if ($emptyFilesToDelete.Count -gt 0) {
+        Write-Host "`nDeleting empty files..." -ForegroundColor Yellow
+        foreach ($emptyFile in $emptyFilesToDelete) {
+            try {
+                Remove-Item -Path $emptyFile -Force
+                Write-Host "  DELETED: $emptyFile" -ForegroundColor Green
+            } catch {
+                Write-Host "  ERROR: Failed to delete $emptyFile - $($_.Exception.Message)" -ForegroundColor Red
+            }
+        }
+        Write-Host "`nDeleted $($emptyFilesToDelete.Count) empty file(s)" -ForegroundColor Green
     }
 }
 

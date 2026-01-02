@@ -32,7 +32,13 @@ function Get-ProjectStats {
         return $null
     }
 
-    $csFiles = Get-ChildItem -Path $projectPath -Filter '*.cs' -Recurse -File -ErrorAction SilentlyContinue
+    # EN: Get all .cs files excluding obj/, bin/ and GlobalUsings.cs (same logic as open-files-without-var-ok.ps1)
+    # CZ: Získej všechny .cs soubory kromě obj/, bin/ a GlobalUsings.cs (stejná logika jako open-files-without-var-ok.ps1)
+    $csFiles = @(Get-ChildItem -Path $projectPath -Filter '*.cs' -Recurse -File -ErrorAction SilentlyContinue | Where-Object {
+        $_.FullName -notmatch [regex]::Escape("\obj\") -and
+        $_.FullName -notmatch [regex]::Escape("\bin\") -and
+        $_.Name -ne "GlobalUsings.cs"
+    })
 
     if ($csFiles.Count -eq 0) {
         return $null
@@ -42,6 +48,13 @@ function Get-ProjectStats {
 
     foreach ($file in $csFiles) {
         $content = Get-Content -Path $file.FullName -Raw -ErrorAction SilentlyContinue
+
+        # EN: Skip null/empty files (they don't have the comment)
+        # CZ: Přeskoč null/prázdné soubory (nemají komentář)
+        if ([string]::IsNullOrWhiteSpace($content)) {
+            continue
+        }
+
         if ($content -match '//\s*variables\s+names:\s*ok') {
             $filesWithComment++
         }
@@ -115,7 +128,8 @@ foreach ($groupNum in $groupsToProcess) {
         if ($stats.Percentage -eq 100) { $projectsAt100++ }
         if ($stats.Percentage -eq 0) { $projectsAt0++ }
 
-        # Create progress bar
+        # EN: Create progress bar (20 chars wide, 5% per char)
+        # CZ: Vytvoř progress bar (20 znaků široký, 5% na znak)
         $barLength = [math]::Floor($stats.Percentage / 5)
         $progressBar = ""
         if ($barLength -gt 0) {
@@ -123,6 +137,10 @@ foreach ($groupNum in $groupsToProcess) {
         }
         $emptyBar = "░" * (20 - $barLength)
         $fullBar = "$progressBar$emptyBar"
+
+        # EN: Add percentage text inside/after the bar for better visibility
+        # CZ: Přidej procenta do/za bar pro lepší viditelnost
+        $percentText = "$($stats.Percentage)%".PadLeft(7)
 
         # Color indicator
         $indicator = if ($stats.Percentage -eq 100) { "🟢" }
@@ -132,7 +150,9 @@ foreach ($groupNum in $groupsToProcess) {
                      elseif ($stats.Percentage -gt 0) { "🔴" }
                      else { "⚫" }
 
-        $output += "| $projectName | $indicator $fullBar | $($stats.FilesWithComment)/$($stats.TotalFiles) | $($stats.Percentage)% |"
+        # EN: Format table row with aligned columns
+        # CZ: Formátuj řádek tabulky se zarovnanými sloupci
+        $output += "| $projectName | $indicator $fullBar | $($stats.FilesWithComment)/$($stats.TotalFiles) | $percentText |"
     }
 
     $output += ""
@@ -166,13 +186,74 @@ $output += "- 🟠 25-49% complete"
 $output += "- 🔴 1-24% complete"
 $output += "- ⚫ 0% complete"
 
-# Write to file
-$output | Out-File -FilePath $outputFile -Encoding UTF8
+# EN: Write to file with UTF8 BOM for emoji support
+# CZ: Zapiš do souboru s UTF8 BOM pro podporu emoji
+$output | Out-File -FilePath $outputFile -Encoding utf8BOM
 
-# Write to console
+# EN: Write to console with colors for better readability
+# CZ: Zapiš do konzole s barvami pro lepší čitelnost
 Write-Host ""
-foreach ($line in $output) {
-    Write-Host $line
+# EN: Temporarily set console output encoding to UTF8
+# CZ: Dočasně nastav console output encoding na UTF8
+$previousEncoding = [Console]::OutputEncoding
+try {
+    [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+    foreach ($line in $output) {
+        # EN: Add colors based on content
+        # CZ: Přidej barvy podle obsahu
+        if ($line -match '^#') {
+            # EN: Headers in cyan
+            # CZ: Hlavičky v cyan
+            Write-Host $line -ForegroundColor Cyan
+        }
+        elseif ($line -match '100%') {
+            # EN: 100% complete in green
+            # CZ: 100% hotové v zelené
+            Write-Host $line -ForegroundColor Green
+        }
+        elseif ($line -match '\| [^|]+ \| 🟢') {
+            # EN: Green emoji rows in green
+            # CZ: Řádky se zeleným emoji v zelené
+            Write-Host $line -ForegroundColor Green
+        }
+        elseif ($line -match '\| [^|]+ \| 🔵') {
+            # EN: Blue emoji rows in cyan
+            # CZ: Řádky s modrým emoji v cyan
+            Write-Host $line -ForegroundColor Cyan
+        }
+        elseif ($line -match '\| [^|]+ \| 🟡') {
+            # EN: Yellow emoji rows in yellow
+            # CZ: Řádky se žlutým emoji ve žluté
+            Write-Host $line -ForegroundColor Yellow
+        }
+        elseif ($line -match '\| [^|]+ \| 🟠') {
+            # EN: Orange emoji rows in DarkYellow
+            # CZ: Řádky s oranžovým emoji v DarkYellow
+            Write-Host $line -ForegroundColor DarkYellow
+        }
+        elseif ($line -match '\| [^|]+ \| 🔴') {
+            # EN: Red emoji rows in red
+            # CZ: Řádky s červeným emoji v červené
+            Write-Host $line -ForegroundColor Red
+        }
+        elseif ($line -match '\| [^|]+ \| ⚫') {
+            # EN: Black emoji rows in gray
+            # CZ: Řádky s černým emoji v šedé
+            Write-Host $line -ForegroundColor Gray
+        }
+        elseif ($line -match '^\|[-|]+\|$') {
+            # EN: Table separators in dark gray
+            # CZ: Oddělovače tabulky v tmavě šedé
+            Write-Host $line -ForegroundColor DarkGray
+        }
+        else {
+            # EN: Default white
+            # CZ: Výchozí bílá
+            Write-Host $line
+        }
+    }
+} finally {
+    [Console]::OutputEncoding = $previousEncoding
 }
 Write-Host ""
 
