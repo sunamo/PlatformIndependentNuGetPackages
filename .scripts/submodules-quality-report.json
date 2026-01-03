@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoClipboard",
+    "Submodule": "SunamoColors",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCollectionOnDrive",
+    "Submodule": "SunamoCompare",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,17 +16,33 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCollections",
+    "Submodule": "SunamoConverters",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCrypt",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCsproj",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "HAS_WARNINGS",
     "BuildErrors": [
-      "RunnerCollections - Warnings: 683"
+      "RunnerCsproj - Warnings: 906"
     ],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCollectionsChangeContent",
+    "Submodule": "SunamoCssGenerator",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -34,49 +50,35 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCollectionsGeneric",
+    "Submodule": "SunamoCsv",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
-    "BuildStatus": "HAS_WARNINGS",
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoData",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDateTime",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_ERRORS",
     "BuildErrors": [
-      "RunnerCollectionsGeneric - Warnings: 222"
+      "RunnerDateTime - Errors: 45",
+      "SunamoDateTime - Errors: 45",
+      "SunamoDateTime.Tests - Errors: 45"
     ],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCollectionsIndexesWithNull",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCollectionsNonGeneric",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCollectionsTo",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCollectionsValuesTableGrid",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCollectionWithoutDuplicates",
+    "Submodule": "SunamoDebugCollection",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
