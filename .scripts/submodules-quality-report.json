@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoAI",
+    "Submodule": "SunamoClipboard",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoArgs",
+    "Submodule": "SunamoCollectionOnDrive",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,33 +16,17 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoAsync",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoAttributes",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoAzureDevOpsApi",
+    "Submodule": "SunamoCollections",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "HAS_WARNINGS",
     "BuildErrors": [
-      "RunnerAzureDevOpsApi - Warnings: 12"
+      "RunnerCollections - Warnings: 683"
     ],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoBazosCrawler",
+    "Submodule": "SunamoCollectionsChangeContent",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -50,39 +34,49 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoBts",
+    "Submodule": "SunamoCollectionsGeneric",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoChar",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCl",
-    "NoWarnStatus": "HAS_NOWARN",
-    "NoWarnFiles": [
-      "SunamoCl\\RunnerCl\\RunnerCl.csproj",
-      "SunamoCl\\SunamoCl\\SunamoCl.csproj",
-      "SunamoCl\\SunamoCl.Tests\\SunamoCl.Tests.csproj"
-    ],
-    "BuildStatus": "HAS_ERRORS",
+    "BuildStatus": "HAS_WARNINGS",
     "BuildErrors": [
-      "RunnerCl - Errors: 2",
-      "SunamoCl - Warnings: 633",
-      "SunamoCl.Tests - Errors: 1"
+      "RunnerCollectionsGeneric - Warnings: 222"
     ],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoClearScript",
+    "Submodule": "SunamoCollectionsIndexesWithNull",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsNonGeneric",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsTo",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsValuesTableGrid",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionWithoutDuplicates",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
