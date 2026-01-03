@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoColors",
+    "Submodule": "SunamoAI",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCompare",
+    "Submodule": "SunamoArgs",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,7 +16,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoConverters",
+    "Submodule": "SunamoAsync",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -24,7 +24,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCrypt",
+    "Submodule": "SunamoAttributes",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -32,17 +32,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCsproj",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "HAS_WARNINGS",
-    "BuildErrors": [
-      "RunnerCsproj - Warnings: 906"
-    ],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCssGenerator",
+    "Submodule": "SunamoAzureDevOpsApi",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -50,7 +40,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoCsv",
+    "Submodule": "SunamoBazosCrawler",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -58,7 +48,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoData",
+    "Submodule": "SunamoBts",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -66,19 +56,23 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDateTime",
+    "Submodule": "SunamoChar",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
-    "BuildStatus": "HAS_ERRORS",
-    "BuildErrors": [
-      "RunnerDateTime - Errors: 45",
-      "SunamoDateTime - Errors: 45",
-      "SunamoDateTime.Tests - Errors: 45"
-    ],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDebugCollection",
+    "Submodule": "SunamoCl",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoClearScript",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
