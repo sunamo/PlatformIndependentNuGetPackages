@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoEmoticons",
+    "Submodule": "SunamoAI",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoEnums",
+    "Submodule": "SunamoArgs",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,21 +16,33 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoEnumsHelper",
-    "NoWarnStatus": "HAS_NOWARN",
-    "NoWarnFiles": [
-      "SunamoEnumsHelper\\RunnerEnumsHelper\\RunnerEnumsHelper.csproj",
-      "SunamoEnumsHelper\\SunamoEnumsHelper\\SunamoEnumsHelper.csproj",
-      "SunamoEnumsHelper\\SunamoEnumsHelper.Tests\\SunamoEnumsHelper.Tests.csproj"
-    ],
+    "Submodule": "SunamoAsync",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoAttributes",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoAzureDevOpsApi",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
     "BuildStatus": "HAS_WARNINGS",
     "BuildErrors": [
-      "RunnerEnumsHelper - Warnings: 72"
+      "RunnerAzureDevOpsApi - Warnings: 12"
     ],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoExceptions",
+    "Submodule": "SunamoBazosCrawler",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -38,7 +50,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoExtensions",
+    "Submodule": "SunamoBts",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -46,51 +58,31 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoFileExtensions",
+    "Submodule": "SunamoChar",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCl",
     "NoWarnStatus": "HAS_NOWARN",
     "NoWarnFiles": [
-      "SunamoFileExtensions\\RunnerFileExtensions\\RunnerFileExtensions.csproj",
-      "SunamoFileExtensions\\SunamoFileExtensions\\SunamoFileExtensions.csproj",
-      "SunamoFileExtensions\\SunamoFileExtensions.Tests\\SunamoFileExtensions.Tests.csproj"
-    ],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoFileIO",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoFilesIndex",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoFileSystem",
-    "NoWarnStatus": "HAS_NOWARN",
-    "NoWarnFiles": [
-      "SunamoFileSystem\\RunnerFileSystem\\RunnerFileSystem.csproj",
-      "SunamoFileSystem\\SunamoFileSystem\\SunamoFileSystem.csproj",
-      "SunamoFileSystem\\SunamoFileSystem.Tests\\SunamoFileSystem.Tests.csproj"
+      "SunamoCl\\RunnerCl\\RunnerCl.csproj",
+      "SunamoCl\\SunamoCl\\SunamoCl.csproj",
+      "SunamoCl\\SunamoCl.Tests\\SunamoCl.Tests.csproj"
     ],
     "BuildStatus": "HAS_ERRORS",
     "BuildErrors": [
-      "RunnerFileSystem - Errors: 16",
-      "SunamoFileSystem - Errors: 3",
-      "SunamoFileSystem.Tests - Errors: 7"
+      "RunnerCl - Errors: 2",
+      "SunamoCl - Warnings: 633",
+      "SunamoCl.Tests - Errors: 1"
     ],
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoFluentFtp",
+    "Submodule": "SunamoClearScript",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
