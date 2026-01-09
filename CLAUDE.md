@@ -1,5 +1,19 @@
 - všechny složky které na této úrovni vytvoříš mi dej do složek začínající tečkou. tedy .scripts místo scripts.
 
+## PRAVIDLA PRO SKRIPTY
+
+### KRITICKÉ: Kontrola existujících skriptů před vytvořením nového
+- **PŘED VYTVOŘENÍM NOVÉHO SKRIPTU** VŽDY zkontroluj jestli už podobný skript neexistuje v `.scripts/` složce
+- **POKUD PODOBNÝ SKRIPT EXISTUJE**, uprav ten existující místo vytváření nového
+- **POKUD EXISTUJE NĚKOLIK PODOBNÝCH SKRIPTŮ**, zkombinuj je do jednoho s plnou funkcionalitou
+- Použij `ls .scripts/` nebo `Get-ChildItem .scripts/` pro zobrazení existujících skriptů
+- Přečti existující skripty pomocí Read tool před rozhodnutím o vytvoření nového
+
+### Důvod pravidla
+- Zabraňuje duplikaci funkcionalit
+- Udržuje codebase čistý a organizovaný
+- Jeden komplexní skript s parametry je lepší než více jednoduchých skriptů
+
 ## PŘEJMENOVÁNÍ PROMĚNNÝCH NA SAMOPOPISNÉ NÁZVY
 
 ### Obecná pravidla

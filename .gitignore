@@ -270,3 +270,7 @@ paket-files/
 __pycache__/
 *.pyc
 .vs
+
+# Reserved Windows filenames (invalid paths)
+nul
+NUL

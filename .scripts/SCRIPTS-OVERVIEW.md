@@ -27,6 +27,40 @@ Nejčastěji používané skripty pro každodenní práci:
   - CZ: Otevře pwsh taby ve Windows Terminal pro všechny submoduly v zadané skupině
   - Parametr: `-GroupNumber` pro výběr skupiny
 
+- **`open-submodule-tabs.ps1 -SubmoduleName [-Count]`** - Otevře N tabů pro jeden submodul
+  - EN: Opens N pwsh tabs in Windows Terminal for the specified submodule with Claude running
+  - CZ: Otevře N pwsh tabů ve Windows Terminal pro zadaný submodul se spuštěným Claude
+  - Parametry: `-SubmoduleName` (povinný), `-Count` (volitelný, default 10)
+
+## 🔄 Ke třídění
+
+Nově přidané skripty které zatím nejsou zařazené do kategorií:
+
+- **`add-variables-ok-comment-grouped.ps1 [-GroupNumber]`** - Hromadné přidání "variables names: ok" komentáře
+  - EN: Add "// variables names: ok" comment to all .cs files in specified group of submodules
+  - CZ: Přidá "// variables names: ok" komentář do všech .cs souborů ve specifické skupině submodulů
+  - Parametr: `-GroupNumber` (volitelný, 0 = všechny submoduly)
+
+- **`find-empty-classes.ps1 [-Remove] [-DryRun]`** - Najde prázdné C# třídy
+  - EN: Finds empty C# classes and optionally removes them
+  - CZ: Najde prázdné C# třídy a volitelně je smaže
+  - Parametry: `-Remove` (smaže soubory), `-DryRun` (default true)
+
+- **`get-var-ok-stats.ps1 -SolutionDir`** - Statistiky "variables names: ok" komentářů
+  - EN: Get statistics about "// variables names: ok" comments in solution
+  - CZ: Získá statistiky o "// variables names: ok" komentářích v solution
+  - Parametr: `-SolutionDir` (povinný) - cesta k solution adresáři
+
+- **`group-files-without-var-ok.ps1 -SolutionDir`** - Seskupí soubory bez "variables names: ok"
+  - EN: Groups .cs files without "// variables names: ok" comment
+  - CZ: Seskupí .cs soubory bez "// variables names: ok" komentáře
+  - Parametr: `-SolutionDir` (povinný) - cesta k solution adresáři
+
+- **`remove-empty-classes.ps1 [-Force] [-DryRun] [-OpenInVS]`** - Smaže prázdné C# třídy
+  - EN: Checks and removes empty C# classes with various options
+  - CZ: Zkontroluje a smaže prázdné C# třídy s různými možnostmi
+  - Parametry: `-Force` (bez potvrzení), `-DryRun` (default true), `-OpenInVS` (otevře v VS)
+
 ## 📌 Pravidelně používané skripty
 
 ### NuGet Management
