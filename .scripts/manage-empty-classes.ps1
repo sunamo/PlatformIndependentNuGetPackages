@@ -3,27 +3,27 @@
 # CZ: Najdi, analyzuj a spravuj prázdné C# třídy s různými možnostmi
 #
 # Usage examples:
-#   .\manage-empty-classes.ps1                                  # Find and list (dry run) in all submodules
+#   .\manage-empty-classes.ps1 -DryRun                          # Find and list (dry run) in all submodules
 #   .\manage-empty-classes.ps1 -Submodule "SunamoAsync"         # Work only in SunamoAsync submodule
 #   .\manage-empty-classes.ps1 -ListOnly                        # Just list, no actions
 #   .\manage-empty-classes.ps1 -OpenInVS                        # Open in Visual Studio
 #   .\manage-empty-classes.ps1 -OpenInCursor                    # Open in Cursor (batches of 20)
-#   .\manage-empty-classes.ps1 -Remove -DryRun:$false -Force    # Actually remove files
-#   .\manage-empty-classes.ps1 -AutoDelete -DryRun:$false       # Auto-delete truly empty classes (just comments/whitespace)
-#   .\manage-empty-classes.ps1 -CheckUsage:$false               # Skip usage checking (faster)
-#   .\manage-empty-classes.ps1 -Submodule "SunamoDateTime" -Remove -DryRun:$false -Force  # Remove in specific submodule
+#   .\manage-empty-classes.ps1 -Remove -Force                   # Remove unused empty files (requires Force)
+#   .\manage-empty-classes.ps1 -AutoDelete                      # Auto-delete ALL empty classes (even if used!)
+#   .\manage-empty-classes.ps1 -AutoDelete -CheckUsage $false   # Skip usage check and delete all empty classes
+#   .\manage-empty-classes.ps1 -Submodule "SunamoDateTime" -Remove -Force  # Remove in specific submodule
 
 param(
     [string]$Submodule = "",           # Submodule name to work in (empty = all submodules)
     [switch]$Force = $false,           # Confirm removal without prompt
-    [switch]$DryRun = $true,           # Dry run mode (default true)
+    [switch]$DryRun = $false,          # Dry run mode (default false - actually executes)
     [switch]$OpenInVS = $false,        # Open files in Visual Studio
     [switch]$OpenInCursor = $false,    # Open files in Cursor (batches)
     [switch]$Remove = $false,          # Remove empty class files
     [switch]$AutoDelete = $false,      # Automatically delete truly empty classes (only comments/whitespace)
     [switch]$ListOnly = $false,        # Only list files, no actions
     [switch]$SkipConfirmation = $false,# Skip confirmation prompts
-    [switch]$CheckUsage = $true        # Check if classes are used elsewhere (slower but safer)
+    [switch]$CheckUsage = $false       # Check if classes are used elsewhere (default false - skip for speed)
 )
 
 # Check if running in PowerShell 7+ and -OpenInVS is specified
@@ -185,93 +185,133 @@ function Open-FilesViaDevenvEdit {
 # ============================================
 
 # Determine search path based on Submodule parameter
+$submodulesToProcess = @()
+
 if ([string]::IsNullOrEmpty($Submodule)) {
-    $searchPath = $rootPath
-    $searchScope = "all submodules"
+    # Find all submodules (directories in root, excluding special folders)
+    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host "EMPTY C# CLASSES MANAGER" -ForegroundColor Cyan
+    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "Finding all submodules..." -ForegroundColor Cyan
+
+    $allDirs = Get-ChildItem -Path $rootPath -Directory | Where-Object {
+        $_.Name -notmatch '^\.' -and  # Skip .git, .scripts, etc.
+        $_.Name -ne 'bin' -and
+        $_.Name -ne 'obj' -and
+        $_.Name -ne 'packages'
+    }
+
+    foreach ($dir in $allDirs) {
+        # Check if it's a C# project (has .csproj or .cs files)
+        $hasCsFiles = (Get-ChildItem -Path $dir.FullName -Filter "*.cs" -Recurse -ErrorAction SilentlyContinue).Count -gt 0
+        if ($hasCsFiles) {
+            $submodulesToProcess += [PSCustomObject]@{
+                Name = $dir.Name
+                Path = $dir.FullName
+            }
+        }
+    }
+
+    Write-Host "Found $($submodulesToProcess.Count) submodules with C# files" -ForegroundColor Green
+    Write-Host ""
 } else {
+    # Single submodule specified
     $searchPath = Join-Path $rootPath $Submodule
     if (-not (Test-Path $searchPath)) {
         Write-Host "ERROR: Submodule '$Submodule' not found at: $searchPath" -ForegroundColor Red
         exit 1
     }
-    $searchScope = "submodule '$Submodule'"
-}
+    $submodulesToProcess += [PSCustomObject]@{
+        Name = $Submodule
+        Path = $searchPath
+    }
 
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "EMPTY C# CLASSES MANAGER" -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host ""
-Write-Host "Search scope: $searchScope" -ForegroundColor Gray
-Write-Host "Search path: $searchPath" -ForegroundColor Gray
-Write-Host ""
+    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host "EMPTY C# CLASSES MANAGER" -ForegroundColor Cyan
+    Write-Host "========================================" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "Working on submodule: $Submodule" -ForegroundColor Gray
+    Write-Host ""
+}
 
 Write-Host "Step 1: Finding empty classes..." -ForegroundColor Cyan
 Write-Host ""
 
 $emptyClasses = @()
 
-Get-ChildItem -Path $searchPath -Filter "*.cs" -Recurse | ForEach-Object {
-    $filePath = $_.FullName
+# Process each submodule
+for ($i = 0; $i -lt $submodulesToProcess.Count; $i++) {
+    $searchPath = $submodulesToProcess[$i].Path
+    $submoduleName = $submodulesToProcess[$i].Name
 
-    # Skip obj and bin directories
-    if ($filePath -match [regex]::Escape("\obj\") -or $filePath -match [regex]::Escape("\bin\")) {
-        return
+    if ($submodulesToProcess.Count -gt 1) {
+        Write-Host "  Scanning: $submoduleName..." -ForegroundColor Gray
     }
 
-    $content = Get-Content $filePath -Raw -ErrorAction SilentlyContinue
+    Get-ChildItem -Path $searchPath -Filter "*.cs" -Recurse | ForEach-Object {
+        $filePath = $_.FullName
 
-    # Skip files with null/empty content
-    if ([string]::IsNullOrEmpty($content)) {
-        return
-    }
-
-    # Skip files with "variables names: ok" comment
-    if ($content -match "//\s*variables\s+names:\s*ok") {
-        return
-    }
-
-    # Find all class declarations
-    $classMatches = [regex]::Matches($content, '(?:public|internal|private|protected)?\s*(?:static|sealed|abstract)?\s*class\s+(\w+)(?:\s*:\s*[\w\s,<>]+)?\s*\{')
-
-    foreach ($match in $classMatches) {
-        $className = $match.Groups[1].Value
-        $classStartIndex = $match.Index + $match.Length
-
-        # Find the closing brace for this class
-        $braceCount = 1
-        $currentIndex = $classStartIndex
-        $classEndIndex = -1
-
-        while ($currentIndex -lt $content.Length -and $braceCount -gt 0) {
-            $char = $content[$currentIndex]
-            if ($char -eq '{') {
-                $braceCount++
-            } elseif ($char -eq '}') {
-                $braceCount--
-                if ($braceCount -eq 0) {
-                    $classEndIndex = $currentIndex
-                    break
-                }
-            }
-            $currentIndex++
+        # Skip obj and bin directories
+        if ($filePath -match [regex]::Escape("\obj\") -or $filePath -match [regex]::Escape("\bin\")) {
+            return
         }
 
-        if ($classEndIndex -gt $classStartIndex) {
-            # Extract class body
-            $classBody = $content.Substring($classStartIndex, $classEndIndex - $classStartIndex)
+        $content = Get-Content $filePath -Raw -ErrorAction SilentlyContinue
 
-            # Remove all comments (single-line, multi-line, XML doc comments), #region directives, and whitespace
-            $cleanBody = $classBody -replace '///.*', '' -replace '//.*', '' -replace '/\*[\s\S]*?\*/', '' -replace '#region.*', '' -replace '#endregion.*', '' -replace '\s', ''
+        # Skip files with null/empty content
+        if ([string]::IsNullOrEmpty($content)) {
+            return
+        }
 
-            if ($cleanBody -eq '') {
-                $relativePath = $filePath.Replace($rootPath, "").TrimStart('\')
-                $submoduleName = $relativePath.Split('\')[0]
+        # Skip files with "variables names: ok" comment
+        if ($content -match "//\s*variables\s+names:\s*ok") {
+            return
+        }
 
-                $emptyClasses += [PSCustomObject]@{
-                    File = $relativePath
-                    Class = $className
-                    FullPath = $filePath
-                    Submodule = $submoduleName
+        # Find all class declarations
+        $classMatches = [regex]::Matches($content, '(?:public|internal|private|protected)?\s*(?:static|sealed|abstract)?\s*class\s+(\w+)(?:\s*:\s*[\w\s,<>]+)?\s*\{')
+
+        foreach ($match in $classMatches) {
+            $className = $match.Groups[1].Value
+            $classStartIndex = $match.Index + $match.Length
+
+            # Find the closing brace for this class
+            $braceCount = 1
+            $currentIndex = $classStartIndex
+            $classEndIndex = -1
+
+            while ($currentIndex -lt $content.Length -and $braceCount -gt 0) {
+                $char = $content[$currentIndex]
+                if ($char -eq '{') {
+                    $braceCount++
+                } elseif ($char -eq '}') {
+                    $braceCount--
+                    if ($braceCount -eq 0) {
+                        $classEndIndex = $currentIndex
+                        break
+                    }
+                }
+                $currentIndex++
+            }
+
+            if ($classEndIndex -gt $classStartIndex) {
+                # Extract class body
+                $classBody = $content.Substring($classStartIndex, $classEndIndex - $classStartIndex)
+
+                # Remove all comments (single-line, multi-line, XML doc comments), #region directives, and whitespace
+                $cleanBody = $classBody -replace '///.*', '' -replace '//.*', '' -replace '/\*[\s\S]*?\*/', '' -replace '#region.*', '' -replace '#endregion.*', '' -replace '\s', ''
+
+                if ($cleanBody -eq '') {
+                    $relativePath = $filePath.Replace($rootPath, "").TrimStart('\')
+                    $currentSubmoduleName = $relativePath.Split('\')[0]
+
+                    $emptyClasses += [PSCustomObject]@{
+                        File = $relativePath
+                        Class = $className
+                        FullPath = $filePath
+                        Submodule = $currentSubmoduleName
+                    }
                 }
             }
         }
