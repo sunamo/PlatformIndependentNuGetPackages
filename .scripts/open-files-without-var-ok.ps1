@@ -368,12 +368,34 @@ if ($filesToOpen.Count -eq 0) {
     exit 0
 }
 
+# EN: Limit to max 50 files and report how many were skipped
+# CZ: Omez na max 50 souborů a vypiš kolik bylo přeskočeno
+$maxFilesToOpen = 50
+$originalFileCount = $filesToOpen.Count
+$skippedFileCount = 0
+
+if ($filesToOpen.Count -gt $maxFilesToOpen) {
+    $skippedFileCount = $filesToOpen.Count - $maxFilesToOpen
+    $filesToOpen = $filesToOpen[0..($maxFilesToOpen - 1)]
+
+    Write-Host "`n============================================" -ForegroundColor Yellow
+    Write-Host "EN: File limit reached! Opening only first $maxFilesToOpen files." -ForegroundColor Yellow
+    Write-Host "CZ: Dosažen limit souborů! Otevírám pouze prvních $maxFilesToOpen souborů." -ForegroundColor Yellow
+    Write-Host "EN: Skipped $skippedFileCount file(s) (total was $originalFileCount)" -ForegroundColor Red
+    Write-Host "CZ: Přeskočeno $skippedFileCount soubor(ů) (celkem bylo $originalFileCount)" -ForegroundColor Red
+    Write-Host "============================================" -ForegroundColor Yellow
+    Write-Host ""
+}
+
 # EN: List files or open them
 # CZ: Vypiš soubory nebo je otevři
 if ($ListOnly) {
     Write-Host "`nFiles to open:" -ForegroundColor Yellow
     foreach ($file in $filesToOpen) {
         Write-Host "  $file"
+    }
+    if ($skippedFileCount -gt 0) {
+        Write-Host "`n(... and $skippedFileCount more file(s) not shown due to limit)" -ForegroundColor Red
     }
     exit 0
 }
@@ -467,6 +489,11 @@ if ($useDTE) {
     # CZ: Metoda 2: devenv.exe /Edit (ROBUSTNÍ - funguje i bez DTE v ROT!)
     Open-FilesViaDevenvEdit -DevenvPath $devenvPath -FilesToOpen $filesToOpen -SolutionPath $SolutionPath
 }
+
+# EN: Auto-commit and push to git and NuGet
+# CZ: Automatický commit a push do gitu a NuGetu
+Write-Host "`n=== Running PushToGitAndNuget ===" -ForegroundColor Cyan
+PushToGitAndNuget "feat: Improved code quality"
 
 Write-Host "`n=== DONE ===" -ForegroundColor Green
 Write-Host "All files have been queued for opening in Visual Studio." -ForegroundColor Green
