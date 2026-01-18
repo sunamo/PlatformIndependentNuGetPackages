@@ -5,7 +5,8 @@ param(
     [switch]$ListOnly,
     [switch]$ForceDevenvEdit,  # EN: Force use of devenv.exe /Edit instead of DTE | CZ: Vynuť použití devenv.exe /Edit místo DTE
     [switch]$SkipConfirmation,  # EN: Skip confirmation prompt (for non-interactive execution) | CZ: Přeskoč potvrzení (pro non-interaktivní spuštění)
-    [switch]$DeleteEmptyFiles  # EN: Delete empty .cs files instead of opening them | CZ: Smaž prázdné .cs soubory místo jejich otevření
+    [switch]$DeleteEmptyFiles,  # EN: Delete empty .cs files instead of opening them | CZ: Smaž prázdné .cs soubory místo jejich otevření
+    [switch]$SkipPushToGitAndNuget  # EN: Skip auto-commit and push to git and NuGet | CZ: Přeskoč automatický commit a push do gitu a NuGetu
 )
 
 # EN: Check if running in PowerShell 7+ (pwsh) - DTE automation works better in Windows PowerShell 5.1
@@ -39,6 +40,9 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
         }
         if ($DeleteEmptyFiles) {
             $arguments += '-DeleteEmptyFiles'
+        }
+        if ($SkipPushToGitAndNuget) {
+            $arguments += '-SkipPushToGitAndNuget'
         }
 
         & $powershellPath @arguments
@@ -490,10 +494,27 @@ if ($useDTE) {
     Open-FilesViaDevenvEdit -DevenvPath $devenvPath -FilesToOpen $filesToOpen -SolutionPath $SolutionPath
 }
 
-# EN: Auto-commit and push to git and NuGet
-# CZ: Automatický commit a push do gitu a NuGetu
-Write-Host "`n=== Running PushToGitAndNuget ===" -ForegroundColor Cyan
-PushToGitAndNuget "feat: Improved code quality"
+# EN: Auto-commit and push to git and NuGet (only if not skipped)
+# CZ: Automatický commit a push do gitu a NuGetu (pouze pokud není přeskočen)
+if (-not $SkipPushToGitAndNuget) {
+    Write-Host "`n=== Running PushToGitAndNuget ===" -ForegroundColor Cyan
+    $commitMessage = "feat: Improved code quality"
+
+    if (Get-Command PushToGitAndNuget -ErrorAction SilentlyContinue) {
+        Write-Host "Using PushToGitAndNuget function from profile" -ForegroundColor Green
+        PushToGitAndNuget $commitMessage
+    } else {
+        Write-Host "PushToGitAndNuget function not found, calling CommandsToAllCsprojs.Cmd.exe directly" -ForegroundColor Yellow
+        $exePath = "D:\SyncTrayzor\_sunamo\CommandsToAllCsprojs.Cmd\CommandsToAllCsprojs.Cmd.exe"
+        if (Test-Path $exePath) {
+            & $exePath "PushToGitAndNuget" $commitMessage
+        } else {
+            Write-Host "ERROR: CommandsToAllCsprojs.Cmd.exe not found at: $exePath" -ForegroundColor Red
+        }
+    }
+} else {
+    Write-Host "`nSkipping PushToGitAndNuget (SkipPushToGitAndNuget flag set)" -ForegroundColor Cyan
+}
 
 Write-Host "`n=== DONE ===" -ForegroundColor Green
 Write-Host "All files have been queued for opening in Visual Studio." -ForegroundColor Green

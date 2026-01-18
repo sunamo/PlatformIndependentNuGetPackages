@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoAI",
+    "Submodule": "SunamoDebugging",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoArgs",
+    "Submodule": "SunamoDebugIO",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,7 +16,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoAsync",
+    "Submodule": "SunamoDelegates",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -24,7 +24,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoAttributes",
+    "Submodule": "SunamoDependencyInjection",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -32,7 +32,27 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoAzureDevOpsApi",
+    "Submodule": "SunamoDevCode",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "SunamoDevCode - Warnings: 1420"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDictionary",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerDictionary - Warnings: 60"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDotnetCmdBuilder",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -40,7 +60,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoBazosCrawler",
+    "Submodule": "SunamoDotNetZip",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -48,7 +68,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoBts",
+    "Submodule": "SunamoEditorConfig",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -56,23 +76,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoChar",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoCl",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "OK",
-    "BuildErrors": [],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoClearScript",
+    "Submodule": "SunamoEmbeddedResources",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
