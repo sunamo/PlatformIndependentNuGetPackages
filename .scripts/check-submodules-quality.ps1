@@ -169,11 +169,12 @@ foreach ($submodule in $submodules) {
         continue
     }
 
-    # Check for NoWarn in .csproj files
+    # Check for NoWarn in .csproj files (ignore empty <NoWarn></NoWarn>)
     foreach ($csproj in $csprojFiles) {
         $content = Get-Content $csproj.FullName -Raw
 
-        if ($content -match '<NoWarn>') {
+        # Match <NoWarn> only if it has non-whitespace content before </NoWarn>
+        if ($content -match '<NoWarn>.*?\S.*?</NoWarn>') {
             $result.NoWarnStatus = "HAS_NOWARN"
             $relativePath = $csproj.FullName.Replace($rootPath + "\", "")
             $result.NoWarnFiles += $relativePath
@@ -289,3 +290,113 @@ if ($buildWarnings.Count -gt 0) {
 $jsonPath = Join-Path $rootPath ".scripts\submodules-quality-report.json"
 $results | ConvertTo-Json -Depth 10 | Out-File $jsonPath -Encoding UTF8
 Write-Host "Results exported to: $jsonPath" -ForegroundColor Cyan
+
+# If -GroupNumber is specified, update submodules-grouped.md with quality check timestamp and results
+if ($GroupNumber -gt 0) {
+    $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+
+    # Build quality summary for the group
+    $qualitySummary = "Perfect: $($perfectSubmodules.Count), NoWarn issues: $($noWarnIssues.Count), Build errors: $($buildErrors.Count), Build warnings: $($buildWarnings.Count)"
+
+    $content = Get-Content $groupedFile
+    $newContent = @()
+    $skipUntilNextSection = $false
+
+    for ($i = 0; $i -lt $content.Count; $i++) {
+        $line = $content[$i]
+
+        # Detect group header
+        if ($line -match '^## Group (\d+)$') {
+            $currentGroupNum = [int]$Matches[1]
+
+            if ($currentGroupNum -eq $GroupNumber) {
+                $newContent += $line
+
+                # Check next lines for existing timestamps
+                $j = $i + 1
+                $progressReportLine = ""
+
+                while ($j -lt $content.Count -and $content[$j] -notmatch '^- ') {
+                    if ($content[$j] -match '^\*\*Progress report:\*\*') {
+                        $progressReportLine = $content[$j]
+                    }
+                    if ($content[$j] -match '^## Group \d+$') {
+                        break
+                    }
+                    $j++
+                }
+
+                # Add timestamp and quality summary lines
+                $newContent += ""
+                if ($progressReportLine -ne "") {
+                    $newContent += $progressReportLine
+                }
+                $newContent += "**Quality check:** Last updated $timestamp - $qualitySummary"
+                $newContent += ""
+
+                # Add detailed quality info for each submodule
+                foreach ($result in $results) {
+                    $submoduleName = $result.Submodule
+
+                    # Find existing line with this submodule
+                    $existingLine = $content | Where-Object { $_ -match "^- $submoduleName \(" }
+
+                    if ($existingLine) {
+                        # Keep existing progress stats, add quality indicator
+                        $qualityIndicator = ""
+                        if ($result.NoWarnStatus -eq "OK" -and $result.BuildStatus -eq "OK") {
+                            $qualityIndicator = "✓"
+                        } elseif ($result.BuildStatus -eq "HAS_ERRORS") {
+                            $qualityIndicator = "✗ BUILD ERRORS"
+                        } elseif ($result.NoWarnStatus -eq "HAS_NOWARN") {
+                            $qualityIndicator = "⚠ NoWarn"
+                        } elseif ($result.BuildStatus -eq "HAS_WARNINGS") {
+                            $qualityIndicator = "⚠ Warnings"
+                        } elseif ($result.NoWarnStatus -eq "NO_PROJECTS") {
+                            $qualityIndicator = "N/A"
+                        }
+
+                        # Modify existing line to include quality indicator
+                        if ($existingLine -match '^(- \S+) (\([^)]+\))(.*)$') {
+                            $projectName = $Matches[1]
+                            $stats = $Matches[2]
+                            $newContent += "$projectName $stats [$qualityIndicator]"
+                        } else {
+                            $newContent += $existingLine
+                        }
+                    }
+                }
+
+                # Add blank line after project list
+                $newContent += ""
+
+                # Skip old content until next section
+                $skipUntilNextSection = $true
+                continue
+            } else {
+                $skipUntilNextSection = $false
+            }
+        }
+
+        # Skip old timestamp/header lines in target group
+        if ($skipUntilNextSection) {
+            if ($line -match '^## Group \d+$' -or $line -match '^---$') {
+                $skipUntilNextSection = $false
+                # Add blank line before next section
+                $newContent += ""
+                $newContent += $line
+            }
+            continue
+        }
+
+        $newContent += $line
+    }
+
+    # Write updated content
+    $newContent | Out-File -FilePath $groupedFile -Encoding utf8BOM
+
+    Write-Host ""
+    Write-Host "Updated Group $GroupNumber quality check in submodules-grouped.md" -ForegroundColor Green
+    Write-Host "Timestamp: $timestamp" -ForegroundColor Cyan
+    Write-Host "Summary: $qualitySummary" -ForegroundColor Cyan
+}

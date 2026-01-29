@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoDebugging",
+    "Submodule": "SunamoFtp",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDebugIO",
+    "Submodule": "SunamoGetFiles",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,7 +16,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDelegates",
+    "Submodule": "SunamoGetFolders",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -24,7 +24,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDependencyInjection",
+    "Submodule": "SunamoGitConfig",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -32,27 +32,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDevCode",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "HAS_WARNINGS",
-    "BuildErrors": [
-      "SunamoDevCode - Warnings: 1420"
-    ],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoDictionary",
-    "NoWarnStatus": "OK",
-    "NoWarnFiles": [],
-    "BuildStatus": "HAS_WARNINGS",
-    "BuildErrors": [
-      "RunnerDictionary - Warnings: 60"
-    ],
-    "ProjectsChecked": 3
-  },
-  {
-    "Submodule": "SunamoDotnetCmdBuilder",
+    "Submodule": "SunamoGoogleMyMaps",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -60,7 +40,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoDotNetZip",
+    "Submodule": "SunamoGoogleSheets",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -68,7 +48,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoEditorConfig",
+    "Submodule": "SunamoGpx",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -76,7 +56,23 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoEmbeddedResources",
+    "Submodule": "SunamoHtml",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoHttp",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoIni",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
