@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoFtp",
+    "Submodule": "SunamoInterfaces",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoGetFiles",
+    "Submodule": "SunamoJson",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,7 +16,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoGetFolders",
+    "Submodule": "SunamoLang",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -24,7 +24,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoGitConfig",
+    "Submodule": "SunamoLaTeX",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -32,7 +32,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoGoogleMyMaps",
+    "Submodule": "SunamoLogging",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -40,7 +40,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoGoogleSheets",
+    "Submodule": "SunamoMail",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -48,7 +48,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoGpx",
+    "Submodule": "SunamoMarkdown",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -56,7 +56,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoHtml",
+    "Submodule": "SunamoMathpix",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -64,7 +64,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoHttp",
+    "Submodule": "SunamoMime",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -72,7 +72,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoIni",
+    "Submodule": "SunamoMsgReader",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
