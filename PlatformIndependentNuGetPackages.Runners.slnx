@@ -1,0 +1,645 @@
+<Solution>
+  <Folder Name=".scripts">
+    <Project Path=".scripts\FileSplitter\FileSplitter.csproj" />
+  </Folder>
+  <Folder Name="SunamoAI">
+    <Project Path="SunamoAI\RunnerAI\RunnerAI.csproj" />
+    <Project Path="SunamoAI\SunamoAI.Tests\SunamoAI.Tests.csproj" />
+    <Project Path="SunamoAI\SunamoAI\SunamoAI.csproj" />
+  </Folder>
+  <Folder Name="SunamoArgs">
+    <Project Path="SunamoArgs\RunnerArgs\RunnerArgs.csproj" />
+    <Project Path="SunamoArgs\SunamoArgs.Tests\SunamoArgs.Tests.csproj" />
+    <Project Path="SunamoArgs\SunamoArgs\SunamoArgs.csproj" />
+  </Folder>
+  <Folder Name="SunamoAsync">
+    <Project Path="SunamoAsync\RunnerAsync\RunnerAsync.csproj" />
+    <Project Path="SunamoAsync\SunamoAsync.Tests\SunamoAsync.Tests.csproj" />
+    <Project Path="SunamoAsync\SunamoAsync\SunamoAsync.csproj" />
+  </Folder>
+  <Folder Name="SunamoAttributes">
+    <Project Path="SunamoAttributes\RunnerAttributes\RunnerAttributes.csproj" />
+    <Project Path="SunamoAttributes\SunamoAttributes.Tests\SunamoAttributes.Tests.csproj" />
+    <Project Path="SunamoAttributes\SunamoAttributes\SunamoAttributes.csproj" />
+  </Folder>
+  <Folder Name="SunamoAzureDevOpsApi">
+    <Project Path="SunamoAzureDevOpsApi\RunnerAzureDevOpsApi\RunnerAzureDevOpsApi.csproj" />
+    <Project Path="SunamoAzureDevOpsApi\SunamoAzureDevOpsApi.Tests\SunamoAzureDevOpsApi.Tests.csproj" />
+    <Project Path="SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi.csproj" />
+  </Folder>
+  <Folder Name="SunamoBazosCrawler">
+    <Project Path="SunamoBazosCrawler\RunnerBazosCrawler\RunnerBazosCrawler.csproj" />
+    <Project Path="SunamoBazosCrawler\SunamoBazosCrawler.Tests\SunamoBazosCrawler.Tests.csproj" />
+    <Project Path="SunamoBazosCrawler\SunamoBazosCrawler\SunamoBazosCrawler.csproj" />
+  </Folder>
+  <Folder Name="SunamoBts">
+    <Project Path="SunamoBts\RunnerBts\RunnerBts.csproj" />
+    <Project Path="SunamoBts\SunamoBts.Tests\SunamoBts.Tests.csproj" />
+    <Project Path="SunamoBts\SunamoBts\SunamoBts.csproj" />
+  </Folder>
+  <Folder Name="SunamoChar">
+    <Project Path="SunamoChar\RunnerChar\RunnerChar.csproj" />
+    <Project Path="SunamoChar\SunamoChar.Tests\SunamoChar.Tests.csproj" />
+    <Project Path="SunamoChar\SunamoChar\SunamoChar.csproj" />
+  </Folder>
+  <Folder Name="SunamoCl">
+    <Project Path="SunamoCl\RunnerCl\RunnerCl.csproj" />
+    <Project Path="SunamoCl\SunamoCl.Tests\SunamoCl.Tests.csproj" />
+    <Project Path="SunamoCl\SunamoCl\SunamoCl.csproj" />
+  </Folder>
+  <Folder Name="SunamoClearScript">
+    <Project Path="SunamoClearScript\RunnerClearScript\RunnerClearScript.csproj" />
+    <Project Path="SunamoClearScript\SunamoClearScript.Tests\SunamoClearScript.Tests.csproj" />
+    <Project Path="SunamoClearScript\SunamoClearScript\SunamoClearScript.csproj" />
+  </Folder>
+  <Folder Name="SunamoClipboard">
+    <Project Path="SunamoClipboard\RunnerClipboard\RunnerClipboard.csproj" />
+    <Project Path="SunamoClipboard\SunamoClipboard.Tests\SunamoClipboard.Tests.csproj" />
+    <Project Path="SunamoClipboard\SunamoClipboard\SunamoClipboard.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionOnDrive">
+    <Project Path="SunamoCollectionOnDrive\RunnerCollectionOnDrive\RunnerCollectionOnDrive.csproj" />
+    <Project Path="SunamoCollectionOnDrive\SunamoCollectionOnDrive.Tests\SunamoCollectionOnDrive.Tests.csproj" />
+    <Project Path="SunamoCollectionOnDrive\SunamoCollectionOnDrive\SunamoCollectionOnDrive.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollections">
+    <Project Path="SunamoCollections\RunnerCollections\RunnerCollections.csproj" />
+    <Project Path="SunamoCollections\SunamoCollections.Tests\SunamoCollections.Tests.csproj" />
+    <Project Path="SunamoCollections\SunamoCollections\SunamoCollections.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionsChangeContent">
+    <Project Path="SunamoCollectionsChangeContent\RunnerCollectionsChangeContent\RunnerCollectionsChangeContent.csproj" />
+    <Project Path="SunamoCollectionsChangeContent\SunamoCollectionsChangeContent.Tests\SunamoCollectionsChangeContent.Tests.csproj" />
+    <Project Path="SunamoCollectionsChangeContent\SunamoCollectionsChangeContent\SunamoCollectionsChangeContent.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionsGeneric">
+    <Project Path="SunamoCollectionsGeneric\RunnerCollectionsGeneric\RunnerCollectionsGeneric.csproj" />
+    <Project Path="SunamoCollectionsGeneric\SunamoCollectionsGeneric.Tests\SunamoCollectionsGeneric.Tests.csproj" />
+    <Project Path="SunamoCollectionsGeneric\SunamoCollectionsGeneric\SunamoCollectionsGeneric.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionsIndexesWithNull">
+    <Project Path="SunamoCollectionsIndexesWithNull\RunnerCollectionsIndexesWithNull\RunnerCollectionsIndexesWithNull.csproj" />
+    <Project Path="SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull.Tests\SunamoCollectionsIndexesWithNull.Tests.csproj" />
+    <Project Path="SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionsNonGeneric">
+    <Project Path="SunamoCollectionsNonGeneric\RunnerCollectionsNonGeneric\RunnerCollectionsNonGeneric.csproj" />
+    <Project Path="SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric.Tests\SunamoCollectionsNonGeneric.Tests.csproj" />
+    <Project Path="SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionsTo">
+    <Project Path="SunamoCollectionsTo\RunnerCollectionsTo\RunnerCollectionsTo.csproj" />
+    <Project Path="SunamoCollectionsTo\SunamoCollectionsTo.Tests\SunamoCollectionsTo.Tests.csproj" />
+    <Project Path="SunamoCollectionsTo\SunamoCollectionsTo\SunamoCollectionsTo.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionsValuesTableGrid">
+    <Project Path="SunamoCollectionsValuesTableGrid\RunnerCollectionsValuesTableGrid\RunnerCollectionsValuesTableGrid.csproj" />
+    <Project Path="SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid.Tests\SunamoCollectionsValuesTableGrid.Tests.csproj" />
+    <Project Path="SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid.csproj" />
+  </Folder>
+  <Folder Name="SunamoCollectionWithoutDuplicates">
+    <Project Path="SunamoCollectionWithoutDuplicates\RunnerCollectionWithoutDuplicates\RunnerCollectionWithoutDuplicates.csproj" />
+    <Project Path="SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates.Tests\SunamoCollectionWithoutDuplicates.Tests.csproj" />
+    <Project Path="SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates.csproj" />
+  </Folder>
+  <Folder Name="SunamoColors">
+    <Project Path="SunamoColors\RunnerColors\RunnerColors.csproj" />
+    <Project Path="SunamoColors\SunamoColors.Tests\SunamoColors.Tests.csproj" />
+    <Project Path="SunamoColors\SunamoColors\SunamoColors.csproj" />
+  </Folder>
+  <Folder Name="SunamoCompare">
+    <Project Path="SunamoCompare\RunnerCompare\RunnerCompare.csproj" />
+    <Project Path="SunamoCompare\SunamoCompare.Tests\SunamoCompare.Tests.csproj" />
+    <Project Path="SunamoCompare\SunamoCompare\SunamoCompare.csproj" />
+  </Folder>
+  <Folder Name="SunamoConverters">
+    <Project Path="SunamoConverters\RunnerConverters\RunnerConverters.csproj" />
+    <Project Path="SunamoConverters\SunamoConverters.Tests\SunamoConverters.Tests.csproj" />
+    <Project Path="SunamoConverters\SunamoConverters\SunamoConverters.csproj" />
+  </Folder>
+  <Folder Name="SunamoCrypt">
+    <Project Path="SunamoCrypt\RunnerCrypt\RunnerCrypt.csproj" />
+    <Project Path="SunamoCrypt\SunamoCrypt.Tests\SunamoCrypt.Tests.csproj" />
+    <Project Path="SunamoCrypt\SunamoCrypt\SunamoCrypt.csproj" />
+  </Folder>
+  <Folder Name="SunamoCsproj">
+    <Project Path="SunamoCsproj\RunnerCsproj\RunnerCsproj.csproj" />
+    <Project Path="SunamoCsproj\SunamoCsproj.Tests\SunamoCsproj.Tests.csproj" />
+    <Project Path="SunamoCsproj\SunamoCsproj\SunamoCsproj.csproj" />
+  </Folder>
+  <Folder Name="SunamoCssGenerator">
+    <Project Path="SunamoCssGenerator\RunnerCssGenerator\RunnerCssGenerator.csproj" />
+    <Project Path="SunamoCssGenerator\SunamoCssGenerator.Tests\SunamoCssGenerator.Tests.csproj" />
+    <Project Path="SunamoCssGenerator\SunamoCssGenerator\SunamoCssGenerator.csproj" />
+  </Folder>
+  <Folder Name="SunamoCsv">
+    <Project Path="SunamoCsv\RunnerCsv\RunnerCsv.csproj" />
+    <Project Path="SunamoCsv\SunamoCsv.Tests\SunamoCsv.Tests.csproj" />
+    <Project Path="SunamoCsv\SunamoCsv\SunamoCsv.csproj" />
+  </Folder>
+  <Folder Name="SunamoData">
+    <Project Path="SunamoData\RunnerData\RunnerData.csproj" />
+    <Project Path="SunamoData\SunamoData.Tests\SunamoData.Tests.csproj" />
+    <Project Path="SunamoData\SunamoData\SunamoData.csproj" />
+  </Folder>
+  <Folder Name="SunamoDateTime">
+    <Project Path="SunamoDateTime\RunnerDateTime\RunnerDateTime.csproj" />
+    <Project Path="SunamoDateTime\SunamoDateTime.Tests\SunamoDateTime.Tests.csproj" />
+    <Project Path="SunamoDateTime\SunamoDateTime\SunamoDateTime.csproj" />
+  </Folder>
+  <Folder Name="SunamoDebugCollection">
+    <Project Path="SunamoDebugCollection\RunnerDebugCollection\RunnerDebugCollection.csproj" />
+    <Project Path="SunamoDebugCollection\SunamoDebugCollection.Tests\SunamoDebugCollection.Tests.csproj" />
+    <Project Path="SunamoDebugCollection\SunamoDebugCollection\SunamoDebugCollection.csproj" />
+  </Folder>
+  <Folder Name="SunamoDebugging">
+    <Project Path="SunamoDebugging\RunnerDebugging\RunnerDebugging.csproj" />
+    <Project Path="SunamoDebugging\SunamoDebugging.Tests\SunamoDebugging.Tests.csproj" />
+    <Project Path="SunamoDebugging\SunamoDebugging\SunamoDebugging.csproj" />
+  </Folder>
+  <Folder Name="SunamoDebugIO">
+    <Project Path="SunamoDebugIO\RunnerDebugIO\RunnerDebugIO.csproj" />
+    <Project Path="SunamoDebugIO\SunamoDebugIO.Tests\SunamoDebugIO.Tests.csproj" />
+    <Project Path="SunamoDebugIO\SunamoDebugIO\SunamoDebugIO.csproj" />
+  </Folder>
+  <Folder Name="SunamoDelegates">
+    <Project Path="SunamoDelegates\RunnerDelegates\RunnerDelegates.csproj" />
+    <Project Path="SunamoDelegates\SunamoDelegates.Tests\SunamoDelegates.Tests.csproj" />
+    <Project Path="SunamoDelegates\SunamoDelegates\SunamoDelegates.csproj" />
+  </Folder>
+  <Folder Name="SunamoDependencyInjection">
+    <Project Path="SunamoDependencyInjection\RunnerDependencyInjection\RunnerDependencyInjection.csproj" />
+    <Project Path="SunamoDependencyInjection\SunamoDependencyInjection.Tests\SunamoDependencyInjection.Tests.csproj" />
+    <Project Path="SunamoDependencyInjection\SunamoDependencyInjection\SunamoDependencyInjection.csproj" />
+  </Folder>
+  <Folder Name="SunamoDevCode">
+    <Project Path="SunamoDevCode\RunnerDevCode\RunnerDevCode.csproj" />
+    <Project Path="SunamoDevCode\SunamoDevCode.Tests\SunamoDevCode.Tests.csproj" />
+    <Project Path="SunamoDevCode\SunamoDevCode\SunamoDevCode.csproj" />
+  </Folder>
+  <Folder Name="SunamoDictionary">
+    <Project Path="SunamoDictionary\RunnerDictionary\RunnerDictionary.csproj" />
+    <Project Path="SunamoDictionary\SunamoDictionary.Tests\SunamoDictionary.Tests.csproj" />
+    <Project Path="SunamoDictionary\SunamoDictionary\SunamoDictionary.csproj" />
+  </Folder>
+  <Folder Name="SunamoDotnetCmdBuilder">
+    <Project Path="SunamoDotnetCmdBuilder\RunnerDotnetCmdBuilder\RunnerDotnetCmdBuilder.csproj" />
+    <Project Path="SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder.Tests\SunamoDotnetCmdBuilder.Tests.csproj" />
+    <Project Path="SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder.csproj" />
+  </Folder>
+  <Folder Name="SunamoDotNetZip">
+    <Project Path="SunamoDotNetZip\RunnerDotNetZip\RunnerDotNetZip.csproj" />
+    <Project Path="SunamoDotNetZip\SunamoDotNetZip.Tests\SunamoDotNetZip.Tests.csproj" />
+    <Project Path="SunamoDotNetZip\SunamoDotNetZip\SunamoDotNetZip.csproj" />
+  </Folder>
+  <Folder Name="SunamoEditorConfig">
+    <Project Path="SunamoEditorConfig\RunnerEditorConfig\RunnerEditorConfig.csproj" />
+    <Project Path="SunamoEditorConfig\SunamoEditorConfig.Tests\SunamoEditorConfig.Tests.csproj" />
+    <Project Path="SunamoEditorConfig\SunamoEditorConfig\SunamoEditorConfig.csproj" />
+  </Folder>
+  <Folder Name="SunamoEmbeddedResources">
+    <Project Path="SunamoEmbeddedResources\RunnerEmbeddedResources\RunnerEmbeddedResources.csproj" />
+    <Project Path="SunamoEmbeddedResources\SunamoEmbeddedResources.Tests\SunamoEmbeddedResources.Tests.csproj" />
+    <Project Path="SunamoEmbeddedResources\SunamoEmbeddedResources\SunamoEmbeddedResources.csproj" />
+  </Folder>
+  <Folder Name="SunamoEmoticons">
+    <Project Path="SunamoEmoticons\RunnerEmoticons\RunnerEmoticons.csproj" />
+    <Project Path="SunamoEmoticons\SunamoEmoticons.Tests\SunamoEmoticons.Tests.csproj" />
+    <Project Path="SunamoEmoticons\SunamoEmoticons\SunamoEmoticons.csproj" />
+  </Folder>
+  <Folder Name="SunamoEnums">
+    <Project Path="SunamoEnums\RunnerEnums\RunnerEnums.csproj" />
+    <Project Path="SunamoEnums\SunamoEnums.Tests\SunamoEnums.Tests.csproj" />
+    <Project Path="SunamoEnums\SunamoEnums\SunamoEnums.csproj" />
+  </Folder>
+  <Folder Name="SunamoEnumsHelper">
+    <Project Path="SunamoEnumsHelper\RunnerEnumsHelper\RunnerEnumsHelper.csproj" />
+    <Project Path="SunamoEnumsHelper\SunamoEnumsHelper.Tests\SunamoEnumsHelper.Tests.csproj" />
+    <Project Path="SunamoEnumsHelper\SunamoEnumsHelper\SunamoEnumsHelper.csproj" />
+  </Folder>
+  <Folder Name="SunamoExceptions">
+    <Project Path="SunamoExceptions\RunnerExceptions\RunnerExceptions.csproj" />
+    <Project Path="SunamoExceptions\SunamoExceptions.Tests\SunamoExceptions.Tests.csproj" />
+    <Project Path="SunamoExceptions\SunamoExceptions\SunamoExceptions.csproj" />
+  </Folder>
+  <Folder Name="SunamoExtensions">
+    <Project Path="SunamoExtensions\RunnerExtensions\RunnerExtensions.csproj" />
+    <Project Path="SunamoExtensions\SunamoExtensions.Tests\SunamoExtensions.Tests.csproj" />
+    <Project Path="SunamoExtensions\SunamoExtensions\SunamoExtensions.csproj" />
+  </Folder>
+  <Folder Name="SunamoFileExtensions">
+    <Project Path="SunamoFileExtensions\RunnerFileExtensions\RunnerFileExtensions.csproj" />
+    <Project Path="SunamoFileExtensions\SunamoFileExtensions.Tests\SunamoFileExtensions.Tests.csproj" />
+    <Project Path="SunamoFileExtensions\SunamoFileExtensions\SunamoFileExtensions.csproj" />
+  </Folder>
+  <Folder Name="SunamoFileIO">
+    <Project Path="SunamoFileIO\RunnerFileIO\RunnerFileIO.csproj" />
+    <Project Path="SunamoFileIO\SunamoFileIO.Tests\SunamoFileIO.Tests.csproj" />
+    <Project Path="SunamoFileIO\SunamoFileIO\SunamoFileIO.csproj" />
+  </Folder>
+  <Folder Name="SunamoFilesIndex">
+    <Project Path="SunamoFilesIndex\RunnerFilesIndex\RunnerFilesIndex.csproj" />
+    <Project Path="SunamoFilesIndex\SunamoFilesIndex.Tests\SunamoFilesIndex.Tests.csproj" />
+    <Project Path="SunamoFilesIndex\SunamoFilesIndex\SunamoFilesIndex.csproj" />
+  </Folder>
+  <Folder Name="SunamoFileSystem">
+    <Project Path="SunamoFileSystem\RunnerFileSystem\RunnerFileSystem.csproj" />
+    <Project Path="SunamoFileSystem\SunamoFileSystem.Tests\SunamoFileSystem.Tests.csproj" />
+    <Project Path="SunamoFileSystem\SunamoFileSystem\SunamoFileSystem.csproj" />
+  </Folder>
+  <Folder Name="SunamoFluentFtp">
+    <Project Path="SunamoFluentFtp\RunnerFluentFtp\RunnerFluentFtp.csproj" />
+    <Project Path="SunamoFluentFtp\SunamoFluentFtp.Tests\SunamoFluentFtp.Tests.csproj" />
+    <Project Path="SunamoFluentFtp\SunamoFluentFtp\SunamoFluentFtp.csproj" />
+  </Folder>
+  <Folder Name="SunamoFtp">
+    <Project Path="SunamoFtp\RunnerFtp\RunnerFtp.csproj" />
+    <Project Path="SunamoFtp\SunamoFtp.Tests\SunamoFtp.Tests.csproj" />
+    <Project Path="SunamoFtp\SunamoFtp\SunamoFtp.csproj" />
+  </Folder>
+  <Folder Name="SunamoGetFiles">
+    <Project Path="SunamoGetFiles\RunnerGetFiles\RunnerGetFiles.csproj" />
+    <Project Path="SunamoGetFiles\SunamoGetFiles.Tests\SunamoGetFiles.Tests.csproj" />
+    <Project Path="SunamoGetFiles\SunamoGetFiles\SunamoGetFiles.csproj" />
+  </Folder>
+  <Folder Name="SunamoGetFolders">
+    <Project Path="SunamoGetFolders\RunnerGetFolders\RunnerGetFolders.csproj" />
+    <Project Path="SunamoGetFolders\SunamoGetFolders.Tests\SunamoGetFolders.Tests.csproj" />
+    <Project Path="SunamoGetFolders\SunamoGetFolders\SunamoGetFolders.csproj" />
+  </Folder>
+  <Folder Name="SunamoGitConfig">
+    <Project Path="SunamoGitConfig\RunnerGitConfig\RunnerGitConfig.csproj" />
+    <Project Path="SunamoGitConfig\SunamoGitConfig.Tests\SunamoGitConfig.Tests.csproj" />
+    <Project Path="SunamoGitConfig\SunamoGitConfig\SunamoGitConfig.csproj" />
+  </Folder>
+  <Folder Name="SunamoGoogleMyMaps">
+    <Project Path="SunamoGoogleMyMaps\RunnerGoogleMyMaps\RunnerGoogleMyMaps.csproj" />
+    <Project Path="SunamoGoogleMyMaps\SunamoGoogleMyMaps.Tests\SunamoGoogleMyMaps.Tests.csproj" />
+    <Project Path="SunamoGoogleMyMaps\SunamoGoogleMyMaps\SunamoGoogleMyMaps.csproj" />
+  </Folder>
+  <Folder Name="SunamoGoogleSheets">
+    <Project Path="SunamoGoogleSheets\RunnerGoogleSheets\RunnerGoogleSheets.csproj" />
+    <Project Path="SunamoGoogleSheets\SunamoGoogleSheets.Tests\SunamoGoogleSheets.Tests.csproj" />
+    <Project Path="SunamoGoogleSheets\SunamoGoogleSheets\SunamoGoogleSheets.csproj" />
+  </Folder>
+  <Folder Name="SunamoGpx">
+    <Project Path="SunamoGpx\RunnerGpx\RunnerGpx.csproj" />
+    <Project Path="SunamoGpx\SunamoGpx.Tests\SunamoGpx.Tests.csproj" />
+    <Project Path="SunamoGpx\SunamoGpx\SunamoGpx.csproj" />
+  </Folder>
+  <Folder Name="SunamoHtml">
+    <Project Path="SunamoHtml\RunnerHtml\RunnerHtml.csproj" />
+    <Project Path="SunamoHtml\SunamoHtml.Tests\SunamoHtml.Tests.csproj" />
+    <Project Path="SunamoHtml\SunamoHtml\SunamoHtml.csproj" />
+  </Folder>
+  <Folder Name="SunamoHttp">
+    <Project Path="SunamoHttp\RunnerHttp\RunnerHttp.csproj" />
+    <Project Path="SunamoHttp\SunamoHttp.Tests\SunamoHttp.Tests.csproj" />
+    <Project Path="SunamoHttp\SunamoHttp\SunamoHttp.csproj" />
+  </Folder>
+  <Folder Name="SunamoIni">
+    <Project Path="SunamoIni\RunnerIni\RunnerIni.csproj" />
+    <Project Path="SunamoIni\SunamoIni.Tests\SunamoIni.Tests.csproj" />
+    <Project Path="SunamoIni\SunamoIni\SunamoIni.csproj" />
+  </Folder>
+  <Folder Name="SunamoInterfaces">
+    <Project Path="SunamoInterfaces\RunnerInterfaces\RunnerInterfaces.csproj" />
+    <Project Path="SunamoInterfaces\SunamoInterfaces.Tests\SunamoInterfaces.Tests.csproj" />
+    <Project Path="SunamoInterfaces\SunamoInterfaces\SunamoInterfaces.csproj" />
+  </Folder>
+  <Folder Name="SunamoJson">
+    <Project Path="SunamoJson\RunnerJson\RunnerJson.csproj" />
+    <Project Path="SunamoJson\SunamoJson.Tests\SunamoJson.Tests.csproj" />
+    <Project Path="SunamoJson\SunamoJson\SunamoJson.csproj" />
+  </Folder>
+  <Folder Name="SunamoLang">
+    <Project Path="SunamoLang\RunnerLang\RunnerLang.csproj" />
+    <Project Path="SunamoLang\SunamoLang.Tests\SunamoLang.Tests.csproj" />
+    <Project Path="SunamoLang\SunamoLang\SunamoLang.csproj" />
+  </Folder>
+  <Folder Name="SunamoLaTeX">
+    <Project Path="SunamoLaTeX\RunnerLaTeX\RunnerLaTeX.csproj" />
+    <Project Path="SunamoLaTeX\SunamoLaTeX.Tests\SunamoLaTeX.Tests.csproj" />
+    <Project Path="SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj" />
+  </Folder>
+  <Folder Name="SunamoLogging">
+    <Project Path="SunamoLogging\RunnerLogging\RunnerLogging.csproj" />
+    <Project Path="SunamoLogging\SunamoLogging.Tests\SunamoLogging.Tests.csproj" />
+    <Project Path="SunamoLogging\SunamoLogging\SunamoLogging.csproj" />
+  </Folder>
+  <Folder Name="SunamoMail">
+    <Project Path="SunamoMail\RunnerMail\RunnerMail.csproj" />
+    <Project Path="SunamoMail\SunamoMail.Tests\SunamoMail.Tests.csproj" />
+    <Project Path="SunamoMail\SunamoMail\SunamoMail.csproj" />
+  </Folder>
+  <Folder Name="SunamoMarkdown">
+    <Project Path="SunamoMarkdown\RunnerMarkdown\RunnerMarkdown.csproj" />
+    <Project Path="SunamoMarkdown\SunamoMarkdown.Tests\SunamoMarkdown.Tests.csproj" />
+    <Project Path="SunamoMarkdown\SunamoMarkdown\SunamoMarkdown.csproj" />
+  </Folder>
+  <Folder Name="SunamoMathpix">
+    <Project Path="SunamoMathpix\RunnerMathpix\RunnerMathpix.csproj" />
+    <Project Path="SunamoMathpix\SunamoMathpix.Tests\SunamoMathpix.Tests.csproj" />
+    <Project Path="SunamoMathpix\SunamoMathpix\SunamoMathpix.csproj" />
+  </Folder>
+  <Folder Name="SunamoMime">
+    <Project Path="SunamoMime\RunnerMime\RunnerMime.csproj" />
+    <Project Path="SunamoMime\SunamoMime.Tests\SunamoMime.Tests.csproj" />
+    <Project Path="SunamoMime\SunamoMime\SunamoMime.csproj" />
+  </Folder>
+  <Folder Name="SunamoMsgReader">
+    <Project Path="SunamoMsgReader\RunnerMsgReader\RunnerMsgReader.csproj" />
+    <Project Path="SunamoMsgReader\SunamoMsgReader.Tests\SunamoMsgReader.Tests.csproj" />
+    <Project Path="SunamoMsgReader\SunamoMsgReader\SunamoMsgReader.csproj" />
+  </Folder>
+  <Folder Name="SunamoMsSqlServer">
+    <Project Path="SunamoMsSqlServer\RunnerMsSqlServer\RunnerMsSqlServer.csproj" />
+    <Project Path="SunamoMsSqlServer\SunamoMsSqlServer.Tests\SunamoMsSqlServer.Tests.csproj" />
+    <Project Path="SunamoMsSqlServer\SunamoMsSqlServer\SunamoMsSqlServer.csproj" />
+  </Folder>
+  <Folder Name="SunamoNuGetProtocol">
+    <Project Path="SunamoNuGetProtocol\RunnerNuGetProtocol\RunnerNuGetProtocol.csproj" />
+    <Project Path="SunamoNuGetProtocol\SunamoNuGetProtocol.Tests\SunamoNuGetProtocol.Tests.csproj" />
+    <Project Path="SunamoNuGetProtocol\SunamoNuGetProtocol\SunamoNuGetProtocol.csproj" />
+  </Folder>
+  <Folder Name="SunamoNumbers">
+    <Project Path="SunamoNumbers\RunnerNumbers\RunnerNumbers.csproj" />
+    <Project Path="SunamoNumbers\SunamoNumbers.Tests\SunamoNumbers.Tests.csproj" />
+    <Project Path="SunamoNumbers\SunamoNumbers\SunamoNumbers.csproj" />
+  </Folder>
+  <Folder Name="SunamoOctokit">
+    <Project Path="SunamoOctokit\RunnerOctokit\RunnerOctokit.csproj" />
+    <Project Path="SunamoOctokit\SunamoOctokit.Tests\SunamoOctokit.Tests.csproj" />
+    <Project Path="SunamoOctokit\SunamoOctokit\SunamoOctokit.csproj" />
+  </Folder>
+  <Folder Name="SunamoPackageJson">
+    <Project Path="SunamoPackageJson\RunnerPackageJson\RunnerPackageJson.csproj" />
+    <Project Path="SunamoPackageJson\SunamoPackageJson.Tests\SunamoPackageJson.Tests.csproj" />
+    <Project Path="SunamoPackageJson\SunamoPackageJson\SunamoPackageJson.csproj" />
+  </Folder>
+  <Folder Name="SunamoParsing">
+    <Project Path="SunamoParsing\RunnerParsing\RunnerParsing.csproj" />
+    <Project Path="SunamoParsing\SunamoParsing.Tests\SunamoParsing.Tests.csproj" />
+    <Project Path="SunamoParsing\SunamoParsing\SunamoParsing.csproj" />
+  </Folder>
+  <Folder Name="SunamoPaths">
+    <Project Path="SunamoPaths\RunnerPaths\RunnerPaths.csproj" />
+    <Project Path="SunamoPaths\SunamoPaths.Tests\SunamoPaths.Tests.csproj" />
+    <Project Path="SunamoPaths\SunamoPaths\SunamoPaths.csproj" />
+  </Folder>
+  <Folder Name="SunamoPercentCalculator">
+    <Project Path="SunamoPercentCalculator\RunnerPercentCalculator\RunnerPercentCalculator.csproj" />
+    <Project Path="SunamoPercentCalculator\SunamoPercentCalculator.Tests\SunamoPercentCalculator.Tests.csproj" />
+    <Project Path="SunamoPercentCalculator\SunamoPercentCalculator\SunamoPercentCalculator.csproj" />
+  </Folder>
+  <Folder Name="SunamoPInvoke">
+    <Project Path="SunamoPInvoke\RunnerPInvoke\RunnerPInvoke.csproj" />
+    <Project Path="SunamoPInvoke\SunamoPInvoke.Tests\SunamoPInvoke.Tests.csproj" />
+    <Project Path="SunamoPInvoke\SunamoPInvoke\SunamoPInvoke.csproj" />
+  </Folder>
+  <Folder Name="SunamoPlatformUwpInterop">
+    <Project Path="SunamoPlatformUwpInterop\RunnerPlatformUwpInterop\RunnerPlatformUwpInterop.csproj" />
+    <Project Path="SunamoPlatformUwpInterop\SunamoPlatformUwpInterop.Tests\SunamoPlatformUwpInterop.Tests.csproj" />
+    <Project Path="SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop.csproj" />
+  </Folder>
+  <Folder Name="SunamoPS">
+    <Project Path="SunamoPS\RunnerPS\RunnerPS.csproj" />
+    <Project Path="SunamoPS\SunamoPS.Tests\SunamoPS.Tests.csproj" />
+    <Project Path="SunamoPS\SunamoPS\SunamoPS.csproj" />
+  </Folder>
+  <Folder Name="SunamoRandom">
+    <Project Path="SunamoRandom\RunnerRandom\RunnerRandom.csproj" />
+    <Project Path="SunamoRandom\SunamoRandom.Tests\SunamoRandom.Tests.csproj" />
+    <Project Path="SunamoRandom\SunamoRandom\SunamoRandom.csproj" />
+  </Folder>
+  <Folder Name="SunamoReflection">
+    <Project Path="SunamoReflection\RunnerReflection\RunnerReflection.csproj" />
+    <Project Path="SunamoReflection\SunamoReflection.Tests\SunamoReflection.Tests.csproj" />
+    <Project Path="SunamoReflection\SunamoReflection\SunamoReflection.csproj" />
+  </Folder>
+  <Folder Name="SunamoRegex">
+    <Project Path="SunamoRegex\RunnerRegex\RunnerRegex.csproj" />
+    <Project Path="SunamoRegex\SunamoRegex.Tests\SunamoRegex.Tests.csproj" />
+    <Project Path="SunamoRegex\SunamoRegex\SunamoRegex.csproj" />
+  </Folder>
+  <Folder Name="SunamoResult">
+    <Project Path="SunamoResult\RunnerResult\RunnerResult.csproj" />
+    <Project Path="SunamoResult\SunamoResult.Tests\SunamoResult.Tests.csproj" />
+    <Project Path="SunamoResult\SunamoResult\SunamoResult.csproj" />
+  </Folder>
+  <Folder Name="SunamoRobotsTxt">
+    <Project Path="SunamoRobotsTxt\RunnerRobotsTxt\RunnerRobotsTxt.csproj" />
+    <Project Path="SunamoRobotsTxt\SunamoRobotsTxt.Tests\SunamoRobotsTxt.Tests.csproj" />
+    <Project Path="SunamoRobotsTxt\SunamoRobotsTxt\SunamoRobotsTxt.csproj" />
+  </Folder>
+  <Folder Name="SunamoRoslyn">
+    <Project Path="SunamoRoslyn\RunnerRoslyn\RunnerRoslyn.csproj" />
+    <Project Path="SunamoRoslyn\SunamoRoslyn.Tests\SunamoRoslyn.Tests.csproj" />
+    <Project Path="SunamoRoslyn\SunamoRoslyn\SunamoRoslyn.csproj" />
+  </Folder>
+  <Folder Name="SunamoRss">
+    <Project Path="SunamoRss\RunnerRss\RunnerRss.csproj" />
+    <Project Path="SunamoRss\SunamoRss.Tests\SunamoRss.Tests.csproj" />
+    <Project Path="SunamoRss\SunamoRss\SunamoRss.csproj" />
+  </Folder>
+  <Folder Name="SunamoRuleset">
+    <Project Path="SunamoRuleset\RunnerRuleset\RunnerRuleset.csproj" />
+    <Project Path="SunamoRuleset\SunamoRuleset.Tests\SunamoRuleset.Tests.csproj" />
+    <Project Path="SunamoRuleset\SunamoRuleset\SunamoRuleset.csproj" />
+  </Folder>
+  <Folder Name="SunamoSecurity">
+    <Project Path="SunamoSecurity\RunnerSecurity\RunnerSecurity.csproj" />
+    <Project Path="SunamoSecurity\SunamoSecurity.Tests\SunamoSecurity.Tests.csproj" />
+    <Project Path="SunamoSecurity\SunamoSecurity\SunamoSecurity.csproj" />
+  </Folder>
+  <Folder Name="SunamoSelenium">
+    <Project Path="SunamoSelenium\RunnerSelenium\RunnerSelenium.csproj" />
+    <Project Path="SunamoSelenium\SunamoSelenium.Tests\SunamoSelenium.Tests.csproj" />
+    <Project Path="SunamoSelenium\SunamoSelenium\SunamoSelenium.csproj" />
+  </Folder>
+  <Folder Name="SunamoSerializer">
+    <Project Path="SunamoSerializer\RunnerSerializer\RunnerSerializer.csproj" />
+    <Project Path="SunamoSerializer\SunamoSerializer.Tests\SunamoSerializer.Tests.csproj" />
+    <Project Path="SunamoSerializer\SunamoSerializer\SunamoSerializer.csproj" />
+  </Folder>
+  <Folder Name="SunamoShared">
+    <Project Path="SunamoShared\RunnerShared\RunnerShared.csproj" />
+    <Project Path="SunamoShared\SunamoShared.Tests\SunamoShared.Tests.csproj" />
+    <Project Path="SunamoShared\SunamoShared\SunamoShared.csproj" />
+  </Folder>
+  <Folder Name="SunamoStopwatch">
+    <Project Path="SunamoStopwatch\RunnerStopwatch\RunnerStopwatch.csproj" />
+    <Project Path="SunamoStopwatch\SunamoStopwatch.Tests\SunamoStopwatch.Tests.csproj" />
+    <Project Path="SunamoStopwatch\SunamoStopwatch\SunamoStopwatch.csproj" />
+  </Folder>
+  <Folder Name="SunamoString">
+    <Project Path="SunamoString\RunnerString\RunnerString.csproj" />
+    <Project Path="SunamoString\SunamoString.Tests\SunamoString.Tests.csproj" />
+    <Project Path="SunamoString\SunamoString\SunamoString.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringFormat">
+    <Project Path="SunamoStringFormat\RunnerStringFormat\RunnerStringFormat.csproj" />
+    <Project Path="SunamoStringFormat\SunamoStringFormat.Tests\SunamoStringFormat.Tests.csproj" />
+    <Project Path="SunamoStringFormat\SunamoStringFormat\SunamoStringFormat.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringGetLines">
+    <Project Path="SunamoStringGetLines\RunnerStringGetLines\RunnerStringGetLines.csproj" />
+    <Project Path="SunamoStringGetLines\SunamoStringGetLines.Tests\SunamoStringGetLines.Tests.csproj" />
+    <Project Path="SunamoStringGetLines\SunamoStringGetLines\SunamoStringGetLines.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringGetString">
+    <Project Path="SunamoStringGetString\RunnerStringGetString\RunnerStringGetString.csproj" />
+    <Project Path="SunamoStringGetString\SunamoStringGetString.Tests\SunamoStringGetString.Tests.csproj" />
+    <Project Path="SunamoStringGetString\SunamoStringGetString\SunamoStringGetString.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringJoin">
+    <Project Path="SunamoStringJoin\RunnerStringJoin\RunnerStringJoin.csproj" />
+    <Project Path="SunamoStringJoin\SunamoStringJoin.Tests\SunamoStringJoin.Tests.csproj" />
+    <Project Path="SunamoStringJoin\SunamoStringJoin\SunamoStringJoin.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringJoinPairs">
+    <Project Path="SunamoStringJoinPairs\RunnerStringJoinPairs\RunnerStringJoinPairs.csproj" />
+    <Project Path="SunamoStringJoinPairs\SunamoStringJoinPairs.Tests\SunamoStringJoinPairs.Tests.csproj" />
+    <Project Path="SunamoStringJoinPairs\SunamoStringJoinPairs\SunamoStringJoinPairs.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringParts">
+    <Project Path="SunamoStringParts\RunnerStringParts\RunnerStringParts.csproj" />
+    <Project Path="SunamoStringParts\SunamoStringParts.Tests\SunamoStringParts.Tests.csproj" />
+    <Project Path="SunamoStringParts\SunamoStringParts\SunamoStringParts.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringReplace">
+    <Project Path="SunamoStringReplace\RunnerStringReplace\RunnerStringReplace.csproj" />
+    <Project Path="SunamoStringReplace\SunamoStringReplace.Tests\SunamoStringReplace.Tests.csproj" />
+    <Project Path="SunamoStringReplace\SunamoStringReplace\SunamoStringReplace.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringSplit">
+    <Project Path="SunamoStringSplit\RunnerStringSplit\RunnerStringSplit.csproj" />
+    <Project Path="SunamoStringSplit\SunamoStringSplit.Tests\SunamoStringSplit.Tests.csproj" />
+    <Project Path="SunamoStringSplit\SunamoStringSplit\SunamoStringSplit.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringSubstring">
+    <Project Path="SunamoStringSubstring\RunnerStringSubstring\RunnerStringSubstring.csproj" />
+    <Project Path="SunamoStringSubstring\SunamoStringSubstring.Tests\SunamoStringSubstring.Tests.csproj" />
+    <Project Path="SunamoStringSubstring\SunamoStringSubstring\SunamoStringSubstring.csproj" />
+  </Folder>
+  <Folder Name="SunamoStringTrim">
+    <Project Path="SunamoStringTrim\RunnerStringTrim\RunnerStringTrim.csproj" />
+    <Project Path="SunamoStringTrim\SunamoStringTrim.Tests\SunamoStringTrim.Tests.csproj" />
+    <Project Path="SunamoStringTrim\SunamoStringTrim\SunamoStringTrim.csproj" />
+  </Folder>
+  <Folder Name="SunamoTest">
+    <Project Path="SunamoTest\RunnerTest\RunnerTest.csproj" />
+    <Project Path="SunamoTest\SunamoTest.Tests\SunamoTest.Tests.csproj" />
+    <Project Path="SunamoTest\SunamoTest\SunamoTest.csproj" />
+  </Folder>
+  <Folder Name="SunamoText">
+    <Project Path="SunamoText\RunnerText\RunnerText.csproj" />
+    <Project Path="SunamoText\SunamoText.Tests\SunamoText.Tests.csproj" />
+    <Project Path="SunamoText\SunamoText\SunamoText.csproj" />
+  </Folder>
+  <Folder Name="SunamoTextIndexing">
+    <Project Path="SunamoTextIndexing\RunnerTextIndexing\RunnerTextIndexing.csproj" />
+    <Project Path="SunamoTextIndexing\SunamoTextIndexing.Tests\SunamoTextIndexing.Tests.csproj" />
+    <Project Path="SunamoTextIndexing\SunamoTextIndexing\SunamoTextIndexing.csproj" />
+  </Folder>
+  <Folder Name="SunamoTextOutputGenerator">
+    <Project Path="SunamoTextOutputGenerator\RunnerTextOutputGenerator\RunnerTextOutputGenerator.csproj" />
+    <Project Path="SunamoTextOutputGenerator\SunamoTextOutputGenerator.Tests\SunamoTextOutputGenerator.Tests.csproj" />
+    <Project Path="SunamoTextOutputGenerator\SunamoTextOutputGenerator\SunamoTextOutputGenerator.csproj" />
+  </Folder>
+  <Folder Name="SunamoThisApp">
+    <Project Path="SunamoThisApp\RunnerThisApp\RunnerThisApp.csproj" />
+    <Project Path="SunamoThisApp\SunamoThisApp.Tests\SunamoThisApp.Tests.csproj" />
+    <Project Path="SunamoThisApp\SunamoThisApp\SunamoThisApp.csproj" />
+  </Folder>
+  <Folder Name="SunamoThread">
+    <Project Path="SunamoThread\RunnerThread\RunnerThread.csproj" />
+    <Project Path="SunamoThread\SunamoThread.Tests\SunamoThread.Tests.csproj" />
+    <Project Path="SunamoThread\SunamoThread\SunamoThread.csproj" />
+  </Folder>
+  <Folder Name="SunamoThreading">
+    <Project Path="SunamoThreading\RunnerThreading\RunnerThreading.csproj" />
+    <Project Path="SunamoThreading\SunamoThreading.Tests\SunamoThreading.Tests.csproj" />
+    <Project Path="SunamoThreading\SunamoThreading\SunamoThreading.csproj" />
+  </Folder>
+  <Folder Name="SunamoTidy">
+    <Project Path="SunamoTidy\RunnerTidy\RunnerTidy.csproj" />
+    <Project Path="SunamoTidy\SunamoTidy.Tests\SunamoTidy.Tests.csproj" />
+    <Project Path="SunamoTidy\SunamoTidy\SunamoTidy.csproj" />
+  </Folder>
+  <Folder Name="SunamoToUnixLineEnding">
+    <Project Path="SunamoToUnixLineEnding\RunnerToUnixLineEnding\RunnerToUnixLineEnding.csproj" />
+    <Project Path="SunamoToUnixLineEnding\SunamoToUnixLineEnding.Tests\SunamoToUnixLineEnding.Tests.csproj" />
+    <Project Path="SunamoToUnixLineEnding\SunamoToUnixLineEnding\SunamoToUnixLineEnding.csproj" />
+  </Folder>
+  <Folder Name="SunamoTwoWayDictionary">
+    <Project Path="SunamoTwoWayDictionary\RunnerTwoWayDictionary\RunnerTwoWayDictionary.csproj" />
+    <Project Path="SunamoTwoWayDictionary\SunamoTwoWayDictionary.Tests\SunamoTwoWayDictionary.Tests.csproj" />
+    <Project Path="SunamoTwoWayDictionary\SunamoTwoWayDictionary\SunamoTwoWayDictionary.csproj" />
+  </Folder>
+  <Folder Name="SunamoTypes">
+    <Project Path="SunamoTypes\RunnerTypes\RunnerTypes.csproj" />
+    <Project Path="SunamoTypes\SunamoTypes.Tests\SunamoTypes.Tests.csproj" />
+    <Project Path="SunamoTypes\SunamoTypes\SunamoTypes.csproj" />
+  </Folder>
+  <Folder Name="SunamoUnderscore">
+    <Project Path="SunamoUnderscore\RunnerUnderscore\RunnerUnderscore.csproj" />
+    <Project Path="SunamoUnderscore\SunamoUnderscore.Tests\SunamoUnderscore.Tests.csproj" />
+    <Project Path="SunamoUnderscore\SunamoUnderscore\SunamoUnderscore.csproj" />
+  </Folder>
+  <Folder Name="SunamoUri">
+    <Project Path="SunamoUri\RunnerUri\RunnerUri.csproj" />
+    <Project Path="SunamoUri\SunamoUri.Tests\SunamoUri.Tests.csproj" />
+    <Project Path="SunamoUri\SunamoUri\SunamoUri.csproj" />
+  </Folder>
+  <Folder Name="SunamoUriWebServices">
+    <Project Path="SunamoUriWebServices\RunnerUriWebServices\RunnerUriWebServices.csproj" />
+    <Project Path="SunamoUriWebServices\SunamoUriWebServices.Tests\SunamoUriWebServices.Tests.csproj" />
+    <Project Path="SunamoUriWebServices\SunamoUriWebServices\SunamoUriWebServices.csproj" />
+  </Folder>
+  <Folder Name="SunamoValues">
+    <Project Path="SunamoValues\RunnerValues\RunnerValues.csproj" />
+    <Project Path="SunamoValues\SunamoValues.Tests\SunamoValues.Tests.csproj" />
+    <Project Path="SunamoValues\SunamoValues\SunamoValues.csproj" />
+  </Folder>
+  <Folder Name="SunamoVcf">
+    <Project Path="SunamoVcf\RunnerVcf\RunnerVcf.csproj" />
+    <Project Path="SunamoVcf\SunamoVcf.Tests\SunamoVcf.Tests.csproj" />
+    <Project Path="SunamoVcf\SunamoVcf\SunamoVcf.csproj" />
+  </Folder>
+  <Folder Name="SunamoWikipedia">
+    <Project Path="SunamoWikipedia\RunnerWikipedia\RunnerWikipedia.csproj" />
+    <Project Path="SunamoWikipedia\SunamoWikipedia.Tests\SunamoWikipedia.Tests.csproj" />
+    <Project Path="SunamoWikipedia\SunamoWikipedia\SunamoWikipedia.csproj" />
+  </Folder>
+  <Folder Name="SunamoWinStd">
+    <Project Path="SunamoWinStd\RunnerWinStd\RunnerWinStd.csproj" />
+    <Project Path="SunamoWinStd\SunamoWinStd.Tests\SunamoWinStd.Tests.csproj" />
+    <Project Path="SunamoWinStd\SunamoWinStd\SunamoWinStd.csproj" />
+  </Folder>
+  <Folder Name="SunamoXlfKeys">
+    <Project Path="SunamoXlfKeys\RunnerXlfKeys\RunnerXlfKeys.csproj" />
+    <Project Path="SunamoXlfKeys\SunamoXlfKeys.Tests\SunamoXlfKeys.Tests.csproj" />
+    <Project Path="SunamoXlfKeys\SunamoXlfKeys\SunamoXlfKeys.csproj" />
+  </Folder>
+  <Folder Name="SunamoXliffParser">
+    <Project Path="SunamoXliffParser\RunnerXliffParser\RunnerXliffParser.csproj" />
+    <Project Path="SunamoXliffParser\SunamoXliffParser.Tests\SunamoXliffParser.Tests.csproj" />
+    <Project Path="SunamoXliffParser\SunamoXliffParser\SunamoXliffParser.csproj" />
+  </Folder>
+  <Folder Name="SunamoXml">
+    <Project Path="SunamoXml\RunnerXml\RunnerXml.csproj" />
+    <Project Path="SunamoXml\SunamoXml.Tests\SunamoXml.Tests.csproj" />
+    <Project Path="SunamoXml\SunamoXml\SunamoXml.csproj" />
+  </Folder>
+  <Folder Name="SunamoYaml">
+    <Project Path="SunamoYaml\RunnerYaml\RunnerYaml.csproj" />
+    <Project Path="SunamoYaml\SunamoYaml.Tests\SunamoYaml.Tests.csproj" />
+    <Project Path="SunamoYaml\SunamoYaml\SunamoYaml.csproj" />
+  </Folder>
+  <Folder Name="SunamoYoutube">
+    <Project Path="SunamoYouTube\RunnerYouTube\RunnerYouTube.csproj" />
+    <Project Path="SunamoYoutube\SunamoYoutube.Tests\SunamoYoutube.Tests.csproj" />
+    <Project Path="SunamoYoutube\SunamoYouTube\SunamoYouTube.csproj" />
+  </Folder>
+</Solution>

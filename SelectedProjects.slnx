@@ -1,0 +1,32 @@
+<Solution>
+  <Folder Name="SunamoCollections">
+    <Project Path="SunamoCollections\SunamoCollections\SunamoCollections.csproj" />
+  </Folder>
+  <Folder Name="SunamoDelegates">
+    <Project Path="SunamoDelegates\SunamoDelegates\SunamoDelegates.csproj" />
+  </Folder>
+  <Folder Name="SunamoDotNetZip">
+    <Project Path="SunamoDotNetZip\SunamoDotNetZip\SunamoDotNetZip.csproj" />
+  </Folder>
+  <Folder Name="SunamoEnums">
+    <Project Path="SunamoEnums\SunamoEnums\SunamoEnums.csproj" />
+  </Folder>
+  <Folder Name="SunamoLang">
+    <Project Path="SunamoLang\SunamoLang\SunamoLang.csproj" />
+  </Folder>
+  <Folder Name="SunamoNumbers">
+    <Project Path="SunamoNumbers\SunamoNumbers\SunamoNumbers.csproj" />
+  </Folder>
+  <Folder Name="SunamoPlatformUwpInterop">
+    <Project Path="SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop.csproj" />
+  </Folder>
+  <Folder Name="SunamoReflection">
+    <Project Path="SunamoReflection\SunamoReflection\SunamoReflection.csproj" />
+  </Folder>
+  <Folder Name="SunamoRegex">
+    <Project Path="SunamoRegex\SunamoRegex\SunamoRegex.csproj" />
+  </Folder>
+  <Folder Name="SunamoRoslyn">
+    <Project Path="SunamoRoslyn\SunamoRoslyn\SunamoRoslyn.csproj" />
+  </Folder>
+</Solution>
