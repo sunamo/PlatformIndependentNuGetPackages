@@ -3,7 +3,7 @@
 
 param(
     [Parameter(Mandatory=$false)]
-    [int]$GroupNumber = 0
+    [string]$GroupNumber = "0"
 )
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -11,11 +11,23 @@ $rootPath = Split-Path -Parent $scriptDir
 $groupedFile = Join-Path $scriptDir "submodules-grouped.md"
 $comment = "// variables names: ok"
 
+# Parse GroupNumber - supports single number (4) or range (1-3)
+$groupNumbers = @()
+if ($GroupNumber -match "^(\d+)-(\d+)$") {
+    $rangeStart = [int]$matches[1]
+    $rangeEnd = [int]$matches[2]
+    if ($rangeStart -gt $rangeEnd) { Write-Host "Invalid range: start ($rangeStart) is greater than end ($rangeEnd)" -ForegroundColor Red; exit 1 }
+    $groupNumbers = $rangeStart..$rangeEnd
+} else {
+    $groupNumbers = @([int]$GroupNumber)
+}
+
 # Determine which submodules to process
-if ($GroupNumber -eq 0) {
+if ($groupNumbers.Count -eq 1 -and $groupNumbers[0] -eq 0) {
     Write-Host "============================================" -ForegroundColor Cyan
-    Write-Host "TIP: You can use -GroupNumber parameter to process only specific group" -ForegroundColor Yellow
+    Write-Host "TIP: You can use -GroupNumber parameter to process specific group(s)" -ForegroundColor Yellow
     Write-Host "Example: .\.scripts\add-variables-ok-comment-grouped.ps1 -GroupNumber 4" -ForegroundColor Yellow
+    Write-Host "Example: .\.scripts\add-variables-ok-comment-grouped.ps1 -GroupNumber 1-3" -ForegroundColor Yellow
     Write-Host "============================================" -ForegroundColor Cyan
     Write-Host ""
 
@@ -23,37 +35,34 @@ if ($GroupNumber -eq 0) {
     $submoduleDirs = Get-ChildItem -Path $rootPath -Directory | Where-Object { $_.Name -notmatch "^\." -and (Test-Path (Join-Path $_.FullName ".git")) }
     $submoduleNames = $submoduleDirs | Select-Object -ExpandProperty Name
 } else {
-    # Load submodules from specified group
+    # Load submodules from specified group(s)
     if (-not (Test-Path $groupedFile)) {
         Write-Host "Grouped submodules file not found: $groupedFile" -ForegroundColor Red
         Write-Host "Run .scripts\group-submodules.ps1 first" -ForegroundColor Yellow
         exit 1
     }
 
-    # Read submodules from the specified group
-    $content = Get-Content $groupedFile
-    $inGroup = $false
+    $contentLines = Get-Content $groupedFile
     $submoduleNames = @()
 
-    foreach ($line in $content) {
-        if ($line -match "^## Group $GroupNumber$") {
-            $inGroup = $true
-            continue
-        }
-        if ($inGroup -and $line -match "^## Group \d+$") {
-            break
-        }
-        if ($inGroup -and $line -match "^- ([^\s(]+)") {
-            $submoduleNames += $matches[1].Trim()
+    foreach ($groupNum in $groupNumbers) {
+        $inGroup = $false
+        foreach ($line in $contentLines) {
+            if ($line -match "^## Group $groupNum$") { $inGroup = $true; continue }
+            if ($inGroup -and $line -match "^## Group \d+$") { break }
+            if ($inGroup -and $line -match "^- ([^\s(]+)") { $submoduleNames += $matches[1].Trim() }
         }
     }
 
+    # Remove duplicates (in case groups overlap)
+    $submoduleNames = $submoduleNames | Select-Object -Unique
+
     if ($submoduleNames.Count -eq 0) {
-        Write-Host "No submodules found in group $GroupNumber" -ForegroundColor Red
+        Write-Host "No submodules found in group(s) $GroupNumber" -ForegroundColor Red
         exit 1
     }
 
-    Write-Host "Processing group $GroupNumber with $($submoduleNames.Count) submodules" -ForegroundColor Cyan
+    Write-Host "Processing group(s) $GroupNumber with $($submoduleNames.Count) submodules" -ForegroundColor Cyan
     Write-Host ""
 
     # Filter out missing submodules
@@ -80,7 +89,7 @@ if ($GroupNumber -eq 0) {
     $submoduleNames = $existingNames
 
     if ($submoduleNames.Count -eq 0) {
-        Write-Host "No existing submodules found in group $GroupNumber" -ForegroundColor Red
+        Write-Host "No existing submodules found in group(s) $GroupNumber" -ForegroundColor Red
         exit 1
     }
 }

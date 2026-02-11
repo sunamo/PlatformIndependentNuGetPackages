@@ -11,16 +11,13 @@ Nejčastěji používané skripty pro každodenní práci:
   - CZ: Vypíše všechny projekty s jejich target frameworky a vysvětlí odchylky s důvody
   - Vylepšená verze get-target-frameworks.ps1 s detailními důvody
 
-- **`generate-progress-report.ps1 -GroupNumber`** - Generování progress reportu pro skupinu
-  - EN: Generate progress report for specific submodule group
-  - CZ: Generování progress reportu pro specifickou skupinu submodulů
-  - Parametr: `-GroupNumber` pro výběr skupiny
-
-- **`check-submodules-quality.ps1 -GroupNumber`** - Kontrola kvality submodulů ve skupině
-  - EN: Checks submodule quality (NoWarn in csproj, build errors/warnings) for specific group
-  - CZ: Kontroluje kvalitu submodulů (NoWarn v csproj, build chyby/warnings) pro specifickou skupinu
-  - Parametr: `-GroupNumber` pro výběr skupiny
+- **`check-group.ps1 -GroupNumber [-SkipBuild] [-SkipProgress]`** - Sloučená kontrola skupiny submodulů
+  - EN: Unified submodule check - progress report + quality check (NoWarn, build) in one script
+  - CZ: Sloučená kontrola submodulů - progress report + kvalita (NoWarn, build) v jednom skriptu
+  - Parametry: `-GroupNumber` pro výběr skupiny, `-SkipBuild` přeskočí build, `-SkipProgress` přeskočí progress
+  - Bez `-GroupNumber` generuje celkový report do `variable-renaming-progress.md`
   - Vytváří `submodules-quality-report.json`
+  - Nahrazuje dřívější `generate-progress-report.ps1` a `check-submodules-quality.ps1`
 
 - **`open-terminal-tabs.ps1 -GroupNumber`** - Otevře Windows Terminal s taby pro skupinu
   - EN: Opens pwsh tabs in Windows Terminal for all submodules in the specified group
@@ -319,6 +316,8 @@ Tyto skripty byly použity při velkém refactoringu přejmenování proměnnýc
 - **`find-non-standard-structure.ps1`** - Hledání nestandardní struktury
 
 ### Progress Tracking (Historical)
+- **`generate-progress-report.ps1`** - Generování progress reportu (NAHRAZENO check-group.ps1)
+- **`check-submodules-quality.ps1`** - Kontrola kvality submodulů (NAHRAZENO check-group.ps1)
 - **`update-progress-in-grouped.ps1`** - Aktualizace progressu v grouped.md
 
 ### Version Management (Historical)
@@ -360,8 +359,8 @@ Tyto skripty byly použity při velkém refactoringu přejmenování proměnnýc
 
 ### Denní workflow
 1. **Kontrola frameworks**: `get-target-frameworks-with-reasons.ps1`
-2. **Progress report**: `generate-progress-report.ps1 -GroupNumber 1`
-3. **Kontrola kvality**: `check-submodules-quality.ps1 -GroupNumber 1`
+2. **Progress + kvalita**: `check-group.ps1 -GroupNumber 1`
+3. **Jen progress (rychle)**: `check-group.ps1 -GroupNumber 1 -SkipBuild`
 4. **Otevření terminálů**: `open-terminal-tabs.ps1 -GroupNumber 1`
 
 ### Pravidelné workflow

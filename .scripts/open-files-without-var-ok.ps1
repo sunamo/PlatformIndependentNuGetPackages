@@ -109,7 +109,7 @@ function Open-FilesViaDevenvEdit {
 
     # EN: First, ensure solution is open in existing VS instance
     # CZ: Nejdřív zajisti že solution je otevřené v existující VS instanci
-    $vsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
+    $vsProcesses = Get-Process -Name "devenv", "DevHub" -ErrorAction SilentlyContinue
     if ($vsProcesses.Count -eq 0) {
         Write-Host "No VS instance running. Opening solution first..." -ForegroundColor Yellow
         Start-Process -FilePath $DevenvPath -ArgumentList "`"$SolutionPath`"" -Wait:$false
@@ -228,14 +228,25 @@ if ($VsVersion -eq "2026") {
 
 $devenvPath = $null
 $vsVersionFound = $null
+$isDevHub = $false
 
 foreach ($year in $vsYears) {
     foreach ($edition in $vsEditions) {
-        $testPath = "C:\Program Files\Microsoft Visual Studio\$year\$edition\Common7\IDE\devenv.exe"
-        if (Test-Path $testPath) {
-            $devenvPath = $testPath
+        # EN: VS 2026+ uses DevHub.exe instead of devenv.exe at a different path
+        # CZ: VS 2026+ pouziva DevHub.exe misto devenv.exe na jine ceste
+        $testPathDevenv = "C:\Program Files\Microsoft Visual Studio\$year\$edition\Common7\IDE\devenv.exe"
+        $testPathDevHub = "C:\Program Files\Microsoft Visual Studio\$year\$edition\Common7\ServiceHub\Hosts\ServiceHub.Host.Extensibility.amd64\DevHub.exe"
+
+        if (Test-Path $testPathDevenv) {
+            $devenvPath = $testPathDevenv
             $vsVersionFound = if ($year -eq '18') { 'VS 2026' } else { "VS $year" }
-            Write-Host "Found $vsVersionFound $edition (requested: VS $VsVersion)" -ForegroundColor Green
+            Write-Host "Found $vsVersionFound $edition (requested: VS $VsVersion) [devenv.exe]" -ForegroundColor Green
+            break
+        } elseif (Test-Path $testPathDevHub) {
+            $devenvPath = $testPathDevHub
+            $isDevHub = $true
+            $vsVersionFound = if ($year -eq '18') { 'VS 2026' } else { "VS $year" }
+            Write-Host "Found $vsVersionFound $edition (requested: VS $VsVersion) [DevHub.exe]" -ForegroundColor Green
             break
         }
     }
@@ -255,30 +266,77 @@ if (-not (Test-Path $SolutionDir -PathType Container)) {
 }
 
 $folderName = Split-Path -Leaf $SolutionDir
-$SolutionPath = Join-Path $SolutionDir "$folderName.sln"
 Write-Host "Solution directory: $SolutionDir" -ForegroundColor Cyan
-Write-Host "Looking for solution file: $SolutionPath" -ForegroundColor Cyan
 
-# EN: Validate solution file exists
-# CZ: Zkontroluj že solution soubor existuje
-if (-not (Test-Path $SolutionPath)) {
-    Write-Error "Solution file not found: $SolutionPath"
+# EN: Search for solution file in order of priority: .sln, .slnx, .slnj
+# CZ: Hledej solution soubor v poradi priority: .sln, .slnx, .slnj
+$SolutionPath = $null
+$solutionExtensions = @('.sln', '.slnx', '.slnj')
+foreach ($ext in $solutionExtensions) {
+    $testSlnPath = Join-Path $SolutionDir "$folderName$ext"
+    if (Test-Path $testSlnPath) {
+        $SolutionPath = $testSlnPath
+        break
+    }
+}
+
+if (-not $SolutionPath) {
+    $searchedPaths = ($solutionExtensions | ForEach-Object { "$folderName$_" }) -join ', '
+    Write-Error "Solution file not found in $SolutionDir. Searched for: $searchedPaths"
     exit 1
 }
 
+Write-Host "Found solution file: $SolutionPath" -ForegroundColor Green
+
 $solutionDir = $SolutionDir
 
-# EN: Parse .sln file to get project paths
-# CZ: Parsuj .sln soubor pro získání cest k projektům
-$slnContent = Get-Content $SolutionPath
+# EN: Parse solution file to get project paths (supports .sln, .slnx, .slnj)
+# CZ: Parsuj solution soubor pro ziskani cest k projektum (podporuje .sln, .slnx, .slnj)
+$slnContent = Get-Content $SolutionPath -Raw
 $projectPaths = @()
+$slnExtension = [System.IO.Path]::GetExtension($SolutionPath).ToLower()
 
-foreach ($line in $slnContent) {
-    if ($line -match 'Project\(".*?"\)\s*=\s*".*?",\s*"(.*?\.csproj)"') {
-        $relativeProjectPath = $matches[1]
-        $absoluteProjectPath = Join-Path $solutionDir $relativeProjectPath
-        if (Test-Path $absoluteProjectPath) {
-            $projectPaths += $absoluteProjectPath
+if ($slnExtension -eq '.sln') {
+    # EN: Classic .sln format: Project("...") = "Name", "path.csproj"
+    # CZ: Klasicky .sln format
+    foreach ($line in ($slnContent -split "`n")) {
+        if ($line -match 'Project\(".*?"\)\s*=\s*".*?",\s*"(.*?\.csproj)"') {
+            $relativeProjectPath = $matches[1]
+            $absoluteProjectPath = Join-Path $solutionDir $relativeProjectPath
+            if (Test-Path $absoluteProjectPath) {
+                $projectPaths += $absoluteProjectPath
+            }
+        }
+    }
+} elseif ($slnExtension -eq '.slnx') {
+    # EN: XML .slnx format: <Project Path="path.csproj" />
+    # CZ: XML .slnx format
+    [xml]$slnXml = $slnContent
+    foreach ($project in $slnXml.Solution.Project) {
+        $relativeProjectPath = $project.Path
+        if ($relativeProjectPath -like '*.csproj') {
+            $absoluteProjectPath = Join-Path $solutionDir $relativeProjectPath
+            if (Test-Path $absoluteProjectPath) {
+                $projectPaths += $absoluteProjectPath
+            }
+        }
+    }
+} elseif ($slnExtension -eq '.slnj') {
+    # EN: JSON .slnj format: { "solution": { "projects": ["path.csproj"] } }
+    # CZ: JSON .slnj format
+    $slnJson = $slnContent | ConvertFrom-Json
+    $jsonProjects = @()
+    if ($slnJson.solution -and $slnJson.solution.projects) {
+        $jsonProjects = $slnJson.solution.projects
+    } elseif ($slnJson.projects) {
+        $jsonProjects = $slnJson.projects
+    }
+    foreach ($relativeProjectPath in $jsonProjects) {
+        if ($relativeProjectPath -like '*.csproj') {
+            $absoluteProjectPath = Join-Path $solutionDir $relativeProjectPath
+            if (Test-Path $absoluteProjectPath) {
+                $projectPaths += $absoluteProjectPath
+            }
         }
     }
 }
@@ -319,8 +377,8 @@ foreach ($file in $allCsFiles) {
         continue
     }
 
-    # EN: Use regex for consistent matching with generate-progress-report.ps1
-    # CZ: Použij regex pro konzistentní matching s generate-progress-report.ps1
+    # EN: Use regex for consistent matching with check-group.ps1
+    # CZ: Použij regex pro konzistentní matching s check-group.ps1
     if ($content -notmatch '//\s*variables\s+names:\s*ok') {
         $filesToOpen += $file.FullName
     }
@@ -443,7 +501,9 @@ if (-not $ForceDevenvEdit) {
     # CZ: Zkus získat DTE z Running Object Table
     Write-Host "Checking if Visual Studio DTE is available in ROT..." -ForegroundColor Cyan
 
-    $vsProcesses = Get-Process -Name "devenv" -ErrorAction SilentlyContinue
+    # EN: Check for both devenv (VS 2022) and DevHub (VS 2026) processes
+    # CZ: Kontroluj oba procesy devenv (VS 2022) i DevHub (VS 2026)
+    $vsProcesses = Get-Process -Name "devenv", "DevHub" -ErrorAction SilentlyContinue
     if ($vsProcesses) {
         $dteResult = Test-DTEAvailability -ProcessId $vsProcesses[0].Id
 

@@ -4,101 +4,106 @@ Total submodules: 135
 
 ## Group 1
 
-**Progress report:** Last updated 2026-01-19 19:59:33
-**Quality check:** Last updated 2026-01-19 19:58:00
+**Last checked:** 2026-02-10 23:21:20
 
-- SunamoAI (100% - 5/5)
-- SunamoArgs (100% - 5/5)
-- SunamoAsync (100% - 6/6)
-- SunamoAttributes (100% - 15/15)
-- SunamoAzureDevOpsApi (100% - 5/5)
-- SunamoBazosCrawler (100% - 10/10)
-- SunamoBts (100% - 12/12)
-- SunamoChar (100% - 12/12)
-- SunamoCl (100% - 88/88)
-- SunamoClearScript (100% - 4/4)
+- SunamoAI (100% - 5/5) [✓]
+- SunamoArgs (100% - 5/5) [✓]
+- SunamoAsync (100% - 6/6) [✓]
+- SunamoAttributes (100% - 15/15) [✓]
+- SunamoAzureDevOpsApi (100% - 5/5) [✓]
+- SunamoBazosCrawler (100% - 10/10) [✓]
+- SunamoBts (100% - 12/12) [✓]
+- SunamoChar (100% - 12/12) [✓]
+- SunamoCl (100% - 88/88) [⚠ Warnings]
+- SunamoClearScript (100% - 4/4) [✓]
 
 ## Group 2
 
-- SunamoClipboard (33.33% - 2/6)
-- SunamoCollectionOnDrive (0% - 0/18)
-- SunamoCollections (6.52% - 3/46)
-- SunamoCollectionsChangeContent (0% - 0/10)
-- SunamoCollectionsGeneric (0% - 0/47)
-- SunamoCollectionsIndexesWithNull (0% - 0/9)
-- SunamoCollectionsNonGeneric (0% - 0/8)
-- SunamoCollectionsTo (0% - 0/4)
-- SunamoCollectionsValuesTableGrid (0% - 0/11)
-- SunamoCollectionWithoutDuplicates (0% - 0/14)
+**Last checked:** 2026-02-10 23:21:20
+
+- SunamoClipboard (100% - 4/4) [✓]
+- SunamoCollectionOnDrive (100% - 11/11) [✓]
+- SunamoCollections (100% - 44/44) [⚠ NoWarn]
+- SunamoCollectionsChangeContent (100% - 5/5) [✓]
+- SunamoCollectionsGeneric (100% - 41/41) [⚠ NoWarn]
+- SunamoCollectionsIndexesWithNull (100% - 4/4) [✓]
+- SunamoCollectionsNonGeneric (100% - 3/3) [✓]
+- SunamoCollectionsTo (100% - 2/2) [✓]
+- SunamoCollectionsValuesTableGrid (100% - 7/7) [✓]
+- SunamoCollectionWithoutDuplicates (100% - 10/10) [⚠ Warnings]
 
 ## Group 3
 
-- SunamoColors (0% - 0/13)
-- SunamoCompare (0% - 0/15)
-- SunamoConverters (2.22% - 1/45)
-- SunamoCrypt (0% - 0/20)
-- SunamoCsproj (0% - 0/37)
-- SunamoCssGenerator (0% - 0/11)
-- SunamoCsv (0% - 0/21)
-- SunamoData (0% - 0/80)
-- SunamoDateTime (3.77% - 2/53)
-- SunamoDebugCollection (0% - 0/10)
+**Last checked:** 2026-02-10 23:21:20
+
+- SunamoColors (100% - 8/8) [✓]
+- SunamoCompare (100% - 10/10) [✓]
+- SunamoConverters (100% - 39/39) [✓]
+- SunamoCrypt (100% - 15/15) [✓]
+- SunamoCsproj (100% - 32/32) [⚠ NoWarn]
+- SunamoCssGenerator (100% - 9/9) [⚠ Warnings]
+- SunamoCsv (100% - 14/14) [✓]
+- SunamoData (100% - 73/73) [✓]
+- SunamoDateTime (100% - 51/51) [⚠ Warnings]
+- SunamoDebugCollection (100% - 5/5) [✓]
 
 ## Group 4
 
-- SunamoDebugging (0% - 0/14)
-- SunamoDebugIO (0% - 0/14)
-- SunamoDelegates (0% - 0/37)
-- SunamoDependencyInjection (0% - 0/9)
-- SunamoDevCode (0.87% - 3/343)
-- SunamoDictionary (0% - 0/16)
-- SunamoDotnetCmdBuilder (0% - 0/12)
-- SunamoDotNetZip (0% - 0/63)
-- SunamoEditorConfig (0% - 0/11)
-- SunamoEmbeddedResources (0% - 0/9)
+**Last checked:** 2026-02-10 23:21:20
+
+- SunamoDebugging (100% - 8/8) [✓]
+- SunamoDebugIO (100% - 10/10) [✓]
+- SunamoDelegates (100% - 32/32) [✓]
+- SunamoDependencyInjection (100% - 8/8) [✓]
+- SunamoDevCode (100% - 328/328) [✗ BUILD ERRORS]
+- SunamoDictionary (100% - 12/12) [⚠ Warnings]
+- SunamoDotnetCmdBuilder (100% - 6/6) [✓]
+- SunamoDotNetZip (100% - 63/63) [⚠ Warnings]
+- SunamoEditorConfig (100% - 9/9) [✓]
+- SunamoEmbeddedResources (100% - 4/4) [✓]
 
 ## Group 5
 
-- SunamoEmoticons (0% - 0/7)
-- SunamoEnums (23.73% - 14/59)
-- SunamoEnumsHelper (0% - 0/11)
-- SunamoExceptions (0% - 0/15)
-- SunamoExtensions (0% - 0/26)
-- SunamoFileExtensions (0% - 0/22)
-- SunamoFileIO (0% - 0/28)
-- SunamoFilesIndex (0% - 0/15)
-- SunamoFileSystem (4.69% - 3/64)
-- SunamoFluentFtp (0% - 0/16)
+**Last checked:** 2026-02-10 23:21:20
+
+- SunamoEmoticons (100% - 5/5) [✓]
+- SunamoEnums (100% - 52/52) [✓]
+- SunamoEnumsHelper (100% - 4/4) [✓]
+- SunamoExceptions (100% - 11/11) [✓]
+- SunamoExtensions (100% - 20/20) [✓]
+- SunamoFileExtensions (100% - 18/18) [✓]
+- SunamoFileIO (100% - 21/21) [✓]
+- SunamoFilesIndex (100% - 14/14) [✓]
+- SunamoFileSystem (100% - 58/58) [⚠ Warnings]
+- SunamoFluentFtp (100% - 11/11) [✓]
 
 ## Group 6
 
-**Progress report:** Last updated 2026-01-19 20:44:50
-**Quality check:** Last updated 2026-01-19 20:46:14 - Perfect: 10, NoWarn issues: 0, Build errors: 0, Build warnings: 0
+**Last checked:** 2026-02-10 22:28:36
 
-- SunamoFtp (61.29% - 19/31) [✓]
-- SunamoGetFiles (100% - 24/24) [✓]
-- SunamoGetFolders (100% - 15/15) [✓]
-- SunamoGitConfig (100% - 13/13) [✓]
-- SunamoGoogleMyMaps (100% - 5/5) [✓]
-- SunamoGoogleSheets (100% - 24/24) [✓]
-- SunamoGpx (100% - 7/7) [✓]
-- SunamoHtml (15.38% - 12/78) [✓]
-- SunamoHttp (100% - 39/39) [✓]
-- SunamoIni (100% - 3/3) [✓]
+- SunamoFtp (9.68% - 3/31) [✓]
+- SunamoGetFiles (16.67% - 4/24) [✓]
+- SunamoGetFolders (13.33% - 2/15) [✓]
+- SunamoGitConfig (15.38% - 2/13) [✓]
+- SunamoGoogleMyMaps (40% - 2/5) [✓]
+- SunamoGoogleSheets (20.83% - 5/24) [✓]
+- SunamoGpx (42.86% - 3/7) [✓]
+- SunamoHtml (20.51% - 16/78) [✓]
+- SunamoHttp (12.82% - 5/39) [✓]
+- SunamoIni (66.67% - 2/3) [✓]
 
 ## Group 7
 
-**Progress report:** Last updated 2026-01-31 14:29:17
-**Quality check:** Last updated 2026-01-31 14:32:54 - Perfect: 10, NoWarn issues: 0, Build errors: 0, Build warnings: 0
+**Last checked:** 2026-02-10 22:02:58
 
 - SunamoInterfaces (2.33% - 2/86) [✓]
 - SunamoJson (0% - 0/6) [✓]
-- SunamoLang (7.89% - 3/38) [✓]
+- SunamoLang (0% - 0/38) [⚠ Warnings]
 - SunamoLaTeX (0% - 0/3) [✓]
-- SunamoLogging (2.94% - 1/34) [✓]
-- SunamoMail (0% - 0/10) [✓]
+- SunamoLogging (0% - 0/34) [✓]
+- SunamoMail (0% - 0/10) [⚠ Warnings]
 - SunamoMarkdown (0% - 0/4) [✓]
-- SunamoMathpix (0% - 0/2) [✓]
+- SunamoMathpix (0% - 0/2) [⚠ Warnings]
 - SunamoMime (0% - 0/4) [✓]
 - SunamoMsgReader (0% - 0/3) [✓]
 

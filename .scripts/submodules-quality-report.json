@@ -1,6 +1,6 @@
 [
   {
-    "Submodule": "SunamoInterfaces",
+    "Submodule": "SunamoClearScript",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -8,7 +8,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoJson",
+    "Submodule": "SunamoColors",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -16,7 +16,20 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoLang",
+    "Submodule": "SunamoCollections",
+    "NoWarnStatus": "HAS_NOWARN",
+    "NoWarnFiles": [
+      "SunamoCollections\\RunnerCollections\\RunnerCollections.csproj",
+      "SunamoCollections\\SunamoCollections\\SunamoCollections.csproj"
+    ],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerCollections - Warnings: 186"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDependencyInjection",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -24,7 +37,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoLaTeX",
+    "Submodule": "SunamoClipboard",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -32,7 +45,17 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoLogging",
+    "Submodule": "SunamoCssGenerator",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerCssGenerator - Warnings: 504"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoAI",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -40,7 +63,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoMail",
+    "Submodule": "SunamoCollectionsIndexesWithNull",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -48,7 +71,17 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoMarkdown",
+    "Submodule": "SunamoDevCode",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_ERRORS",
+    "BuildErrors": [
+      "RunnerDevCode - Errors: 2"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoFluentFtp",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -56,7 +89,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoMathpix",
+    "Submodule": "SunamoEmbeddedResources",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -64,7 +97,7 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoMime",
+    "Submodule": "SunamoCrypt",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
@@ -72,11 +105,327 @@
     "ProjectsChecked": 3
   },
   {
-    "Submodule": "SunamoMsgReader",
+    "Submodule": "SunamoDelegates",
     "NoWarnStatus": "OK",
     "NoWarnFiles": [],
     "BuildStatus": "OK",
     "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsValuesTableGrid",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoConverters",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoExtensions",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCl",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerCl - Warnings: 720"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoFileIO",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCsproj",
+    "NoWarnStatus": "HAS_NOWARN",
+    "NoWarnFiles": [
+      "SunamoCsproj\\SunamoCsproj\\SunamoCsproj.csproj",
+      "SunamoCsproj\\SunamoCsproj.Tests\\SunamoCsproj.Tests.csproj"
+    ],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoFileExtensions",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoAttributes",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDateTime",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerDateTime - Warnings: 468"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoAsync",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsGeneric",
+    "NoWarnStatus": "HAS_NOWARN",
+    "NoWarnFiles": [
+      "SunamoCollectionsGeneric\\RunnerCollectionsGeneric\\RunnerCollectionsGeneric.csproj",
+      "SunamoCollectionsGeneric\\SunamoCollectionsGeneric\\SunamoCollectionsGeneric.csproj"
+    ],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerCollectionsGeneric - Warnings: 222"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDictionary",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerDictionary - Warnings: 60"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsTo",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDebugIO",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCsv",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoData",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoBts",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsChangeContent",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDotnetCmdBuilder",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDebugCollection",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDebugging",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoEnumsHelper",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoChar",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoEditorConfig",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionsNonGeneric",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoEmoticons",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoFileSystem",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerFileSystem - Warnings: 1269"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoEnums",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoBazosCrawler",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoAzureDevOpsApi",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoExceptions",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoArgs",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionWithoutDuplicates",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerCollectionWithoutDuplicates - Warnings: 15"
+    ],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoFilesIndex",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCollectionOnDrive",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoCompare",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "OK",
+    "BuildErrors": [],
+    "ProjectsChecked": 3
+  },
+  {
+    "Submodule": "SunamoDotNetZip",
+    "NoWarnStatus": "OK",
+    "NoWarnFiles": [],
+    "BuildStatus": "HAS_WARNINGS",
+    "BuildErrors": [
+      "RunnerDotNetZip - Warnings: 6"
+    ],
     "ProjectsChecked": 3
   }
 ]
