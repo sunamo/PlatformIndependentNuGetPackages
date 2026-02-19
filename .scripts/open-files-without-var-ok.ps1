@@ -56,41 +56,111 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
 # FUNCTIONS / FUNKCE
 # ============================================
 
-# EN: Test if Visual Studio DTE is available in Running Object Table (ROT)
-# CZ: Testuj jestli je Visual Studio DTE dostupné v Running Object Table (ROT)
-function Test-DTEAvailability {
-    param([int]$ProcessId)
+# EN: Find VS DTE instance that has the specified solution open (iterates ALL running VS processes)
+# CZ: Najdi VS DTE instanci která má otevřené zadané řešení (prochází VŠECHNY běžící VS procesy)
+function Find-DTEForSolution {
+    param([string]$TargetSolutionPath)
 
-    # EN: Try various ProgID formats
-    # CZ: Zkus různé ProgID formáty
-    $progIds = @(
-        "VisualStudio.DTE.18.0",              # VS 2026
-        "!VisualStudio.DTE.18.0:$ProcessId",  # VS 2026 (process-specific)
-        "VisualStudio.DTE.17.0",              # VS 2022
-        "!VisualStudio.DTE.17.0:$ProcessId",  # VS 2022 (process-specific)
-        "VisualStudio.DTE"                    # Generic fallback
+    $vsProcesses = Get-Process -Name "devenv", "DevHub" -ErrorAction SilentlyContinue
+    if (-not $vsProcesses) {
+        Write-Host "  No VS processes found" -ForegroundColor Yellow
+        return $null
+    }
+
+    Write-Host "  Found $($vsProcesses.Count) VS process(es), searching for solution match..." -ForegroundColor Cyan
+
+    $normalizedTarget = $TargetSolutionPath.TrimEnd('\').ToLower()
+
+    # EN: Process-specific ProgID formats (PID-based) - more reliable than generic ones
+    # CZ: ProgID formáty specifické pro proces (PID) - spolehlivější než generické
+    $progIdFormats = @(
+        "!VisualStudio.DTE.18.0:{0}",  # VS 2026
+        "!VisualStudio.DTE.17.0:{0}",  # VS 2022
+        "!VisualStudio.DTE.16.0:{0}"   # VS 2019
     )
 
-    foreach ($progId in $progIds) {
-        try {
-            $dte = [System.Runtime.InteropServices.Marshal]::GetActiveObject($progId)
-            if ($dte) {
-                return @{
-                    Available = $true
-                    ProgID = $progId
-                    DTE = $dte
+    $fallbackDte = $null
+
+    foreach ($proc in $vsProcesses) {
+        foreach ($format in $progIdFormats) {
+            $progId = $format -f $proc.Id
+            try {
+                $dte = [System.Runtime.InteropServices.Marshal]::GetActiveObject($progId)
+                if ($null -eq $dte) { continue }
+
+                if ($null -eq $fallbackDte) {
+                    $fallbackDte = @{ DTE = $dte; ProcessId = $proc.Id; ProgID = $progId }
                 }
+
+                $slnFull = $dte.Solution.FullName
+                if ([string]::IsNullOrEmpty($slnFull)) {
+                    Write-Host "    PID $($proc.Id): no solution open" -ForegroundColor Gray
+                    break
+                }
+
+                if ($slnFull.TrimEnd('\').ToLower() -eq $normalizedTarget) {
+                    Write-Host "    PID $($proc.Id): MATCH! Solution: $slnFull" -ForegroundColor Green
+                    return @{ DTE = $dte; ProcessId = $proc.Id; ProgID = $progId }
+                } else {
+                    Write-Host "    PID $($proc.Id): different solution: $(Split-Path -Leaf $slnFull)" -ForegroundColor Gray
+                }
+                break  # Got DTE for this process, try next process
+            } catch {
+                # EN: ProgID not registered for this process, try next format
+                # CZ: ProgID není registrované pro tento proces, zkus další formát
             }
-        } catch {
-            # EN: Continue to next ProgID
-            # CZ: Pokračuj na další ProgID
         }
     }
 
-    return @{
-        Available = $false
-        ProgID = $null
-        DTE = $null
+    if ($fallbackDte) {
+        Write-Host "  WARNING: No VS instance found with matching solution. Using fallback (PID: $($fallbackDte.ProcessId))" -ForegroundColor Yellow
+        return $fallbackDte
+    }
+
+    return $null
+}
+
+# EN: Find VS process with matching solution by window title and bring it to foreground
+# CZ: Najdi VS proces s odpovídajícím řešením podle titulku okna a přesuň ho do popředí
+function Set-VSWindowForeground {
+    param([string]$TargetSolutionPath)
+
+    $solutionName = [System.IO.Path]::GetFileNameWithoutExtension($TargetSolutionPath)
+    $vsProcesses = Get-Process -Name "devenv", "DevHub" -ErrorAction SilentlyContinue
+
+    if (-not $vsProcesses) { return $false }
+
+    # EN: Find the process whose window title contains the solution name
+    # CZ: Najdi proces jehož titulek okna obsahuje název řešení
+    $matchingProc = $vsProcesses | Where-Object { $_.MainWindowTitle -like "*$solutionName*" } | Select-Object -First 1
+
+    if (-not $matchingProc) {
+        Write-Host "  WARNING: No VS window found with title containing '$solutionName'" -ForegroundColor Yellow
+        Write-Host "           devenv /Edit may open files in wrong VS instance!" -ForegroundColor Yellow
+        return $false
+    }
+
+    Write-Host "  Found VS window: '$($matchingProc.MainWindowTitle)' (PID: $($matchingProc.Id))" -ForegroundColor Green
+
+    try {
+        if (-not ([System.Management.Automation.PSTypeName]'VSWindowActivator').Type) {
+            Add-Type -TypeDefinition @"
+using System;
+using System.Runtime.InteropServices;
+public class VSWindowActivator {
+    [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);
+    [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+}
+"@
+        }
+        [VSWindowActivator]::ShowWindow($matchingProc.MainWindowHandle, 9)  # SW_RESTORE
+        [VSWindowActivator]::SetForegroundWindow($matchingProc.MainWindowHandle)
+        Write-Host "  Activated VS window for solution: $solutionName" -ForegroundColor Green
+        Start-Sleep -Milliseconds 500
+        return $true
+    } catch {
+        Write-Host "  WARNING: Could not activate VS window: $($_.Exception.Message)" -ForegroundColor Yellow
+        return $false
     }
 }
 
@@ -116,8 +186,13 @@ function Open-FilesViaDevenvEdit {
         Write-Host "Waiting for Visual Studio to load (20 seconds)..." -ForegroundColor Cyan
         Start-Sleep -Seconds 20
     } else {
-        Write-Host "Found running VS instance (PID: $($vsProcesses[0].Id))" -ForegroundColor Green
-        Write-Host "Solution should be open: $SolutionPath" -ForegroundColor Cyan
+        # EN: Activate the correct VS window (the one with matching solution) so devenv /Edit targets it
+        # CZ: Aktivuj správné VS okno (to s odpovídajícím řešením) aby devenv /Edit cílil na něj
+        Write-Host "Activating VS window with solution: $(Split-Path -Leaf $SolutionPath)..." -ForegroundColor Cyan
+        $activated = Set-VSWindowForeground -TargetSolutionPath $SolutionPath
+        if (-not $activated) {
+            Write-Host "Fallback: using first running VS instance (PID: $($vsProcesses[0].Id))" -ForegroundColor Yellow
+        }
         Write-Host ""
     }
 
@@ -497,26 +572,19 @@ $useDTE = $false
 $dte = $null
 
 if (-not $ForceDevenvEdit) {
-    # EN: Try to get DTE from Running Object Table
-    # CZ: Zkus získat DTE z Running Object Table
-    Write-Host "Checking if Visual Studio DTE is available in ROT..." -ForegroundColor Cyan
+    # EN: Search all VS instances for the one that has our solution open
+    # CZ: Prohledej všechny VS instance a najdi tu která má otevřené naše řešení
+    Write-Host "Searching for VS instance with solution: $(Split-Path -Leaf $SolutionPath)..." -ForegroundColor Cyan
 
-    # EN: Check for both devenv (VS 2022) and DevHub (VS 2026) processes
-    # CZ: Kontroluj oba procesy devenv (VS 2022) i DevHub (VS 2026)
-    $vsProcesses = Get-Process -Name "devenv", "DevHub" -ErrorAction SilentlyContinue
-    if ($vsProcesses) {
-        $dteResult = Test-DTEAvailability -ProcessId $vsProcesses[0].Id
+    $dteResult = Find-DTEForSolution -TargetSolutionPath $SolutionPath
 
-        if ($dteResult.Available) {
-            Write-Host "  SUCCESS: DTE is available via ProgID: $($dteResult.ProgID)" -ForegroundColor Green
-            $dte = $dteResult.DTE
-            $useDTE = $true
-        } else {
-            Write-Host "  DTE NOT available in ROT (common in VS 2026 Preview)" -ForegroundColor Yellow
-            Write-Host "  Will use devenv.exe /Edit fallback instead" -ForegroundColor Yellow
-        }
+    if ($dteResult) {
+        Write-Host "  SUCCESS: DTE is available via ProgID: $($dteResult.ProgID)" -ForegroundColor Green
+        $dte = $dteResult.DTE
+        $useDTE = $true
     } else {
-        Write-Host "  No VS process running yet" -ForegroundColor Yellow
+        Write-Host "  DTE NOT available in ROT (common in VS 2026 Preview)" -ForegroundColor Yellow
+        Write-Host "  Will use devenv.exe /Edit fallback instead" -ForegroundColor Yellow
     }
 } else {
     Write-Host "ForceDevenvEdit flag set - skipping DTE detection" -ForegroundColor Yellow

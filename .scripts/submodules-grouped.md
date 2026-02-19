@@ -79,16 +79,16 @@ Total submodules: 135
 
 ## Group 6
 
-**Last checked:** 2026-02-10 22:28:36
+**Last checked:** 2026-02-19 12:13:52
 
-- SunamoFtp (9.68% - 3/31) [✓]
-- SunamoGetFiles (16.67% - 4/24) [✓]
+- SunamoFtp (100% - 31/31) [✗ BUILD ERRORS]
+- SunamoGetFiles (100% - 24/24) [✓]
 - SunamoGetFolders (13.33% - 2/15) [✓]
 - SunamoGitConfig (15.38% - 2/13) [✓]
 - SunamoGoogleMyMaps (40% - 2/5) [✓]
 - SunamoGoogleSheets (20.83% - 5/24) [✓]
 - SunamoGpx (42.86% - 3/7) [✓]
-- SunamoHtml (20.51% - 16/78) [✓]
+- SunamoHtml (20.51% - 16/78) [✗ BUILD ERRORS]
 - SunamoHttp (12.82% - 5/39) [✓]
 - SunamoIni (66.67% - 2/3) [✓]
 
