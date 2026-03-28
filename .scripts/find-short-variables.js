@@ -1,5 +1,3 @@
-// EN: Script to find files with short variable names
-// CZ: Skript pro nalezení souborů s krátkými názvy proměnných
 const fs = require('fs');
 const path = require('path');
 
@@ -44,18 +42,11 @@ function findFilesWithShortVars(dir, results = []) {
 
     return results;
 }
-
-console.log('Searching for files with short variable names...\n');
 const filesWithShortVars = findFilesWithShortVars(rootDir);
 
-console.log(`Found ${filesWithShortVars.length} files with potential short variable names:\n`);
-filesWithShortVars.slice(0, 100).forEach(file => console.log(file));
-
 if (filesWithShortVars.length > 100) {
-    console.log(`\n... and ${filesWithShortVars.length - 100} more files`);
 }
 
 // Save to file
 const outputPath = path.join(rootDir, 'files-with-short-variables.txt');
 fs.writeFileSync(outputPath, filesWithShortVars.join('\n'));
-console.log(`\n📄 Full list saved to: ${outputPath}`);

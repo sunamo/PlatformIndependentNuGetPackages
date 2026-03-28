@@ -1358,8 +1358,6 @@ const packageDirs = require('fs').readdirSync(baseDir)
   .filter(dir => dir.startsWith('Sunamo'))
   .map(dir => ({ name: dir, path: path.join(baseDir, dir) }));
 
-console.log(`Found ${packageDirs.length} Sunamo packages to process`);
-
 let processed = 0;
 let created = 0;
 let skipped = 0;
@@ -1369,12 +1367,9 @@ for (const pkg of packageDirs) {
   processed++;
   const packageName = pkg.name;
 
-  console.log(`\nProcessing ${processed}/${packageDirs.length}: ${packageName}...`);
-
   const alternativesData = packageAlternatives[packageName];
 
   if (!alternativesData) {
-    console.log(`  ⚠ No alternatives defined for ${packageName} - using generic template`);
     skipped++;
     continue;
   }
@@ -1413,23 +1408,11 @@ for (const pkg of packageDirs) {
 
   try {
     fs.writeFileSync(outputPath, content, 'utf8');
-    console.log(`  ✓ Created: ${outputPath}`);
     created++;
   } catch (error) {
-    console.log(`  ✗ Error creating file: ${error.message}`);
     errors.push({ package: packageName, error: error.message });
   }
 }
 
-console.log('\n' + '='.repeat(80));
-console.log('SUMMARY');
-console.log('='.repeat(80));
-console.log(`Total packages processed: ${processed}`);
-console.log(`Files created: ${created}`);
-console.log(`Skipped (no data): ${skipped}`);
-console.log(`Errors: ${errors.length}`);
-
 if (errors.length > 0) {
-  console.log('\nErrors encountered:');
-  errors.forEach(e => console.log(`  - ${e.package}: ${e.error}`));
 }

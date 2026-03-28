@@ -2,9 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 const baseDir = 'E:\\vs\\Projects\\PlatformIndependentNuGetPackages';
-
-// EN: List of 38 files that need fixing
-// CZ: Seznam 38 souborů které je třeba opravit
 const filesToFix = [
     'SunamoChar\\SunamoChar\\CharHelper.cs',
     'SunamoCl\\SunamoCl\\SunamoCmd\\Tables\\TableParser.cs',
@@ -45,9 +42,6 @@ const filesToFix = [
     'SunamoUriWebServices\\SunamoUriWebServices\\UriWebServicesClassesWeb.cs',
     'SunamoXml\\SunamoXml\\XHelper.cs'
 ];
-
-// EN: Common short variable patterns to replace
-// CZ: Běžné vzory krátkých proměnných k nahrazení
 const replacementPatterns = [
     // StringBuilder patterns
     { pattern: /\bvar sb = new StringBuilder\(/g, replacement: 'var stringBuilder = new StringBuilder(' },
@@ -124,20 +118,12 @@ const replacementPatterns = [
     { pattern: /\bvar y = /g, replacement: 'var yCoord = ' },
     { pattern: /\bvar z = /g, replacement: 'var zCoord = ' }
 ];
-
-// EN: Process a single file
-// CZ: Zpracovat jeden soubor
 function processFile(filePath) {
     const fullPath = path.join(baseDir, filePath);
-
-    console.log(`Processing: ${filePath}`);
 
     try {
         let content = fs.readFileSync(fullPath, 'utf8');
         let modified = false;
-
-        // EN: Apply all replacement patterns
-        // CZ: Aplikovat všechny náhradní vzory
         for (const { pattern, replacement } of replacementPatterns) {
             const beforeLength = content.length;
             content = content.replace(pattern, replacement);
@@ -148,10 +134,8 @@ function processFile(filePath) {
 
         if (modified) {
             fs.writeFileSync(fullPath, content, 'utf8');
-            console.log(`  ✓ Fixed: ${filePath}`);
             return true;
         } else {
-            console.log(`  - No changes: ${filePath}`);
             return false;
         }
     } catch (error) {
@@ -160,18 +144,9 @@ function processFile(filePath) {
     }
 }
 
-// EN: Main execution
-// CZ: Hlavní spuštění
-console.log('Starting to fix remaining short variables in 38 files...\n');
-
 let fixedCount = 0;
 for (const file of filesToFix) {
     if (processFile(file)) {
         fixedCount++;
     }
 }
-
-console.log(`\n=== Summary ===`);
-console.log(`Total files processed: ${filesToFix.length}`);
-console.log(`Files modified: ${fixedCount}`);
-console.log(`Files unchanged: ${filesToFix.length - fixedCount}`);

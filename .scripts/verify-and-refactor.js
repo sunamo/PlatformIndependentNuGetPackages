@@ -1,5 +1,3 @@
-// EN: Script to verify files with comment headers actually have refactored variables
-// CZ: Skript pro ověření že soubory s komentáři skutečně mají opravené proměnné
 const fs = require('fs');
 const path = require('path');
 
@@ -60,26 +58,9 @@ function scanDirectory(dir) {
         }
     }
 }
-
-console.log('Scanning all C# files...\n');
 scanDirectory(rootDir);
-
-console.log('='.repeat(80));
-console.log('VERIFICATION RESULTS');
-console.log('='.repeat(80));
-console.log(`✅ Has comment + NO short vars: ${results.hasCommentAndNoShortVars.length}`);
-console.log(`❌ Has comment + STILL has short vars: ${results.hasCommentButStillHasShortVars.length}`);
-console.log(`⚠️  NO comment + has short vars: ${results.noCommentButHasShortVars.length}`);
-console.log(`ℹ️  NO comment + NO short vars: ${results.noCommentNoShortVars.length}`);
-
-console.log('\n' + '='.repeat(80));
-console.log('FILES WITH FALSE CLAIMS (have comment but still have short variables):');
-console.log('='.repeat(80));
-results.hasCommentButStillHasShortVars.slice(0, 50).forEach(file => console.log(file));
 if (results.hasCommentButStillHasShortVars.length > 50) {
-    console.log(`\n... and ${results.hasCommentButStillHasShortVars.length - 50} more`);
 }
 
 // Save results
 fs.writeFileSync(path.join(rootDir, 'verification-results.json'), JSON.stringify(results, null, 2));
-console.log(`\n📄 Full results saved to: verification-results.json`);

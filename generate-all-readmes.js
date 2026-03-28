@@ -14,13 +14,10 @@ const packages = fs.readdirSync(rootPath)
     .filter(name => name.startsWith('Sunamo') && fs.statSync(path.join(rootPath, name)).isDirectory())
     .sort();
 
-console.log(`Found ${packages.length} Sunamo packages to process\n`);
-
 let currentIndex = 0;
 
 for (const packageName of packages) {
     currentIndex++;
-    console.log(`[${currentIndex}/${packages.length}] Processing: ${packageName}`);
 
     const packagePath = path.join(rootPath, packageName);
 
@@ -30,7 +27,6 @@ for (const packageName of packages) {
 
         // Check if inner package directory exists
         if (!fs.existsSync(innerPackagePath)) {
-            console.log(`  [SKIP] No inner package directory found at ${innerPackagePath}`);
             errorPackages.push({ package: packageName, reason: 'No inner package directory' });
             continue;
         }
@@ -38,7 +34,6 @@ for (const packageName of packages) {
         // Find .csproj file
         const csprojFiles = fs.readdirSync(innerPackagePath).filter(f => f.endsWith('.csproj'));
         if (csprojFiles.length === 0) {
-            console.log(`  [SKIP] No .csproj file found`);
             errorPackages.push({ package: packageName, reason: 'No .csproj file' });
             continue;
         }
@@ -92,14 +87,9 @@ for (const packageName of packages) {
         findCsFiles(innerPackagePath);
 
         if (csFiles.length === 0) {
-            console.log(`  [SKIP] No .cs source files found`);
             errorPackages.push({ package: packageName, reason: 'No .cs files' });
             continue;
         }
-
-        console.log(`  Found ${csFiles.length} source files`);
-        console.log(`  Target: ${targetFramework}`);
-        console.log(`  Dependencies: ${packageReferences.length}`);
 
         // Analyze the source files to extract classes and methods
         const classes = [];
@@ -143,11 +133,7 @@ for (const packageName of packages) {
             fileCount: csFiles.length
         });
 
-        console.log(`  Classes: ${classes.length}, Methods: ${publicMethods.length}`);
-        console.log(`  ✓ Package analyzed successfully\n`);
-
     } catch (error) {
-        console.log(`  [ERROR] ${error.message}`);
         errorPackages.push({ package: packageName, reason: error.message });
     }
 }
@@ -162,17 +148,7 @@ fs.writeFileSync(outputPath, JSON.stringify({
     errorCount: errorPackages.length
 }, null, 2));
 
-console.log('\n========================================');
-console.log('ANALYSIS COMPLETE');
-console.log('========================================');
-console.log(`Total packages: ${packages.length}`);
-console.log(`Successfully analyzed: ${processedPackages.length}`);
-console.log(`Errors: ${errorPackages.length}`);
-console.log(`\nAnalysis saved to: ${outputPath}`);
-
 if (errorPackages.length > 0) {
-    console.log('\nPackages with errors:');
     errorPackages.forEach(({ package: pkg, reason }) => {
-        console.log(`  - ${pkg}: ${reason}`);
     });
 }

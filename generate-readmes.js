@@ -7,8 +7,6 @@ const dirs = fs.readdirSync(rootDir)
     .filter(name => name.startsWith('Sunamo') && fs.statSync(path.join(rootDir, name)).isDirectory())
     .sort();
 
-console.log(`Found ${dirs.length} Sunamo packages to process`);
-
 // Function to analyze a package and determine its purpose
 function analyzePackage(packageName, packagePath) {
     const analysis = {
@@ -199,11 +197,8 @@ for (const dir of dirs) {
     const packagePath = path.join(rootDir, dir);
     const readmePath = path.join(packagePath, 'README.md');
 
-    console.log(`\nProcessing ${dir}...`);
-
     // Check if README already exists
     if (fs.existsSync(readmePath)) {
-        console.log(`  ⚠ README.md already exists, skipping`);
         skippedCount++;
         continue;
     }
@@ -216,13 +211,5 @@ for (const dir of dirs) {
 
     // Write README
     fs.writeFileSync(readmePath, readmeContent, 'utf8');
-    console.log(`  ✓ Created README.md for ${dir}`);
     processedCount++;
 }
-
-console.log(`\n${'='.repeat(60)}`);
-console.log(`Summary:`);
-console.log(`  Total packages: ${dirs.length}`);
-console.log(`  READMEs created: ${processedCount}`);
-console.log(`  Skipped (already exists): ${skippedCount}`);
-console.log(`${'='.repeat(60)}`);

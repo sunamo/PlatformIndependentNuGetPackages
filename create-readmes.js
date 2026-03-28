@@ -211,7 +211,6 @@ const readmeTemplates = {
 };
 
 // Process all packages
-console.log(`Generating READMEs for ${analysis.processed.length} packages...\n`);
 
 let created = 0;
 let updated = 0;
@@ -228,21 +227,10 @@ analysis.processed.forEach((pkg, index) => {
 
         if (existed) {
             updated++;
-            console.log(`[${index + 1}/${analysis.processed.length}] ✓ Updated: ${pkg.name}`);
         } else {
             created++;
-            console.log(`[${index + 1}/${analysis.processed.length}] ✓ Created: ${pkg.name}`);
         }
     } catch (error) {
         errors++;
-        console.log(`[${index + 1}/${analysis.processed.length}] ✗ Error: ${pkg.name} - ${error.message}`);
     }
 });
-
-console.log('\n========================================');
-console.log('README GENERATION COMPLETE');
-console.log('========================================');
-console.log(`Total processed: ${analysis.processed.length}`);
-console.log(`Created: ${created}`);
-console.log(`Updated: ${updated}`);
-console.log(`Errors: ${errors}`);

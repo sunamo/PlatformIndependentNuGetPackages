@@ -1,5 +1,3 @@
-// EN: Remove false comment headers from files that still have short variables
-// CZ: Odstraň falešné komentáře ze souborů které stále mají krátké proměnné
 const fs = require('fs');
 const path = require('path');
 
@@ -19,10 +17,5 @@ for (const relativePath of results.hasCommentButStillHasShortVars) {
         content = content.replace(commentPattern, '');
         fs.writeFileSync(fullPath, content, 'utf8');
         removedCount++;
-        console.log(`✓ Removed false comment from: ${relativePath}`);
     }
 }
-
-console.log(`\n${'='.repeat(80)}`);
-console.log(`Total false comments removed: ${removedCount}`);
-console.log(`These ${removedCount} files now need actual refactoring.`);

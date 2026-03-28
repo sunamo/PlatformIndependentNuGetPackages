@@ -1,10 +1,7 @@
-// EN: Script to add variable name check comment to C# files
-// CZ: Skript pro přidání komentáře o kontrole názvů proměnných do C# souborů
 const fs = require('fs');
 const path = require('path');
 
 const comment = `// EN: Variable names have been checked and replaced with self-descriptive names
-// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
 `;
 
 function addCommentToFile(filePath) {
@@ -13,7 +10,6 @@ function addCommentToFile(filePath) {
 
         // Skip if comment already exists
         if (content.includes('Variable names have been checked')) {
-            console.log(`Skipping ${path.basename(filePath)} - comment already exists`);
             return false;
         }
 
@@ -22,14 +18,12 @@ function addCommentToFile(filePath) {
             filePath.includes('.g.cs') ||
             filePath.includes('AssemblyInfo.cs') ||
             filePath.includes('GlobalUsings.g.cs')) {
-            console.log(`Skipping ${path.basename(filePath)} - auto-generated file`);
             return false;
         }
 
         // Add comment at the beginning
         const newContent = comment + content;
         fs.writeFileSync(filePath, newContent, 'utf8');
-        console.log(`✓ Added comment to ${path.basename(filePath)}`);
         return true;
     } catch (error) {
         console.error(`Error processing ${filePath}: ${error.message}`);
@@ -70,7 +64,4 @@ if (!fs.existsSync(targetDir)) {
     console.error(`Directory not found: ${targetDir}`);
     process.exit(1);
 }
-
-console.log(`Processing directory: ${targetDir}\n`);
 const count = processDirectory(targetDir);
-console.log(`\nTotal files processed: ${count}`);

@@ -1,5 +1,3 @@
-// EN: Script to process all Sunamo projects and add variable check comments
-// CZ: Skript pro zpracování všech Sunamo projektů a přidání komentářů o kontrole proměnných
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -13,8 +11,6 @@ const allDirs = fs.readdirSync(rootDir, { withFileTypes: true })
     .map(dirent => dirent.name)
     .sort();
 
-console.log(`Found ${allDirs.length} Sunamo projects\n`);
-
 const results = {
     completed: [],
     failed: [],
@@ -26,13 +22,11 @@ for (const projectDir of allDirs) {
 
     // Check if project subdirectory exists
     if (!fs.existsSync(projectPath)) {
-        console.log(`⏭️  Skipping ${projectDir} - subdirectory not found`);
         results.skipped.push(projectDir);
         continue;
     }
 
     try {
-        console.log(`\n📦 Processing ${projectDir}...`);
         const output = execSync(`node "${scriptPath}" "${projectPath}"`, {
             encoding: 'utf8',
             stdio: 'pipe'
@@ -41,8 +35,6 @@ for (const projectDir of allDirs) {
         // Extract file count from output
         const match = output.match(/Total files processed: (\d+)/);
         const fileCount = match ? match[1] : '?';
-
-        console.log(`✅ ${projectDir}: ${fileCount} files`);
         results.completed.push({ name: projectDir, files: fileCount });
     } catch (error) {
         console.error(`❌ Failed to process ${projectDir}: ${error.message}`);
@@ -50,15 +42,6 @@ for (const projectDir of allDirs) {
     }
 }
 
-console.log('\n' + '='.repeat(80));
-console.log('SUMMARY');
-console.log('='.repeat(80));
-console.log(`✅ Completed: ${results.completed.length} projects`);
-console.log(`❌ Failed: ${results.failed.length} projects`);
-console.log(`⏭️  Skipped: ${results.skipped.length} projects`);
-console.log(`📊 Total: ${allDirs.length} projects`);
-
 // Write results to file
 const resultsFile = path.join(rootDir, 'processing-results.json');
 fs.writeFileSync(resultsFile, JSON.stringify(results, null, 2));
-console.log(`\n📄 Detailed results saved to: ${resultsFile}`);

@@ -1,5 +1,3 @@
-// EN: Script to refactor short variable names to self-descriptive names
-// CZ: Skript pro refaktoring krátkých názvů proměnných na samopopisné názvy
 const fs = require('fs');
 const path = require('path');
 
@@ -84,7 +82,6 @@ function processDirectory(dir) {
                 if (removeCommentIfNoVariables(fullPath)) {
                     results.commentsRemoved++;
                     const relativePath = path.relative(rootDir, fullPath);
-                    console.log(`✓ Removed comment from: ${relativePath}`);
                 }
             }
         }
@@ -94,15 +91,4 @@ function processDirectory(dir) {
     return results;
 }
 
-console.log('Processing files...\n');
-console.log('Step 1: Removing comments from files without variables\n');
-
 const results = processDirectory(rootDir);
-
-console.log('\n' + '='.repeat(80));
-console.log('SUMMARY');
-console.log('='.repeat(80));
-console.log(`Files processed: ${results.filesProcessed}`);
-console.log(`Comments removed: ${results.commentsRemoved}`);
-console.log('\nNote: Variable refactoring (758 files) should be done manually or with');
-console.log('specialized tools due to context-dependent naming requirements.');
