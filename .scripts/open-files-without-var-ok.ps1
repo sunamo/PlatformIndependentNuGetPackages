@@ -56,27 +56,114 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
 # FUNCTIONS / FUNKCE
 # ============================================
 
-# EN: Find VS DTE instance that has the specified solution open (iterates ALL running VS processes)
-# CZ: Najdi VS DTE instanci která má otevřené zadané řešení (prochází VŠECHNY běžící VS procesy)
+# EN: Find VS DTE instance that has the specified solution open
+# CZ: Najdi VS DTE instanci která má otevřené zadané řešení
 function Find-DTEForSolution {
     param([string]$TargetSolutionPath)
 
+    $normalizedTarget = $TargetSolutionPath.TrimEnd('\').ToLower()
+
+    Write-Host "  Searching ROT for VS DTE with solution: $(Split-Path -Leaf $TargetSolutionPath)..." -ForegroundColor Cyan
+
+    # EN: Primary method: enumerate ALL ROT entries via C# - finds every VS DTE regardless of PID registration
+    # CZ: Primární metoda: enumerace VŠECH ROT záznamů přes C# - najde každé VS DTE bez ohledu na PID registraci
+    # EN: This fixes the issue where VS 2026 second instance does not register PID-specific ProgID
+    # CZ: Opravuje problém kdy druhá instance VS 2026 neregistruje PID-specifické ProgID
+    try {
+        if (-not ('RotHelper' -as [type])) {
+            Add-Type -TypeDefinition @"
+using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
+
+public class RotHelper {
+    [DllImport("ole32.dll")]
+    private static extern int GetRunningObjectTable(uint reserved, out IRunningObjectTable pprot);
+
+    [DllImport("ole32.dll")]
+    private static extern int CreateBindCtx(uint reserved, out IBindCtx ppbc);
+
+    public static List<object> GetAllVsDteObjects() {
+        var result = new List<object>();
+        IRunningObjectTable rot;
+        if (GetRunningObjectTable(0, out rot) != 0) return result;
+
+        IEnumMoniker enumMoniker;
+        rot.EnumRunning(out enumMoniker);
+
+        IMoniker[] monikers = new IMoniker[1];
+
+        while (enumMoniker.Next(1, monikers, IntPtr.Zero) == 0) {
+            IBindCtx ctx;
+            CreateBindCtx(0, out ctx);
+            string displayName = null;
+            try { monikers[0].GetDisplayName(ctx, null, out displayName); } catch { Marshal.ReleaseComObject(ctx); continue; }
+            Marshal.ReleaseComObject(ctx);
+
+            if (displayName != null && displayName.Contains("VisualStudio.DTE")) {
+                try {
+                    object obj;
+                    rot.GetObject(monikers[0], out obj);
+                    if (obj != null) result.Add(obj);
+                } catch { }
+            }
+        }
+        return result;
+    }
+}
+"@
+        }
+
+        $dteObjects = [RotHelper]::GetAllVsDteObjects()
+        Write-Host "  Found $($dteObjects.Count) VS DTE object(s) in ROT" -ForegroundColor Cyan
+
+        $fallbackDte = $null
+
+        foreach ($dte in $dteObjects) {
+            try {
+                if ($null -eq $fallbackDte) { $fallbackDte = $dte }
+
+                $slnFull = $dte.Solution.FullName
+                if ([string]::IsNullOrEmpty($slnFull)) {
+                    Write-Host "    DTE: no solution open" -ForegroundColor Gray
+                    continue
+                }
+
+                if ($slnFull.TrimEnd('\').ToLower() -eq $normalizedTarget) {
+                    Write-Host "    DTE: MATCH! Solution: $slnFull" -ForegroundColor Green
+                    return @{ DTE = $dte; ProcessId = -1; ProgID = "ROT" }
+                } else {
+                    Write-Host "    DTE: different solution: $(Split-Path -Leaf $slnFull)" -ForegroundColor Gray
+                }
+            } catch {
+                Write-Host "    DTE: error accessing solution: $($_.Exception.Message)" -ForegroundColor Red
+            }
+        }
+
+        if ($fallbackDte) {
+            Write-Host "  WARNING: No VS DTE found with matching solution, using fallback" -ForegroundColor Yellow
+            return @{ DTE = $fallbackDte; ProcessId = -1; ProgID = "ROT-fallback" }
+        }
+    } catch {
+        Write-Host "  WARNING: ROT enumeration failed: $($_.Exception.Message)" -ForegroundColor Yellow
+        Write-Host "  Falling back to PID-specific ProgID lookup..." -ForegroundColor Yellow
+    }
+
+    # EN: Fallback: PID-specific ProgID lookup (legacy method for older VS versions)
+    # CZ: Fallback: PID-specifické vyhledávání ProgID (legacy metoda pro starší verze VS)
     $vsProcesses = Get-Process -Name "devenv", "DevHub" -ErrorAction SilentlyContinue
     if (-not $vsProcesses) {
         Write-Host "  No VS processes found" -ForegroundColor Yellow
         return $null
     }
 
-    Write-Host "  Found $($vsProcesses.Count) VS process(es), searching for solution match..." -ForegroundColor Cyan
+    Write-Host "  Found $($vsProcesses.Count) VS process(es), trying PID-specific ProgIDs..." -ForegroundColor Cyan
 
-    $normalizedTarget = $TargetSolutionPath.TrimEnd('\').ToLower()
-
-    # EN: Process-specific ProgID formats (PID-based) - more reliable than generic ones
-    # CZ: ProgID formáty specifické pro proces (PID) - spolehlivější než generické
     $progIdFormats = @(
-        "!VisualStudio.DTE.18.0:{0}",  # VS 2026
-        "!VisualStudio.DTE.17.0:{0}",  # VS 2022
-        "!VisualStudio.DTE.16.0:{0}"   # VS 2019
+        "!VisualStudio.DTE.18.0:{0}",
+        "!VisualStudio.DTE.17.0:{0}",
+        "!VisualStudio.DTE.16.0:{0}"
     )
 
     $fallbackDte = $null
@@ -104,11 +191,8 @@ function Find-DTEForSolution {
                 } else {
                     Write-Host "    PID $($proc.Id): different solution: $(Split-Path -Leaf $slnFull)" -ForegroundColor Gray
                 }
-                break  # Got DTE for this process, try next process
-            } catch {
-                # EN: ProgID not registered for this process, try next format
-                # CZ: ProgID není registrované pro tento proces, zkus další formát
-            }
+                break
+            } catch { }
         }
     }
 

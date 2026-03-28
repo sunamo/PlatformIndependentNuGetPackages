@@ -10,19 +10,19 @@ param(
 # CZ: Ověřit že soubor existuje a je C# soubor
 if (-not (Test-Path $FilePath)) {
     Write-Error "File not found: $FilePath"
-    exit 1
+    return
 }
 
 if (-not $FilePath.EndsWith('.cs')) {
     Write-Error "Not a C# file: $FilePath"
-    exit 1
+    return
 }
 
 # EN: Skip GlobalUsings.cs files
 # CZ: Přeskočit GlobalUsings.cs soubory
 if ($FilePath -like '*GlobalUsings.cs') {
     Write-Host "Skipping GlobalUsings.cs file" -ForegroundColor Yellow
-    exit 0
+    return
 }
 
 # EN: Read file content
@@ -33,7 +33,7 @@ $content = Get-Content -Path $FilePath -Raw -ErrorAction Stop
 # CZ: Zkontrolovat jestli už má marker
 if ($content -like '*// variables names: ok*') {
     Write-Host "✓ Marker already present in: $(Split-Path $FilePath -Leaf)" -ForegroundColor Green
-    exit 0
+    return
 }
 
 # EN: Add marker at the beginning
@@ -42,4 +42,3 @@ $newContent = "// variables names: ok`r`n" + $content
 Set-Content -Path $FilePath -Value $newContent -NoNewline -Encoding UTF8
 
 Write-Host "✓ Added marker to: $(Split-Path $FilePath -Leaf)" -ForegroundColor Green
-exit 0

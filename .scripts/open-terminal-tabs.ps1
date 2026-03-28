@@ -133,7 +133,12 @@ foreach ($submodule in $existingSubmodules) {
     } else {
         # EN: For incomplete submodules, start Claude
         # CZ: Pro nedokončené submoduly spusť Claude
-        $wtCommand += " new-tab --title `"$submodule`" pwsh -NoExit -File `"$scriptDir\start-claude.ps1`" -SubmoduleName `"$submodule`" ``;"
+        $promptFile = Join-Path $scriptDir "initial-prompt.txt"
+        if (Test-Path $promptFile) {
+            $wtCommand += " new-tab --title `"$submodule`" pwsh -NoExit -File `"$scriptDir\start-claude.ps1`" -SubmoduleName `"$submodule`" -Model opus -PromptFile `"$promptFile`" ``;"
+        } else {
+            $wtCommand += " new-tab --title `"$submodule`" pwsh -NoExit -File `"$scriptDir\start-claude.ps1`" -SubmoduleName `"$submodule`" -Model opus ``;"
+        }
     }
 }
 $wtCommand = $wtCommand.TrimEnd('`', ';')

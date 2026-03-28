@@ -637,9 +637,9 @@
     <Project Path="SunamoYaml\SunamoYaml.Tests\SunamoYaml.Tests.csproj" />
     <Project Path="SunamoYaml\SunamoYaml\SunamoYaml.csproj" />
   </Folder>
-  <Folder Name="/SunamoYoutube/">
+  <Folder Name="/SunamoYouTube/">
     <Project Path="SunamoYouTube\RunnerYouTube\RunnerYouTube.csproj" />
-    <Project Path="SunamoYoutube\SunamoYoutube.Tests\SunamoYoutube.Tests.csproj" />
-    <Project Path="SunamoYoutube\SunamoYouTube\SunamoYouTube.csproj" />
+    <Project Path="SunamoYouTube\SunamoYouTube.Tests\SunamoYouTube.Tests.csproj" />
+    <Project Path="SunamoYouTube\SunamoYouTube\SunamoYouTube.csproj" />
   </Folder>
 </Solution>

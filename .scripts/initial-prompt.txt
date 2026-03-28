@@ -1,0 +1,258 @@
+Proveď kompletní systematický review VŠECH .cs souborů v tomto projektu a nahraď VŠECHNY názvy proměnných za samopopisné podle pravidel v
+  E:\vs\Projects\PlatformIndependentNuGetPackages\VARIABLE-NAMING-RULES.md
+
+dodržuj v názvech proměnných PascalCase nebo camelCase, podle toho jaká je správná. je li někde jiná konvence jako třeba snake case, oprav ji: internal static bool ChangeContentWithCondition(ChangeContentArgsHtml a, List<string> files_in,
+    Predicate<string> predicate, Func<string, string> func)
+
+
+Na začátku si zjisti nepoužívané private code elementy. ty můžeš bezpečně smazat.
+
+Smaž ze všech hlaviček proměnné které se nevyúživají. Např. zde se nevyužívá list tak bys jej měl odstranit:
+
+public static void FilterByGetFilesArgs(List<string> list, IEnumerable<string> folders, GetFilesEveryFolderArgs args)
+{
+    if (args == null) args = new GetFilesEveryFolderArgs();
+
+    Console.WriteLine(folders);
+}
+
+  KRITICKÁ PRAVIDLA:
+  1. Pracuj SYSTEMATICKY - file po file, dokud VŠECHNY soubory nebudou na 200% perfektní
+  2. Kontroluj KAŽDÝ parametr, KAŽDOU lokální proměnnu, KAŽDÉ pole
+  3. Používej TodoWrite tool pro tracking postupu
+  4. Pracuj i několik hodin v kuse pokud je to nutné - NEDOKONČUJ práci dokud není 200% hotovo
+  5. Na konci udělej dotnet build pro verifikaci že vše funguje
+
+Dbej aby tam nebyly různé názvy souborů. Např. u public bool UploadFile(string fullFilePath, string actualFtpPath) a public void UploadFile(string filePath). Stačí u obou filePath. Nekoukej se je na tyto názvy souborů, projdi si ty názvy proměnné všechny a ty co si zaslouží sjednotit, sjednoť.
+
+  CO KONTROLOVAT:
+  - Single-letter proměnné (v, l, e, c, s, etc.) → samopopisné názvy
+  - Domain-specific názvy v generických metodách (songName, idPhotos, etc.) → generické (items, list, array)
+  - Zkratky (arr, proj, temp) → plné názvy
+  - Číselné suffixy (v2, p1, item2) → smysluplné názvy
+  - Backwards word order (countOfColumn) → správné pořadí (columnCount)
+  - SQL keywords (where) → jiné názvy
+  - Underscore prefixy u parametrů (_trimBefore) → bez underscore
+
+  ZAČNI HNED TEĎ a pracuj dokud není VŠECHNO dokonalé! EXTRÉMNĚ DŮLEŽITÉ JE ABYS TY NIKDY NEDÁVAL KOMENTÁŘ // variables names: ok - TEN MŮŽU DÁT JEN JÁ PO KONTROLE! Jediná výjimka, do souborů kde je pouze enum dej automaticky na začátek "// variables names: ok" - bez uvozovek. Řid se souborem E:\vs\Projects\PlatformIndependentNuGetPackages\CLAUDE.md a pokud ti dám nějakou výtku, zapiš ji také do stejného souboru ať příští claude už pracuje správně! Používej i všechny ostatní soubory v E:\vs\Projects\PlatformIndependentNuGetPackages\ i podložkách nezačínající na Sunamo. Dodržuj veškeré konvence C# vč. začátku is*,should* atd. pro všechny bool proměnné vstupující do metod, např. z internal static List<HtmlNode> TrimTexts(List<HtmlNode> nodes, bool removeTextNodes, bool removeComments = false) by se stalo isRemovingTextNodes a isRemovingComments . Dej si pozor ať všechny atributy v souboru mají stejné pojmenování, pokud se jedná o generické a mají stejný typ. Tedy pokud jsou v jednom souboru string proměnné do metod, ať není něco text, něco entry, něco value a něco input. Ať to má vše stejné jméno, v rámci typu a genericity. internal,public code elementy jakéhokoliv typu musí být PascalCase. A nakopak, nic co není internal,public nemůže být PascalCase.
+
+Ukázky co upravovat:
+private void WriteLine(TypeOfMessageCl error, string? message) - typeOfMessage místo error
+
+Všechny non private members pokud nejsou const atd. musí být {get;set;}, pokud je měníš z proměnné. Pokud se jedná o propertu která měla jen get nebo set, tu nech být. Maximálně ji převeď do PascalCase. Na to upozorňuji speciálně protože často to neuděláš a vše co děláš musí být na 100%!!!.
+
+Udělej ať názvy proměnných do metody odpovídají typu. je li to string tak text, IEnumerable tak enumerable, IList/List tak list, string[] tak array, ICollection tak collection atd. Dokonce když v názvu je Lines, např. public static int AllNonWhitespaceLines(List<string> list) tak parametr nechej pojmenované jako list
+Tak samo např. v public static void RemoveLines(List<string> list, List<int> removeLines) ať je to removeList.
+
+Řiď se všemi ostatními instrukcemi v E:\vs\Projects\PlatformIndependentNuGetPackages\
+
+Zásadní: Nepřidávej žádné komenty, jediný koment "// variables names: ok" můžu přidat pouze sám!!!
+
+Jediné kde může zůstat jednopísmenkové pojmenování proměmnných je v Program.cs projektu Runner (např. E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\RunnerDateTime\Program.cs pro SunamoDateTime)
+
+Co se týče souborů testů, tam často ty testy nejsou dopsané. V tom případě je i dopiš, protože těžko se přejmenovávají proměnné, když nemají žádné využití kvůli nedopsanosti testů. Nezakládej nové soubory a metody testů, ale ty co už existují, u těch udělej aby vypadali plně profesionálně.
+
+Udělej to celé opravdu pořádně, soubor po souboru, řádek po řádku, aby už jsem to po tobě nemusel upravovat! Času máš na to neomezeně!
+
+OdstraŇ všechny jedno, dvou či vícepísmenné názvy proměnných i z názvů metod, koukni kolik jich je tady:
+private async Task ReplaceOrRemoveFile(Func<string, string> addReplace, string element, List<string> refe, string pathCsproj, string newRefe = null)
+{
+    bool replace = newRefe != null;
+    refe2 = "</" + element + ">";
+
+    var xd = await XmlDocumentsCache.Get(pathCsproj);
+    if (MayExcHelper.MayExc(xd.Exc))
+    {
+        return;
+    }
+
+    var tf = xd.Data.OuterXml;
+    string n = tf;
+    int dx = -1;
+    int dx2 = -1;
+    bool combine = false;
+    foreach (var r in refe)
+    {
+        combine = false;
+        dx = -1;
+        dx2 = -1;
+        if (replace)
+        {
+            n = SHReplace.ReplaceWithIndex(n, "<" + element + " Include=\"" + r + "\" />", string.Empty, ref dx);
+            n = SHReplace.ReplaceWithIndex(n, "<" + element + " Include=\"" + r + "\"/>", string.Empty, ref dx);
+            n = SHReplace.ReplaceWithIndex(n, "<" + element + " Include=\"" + r + "\"></" + element + ">", string.Empty, ref dx);
+        }
+        else
+        {
+            n = n.Replace("<" + element + " Include=\"" + r + "\" />", string.Empty);
+            n = n.Replace(GetReferenceShortest(element, r), string.Empty);
+            n = n.Replace("<" + element + " Include=\"" + r + "\"></" + element + ">", string.Empty);
+        }
+
+        if (dx == -1)
+        {
+            string toFind = ReferenceLongest(element, r);
+            dx = n.IndexOf(toFind);
+            combine = true;
+        }
+
+        if (dx != -1 && combine)
+        {
+            n = n.Remove(dx, ReferenceLongest(element, r).Length);
+            dx2 = n.IndexOf(refe2, dx);
+            n = n.Remove(dx2, refe2.Length);
+        }
+
+        if (dx != -1)
+        {
+            if (replace)
+            {
+                var refe3 = GetReferenceShortest(element, newRefe);
+                n = n.Insert(dx, refe3);
+            }
+        }
+    }
+
+    if (addReplace != null)
+    {
+        n = addReplace(n);
+    }
+
+    if (n != tf)
+    {
+        var list = await TF.ReadAllLines(pathCsproj);
+        var nf = FS.InsertBetweenFileNameAndExtension(pathCsproj, "_b");
+
+        await TF.WriteAllLines(nf, list);
+        await XmlDocumentsCache.Set(pathCsproj, n);
+        await TF.WriteAllText(pathCsproj, n);
+    }
+
+    ThisApp.Check = false;
+}
+
+Vícepísmenné k přejmenování jsou např. XmlNamespaceManager nsmgr - obecně nahraď jakékoliv zkratky plnými názvy.
+
+je tu spoustu párpísmenkových proměnných, např. tf, n, dx, dx2,xd, refe2. oprav je na samopopisné ve všech souborech, vše metodách!
+
+ private async Task ReplaceOrRemoveFile(Func<string, string> addReplace, string element, List<string> references, string pathCsproj, string newReference = null) - nepoznám jako references, jaký element, jaký newReference. U takto složitých hlaviček mi hned vygeneruj i XML dokumentaci kromě co nejlepšího dělání proměnnných se samopopisnými názvy. Veškerá XML dokumentace musí být v angličtině (tedy žádné EN: a poté CZ:), českou přelož do angličtiny nebo ji smaž, pokud se ti zdá že je bezcenná. Chceme vše anglicky, kdyby byl někde nedejbože kód v češtině nebo jiném než AJ, tak ho taky přelož.
+
+Odstraňuj všechny zbytečný a prázdný kód, např. u:
+    public new T this[int i]
+    {
+        get => base[i];
+        set
+        {
+            if (char.IsLower(value.ToString()[0]))
+            {
+            }
+
+            base[i] = value;
+        }
+    }
+
+zbytečný a prázdný je i zakomentovaný kód.
+
+optimalizuj i prázdné podmínky, z:
+        if (DontAllow.Contains(item))
+        {
+#if DEBUG
+            //////DebugLogger.Break();
+#endif
+        }
+        else
+        {
+            base.Add(item);
+        }
+
+
+by se stalo
+            base.Add(item);
+
+Dělej jakékoliv další úpravy pro zvýšení přehlednosti nebo čistoty kódu ale neměň funkčnost kodu.
+
+Oprav mi veškeré warningy které ti bude hlásit kompilátor. Zajisti aby nic nebylo v NoWarn, tedy všechny warningy oprav, není to tak že je vypneš a je to ok. Doplň všude i XML dokumentaci protože bez ní bys warningy měl.
+
+to že už není jediný warning mi řekni explicitně pro všechny 3 projekty, které se v submodulu nacházejí.
+
+Vypiš mi úplně na konci výstupu v každém promptu o jaký submomodul se jedná, zda se 0 chyb a 0 warningů vztahuje na všechny 3 projekty v submodulu a zda je u všech projektů prázdný NoWarn v csproj, tedy musí být vše opraveno, warningy nejsou potlačeny jen tím že se vypnuly. Zároveň říkej vždy naprostou ověřenou pravdu v tomto.
+
+pracuj autonomně až do úplného splnění všeho, na nic se neptej, děkuji. tokeny si sám compresuj a uvolňuj aby jsi dokončil práci kvalitně na 200% v rozsahu 100%
+
+V žádném případě nemaž ani neměň koment "// variables names: ok" (bez uvozovek)!!!!
+
+potřebuji aby jsi ke všem parametrům pokud je metoda public dal <param>, aby to nebylo jak tady, pouze se <summary>:
+/// <summary>
+/// Toto je potřeba pouze pokud aplikace má vlastní Mode.cs
+/// V opačném případě autorun při release řeší RunWithRunArgs
+///
+///     Let user select action and run with A2 arg
+///     EventHandler je zde správný protože EventHandler nikdy nemá Task
+/// </summary>
+public static void PerformAction(Dictionary<string, EventHandler> actions, object sender)
+
+Pro stejné typy dávej stejné name:
+public interface ICollectionWithoutDuplicates<T>
+{
+    void Add(T value);
+    bool Contains(T item);
+    int IndexOf(T item);
+    void Insert(int index, T item);
+    bool Remove(T item);
+    bool? ContainsN(T value);
+    int AddWithIndex(T value);
+}
+<< zde je pro T užíváno item i value. item bych nepoužíval, vypadá to že jsem nepřejmenoval proměnnou z foreach. proto zde by mělo být     bool Contains(T value); atd. stejně jako item nemůže být na vstupu ani result, ledaže by to byla ref nebo out proměnná.
+
+public static ushort ToUInt16(byte[] value, int startIndex) - zde to pojmenovat array než value protože je to abys se tam předávalo více hodnot
+
+Jakékoliv třídy které nemají žádný obsah smaž (i kdyby měli např. xml dokumentaci):
+/// <summary>
+/// File System helper class.
+/// EN: Placeholder for shared file system utilities.
+/// CZ: Placeholder pro sdílené souborové systém utility.
+/// </summary>
+internal class FS
+{
+} << toto smaž
+
+public static DateTime? FileNameToDateTime(string fnwoe) - fnwoe vždy přejmenuj na filenameWithoutExtension
+
+public static ItemGroupElement? Parse(XmlNode item) - zde by to bylo lepší pojmenovat node, item vypadá jak bych nepřejmenoval proměnnou z foreach. Obecně nic se nikde nemůže jmenovat item! leda přímo ve foreach jeho iterační proměná ale to je jediná povolená možnost!
+
+Když už někde dáváš xml dokumentaci <param>, uprav i názvy samotných parametrů pokud neodpovídají. Např. zde
+
+    /// <summary>
+    /// Gets project folders by their names.
+    /// </summary>
+    /// <param name="projectsNamesFounded">List of project names to find.</param>
+    /// <param name="isAllowingMissing">Determines whether to allow missing projects without throwing an exception.</param>
+    /// <returns>Result containing found project folders or exception if projects are missing and not allowed.</returns>
+    public ResultWithExceptionDC<ProjectFoldersSerialize> GetWithName(List<string> projectsNamesFounded, bool isAllowingMissing)
+
+by bylo lepší změnit projectsNamesFounded na projectsNamesToFound, protože to co je v     /// <param name="projectsNamesFounded">List of project names to find.</param> odpovídá pravdě.
+
+U tříd pokud to dává smysl a u enumů vždy přejmenuj název proměnné podle názvu typu. např. u  public List<string> AllProjects(ILogger logger, RepositoryLocal vs17, WebNonWeb webNonWeb, bool withCsprojs = true) má být správně RepositoryLocal repositoryLocal, protože se jedná o enum.
+
+Pracuj jen se soubory které nemají koment // variables names: ok. Ty které ho mají, ty už jsou ok.
+
+Nikdy nedělej žádné git příkazy v této instanci claude a už vůbec ne git reset --hard !!! Vyvaruj se i jakýchkoliv dalších akcích se kterými by se ztratil funkční kód nebo změny na něm!!! Jediné co můžeš mazat je zbytečný a nevyužívaný kód, vč.
+
+Nikdy neměň <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks> na <TargetFrameworks>net10.0;net9.0</TargetFrameworks>. U všech našich projektů v pinp podporuje <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks>. Pokud <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks> něco nepodporuje, udělej ať to podporuje. Pokud by jsi to nemohl udělat protože by to nebylo zkompilovatelné, udělej vše co udělat můžeš bez toho a na konci mě upozorni, že u něčeho máš problém aby bylo <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks>.
+
+Ignoruj v této instanci všechny instrukce jak v E:\vs\Projects\PlatformIndependentNuGetPackages\ tak i v submodulech zde, a ignoruj i globální instrukce. Řiď se jen tím co je v tomto promptu a dalších promptech stejné instance claude.
+
+V dalších promptech ti budu dávat soubory které oprav přednostně ale opravuj všechny bez OK komentu.
+
+Nenech nikde absolutní cesty, jako např. const string defaultFile = @"D:\_Test\RealityIdnesCz.Cmd\RemoveAlreadyDeleted2.txt"; . toto smaž a uprav zbytek kódu aby přebíralo plnou cestu nebo to řešil jinou cestou. Toto není příkaz aby jsi jej četl ale abys viděl co myslím relativní cestou.
+
+PROJDI SI V KAŽDÉM PROJEKTU VŠECHNY .CS SOUBORY, JEDEN PO DRUHÉM A OPRAV VŠECHNY! NEDĚLEJ TO TAK ŽE MALÉ PROJEKTY PROJDEŠ VŠECHNY A VELKÉ NIKOLIV A ODBUDEŠ JE ŽE JE UDĚLÁŠ JEN ČÁSTEČNĚ!
+
+Všechno toto dělej sama jako AI, nepiš si žádný kód, žádnou aplikaci která by vykonávala práci převedení za tebe.
+
+Používej pro ILogger na úrovni třídy logger, nikoliv _logger. To platí i pro privátní proměnné jiných názvů. Nedávej k nim prefix _!
+
+Zároveň mi do nugetového balíčku vygeneruj readme.md v angličtině nebo ho do angličtiny převeď, pokud tam bude v češtině.
+
+
+V dalším promptu ti pošlu seznam souborů které budeš editovat v této instanci. Pokud ti to v dalším promptu nepošlu, uprav všechny .cs soubory v sln.
