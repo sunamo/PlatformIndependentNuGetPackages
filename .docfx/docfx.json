@@ -1,0 +1,63 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Sunamo*/Sunamo*/*.csproj"
+          ],
+          "exclude": [
+            "**/*Tests*",
+            "**/Runner*"
+          ],
+          "src": ".."
+        }
+      ],
+      "dest": "api",
+      "properties": {
+        "TargetFramework": "net9.0"
+      },
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "toc.yml",
+          "*.md",
+          "articles/**.md",
+          "articles/**/toc.yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appTitle": "Sunamo NuGet Packages",
+      "_appFooter": "Sunamo - Platform Independent NuGet Packages | <a href=\"https://github.com/sunamo/PlatformIndependentNuGetPackages\">GitHub</a> | MIT License",
+      "_enableSearch": true,
+      "_disableContribution": false,
+      "_gitContribute": {
+        "repo": "https://github.com/sunamo/PlatformIndependentNuGetPackages",
+        "branch": "master"
+      }
+    }
+  }
+}

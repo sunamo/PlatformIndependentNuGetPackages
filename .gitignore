@@ -271,6 +271,10 @@ __pycache__/
 *.pyc
 .vs
 
+# DocFX generated files
+.docfx/_site/
+.docfx/api/
+
 # Reserved Windows filenames (invalid paths)
 nul
 NUL
