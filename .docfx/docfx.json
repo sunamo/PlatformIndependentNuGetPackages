@@ -4,11 +4,7 @@
       "src": [
         {
           "files": [
-            "Sunamo*/Sunamo*/*.csproj"
-          ],
-          "exclude": [
-            "**/*Tests*",
-            "**/Runner*"
+            "SunamoArgs/SunamoArgs/SunamoArgs.csproj"
           ],
           "src": ".."
         }
