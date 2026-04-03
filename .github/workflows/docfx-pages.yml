@@ -25,7 +25,9 @@ jobs:
           fetch-depth: 1
 
       - name: Checkout SunamoArgs submodule
-        run: git submodule update --init --depth 1 SunamoArgs
+        run: |
+          git config --global url."https://github.com/".insteadOf "git@github.com:"
+          git submodule update --init --depth 1 SunamoArgs
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
