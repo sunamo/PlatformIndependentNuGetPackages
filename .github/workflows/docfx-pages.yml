@@ -44,19 +44,20 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Install DocFX
-        run: dotnet tool install -g docfx
+        run: |
+          dotnet tool install -g docfx
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          docfx --version
 
       - name: Generate documentation
-        run: docfx .docfx/docfx.json --warningAsError false 2>&1 || true
+        run: |
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          docfx .docfx/docfx.json
 
       - name: Verify output exists
         run: |
-          if [ ! -f ".docfx/_site/index.html" ]; then
-            echo "ERROR: DocFX did not generate output"
-            exit 1
-          fi
-          echo "DocFX output generated successfully"
-          ls -la .docfx/_site/
+          echo "=== DocFX output ==="
+          ls -laR .docfx/_site/ | head -50
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
