@@ -62,7 +62,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .docfx/_site/public
+          path: .docfx/_site
 
   deploy:
     environment:

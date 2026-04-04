@@ -43,7 +43,7 @@
     ],
     "output": "_site",
     "template": [
-      "modern"
+      "default"
     ],
     "globalMetadata": {
       "_appTitle": "Sunamo NuGet Packages",

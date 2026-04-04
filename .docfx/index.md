@@ -1,7 +1,3 @@
----
-_layout: landing
----
-
 # Sunamo NuGet Packages
 
 Platform-independent .NET NuGet packages — shared libraries for all apps & devices.
