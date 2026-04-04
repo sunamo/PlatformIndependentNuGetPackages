@@ -5,7 +5,8 @@ param(
     [Parameter(Mandatory=$false)]
     [string]$GroupNumber = "0",
     [switch]$SkipBuild,      # EN: Skip build check (faster) | CZ: Přeskoč build kontrolu (rychlejší)
-    [switch]$SkipProgress    # EN: Skip progress scan | CZ: Přeskoč progress skenování
+    [switch]$SkipProgress,   # EN: Skip progress scan | CZ: Přeskoč progress skenování
+    [switch]$CleanBinObj     # EN: Delete bin/obj folders via fastestDeleteFolder before build | CZ: Smaž bin/obj složky přes fastestDeleteFolder před buildem
 )
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -300,6 +301,23 @@ if (-not ($groupNumbers.Count -eq 1 -and $groupNumbers[0] -eq 0)) {
 
     Write-Host "Checking group(s) $GroupNumber with $($existingNames.Count) submodules" -ForegroundColor Cyan
     Write-Host ""
+
+    # EN: Clean bin/obj folders if requested
+    # CZ: Smaž bin/obj složky pokud požadováno
+    if ($CleanBinObj) {
+        Write-Host "Cleaning bin/obj folders via fastestDeleteFolder..." -ForegroundColor Yellow
+        foreach ($name in $existingNames) {
+            $submodulePath = Join-Path $rootPath $name
+            $foldersToDelete = Get-ChildItem -Path $submodulePath -Directory -Recurse -ErrorAction SilentlyContinue |
+                Where-Object { $_.Name -eq "bin" -or $_.Name -eq "obj" }
+            foreach ($folder in $foldersToDelete) {
+                Write-Host "  Deleting: $($folder.FullName)" -ForegroundColor Gray
+                fastestDeleteFolder $folder.FullName
+            }
+        }
+        Write-Host "Clean complete." -ForegroundColor Green
+        Write-Host ""
+    }
 
     # EN: Build submodule-to-group mapping and global order counter
     # CZ: Vybuduj mapování submodul→skupina a globální pořadové počítadlo
