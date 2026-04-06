@@ -77,6 +77,18 @@ Nově přidané skripty které zatím nejsou zařazené do kategorií:
   - EN: Compares local projects with published NuGet packages
   - CZ: Porovná lokální projekty s publikovanými NuGet balíčky
 
+- **`upgrade-all-packages.ps1`** - Upgrade všech NuGet balíčků na nejnovější verze
+  - EN: Upgrades all NuGet packages to latest versions in all csproj files
+  - CZ: Upgraduje všechny NuGet balíčky na nejnovější verze ve všech .csproj souborech
+
+- **`upgrade-packages-fast.ps1`** - Rychlý upgrade PackageReferences
+  - EN: Fast upgrade all PackageReferences to latest versions
+  - CZ: Rychlý upgrade všech PackageReferences na nejnovější verze
+
+- **`add-sourcelink.ps1`** - Přidá SourceLink konfiguraci
+  - EN: Adds SourceLink configuration to all NuGet package .csproj files
+  - CZ: Přidá SourceLink konfiguraci do všech .csproj souborů NuGet balíčků
+
 ### Target Frameworks Management
 - **`get-target-frameworks.ps1`** - Zobrazí target frameworks pro všechny projekty
   - EN: Lists all projects with their target frameworks and explains deviations
@@ -93,6 +105,14 @@ Nově přidané skripty které zatím nejsou zařazené do kategorií:
   - EN: Creates FRAMEWORKS.md documentation for non-standard projects
   - CZ: Vytvoří FRAMEWORKS.md dokumentaci pro nestandardní projekty
   - Používá template z FRAMEWORKS.md.template
+
+- **`check-target-frameworks-simple.ps1`** - Ověří že projekty mají net8/9/10 frameworks
+  - EN: Verifies all Sunamo* projects have net8.0, net9.0, and net10.0 target frameworks
+  - CZ: Ověřuje že všechny Sunamo* projekty mají target frameworky net8.0, net9.0 a net10.0
+
+- **`fix-empty-target-frameworks.ps1`** - Opraví prázdné nebo duplicitní TargetFramework
+  - EN: Finds and fixes projects with empty, missing, or duplicate TargetFramework
+  - CZ: Najde a opraví projekty s prázdným, chybějícím nebo duplicitním TargetFramework
 
 ### Git & Submodules
 - **`list-branches-grouped.ps1`** - Seznam větví pro root a submoduly, seskupené
@@ -119,11 +139,19 @@ Nově přidané skripty které zatím nejsou zařazené do kategorií:
   - EN: Force pushes all submodules
   - CZ: Force pushuje všechny submoduly
 
+- **`check-modified-projects.ps1`** - Kontrola build statusu upravených projektů
+  - EN: Checks build status of modified projects from git status
+  - CZ: Kontroluje build status upravených projektů z git status
+
 ### Development Workflow
 - **`group-submodules.ps1`** - Seskupí submoduly do skupin
   - EN: Groups submodules into manageable groups
   - CZ: Seskupí submoduly do spravovatelných skupin
   - Vytváří `submodules-grouped.md`
+
+- **`update-grouped.ps1`** - Generuje/aktualizuje submodules-grouped.md s progress + quality daty
+  - EN: Unified script - generates and updates submodules-grouped.md with progress + quality data
+  - CZ: Sloučený skript - generuje a aktualizuje submodules-grouped.md s progress + quality daty
 
 - **`setup-husky-all-projects.ps1`** - Nastavení Husky.NET pro všechny projekty
   - EN: Setup Husky.NET for all projects in the repository
@@ -163,6 +191,22 @@ Nově přidané skripty které zatím nejsou zařazené do kategorií:
   - EN: Adds Runner projects to solution
   - CZ: Přidá Runner projekty do solution
 
+- **`add-all-missing-projects-to-sln.ps1`** - Přidá všechny chybějící .csproj do .sln
+  - EN: Adds ALL missing .csproj projects to PlatformIndependentNuGetPackages.Runners.sln
+  - CZ: Přidá VŠECHNY chybějící .csproj projekty do PlatformIndependentNuGetPackages.Runners.sln
+
+- **`add-missing-projects-to-slnx.ps1`** - Přidá chybějící projekty do .slnx
+  - EN: Adds missing projects to .slnx solution file
+  - CZ: Přidá chybějící projekty do .slnx solution souboru
+
+- **`fix-slnx-folders.ps1`** - Opraví strukturu folders v .slnx
+  - EN: Fixes folder structure in .slnx file (adds trailing slashes)
+  - CZ: Opraví strukturu folders v .slnx souboru (přidá trailing slashes)
+
+- **`count-cs-files.ps1`** - Spočítá .cs soubory ve všech submodulech
+  - EN: Counts C# files in all submodules
+  - CZ: Spočítá všechny C# soubory ve všech submodulech
+
 ### Variable Naming & Code Quality
 - **`add-variables-ok-comment.ps1`** - Přidá `// variables names: ok` komentář
   - EN: Adds '// variables names: ok' comment to reviewed files
@@ -187,6 +231,49 @@ Nově přidané skripty které zatím nejsou zařazené do kategorií:
 - **`check-refactoring-status.ps1`** - Kontrola statusu refactoringu
   - EN: Check refactoring status across projects
   - CZ: Kontrola statusu refactoringu napříč projekty
+
+- **`add-variables-names-ok-marker.ps1`** - Přidá marker komentář do solution
+  - EN: Adds '// variables names: ok' marker to files in a solution
+  - CZ: Přidá '// variables names: ok' marker do souborů v solution
+
+- **`find-pascalcase-issues.ps1`** - Najde public/internal members s camelCase
+  - EN: Finds public/internal members with camelCase that should be PascalCase
+  - CZ: Najde public/internal members s camelCase které by měly být PascalCase
+
+- **`restore-variables-ok-comments.ps1`** - Obnoví variables ok komentáře podle data
+  - EN: Restores '// variables names: ok' comments based on cutoff date
+  - CZ: Obnoví '// variables names: ok' komentáře podle cut-off data
+
+- **`restore-variables-ok-simple.ps1`** - Jednoduchá verze restore variables ok
+  - EN: Simple version of restoring '// variables names: ok' comments
+  - CZ: Jednoduchá verze obnovení '// variables names: ok' komentářů
+
+### Build Warnings & Code Cleanup
+- **`analyze-warnings.ps1`** - Analyzuje CS warnings z build outputu
+  - EN: Analyzes CS warnings from dotnet build output, counts by type
+  - CZ: Analyzuje CS warnings z dotnet build outputu, počítá podle typu
+
+- **`count-remaining-warnings.ps1`** - Spočítá zbývající warnings
+  - EN: Counts remaining CS warnings after fixes
+  - CZ: Spočítá zbývající CS warnings po opravách
+
+- **`fix-cs8632-warnings.ps1`** - Opraví CS8632 warnings (nullable)
+  - EN: Fixes CS8632 nullable annotation warnings
+  - CZ: Opraví CS8632 nullable annotation warnings
+
+- **`remove-nullable-annotations.ps1`** - Odstraní nullable annotations
+  - EN: Removes nullable annotations from C# files
+  - CZ: Odstraní nullable annotations z C# souborů
+
+- **`remove-comment-only-files.ps1`** - Smaže soubory obsahující pouze komentáře
+  - EN: Removes C# files that contain only comments or no functional code
+  - CZ: Smaže C# soubory obsahující pouze komentáře nebo žádný funkční kód
+
+### Empty Classes Management
+- **`manage-empty-classes.ps1`** - Najde, analyzuje a spravuje prázdné třídy
+  - EN: Find, analyze, and manage empty C# classes with various options
+  - CZ: Najdi, analyzuj a spravuj prázdné C# třídy s různými možnostmi
+  - Kombinuje funkcionalitu find-empty-classes a remove-empty-classes
 
 ### Submodule Documentation
 - **`add-submodule-claude-md.ps1`** - Přidá CLAUDE.md do submodulů
@@ -316,9 +403,9 @@ Tyto skripty byly použity při velkém refactoringu přejmenování proměnnýc
 - **`find-non-standard-structure.ps1`** - Hledání nestandardní struktury
 
 ### Progress Tracking (Historical)
-- **`generate-progress-report.ps1`** - Generování progress reportu (NAHRAZENO check-group.ps1)
-- **`check-submodules-quality.ps1`** - Kontrola kvality submodulů (NAHRAZENO check-group.ps1)
-- **`update-progress-in-grouped.ps1`** - Aktualizace progressu v grouped.md
+- **`update-progress-in-grouped.ps1`** - Aktualizace progressu v grouped.md (NAHRAZENO update-grouped.ps1)
+- **`restore-groups-1-2-3.ps1`** - Jednorázová obnova projektů ve skupinách 1-3
+- **`final-verification.ps1`** - Jednorázová finální verifikace buildů
 
 ### Version Management (Historical)
 - **`increment-versions.ps1`** - Inkrementace verzí
@@ -332,20 +419,68 @@ Tyto skripty byly použity při velkém refactoringu přejmenování proměnnýc
 
 ---
 
+## 📜 JavaScript Scripts
+
+Node.js skripty pro refactoring a analýzu (volány místo PowerShell pro rychlejší běh):
+
+- **`find-short-variables.js`** - Hledá krátké názvy proměnných napříč projektem
+  - EN: Finds short variable names across the project
+  - CZ: Hledá krátké názvy proměnných napříč projektem
+
+- **`refactor-short-variables.js`** - Refactoring krátkých proměnných (JS verze)
+  - EN: Refactors short variable names (JS version)
+  - CZ: Refactoring krátkých proměnných (JS verze)
+
+- **`fix-remaining-short-vars.js`** - Oprava zbývajících krátkých proměnných
+  - EN: Fixes remaining short variables (specific file list)
+  - CZ: Oprava zbývajících krátkých proměnných (specifický seznam souborů)
+
+- **`process-all-projects.js`** - Zpracování všech projektů
+  - EN: Processes all projects (build/analyze across repo)
+  - CZ: Zpracování všech projektů (build/analýza napříč repo)
+
+- **`add-variable-check-comment.js`** - Přidá marker komentář do souborů
+  - EN: Adds '// EN: Variable names have been checked...' marker
+  - CZ: Přidá marker komentář do souborů
+
+- **`remove-false-comments.js`** - Odstraní nesprávné marker komentáře
+  - EN: Removes false/incorrect marker comments based on verification results
+  - CZ: Odstraní nesprávné marker komentáře podle verifikačních výsledků
+
+- **`verify-and-refactor.js`** - Verifikuje a refactoruje soubory
+  - EN: Verifies marker comments and refactors files
+  - CZ: Verifikuje marker komentáře a refaktoruje soubory
+
+---
+
+## 🦇 Batch Files (Wrappery)
+
+- **`run-check-vs-rot.bat`** - Wrapper pro check-vs-rot-simple.ps1
+- **`run-enumerate-rot.bat`** - Wrapper pro enumerate-rot.ps1
+- **`test-open-files.bat`** - Test wrapper pro Open-FilesWithoutVarOk script
+
+---
+
 ## 📁 Supporting Files
 
 ### Templates
 - **`FRAMEWORKS.md.template`** - Template pro FRAMEWORKS.md dokumentaci
 
+### Subdirectories
+- **`FileSplitter/`** - C# projekt pro rozdělování velkých souborů (FileSplitter.csproj, Program.cs)
+
 ### Data Files
-- **`.sequence-26.1.1`** - Sequence number pro versioning
 - **`submodules-grouped.md`** - Seskupené submoduly
 - **`submodules-quality-report.json`** - Report kvality submodulů
 - **`variable-renaming-progress.md`** - Progress přejmenování proměnných
+- **`variable-rename-mappings.json`** - Mapování pro přejmenování proměnných
+- **`buildable-projects.txt`** - Seznam buildovatelných projektů
+- **`unbuildable-projects.txt`** - Seznam nebuildovatelných projektů
+- **`short-vars-issues.txt`** - Seznam problémů s krátkými proměnnými
+- **`initial-prompt.txt`** - Initial prompt pro AI refactoring
 
 ### Log Files
 - **`commit-log.txt`** - Log commitů
-- **`gaac-log.txt`** - Log gaac funkcí
 - **`parallel-log.txt`** - Log paralelního zpracování
 - **`republish-log.txt`** - Log publikování
 - **`line57.txt`** - Specifický řádek pro debugging
@@ -379,6 +514,6 @@ Tyto skripty byly použity při velkém refactoringu přejmenování proměnnýc
 
 ---
 
-**Poslední aktualizace:** 2026-01-01
-**Celkem skriptů:** 100+
-**Kategorie:** NuGet, Git, Frameworks, Code Quality, Project Structure
+**Poslední aktualizace:** 2026-04-05
+**Celkem skriptů:** 160+
+**Kategorie:** NuGet, Git, Frameworks, Code Quality, Project Structure, Build Warnings, Empty Classes, JS Refactoring

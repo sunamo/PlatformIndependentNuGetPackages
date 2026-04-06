@@ -1,6 +1,8 @@
 Proveď kompletní systematický review VŠECH .cs souborů v tomto projektu a nahraď VŠECHNY názvy proměnných za samopopisné podle pravidel v
   E:\vs\Projects\PlatformIndependentNuGetPackages\VARIABLE-NAMING-RULES.md
 
+Nejduležitější věc teď - připravit kompletně tyto nugety na dokumentaci, jak jménem proměnných a code elementů tak i komentáři, aby nikde nebylo nic českého. Někde je kvůli češtiny i rozsypaný čaj tak i toto nahradit za anglický text.
+
 dodržuj v názvech proměnných PascalCase nebo camelCase, podle toho jaká je správná. je li někde jiná konvence jako třeba snake case, oprav ji: internal static bool ChangeContentWithCondition(ChangeContentArgsHtml a, List<string> files_in,
     Predicate<string> predicate, Func<string, string> func)
 
