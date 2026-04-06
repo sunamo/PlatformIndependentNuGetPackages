@@ -1,0 +1,38 @@
+﻿=== FAILED TRANSLATIONS REPORT / REPORT SELHAVŠÍCH PŘEKLADŮ ===
+
+Total failed: 11 words
+Celkem selhalo: 11 slov
+
+bah
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+duh
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+goddamnit
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+meh
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+nah
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+ohhh
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+ohhhh
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+shush
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+ugh
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+yay
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
+yo
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+

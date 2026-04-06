@@ -1,0 +1,57 @@
+﻿{
+  "ValidWords": [
+    "soda",
+    "sexy",
+    "smoky",
+    "speciality",
+    "teenage"
+  ],
+  "CategorizedWords": {
+    "Same in Czech/English (rejected)": [],
+    "Proper names (rejected)": [],
+    "Czech/non-English words (rejected)": [
+      "africa",
+      "ahoso",
+      "arnost",
+      "bohumil",
+      "bohus",
+      "chateaubriand",
+      "gipsy",
+      "guten",
+      "hergot",
+      "jasnu",
+      "josef",
+      "kaja",
+      "kostal",
+      "kraut",
+      "kuwait",
+      "liduna",
+      "lizinka",
+      "numberkm",
+      "numberm",
+      "numbero",
+      "praguer",
+      "prsident",
+      "repete",
+      "siroky",
+      "slav",
+      "stejskal",
+      "ulrich",
+      "vanek",
+      "vidaho",
+      "vlasta"
+    ],
+    "Nonsense/invalid (rejected)": [
+      "co",
+      "dr",
+      "h"
+    ],
+    "Valid English words (accepted)": [
+      "sexy",
+      "smoky",
+      "soda",
+      "speciality",
+      "teenage"
+    ]
+  }
+}
