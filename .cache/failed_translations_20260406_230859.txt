@@ -1,0 +1,8 @@
+﻿=== FAILED TRANSLATIONS REPORT / REPORT SELHAVŠÍCH PŘEKLADŮ ===
+
+Total failed: 1 words
+Celkem selhalo: 1 slov
+
+aha
+  Reason / Důvod: Word not returned in Claude response / Slovo nebylo vráceno v odpovědi Claude
+
