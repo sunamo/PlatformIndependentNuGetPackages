@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "SunamoArgs/SunamoArgs/SunamoArgs.csproj"
+            "SunamoString/SunamoString/SunamoString.csproj"
           ],
           "src": ".."
         }
@@ -43,7 +43,8 @@
     ],
     "output": "_site",
     "template": [
-      "default"
+      "default",
+      "modern"
     ],
     "globalMetadata": {
       "_appTitle": "Sunamo NuGet Packages",

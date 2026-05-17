@@ -275,6 +275,12 @@ __pycache__/
 .docfx/_site/
 .docfx/api/
 
+# MkDocs generated files
+.mkdocs/site/
+# But keep generated per-package source pages (they live under packages/ which is otherwise ignored by NuGet rule above)
+!.mkdocs/docs/packages/
+!.mkdocs/docs/packages/*.md
+
 # Reserved Windows filenames (invalid paths)
 nul
 NUL

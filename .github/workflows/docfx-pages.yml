@@ -1,4 +1,4 @@
-name: Deploy DocFX to GitHub Pages
+name: Deploy DocFX + MkDocs to GitHub Pages
 
 on:
   push:
@@ -17,17 +17,21 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      - name: Checkout SunamoArgs submodule
+      - name: Checkout SunamoString submodule (preview build)
         run: |
           git config --global url."https://github.com/".insteadOf "git@github.com:"
-          git submodule update --init --depth 1 SunamoArgs
+          git submodule update --init --depth 1 SunamoString
+
+      - name: Regenerate docs configs (SunamoString only — preview)
+        shell: pwsh
+        run: ./.scripts/generate-docs-config.ps1 -OnlyPackages SunamoString
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -46,30 +50,51 @@ jobs:
       - name: Install DocFX
         run: |
           dotnet tool install -g docfx
-          export PATH="$PATH:$HOME/.dotnet/tools"
-          docfx --version
+          echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
 
-      - name: Generate documentation
+      - name: Build DocFX site
+        run: docfx .docfx/docfx.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install MkDocs Material
         run: |
-          export PATH="$PATH:$HOME/.dotnet/tools"
-          docfx .docfx/docfx.json
+          python -m pip install --upgrade pip
+          pip install mkdocs-material pymdown-extensions
 
-      - name: Verify output exists
+      - name: Build MkDocs site
+        working-directory: .mkdocs
+        # --strict is not used: MkDocs flags cross-site links into ../api/ (DocFX
+        # output that lives outside the MkDocs docs tree) as broken, even though
+        # they resolve correctly once both sites are merged under _site/.
+        run: mkdocs build
+
+      - name: Merge MkDocs output into DocFX site under /guide
         run: |
-          echo "=== DocFX output ==="
-          ls -laR .docfx/_site/ | head -50
+          mkdir -p .docfx/_site/guide
+          cp -r .mkdocs/site/. .docfx/_site/guide/
 
-      - name: Upload artifact
+      - name: Verify combined output
+        run: |
+          echo "=== DocFX root ==="
+          ls -la .docfx/_site/ | head -30
+          echo "=== Guide (MkDocs) ==="
+          ls -la .docfx/_site/guide/ | head -20
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .docfx/_site
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

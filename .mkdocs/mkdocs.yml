@@ -1,0 +1,66 @@
+site_name: Sunamo NuGet Packages
+site_description: Platform-independent .NET NuGet packages — guides & usage notes.
+site_url: https://sunamo.github.io/PlatformIndependentNuGetPackages/guide/
+repo_url: https://github.com/sunamo/PlatformIndependentNuGetPackages
+repo_name: sunamo/PlatformIndependentNuGetPackages
+edit_uri: edit/master/
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sunamo
+    - icon: fontawesome/brands/microsoft
+      link: https://www.nuget.org/profiles/sunamo
+
+nav:
+  - Overview: index.md
+  - Packages:
+      - SunamoString: packages/SunamoString.md

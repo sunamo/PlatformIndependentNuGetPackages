@@ -16,7 +16,7 @@ Each package has two documentation entry points:
 
 | Package | Description | Docs |
 | --- | --- | --- |
-| **SunamoString** | A large number of methods for string operations | [API](api/SunamoString.html) · [Guide](guide/packages/SunamoString/) · [NuGet](https://www.nuget.org/packages/SunamoString) |
+| **SunamoString** | A large number of methods for string operations | [API](../api/SunamoString.html) · [Guide](packages/SunamoString/) · [NuGet](https://www.nuget.org/packages/SunamoString) |
 
 ## License
 
