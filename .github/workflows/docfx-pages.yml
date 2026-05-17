@@ -27,7 +27,9 @@ jobs:
       - name: Checkout SunamoString submodule (preview build)
         run: |
           git config --global url."https://github.com/".insteadOf "git@github.com:"
-          git submodule update --init --depth 1 SunamoString
+          # No --depth: the parent repo may pin a commit that is no longer the tip of master,
+          # in which case a shallow fetch fails to materialize the recorded SHA.
+          git submodule update --init SunamoString
 
       - name: Regenerate docs configs (SunamoString only — preview)
         shell: pwsh
