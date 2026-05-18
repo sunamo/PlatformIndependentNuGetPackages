@@ -281,6 +281,9 @@ __pycache__/
 !.mkdocs/docs/packages/
 !.mkdocs/docs/packages/*.md
 
+# Per-package mini-landing HTML (regenerated in CI by .scripts/generate-docs-config.ps1)
+.landings/
+
 # Reserved Windows filenames (invalid paths)
 nul
 NUL

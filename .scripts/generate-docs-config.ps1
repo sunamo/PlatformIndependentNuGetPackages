@@ -112,18 +112,17 @@ Write-Host "Wrote .docfx/docfx.json with $($packages.Count) projects"
 function New-LandingMarkdown {
     param(
         [Parameter(Mandatory)] [object[]]$Packages,
-        [Parameter(Mandatory)] [string]$ApiLinkBase,    # e.g. 'api/' for DocFX, '../api/' for MkDocs
-        [Parameter(Mandatory)] [string]$GuideLinkBase   # e.g. 'guide/packages/' for DocFX, 'packages/' for MkDocs
+        [Parameter(Mandatory)] [AllowEmptyString()] [string]$PackageLinkBase   # '' for DocFX root, '../' for MkDocs nested
     )
     $sb = [System.Text.StringBuilder]::new()
     [void]$sb.AppendLine('# Sunamo NuGet Packages')
     [void]$sb.AppendLine()
     [void]$sb.AppendLine('Platform-independent .NET NuGet packages — shared libraries for all apps & devices.')
     [void]$sb.AppendLine()
-    [void]$sb.AppendLine('Each package has two documentation entry points:')
+    [void]$sb.AppendLine('Each package has its own page with two entry points:')
     [void]$sb.AppendLine()
-    [void]$sb.AppendLine('- **API** — auto-generated reference (DocFX, namespaces, types, members).')
-    [void]$sb.AppendLine('- **Guide** — narrative documentation built from each package README (MkDocs Material).')
+    [void]$sb.AppendLine('- **API reference** — auto-generated from source (DocFX).')
+    [void]$sb.AppendLine('- **Guide** — narrative documentation from the package README (MkDocs Material).')
     [void]$sb.AppendLine()
     [void]$sb.AppendLine('## Quick links')
     [void]$sb.AppendLine()
@@ -132,14 +131,12 @@ function New-LandingMarkdown {
     [void]$sb.AppendLine()
     [void]$sb.AppendLine("## Packages ($($Packages.Count))")
     [void]$sb.AppendLine()
-    [void]$sb.AppendLine('| Package | Description | Docs |')
-    [void]$sb.AppendLine('| --- | --- | --- |')
+    [void]$sb.AppendLine('| Package | Description |')
+    [void]$sb.AppendLine('| --- | --- |')
     foreach ($pkg in $Packages) {
         $desc = if ($pkg.Description) { $pkg.Description -replace '\|', '\|' -replace "`r?`n", ' ' } else { '' }
-        $apiLink   = "$ApiLinkBase$($pkg.Name).html"
-        $guideLink = "$GuideLinkBase$($pkg.Name)/"
-        $nugetLink = "https://www.nuget.org/packages/$($pkg.Name)"
-        [void]$sb.AppendLine("| **$($pkg.Name)** | $desc | [API]($apiLink) · [Guide]($guideLink) · [NuGet]($nugetLink) |")
+        $pkgLink = "$PackageLinkBase$($pkg.Name)/"
+        [void]$sb.AppendLine("| [**$($pkg.Name)**]($pkgLink) | $desc |")
     }
     [void]$sb.AppendLine()
     [void]$sb.AppendLine('## License')
@@ -148,8 +145,75 @@ function New-LandingMarkdown {
     return $sb.ToString()
 }
 
-# 4. .docfx/index.md
-$docfxLanding = New-LandingMarkdown -Packages $packages -ApiLinkBase 'api/' -GuideLinkBase 'guide/packages/'
+# Per-package mini-landing page (standalone static HTML, copied verbatim into _site/{Package}/)
+function New-MiniLandingHtml {
+    param(
+        [Parameter(Mandatory)] [string]$Name,
+        [string]$Description = ''
+    )
+    $descSafe = [System.Net.WebUtility]::HtmlEncode($Description)
+    return @"
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>$Name — Sunamo NuGet Packages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 4rem auto; padding: 0 1.25rem; line-height: 1.55; color: #222; background: #fafafa; }
+  .breadcrumb { font-size: .9rem; margin-bottom: 1.5rem; }
+  .breadcrumb a { color: #4a76b8; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  h1 { margin: 0 0 .35rem; font-size: 2.25rem; font-weight: 600; }
+  .lead { color: #555; margin: 0 0 2.5rem; font-size: 1.05rem; }
+  .actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  a.btn { display: block; padding: 1.75rem 1.5rem; border-radius: 14px; text-decoration: none; border: 1px solid #d0d0d0; background: #fff; color: inherit; transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease; }
+  a.btn:hover { transform: translateY(-2px); border-color: #4a76b8; box-shadow: 0 6px 18px rgba(74, 118, 184, .12); }
+  a.btn h2 { margin: 0 0 .4rem; font-size: 1.2rem; color: #4a76b8; font-weight: 600; }
+  a.btn p { margin: 0; color: #555; font-size: .92rem; }
+  .footer { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e5; font-size: .9rem; color: #666; }
+  .footer a { color: #4a76b8; text-decoration: none; margin-right: 1rem; }
+  .footer a:hover { text-decoration: underline; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #161616; color: #eaeaea; }
+    .lead { color: #b3b3b3; }
+    a.btn { background: #1f1f1f; border-color: #333; }
+    a.btn h2 { color: #8ab4f8; }
+    a.btn p { color: #b3b3b3; }
+    a.btn:hover { border-color: #8ab4f8; box-shadow: 0 6px 18px rgba(138, 180, 248, .15); }
+    .footer { border-color: #2a2a2a; color: #999; }
+    .footer a { color: #8ab4f8; }
+    .breadcrumb a { color: #8ab4f8; }
+  }
+</style>
+</head>
+<body>
+  <nav class="breadcrumb"><a href="../">← All packages</a></nav>
+  <h1>$Name</h1>
+  <p class="lead">$descSafe</p>
+  <div class="actions">
+    <a class="btn" href="../api/$Name.html">
+      <h2>API reference →</h2>
+      <p>Auto-generated from source. Namespaces, types, members, signatures.</p>
+    </a>
+    <a class="btn" href="../guide/packages/$Name/">
+      <h2>Guide →</h2>
+      <p>Narrative documentation built from the package README.</p>
+    </a>
+  </div>
+  <div class="footer">
+    <a href="https://www.nuget.org/packages/$Name">NuGet</a>
+    <a href="https://github.com/sunamo/$Name">GitHub source</a>
+    <a href="../">All packages</a>
+  </div>
+</body>
+</html>
+"@
+}
+
+# 4. .docfx/index.md  — global landing, package name links to per-package mini-landing at /{Package}/
+$docfxLanding = New-LandingMarkdown -Packages $packages -PackageLinkBase ''
 Set-Content -LiteralPath (Join-Path $docfxDir 'index.md') -Value $docfxLanding -Encoding UTF8
 Write-Host "Wrote .docfx/index.md"
 
@@ -226,8 +290,8 @@ $navPackages
 Set-Content -LiteralPath (Join-Path $mkdocsDir 'mkdocs.yml') -Value $mkdocsYaml -Encoding UTF8
 Write-Host "Wrote .mkdocs/mkdocs.yml"
 
-# 6. .mkdocs/docs/index.md
-$mkdocsLanding = New-LandingMarkdown -Packages $packages -ApiLinkBase '../api/' -GuideLinkBase 'packages/'
+# 6. .mkdocs/docs/index.md  — package name links to mini-landing one level up from /guide/
+$mkdocsLanding = New-LandingMarkdown -Packages $packages -PackageLinkBase '../'
 Set-Content -LiteralPath (Join-Path $mkdocsDocs 'index.md') -Value $mkdocsLanding -Encoding UTF8
 Write-Host "Wrote .mkdocs/docs/index.md"
 
@@ -258,14 +322,31 @@ $( if ($pkg.Description) { $pkg.Description } else { '' } )
 }
 Write-Host "Wrote $($packages.Count) per-package pages under .mkdocs/docs/packages/"
 
-# 8. Remove stale per-package files for packages that no longer exist
+# 8. Per-package mini-landing HTML pages (copied into _site/{Package}/ by the workflow)
+$landingsDir = Join-Path $repoRoot '.landings'
+New-Item -ItemType Directory -Force -Path $landingsDir | Out-Null
+foreach ($pkg in $packages) {
+    $pkgDir = Join-Path $landingsDir $pkg.Name
+    New-Item -ItemType Directory -Force -Path $pkgDir | Out-Null
+    $html = New-MiniLandingHtml -Name $pkg.Name -Description $pkg.Description
+    Set-Content -LiteralPath (Join-Path $pkgDir 'index.html') -Value $html -Encoding UTF8
+}
+Write-Host "Wrote $($packages.Count) mini-landing pages under .landings/"
+
+# 9. Remove stale per-package files for packages that no longer exist
 $validNames = @{}
 foreach ($pkg in $packages) { $validNames[$pkg.Name] = $true }
 Get-ChildItem -LiteralPath $mkdocsPkgs -Filter '*.md' -File | ForEach-Object {
     $base = [System.IO.Path]::GetFileNameWithoutExtension($_.Name)
     if (-not $validNames.ContainsKey($base)) {
-        Write-Host "Removing stale: $($_.Name)"
+        Write-Host "Removing stale mkdocs page: $($_.Name)"
         Remove-Item -LiteralPath $_.FullName -Force
+    }
+}
+Get-ChildItem -LiteralPath $landingsDir -Directory | ForEach-Object {
+    if (-not $validNames.ContainsKey($_.Name)) {
+        Write-Host "Removing stale landing: $($_.Name)"
+        Remove-Item -LiteralPath $_.FullName -Recurse -Force
     }
 }
 

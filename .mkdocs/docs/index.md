@@ -2,10 +2,10 @@
 
 Platform-independent .NET NuGet packages — shared libraries for all apps & devices.
 
-Each package has two documentation entry points:
+Each package has its own page with two entry points:
 
-- **API** — auto-generated reference (DocFX, namespaces, types, members).
-- **Guide** — narrative documentation built from each package README (MkDocs Material).
+- **API reference** — auto-generated from source (DocFX).
+- **Guide** — narrative documentation from the package README (MkDocs Material).
 
 ## Quick links
 
@@ -14,9 +14,9 @@ Each package has two documentation entry points:
 
 ## Packages (1)
 
-| Package | Description | Docs |
-| --- | --- | --- |
-| **SunamoString** | A large number of methods for string operations | [API](../api/SunamoString.html) · [Guide](packages/SunamoString/) · [NuGet](https://www.nuget.org/packages/SunamoString) |
+| Package | Description |
+| --- | --- |
+| [**SunamoString**](../SunamoString/) | A large number of methods for string operations |
 
 ## License
 

@@ -79,6 +79,9 @@ jobs:
           mkdir -p .docfx/_site/guide
           cp -r .mkdocs/site/. .docfx/_site/guide/
 
+      - name: Merge per-package mini-landings into site root
+        run: cp -r .landings/. .docfx/_site/
+
       - name: Verify combined output
         run: |
           echo "=== DocFX root ==="
