@@ -24,16 +24,16 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Checkout SunamoString submodule (preview build)
+      - name: Checkout all submodules
         run: |
           git config --global url."https://github.com/".insteadOf "git@github.com:"
           # No --depth: the parent repo may pin a commit that is no longer the tip of master,
           # in which case a shallow fetch fails to materialize the recorded SHA.
-          git submodule update --init SunamoString
+          git submodule update --init --recursive
 
-      - name: Regenerate docs configs (SunamoString only — preview)
+      - name: Regenerate docs configs (all packages)
         shell: pwsh
-        run: ./.scripts/generate-docs-config.ps1 -OnlyPackages SunamoString
+        run: ./.scripts/generate-docs-config.ps1
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
