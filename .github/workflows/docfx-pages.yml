@@ -24,12 +24,41 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Checkout all submodules
+      - name: Configure git for HTTPS submodule access
         run: |
           git config --global url."https://github.com/".insteadOf "git@github.com:"
-          # No --depth: the parent repo may pin a commit that is no longer the tip of master,
-          # in which case a shallow fetch fails to materialize the recorded SHA.
-          git submodule update --init --recursive
+          git config --global submodule.recurse false
+
+      - name: Checkout all submodules (best-effort, parallel)
+        run: |
+          # Best-effort: 128 submodules cloned in parallel. A single missing or
+          # unreachable submodule must NOT kill the whole workflow — we still
+          # want to publish landings/docs for the packages that did materialize.
+          # No --depth: parent may pin a commit older than the submodule's master HEAD,
+          # which a shallow fetch cannot resolve.
+          set +e
+          git submodule update --init --recursive --jobs 8
+          status=$?
+          set -e
+          echo "submodule update exit code: $status"
+
+          missing=0
+          present=0
+          for path in $(git config --file .gitmodules --get-regexp 'submodule\..*\.path' | awk '{print $2}'); do
+            if [ -f "$path/$(basename "$path")/$(basename "$path").csproj" ]; then
+              present=$((present + 1))
+            else
+              missing=$((missing + 1))
+              echo "MISSING: $path"
+            fi
+          done
+          echo "Submodules with csproj: $present, missing: $missing"
+
+          # Abort only if NOTHING checked out — otherwise proceed with what we have.
+          if [ "$present" -eq 0 ]; then
+            echo "::error::No submodules materialized; aborting."
+            exit 1
+          fi
 
       - name: Regenerate docs configs (all packages)
         shell: pwsh
