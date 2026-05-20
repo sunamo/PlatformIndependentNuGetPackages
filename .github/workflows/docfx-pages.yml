@@ -89,21 +89,43 @@ jobs:
           dotnet tool install -g docfx
           echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
 
-      - name: Build DocFX site
+      - name: Verify .NET SDKs installed
         run: |
-          # --logLevel info surfaces per-project metadata errors; without it
-          # docfx swallows individual project failures and the job just shows
-          # "Build DocFX site failed" with no diagnostic.
-          docfx .docfx/docfx.json --logLevel info 2>&1 | tee docfx-build.log
-        continue-on-error: false
+          echo "=== Installed SDKs ==="
+          dotnet --list-sdks
+          echo "=== Default runtime ==="
+          dotnet --list-runtimes | head -20
 
-      - name: Surface DocFX errors (if any)
-        if: failure()
+      - name: Run DocFX metadata (generate API yml)
         run: |
-          echo "=== Last 200 lines of docfx-build.log ==="
-          tail -n 200 docfx-build.log || true
-          echo "=== All ERROR/WARN entries ==="
-          grep -iE "error|warning|fatal|exception" docfx-build.log | head -100 || true
+          # Split metadata from build so failures here are unambiguous.
+          # docfx metadata invokes msbuild per-project; a single broken csproj
+          # would otherwise be lost in the merged "build" output.
+          docfx metadata .docfx/docfx.json --logLevel info 2>&1 | tee docfx-metadata.log
+          echo "=== api/ output ==="
+          ls -la .docfx/api/ 2>/dev/null | head -20 || echo "NO api/ FOLDER"
+          yml_count=$(find .docfx/api -name "*.yml" 2>/dev/null | wc -l)
+          echo "Generated $yml_count yml file(s)"
+          if [ "$yml_count" -lt 50 ]; then
+            echo "::error::Expected ~128 yml files, got $yml_count — metadata is broken."
+            echo "=== Errors in metadata log ==="
+            grep -iE "error|fatal|exception|fail" docfx-metadata.log | head -50
+            exit 1
+          fi
+
+      - name: Build DocFX site (render yml -> html)
+        run: docfx build .docfx/docfx.json --logLevel info 2>&1 | tee docfx-build.log
+
+      - name: Always upload DocFX logs as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docfx-logs
+          path: |
+            docfx-metadata.log
+            docfx-build.log
+          if-no-files-found: warn
+          retention-days: 7
 
       - name: Setup Python
         uses: actions/setup-python@v5
