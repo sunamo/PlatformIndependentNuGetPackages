@@ -67,7 +67,13 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
+          # All three SDKs are needed: every package targets net10.0;net9.0;net8.0.
+          # Even though docfx is told to use net9.0, msbuild evaluates the full
+          # <TargetFrameworks> list during restore and fails if any SDK is missing.
+          dotnet-version: |
+            8.0.x
+            9.0.x
+            10.0.x
 
       - name: Cache NuGet packages
         uses: actions/cache@v4
@@ -84,7 +90,20 @@ jobs:
           echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
 
       - name: Build DocFX site
-        run: docfx .docfx/docfx.json
+        run: |
+          # --logLevel info surfaces per-project metadata errors; without it
+          # docfx swallows individual project failures and the job just shows
+          # "Build DocFX site failed" with no diagnostic.
+          docfx .docfx/docfx.json --logLevel info 2>&1 | tee docfx-build.log
+        continue-on-error: false
+
+      - name: Surface DocFX errors (if any)
+        if: failure()
+        run: |
+          echo "=== Last 200 lines of docfx-build.log ==="
+          tail -n 200 docfx-build.log || true
+          echo "=== All ERROR/WARN entries ==="
+          grep -iE "error|warning|fatal|exception" docfx-build.log | head -100 || true
 
       - name: Setup Python
         uses: actions/setup-python@v5
