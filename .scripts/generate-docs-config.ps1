@@ -36,7 +36,8 @@ $packages = Get-ChildItem -Path $repoRoot -Directory -Filter 'Sunamo*' |
     Where-Object { $_.Name -notmatch '\.Tests$' -and $_.Name -notmatch '^Runner' } |
     ForEach-Object {
         $name = $_.Name
-        $csproj = Join-Path $_.FullName "$name\$name.csproj"
+        $pkgDir = $_.FullName
+        $csproj = Join-Path $pkgDir "$name\$name.csproj"
         if (Test-Path -LiteralPath $csproj) {
             $description = ''
             try {
@@ -49,11 +50,56 @@ $packages = Get-ChildItem -Path $repoRoot -Directory -Filter 'Sunamo*' |
             } catch {
                 Write-Warning "Failed to parse $csproj : $_"
             }
+
+            # Find the best DocFX-published namespace for this package. DocFX
+            # emits one HTML per namespace; many packages have no root
+            # 'SunamoX' namespace (e.g., SunamoData ships only SunamoData.Data,
+            # SunamoData.Enums). Linking to /api/SunamoX.html for those yields
+            # 404. Scan public source for namespace declarations and pick the
+            # most representative one.
+            $srcDir = Join-Path $pkgDir $name
+            $apiNamespace = $null
+            if (Test-Path -LiteralPath $srcDir) {
+                $namespaces = Get-ChildItem -LiteralPath $srcDir -Recurse -Filter '*.cs' -File `
+                    -ErrorAction SilentlyContinue |
+                    Where-Object {
+                        $_.FullName -notmatch '\\(bin|obj)\\' -and
+                        $_.FullName -notmatch '\\_sunamo\\' -and
+                        $_.FullName -notmatch '\\_public\\'
+                    } |
+                    ForEach-Object {
+                        $content = Get-Content -LiteralPath $_.FullName -Raw -ErrorAction SilentlyContinue
+                        if ($content) {
+                            $match = [regex]::Match($content, '(?m)^\s*namespace\s+([A-Za-z0-9_.]+)')
+                            if ($match.Success) { $match.Groups[1].Value }
+                        }
+                    } |
+                    Where-Object {
+                        $_ -and
+                        $_ -notmatch '\._sunamo($|\.)' -and
+                        $_ -notmatch '\._public($|\.)'
+                    } |
+                    Sort-Object -Unique
+                # Preference order: exact match, then shortest sub-namespace,
+                # then shortest of anything.
+                if ($namespaces -contains $name) {
+                    $apiNamespace = $name
+                } else {
+                    $sub = $namespaces | Where-Object { $_ -like "$name.*" } | Sort-Object Length, { $_ } | Select-Object -First 1
+                    if ($sub) {
+                        $apiNamespace = $sub
+                    } elseif ($namespaces) {
+                        $apiNamespace = $namespaces | Sort-Object Length, { $_ } | Select-Object -First 1
+                    }
+                }
+            }
+
             [pscustomobject]@{
-                Name        = $name
-                CsprojRel   = "$name/$name/$name.csproj"
-                ReadmePath  = Join-Path $_.FullName 'README.md'
-                Description = $description
+                Name         = $name
+                CsprojRel    = "$name/$name/$name.csproj"
+                ReadmePath   = Join-Path $pkgDir 'README.md'
+                Description  = $description
+                ApiNamespace = $apiNamespace
             }
         }
     } | Sort-Object Name
@@ -149,9 +195,18 @@ function New-LandingMarkdown {
 function New-MiniLandingHtml {
     param(
         [Parameter(Mandatory)] [string]$Name,
-        [string]$Description = ''
+        [string]$Description = '',
+        [string]$ApiNamespace = ''
     )
     $descSafe = [System.Net.WebUtility]::HtmlEncode($Description)
+    # Fall back to the global API toc when the package has no DocFX-published
+    # namespace (e.g., types only live under SunamoX._sunamo, or the project
+    # re-exports a foreign namespace like Ionic.BZip2).
+    if ($ApiNamespace) {
+        $apiHref = "../api/$ApiNamespace.html"
+    } else {
+        $apiHref = '../api/toc.html'
+    }
     return @"
 <!doctype html>
 <html lang="en">
@@ -193,7 +248,7 @@ function New-MiniLandingHtml {
   <h1>$Name</h1>
   <p class="lead">$descSafe</p>
   <div class="actions">
-    <a class="btn" href="../api/$Name.html">
+    <a class="btn" href="$apiHref">
       <h2>API reference →</h2>
       <p>Auto-generated from source. Namespaces, types, members, signatures.</p>
     </a>
@@ -298,6 +353,7 @@ Write-Host "Wrote .mkdocs/docs/index.md"
 # 7. .mkdocs/docs/packages/{Package}.md  (one per package)
 foreach ($pkg in $packages) {
     $target = Join-Path $mkdocsPkgs "$($pkg.Name).md"
+    $apiHref = if ($pkg.ApiNamespace) { "../../api/$($pkg.ApiNamespace).html" } else { '../../api/toc.html' }
     $header = @"
 # $($pkg.Name)
 
@@ -305,7 +361,7 @@ $( if ($pkg.Description) { $pkg.Description } else { '' } )
 
 - **NuGet**: [`$($pkg.Name)`](https://www.nuget.org/packages/$($pkg.Name))
 - **Source**: [GitHub](https://github.com/sunamo/$($pkg.Name))
-- **API reference**: [`../../api/$($pkg.Name).html`](../../api/$($pkg.Name).html)
+- **API reference**: [$apiHref]($apiHref)
 
 ---
 
@@ -328,7 +384,7 @@ New-Item -ItemType Directory -Force -Path $landingsDir | Out-Null
 foreach ($pkg in $packages) {
     $pkgDir = Join-Path $landingsDir $pkg.Name
     New-Item -ItemType Directory -Force -Path $pkgDir | Out-Null
-    $html = New-MiniLandingHtml -Name $pkg.Name -Description $pkg.Description
+    $html = New-MiniLandingHtml -Name $pkg.Name -Description $pkg.Description -ApiNamespace $pkg.ApiNamespace
     Set-Content -LiteralPath (Join-Path $pkgDir 'index.html') -Value $html -Encoding UTF8
 }
 Write-Host "Wrote $($packages.Count) mini-landing pages under .landings/"
