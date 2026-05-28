@@ -2,7 +2,7 @@
 
 A large number of methods for string operations
 
-- **NuGet**: [$(@{Name=SunamoString; CsprojRel=SunamoString/SunamoString/SunamoString.csproj; ReadmePath=E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\README.md; Description=A large number of methods for string operations}.Name)](https://www.nuget.org/packages/SunamoString)
+- **NuGet**: [$(@{Name=SunamoString; CsprojRel=SunamoString/SunamoString/SunamoString.csproj; ReadmePath=E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\README.md; Description=A large number of methods for string operations; ApiNamespace=SunamoString}.Name)](https://www.nuget.org/packages/SunamoString)
 - **Source**: [GitHub](https://github.com/sunamo/SunamoString)
 - **API reference**: [../../api/SunamoString.html](../../api/SunamoString.html)
 
