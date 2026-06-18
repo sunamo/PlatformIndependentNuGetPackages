@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoClearScript</AssemblyName>
+    <RootNamespace>SunamoClearScript</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoClearScript\SunamoClearScript\**\*.cs"
+             Exclude="..\SunamoClearScript\SunamoClearScript\obj\**\*;..\SunamoClearScript\SunamoClearScript\bin\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ClearScript.Core" Version="7.5.0" />
+    <PackageReference Include="Microsoft.ClearScript.V8" Version="7.5.0" />
+    <PackageReference Include="Microsoft.ClearScript.V8.Native.win-x86" Version="7.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>

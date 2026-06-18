@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoClipboard</AssemblyName>
+    <RootNamespace>SunamoClipboard</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoClipboard\SunamoClipboard\**\*.cs"
+             Exclude="..\SunamoClipboard\SunamoClipboard\obj\**\*;..\SunamoClipboard\SunamoClipboard\bin\**\*;..\SunamoClipboard\SunamoClipboard\_sunamo\SunamoStringGetLines\**;..\SunamoClipboard\SunamoClipboard\_sunamo\SunamoString\**;..\SunamoClipboard\SunamoClipboard\_sunamo\SunamoXlfKeys\**;..\SunamoClipboard\SunamoClipboard\_sunamo\CA.cs;..\SunamoClipboard\SunamoClipboard\_sunamo\FS.cs" />
+    <Compile Include="..\SunamoClipboard\SunamoClipboard\_sunamo\SunamoStringGetLines\SHGetLines.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="TextCopy" Version="6.2.1" />
+  </ItemGroup>
+</Project>

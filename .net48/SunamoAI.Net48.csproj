@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoAI</AssemblyName>
+    <RootNamespace>SunamoAI</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoAI\SunamoAI\**\*.cs"
+             Exclude="..\SunamoAI\SunamoAI\obj\**\*;..\SunamoAI\SunamoAI\bin\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mscc.GenerativeAI" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+</Project>

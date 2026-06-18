@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoMarkdown</AssemblyName>
+    <RootNamespace>SunamoMarkdown</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoMarkdown\SunamoMarkdown\**\*.cs"
+             Exclude="..\SunamoMarkdown\SunamoMarkdown\obj\**\*;..\SunamoMarkdown\SunamoMarkdown\bin\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Html2Markdown" Version="5.1.0.703" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>

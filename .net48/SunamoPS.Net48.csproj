@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoPS</AssemblyName>
+    <RootNamespace>SunamoPS</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Most of SunamoPS depends on Microsoft.PowerShell.SDK / System.Management.Automation
+         which have no net48-compatible packages. Only the SDK-independent parser/builder
+         subset is compiled here. -->
+    <Compile Include="..\SunamoPS\SunamoPS\PowershellParser.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\PowershellBuilder.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\_public\TextBuilderPS.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\_public\SunamoEnums\Enums\CommandWithPath.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellBuilderPS.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\_public\SunamoInterfaces\Interfaces\IGitBashBuilderPS.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\_public\SunamoInterfaces\Interfaces\INpmBashBuilderPS.cs" />
+    <Compile Include="..\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellParser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="SunamoPS._public" />
+    <Using Include="SunamoPS._public.SunamoEnums.Enums" />
+    <Using Include="SunamoPS._public.SunamoInterfaces.Interfaces" />
+    <Using Include="SunamoPS._sunamo.SunamoInterfaces.Interfaces.SunamoPS" />
+    <Using Include="System" />
+    <Using Include="System.Collections" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Diagnostics" />
+    <Using Include="System.IO" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Reflection" />
+    <Using Include="System.Text" />
+    <Using Include="System.Text.RegularExpressions" />
+    <Using Include="System.Threading.Tasks" />
+    <Using Include="SunamoPS" />
+    <Using Include="SunamoExceptions" />
+    <Using Include="SunamoStringSplit" />
+    <Using Include="Microsoft.Extensions.Logging" />
+    <Using Include="Microsoft.Extensions.Logging.ILogger" Alias="ILogger" />
+    <Using Include="Microsoft.Extensions.Logging.Abstractions.NullLogger" Alias="NullLogger" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="SunamoToUnixLineEnding.Net48.csproj" />
+    <ProjectReference Include="SunamoExceptions.Net48.csproj" />
+    <ProjectReference Include="SunamoStringSplit.Net48.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoDevCode</AssemblyName>
+    <RootNamespace>SunamoDevCode</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoDevCode\SunamoDevCode\**\*.cs"
+             Exclude="..\SunamoDevCode\SunamoDevCode\obj\**\*;..\SunamoDevCode\SunamoDevCode\bin\**\*;..\SunamoDevCode\SunamoDevCode\Aps\Projs\Values\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CaseDotNet" Version="0.3.36" />
+    <PackageReference Include="CaseDotNet.Extensions" Version="0.2.46" />
+    <PackageReference Include="Diacritics" Version="4.1.4" />
+    <PackageReference Include="Google.Apis.Core" Version="1.68.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="ResXResourceReader.NetStandard" Version="1.1.1" />
+    <PackageReference Include="TextCopy" Version="6.2.1" />
+  </ItemGroup>
+</Project>

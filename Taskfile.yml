@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  rel:
+    cmds:
+      - powershell -Command "[Console]::Write([char]27 + ']0;rel' + [char]7)"
+      - dotnet build -c Release
+
+  dev:
+    cmds:
+      - powershell -Command "[Console]::Write([char]27 + ']0;dev' + [char]7)"
+      - dotnet run -c Debug

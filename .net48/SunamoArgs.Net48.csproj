@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoArgs</AssemblyName>
+    <RootNamespace>SunamoArgs</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoArgs\SunamoArgs\Net48Polyfills.cs" />
+    <Compile Include="..\SunamoArgs\SunamoArgs\DumpAsStringHeaderArgs.cs" />
+    <Compile Include="..\SunamoArgs\SunamoArgs\InvokeProcessArgs.cs" />
+    <Compile Include="..\SunamoArgs\SunamoArgs\RemoveStartingWithArgs.cs" />
+    <Compile Include="..\SunamoArgs\SunamoArgs\GlobalUsings.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>

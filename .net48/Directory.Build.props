@@ -1,0 +1,27 @@
+<Project>
+  <!-- All Net48 wrapper csproj live in this single folder. Without per-project
+       obj/bin paths their project.assets.json overwrite each other and projects
+       get compiled against another project's package references. -->
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin\$(MSBuildProjectName)\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- net48 framework assemblies that SDK-style projects do not reference implicitly -->
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- implicit usings on net48 do not include System.Net.Http (sources rely on it from net8+) -->
+    <Using Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- source-generated polyfills: Index/Range, init, required, nullable attributes,
+         SupportedOSPlatform, CallerArgumentExpression, interpolated string handler, ... -->
+    <PackageReference Include="PolySharp" Version="1.15.0" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+<Project>
+  <!-- ASYNC is always defined so that await-based code paths compile correctly
+       regardless of Platform value passed by parent projects (e.g. "Any CPU" vs "AnyCPU"). -->
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+</Project>

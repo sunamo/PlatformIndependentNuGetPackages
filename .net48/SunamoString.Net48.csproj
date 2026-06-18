@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoString</AssemblyName>
+    <RootNamespace>SunamoString</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoString\SunamoString\**\*.cs"
+             Exclude="..\SunamoString\SunamoString\obj\**\*;..\SunamoString\SunamoString\bin\**\*;..\SunamoString\SunamoString\_sunamo\SunamoEnums\**;..\SunamoString\SunamoString\_sunamo\SunamoStringShared\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Diacritics" Version="4.1.4" />
+  </ItemGroup>
+</Project>

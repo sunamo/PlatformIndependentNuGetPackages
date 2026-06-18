@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoStringJoinPairs</AssemblyName>
+    <RootNamespace>SunamoStringJoinPairs</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SunamoStringJoinPairs\SunamoStringJoinPairs\**\*.cs"
+             Exclude="..\SunamoStringJoinPairs\SunamoStringJoinPairs\obj\**\*;..\SunamoStringJoinPairs\SunamoStringJoinPairs\bin\**\*" />
+  </ItemGroup>
+
+</Project>
