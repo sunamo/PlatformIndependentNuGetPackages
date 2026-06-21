@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>annotations</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoMsBuild</AssemblyName>
+    <RootNamespace>SunamoDevCode</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\SunamoMsBuild\SunamoMsBuild\**\*.cs"
+             Exclude="..\SunamoMsBuild\SunamoMsBuild\obj\**\*;..\SunamoMsBuild\SunamoMsBuild\bin\**\*" />
+  </ItemGroup>
+</Project>

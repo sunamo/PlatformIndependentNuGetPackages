@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>annotations</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoCodeGenerator</AssemblyName>
+    <RootNamespace>SunamoDevCode</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\SunamoCodeGenerator\SunamoCodeGenerator\**\*.cs"
+             Exclude="..\SunamoCodeGenerator\SunamoCodeGenerator\obj\**\*;..\SunamoCodeGenerator\SunamoCodeGenerator\bin\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SunamoDevCodeBase.Net48.csproj" />
+    <ProjectReference Include="SunamoCSharp.Net48.csproj" />
+  </ItemGroup>
+</Project>

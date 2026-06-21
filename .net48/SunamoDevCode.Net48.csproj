@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
+    <Nullable>annotations</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>SunamoDevCode</AssemblyName>
     <RootNamespace>SunamoDevCode</RootNamespace>
@@ -23,7 +23,7 @@
     <PackageReference Include="Google.Apis.Core" Version="1.68.0" />
     <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
-    <PackageReference Include="ResXResourceReader.NetStandard" Version="1.1.1" />
+    <PackageReference Include="ResXResourceReader.NetStandard" Version="1.2.0" />
     <PackageReference Include="TextCopy" Version="6.2.1" />
   </ItemGroup>
 </Project>

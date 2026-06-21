@@ -1,0 +1,32 @@
+Žádné SunExc už nesmí v název souborů být
+SunExc je na počátku všeho, všichní od něj dědí, tudíž všichni mají k dispozici jeho zdrojové soubory.
+S "For easy copy" jsem porušil tu nejdůležitější zásadu a sice tu že žádný duplicitní kód!
+Projekty které nedědí od sunamo ale potřebuji některé moje metody budou taky v SunExc ale už nebudou ve sunamo. Žádný duplicitní kód!
+Tohle budou jediné 2 účely na které bude sloužit SunExc. 1) zachytávaní výjimek 2) kód který se potřebuje pro projekty od kterých dědí sunamo. 
+SunamoException NS zůstane, tedy SunExc nebude už ani v názvech souborů. 
+S předchozím přístupem ala kopírování "For easy copy" mi vznikali potíže že jsem např. neměl třídu StopwatchStatic. Chtěl jsem ji dát jako dependency injection - když se bude volat ze SunExc, nebude dostupná, když ze sunamo, bude. Takže jsem musel pro statickou třídu vytvořit interface a přeměnit statickou třídu na instanční.
+Další problém byl s CollectionWithoutDuplicatesSunExc - ta byla závislá na mnoha věcech ze sunamo. Její zprovoznění by vyžádalo posun dalších X souborů ze sunamo do SunExc.
+SunExc bude jen takový vybroušený diamant co bude obsahovat jen přesně to co musí a nic jiného. Už žádné jeho zbytečné nafukování.
+Tím pádem nebudu potřebovat ve SunExc ani žádné Shared atd. 
+Tím mi odpadne i neustálé ruční sledování jestli všude mám stejné metody a jestli jsem něco odněkud nezkopíroval jinde
+Tím pádem i odpadnou i postfixy _ToSort a Shared(64) ve SunExc
+Tím že jsem to měl takhle složité jsem neviděl ani že mám několik souborů Exceptions* - jedny ve složce Local, druhé v rootu
+
+
+Jak to bude dál:
+
+Ve SunExc všechno zakomentuji. To co odkomentuji, to musím okomentovat proč to tam potřebuji.
+Udělám SunExc zkompilovatelné
+Třídy které jsou i ve sunamo budou mít NS. Zbytek, jako např. AllChars ne - všechny chars tedy budou ve SunExc
+udělám Scz zkompilovatelné
+projdu soubory a ty kde se to hodí přesunu celé do SunExc a zbavím je NS
+zbavím se všech for easy copy. Ve SunExc řádky s regionem jen odstraním. Ve sunamo prvně projdu jejich metody a pokud je metoda i v SunExc, tak 
+ji zavolám odtamtuď. Můžu použít nějaký statický import abych nemusel psát celé SunamoException
+
+!!! 
+
+tímhle se mi bohužel udělá i to že projekty které jsou withoutDep budou najednou s dep. Toto bude ve složce NonExc, co se dá dělat když jsem to dříve dělal takhle, abych dodržel že tyto projekty zůstanou withoutDep
+
+
+
+chceš vědět co teď řeším? 

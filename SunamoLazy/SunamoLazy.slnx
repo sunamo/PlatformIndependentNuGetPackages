@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoLazy.Tests\SunamoLazy.Tests.csproj" />
+  <Project Path="RunnerSunamoLazy\RunnerSunamoLazy.csproj" />
+  <Project Path="SunamoLazy\SunamoLazy.csproj" />
+</Solution>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoGeo.Tests\SunamoGeo.Tests.csproj" />
+  <Project Path="RunnerSunamoGeo\RunnerSunamoGeo.csproj" />
+  <Project Path="SunamoGeo\SunamoGeo.csproj" />
+</Solution>

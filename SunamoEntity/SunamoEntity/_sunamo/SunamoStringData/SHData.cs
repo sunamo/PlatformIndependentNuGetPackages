@@ -1,0 +1,1 @@
+namespace SunamoEntity._sunamo.SunamoStringData;

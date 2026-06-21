@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>annotations</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SunamoDevCodeBase</AssemblyName>
+    <RootNamespace>SunamoDevCode</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsPackable>false</IsPackable>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\SunamoDevCodeBase\SunamoDevCodeBase\**\*.cs"
+             Exclude="..\SunamoDevCodeBase\SunamoDevCodeBase\obj\**\*;..\SunamoDevCodeBase\SunamoDevCodeBase\bin\**\*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CaseDotNet.Extensions" Version="0.2.46" />
+    <PackageReference Include="Diacritics" Version="4.1.4" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>
