@@ -12,6 +12,8 @@
 [CmdletBinding()]
 param(
     [string[]]$Skip     = @('SunamoString'),
+    [string[]]$Only     = @(),
+    [switch]  $Force,
     [string]  $EngineExe = 'D:\SyncTrayzor\_sunamo\CommandsToAllCsprojs.Cmd\CommandsToAllCsprojs.Cmd.exe'
 )
 
@@ -22,6 +24,7 @@ New-Item -ItemType Directory -Force -Path $logDir | Out-Null
 
 $packages = Get-ChildItem -Path $repoRoot -Directory -Filter 'Sunamo*' |
     Where-Object { $Skip -notcontains $_.Name } |
+    Where-Object { $Only.Count -eq 0 -or $Only -contains $_.Name } |
     Sort-Object Name
 
 $total   = $packages.Count
@@ -56,9 +59,23 @@ foreach ($pkg in $packages) {
         if ($content -match '<PackageProjectUrl>([^<]*)</PackageProjectUrl>') {
             $existingUrl = $Matches[1]
             if ($existingUrl -eq $wantedUrl) {
-                Write-Host "  → PackageProjectUrl already correct — skipping"
-                $skipped++
-                continue
+                if (-not $Force) {
+                    Write-Host "  → PackageProjectUrl already correct — skipping (use -Force to run anyway)"
+                    $skipped++
+                    continue
+                }
+                # -Force: bump PackageReleaseNotes to create a diff
+                if ($content -match '<PackageReleaseNotes>([^<]*)</PackageReleaseNotes>') {
+                    $curNotes = $Matches[1]
+                    $newNotes = if ($curNotes.EndsWith(' ')) { $curNotes.TrimEnd() } else { $curNotes + ' ' }
+                    $content = $content -replace '<PackageReleaseNotes>[^<]*</PackageReleaseNotes>', "<PackageReleaseNotes>$newNotes</PackageReleaseNotes>"
+                    $changed = $true
+                    Write-Host "  → Bumped PackageReleaseNotes to force diff (-Force)"
+                } else {
+                    Write-Host "  → PackageProjectUrl already correct, no PackageReleaseNotes to bump — skipping"
+                    $skipped++
+                    continue
+                }
             }
             $content = $content -replace '<PackageProjectUrl>[^<]*</PackageProjectUrl>', "<PackageProjectUrl>$wantedUrl</PackageProjectUrl>"
             $changed = $true
