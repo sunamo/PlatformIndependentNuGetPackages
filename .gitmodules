@@ -1,4 +1,4 @@
-[submodule "SunamoAI"]
+﻿[submodule "SunamoAI"]
 	path = SunamoAI
 	url = git@github.com:sunamo/SunamoAI.git
 [submodule "SunamoArgs"]
@@ -100,9 +100,6 @@
 [submodule "SunamoDependencyInjection"]
 	path = SunamoDependencyInjection
 	url = git@github.com:sunamo/SunamoDependencyInjection.git
-[submodule "SunamoDevCode"]
-	path = SunamoDevCode
-	url = git@github.com:sunamo/SunamoDevCode.git
 [submodule "SunamoDictionary"]
 	path = SunamoDictionary
 	url = git@github.com:sunamo/SunamoDictionary.git
