@@ -442,3 +442,42 @@
 [submodule "SunamoCryptAlgorithms"]
 	path = SunamoCryptAlgorithms
 	url = git@github.com:sunamo/SunamoCryptAlgorithms.git
+[submodule "SunamoWpf.SunamoUtils"]
+	path = SunamoWpf.SunamoUtils
+	url = git@github.com:sunamo/SunamoWpf.SunamoUtils.git
+[submodule "SunamoWpf.Core"]
+	path = SunamoWpf.Core
+	url = git@github.com:sunamo/SunamoWpf.Core.git
+[submodule "SunamoWpf.Converters"]
+	path = SunamoWpf.Converters
+	url = git@github.com:sunamo/SunamoWpf.Converters.git
+[submodule "SunamoWpf.Data"]
+	path = SunamoWpf.Data
+	url = git@github.com:sunamo/SunamoWpf.Data.git
+[submodule "SunamoWpf.Extensions"]
+	path = SunamoWpf.Extensions
+	url = git@github.com:sunamo/SunamoWpf.Extensions.git
+[submodule "SunamoWpf.AwesomeFont"]
+	path = SunamoWpf.AwesomeFont
+	url = git@github.com:sunamo/SunamoWpf.AwesomeFont.git
+[submodule "SunamoWpf.Logging"]
+	path = SunamoWpf.Logging
+	url = git@github.com:sunamo/SunamoWpf.Logging.git
+[submodule "SunamoWpf.ToggleSwitch"]
+	path = SunamoWpf.ToggleSwitch
+	url = git@github.com:sunamo/SunamoWpf.ToggleSwitch.git
+[submodule "SunamoWpf.Helpers"]
+	path = SunamoWpf.Helpers
+	url = git@github.com:sunamo/SunamoWpf.Helpers.git
+[submodule "SunamoWpf.RegistryWin"]
+	path = SunamoWpf.RegistryWin
+	url = git@github.com:sunamo/SunamoWpf.RegistryWin.git
+[submodule "SunamoWpf.Controls"]
+	path = SunamoWpf.Controls
+	url = git@github.com:sunamo/SunamoWpf.Controls.git
+[submodule "SunamoWpf.Storage"]
+	path = SunamoWpf.Storage
+	url = git@github.com:sunamo/SunamoWpf.Storage.git
+[submodule "SunamoWpf.Windows"]
+	path = SunamoWpf.Windows
+	url = git@github.com:sunamo/SunamoWpf.Windows.git
