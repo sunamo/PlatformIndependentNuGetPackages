@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 /// <summary>
 /// Tests for PascalCase convention detection and conversion.
 /// </summary>
