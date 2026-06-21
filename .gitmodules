@@ -382,3 +382,30 @@
 [submodule "SunamoYouTube"]
 	path = SunamoYouTube
 	url = git@github.com:sunamo/SunamoYouTube.git
+[submodule "SunamoMsBuild"]
+	path = SunamoMsBuild
+	url = git@github.com:sunamo/SunamoMsBuild.git
+[submodule "SunamoDevCodeBase"]
+	path = SunamoDevCodeBase
+	url = git@github.com:sunamo/SunamoDevCodeBase.git
+[submodule "SunamoSolutionsIndexer"]
+	path = SunamoSolutionsIndexer
+	url = git@github.com:sunamo/SunamoSolutionsIndexer.git
+[submodule "SunamoCSharp"]
+	path = SunamoCSharp
+	url = git@github.com:sunamo/SunamoCSharp.git
+[submodule "SunamoCodeGenerator"]
+	path = SunamoCodeGenerator
+	url = git@github.com:sunamo/SunamoCodeGenerator.git
+[submodule "SunamoDevCodeFileFormats"]
+	path = SunamoDevCodeFileFormats
+	url = git@github.com:sunamo/SunamoDevCodeFileFormats.git
+[submodule "SunamoDevCodeCore"]
+	path = SunamoDevCodeCore
+	url = git@github.com:sunamo/SunamoDevCodeCore.git
+[submodule "SunamoAps"]
+	path = SunamoAps
+	url = git@github.com:sunamo/SunamoAps.git
+[submodule "SunamoToNetCore"]
+	path = SunamoToNetCore
+	url = git@github.com:sunamo/SunamoToNetCore.git
