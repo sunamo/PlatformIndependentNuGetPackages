@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="SunamoStorage.Tests\SunamoStorage.Tests.csproj" />
-  <Project Path="RunnerSunamoStorage\RunnerSunamoStorage.csproj" />
-  <Project Path="SunamoStorage\SunamoStorage.csproj" />
-</Solution>

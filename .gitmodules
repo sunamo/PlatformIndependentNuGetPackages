@@ -274,9 +274,6 @@
 [submodule "SunamoSerializer"]
 	path = SunamoSerializer
 	url = git@github.com:sunamo/SunamoSerializer.git
-[submodule "SunamoShared"]
-	path = SunamoShared
-	url = git@github.com:sunamo/SunamoShared.git
 [submodule "SunamoStopwatch"]
 	path = SunamoStopwatch
 	url = git@github.com:sunamo/SunamoStopwatch.git
@@ -409,3 +406,39 @@
 [submodule "SunamoToNetCore"]
 	path = SunamoToNetCore
 	url = git@github.com:sunamo/SunamoToNetCore.git
+[submodule "SunamoLazy"]
+	path = SunamoLazy
+	url = git@github.com:sunamo/SunamoLazy.git
+[submodule "SunamoGeo"]
+	path = SunamoGeo
+	url = git@github.com:sunamo/SunamoGeo.git
+[submodule "SunamoGenerators"]
+	path = SunamoGenerators
+	url = git@github.com:sunamo/SunamoGenerators.git
+[submodule "SunamoStreams"]
+	path = SunamoStreams
+	url = git@github.com:sunamo/SunamoStreams.git
+[submodule "SunamoEntity"]
+	path = SunamoEntity
+	url = git@github.com:sunamo/SunamoEntity.git
+[submodule "SunamoStorage"]
+	path = SunamoStorage
+	url = git@github.com:sunamo/SunamoStorage.git
+[submodule "SunamoHelpers"]
+	path = SunamoHelpers
+	url = git@github.com:sunamo/SunamoHelpers.git
+[submodule "SunamoSE"]
+	path = SunamoSE
+	url = git@github.com:sunamo/SunamoSE.git
+[submodule "SunamoRL"]
+	path = SunamoRL
+	url = git@github.com:sunamo/SunamoRL.git
+[submodule "SunamoEssential"]
+	path = SunamoEssential
+	url = git@github.com:sunamo/SunamoEssential.git
+[submodule "SunamoSharedMisc"]
+	path = SunamoSharedMisc
+	url = git@github.com:sunamo/SunamoSharedMisc.git
+[submodule "SunamoCryptAlgorithms"]
+	path = SunamoCryptAlgorithms
+	url = git@github.com:sunamo/SunamoCryptAlgorithms.git

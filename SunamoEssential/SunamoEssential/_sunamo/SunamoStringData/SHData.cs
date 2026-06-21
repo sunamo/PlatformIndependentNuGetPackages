@@ -1,1 +1,0 @@
-namespace SunamoEssential._sunamo.SunamoStringData;

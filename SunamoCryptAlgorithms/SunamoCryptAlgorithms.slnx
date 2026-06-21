@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="SunamoCryptAlgorithms.Tests\SunamoCryptAlgorithms.Tests.csproj" />
-  <Project Path="RunnerCryptAlgorithms\RunnerCryptAlgorithms.csproj" />
-  <Project Path="SunamoCryptAlgorithms\SunamoCryptAlgorithms.csproj" />
-</Solution>

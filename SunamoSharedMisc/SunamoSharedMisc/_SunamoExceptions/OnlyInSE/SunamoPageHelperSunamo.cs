@@ -1,1 +1,0 @@
-namespace SunamoSharedMisc._SunamoExceptions.OnlyInSE;

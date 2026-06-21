@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="SunamoRL.Tests\SunamoRL.Tests.csproj" />
-  <Project Path="RunnerSunamoRL\RunnerSunamoRL.csproj" />
-  <Project Path="SunamoRL\SunamoRL.csproj" />
-</Solution>
