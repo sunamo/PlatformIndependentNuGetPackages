@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Project Path="SunamoFtp\SunamoFtp\SunamoFtp.csproj" />
   <Project Path="SunamoIni\SunamoIni\SunamoIni.csproj" />
   <Project Path="SunamoMarkdown\SunamoMarkdown\SunamoMarkdown.csproj" />
@@ -127,4 +127,13 @@
   <Project Path="SunamoTest\SunamoTest\SunamoTest.csproj" />
   <Project Path="SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi.csproj" />
   <Project Path="SunamoAI\SunamoAI\SunamoAI.csproj" />
+  <Project Path="SunamoMsBuild\SunamoMsBuild\SunamoMsBuild.csproj" />
+  <Project Path="SunamoDevCodeBase\SunamoDevCodeBase\SunamoDevCodeBase.csproj" />
+  <Project Path="SunamoSolutionsIndexer\SunamoSolutionsIndexer\SunamoSolutionsIndexer.csproj" />
+  <Project Path="SunamoCSharp\SunamoCSharp\SunamoCSharp.csproj" />
+  <Project Path="SunamoCodeGenerator\SunamoCodeGenerator\SunamoCodeGenerator.csproj" />
+  <Project Path="SunamoDevCodeFileFormats\SunamoDevCodeFileFormats\SunamoDevCodeFileFormats.csproj" />
+  <Project Path="SunamoDevCodeCore\SunamoDevCodeCore\SunamoDevCodeCore.csproj" />
+  <Project Path="SunamoAps\SunamoAps\SunamoAps.csproj" />
+  <Project Path="SunamoToNetCore\SunamoToNetCore\SunamoToNetCore.csproj" />
 </Solution>
