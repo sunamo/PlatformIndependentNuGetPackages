@@ -1,3 +1,4 @@
+using SunamoCryptAlgorithms.Crypting;
 
 /// <summary>
 /// Tests for shared cryptographic utility methods.
