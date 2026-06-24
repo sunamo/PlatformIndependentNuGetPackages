@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\ConvertersSimple\BlobConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\ConvertersSimple\MultilineAsOneLine.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\ConvertersSimple\PluralConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\ConvertersSimple\PluralConverter1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\ConvertersSimple\PropertyTypesConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\BigEndianBitConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\ConvertBase64.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\ConvertCamelConvention.cs

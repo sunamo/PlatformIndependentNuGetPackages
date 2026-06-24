@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\_apis\git\Repositories.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\RunnerBazosCrawler\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\BazosCrawlerHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\DatingAd.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\_sunamo\HtmlAgilityHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\_sunamo\HtmlAssistant.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\_sunamo\HtmlAttrs.cs

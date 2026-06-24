@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Extensions\UIElementExtensionsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\CheckBoxDataHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\CheckBoxDataHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\Backend\FoundedFileUCBackend.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\BaseControls\ItemsControlHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\Controls\ContextMenuHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\Controls\MenuItemWithSubitemsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\Controls\MenuItemWithSubitemsHelperT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\ControlsWithGet\ActionButtonHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\ControlsWithGet\MenuItemHelper.cs

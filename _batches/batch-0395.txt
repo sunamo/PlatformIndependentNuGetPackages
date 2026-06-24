@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\CyclingCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\DefaultPaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\DTHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\DumpAsStringArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\DumpAsStringHeaderArgsReflection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\DumpProvider.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\EventLogNames.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\FileUtil.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\IPercentCalculatorDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\IProgressBarDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\OutRef3DC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\OutRefDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\ResultWithExceptionDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\TWithStringDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\TypeOfExtensionDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\SunamoCollectionsNonGeneric\ExtensionSortedCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\SunamoCollectionWithoutDuplicates\CollectionWithoutDuplicatesBaseDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_public\SunamoCollectionWithoutDuplicates\CollectionWithoutDuplicatesDC.cs

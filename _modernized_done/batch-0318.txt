@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\SunamoArgs\GetLinesArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\RunnerStringGetString\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\SHGetString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\_sunamo\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\RunnerStringJoin\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\GlobalUsings.cs

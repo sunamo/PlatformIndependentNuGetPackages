@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\TestDataCs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\TestDataTxt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\TestHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\TestLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\XmlTestsBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\Data\TypeWithProperties.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\AppData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\CreateAppFoldersIfDontExistsArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\FileMoveCollisionOption.cs

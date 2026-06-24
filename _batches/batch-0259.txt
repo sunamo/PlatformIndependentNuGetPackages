@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\SunamoEnums\Enums\CommandWithPath.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\SunamoInterfaces\Interfaces\IGitBashBuilderPS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\SunamoInterfaces\Interfaces\INpmBashBuilderPS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\SunamoInterfaces\Interfaces\ProgressStatePS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoDictionary\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoFileExtensions\AllExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellBuilderPS.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\FileLogger\ScopeDisposable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\LoggerBaseNS\DebugLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\LoggerBaseNS\DummyLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\LoggerBaseNS\SunamoLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\TemplateLoggerBaseNS\DebugTemplateLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\TemplateLoggerBaseNS\DummyTemplateLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\TemplateLoggerBaseNS\SunamoTemplateLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\TypedLoggerBaseNS\TypedDebugLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\TypedLoggerBaseNS\TypedDummyLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Logger\TypedLoggerBaseNS\TypedSunamoLogger.cs

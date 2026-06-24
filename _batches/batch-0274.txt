@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoValues\Values\AllLists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\RunnerRobotsTxt\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\RobotsTxtBuilder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\RunnerRoslyn\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\RunnerRoslyn\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\ChildNodes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\FileSystemWatchers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\GlobalUsings.cs

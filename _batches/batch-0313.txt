@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\Delegates\StringDelegates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\Enums\Brackets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\Enums\SearchStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\Extensions\StringExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\Generators\LoremIpsumGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\StringOrStringList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\ABCString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\ABString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\CharFormatDataString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\FromToString.cs

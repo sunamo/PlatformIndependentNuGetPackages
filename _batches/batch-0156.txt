@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\TypeOfMessage.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\ViewTable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\WizardResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\WordsIn.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\WriteInXml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\RunnerEnumsHelper\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\Net48Polyfills.cs

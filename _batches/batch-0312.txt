@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\Streams\TextMemoryStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\RunnerString\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\BalancedBrackets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\SHNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\TT.cs

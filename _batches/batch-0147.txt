@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SpecialKeyCodeServices.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoArgs\GetFilesBaseArgsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoArgs\GetFilesMoreMascArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoArgs\InvokeProcessArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoArgs\PsInvokeArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoCollections\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoCollectionsGeneric\CAGConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoCompare\ISunamoComparer.cs

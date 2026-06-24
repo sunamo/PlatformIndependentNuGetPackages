@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\RunnerFilesIndex\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\FileIndex.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\FileIndex1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\FileItem.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\FolderItem.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Data\CheckBoxDataShared.cs

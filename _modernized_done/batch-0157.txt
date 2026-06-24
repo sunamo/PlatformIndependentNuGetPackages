@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\_sunamo\SunamoValues\Constants\CodeElementsConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\RunnerSunamoEssential\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Essential\CleanUp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Essential\ResourcesShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Essential\SharedAlgorithms.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Essential\VpsHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Essential\WebApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\Essential\EventArgsNs\UriEventArgs.cs

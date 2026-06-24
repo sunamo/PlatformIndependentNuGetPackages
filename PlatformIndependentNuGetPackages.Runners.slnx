@@ -173,9 +173,9 @@
     <Project Path="SunamoDependencyInjection\SunamoDependencyInjection\SunamoDependencyInjection.csproj" />
   </Folder>
   <Folder Name="/SunamoDevCode/">
-    <Project Path="SunamoDevCode\RunnerDevCode\RunnerDevCode.csproj" />
-    <Project Path="SunamoDevCode\SunamoDevCode.Tests\SunamoDevCode.Tests.csproj" />
-    <Project Path="SunamoDevCode\SunamoDevCode\SunamoDevCode.csproj" />
+    <Project Path="SunamoCode\RunnerDevCode\RunnerDevCode.csproj" />
+    <Project Path="SunamoCode\SunamoDevCode.Tests\SunamoDevCode.Tests.csproj" />
+    <Project Path="SunamoCode\SunamoDevCode\SunamoDevCode.csproj" />
   </Folder>
   <Folder Name="/SunamoDictionary/">
     <Project Path="SunamoDictionary\RunnerDictionary\RunnerDictionary.csproj" />
@@ -462,11 +462,7 @@
     <Project Path="SunamoSerializer\SunamoSerializer.Tests\SunamoSerializer.Tests.csproj" />
     <Project Path="SunamoSerializer\SunamoSerializer\SunamoSerializer.csproj" />
   </Folder>
-  <Folder Name="/SunamoShared/">
-    <Project Path="SunamoShared\RunnerShared\RunnerShared.csproj" />
-    <Project Path="SunamoShared\SunamoShared.Tests\SunamoShared.Tests.csproj" />
-    <Project Path="SunamoShared\SunamoShared\SunamoShared.csproj" />
-  </Folder>
+
   <Folder Name="/SunamoStopwatch/">
     <Project Path="SunamoStopwatch\RunnerStopwatch\RunnerStopwatch.csproj" />
     <Project Path="SunamoStopwatch\SunamoStopwatch.Tests\SunamoStopwatch.Tests.csproj" />

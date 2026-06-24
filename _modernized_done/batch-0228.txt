@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ISitePage.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IStatusBroadcaster.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ISunamoBrowser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ISunamoBrowserT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ISunamoDictionary.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ITextOutputGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ITypedLoggerBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ITypeScriptGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IUsersWebService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IValuesTableGrid.cs

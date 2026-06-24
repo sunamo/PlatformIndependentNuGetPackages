@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmd\Essential\ConsoleTemplateLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmd\Helpers\CLProgressBar.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmd\Tables\CmdTable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmd\Tables\TableParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmdArgs\StartupHelperCmd.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmdArgs\Data\CmdArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmdArgs\Data\CommonArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmdArgs_Cmd\ParsedArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmdArgs_Cmd\ParsedArgsStatic.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\SunamoCmdArgs_Cmd\ProgramCommon.cs

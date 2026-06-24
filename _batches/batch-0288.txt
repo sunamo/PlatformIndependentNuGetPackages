@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\ExceptionsSu.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\FileMoveCollisionOptionShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\HttpUtility.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\ProgressBar.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\ReClasser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\StringBuilderString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\VideoExtension.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\WindowsSecurityHelper.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\All\AllHtmlTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Constants\CodeElementsConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Constants\ComparerConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Constants\HtmlAttrValue.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Values\AllLists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Values\AllLists1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Values\AllLists2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoValues\Values\SunamoNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoXml\XHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoXml\XHelper1.cs

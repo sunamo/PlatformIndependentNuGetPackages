@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SpecialCharsService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoCollectionsGeneric\CAGConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoDictionary\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoNumbers\NH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoRegex\Wildcard.cs

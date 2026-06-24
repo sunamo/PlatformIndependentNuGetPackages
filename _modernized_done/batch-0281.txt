@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\StringOrStringList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\UnindexableFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\RunnerRss\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\RssHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\RunnerRuleset\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\GlobalUsings.cs

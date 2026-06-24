@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\SolutionFolderNs\SolutionFolder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\SolutionFolderNs\SolutionFolder1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\SolutionFolderNs\SolutionFolderSerialize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\SolutionFolderNs\SolutionFolderWithFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\SolutionFoldersNs\SolutionFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\SolutionFoldersNs\SolutionFoldersSerialize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Enums\ProjectsTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Enums\SourceOfProjects.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Interfaces\ISolutionFolder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Interfaces\ISolutionFolderSerialize.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\CurrenciesIso4217.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\CustomStatusCode.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\DateTimeFormat.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\DebugOutput.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\DeferAsync.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\DoIfFileExists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\Encodings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\EnumA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\Fav.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\FirstLast.cs

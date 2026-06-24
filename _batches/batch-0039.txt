@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\MsBuild\Values\ProjectFrameworks.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\MsBuild\Values\VsProjectItemTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Services\AddOrEditNamespaceService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Services\DotnetOutputService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\Args\CSharpGeneratorArgs.cs

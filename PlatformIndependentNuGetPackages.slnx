@@ -71,7 +71,7 @@
   <Project Path="SunamoChar\SunamoChar\SunamoChar.csproj" />
   <Project Path="SunamoBts\SunamoBts\SunamoBts.csproj" />
   <Project Path="SunamoAttributes\SunamoAttributes\SunamoAttributes.csproj" />
-  <Project Path="SunamoDevCode\SunamoDevCode\SunamoDevCode.csproj" />
+
   <Project Path="SunamoSerializer\SunamoSerializer\SunamoSerializer.csproj" />
   <Project Path="SunamoStringGetString\SunamoStringGetString\SunamoStringGetString.csproj" />
   <Project Path="SunamoStringFormat\SunamoStringFormat\SunamoStringFormat.csproj" />
@@ -86,7 +86,7 @@
   <Project Path="SunamoXlfKeys\SunamoXlfKeys\SunamoXlfKeys.csproj" />
   <Project Path="SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid.csproj" />
   <Project Path="SunamoCollectionOnDrive\SunamoCollectionOnDrive\SunamoCollectionOnDrive.csproj" />
-  <Project Path="SunamoShared\SunamoShared\SunamoShared.csproj" />
+
   <Project Path="SunamoText\SunamoText\SunamoText.csproj" />
   <Project Path="SunamoJson\SunamoJson\SunamoJson.csproj" />
   <Project Path="SunamoWikipedia\SunamoWikipedia\SunamoWikipedia.csproj" />
@@ -136,4 +136,17 @@
   <Project Path="SunamoDevCodeCore\SunamoDevCodeCore\SunamoDevCodeCore.csproj" />
   <Project Path="SunamoAps\SunamoAps\SunamoAps.csproj" />
   <Project Path="SunamoToNetCore\SunamoToNetCore\SunamoToNetCore.csproj" />
+  <Project Path="SunamoCode\SunamoDevCode\SunamoDevCode.csproj" />
+  <Project Path="SunamoCryptAlgorithms\SunamoCryptAlgorithms\SunamoCryptAlgorithms.csproj" />
+  <Project Path="SunamoEntity\SunamoEntity\SunamoEntity.csproj" />
+  <Project Path="SunamoEssential\SunamoEssential\SunamoEssential.csproj" />
+  <Project Path="SunamoGenerators\SunamoGenerators\SunamoGenerators.csproj" />
+  <Project Path="SunamoGeo\SunamoGeo\SunamoGeo.csproj" />
+  <Project Path="SunamoHelpers\SunamoHelpers\SunamoHelpers.csproj" />
+  <Project Path="SunamoLazy\SunamoLazy\SunamoLazy.csproj" />
+  <Project Path="SunamoRL\SunamoRL\SunamoRL.csproj" />
+  <Project Path="SunamoSE\SunamoSE\SunamoSE.csproj" />
+  <Project Path="SunamoSharedMisc\SunamoSharedMisc\SunamoSharedMisc.csproj" />
+  <Project Path="SunamoStorage\SunamoStorage\SunamoStorage.csproj" />
+  <Project Path="SunamoStreams\SunamoStreams\SunamoStreams.csproj" />
 </Solution>

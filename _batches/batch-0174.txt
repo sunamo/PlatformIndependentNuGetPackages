@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Data\TWithSize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Interfaces\IFSItem.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Interfaces\IIDParent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Interfaces\IName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\Interfaces\IPath.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\RunnerFileSystem\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\RunnerFileSystem\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\RunnerFileSystem\Program2.cs

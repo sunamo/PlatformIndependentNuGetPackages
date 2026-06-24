@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\XmlDoc.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\XmlLocalisationInterchangeFileFormatSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Args\GeneratePropertiesArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Args\GetFilesDCArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Args\RemoveFromXlfWhichHaveEmptyTargetOrSourceArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\CodeGenerator\EnumItem.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Enums\AccessModifiers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Enums\RepositoryLocal.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Enums\TypesTs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Enums\VsProjectTemplateParameters.cs

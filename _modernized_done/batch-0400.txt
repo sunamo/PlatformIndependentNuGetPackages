@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\DropShadowTextBlock.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\HorizontalToggleSwitch.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\HorizontalToggleSwitchWithLabel.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\ToggleSwitchBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\VerticalToggleSwitch.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\Borders\ClippingBorder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\Borders\InnerGlowBorder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\Borders\OuterGlowBorder.cs

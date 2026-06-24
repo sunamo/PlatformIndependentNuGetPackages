@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\ApsPlugins.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\AspxToEnFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\ClassCodeElements.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\CsToEnFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\ItemGroups.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\ProjectsOnWhichDependentMode.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\RepairWrongCharsInSourceCodeMode.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\SavedStrings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\SolutionNameMustContains.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\SortByProjectsNames.cs

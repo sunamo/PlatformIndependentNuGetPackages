@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\Predefined.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\UpdateResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfDataType.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfDialect.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfDocument.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfHeader.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfNote.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfTool.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\Args\ReadFromJsonFileArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\Args\WriteToJsonFileArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\RunnerLang\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\CountryLang.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\LocaleHelperLang.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\Interfaces\ILocaleHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\AppLang.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\AppLangHelper.cs

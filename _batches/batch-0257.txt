@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\RunnerPS\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\RunnerPS\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\ErrorRecordHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PowershellBuilder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PowershellHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PowershellParser.cs

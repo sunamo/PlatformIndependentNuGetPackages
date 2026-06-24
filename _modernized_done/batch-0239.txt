@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\LogRouter\LogCategorySettingsBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\LogRouter\LogEntry.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\LogRouter\LogRouter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\LogRouter\LogRouterLoggerProvider.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Services\LogService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_public\SunamoEnums\Enums\TypeOfMessageLogging.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_public\SunamoInterfaces\Interfaces\ILoggerBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\CL.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SH.cs

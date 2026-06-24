@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\DefaultPaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\DefaultPathsData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\RunnerPercentCalculator\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\PercentCalculator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\_sunamo\SunamoExceptions\ThrowEx.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoEnums\Enums\TypeOfMessageCl.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoInterfaces\Interfaces\ICryptCl.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoInterfaces\Interfaces\IProgressBar.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoInterfaces\Interfaces\PercentCalculator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoLogging\Base\LoggerBaseCl.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoLogging\Base\TemplateLoggerBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_public\SunamoLogging\Base\TypedLoggerBaseCl.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_sunamo\AsyncHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_sunamo\FS.cs

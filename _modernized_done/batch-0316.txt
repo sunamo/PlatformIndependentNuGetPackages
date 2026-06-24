@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoRegex\WildcardHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoValues\Constants\UnicodeWhiteToVisible.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoValues\Values\AllLists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SunamoValues\Values\SunamoNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\RunnerStringFormat\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\GlobalUsings.cs

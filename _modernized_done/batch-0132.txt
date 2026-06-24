@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\TextOutputGeneratorDictionary.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\Data\TextGroupsData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\_sunamo\RandomHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\_sunamo\SunamoCollections\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\RunnerDotnetCmdBuilder\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\Add.cs

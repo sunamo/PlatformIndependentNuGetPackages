@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\SHReplace1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\SHReplace2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_public\SunamoEnums\Enums\FromToUse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\CAG_1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoData\Data\FromToStringReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoData\Data\FromToTSHStringReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoEnums\Enums\ContainsCompareMethod.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\Interfaces\IFoundedFilesUC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\Interfaces\IFoundedFileUC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\Interfaces\IFoundedResultsUC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\Interfaces\IFoundedResultUC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\RegistryWin\RegistryEntries.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\RegistryWin\RegistryEntry.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.RegistryWin\SunamoWpf.RegistryWin\RegistryWin\RegistryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\IUserControlWithSettingsManager.cs

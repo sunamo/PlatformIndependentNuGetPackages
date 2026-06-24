@@ -12,8 +12,61 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\SunamoDevCode\SunamoDevCode\**\*.cs"
-             Exclude="..\SunamoDevCode\SunamoDevCode\obj\**\*;..\SunamoDevCode\SunamoDevCode\bin\**\*;..\SunamoDevCode\SunamoDevCode\Aps\Projs\Values\**" />
+    <Compile Include="..\SunamoCode\SunamoDevCode\**\*.cs"
+             Exclude="..\SunamoCode\SunamoDevCode\obj\**\*;
+                      ..\SunamoCode\SunamoDevCode\bin\**\*;
+                      ..\SunamoCode\SunamoDevCode\Aps\**\*.cs;
+                      ..\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\**\*.cs;
+                      ..\SunamoCode\SunamoDevCode\ToNetCore\**\*.cs;
+                      ..\SunamoCode\SunamoDevCode\_sunamo\SunamoCollectionOnDrive\**\*.cs;
+                      ..\SunamoCode\SunamoDevCode\GlobalUsings.cs;
+                      ..\SunamoCode\SunamoDevCode\ConstsManager.cs;
+                      ..\SunamoCode\SunamoDevCode\CSharpGenerator1.cs;
+                      ..\SunamoCode\SunamoDevCode\CSharpGenerator2.cs;
+                      ..\SunamoCode\SunamoDevCode\CSharpParser.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XmlLocalisationInterchangeFileFormat21.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XmlLocalisationInterchangeFileFormat22.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XmlLocalisationInterchangeFileFormat23.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XmlLocalisationInterchangeFileFormat24.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XmlLocalisationInterchangeFileFormat25.cs;
+                      ..\SunamoCode\SunamoDevCode\GlobalUsingsInstance.cs;
+                      ..\SunamoCode\SunamoDevCode\PpkOnDriveDC.cs;
+                      ..\SunamoCode\SunamoDevCode\PpkOnDriveDevCodeBase.cs;
+                      ..\SunamoCode\SunamoDevCode\Services\AddOrEditNamespaceService.cs;
+                      ..\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper.cs;
+                      ..\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper3.cs;
+                      ..\SunamoCode\SunamoDevCode\TFCsFormat.cs;
+                      ..\SunamoCode\SunamoDevCode\XmlDocumentsCache.cs;
+                      ..\SunamoCode\SunamoDevCode\XmlLocalisationInterchangeFileFormatSunamo.cs;
+                      ..\SunamoCode\SunamoDevCode\Unindexable.cs;
+                      ..\SunamoCode\SunamoDevCode\UnindexableHelper.cs;
+                      ..\SunamoCode\SunamoDevCode\ReplacerXlf.cs;
+                      ..\SunamoCode\SunamoDevCode\_sunamo\SHJoin.cs;
+                      ..\SunamoCode\SunamoDevCode\_sunamo\SunamoXml\XHelper.cs;
+                      ..\SunamoCode\SunamoDevCode\_sunamo\SunamoXml\XHelper1.cs;
+                      ..\SunamoCode\SunamoDevCode\_sunamo\TF.cs;
+                      ..\SunamoCode\SunamoDevCode\CSharpGenerator.cs;
+                      ..\SunamoCode\SunamoDevCode\CSharpGenerator3.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XlfData.cs;
+                      ..\SunamoCode\SunamoDevCode\FileFormats\XmlLocalisationInterchangeFileFormat2.cs;
+                      ..\SunamoCode\SunamoDevCode\GetSlns.cs;
+                      ..\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper1.cs;
+                      ..\SunamoCode\SunamoDevCode\SunamoCSharp\CSharpHelper2.cs;
+                      ..\SunamoCode\SunamoDevCode\_public\ResultWithExceptionDC.cs;
+                      ..\SunamoCode\SunamoDevCode\CodeGenerator\CSharpClassesGenerator.cs;
+                      ..\SunamoCode\SunamoDevCode\CsprojShared.cs;
+                      ..\SunamoCode\SunamoDevCode\GetCsprojs.cs;
+                      ..\SunamoCode\SunamoDevCode\GetCsprojsInSolution.cs;
+                      ..\SunamoCode\SunamoDevCode\_public\SunamoGitBashBuilder\**\*.cs;
+                      ..\SunamoCode\SunamoDevCode\GitHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="SunamoDevCode.GlobalUsings.Net48.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="SunamoCollectionOnDrive.Net48.csproj" />
   </ItemGroup>
 
   <ItemGroup>

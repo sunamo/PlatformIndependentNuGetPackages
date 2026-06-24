@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA6.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CAContainsElementsOrTheirPartsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CAGeneric.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CAGeneric1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CANew.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CAParamsObsolete.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CASH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CAToListString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\Class1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\GlobalUsings.cs

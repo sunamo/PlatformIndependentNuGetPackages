@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FileInfoDB.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FileInfoLite.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FileInfoSerie.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FileSystemEntry.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FolderEntry.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FolderEntryDB.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FoundedCodeElement.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FromTo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FromToT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\FromToWord.cs

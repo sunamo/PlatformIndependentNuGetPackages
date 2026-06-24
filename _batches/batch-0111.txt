@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\CSharpTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\GeneratorCodeAbstract.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\PpkOnDriveDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\PpkOnDriveDevCodeArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\PpkOnDriveDevCodeBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\ReplacerXlf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\SystemWindowsControls.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\TextOutputGeneratorDC.cs

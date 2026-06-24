@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\Consts\RemoteKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\Data\ExistsNonExistsListGitConfig.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\Data\GitConfigSectionData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\Enums\GitConfigSection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\_sunamo\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\_sunamo\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleMyMaps\RunnerGoogleMyMaps\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleMyMaps\SunamoGoogleMyMaps\GlobalUsings.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\FSGetFoldersOther.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\Args\GetFoldersEveryFolderArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_public\SunamoArgs\GetFilesEveryFolderArgsGetFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\JunctionPointExists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SunamoArgs\ChangeContentArgsGetFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SunamoCollections\CA.cs

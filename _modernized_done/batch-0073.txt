@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\SunamoComparer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\SunamoComparerIComparer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\TWithIntCompare.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\_public\SunamoInterfaces\Data\TWithDtCompare.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\_public\SunamoInterfaces\Interfaces\ITWithDt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\RunnerConverters\Program.cs

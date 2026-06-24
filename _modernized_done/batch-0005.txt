@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\SunamoCsprojHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelper10.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelper2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelper3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelper4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelperAfterMoveToMicrosoftBuild.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\VsProjectsFileHelperSdkStyle.cs

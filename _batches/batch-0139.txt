@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\GZipStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\Inflate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\InfTree.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\ParallelDeflateOutputStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\Tree.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\Zlib.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\ZlibBaseStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\ZlibCodec.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\ZlibConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zlib\ZlibStream.cs

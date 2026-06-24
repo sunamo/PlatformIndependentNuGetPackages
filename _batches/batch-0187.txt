@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys5.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys6.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys7.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys8.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys9.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\RunnerSunamoGeo\Program.cs

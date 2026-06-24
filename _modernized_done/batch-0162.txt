@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoArgs\GetFilesBaseArgsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoArgs\GetFilesMoreMascArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoArgs\InvokeProcessArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoArgs\PsInvokeArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoCollections\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoCollectionsGeneric\CAGConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoCompare\ISunamoComparer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoConverters\Converts\ConvertEveryWordLargeCharConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_sunamo\SunamoDateTime\DT\DTHelper.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoRegex\Wildcard.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoRegex\WildcardHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\RunnerStringSplit\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\SHSplit.cs

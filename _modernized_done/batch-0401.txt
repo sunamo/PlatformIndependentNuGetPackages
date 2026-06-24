@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\Utils\ActualSizePropertyProxy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\Utils\HelperExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\__.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\IEssentialMainWindow.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\IUserControlShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\IWindowOpener.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Buttons\ImageButtons.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Input\SelectMoreFoldersWithTemplateSets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Visualization\TwoWayTable.xaml.cs

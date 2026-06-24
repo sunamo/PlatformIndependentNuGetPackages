@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\UnindexableFilesPaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\UnindexableHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\VueConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Constants\TsTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Data\CsprojsInSolution.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Data\DotnetBuildOutputLine.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Data\ExistsNonExistsList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Data\ParseGlobalUsingsResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Data\UnindexableFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Data\UniqueCsprojs.cs

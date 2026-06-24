@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\SunamoYaml\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\SunamoYaml\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\RunnerYouTube\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\YouTubeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\Web\YouTube.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\_sunamo\SunamoRegex\RegexHelper.cs

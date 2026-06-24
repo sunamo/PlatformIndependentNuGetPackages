@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGeneratorList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlTableGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlTagTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Html\HtmlAssistant.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Html\HtmlDocumentS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Html\HtmlHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Html\HtmlHelperShared1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Html\HtmlHelperShared2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Html\HtmlHelperShared3.cs

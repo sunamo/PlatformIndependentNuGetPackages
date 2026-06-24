@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\DelegatesWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\FileSystemEntryWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\FoundedCodeElementWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\IControlWithResultDebugWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\IControlWithResultWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\ISaveWithoutArgWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\ISelectedTWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\ISettingsManagerWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\IStatusBroadcasterAppendWpf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_public\IStatusBroadcasterWpf.cs

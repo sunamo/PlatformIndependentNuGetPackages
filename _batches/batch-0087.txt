@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Data\PropertyGroupData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Items\ItemGroupTagName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Results\ParseSharpIfToFirstCodeElementResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\CAG.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\ListStringExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\StringExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\ThrowEx.cs

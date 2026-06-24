@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\Helpers\CSharpHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoCSharp\Values\CSharpConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\FoldersWithSolutions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\FoldersWithSolutions1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\FoldersWithSolutions2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\FoldersWithSolutionsInstance.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\FoldersWithSolutionsList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\IFoldersWithSolutions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\IFoldersWithSolutionsInstance.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoValues\Constants\RuntimeFrameworks.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoValues\Values\AllLists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\RunnerEnums\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\ColorComponent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\ColorTheme.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\ContainsCompareMethod.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\CssFramework.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\Enums\CssNamedColors.cs

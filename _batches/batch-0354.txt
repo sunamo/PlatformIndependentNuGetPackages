@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoThisApp\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoUri\UH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.AwesomeFont\SunamoWpf.AwesomeFont\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.AwesomeFont\SunamoWpf.AwesomeFont\AwesomeFont\AwesomeFontControls.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.AwesomeFont\SunamoWpf.AwesomeFont\AwesomeFont\AwesomeFontControlsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\ControlsGenerator.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\SHSplit1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\SHSplit2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\SHSplitChar.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\SHSplitString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\SunamoExtensions\ListExtensions.cs

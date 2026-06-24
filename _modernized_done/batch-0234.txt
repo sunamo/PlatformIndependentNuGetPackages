@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_public\XlfFileLang.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_public\XlfTransUnitLang.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_public\SunamoEnums\Enums\CzechEncodings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_public\SunamoEnums\Enums\Langs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\RH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\TF.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\SunamoExceptions\Exceptions.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoInterfaces\Interfaces\IControlWithResultDebugShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoInterfaces\Interfaces\IPercentCalculator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoInterfaces\Interfaces\IProgressBarHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys10.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys11.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys12.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys13.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys14.cs

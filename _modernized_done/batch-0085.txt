@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\SunamoCSharp\CSharpHelper3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\SunamoCSharp\CSharpHelper4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\SunamoCSharp\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\SunamoCSharp\Args\CSharpGeneratorArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\SunamoCSharp\Helpers\CSharpHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\SunamoCSharp\Values\CSharpConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\RunnerCsproj\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\RunnerCsproj\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\CsprojConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\CsprojHelper.cs

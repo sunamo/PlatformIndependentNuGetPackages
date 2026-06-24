@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\ReferenceItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Enums\SupportedNetFw.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Results\FindProjectsWhichIsSdkStyleResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Results\IsProjectCsprojSdkStyleResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Values\IMoveToShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Values\MoveToShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Args\GeneratePropertiesArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Args\GetFilesDCArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Args\RemoveFromXlfWhichHaveEmptyTargetOrSourceArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\CodeGenerator\CSharpClassesGenerator.cs

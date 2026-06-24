@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\GoogleAppsMailbox.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\MailBox.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\SeznamMailbox.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\Data\From.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\Data\SmtpServerData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\Services\MailSenderService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\Services\MailSenderServiceMailKit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\_sunamo\SunamoStringSplit\SHSplit.cs

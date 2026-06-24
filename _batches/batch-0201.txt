@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\YamlHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\DataTypes\Base64Helpers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\DataTypes\BitHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\DataTypes\BitOperations.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Number\HexHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Resource\GuidHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Runtime\DynamicHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Runtime\PlatformInteropHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Runtime\RuntimeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Text\BitConverterBE.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\SheetsTable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\Clipboard\SheetsGeneratorTemplate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\Clipboard\SheetsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_public\SunamoData\Data\FromToTGoogleSheets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_public\SunamoData\Data\FromToTSHGoogleSheets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_public\SunamoData\Data\StoreParsedApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_public\SunamoEnums\Enums\FromToUse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_public\SunamoEnums\Enums\LangsGoogleSheets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoBts\CAToNumber.cs

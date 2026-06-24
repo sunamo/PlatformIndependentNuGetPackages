@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\PropertiesConversions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\Data\CssProperty.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\Enums\Properties.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\Extensions\StringBuilderExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\_sunamo\StringBuilderExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\RunnerCsv\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\CsvFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\CsvFile1.cs

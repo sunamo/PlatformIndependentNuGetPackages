@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\EmbeddedResourcesH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\GridSize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\IIdentificatorT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\SelectedCastHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\StatusHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\StatusHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\SunamoColorHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\SunamoComparer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\SunamoComparerICompare.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\SunamoTimer.cs

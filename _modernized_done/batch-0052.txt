@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoFileExtensions\AllExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoFileIO\TF.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoFileSystem\FileMoveCollisionOptionDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoFileSystem\FS1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoFileSystem\FS2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoGetFiles\FSGetFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoHtml\Html\HtmlAssistant.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoInterfaces\Interfaces\IDumpAsString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoInterfaces\Interfaces\IGitBashBuilder.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoData\Data\ReplaceInAllFilesArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoDelegates\VoidStringT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoDictionary\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoFileIO\TF.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoGetFiles\FSGetFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoGetFolders\FSGetFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoGetFolders\Args\GetFoldersEveryFolderArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoInterfaces\Interfaces\ITextOutputGenerator.cs

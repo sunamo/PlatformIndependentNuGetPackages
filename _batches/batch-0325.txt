@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\SHTrim.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\_sunamo\SunamoChar\CharHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\RunnerTest\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\ExcTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\TestData.cs

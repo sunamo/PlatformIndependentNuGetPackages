@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\XHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\XmlTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\RunnerSunamoSE\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\SE\PDSE.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\SE\ThreadHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\SE\TypesD.cs

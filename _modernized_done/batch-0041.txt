@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\ProjectsNames.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\SolutionsIndexerConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\SolutionsIndexerHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\SolutionsIndexerPaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\SolutionsIndexerSettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\SolutionsIndexerStrings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\VpsHelperDevCode.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Args\GetCsprojsArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\Project\ProjectFolderSerialize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\SunamoSolutionsIndexer\Data\Project\ProjectFoldersSerialize.cs

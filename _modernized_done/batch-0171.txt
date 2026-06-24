@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\RunnerFileIO\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\CloudProvidersHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\EncodingHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\FileEncodingHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TF.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TF1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TFArray.cs

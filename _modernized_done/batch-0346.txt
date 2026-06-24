@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Paths\ExecutablePaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Paths\SourceCodePaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Paths\TodoPaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\AllLetters.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\AllLists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\AllLists1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\AllLists2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\AllStrings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\ConstsAspx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\CultureInfos.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\NotificationWindow.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\ShowTextResultWindow.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\WindowWithUserControl.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\RunnerXlfKeys\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\SunamoXlfKeys\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\SunamoXlfKeys\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\RunnerXliffParser\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\GlobalSuppressions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\IXlfExporter.cs

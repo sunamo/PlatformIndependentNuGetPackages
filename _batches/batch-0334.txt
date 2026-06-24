@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\RunnerTidy\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\RunnerSunamoToNetCore\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\Consts\ElementsItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\ChangeProjects.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\InNonWeb.cs

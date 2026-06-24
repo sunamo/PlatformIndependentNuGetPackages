@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_public\SunamoInterfaces\Interfaces\ICrypt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_sunamo\SunamoInterfaces\Interfaces\ICryptBytes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_sunamo\SunamoInterfaces\Interfaces\ICryptHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_sunamo\SunamoInterfaces\Interfaces\ICryptString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\_sunamo\SunamoInterfaces\Interfaces\ISunamoDictionary.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\RunnerCryptAlgorithms\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\Net48Polyfills.cs

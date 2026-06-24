@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\ITextBlocksLog.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IUserControl.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IUserControlBackground.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IUserControlClosing.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IUserControlSizeAdaptive.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IUserControlStateChanging.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IUserControlWithLeft.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Values\HeaderSize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Values\TypesControls.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Values\TypesDesktop.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\DataMemberAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\IgnoreAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\InnerObjectAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\MessageIfFailAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\NotTranslateAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\ObjectObsoleteAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\ObjectParamsAllowedAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\ObjectParamsObsoleteAttribute.cs

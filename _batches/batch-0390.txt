@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\StartupHelper\FileTextLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\StartupHelper\StartupHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\StatusesLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoWpfInitializer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\Logging\WpfLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\FoundedFilesD.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\FrameworkElementDebug.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Logging\SunamoWpf.Logging\SunamoDebugging\GridDebug.cs

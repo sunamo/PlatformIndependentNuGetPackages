@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\TsToEnFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Enums\WebNonWeb.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Helpers\SunamoWebHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Helpers\VersionHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Interfaces\IMainWindowAps.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Interfaces\IMainWindowCsFileFilter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Interfaces\ISearchInSolutions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\ApsProjsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\ProjectsDependencyTreeCache.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\SunamoCsprojHelper.cs

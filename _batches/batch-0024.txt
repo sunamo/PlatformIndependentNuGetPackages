@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\RunnerDevCode\AddOrEditNamespaceServiceTests.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\RunnerDevCode\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\RunnerDevCode\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\BackslashEncoding.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Boilerplate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\ConstsManager.cs

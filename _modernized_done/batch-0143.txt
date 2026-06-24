@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Entity\SongFromInternet2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Entity\Timestamp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\AbstractCatalogShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\AppLangHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\BasePathsHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\BracketsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoData\Data\FileForSearching.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoEnums\Enums\AppFoldersShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoEnums\Enums\FileEntriesDuplicitiesStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoEnums\Enums\FileExceptions.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoDateTime\DT\DTHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoDateTime\DT\DTHelperMulti.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoDelegates\VoidBoolNullable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoDelegates\VoidString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoDelegates\VoidT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoEnums\Enums\ImageFormats.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoEnumsHelper\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_sunamo\SunamoFileExtensions\AllExtensions.cs

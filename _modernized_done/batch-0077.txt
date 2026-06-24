@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoInterfaces\Interfaces\IConvertConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoInterfaces\Interfaces\IConvertCzechEnglish.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoInterfaces\Interfaces\IConvertNumberString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoInterfaces\Interfaces\IConvertShortcutFullName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoInterfaces\Interfaces\ISimpleConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoInterfaces\Interfaces\ISimpleConverterT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoShared\HttpUtility.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoValues\Constants\DTConstants.cs

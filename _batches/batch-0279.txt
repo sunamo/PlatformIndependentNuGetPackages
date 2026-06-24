@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\CodeElementsConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\ContainsArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\ContainsCompareMethodRoslyn.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\CSharpConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\CSharpHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\EndArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\FS.cs

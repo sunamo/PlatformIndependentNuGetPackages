@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoConverters\Converts\ConvertEveryWordLargeCharConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoDateTime\DT\DTHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoDateTime\DT\DTHelperMulti.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoDelegates\VoidBoolNullable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoDelegates\VoidString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoDelegates\VoidT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoEnums\Enums\ImageFormats.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoEnumsHelper\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SunamoExceptions\ThrowEx.cs

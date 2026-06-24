@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\_sunamo\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\RunnerChar\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\CharHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\Net48Polyfills.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\Collections\SunamoDictionaryWithKeysDependencyObject.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\Helpers\ColorH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\Helpers\ColorHShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\Helpers\ColorHSunExc.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_shared\Helpers\Resources\EmbeddedResourcesHShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\ColorHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\DW.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\ITextBlockHelperBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\IValidateControl.cs

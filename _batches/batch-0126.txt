@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\_sunamo\SunamoXml\XHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\_sunamo\SunamoXml\XmlNamespacesHolder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\RunnerSunamoDevCodeCore\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\BackslashEncoding.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Boilerplate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\ConstsManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\CsFileFilter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\CsFileFilter1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\CsprojShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\DevNotTranslateAble.cs

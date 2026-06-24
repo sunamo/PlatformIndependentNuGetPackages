@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\RulesetActions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\RulesetConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\RulesetManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\RulesetRule.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\RulesetTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\RulesetValues.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\_sunamo\RulesetManager.cs

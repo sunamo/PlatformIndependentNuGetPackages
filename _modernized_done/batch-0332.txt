@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\_sunamo\SunamoStringSubstring\SHSubstring.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\_sunamo\SunamoStringTrim\SHTrim.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\RunnerThread\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\CAThread.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\RunnerThreading\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\MyThreadPool.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\Net48Polyfills.cs

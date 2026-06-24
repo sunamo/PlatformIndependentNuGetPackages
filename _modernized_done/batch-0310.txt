@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoInterfaces\Interfaces\IFSWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoInterfaces\Interfaces\IPHWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoInterfaces\Interfaces\ProgressState.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoRandom\RandomHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoStringData\SHData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoStringJoin\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoStringReplace\SHReplace.cs

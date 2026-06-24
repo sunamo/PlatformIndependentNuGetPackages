@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Clipboard\ClipboardMonitorW32.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ContainerControls\GridHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ContainerControls\GridHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ContainerControls\PanelHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ContainerControls\PanelHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Content\BitmapHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Content\ResourcesH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Content\Resources\BitmapImageHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Content\Resources\BitmapImageHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Content\Resources\BitmapImagesHelper.cs

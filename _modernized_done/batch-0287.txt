@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\SunamoData\Data\SerializeContentArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoShared\SunamoShared\Crypting\Utils.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoShared\SunamoShared\Helpers\Runtime\RuntimeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\RunnerSunamoSharedMisc\Program.cs

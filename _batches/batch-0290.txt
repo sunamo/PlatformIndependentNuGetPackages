@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\BracketsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoData\Data\FileForSearching.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoEnums\Enums\AppFoldersShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoEnums\Enums\FileEntriesDuplicitiesStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoEnums\Enums\FileExceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoEnums\Enums\LangsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoEnums\Enums\TypeOfMessageShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoInterfaces\Interfaces\IControlWithResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoInterfaces\Interfaces\IControlWithResultDebugShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_public\SunamoInterfaces\Interfaces\IPercentCalculator.cs

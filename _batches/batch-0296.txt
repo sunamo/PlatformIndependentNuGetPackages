@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoInterfaces\Interfaces\ProgressState.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoRandom\RandomHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoStringData\SHData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoStringJoin\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoThisApp\ThisApp.cs

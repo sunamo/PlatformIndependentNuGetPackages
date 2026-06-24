@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\_public\DirectoriesToDeleteFluentFtp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\_public\SunamoFtp\Base\FtpAbstractFluentFtp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\_public\SunamoFtp\Base\FtpBaseNewFluentFtp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\_public\SunamoFtp\Base\PathSelectorFluentFtp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\RunnerFtp\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FileSystemType.cs

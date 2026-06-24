@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\GoogleMapsSearchResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\ImageWithSize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\IntegerXY.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\LoginData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\MonthYear.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\MusicTitle.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\NTree.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\OTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\Parsing.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\PGPhoto.cs

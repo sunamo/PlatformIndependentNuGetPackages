@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IBasicControls.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\ICompareInCheckBoxListUC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IEssentialMainWindowBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IHideToTray.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IIdentificatorDesktop.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IInlineBuilder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IKeysHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IOnClosingMainWindow.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IResourceHelperDesktop.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\Interfaces\IShowSearchResults.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\RegexHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\RegexHelperTests.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\Wildcard.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\WildcardHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\RunnerResult\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\MayExcHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\OutRef.cs

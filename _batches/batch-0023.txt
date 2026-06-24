@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_sunamo\SunamoThisApp\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\_sunamo\SunamoValues\Constants\Messages.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\RunnerClearScript\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\ClearScriptHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\RunnerClipboard\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\ClipboardHelper.cs

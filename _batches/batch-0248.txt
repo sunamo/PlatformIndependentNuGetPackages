@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoInterfaces\Interfaces\ITextOutputGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\RunnerOctokit\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\OctokitHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\Interfaces\IAuthentize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\_public\ResultWithExceptionOctokit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\_sunamo\SunamoExceptions\Exceptions.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\FromToTSHString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\FromToWordString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\SquareMap.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoData\Data\SquareMapLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoEnums\Enums\ContainsCompareMethodString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoEnums\Enums\FromToUse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_public\SunamoEnums\Enums\StatisticLetterCharsStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\LetterAndDigitCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\_sunamo\SHGetLines.cs

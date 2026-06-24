@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoGetFolders\FSGetFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoGetFolders\Args\GetFoldersEveryFolderArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\RunnerGetFolders\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\FSGetFolders.cs

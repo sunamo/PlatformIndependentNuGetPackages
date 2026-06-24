@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\MsgExtHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\RunnerMsSqlServer\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\Helpers\IdentityHelpers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\Helpers\MsSqlConnectHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\Services\MsSqlOneColumnService.cs

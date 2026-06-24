@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\Services\PathFormatDetectorService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_public\SunamoCollectionsGeneric\Collections\FsWatcherDictionary.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_public\SunamoData\Data\ReplaceInAllFilesArgsBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_public\SunamoData\Data\TWithInt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_public\SunamoEnums\Enums\AscDesc.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_public\SunamoEnums\Enums\DirectoryCreateCollisionOption.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_public\SunamoEnums\Enums\EnvironmentVariables.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\LetterAndDigitCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\WhitespaceCharService.cs

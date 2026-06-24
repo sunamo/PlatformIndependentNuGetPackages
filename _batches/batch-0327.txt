@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\LinearHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\LocalizationLanguages.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\NH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\TF.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\_sunamo\XlfResourcesHSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\RunnerText\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\FormatOfString.cs

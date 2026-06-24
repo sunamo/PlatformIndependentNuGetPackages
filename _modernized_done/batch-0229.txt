@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IXmlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IXmlParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IXParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IYouTubeConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\ProgressState.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\SunamoPS\IPowershellParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_public\SunamoArgs\ExternalLoginResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_public\SunamoArgs\ValidateData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_public\SunamoEnums\Enums\FontWeights.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_sunamo\SunamoArgs\InvokeProcessArgs.cs

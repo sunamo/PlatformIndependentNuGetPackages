@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\Actions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\GroupsOfActions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\Program2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\TestContainer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\ToDelete\Actions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\ToDelete\AddGroupOfActions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\RunnerCl\ToDelete\GroupOfActions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\CL2.cs

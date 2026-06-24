@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\UIElementExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\UserControlExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\UserControlExtensionsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\Color\SystemWindowsMediaBrushExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\Color\SystemWindowsMediaColorExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\Color\SystemWindowsSizeExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\PathAvailabilityHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\PathAvailablitiyEventArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\WatchersExList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\Common\ArgumentType.cs

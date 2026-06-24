@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\Lazy\LazyGetCommonSettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\Lazy\LazyString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\Lazy\LazyT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\RunnerLogging\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\RunnerLogging\LoggerInner.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\RunnerLogging\LoggerOuter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\RunnerLogging\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\InitAppShared64.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Base\LoggerBase.cs

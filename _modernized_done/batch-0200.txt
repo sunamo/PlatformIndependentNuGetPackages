@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Crypting\UtilsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Entity\ComplexInfoString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\CastHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\DaySegmentsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\DrawingColorHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\FormatHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\GridHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\LocaleHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\SerializerHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\SmtpHelper.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\IdLang.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\PlatformInteropHelperXlf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\ResourcesHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\RLData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\TranslateDictionary.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\TranslatedStrings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\XlfResourcesH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\XmlLocalisationInterchangeFileFormatXlf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\Data\LocalizationLanguages.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_public\XlfDocumentLang.cs

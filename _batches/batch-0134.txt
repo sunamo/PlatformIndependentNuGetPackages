@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\BZip2\BitWriter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\BZip2\BZip2Compressor.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\BZip2\BZip2InputStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\BZip2\BZip2OutputStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\BZip2\ParallelBZip2OutputStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\BZip2\Rand.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\ComHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\EncryptionAlgorithm.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\Events.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\Exceptions.cs

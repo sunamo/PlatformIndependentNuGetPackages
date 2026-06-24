@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_public\SunamoArgs\DumpAsStringHeaderArgsReflection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_public\SunamoArgs\GetMemberArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_sunamo\ObjectExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\RunnerRegex\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\Net48Polyfills.cs

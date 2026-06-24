@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\DTFormats.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\FolderConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\GoogleApiCodes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HtmlAttrs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HtmlAttrValue.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HtmlEndingTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HtmlStartingTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HtmlTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HttpErrors.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\HttpKnownHeaderValues.cs

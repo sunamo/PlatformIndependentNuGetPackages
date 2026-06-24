@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpWebResponseHelperHttp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Args\DownloadOrReadArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Args\GetResponseArgs_1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Args\GetResponseArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Data\HttpRequestData.cs

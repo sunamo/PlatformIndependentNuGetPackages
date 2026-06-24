@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\RunnerPInvoke\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Args\GlobalKeyboardHookEventArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\FolderType.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\IconSize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\LUID_AND_ATTRIBUTES.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\LUID.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\ProcessAccessFlags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\SECURITY_IMPERSONATION_LEVEL.cs

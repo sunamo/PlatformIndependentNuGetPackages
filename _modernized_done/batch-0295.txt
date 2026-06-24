@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoDelegates\VoidT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoEnums\Enums\ImageFormats.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoEnumsHelper\EnumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoFileExtensions\AllExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoInterfaces\Interfaces\IDW.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoInterfaces\Interfaces\IFSWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_sunamo\SunamoInterfaces\Interfaces\IPHWin.cs

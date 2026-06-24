@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\TypesDelegates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\TypesList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\RunnerUnderscore\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\_.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\IComgateOAuth.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\IDatabasesConnections.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\IGoPayOAuth.cs

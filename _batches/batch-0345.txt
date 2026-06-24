@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\Mails.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\Messages.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\NetFxExceptionsNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\NumConstsString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\RuntimeFrameworks.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\ShortenedExceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\SNumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\SunamoStrings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Constants\UnicodeWhiteToVisible.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\FsWatcherDictionary.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\IDictionaryExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\RegexHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\SHJoinPairs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\_sunamo\StringBuilderExtensions.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileIO\TF.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoUri\UH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\RunnerIni\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\IniFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\RunnerInterfaces\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Net48Polyfills.cs

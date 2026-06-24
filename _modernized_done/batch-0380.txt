@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\FSWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\GuesslangHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\NotifyChangesCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\PHDesktop.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\PHSystemManagement.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\PicturesSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\PicturesSunamoShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\SHWithControls.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\SHWithControlsShared.cs

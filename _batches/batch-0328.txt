@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\UnicodeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\_sunamo\SunamoEnums\Enums\ContainsCompareMethod.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\RunnerTextIndexing\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\TextIndexing.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\Data\FileForSearching.cs

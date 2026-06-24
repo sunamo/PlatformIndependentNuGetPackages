@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\CzechHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\ResourcesDuo.Designer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\SunamoPageHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\Translation.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\Converts\AppLangConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoI18N\Enums\KeysXlf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\BasePathHelperNoPaths.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\CAXlf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\SunamoXlf\GlobalUsings.cs

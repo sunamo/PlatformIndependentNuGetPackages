@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoFileExtensions\AllExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoInterfaces\Interfaces\IDW.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoInterfaces\Interfaces\IFSWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoInterfaces\Interfaces\IPHWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoInterfaces\Interfaces\ProgressState.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoRandom\RandomHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoString\SH.cs

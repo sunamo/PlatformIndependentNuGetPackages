@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\SunamoExtensions\StringExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\RunnerStringSubstring\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\SHSubstring.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\_public\SunamoArgs\SubstringArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\RunnerStringTrim\Program.cs

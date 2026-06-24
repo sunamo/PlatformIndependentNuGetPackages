@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\_public\SunamoXlfKeys\XlfKeys6.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\_public\SunamoXlfKeys\XlfKeys7.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\_public\SunamoXlfKeys\XlfKeys8.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\_public\SunamoXlfKeys\XlfKeys9.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\RunnerGetFiles\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\FSGetFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\FSGetFilesAsync.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\FSGetFilesExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\FSGetFilesHelpers.cs

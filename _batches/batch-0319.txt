@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\SHJoin1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\RunnerStringJoinPairs\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\GlobalUsings.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\HtmlSB.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\MSBuildProject.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\ProjectTypeGuid.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\RepoGetFileMascGeneratorData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\SunamoDevCodeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\SunamoFramework.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\TFCsFormat.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\TrimerTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\Unindexable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\UnindexableFilesNames.cs

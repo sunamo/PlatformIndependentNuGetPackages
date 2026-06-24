@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoCollections\CA1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoCollections\RemoveEmptyLinesService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoCollectionsChangeContent\CAChangeContent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoCollectionsGeneric\CAG.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoCollectionsGeneric\CAGConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoConverters\Converts\ConvertPascalConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoConverters\Converts\ConvertSnakeConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoConverters\Converts\ConvertTypeShortcutFullName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoCSharpKeywords\CsKeywordsList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoData\Data\NTree.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\StringPaddingData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\SuCredentials.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\SunamoHttpPostedFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TextFormatData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TU.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TUList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TWithBool.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TWithName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TWithNameT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TWithPath.cs

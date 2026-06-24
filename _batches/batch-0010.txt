@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\OuterObjectAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\OuterObjectMapping.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\PrimaryKeyAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\TParamsObsoleteAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\RunnerAzureDevOpsApi\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\AzureDevOpsApiClient.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\AzureDevOpsApiParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\GlobalUsings.cs

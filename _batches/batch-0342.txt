@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\Ads\AdsPhaRegion.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\Ads\AdsRegionBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\Values\RepairMobileValues.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\_public\SunamoData\Data\AzureBuildUriArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\RunnerValues\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\CsConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\EnConsts.cs

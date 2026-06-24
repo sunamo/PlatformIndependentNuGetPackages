@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\AbstractCatalogShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\AppLangHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\BasePathsHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\BracketsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\SunamoData\Data\FileForSearching.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\SunamoEnums\Enums\AppFoldersShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\SunamoEnums\Enums\FileEntriesDuplicitiesStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\SunamoEnums\Enums\FileExceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\SunamoEnums\Enums\LangsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\_public\SunamoEnums\Enums\TypeOfMessageShared.cs

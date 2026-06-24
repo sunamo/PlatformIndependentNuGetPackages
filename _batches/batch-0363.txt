@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Helpers\ControlsWithGet\MenuItemHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Interfaces\IApplicationDataContainerSearchTextBox.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Interfaces\ICheckBoxListUC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\Converters\HeaderToImageConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\Converters\StringHexColorConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\Converters\StringHexWindowsMediaColorConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\Converters\VisibilityBooleanConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\ValueConverters\CornerRadiusValueConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Converters\SunamoWpf.Converters\ValueConverters\ScalarValueConverter.cs

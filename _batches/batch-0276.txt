@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\RoslynNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\RoslynParents.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\RoslynParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\RoslynParserText.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\SourceCodeIndexerRoslyn.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\SourceCodeIndexerRoslyn1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\SourceCodeIndexerRoslynShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\SourceCodeIndexerRoslynShared1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\Data\ClassCodeElement.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\Data\ClassCodeElements.cs

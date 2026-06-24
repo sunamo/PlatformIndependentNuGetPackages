@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\Generators\ControlNameGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\Generators\ErrorMessageGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\Generators\SpecialFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoEnums\Enums\AppFoldersShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoEnums\Enums\FileEntriesDuplicitiesStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoEnums\Enums\FileExceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoEnums\Enums\LangsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoEnums\Enums\TypeOfMessageShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\_public\SunamoXlfKeys\XlfKeys1.cs

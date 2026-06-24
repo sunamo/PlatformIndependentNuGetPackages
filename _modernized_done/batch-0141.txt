@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\_public\ResultWithExceptionEditorConfig.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\RunnerEmbeddedResources\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\EmbeddedResourcesH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\RunnerEmoticons\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\Emoticons.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\EmoticonsHelper.cs

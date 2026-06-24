@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\RuntimeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\SelectFromManyHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\_sunamo\TypesD.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\ImageWithPath.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\IUserControlWithSizeChange.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\SearchCodeElementsUCData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\Data\BitmapImageWithPath.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\Data\BorderData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Data\SunamoWpf.Data\Data\CheckBoxData.cs

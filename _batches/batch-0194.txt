@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SunamoCollectionsChangeContent\CAChangeContent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\_sunamo\SunamoRegex\Wildcard.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\RunnerGitConfig\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\BlockNames.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\GitConfigFileHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\GitConfigSectionParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\Net48Polyfills.cs

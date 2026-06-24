@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\RunnerFileExtensions\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensions1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensions2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensions3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensions4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensions5.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensionsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensionsHelperWithoutDot.cs

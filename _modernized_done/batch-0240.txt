@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoCollectionsIndexesWithNull\CAIndexesWithNull.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoShared\Helpers\Runtime\RuntimeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoThisApp\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\_sunamo\SunamoValues\Constants\Messages.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\RunnerMail\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\GlobalUsings.cs

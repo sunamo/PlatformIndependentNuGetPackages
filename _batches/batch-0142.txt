@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\RunnerSunamoEntity\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Entity\ComplexInfoString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Entity\ManageArtistDashTitle.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Entity\SongFromInternet.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\Entity\SongFromInternet1.cs

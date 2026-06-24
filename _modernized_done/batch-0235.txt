@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\RunnerLaTeX\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\LatexHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\LatexHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\RunnerSunamoLazy\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\GlobalUsings.cs

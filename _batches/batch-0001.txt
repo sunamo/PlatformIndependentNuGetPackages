@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\RunnerSunamoAps\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\AllProjectSearchThrow.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\AllProjectsSearchConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\AllProjectsSearchSettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\AllProjectsSearchSettingsAps.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\ApsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\ApsHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\ApsHelper2.cs

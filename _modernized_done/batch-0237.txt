@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Base\TemplateLoggerBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Base\TypedLoggerBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Bootstrap\ConsoleAppContext.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Bootstrap\ConsoleTee.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Bootstrap\CrashHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Bootstrap\LoggingBootstrap.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\Bootstrap\LoggingBootstrapOptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\FileLogger\FileLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\FileLogger\FileLoggerExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\FileLogger\FileLoggerProvider.cs

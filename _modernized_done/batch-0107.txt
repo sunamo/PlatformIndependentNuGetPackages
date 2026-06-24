@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\SifrujSymetricky.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\StatusBroadcasterHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\StringByteArrayByteArrayHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\StringString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\StringStringByteArrayHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\StringStringHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\StringVoid.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\TaskBoolNullable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\TaskT.cs

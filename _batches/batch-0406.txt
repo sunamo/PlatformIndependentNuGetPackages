@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\XH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\XHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\XHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\XmlHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\XmlHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\XmlNamespacesHolder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\Generators\XmlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\Generators\XmlGeneratorNS2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\Generators\XmlGeneratorResources.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\Generators\XmlGeneratorSelective.cs

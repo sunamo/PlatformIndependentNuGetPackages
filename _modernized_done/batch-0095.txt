@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\PhotoFileNameConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\PhotoToUpload.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\PhotoToUploadWithStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\RelatedScope.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\ReplaceArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\SanitizedString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\SerializeContentArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\Speed.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\StateMessage.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\StringInt.cs

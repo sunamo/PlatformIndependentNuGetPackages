@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\CsprojInstance.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\CsprojInstanceSave.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\CsprojNsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Data\CsprojData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Data\DuplicatesInItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Data\ForceValueForKey.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Data\ItemGroupElement.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\Data\ItemGroupElements.cs

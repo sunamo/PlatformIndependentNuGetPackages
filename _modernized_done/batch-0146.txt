@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys5.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys6.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys7.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys8.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys9.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\ConvertDateTimeToFileNamePostfix.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\LetterAndDigitCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\LetterAndDigitKeyCodeService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_sunamo\SpecialCharsService.cs

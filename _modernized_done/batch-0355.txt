@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\EnterOneValueUC.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\IControlPlugin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\IUserControlWithMenuItemsList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\IUserControlWithSuMenuItemsList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\NotifyPropertyHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\ResourceDictionaryStyles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\ResourceDictionaryStylesShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Buttons\ActionButton.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Buttons\DialogButtons.xaml.cs

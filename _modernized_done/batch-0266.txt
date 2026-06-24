@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\RL\RL.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\AbstractCatalogShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\AppLangHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\BasePathsHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\BracketsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\SunamoData\Data\FileForSearching.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\SunamoEnums\Enums\AppFoldersShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\SunamoEnums\Enums\FileEntriesDuplicitiesStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\SunamoEnums\Enums\FileExceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\_public\SunamoEnums\Enums\LangsShared.cs

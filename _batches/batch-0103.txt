@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_sunamo\SunamoInterfaces\Interfaces\IParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_sunamo\SunamoParsing\Parse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_sunamo\SunamoParsing\TryParse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_sunamo\SunamoValues\Constants\DTConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_sunamo\SunamoValues\Values\CultureInfos.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\RunnerDebugCollection\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\DebugCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\DebugLongCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\GlobalUsings.cs

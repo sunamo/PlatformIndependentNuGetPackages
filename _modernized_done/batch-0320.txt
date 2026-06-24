@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\SHJoinPairs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\RunnerStringParts\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\RunnerStringReplace\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\SHReplace.cs

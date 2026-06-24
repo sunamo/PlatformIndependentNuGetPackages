@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\ConvertSnakeConvention.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\ConvertTypeNameType.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\ConvertTypeNameTypeNumbers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\ConvertTypeShortcutFullName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\NullableConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\Converts\Rot13.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_public\SunamoEnums\Enums\FromToUse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_public\SunamoEnums\Enums\PropertyTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\_sunamo\SunamoData\Data\ABT.cs

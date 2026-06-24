@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoEnums\Enums\LangsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoEnums\Enums\TypeOfMessageShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoInterfaces\Interfaces\IControlWithResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoInterfaces\Interfaces\IControlWithResultDebugShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoInterfaces\Interfaces\IPercentCalculator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoInterfaces\Interfaces\IProgressBarHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys10.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\_public\SunamoXlfKeys\XlfKeys11.cs

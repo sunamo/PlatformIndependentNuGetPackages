@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoStringData\SHData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoStringJoin\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoThisApp\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoUri\UH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoValues\Constants\CodeElementsConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoValues\Constants\HttpErrors.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoValues\Constants\HttpKnownHeaderNames.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_sunamo\SunamoValues\Constants\NumConsts.cs

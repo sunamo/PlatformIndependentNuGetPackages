@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\SE\Helpers\FileSystem\RelPath\PathInternal.CaseSensitivity.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\SE\Helpers\FileSystem\RelPath\PathInternal.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\_sunamo\SunamoDelegates\VoidBoolNullable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\_sunamo\SunamoDelegates\VoidString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\_sunamo\SunamoDelegates\VoidT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\RunnerSecurity\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\ProtectedDataHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\SecureStringHelper.cs

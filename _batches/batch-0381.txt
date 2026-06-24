@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\TextBlockData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\TextBoxExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\ValidationHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\VisualTreeHelpers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\WpfScreen.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\XamlDisplay.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\XamlGeneratorDesktop.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\XamlSerializer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Essential\WpfApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Essential\WpfAppShared.cs

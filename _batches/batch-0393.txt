@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationDataContainer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationDataContainerList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationDataContainerListShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationDataContainerShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\AppSettingsManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\SettingsManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\SunamoApplicationSettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\WindowsSettings\WindowsDisplaySettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\AssemblyInfo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\GlobalUsings.cs

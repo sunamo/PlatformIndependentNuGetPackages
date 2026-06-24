@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\ReferenceEqualityComparer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\RH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\RH1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\RH2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\RH3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\RHCopy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\Args\DumpAsStringArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\Enums\DumpProvider.cs

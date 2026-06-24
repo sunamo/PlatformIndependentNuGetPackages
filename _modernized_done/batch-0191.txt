@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\FSGetFilesOther.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\Enums\ComputerSizeUnitsGetFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_public\SunamoArgs\GetFilesEveryFolderArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoArgs\ChangeContentArgsGetFiles.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoCollectionsChangeContent\CAChangeContent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\_sunamo\SunamoExceptions\Exceptions.cs

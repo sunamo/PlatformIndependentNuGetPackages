@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PowershellRunner.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PowershellRunner1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PowershellRunnerString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\PsOutput.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\Data\PowershellMethod.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\Extensions\FileName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\TextBuilderPS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\SunamoArgs\InvokeProcessArgsPS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_public\SunamoArgs\PsInvokeArgs.cs

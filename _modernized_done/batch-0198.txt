@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoCollectionsGeneric\CAG.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoCollectionsValuesTableGrid\ValuesTableGrid.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoInterfaces\Interfaces\IParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\_sunamo\SunamoValues\Constants\DTConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\RunnerGpx\Program.cs

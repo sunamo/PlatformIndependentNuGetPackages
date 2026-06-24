@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\RunnerMarkdown\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\MarkdownHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMathpix\RunnerMathpix\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMathpix\SunamoMathpix\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMathpix\SunamoMathpix\MathpixHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\RunnerMime\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\GlobalUsings.cs

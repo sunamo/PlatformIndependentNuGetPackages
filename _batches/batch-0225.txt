@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IMusicWebService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IName.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IPAddressHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IPanel.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IParseCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IParseCollectionIndexes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IParseCollectionO.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IParserCollection.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\Interfaces\IParserExt.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\InNonWeb1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\InWeb.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\InWeb1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\InWebAndNonWeb.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\Runner.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\RunnerShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\research\Shared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\ToNetCore\Results\IsNetCore5UpMonikerResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToUnixLineEnding\RunnerToUnixLineEnding\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToUnixLineEnding\SunamoToUnixLineEnding\Consts2.cs

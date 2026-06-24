@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TFBytes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TFCommented.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TFLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TFSync.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\TFText.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\CallOnlyFileIO\FileList.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\CallOnlyFileIO\FileText.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\_sunamo\SunamoExtensions\ToUnixLineEndingExtensions.cs

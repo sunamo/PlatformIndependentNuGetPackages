@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoThisApp\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoUri\UH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoValues\Constants\CodeElementsConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoValues\Constants\HttpErrors.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoValues\Constants\HttpKnownHeaderNames.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoValues\Constants\RuntimeFrameworks.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoValues\Values\AllLists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\RunnerSunamoStreams\Program.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\_sunamo\SunamoXml\XHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\_sunamo\SunamoXml\Generators\XmlGeneratorSelective.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\_sunamo\SunamoXml\Generators\XmlTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\RunnerHttp\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\FileMoveCollisionOptionHttp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpClientHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpResponseHelper.cs

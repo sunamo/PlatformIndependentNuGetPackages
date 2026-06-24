@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\W32Base.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\W32Clipboard.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\ByDll\User32.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Structs\LowLevelKeyboardInputEvent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Structs\PROCESS_INFORMATION.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Structs\STARTUPINFO.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\RunnerPlatformUwpInterop\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\RunnerPlatformUwpInterop\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\GlobalUsings.cs

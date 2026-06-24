@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP31.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpDllWrapper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Other\FtpLogging.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Other\FtpTest.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_public\SunamoData\Data\DirectoriesToDeleteFtp.cs

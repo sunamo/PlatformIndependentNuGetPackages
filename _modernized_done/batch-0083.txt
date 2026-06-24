@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys6.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys7.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys8.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys9.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_sunamo\LetterAndDigitCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_sunamo\SpecialCharsService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_sunamo\SunamoCollections\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_sunamo\SunamoLang\SunamoI18N\Translate.cs

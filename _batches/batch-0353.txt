@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoArgs\ChangeContentArgsWinStd.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoArgs\InvokeProcessArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoArgs\PsInvokeArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoCollections\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoCollectionsChangeContent\CAChangeContent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoEnums\Enums\TypeOfMessage.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoFileSystem\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\SunamoInterfaces\Interfaces\ProgressState.cs

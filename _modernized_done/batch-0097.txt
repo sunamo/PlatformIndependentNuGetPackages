@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TWithSizeInString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\TWithString.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\ValueLabel.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\VideoFromInternet.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Data\XPathPart.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Enums\SerieStyleData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\Interfaces\ISettingsManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_public\SunamoEnums\Enums\FromToUseData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\LetterAndDigitCharService.cs

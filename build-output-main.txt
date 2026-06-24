@@ -1,0 +1,728 @@
+  Determining projects to restore...
+  Restored E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\SunamoCodeGenerator.csproj (in 448 ms).
+  147 of 148 projects are up-to-date for restore.
+  SunamoCollectionsChangeContent -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsChangeContent\SunamoCollectionsChangeContent\bin\Debug\netstandard2.0\SunamoCollectionsChangeContent.dll
+  SunamoCl -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\bin\Debug\netstandard2.0\SunamoCl.dll
+  SunamoCl -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\bin\Debug\net10.0\SunamoCl.dll
+  SunamoAsync -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\bin\Debug\net9.0\SunamoAsync.dll
+  SunamoArgs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\bin\Debug\net8.0\SunamoArgs.dll
+  SunamoCl -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\bin\Debug\net8.0\SunamoCl.dll
+  SunamoClearScript -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\bin\Debug\net8.0\SunamoClearScript.dll
+  SunamoArgs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\bin\Debug\netstandard2.0\SunamoArgs.dll
+  SunamoAsync -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\bin\Debug\netstandard2.0\SunamoAsync.dll
+  SunamoAsync -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\bin\Debug\net10.0\SunamoAsync.dll
+  SunamoCollectionsChangeContent -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsChangeContent\SunamoCollectionsChangeContent\bin\Debug\net9.0\SunamoCollectionsChangeContent.dll
+  SunamoCollectionsChangeContent -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsChangeContent\SunamoCollectionsChangeContent\bin\Debug\net8.0\SunamoCollectionsChangeContent.dll
+  SunamoCollectionOnDrive -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionOnDrive\SunamoCollectionOnDrive\bin\Debug\netstandard2.0\SunamoCollectionOnDrive.dll
+  SunamoCollectionsChangeContent -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsChangeContent\SunamoCollectionsChangeContent\bin\Debug\net10.0\SunamoCollectionsChangeContent.dll
+  SunamoArgs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\bin\Debug\net10.0\SunamoArgs.dll
+  SunamoArgs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\bin\Debug\net9.0\SunamoArgs.dll
+  SunamoCollectionOnDrive -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionOnDrive\SunamoCollectionOnDrive\bin\Debug\net10.0\SunamoCollectionOnDrive.dll
+  SunamoCollectionOnDrive -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionOnDrive\SunamoCollectionOnDrive\bin\Debug\net8.0\SunamoCollectionOnDrive.dll
+  SunamoCollectionOnDrive -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionOnDrive\SunamoCollectionOnDrive\bin\Debug\net9.0\SunamoCollectionOnDrive.dll
+  SunamoBts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\bin\Debug\netstandard2.0\SunamoBts.dll
+  SunamoBazosCrawler -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\bin\Debug\netstandard2.0\SunamoBazosCrawler.dll
+  SunamoClearScript -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\bin\Debug\net9.0\SunamoClearScript.dll
+  SunamoBazosCrawler -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\bin\Debug\net10.0\SunamoBazosCrawler.dll
+  SunamoClearScript -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\bin\Debug\net10.0\SunamoClearScript.dll
+  SunamoClipboard -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\bin\Debug\net10.0\SunamoClipboard.dll
+  SunamoDevCode -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\bin\Debug\net10.0\SunamoDevCode.dll
+  SunamoAttributes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\bin\Debug\net10.0\SunamoAttributes.dll
+  SunamoCollectionsGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsGeneric\SunamoCollectionsGeneric\bin\Debug\net8.0\SunamoCollectionsGeneric.dll
+  SunamoAzureDevOpsApi -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\bin\Debug\net10.0\SunamoAzureDevOpsApi.dll
+  SunamoAzureDevOpsApi -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\bin\Debug\net8.0\SunamoAzureDevOpsApi.dll
+  SunamoCl -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\bin\Debug\net9.0\SunamoCl.dll
+  SunamoAzureDevOpsApi -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\bin\Debug\net9.0\SunamoAzureDevOpsApi.dll
+  SunamoCollectionsGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsGeneric\SunamoCollectionsGeneric\bin\Debug\net9.0\SunamoCollectionsGeneric.dll
+  SunamoCollectionsGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsGeneric\SunamoCollectionsGeneric\bin\Debug\net10.0\SunamoCollectionsGeneric.dll
+  SunamoChar -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\bin\Debug\net10.0\SunamoChar.dll
+  SunamoBts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\bin\Debug\net10.0\SunamoBts.dll
+  SunamoCollectionsNonGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric\bin\Debug\net10.0\SunamoCollectionsNonGeneric.dll
+  SunamoChar -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\bin\Debug\net9.0\SunamoChar.dll
+  SunamoAI -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\bin\Debug\net10.0\SunamoAI.dll
+  SunamoCollectionsIndexesWithNull -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull\bin\Debug\net10.0\SunamoCollectionsIndexesWithNull.dll
+  SunamoCollectionsIndexesWithNull -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull\bin\Debug\net9.0\SunamoCollectionsIndexesWithNull.dll
+  SunamoAI -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\bin\Debug\net9.0\SunamoAI.dll
+  SunamoCollectionsTo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsTo\SunamoCollectionsTo\bin\Debug\net10.0\SunamoCollectionsTo.dll
+  SunamoBts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\bin\Debug\net8.0\SunamoBts.dll
+  SunamoCollectionsGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsGeneric\SunamoCollectionsGeneric\bin\Debug\netstandard2.0\SunamoCollectionsGeneric.dll
+  SunamoAI -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\bin\Debug\net8.0\SunamoAI.dll
+  SunamoAttributes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\bin\Debug\net9.0\SunamoAttributes.dll
+  SunamoConverters -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\bin\Debug\net10.0\SunamoConverters.dll
+  SunamoCollectionsValuesTableGrid -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid\bin\Debug\net10.0\SunamoCollectionsValuesTableGrid.dll
+  SunamoBazosCrawler -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\bin\Debug\net9.0\SunamoBazosCrawler.dll
+  SunamoCollectionsValuesTableGrid -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid\bin\Debug\net9.0\SunamoCollectionsValuesTableGrid.dll
+  SunamoCollectionWithoutDuplicates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates\bin\Debug\net10.0\SunamoCollectionWithoutDuplicates.dll
+  SunamoColors -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\bin\Debug\net10.0\SunamoColors.dll
+  SunamoConverters -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\bin\Debug\net9.0\SunamoConverters.dll
+  SunamoColors -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\bin\Debug\net8.0\SunamoColors.dll
+  SunamoChar -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\bin\Debug\net8.0\SunamoChar.dll
+  SunamoAzureDevOpsApi -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\bin\Debug\netstandard2.0\SunamoAzureDevOpsApi.dll
+  SunamoAttributes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\bin\Debug\netstandard2.0\SunamoAttributes.dll
+  SunamoCollections -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\bin\Debug\net10.0\SunamoCollections.dll
+  SunamoCollections -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\bin\Debug\net9.0\SunamoCollections.dll
+  SunamoCollections -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\bin\Debug\netstandard2.0\SunamoCollections.dll
+  SunamoColors -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\bin\Debug\net9.0\SunamoColors.dll
+  SunamoCryptAlgorithms -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\bin\Debug\netstandard2.0\SunamoCryptAlgorithms.dll
+  SunamoCompare -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\bin\Debug\net10.0\SunamoCompare.dll
+  SunamoCollections -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\bin\Debug\net8.0\SunamoCollections.dll
+  SunamoCollectionsValuesTableGrid -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid\bin\Debug\net8.0\SunamoCollectionsValuesTableGrid.dll
+  SunamoCollectionWithoutDuplicates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates\bin\Debug\net9.0\SunamoCollectionWithoutDuplicates.dll
+  SunamoCollectionsIndexesWithNull -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull\bin\Debug\net8.0\SunamoCollectionsIndexesWithNull.dll
+  SunamoClipboard -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\bin\Debug\net8.0\SunamoClipboard.dll
+  SunamoConverters -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\bin\Debug\netstandard2.0\SunamoConverters.dll
+  SunamoCsproj -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\bin\Debug\net10.0\SunamoCsproj.dll
+  SunamoCollectionWithoutDuplicates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates\bin\Debug\netstandard2.0\SunamoCollectionWithoutDuplicates.dll
+  SunamoCollectionsValuesTableGrid -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsValuesTableGrid\SunamoCollectionsValuesTableGrid\bin\Debug\netstandard2.0\SunamoCollectionsValuesTableGrid.dll
+  SunamoCollectionsNonGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric\bin\Debug\net8.0\SunamoCollectionsNonGeneric.dll
+  SunamoCryptAlgorithms -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\bin\Debug\net8.0\SunamoCryptAlgorithms.dll
+  SunamoCompare -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\bin\Debug\netstandard2.0\SunamoCompare.dll
+  SunamoCollectionWithoutDuplicates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionWithoutDuplicates\SunamoCollectionWithoutDuplicates\bin\Debug\net8.0\SunamoCollectionWithoutDuplicates.dll
+  SunamoConverters -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoConverters\SunamoConverters\bin\Debug\net8.0\SunamoConverters.dll
+  SunamoCsv -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\bin\Debug\net10.0\SunamoCsv.dll
+  SunamoCsv -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\bin\Debug\net8.0\SunamoCsv.dll
+  SunamoCollectionsIndexesWithNull -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsIndexesWithNull\SunamoCollectionsIndexesWithNull\bin\Debug\netstandard2.0\SunamoCollectionsIndexesWithNull.dll
+  SunamoAsync -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\bin\Debug\net8.0\SunamoAsync.dll
+  SunamoChar -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoChar\SunamoChar\bin\Debug\netstandard2.0\SunamoChar.dll
+  SunamoCsv -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\bin\Debug\net9.0\SunamoCsv.dll
+  SunamoCompare -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\bin\Debug\net8.0\SunamoCompare.dll
+  SunamoCrypt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\bin\Debug\net9.0\SunamoCrypt.dll
+  SunamoAI -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\bin\Debug\netstandard2.0\SunamoAI.dll
+  SunamoCssGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\bin\Debug\netstandard2.0\SunamoCssGenerator.dll
+  SunamoAttributes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\SunamoAttributes\bin\Debug\net8.0\SunamoAttributes.dll
+  SunamoCrypt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\bin\Debug\net10.0\SunamoCrypt.dll
+  SunamoCollectionsTo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsTo\SunamoCollectionsTo\bin\Debug\net8.0\SunamoCollectionsTo.dll
+  SunamoDevCodeBase -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\bin\Debug\net10.0\SunamoDevCodeBase.dll
+  SunamoDateTime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\bin\Debug\net8.0\SunamoDateTime.dll
+  SunamoDelegates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\bin\Debug\net10.0\SunamoDelegates.dll
+  SunamoCsv -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\bin\Debug\netstandard2.0\SunamoCsv.dll
+  SunamoCrypt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\bin\Debug\netstandard2.0\SunamoCrypt.dll
+  SunamoDelegates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\bin\Debug\net9.0\SunamoDelegates.dll
+  SunamoClipboard -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\bin\Debug\net9.0\SunamoClipboard.dll
+  SunamoCssGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\bin\Debug\net10.0\SunamoCssGenerator.dll
+  SunamoDevCodeBase -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\bin\Debug\netstandard2.0\SunamoDevCodeBase.dll
+  SunamoDebugCollection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\bin\Debug\net10.0\SunamoDebugCollection.dll
+  SunamoDevCodeBase -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\bin\Debug\net9.0\SunamoDevCodeBase.dll
+  SunamoCollectionsTo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsTo\SunamoCollectionsTo\bin\Debug\netstandard2.0\SunamoCollectionsTo.dll
+  SunamoDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\bin\Debug\netstandard2.0\SunamoDictionary.dll
+  SunamoDateTime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\bin\Debug\netstandard2.0\SunamoDateTime.dll
+  SunamoDotnetCmdBuilder -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\bin\Debug\net10.0\SunamoDotnetCmdBuilder.dll
+  SunamoClipboard -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClipboard\SunamoClipboard\bin\Debug\netstandard2.0\SunamoClipboard.dll
+  SunamoDebugIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\bin\Debug\net8.0\SunamoDebugIO.dll
+  SunamoDebugIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\bin\Debug\net10.0\SunamoDebugIO.dll
+  SunamoDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\bin\Debug\net10.0\SunamoDictionary.dll
+  SunamoDebugIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\bin\Debug\netstandard2.0\SunamoDebugIO.dll
+  SunamoCsproj -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\bin\Debug\net8.0\SunamoCsproj.dll
+  SunamoCssGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\bin\Debug\net8.0\SunamoCssGenerator.dll
+  SunamoDevCodeBase -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeBase\SunamoDevCodeBase\bin\Debug\net8.0\SunamoDevCodeBase.dll
+  SunamoDebugging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\bin\Debug\net8.0\SunamoDebugging.dll
+  SunamoDebugIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\bin\Debug\net9.0\SunamoDebugIO.dll
+  SunamoDelegates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\bin\Debug\net8.0\SunamoDelegates.dll
+  SunamoData -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\bin\Debug\netstandard2.0\SunamoData.dll
+  SunamoDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\bin\Debug\net8.0\SunamoDictionary.dll
+  SunamoCssGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\bin\Debug\net9.0\SunamoCssGenerator.dll
+  SunamoEmbeddedResources -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\bin\Debug\net10.0\SunamoEmbeddedResources.dll
+  SunamoData -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\bin\Debug\net10.0\SunamoData.dll
+  SunamoDotNetZip -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\bin\Debug\netstandard2.0\SunamoDotNetZip.dll
+  SunamoDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDictionary\SunamoDictionary\bin\Debug\net9.0\SunamoDictionary.dll
+  SunamoDependencyInjection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDependencyInjection\SunamoDependencyInjection\bin\Debug\net10.0\SunamoDependencyInjection.dll
+  SunamoDateTime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\bin\Debug\net10.0\SunamoDateTime.dll
+  SunamoEditorConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\bin\Debug\net10.0\SunamoEditorConfig.dll
+  SunamoDebugging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\bin\Debug\netstandard2.0\SunamoDebugging.dll
+  SunamoDotNetZip -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\bin\Debug\net9.0\SunamoDotNetZip.dll
+  SunamoEntity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\bin\Debug\net10.0\SunamoEntity.dll
+  SunamoEnumsHelper -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\bin\Debug\net9.0\SunamoEnumsHelper.dll
+  SunamoEnumsHelper -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\bin\Debug\net10.0\SunamoEnumsHelper.dll
+  SunamoDebugging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\bin\Debug\net9.0\SunamoDebugging.dll
+  SunamoDevCode -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\bin\Debug\net9.0\SunamoDevCode.dll
+  SunamoSolutionsIndexer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\SunamoSolutionsIndexer\bin\Debug\net9.0\SunamoSolutionsIndexer.dll
+  SunamoCollectionsNonGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric\bin\Debug\netstandard2.0\SunamoCollectionsNonGeneric.dll
+  SunamoEntity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\bin\Debug\net9.0\SunamoEntity.dll
+  SunamoDotNetZip -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\bin\Debug\net10.0\SunamoDotNetZip.dll
+  SunamoEnums -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\bin\Debug\net10.0\SunamoEnums.dll
+  SunamoEditorConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\bin\Debug\net9.0\SunamoEditorConfig.dll
+  SunamoDependencyInjection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDependencyInjection\SunamoDependencyInjection\bin\Debug\net9.0\SunamoDependencyInjection.dll
+  SunamoEmoticons -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\bin\Debug\netstandard2.0\SunamoEmoticons.dll
+  SunamoEntity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\bin\Debug\netstandard2.0\SunamoEntity.dll
+  SunamoCrypt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\bin\Debug\net8.0\SunamoCrypt.dll
+  SunamoEmoticons -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\bin\Debug\net10.0\SunamoEmoticons.dll
+  SunamoEssential -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\bin\Debug\net10.0\SunamoEssential.dll
+  SunamoEnums -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\bin\Debug\net9.0\SunamoEnums.dll
+  SunamoEmoticons -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\bin\Debug\net9.0\SunamoEmoticons.dll
+  SunamoExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\bin\Debug\net9.0\SunamoExtensions.dll
+  SunamoCSharp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\bin\Debug\net10.0\SunamoCSharp.dll
+  SunamoExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\bin\Debug\netstandard2.0\SunamoExtensions.dll
+  SunamoData -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\bin\Debug\net8.0\SunamoData.dll
+  SunamoEditorConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\bin\Debug\net8.0\SunamoEditorConfig.dll
+  SunamoEnumsHelper -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\bin\Debug\netstandard2.0\SunamoEnumsHelper.dll
+  SunamoEnums -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\bin\Debug\netstandard2.0\SunamoEnums.dll
+  SunamoFileIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\bin\Debug\net10.0\SunamoFileIO.dll
+  SunamoExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\bin\Debug\net8.0\SunamoExtensions.dll
+  SunamoExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\bin\Debug\net10.0\SunamoExtensions.dll
+  SunamoDevCode -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\bin\Debug\net8.0\SunamoDevCode.dll
+  SunamoCSharp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\bin\Debug\net9.0\SunamoCSharp.dll
+  SunamoDotnetCmdBuilder -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\bin\Debug\netstandard2.0\SunamoDotnetCmdBuilder.dll
+  SunamoFilesIndex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\bin\Debug\net8.0\SunamoFilesIndex.dll
+  SunamoEmoticons -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmoticons\SunamoEmoticons\bin\Debug\net8.0\SunamoEmoticons.dll
+  SunamoExceptions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\bin\Debug\net9.0\SunamoExceptions.dll
+  SunamoCodeGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\bin\Debug\net10.0\SunamoCodeGenerator.dll
+  SunamoEditorConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\bin\Debug\netstandard2.0\SunamoEditorConfig.dll
+  SunamoEnumsHelper -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnumsHelper\SunamoEnumsHelper\bin\Debug\net8.0\SunamoEnumsHelper.dll
+  SunamoFilesIndex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\bin\Debug\net10.0\SunamoFilesIndex.dll
+  SunamoEnums -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEnums\SunamoEnums\bin\Debug\net8.0\SunamoEnums.dll
+  SunamoFileExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\bin\Debug\net10.0\SunamoFileExtensions.dll
+  SunamoCryptAlgorithms -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\bin\Debug\net9.0\SunamoCryptAlgorithms.dll
+  SunamoEntity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEntity\SunamoEntity\bin\Debug\net8.0\SunamoEntity.dll
+  SunamoExceptions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\bin\Debug\net10.0\SunamoExceptions.dll
+  SunamoDependencyInjection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDependencyInjection\SunamoDependencyInjection\bin\Debug\net8.0\SunamoDependencyInjection.dll
+  SunamoDotNetZip -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\bin\Debug\net8.0\SunamoDotNetZip.dll
+  SunamoSolutionsIndexer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\SunamoSolutionsIndexer\bin\Debug\netstandard2.0\SunamoSolutionsIndexer.dll
+  SunamoEmbeddedResources -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\bin\Debug\net9.0\SunamoEmbeddedResources.dll
+  SunamoCodeGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\bin\Debug\net9.0\SunamoCodeGenerator.dll
+  SunamoCSharp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\bin\Debug\netstandard2.0\SunamoCSharp.dll
+  SunamoDevCodeFileFormats -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeFileFormats\SunamoDevCodeFileFormats\bin\Debug\net10.0\SunamoDevCodeFileFormats.dll
+  SunamoDateTime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\bin\Debug\net9.0\SunamoDateTime.dll
+  SunamoDebugging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\bin\Debug\net10.0\SunamoDebugging.dll
+  SunamoDependencyInjection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDependencyInjection\SunamoDependencyInjection\bin\Debug\netstandard2.0\SunamoDependencyInjection.dll
+  SunamoExceptions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\bin\Debug\netstandard2.0\SunamoExceptions.dll
+  SunamoEmbeddedResources -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\bin\Debug\net8.0\SunamoEmbeddedResources.dll
+  SunamoFilesIndex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\bin\Debug\net9.0\SunamoFilesIndex.dll
+  SunamoData -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\bin\Debug\net9.0\SunamoData.dll
+  SunamoDebugCollection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\bin\Debug\net8.0\SunamoDebugCollection.dll
+  SunamoDotnetCmdBuilder -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\bin\Debug\net8.0\SunamoDotnetCmdBuilder.dll
+  SunamoFileIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\bin\Debug\net8.0\SunamoFileIO.dll
+  SunamoFileExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\bin\Debug\net9.0\SunamoFileExtensions.dll
+  SunamoExceptions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\bin\Debug\net8.0\SunamoExceptions.dll
+  SunamoDotnetCmdBuilder -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\bin\Debug\net9.0\SunamoDotnetCmdBuilder.dll
+  SunamoFileSystem -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\bin\Debug\net9.0\SunamoFileSystem.dll
+  SunamoFluentFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\bin\Debug\netstandard2.0\SunamoFluentFtp.dll
+  SunamoFilesIndex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFilesIndex\SunamoFilesIndex\bin\Debug\netstandard2.0\SunamoFilesIndex.dll
+  SunamoFileSystem -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\bin\Debug\net10.0\SunamoFileSystem.dll
+  SunamoFluentFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\bin\Debug\net8.0\SunamoFluentFtp.dll
+  SunamoFluentFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\bin\Debug\net9.0\SunamoFluentFtp.dll
+  SunamoFileExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\bin\Debug\netstandard2.0\SunamoFileExtensions.dll
+  SunamoDevCodeCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\bin\Debug\net9.0\SunamoDevCodeCore.dll
+  SunamoSolutionsIndexer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\SunamoSolutionsIndexer\bin\Debug\net8.0\SunamoSolutionsIndexer.dll
+  SunamoFileSystem -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\bin\Debug\net8.0\SunamoFileSystem.dll
+  SunamoFluentFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\bin\Debug\net10.0\SunamoFluentFtp.dll
+  SunamoDevCodeFileFormats -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeFileFormats\SunamoDevCodeFileFormats\bin\Debug\netstandard2.0\SunamoDevCodeFileFormats.dll
+  SunamoCsproj -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\bin\Debug\net9.0\SunamoCsproj.dll
+  SunamoFileIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\bin\Debug\net9.0\SunamoFileIO.dll
+  SunamoGetFolders -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\bin\Debug\net10.0\SunamoGetFolders.dll
+  SunamoFileExtensions -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\bin\Debug\net8.0\SunamoFileExtensions.dll
+  SunamoEssential -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\bin\Debug\net9.0\SunamoEssential.dll
+  SunamoDevCodeFileFormats -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeFileFormats\SunamoDevCodeFileFormats\bin\Debug\net9.0\SunamoDevCodeFileFormats.dll
+  SunamoCSharp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCSharp\SunamoCSharp\bin\Debug\net8.0\SunamoCSharp.dll
+  SunamoGetFolders -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\bin\Debug\net9.0\SunamoGetFolders.dll
+  SunamoDebugCollection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\bin\Debug\net9.0\SunamoDebugCollection.dll
+  SunamoCsproj -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\bin\Debug\netstandard2.0\SunamoCsproj.dll
+  SunamoGeo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\bin\Debug\net10.0\SunamoGeo.dll
+  SunamoSolutionsIndexer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\SunamoSolutionsIndexer\bin\Debug\net10.0\SunamoSolutionsIndexer.dll
+  SunamoColors -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\bin\Debug\netstandard2.0\SunamoColors.dll
+  SunamoGoogleMyMaps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleMyMaps\SunamoGoogleMyMaps\bin\Debug\net9.0\SunamoGoogleMyMaps.dll
+  SunamoGetFiles -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\bin\Debug\net8.0\SunamoGetFiles.dll
+  SunamoGetFiles -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\bin\Debug\net10.0\SunamoGetFiles.dll
+  SunamoGeo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\bin\Debug\net8.0\SunamoGeo.dll
+  SunamoEmbeddedResources -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEmbeddedResources\SunamoEmbeddedResources\bin\Debug\netstandard2.0\SunamoEmbeddedResources.dll
+  SunamoGenerators -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\bin\Debug\net8.0\SunamoGenerators.dll
+  SunamoEssential -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\bin\Debug\netstandard2.0\SunamoEssential.dll
+  SunamoFileSystem -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\bin\Debug\netstandard2.0\SunamoFileSystem.dll
+  SunamoGoogleMyMaps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleMyMaps\SunamoGoogleMyMaps\bin\Debug\net8.0\SunamoGoogleMyMaps.dll
+  SunamoGoogleSheets -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\bin\Debug\net10.0\SunamoGoogleSheets.dll
+  SunamoGitConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\bin\Debug\net10.0\SunamoGitConfig.dll
+  SunamoGenerators -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\bin\Debug\net9.0\SunamoGenerators.dll
+  SunamoFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\bin\Debug\netstandard2.0\SunamoFtp.dll
+  SunamoGoogleMyMaps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleMyMaps\SunamoGoogleMyMaps\bin\Debug\net10.0\SunamoGoogleMyMaps.dll
+  SunamoFileIO -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileIO\SunamoFileIO\bin\Debug\netstandard2.0\SunamoFileIO.dll
+  SunamoGoogleSheets -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\bin\Debug\net9.0\SunamoGoogleSheets.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(65,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs(47,52): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(109,45): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(27,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(19,44): warning SYSLIB0058: 'SslStream.HashAlgorithm' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(20,43): warning SYSLIB0058: 'SslStream.HashStrength' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(21,46): warning SYSLIB0058: 'SslStream.CipherAlgorithm' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(22,47): warning SYSLIB0058: 'SslStream.CipherStrength' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(23,52): warning SYSLIB0058: 'SslStream.KeyExchangeAlgorithm' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(24,53): warning SYSLIB0058: 'SslStream.KeyExchangeStrength' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(48,82): warning SYSLIB0039: 'SslProtocols.Tls' is obsolete: 'TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use SslProtocols.None to defer to OS defaults.' (https://aka.ms/dotnet-warnings/SYSLIB0039) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(214,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(21,46): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(79,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(141,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(273,38): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(223,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(236,9): warning CA2022: Avoid inexact read with 'System.IO.FileStream.Read(byte[], int, int)' (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2022) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+  SunamoFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\bin\Debug\net10.0\SunamoFtp.dll
+  SunamoGitConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\bin\Debug\net9.0\SunamoGitConfig.dll
+  SunamoGitConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\bin\Debug\net8.0\SunamoGitConfig.dll
+  SunamoCollectionsTo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsTo\SunamoCollectionsTo\bin\Debug\net9.0\SunamoCollectionsTo.dll
+  SunamoGeo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\bin\Debug\net9.0\SunamoGeo.dll
+  SunamoGoogleSheets -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\bin\Debug\netstandard2.0\SunamoGoogleSheets.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(65,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs(47,52): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(109,45): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(48,82): warning SYSLIB0039: 'SslProtocols.Tls' is obsolete: 'TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use SslProtocols.None to defer to OS defaults.' (https://aka.ms/dotnet-warnings/SYSLIB0039) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(27,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(273,38): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(214,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(21,46): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(79,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(141,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(223,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+  SunamoGetFiles -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\bin\Debug\net9.0\SunamoGetFiles.dll
+  SunamoFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\bin\Debug\net8.0\SunamoFtp.dll
+  SunamoGeo -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGeo\SunamoGeo\bin\Debug\netstandard2.0\SunamoGeo.dll
+  SunamoHelpers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\bin\Debug\net8.0\SunamoHelpers.dll
+  SunamoHelpers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\bin\Debug\netstandard2.0\SunamoHelpers.dll
+  SunamoHtml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\bin\Debug\netstandard2.0\SunamoHtml.dll
+  SunamoGpx -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\bin\Debug\net10.0\SunamoGpx.dll
+  SunamoHelpers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\bin\Debug\net10.0\SunamoHelpers.dll
+  SunamoGpx -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\bin\Debug\netstandard2.0\SunamoGpx.dll
+  SunamoIni -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\bin\Debug\net10.0\SunamoIni.dll
+  SunamoHtml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\bin\Debug\net8.0\SunamoHtml.dll
+  SunamoGoogleMyMaps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleMyMaps\SunamoGoogleMyMaps\bin\Debug\netstandard2.0\SunamoGoogleMyMaps.dll
+  SunamoMsBuild -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\bin\Debug\net10.0\SunamoMsBuild.dll
+  SunamoIni -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\bin\Debug\netstandard2.0\SunamoIni.dll
+  SunamoGitConfig -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGitConfig\SunamoGitConfig\bin\Debug\netstandard2.0\SunamoGitConfig.dll
+  SunamoMsBuild -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\bin\Debug\net8.0\SunamoMsBuild.dll
+  SunamoGetFiles -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFiles\SunamoGetFiles\bin\Debug\netstandard2.0\SunamoGetFiles.dll
+  SunamoGetFolders -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\bin\Debug\netstandard2.0\SunamoGetFolders.dll
+  SunamoLaTeX -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\bin\Debug\net10.0\SunamoLaTeX.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs(16,5): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs(32,42): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(35,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(94,39): warning SYSLIB0014: 'WebRequest.CreateHttp(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(153,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(180,50): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs(63,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+  SunamoHttp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\bin\Debug\net8.0\SunamoHttp.dll
+  SunamoLazy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\bin\Debug\net10.0\SunamoLazy.dll
+  SunamoBts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\bin\Debug\net9.0\SunamoBts.dll
+  SunamoInterfaces -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\bin\Debug\net9.0\SunamoInterfaces.dll
+  SunamoLazy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\bin\Debug\net8.0\SunamoLazy.dll
+  SunamoGpx -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\bin\Debug\net8.0\SunamoGpx.dll
+  SunamoHelpers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\bin\Debug\net9.0\SunamoHelpers.dll
+  SunamoIni -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\bin\Debug\net8.0\SunamoIni.dll
+  SunamoLaTeX -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\bin\Debug\net8.0\SunamoLaTeX.dll
+  SunamoInterfaces -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\bin\Debug\netstandard2.0\SunamoInterfaces.dll
+  SunamoEssential -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEssential\SunamoEssential\bin\Debug\net8.0\SunamoEssential.dll
+  SunamoHttp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\bin\Debug\netstandard2.0\SunamoHttp.dll
+  SunamoHtml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\bin\Debug\net9.0\SunamoHtml.dll
+  SunamoLogging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\bin\Debug\net9.0\SunamoLogging.dll
+  SunamoLang -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\bin\Debug\net10.0\SunamoLang.dll
+  SunamoMarkdown -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\bin\Debug\net10.0\SunamoMarkdown.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs(32,42): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs(16,5): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(16,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(26,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(35,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(94,39): warning SYSLIB0014: 'WebRequest.CreateHttp(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(153,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(180,50): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs(63,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+  SunamoGenerators -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\bin\Debug\net10.0\SunamoGenerators.dll
+  SunamoHttp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\bin\Debug\net10.0\SunamoHttp.dll
+  SunamoIni -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoIni\SunamoIni\bin\Debug\net9.0\SunamoIni.dll
+  SunamoLogging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\bin\Debug\net10.0\SunamoLogging.dll
+  SunamoMail -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\bin\Debug\net9.0\SunamoMail.dll
+  SunamoMsBuild -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\bin\Debug\netstandard2.0\SunamoMsBuild.dll
+  SunamoCollectionsNonGeneric -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionsNonGeneric\SunamoCollectionsNonGeneric\bin\Debug\net9.0\SunamoCollectionsNonGeneric.dll
+  SunamoMarkdown -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\bin\Debug\net8.0\SunamoMarkdown.dll
+  SunamoLazy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\bin\Debug\net9.0\SunamoLazy.dll
+  SunamoJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\bin\Debug\net9.0\SunamoJson.dll
+  SunamoMail -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\bin\Debug\net10.0\SunamoMail.dll
+  SunamoJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\bin\Debug\netstandard2.0\SunamoJson.dll
+  SunamoLang -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\bin\Debug\net9.0\SunamoLang.dll
+  SunamoLang -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\bin\Debug\netstandard2.0\SunamoLang.dll
+  SunamoLang -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLang\SunamoLang\bin\Debug\net8.0\SunamoLang.dll
+  SunamoLazy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLazy\SunamoLazy\bin\Debug\netstandard2.0\SunamoLazy.dll
+  SunamoCodeGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\bin\Debug\netstandard2.0\SunamoCodeGenerator.dll
+  SunamoMsBuild -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\bin\Debug\net9.0\SunamoMsBuild.dll
+  SunamoJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\bin\Debug\net8.0\SunamoJson.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(65,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs(47,52): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(109,45): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(27,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(214,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(48,82): warning SYSLIB0039: 'SslProtocols.Tls' is obsolete: 'TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use SslProtocols.None to defer to OS defaults.' (https://aka.ms/dotnet-warnings/SYSLIB0039) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(21,46): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(79,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(141,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(273,38): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(223,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(236,9): warning CA2022: Avoid inexact read with 'System.IO.FileStream.Read(byte[], int, int)' (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2022) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+  SunamoFtp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\bin\Debug\net9.0\SunamoFtp.dll
+  SunamoCodeGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\bin\Debug\net8.0\SunamoCodeGenerator.dll
+  SunamoMail -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\bin\Debug\netstandard2.0\SunamoMail.dll
+  SunamoMsgReader -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\bin\Debug\net10.0\SunamoMsgReader.dll
+  SunamoJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\bin\Debug\net10.0\SunamoJson.dll
+  SunamoMail -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMail\SunamoMail\bin\Debug\net8.0\SunamoMail.dll
+  SunamoMathpix -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMathpix\SunamoMathpix\bin\Debug\net8.0\SunamoMathpix.dll
+  SunamoMime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\bin\Debug\netstandard2.0\SunamoMime.dll
+  SunamoDevCodeCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\bin\Debug\net8.0\SunamoDevCodeCore.dll
+  SunamoNuGetProtocol -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\bin\Debug\net9.0\SunamoNuGetProtocol.dll
+  SunamoLaTeX -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\bin\Debug\netstandard2.0\SunamoLaTeX.dll
+  SunamoPercentCalculator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\bin\Debug\net10.0\SunamoPercentCalculator.dll
+  SunamoMsSqlServer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\bin\Debug\net10.0\SunamoMsSqlServer.dll
+  SunamoMime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\bin\Debug\net10.0\SunamoMime.dll
+  SunamoNuGetProtocol -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\bin\Debug\net10.0\SunamoNuGetProtocol.dll
+  SunamoMarkdown -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\bin\Debug\net9.0\SunamoMarkdown.dll
+  SunamoPercentCalculator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\bin\Debug\netstandard2.0\SunamoPercentCalculator.dll
+  SunamoPercentCalculator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\bin\Debug\net9.0\SunamoPercentCalculator.dll
+  SunamoMime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\bin\Debug\net8.0\SunamoMime.dll
+  SunamoNumbers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\bin\Debug\net10.0\SunamoNumbers.dll
+  SunamoNumbers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\bin\Debug\net9.0\SunamoNumbers.dll
+  SunamoPaths -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\bin\Debug\net10.0\SunamoPaths.dll
+  SunamoParsing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\bin\Debug\net10.0\SunamoParsing.dll
+  SunamoPaths -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\bin\Debug\net8.0\SunamoPaths.dll
+  SunamoMsSqlServer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\bin\Debug\netstandard2.0\SunamoMsSqlServer.dll
+  SunamoPackageJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\bin\Debug\net10.0\SunamoPackageJson.dll
+  SunamoNumbers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\bin\Debug\netstandard2.0\SunamoNumbers.dll
+  SunamoPackageJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\bin\Debug\net9.0\SunamoPackageJson.dll
+  SunamoPaths -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\bin\Debug\net9.0\SunamoPaths.dll
+  SunamoMathpix -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMathpix\SunamoMathpix\bin\Debug\net9.0\SunamoMathpix.dll
+  SunamoPInvoke -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\bin\Debug\net8.0\SunamoPInvoke.dll
+  SunamoPercentCalculator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPercentCalculator\SunamoPercentCalculator\bin\Debug\net8.0\SunamoPercentCalculator.dll
+  SunamoPaths -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\bin\Debug\netstandard2.0\SunamoPaths.dll
+  SunamoMime -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\bin\Debug\net9.0\SunamoMime.dll
+  SunamoNuGetProtocol -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\bin\Debug\net8.0\SunamoNuGetProtocol.dll
+  SunamoPackageJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\bin\Debug\netstandard2.0\SunamoPackageJson.dll
+  SunamoOctokit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\bin\Debug\net10.0\SunamoOctokit.dll
+  SunamoPInvoke -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\bin\Debug\net10.0\SunamoPInvoke.dll
+  SunamoNuGetProtocol -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\bin\Debug\netstandard2.0\SunamoNuGetProtocol.dll
+  SunamoDevCodeCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\bin\Debug\netstandard2.0\SunamoDevCodeCore.dll
+  SunamoMsgReader -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\bin\Debug\net8.0\SunamoMsgReader.dll
+  SunamoPackageJson -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\bin\Debug\net8.0\SunamoPackageJson.dll
+  SunamoOctokit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\bin\Debug\netstandard2.0\SunamoOctokit.dll
+  SunamoRegex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\bin\Debug\netstandard2.0\SunamoRegex.dll
+  SunamoOctokit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\bin\Debug\net9.0\SunamoOctokit.dll
+  SunamoRandom -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\bin\Debug\net8.0\SunamoRandom.dll
+  SunamoPInvoke -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\bin\Debug\net9.0\SunamoPInvoke.dll
+  SunamoRegex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\bin\Debug\net10.0\SunamoRegex.dll
+  SunamoReflection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\bin\Debug\net9.0\SunamoReflection.dll
+  SunamoMsgReader -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\bin\Debug\net9.0\SunamoMsgReader.dll
+  SunamoReflection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\bin\Debug\net8.0\SunamoReflection.dll
+  SunamoPlatformUwpInterop -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\bin\Debug\net10.0\SunamoPlatformUwpInterop.dll
+  SunamoRegex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\bin\Debug\net9.0\SunamoRegex.dll
+  SunamoRandom -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\bin\Debug\net10.0\SunamoRandom.dll
+  SunamoOctokit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoOctokit\SunamoOctokit\bin\Debug\net8.0\SunamoOctokit.dll
+  SunamoGenerators -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\bin\Debug\netstandard2.0\SunamoGenerators.dll
+  SunamoMsSqlServer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\bin\Debug\net8.0\SunamoMsSqlServer.dll
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs(32,42): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs(16,5): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(16,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(26,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(35,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(94,39): warning SYSLIB0014: 'WebRequest.CreateHttp(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(153,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(180,50): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs(63,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+  SunamoHttp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\bin\Debug\net9.0\SunamoHttp.dll
+  SunamoPlatformUwpInterop -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\bin\Debug\net8.0\SunamoPlatformUwpInterop.dll
+  SunamoParsing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\bin\Debug\net8.0\SunamoParsing.dll
+  SunamoParsing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\bin\Debug\net9.0\SunamoParsing.dll
+  SunamoMarkdown -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMarkdown\SunamoMarkdown\bin\Debug\netstandard2.0\SunamoMarkdown.dll
+  SunamoPInvoke -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\bin\Debug\netstandard2.0\SunamoPInvoke.dll
+  SunamoGetFolders -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGetFolders\SunamoGetFolders\bin\Debug\net8.0\SunamoGetFolders.dll
+  SunamoResult -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\bin\Debug\net10.0\SunamoResult.dll
+  SunamoRobotsTxt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\bin\Debug\net10.0\SunamoRobotsTxt.dll
+  SunamoRL -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\bin\Debug\net10.0\SunamoRL.dll
+  SunamoReflection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\bin\Debug\net10.0\SunamoReflection.dll
+  SunamoParsing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\bin\Debug\netstandard2.0\SunamoParsing.dll
+  SunamoRegex -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRegex\SunamoRegex\bin\Debug\net8.0\SunamoRegex.dll
+  SunamoMathpix -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMathpix\SunamoMathpix\bin\Debug\net10.0\SunamoMathpix.dll
+  SunamoRandom -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\bin\Debug\net9.0\SunamoRandom.dll
+  SunamoRobotsTxt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\bin\Debug\net8.0\SunamoRobotsTxt.dll
+  SunamoRoslyn -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\bin\Debug\netstandard2.0\SunamoRoslyn.dll
+  SunamoReflection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoReflection\SunamoReflection\bin\Debug\netstandard2.0\SunamoReflection.dll
+  SunamoRss -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\bin\Debug\net10.0\SunamoRss.dll
+  SunamoRss -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\bin\Debug\net8.0\SunamoRss.dll
+  SunamoSecurity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\bin\Debug\net10.0\SunamoSecurity.dll
+  SunamoDevCodeCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\bin\Debug\net10.0\SunamoDevCodeCore.dll
+  SunamoRoslyn -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\bin\Debug\net10.0\SunamoRoslyn.dll
+  SunamoResult -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\bin\Debug\net8.0\SunamoResult.dll
+  SunamoRss -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\bin\Debug\net9.0\SunamoRss.dll
+  SunamoRoslyn -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\bin\Debug\net9.0\SunamoRoslyn.dll
+  SunamoRL -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\bin\Debug\net9.0\SunamoRL.dll
+  SunamoAps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\bin\Debug\net8.0\SunamoAps.dll
+  SunamoRL -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\bin\Debug\net8.0\SunamoRL.dll
+  SunamoRss -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRss\SunamoRss\bin\Debug\netstandard2.0\SunamoRss.dll
+  SunamoLogging -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLogging\SunamoLogging\bin\Debug\net8.0\SunamoLogging.dll
+  SunamoLaTeX -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoLaTeX\SunamoLaTeX\bin\Debug\net9.0\SunamoLaTeX.dll
+  SunamoGoogleSheets -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGoogleSheets\SunamoGoogleSheets\bin\Debug\net8.0\SunamoGoogleSheets.dll
+  SunamoSE -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\bin\Debug\net10.0\SunamoSE.dll
+  SunamoRuleset -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\bin\Debug\netstandard2.0\SunamoRuleset.dll
+  SunamoToUnixLineEnding -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToUnixLineEnding\SunamoToUnixLineEnding\bin\Debug\net10.0\SunamoToUnixLineEnding.dll
+  SunamoToUnixLineEnding -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToUnixLineEnding\SunamoToUnixLineEnding\bin\Debug\net8.0\SunamoToUnixLineEnding.dll
+  SunamoSerializer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\bin\Debug\net8.0\SunamoSerializer.dll
+  SunamoSE -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\bin\Debug\net8.0\SunamoSE.dll
+  SunamoSecurity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\bin\Debug\netstandard2.0\SunamoSecurity.dll
+  SunamoRuleset -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\bin\Debug\net10.0\SunamoRuleset.dll
+  SunamoMsSqlServer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\bin\Debug\net9.0\SunamoMsSqlServer.dll
+  SunamoSelenium -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\bin\Debug\net9.0\SunamoSelenium.dll
+  SunamoRandom -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\bin\Debug\netstandard2.0\SunamoRandom.dll
+  SunamoSE -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\bin\Debug\netstandard2.0\SunamoSE.dll
+  SunamoRuleset -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\bin\Debug\net8.0\SunamoRuleset.dll
+  SunamoRoslyn -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRoslyn\SunamoRoslyn\bin\Debug\net8.0\SunamoRoslyn.dll
+  SunamoStopwatch -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\bin\Debug\net8.0\SunamoStopwatch.dll
+  SunamoSelenium -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\bin\Debug\net10.0\SunamoSelenium.dll
+  SunamoStopwatch -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\bin\Debug\netstandard2.0\SunamoStopwatch.dll
+  SunamoStopwatch -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\bin\Debug\net10.0\SunamoStopwatch.dll
+  SunamoDevCodeFileFormats -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeFileFormats\SunamoDevCodeFileFormats\bin\Debug\net8.0\SunamoDevCodeFileFormats.dll
+  SunamoRobotsTxt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\bin\Debug\netstandard2.0\SunamoRobotsTxt.dll
+  SunamoRL -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRL\SunamoRL\bin\Debug\netstandard2.0\SunamoRL.dll
+  SunamoSerializer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\bin\Debug\netstandard2.0\SunamoSerializer.dll
+  SunamoStreams -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\bin\Debug\netstandard2.0\SunamoStreams.dll
+  SunamoStreams -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\bin\Debug\net9.0\SunamoStreams.dll
+  SunamoPS -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\bin\Debug\net10.0\SunamoPS.dll
+  SunamoSerializer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\bin\Debug\net9.0\SunamoSerializer.dll
+  SunamoSerializer -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSerializer\SunamoSerializer\bin\Debug\net10.0\SunamoSerializer.dll
+  SunamoStreams -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\bin\Debug\net10.0\SunamoStreams.dll
+  SunamoSharedMisc -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\bin\Debug\net10.0\SunamoSharedMisc.dll
+  SunamoToUnixLineEnding -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToUnixLineEnding\SunamoToUnixLineEnding\bin\Debug\net9.0\SunamoToUnixLineEnding.dll
+  SunamoSecurity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\bin\Debug\net9.0\SunamoSecurity.dll
+  SunamoPlatformUwpInterop -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPlatformUwpInterop\SunamoPlatformUwpInterop\bin\Debug\net9.0\SunamoPlatformUwpInterop.dll
+  SunamoStringJoinPairs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\bin\Debug\net8.0\SunamoStringJoinPairs.dll
+  SunamoHtml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\bin\Debug\net10.0\SunamoHtml.dll
+  SunamoStringFormat -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\bin\Debug\net10.0\SunamoStringFormat.dll
+  SunamoResult -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\bin\Debug\net9.0\SunamoResult.dll
+  SunamoStringFormat -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\bin\Debug\net8.0\SunamoStringFormat.dll
+  SunamoStringParts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\bin\Debug\net10.0\SunamoStringParts.dll
+  SunamoStringParts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\bin\Debug\net8.0\SunamoStringParts.dll
+  SunamoStringParts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\bin\Debug\netstandard2.0\SunamoStringParts.dll
+  SunamoStopwatch -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\bin\Debug\net9.0\SunamoStopwatch.dll
+  SunamoAps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\bin\Debug\net9.0\SunamoAps.dll
+  SunamoStorage -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\bin\Debug\net10.0\SunamoStorage.dll
+  SunamoStorage -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\bin\Debug\net8.0\SunamoStorage.dll
+  SunamoStringReplace -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\bin\Debug\net8.0\SunamoStringReplace.dll
+  SunamoStringSubstring -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\bin\Debug\net10.0\SunamoStringSubstring.dll
+  SunamoSharedMisc -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\bin\Debug\net8.0\SunamoSharedMisc.dll
+  SunamoStringGetString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\bin\Debug\net10.0\SunamoStringGetString.dll
+  SunamoSelenium -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\bin\Debug\net8.0\SunamoSelenium.dll
+  SunamoStringReplace -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\bin\Debug\net10.0\SunamoStringReplace.dll
+  SunamoStringReplace -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\bin\Debug\net9.0\SunamoStringReplace.dll
+  SunamoDebugCollection -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\bin\Debug\netstandard2.0\SunamoDebugCollection.dll
+  SunamoStringSubstring -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\bin\Debug\netstandard2.0\SunamoStringSubstring.dll
+  SunamoStringJoin -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\bin\Debug\net8.0\SunamoStringJoin.dll
+  SunamoStorage -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\bin\Debug\netstandard2.0\SunamoStorage.dll
+  SunamoGpx -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\bin\Debug\net9.0\SunamoGpx.dll
+  SunamoStringJoin -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\bin\Debug\net10.0\SunamoStringJoin.dll
+  SunamoStringJoinPairs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\bin\Debug\net10.0\SunamoStringJoinPairs.dll
+  SunamoStorage -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\bin\Debug\net9.0\SunamoStorage.dll
+  SunamoSharedMisc -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\bin\Debug\net9.0\SunamoSharedMisc.dll
+  SunamoAps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\bin\Debug\netstandard2.0\SunamoAps.dll
+  SunamoResult -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoResult\SunamoResult\bin\Debug\netstandard2.0\SunamoResult.dll
+  SunamoStringSubstring -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\bin\Debug\net8.0\SunamoStringSubstring.dll
+  SunamoStringGetString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\bin\Debug\net8.0\SunamoStringGetString.dll
+  SunamoStringParts -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringParts\SunamoStringParts\bin\Debug\net9.0\SunamoStringParts.dll
+  SunamoStringSplit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\bin\Debug\net10.0\SunamoStringSplit.dll
+  SunamoStringGetLines -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\bin\Debug\net10.0\SunamoStringGetLines.dll
+  SunamoSE -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSE\SunamoSE\bin\Debug\net9.0\SunamoSE.dll
+  SunamoTextIndexing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\bin\Debug\net9.0\SunamoTextIndexing.dll
+  SunamoThisApp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\bin\Debug\net10.0\SunamoThisApp.dll
+  SunamoStringJoinPairs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\bin\Debug\net9.0\SunamoStringJoinPairs.dll
+  SunamoDelegates -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\bin\Debug\netstandard2.0\SunamoDelegates.dll
+  SunamoInterfaces -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\bin\Debug\net10.0\SunamoInterfaces.dll
+  SunamoTextIndexing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\bin\Debug\netstandard2.0\SunamoTextIndexing.dll
+  SunamoStringJoin -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\bin\Debug\net9.0\SunamoStringJoin.dll
+  SunamoText -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\bin\Debug\net8.0\SunamoText.dll
+  SunamoThisApp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\bin\Debug\net9.0\SunamoThisApp.dll
+  SunamoStringSubstring -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSubstring\SunamoStringSubstring\bin\Debug\net9.0\SunamoStringSubstring.dll
+  SunamoNumbers -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\bin\Debug\net8.0\SunamoNumbers.dll
+  SunamoAps -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\bin\Debug\net10.0\SunamoAps.dll
+  SunamoStringJoinPairs -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoinPairs\SunamoStringJoinPairs\bin\Debug\netstandard2.0\SunamoStringJoinPairs.dll
+  SunamoString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\bin\Debug\net10.0\SunamoString.dll
+  SunamoThreading -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\bin\Debug\net8.0\SunamoThreading.dll
+  SunamoStringSplit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\bin\Debug\net9.0\SunamoStringSplit.dll
+  SunamoStringFormat -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\bin\Debug\netstandard2.0\SunamoStringFormat.dll
+  SunamoStringSplit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\bin\Debug\netstandard2.0\SunamoStringSplit.dll
+  SunamoStringReplace -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringReplace\SunamoStringReplace\bin\Debug\netstandard2.0\SunamoStringReplace.dll
+  SunamoPS -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\bin\Debug\net8.0\SunamoPS.dll
+  SunamoThisApp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\bin\Debug\netstandard2.0\SunamoThisApp.dll
+  SunamoText -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\bin\Debug\net10.0\SunamoText.dll
+  SunamoTextIndexing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\bin\Debug\net10.0\SunamoTextIndexing.dll
+  SunamoSecurity -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\bin\Debug\net8.0\SunamoSecurity.dll
+  SunamoStringTrim -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\bin\Debug\net10.0\SunamoStringTrim.dll
+  SunamoStringSplit -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringSplit\SunamoStringSplit\bin\Debug\net8.0\SunamoStringSplit.dll
+  SunamoThreading -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\bin\Debug\netstandard2.0\SunamoThreading.dll
+  SunamoThread -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\bin\Debug\netstandard2.0\SunamoThread.dll
+  SunamoThreading -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\bin\Debug\net10.0\SunamoThreading.dll
+  SunamoTest -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\bin\Debug\net9.0\SunamoTest.dll
+  SunamoStringGetLines -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\bin\Debug\net9.0\SunamoStringGetLines.dll
+  SunamoStringTrim -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\bin\Debug\net9.0\SunamoStringTrim.dll
+  SunamoCompare -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\bin\Debug\net9.0\SunamoCompare.dll
+  SunamoRobotsTxt -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRobotsTxt\SunamoRobotsTxt\bin\Debug\net9.0\SunamoRobotsTxt.dll
+  SunamoThreading -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThreading\SunamoThreading\bin\Debug\net9.0\SunamoThreading.dll
+  SunamoInterfaces -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\bin\Debug\net8.0\SunamoInterfaces.dll
+  SunamoThread -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\bin\Debug\net9.0\SunamoThread.dll
+  SunamoStringTrim -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\bin\Debug\net8.0\SunamoStringTrim.dll
+  SunamoStringGetString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\bin\Debug\net9.0\SunamoStringGetString.dll
+  SunamoTwoWayDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTwoWayDictionary\SunamoTwoWayDictionary\bin\Debug\net10.0\SunamoTwoWayDictionary.dll
+  SunamoTypes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\bin\Debug\net10.0\SunamoTypes.dll
+  SunamoTwoWayDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTwoWayDictionary\SunamoTwoWayDictionary\bin\Debug\net8.0\SunamoTwoWayDictionary.dll
+  SunamoStringGetLines -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\bin\Debug\netstandard2.0\SunamoStringGetLines.dll
+  SunamoTextOutputGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextOutputGenerator\SunamoTextOutputGenerator\bin\Debug\net8.0\SunamoTextOutputGenerator.dll
+  SunamoTest -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\bin\Debug\net8.0\SunamoTest.dll
+  SunamoThread -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\bin\Debug\net8.0\SunamoThread.dll
+  SunamoStringGetLines -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\bin\Debug\net8.0\SunamoStringGetLines.dll
+  SunamoSharedMisc -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\bin\Debug\netstandard2.0\SunamoSharedMisc.dll
+  SunamoTypes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\bin\Debug\net8.0\SunamoTypes.dll
+  SunamoTwoWayDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTwoWayDictionary\SunamoTwoWayDictionary\bin\Debug\netstandard2.0\SunamoTwoWayDictionary.dll
+  SunamoUnderscore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\bin\Debug\net10.0\SunamoUnderscore.dll
+  SunamoUriWebServices -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\bin\Debug\net10.0\SunamoUriWebServices.dll
+  SunamoThread -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThread\SunamoThread\bin\Debug\net10.0\SunamoThread.dll
+  SunamoTwoWayDictionary -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTwoWayDictionary\SunamoTwoWayDictionary\bin\Debug\net9.0\SunamoTwoWayDictionary.dll
+  SunamoString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\bin\Debug\netstandard2.0\SunamoString.dll
+  SunamoClearScript -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoClearScript\SunamoClearScript\bin\Debug\netstandard2.0\SunamoClearScript.dll
+  SunamoStringGetString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetString\SunamoStringGetString\bin\Debug\netstandard2.0\SunamoStringGetString.dll
+  SunamoUri -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\bin\Debug\net9.0\SunamoUri.dll
+  SunamoStringTrim -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringTrim\SunamoStringTrim\bin\Debug\netstandard2.0\SunamoStringTrim.dll
+  SunamoStringJoin -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringJoin\SunamoStringJoin\bin\Debug\netstandard2.0\SunamoStringJoin.dll
+  SunamoVcf -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\bin\Debug\net10.0\SunamoVcf.dll
+  SunamoString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\bin\Debug\net9.0\SunamoString.dll
+  SunamoCryptAlgorithms -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\bin\Debug\net10.0\SunamoCryptAlgorithms.dll
+  SunamoTidy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\bin\Debug\net9.0\SunamoTidy.dll
+  SunamoTypes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\bin\Debug\net9.0\SunamoTypes.dll
+  SunamoVcf -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\bin\Debug\net9.0\SunamoVcf.dll
+  SunamoUriWebServices -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\bin\Debug\net8.0\SunamoUriWebServices.dll
+  SunamoUri -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\bin\Debug\net10.0\SunamoUri.dll
+  SunamoTidy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\bin\Debug\net10.0\SunamoTidy.dll
+  SunamoVcf -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\bin\Debug\netstandard2.0\SunamoVcf.dll
+  SunamoValues -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\bin\Debug\netstandard2.0\SunamoValues.dll
+  SunamoWikipedia -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\bin\Debug\net9.0\SunamoWikipedia.dll
+  SunamoUri -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\bin\Debug\net8.0\SunamoUri.dll
+  SunamoTest -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\bin\Debug\net10.0\SunamoTest.dll
+  SunamoValues -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\bin\Debug\net8.0\SunamoValues.dll
+  SunamoUri -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\bin\Debug\netstandard2.0\SunamoUri.dll
+  SunamoValues -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\bin\Debug\net9.0\SunamoValues.dll
+  SunamoXml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\bin\Debug\net10.0\SunamoXml.dll
+  SunamoTypes -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTypes\SunamoTypes\bin\Debug\netstandard2.0\SunamoTypes.dll
+  SunamoStreams -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStreams\SunamoStreams\bin\Debug\net8.0\SunamoStreams.dll
+  SunamoTidy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\bin\Debug\netstandard2.0\SunamoTidy.dll
+  SunamoUriWebServices -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\bin\Debug\net9.0\SunamoUriWebServices.dll
+  SunamoXml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\bin\Debug\net9.0\SunamoXml.dll
+  SunamoBazosCrawler -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\bin\Debug\net8.0\SunamoBazosCrawler.dll
+  SunamoWinStd -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\bin\Debug\net10.0\SunamoWinStd.dll
+  SunamoYaml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\SunamoYaml\bin\Debug\net8.0\SunamoYaml.dll
+  SunamoTest -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTest\SunamoTest\bin\Debug\netstandard2.0\SunamoTest.dll
+  SunamoWikipedia -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\bin\Debug\netstandard2.0\SunamoWikipedia.dll
+  SunamoYaml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\SunamoYaml\bin\Debug\net10.0\SunamoYaml.dll
+  SunamoUnderscore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\bin\Debug\net9.0\SunamoUnderscore.dll
+  SunamoValues -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\bin\Debug\net10.0\SunamoValues.dll
+  SunamoWinStd -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\bin\Debug\net9.0\SunamoWinStd.dll
+  SunamoWinStd -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\bin\Debug\netstandard2.0\SunamoWinStd.dll
+  SunamoXliffParser -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\bin\Debug\net10.0\SunamoXliffParser.dll
+  SunamoYouTube -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\bin\Debug\net9.0\SunamoYouTube.dll
+  SunamoTidy -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTidy\SunamoTidy\bin\Debug\net8.0\SunamoTidy.dll
+  SunamoRuleset -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRuleset\SunamoRuleset\bin\Debug\net9.0\SunamoRuleset.dll
+  SunamoYouTube -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\bin\Debug\net10.0\SunamoYouTube.dll
+  SunamoVcf -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\bin\Debug\net8.0\SunamoVcf.dll
+  SunamoYouTube -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\bin\Debug\net8.0\SunamoYouTube.dll
+  SunamoXml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\bin\Debug\net8.0\SunamoXml.dll
+  SunamoTextOutputGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextOutputGenerator\SunamoTextOutputGenerator\bin\Debug\net10.0\SunamoTextOutputGenerator.dll
+  SunamoWinStd -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\bin\Debug\net8.0\SunamoWinStd.dll
+  SunamoYouTube -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\bin\Debug\netstandard2.0\SunamoYouTube.dll
+  SunamoXlfKeys -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\SunamoXlfKeys\bin\Debug\net9.0\SunamoXlfKeys.dll
+  SunamoUriWebServices -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\bin\Debug\netstandard2.0\SunamoUriWebServices.dll
+  SunamoTextOutputGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextOutputGenerator\SunamoTextOutputGenerator\bin\Debug\net9.0\SunamoTextOutputGenerator.dll
+  SunamoYaml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\SunamoYaml\bin\Debug\netstandard2.0\SunamoYaml.dll
+  SunamoTextOutputGenerator -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextOutputGenerator\SunamoTextOutputGenerator\bin\Debug\netstandard2.0\SunamoTextOutputGenerator.dll
+  SunamoXlfKeys -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\SunamoXlfKeys\bin\Debug\netstandard2.0\SunamoXlfKeys.dll
+  SunamoXml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\bin\Debug\netstandard2.0\SunamoXml.dll
+  SunamoWikipedia -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\bin\Debug\net10.0\SunamoWikipedia.dll
+  SunamoUnderscore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\bin\Debug\net8.0\SunamoUnderscore.dll
+  SunamoXlfKeys -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\SunamoXlfKeys\bin\Debug\net8.0\SunamoXlfKeys.dll
+  SunamoXlfKeys -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXlfKeys\SunamoXlfKeys\bin\Debug\net10.0\SunamoXlfKeys.dll
+  SunamoText -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\bin\Debug\net9.0\SunamoText.dll
+  SunamoXliffParser -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\bin\Debug\net9.0\SunamoXliffParser.dll
+  SunamoUnderscore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\bin\Debug\netstandard2.0\SunamoUnderscore.dll
+  SunamoMsgReader -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\SunamoMsgReader\bin\Debug\netstandard2.0\SunamoMsgReader.dll
+  SunamoText -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoText\SunamoText\bin\Debug\netstandard2.0\SunamoText.dll
+  SunamoXliffParser -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\bin\Debug\netstandard2.0\SunamoXliffParser.dll
+  SunamoStringFormat -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\bin\Debug\net9.0\SunamoStringFormat.dll
+  SunamoTextIndexing -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoTextIndexing\SunamoTextIndexing\bin\Debug\net8.0\SunamoTextIndexing.dll
+  SunamoString -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoString\SunamoString\bin\Debug\net8.0\SunamoString.dll
+  SunamoXliffParser -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\bin\Debug\net8.0\SunamoXliffParser.dll
+  SunamoToNetCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\bin\Debug\net9.0\SunamoToNetCore.dll
+  SunamoThisApp -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\bin\Debug\net8.0\SunamoThisApp.dll
+  SunamoYaml -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\SunamoYaml\bin\Debug\net9.0\SunamoYaml.dll
+  SunamoWikipedia -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\bin\Debug\net8.0\SunamoWikipedia.dll
+  SunamoToUnixLineEnding -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToUnixLineEnding\SunamoToUnixLineEnding\bin\Debug\netstandard2.0\SunamoToUnixLineEnding.dll
+  SunamoToNetCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\bin\Debug\net10.0\SunamoToNetCore.dll
+  SunamoToNetCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\bin\Debug\net8.0\SunamoToNetCore.dll
+  SunamoToNetCore -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoToNetCore\SunamoToNetCore\bin\Debug\netstandard2.0\SunamoToNetCore.dll
+  SunamoPS -> E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\bin\Debug\net9.0\SunamoPS.dll
+
+Build succeeded.
+
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(65,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs(47,52): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(109,45): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(27,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(19,44): warning SYSLIB0058: 'SslStream.HashAlgorithm' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(20,43): warning SYSLIB0058: 'SslStream.HashStrength' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(21,46): warning SYSLIB0058: 'SslStream.CipherAlgorithm' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(22,47): warning SYSLIB0058: 'SslStream.CipherStrength' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(23,52): warning SYSLIB0058: 'SslStream.KeyExchangeAlgorithm' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(24,53): warning SYSLIB0058: 'SslStream.KeyExchangeStrength' is obsolete: 'KeyExchangeAlgorithm, KeyExchangeStrength, CipherAlgorithm, CipherStrength, HashAlgorithm and HashStrength properties of SslStream are obsolete. Use NegotiatedCipherSuite instead.' (https://aka.ms/dotnet-warnings/SYSLIB0058) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(48,82): warning SYSLIB0039: 'SslProtocols.Tls' is obsolete: 'TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use SslProtocols.None to defer to OS defaults.' (https://aka.ms/dotnet-warnings/SYSLIB0039) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(214,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(21,46): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(79,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(141,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(273,38): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(223,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(236,9): warning CA2022: Avoid inexact read with 'System.IO.FileStream.Read(byte[], int, int)' (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2022) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(65,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs(47,52): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(109,45): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(48,82): warning SYSLIB0039: 'SslProtocols.Tls' is obsolete: 'TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use SslProtocols.None to defer to OS defaults.' (https://aka.ms/dotnet-warnings/SYSLIB0039) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(27,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(273,38): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(214,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(21,46): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(79,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(141,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(223,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs(16,5): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs(32,42): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(35,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(94,39): warning SYSLIB0014: 'WebRequest.CreateHttp(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(153,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(180,50): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs(63,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net8.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs(32,42): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs(16,5): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(16,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(26,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(35,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(94,39): warning SYSLIB0014: 'WebRequest.CreateHttp(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(153,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(180,50): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs(63,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net10.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(65,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs(47,52): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet.cs(109,45): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(27,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet1.cs(214,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(48,82): warning SYSLIB0039: 'SslProtocols.Tls' is obsolete: 'TLS versions 1.0 and 1.1 have known vulnerabilities and are not recommended. Use a newer TLS version instead, or use SslProtocols.None to defer to OS defaults.' (https://aka.ms/dotnet-warnings/SYSLIB0039) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(21,46): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(79,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(141,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(273,38): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs(223,41): warning SYSLIB0014: 'WebRequest.Create(Uri)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs(236,9): warning CA2022: Avoid inexact read with 'System.IO.FileStream.Read(byte[], int, int)' (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2022) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\SunamoFtp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\WebClientHelper.cs(32,42): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoWebClient.cs(16,5): warning SYSLIB0014: 'WebClient.WebClient()' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(16,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\NetHelperSunamo.cs(26,9): warning SYSLIB0014: 'ServicePointManager' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead. Settings on ServicePointManager no longer affect SslStream or HttpClient.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(35,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(94,39): warning SYSLIB0014: 'WebRequest.CreateHttp(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(153,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestGetResponses.cs(180,50): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\HttpRequestHelper.cs(63,39): warning SYSLIB0014: 'WebRequest.Create(string)' is obsolete: 'WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.' (https://aka.ms/dotnet-warnings/SYSLIB0014) [E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\SunamoHttp.csproj::TargetFramework=net9.0]
+    66 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:31.35

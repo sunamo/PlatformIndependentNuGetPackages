@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\CharHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\LetterAndDigitCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\SpecialCharsService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_sunamo\WhitespaceCharService.cs

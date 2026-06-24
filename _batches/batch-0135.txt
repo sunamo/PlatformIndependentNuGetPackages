@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\ExtractExistingFileAction.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\FileAttributeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\FileSelector.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\OffsetStream.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\Shared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\WinZipAes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\ZipConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\ZipCrypto.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\ZipDirEntry.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Zip\ZipEntry.cs

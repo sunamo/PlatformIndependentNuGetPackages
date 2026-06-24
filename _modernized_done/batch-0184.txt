@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_public\SunamoInterfaces\Interfaces\IFtpClientExt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_public\SunamoInterfaces\Interfaces\IWorking.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_sunamo\SunamoStringJoin\SHJoin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\_sunamo\SunamoUri\UH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\RunnerSunamoGenerators\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGenerators\SunamoGenerators\GlobalUsings.cs

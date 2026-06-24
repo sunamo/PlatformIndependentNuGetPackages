@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\Generators\XmlTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoDictionary\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoExtensions\XmlNodeListExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoInterfaces\Interfaces\IXmlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYaml\RunnerYaml\Program.cs

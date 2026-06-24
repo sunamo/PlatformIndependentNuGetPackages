@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\TOKEN_PRIVILEGES.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\Enums\TOKEN_TYPE.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\FileOperationAPIWrapper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\GlobalKeyboardHook.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\IconExtractor.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\KeysCatcher.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\KnownFoldersGuid.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\SHFILEINFO.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\W32.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPInvoke\SunamoPInvoke\PInvoke\W321.cs

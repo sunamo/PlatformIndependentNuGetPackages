@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\Crypting\CryptDelegates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSecurity\SunamoSecurity\_sunamo\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\RunnerSelenium\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\RunnerSelenium\Program2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\ByHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\PsOutput.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\SeleniumHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\Extensions\ExceptionsExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSelenium\SunamoSelenium\Extensions\StringToUnixLineEndingExtensions.cs

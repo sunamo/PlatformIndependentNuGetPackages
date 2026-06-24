@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTHelperMulti1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTHelperMulti2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTHelperMulti3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTHelperUs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTWeekGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\TimeSpanHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_public\FromToDt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_public\FromToTDt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_public\FromToTSHDt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\_public\SunamoEnums\Enums\DateTimeFormatStyles.cs

@@ -1,12 +1,33 @@
 version: '3'
 
+vars:
+  KONDO_BIN: 'E:\vs\ForkedGithub_Projects\kondo\target\release\kondo.exe'
+  KONDO_SRC: 'E:\vs\ForkedGithub_Projects\kondo'
+
 tasks:
   rel:
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;rel' + [char]7)"
+      - powershell -Command "Clear-Host"
       - dotnet build -c Release
 
   dev:
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;dev' + [char]7)"
+      - powershell -Command "Clear-Host"
       - dotnet run -c Debug
+
+  build-kondo:
+    desc: "Build our kondo fork (requires Rust/cargo)"
+    cmds:
+      - powershell -Command "[Console]::Write([char]27 + ']0;build-kondo' + [char]7)"
+      - powershell -Command "Clear-Host"
+      - cargo build --release --manifest-path "{{.KONDO_SRC}}\Cargo.toml"
+
+  clean:
+    desc: "Clean build artifacts using our kondo fork"
+    cmds:
+      - powershell -Command "[Console]::Write([char]27 + ']0;clean' + [char]7)"
+      - powershell -Command "Clear-Host"
+      - powershell -Command "if (-not (Test-Path '{{.KONDO_BIN}}')) { Write-Error 'kondo.exe nenalezeno - spust nejdrive: task build-kondo'; exit 1 }"
+      - "{{.KONDO_BIN}}" --all --quiet .

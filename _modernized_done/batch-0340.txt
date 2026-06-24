@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\_sunamo\SunamoStringParts\SHParts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\_sunamo\SunamoStringSubstring\SHSubstring.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\_sunamo\SunamoStringTrim\SHTrim.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\_sunamo\SunamoValues\Values\UriShortConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\RunnerUriWebServices\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUriWebServices\SunamoUriWebServices\UriWebServices.cs

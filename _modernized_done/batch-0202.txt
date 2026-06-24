@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Text\BitConverterLE.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Helpers\Thread\FSThread.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\AbstractCatalogShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\AppLangHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\BasePathsHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\BracketsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\SunamoData\Data\FileForSearching.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\SunamoEnums\Enums\AppFoldersShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\SunamoEnums\Enums\FileEntriesDuplicitiesStrategy.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\_public\SunamoEnums\Enums\FileExceptions.cs

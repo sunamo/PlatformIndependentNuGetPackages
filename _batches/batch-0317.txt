@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\SHFormat.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\_sunamo\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringFormat\SunamoStringFormat\_sunamo\SunamoStringReplace\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\RunnerStringGetLines\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStringGetLines\SunamoStringGetLines\SHGetLines.cs

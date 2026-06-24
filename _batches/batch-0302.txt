@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\SunamoSolutionsIndexer\SunamoSolutionsIndexer\Interfaces\ISolutionFolder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\SunamoSolutionsIndexer\SunamoSolutionsIndexer\Interfaces\ISolutionFolderSerialize.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\RunnerStopwatch\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\StopwatchHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\StopwatchStatic.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\_sunamo\SunamoDictionary\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\_sunamo\SunamoString\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStopwatch\SunamoStopwatch\_sunamo\SunamoStringSplit\SHSplit.cs

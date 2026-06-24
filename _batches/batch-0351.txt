@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\FileUtil.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\JunctionPoint.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\JunctionPointExists.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\KnownFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\PH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\PH1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\PHWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\PHWinAddBrowser.cs

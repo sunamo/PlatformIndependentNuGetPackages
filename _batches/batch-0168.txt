@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\ObjectExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\StringBuilderExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\TaskExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\TimeSpanExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\UriExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\XmlNodeListExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\Utf8Json\FuncExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\Utf8Json\ReflectionExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\_sunamo\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\_sunamo\SunamoExceptions\Exceptions.cs

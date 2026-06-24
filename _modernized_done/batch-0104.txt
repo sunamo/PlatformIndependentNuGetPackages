@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugCollection\SunamoDebugCollection\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\RunnerDebugging\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\MemoryDebug.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\NameValueCollectionDebug.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\System\Text\DebugStringBuilderAbstract.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\System\Text\StringBuilderDebug.cs

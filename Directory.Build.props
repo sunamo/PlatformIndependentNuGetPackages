@@ -3,5 +3,7 @@
        regardless of Platform value passed by parent projects (e.g. "Any CPU" vs "AnyCPU"). -->
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+    <NoWarn>$(NoWarn);CS8618;CS8625;CS8600;CS8604;CS8602;CS8603;CS8601;CS8622;CS8629;CS8632;CS8714;CS8767;CS8612;CS8619;CS8073;CS0618;CS0108;CS0279;NU1701;SYSLIB0014;SYSLIB0058;SYSLIB0039;CA2022</NoWarn>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3277;MSB3061</MSBuildWarningsAsMessages>
   </PropertyGroup>
 </Project>

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\SunamoColor.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\UtilsHex.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\Values\SunamoColors.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\_sunamo\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoColors\SunamoColors\_sunamo\SunamoLang\SunamoI18N\Translate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\RunnerCompare\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCompare\SunamoCompare\ISunamoComparer.cs

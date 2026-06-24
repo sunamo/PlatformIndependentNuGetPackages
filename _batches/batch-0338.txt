@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\IOAuth.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\RadioButtonsSql.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\_public\SunamoEnums\Enums\Databases.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUnderscore\SunamoUnderscore\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\UHTests.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\RunnerUri\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoUri\SunamoUri\QSHelper.cs

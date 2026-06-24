@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\RunnerSunamoStorage\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Storage\ApplicationDataText.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Storage\CompareFileNameWithDateTimeByDateTime.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Storage\CompareFileNameWithDateTimeBySerie.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Storage\DateTimeFileIndexT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Storage\FileNameWithDateTime.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\Storage\FileNameWithDateTimeTU.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\AbstractCatalogShared.cs

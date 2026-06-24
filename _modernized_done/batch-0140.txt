@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\RunnerEditorConfig\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\Definition.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\EditorConfigContent.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\EditorConfigHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\ListHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\MascBlock.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\RootBlock.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoEditorConfig\SunamoEditorConfig\StringHelper.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\VcfHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\Enums\SunamoEmailType.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\Enums\SunamoTelephoneType.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\RunnerWikipedia\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\WikipediaHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_public\SunamoHtml\Html\HtmlTableParserWiki.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoArgs\ChangeContentArgsWikipedia.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoData\Data\NTree.cs

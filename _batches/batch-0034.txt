@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\VsProjectsFileHelperAfterMoveToMicrosoftBuild.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\VsProjectsFileHelperSdkStyle.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ProjectReferences.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\CompileItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\ContentItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\IncludedInVsProjectFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\ItemGroupElement.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\NoneItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\PackageReferenceItemGroup.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\Aps\Projs\Data\ItemGroup\ProjectReferenceItemGroup.cs

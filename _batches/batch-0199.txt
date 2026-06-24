@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\MapyCzApi.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\SunamoGpxService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\SunamoMapyCzService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoGpx\SunamoGpx\_sunamo\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\RunnerSunamoHelpers\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\Crypting\UtilsNonNetStandard.cs

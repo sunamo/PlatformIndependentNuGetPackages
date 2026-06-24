@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\Results\FindProjectsWhichIsSdkStyleResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Projs\Results\IsProjectCsprojSdkStyleResult.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Values\IMoveToShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAps\SunamoAps\Aps\Values\MoveToShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\RunnerArgs\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\DumpAsStringHeaderArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\InvokeProcessArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\Net48Polyfills.cs

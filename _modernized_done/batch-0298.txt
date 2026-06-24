@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\ai\AIAssembly.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\ai\AIInitArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\ai\AIWinPi.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\Delegates\ExistsDirectory.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\InSunamoIsDerivedFrom\CASE.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\Interfaces\IAIWinPi.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\OnlyInSE\SunamoExceptionsNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSharedMisc\SunamoSharedMisc\_SunamoExceptions\OnlyInSE\SunamoPageHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\RunnerSolutionsIndexer\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoSolutionsIndexer\RunnerSunamoSolutionsIndexer\Program.cs

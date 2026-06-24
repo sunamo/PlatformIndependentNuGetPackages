@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\DotnetCmdBuilder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\Nuget.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\Sln.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotnetCmdBuilder\SunamoDotnetCmdBuilder\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\RunnerDotNetZip\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\GlobalSuppressions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDotNetZip\SunamoDotNetZip\Net48Polyfills.cs

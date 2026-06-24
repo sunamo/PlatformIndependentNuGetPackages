@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\Domains.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\Emoticons.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\EmoticonsSingle.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\HttpsUriConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\MimeTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\MimeTypes1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\StatusPrefixes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\SunamoNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\Values\UriShortConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\_sunamo\SunamoCollectionsGeneric\CAGConsts.cs

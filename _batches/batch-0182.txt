@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpAbstract.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBase1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpBaseNew.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\FtpHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\PathSelector.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP3.cs

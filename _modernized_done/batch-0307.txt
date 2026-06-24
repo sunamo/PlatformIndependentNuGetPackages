@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys7.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys8.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_public\SunamoXlfKeys\XlfKeys9.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\ConvertDateTimeToFileNamePostfix.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\LetterAndDigitCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\LetterAndDigitKeyCodeService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SpecialCharsService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SpecialKeyCodeServices.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\WhitespaceCharService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoStorage\SunamoStorage\_sunamo\SunamoArgs\GetFilesBaseArgsShared.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\Data\Interval.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\Data\SingleValue.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_public\SunamoData\MedianAverage.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\Types.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoBts\CAToNumber.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoExtensions\ListExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\_sunamo\SunamoExtensions\StringExtensions.cs

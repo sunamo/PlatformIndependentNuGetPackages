@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\IWindowWithSettingsManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\TrialManager.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\ConfigurableWindow\ConfigurableWindowHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\ConfigurableWindow\ConfigurableWindowInstance.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\ConfigurableWindow\ConfigurableWindowSettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\ConfigurableWindow\ConfigurableWindowWrapper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\ConfigurableWindow\IConfigurableWindow.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\ConfigurableWindow\WindowConfigSettings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationDataConsts.cs

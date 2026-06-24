@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\ThrowExOther.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\RunnerExtensions\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\AssertExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\DateTimeExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\IDictionaryExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\IListExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\ListExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\ListStringExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExtensions\SunamoExtensions\Net48Polyfills.cs

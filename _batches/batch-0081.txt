@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\Crypting\Symmetric.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\Crypting\Symmetric1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\Crypting\UtilsNonNetStandard.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\Crypting\UtilsShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys10.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys11.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys12.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCryptAlgorithms\SunamoCryptAlgorithms\_public\SunamoXlfKeys\XlfKeys13.cs

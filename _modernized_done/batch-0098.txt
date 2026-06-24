@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SunamoEnums\Enums\TypeOfMessage.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SunamoInterfaces\Interfaces\IParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SunamoString\Enums\Brackets.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoData\SunamoData\_sunamo\SunamoValues\Constants\DTConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\RunnerDateTime\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\LangsDt.cs

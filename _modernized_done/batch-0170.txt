@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\AllExtensionsMethods.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\Args\GetExtensionArgsFileExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\Attributes\TypeOfExtensionAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\Enums\TypeOfExtension.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\_public\FSFileExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\_sunamo\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileExtensions\SunamoFileExtensions\_sunamo\SunamoExceptions\Exceptions.cs

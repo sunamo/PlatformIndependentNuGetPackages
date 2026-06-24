@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\FiltersNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\FrameworkNameDetector.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\FSGetFilesDC.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GenerateJson.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GetCsprojs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GetCsprojsInSolution.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GetSlns.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GlobalUsingsHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDevCodeCore\SunamoDevCodeCore\GlobalUsingsInstance.cs

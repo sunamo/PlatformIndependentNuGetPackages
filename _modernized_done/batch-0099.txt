@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\NormalizeDate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\Converters\ConvertDateTimeToFileNamePostfix.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\Converters\ConvertDateTimeToFileNamePrefix.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\Converters\UnixDateConverter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\ConvertersSimple\DTOnlyNumber.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\Data\DateTimeOrShort.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\Data\FromToTDateTime.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDateTime\SunamoDateTime\DT\DTHelper1.cs

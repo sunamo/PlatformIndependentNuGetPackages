@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\CLProgressBar.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\CLProgressBarWithChilds.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\ClSources.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\CLWrite.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\ConsoleLogger.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\ConsoleLoggerCmd.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\Reader.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCl\SunamoCl\TypedConsoleLogger.cs

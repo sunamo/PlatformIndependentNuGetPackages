@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XlfTransUnit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\XmlUtil.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\fmdev.ResX\ResXEntry.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\fmdev.ResX\ResXFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\fmdev.ResX\ResXOption.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXliffParser\SunamoXliffParser\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\RunnerXml\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoXml\SunamoXml\Net48Polyfills.cs

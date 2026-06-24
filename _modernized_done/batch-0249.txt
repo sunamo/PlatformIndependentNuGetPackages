@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\RunnerPackageJson\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\Dependency.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\PackageJson.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\PackageJsonHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPackageJson\SunamoPackageJson\_sunamo\SunamoDictionary\DictionaryHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\RunnerParsing\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\GlobalUsings.cs

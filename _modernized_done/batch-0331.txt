@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\RunnerThisApp\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\ThisApp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\Delegates\SetStatusDelegate.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\Helpers\StatusHelperSunamo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\_public\SunamoEnums\Enums\TypeOfMessageTA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\_sunamo\CL.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoThisApp\SunamoThisApp\_sunamo\SunamoExceptions\ThrowEx.cs

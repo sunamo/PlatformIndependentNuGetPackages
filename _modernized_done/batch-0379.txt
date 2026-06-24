@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\Common\WatcherInfo.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\Ex\FileSystemWatcherEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\Ex\WatcherEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\nsn\WatcherExEventArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\FileSystemWatcherExtended\nsn\WatcherExEventHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\SIze\SunamoSizeExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Extensions\SunamoWpf.Extensions\Extensions\SIze\SunamoSizeExtensionsSharedWeb.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\CreateImageForSizeShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\DataTableHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\FontHelper.cs

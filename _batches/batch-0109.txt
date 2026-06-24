@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidStringT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidStringTU.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidT3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidUIElement.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidUri.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDependencyInjection\RunnerDependencyInjection\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDependencyInjection\RunnerDependencyInjection\Program2.cs

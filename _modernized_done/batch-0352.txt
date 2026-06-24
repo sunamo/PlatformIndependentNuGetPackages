@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\PHWinVsCode.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\ReparsePoint.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\TidyExeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\WindowsOSHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\Enums\UserFoldersWin.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\Helpers\ClipboardHelperWinStd.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_public\SunamoEnums\Enums\Browsers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_public\SunamoEnums\Enums\Editor.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\PathFormatDetectorService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\SunamoWinStd\_sunamo\WhitespaceCharService.cs

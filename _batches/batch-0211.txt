@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\XmlAgilityHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Args\BoilerplateMiddleArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Args\BoilerplateStartArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Delegates\EditHtmlWidthHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGenerator2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGenerator21.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGenerator22.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGenerator23.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHtml\SunamoHtml\Generators\HtmlGeneratorExtended.cs

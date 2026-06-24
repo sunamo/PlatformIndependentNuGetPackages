@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\ListParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\Parse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\ParseDefault.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\ParserTwoValues.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\StaticParse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoParsing\SunamoParsing\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\RunnerPaths\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPaths\SunamoPaths\CompareFilesPaths.cs

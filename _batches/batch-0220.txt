@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\AllExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\AllExtensions1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\AllExtensions2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\AllExtensions3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\AllExtensions4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\AllExtensions5.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\Attributes\TypeOfExtensionAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SunamoFileExtensions\Enums\TypeOfExtension.cs

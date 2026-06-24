@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\_sunamo\SunamoEnums\Enums\HtmlTextWriterAttribute.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\_sunamo\SunamoEnums\Enums\HtmlTextWriterTag.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoValues\SunamoValues\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\RunnerVcf\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\EnumHelperVcf.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\SunamoEmail.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\SunamoTelephone.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoVcf\SunamoVcf\SunamoVCard.cs

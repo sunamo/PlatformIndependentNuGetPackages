@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\UnitTest1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\RunnerCollections\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\RunnerCollections\Program2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA4.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\CA5.cs

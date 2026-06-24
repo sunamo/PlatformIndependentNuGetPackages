@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\System\Text\StringBuilderDebug2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugging\SunamoDebugging\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\RunnerDebugIO\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\ProgramShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\ProgramSharedClipboard.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\ProgramSharedInputFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\ProgramSharedOutputFile.cs

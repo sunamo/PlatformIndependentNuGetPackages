@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\_sunamo\HtmlTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBazosCrawler\SunamoBazosCrawler\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\RunnerBts\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\RunnerBts\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\BTS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\BTS1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\BTS2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\BTS3.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoBts\SunamoBts\CAToNumber.cs

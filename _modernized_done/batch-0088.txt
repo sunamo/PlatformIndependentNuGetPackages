@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\XHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\XmlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\XmlHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\XmlNodeExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\XmlTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsproj\SunamoCsproj\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\RunnerCssGenerator\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\CssGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\CssProps.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCssGenerator\SunamoCssGenerator\CssResponsiveGenerator.cs

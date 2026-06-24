@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoValues\Constants\DTConstants.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoValues\Constants\NetFxExceptionsNotTranslateAble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFileSystem\SunamoFileSystem\_sunamo\SunamoValues\Constants\NumConsts.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\RunnerFluentFtp\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\Enums\SunamoFtpParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\FtpClients\FluentFtpAdds.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\FtpClients\FluentFtpWrapper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFluentFtp\SunamoFluentFtp\Other\FluentFtpTest.cs

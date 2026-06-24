@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMime\SunamoMime\SunamoMimeHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\RunnerMsBuild\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\RunnerSunamoMsBuild\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\MsBuild\Enums\Configuration.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\MsBuild\Enums\KeysInConfiguration.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\MsBuild\Values\ProjectFrameworks.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsBuild\SunamoMsBuild\MsBuild\Values\VsProjectItemTypes.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsgReader\RunnerMsgReader\Program.cs

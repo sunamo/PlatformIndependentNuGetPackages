@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\RunnerExceptions\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\Exceptions1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\Exceptions2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\ExceptionsExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\ExceptionsOther.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoExceptions\SunamoExceptions\ThrowEx1.cs

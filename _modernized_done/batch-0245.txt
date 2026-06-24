@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\Services\MsSqlService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\Services\UniqueIdService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\_public\ResultWithExceptionMsSqlServer.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoMsSqlServer\SunamoMsSqlServer\_sunamo\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\RunnerNuGetProtocol\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\NuGetProtocolHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNuGetProtocol\SunamoNuGetProtocol\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\RunnerNumbers\Program.cs

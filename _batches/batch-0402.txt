@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Helpers\ContainerControls\WindowHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Helpers\ContainerControls\WindowHelperShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Helpers\Controls\MenuItemTemplates.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Interfaces\IMainWindowBasicControls.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\AboutApp.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\EmptyUC.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\ErrorListing.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\LoginUc.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\LogUC.xaml.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\EnterOneValueWindow.xaml.cs

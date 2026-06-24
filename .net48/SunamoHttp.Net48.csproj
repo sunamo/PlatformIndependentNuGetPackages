@@ -9,6 +9,7 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <IsPackable>false</IsPackable>
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
+    <NoWarn>$(NoWarn);CA1822;CS1573;CS1572;CS1570;CA1866;CA1865;CA1867;CS1998;CA1847;IDE0066;IDE0060;CS8618;CS8600;CS8601;CS8602;CS8603;CS8604;CS8619;CS8625</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

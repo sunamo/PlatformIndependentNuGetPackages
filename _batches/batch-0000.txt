@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\.net48\_Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\.net48\SunamoDevCode.GlobalUsings.Net48.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\.scripts\FileSplitter\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\.scripts\FileSplitter\Program1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\RunnerAI\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\RunnerAI\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\ClaudeApiService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\ClaudeCliService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\GeminiApiService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAI\SunamoAI\GlobalUsings.cs

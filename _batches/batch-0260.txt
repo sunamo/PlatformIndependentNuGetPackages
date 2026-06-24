@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellParser.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellRunner.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoInterfaces\Interfaces\SunamoPS\IPowershellRunnerCommands.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoStringGetLines\SHGetLines.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoPS\SunamoPS\_sunamo\SunamoStringSplit\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\RunnerRandom\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoRandom\SunamoRandom\RandomHelper.cs

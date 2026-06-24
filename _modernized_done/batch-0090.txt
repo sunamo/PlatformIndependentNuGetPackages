@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\CsvRecord.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\CsvRecords.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\CsvWriter.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\SunamoCsvReader.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\SunamoCsvReader1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\Data\GoogleContactExportRow.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\Data\GoogleContactExportRow1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCsv\SunamoCsv\Data\GoogleContactExportRow2.cs

@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\ResultWithExceptionCollections.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\Services\RemoveEmptyLinesService.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoArgs\RemoveStartingWithArgsCA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoData\Data\ABLCA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoData\Data\FromToCollections.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoData\Data\FromToTSHCollections.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoEnums\Enums\ContainsCompareMethodCA.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoEnums\Enums\FromToUse.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollections\SunamoCollections\_public\SunamoEnums\Enums\SearchStrategyCA.cs

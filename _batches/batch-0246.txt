@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\LinearHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\LowHighHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\MH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\NH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\NH1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\NHTests.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\NormalizeNumbers.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoNumbers\SunamoNumbers\NumberService.cs

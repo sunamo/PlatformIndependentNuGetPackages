@@ -1,0 +1,99 @@
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\EnterOneValueUC.xaml.cs|276|The event 'EnterOneValueUC.ChangeDialogResultAsync' is never used
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Essential\WpfApp.cs|169|The event 'WpfApp.StatusSetted' is never used
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\Backend\TextBoxBackend.cs|10|The event 'TextBoxBackend.ScrollToLine' is never used
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Buttons\ImageButtons.xaml.cs|7|The event 'ImageButtons.Added' is never used
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\ErrorListing.xaml.cs|76|The event 'ErrorListing.ClickCancel' is never used
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\ShowTextResultWindow.cs|14|The event 'ShowTextResultWindow.ChangeDialogResult' is never used
+CS0067|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\WindowWithUserControl.cs|360|The event 'WindowWithUserControl.ChangeDialogResultAsync' is never used
+CS0105|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\GlobalUsings.cs|50|The using directive for 'System.Collections' appeared previously in this namespace
+CS0105|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\GlobalUsings.cs|51|The using directive for 'System.Globalization' appeared previously in this namespace
+CS0105|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\GlobalUsings.cs|52|The using directive for 'System.Runtime.InteropServices' appeared previously in this namespace
+CS0105|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHelpers\SunamoHelpers\GlobalUsings.cs|55|The using directive for 'System.Reflection' appeared previously in this namespace
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\Base\PathSelector.cs|39|Unreachable code detected
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Panels\SunamoVariableSizedWrapGrid.cs|78|Unreachable code detected
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Panels\SunamoVariableSizedWrapGrid2.cs|223|Unreachable code detected
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Essential\WpfApp.cs|26|Unreachable code detected
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Essential\WpfAppShared.cs|278|Unreachable code detected
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\BTS.cs|182|Unreachable code detected
+CS0162|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.SunamoUtils\SunamoWpf.SunamoUtils\_sunamo\BTS.cs|325|Unreachable code detected
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP1.cs|247|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP2.cs|105|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP4.cs|127|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FTP4.cs|144|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoFtp\SunamoFtp\FtpClients\FtpNet2.cs|201|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Buttons\DialogButtons.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Buttons\ResultButtons.xaml.cs|14|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Collections\DeleteDuplicitiesFilesCheckBox.xaml.cs|13|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Collections\DeleteDuplicitiesFilesRadioButton.xaml.cs|18|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Collections\LoggerUC.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Collections\RadioButtonsList.xaml.cs|25|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Controls\TwoRadiosUC.xaml.cs|44|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Image\CyclingImageViewer.xaml.cs|49|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\ColorPicker.xaml.cs|39|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\InputTwoColumnsUC.xaml.cs|32|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectFile.xaml.cs|17|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectFolder.xaml.cs|14|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectFolderAdvanced.xaml.cs|22|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectManyFiles.xaml.cs|32|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectMoreFolders.xaml.cs|20|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectOneValue.xaml.cs|23|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SelectTwoValuesUC.xaml.cs|35|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SunamoLoginDialog.xaml.cs|92|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SunamoPasswordBox.xaml.cs|18|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\UpDownNumeric.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Mouse\InsertLetterAfterMouseDownUC.xaml.cs|27|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\FoundedFilesResults.xaml.cs|113|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\FoundedFilesResults2.xaml.cs|27|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\FoundedResultsUC.xaml.cs|21|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\FoundedResultUC.xaml.cs|68|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\FoundedResultUC.xaml.cs|88|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\NoResultsFound.xaml.cs|11|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\ShowCodeResultUC.xaml.cs|11|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\ShowTextResult.xaml.cs|15|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Text\CompareTwoIntegers.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Text\MultiLineTextBlock.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Text\SearchInUC.xaml.cs|11|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Text\TextBoxOnlyNumbers.xaml.cs|24|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\ToolBar\SelectImageFile.xaml.cs|19|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\ToolBar\SelectImageFileAndMakeSingleColorTransparent.xaml.cs|16|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Visualization\FolderContentsTreeView.xaml.cs|129|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Visualization\FolderContentsTreeView.xaml.cs|19|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\EnterOneValueUC.xaml.cs|130|The variable 'bb' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\EnterOneValueUC.xaml.cs|19|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\WriterEventLogShared.cs|146|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Essential\WpfApp.cs|30|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\BaseControls\FrameworkElementHelper.cs|53|The variable 'sw' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ControlsWithGet\TextBoxHelper.cs|152|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\SettingsManager.cs|59|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.ToggleSwitch\SunamoWpf.ToggleSwitch\Controls\ToggleSwitch\HorizontalToggleSwitchWithLabel.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Buttons\ImageButtons.xaml.cs|36|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Visualization\TwoWayTable.xaml.cs|102|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Helpers\ContainerControls\WindowHelper.cs|60|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Helpers\ContainerControls\WindowHelperShared.cs|100|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\AboutApp.xaml.cs|29|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\EmptyUC.xaml.cs|11|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\ErrorListing.xaml.cs|61|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\LoginUc.xaml.cs|19|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\UserControls\LogUC.xaml.cs|12|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\EnterOneValueWindow.xaml.cs|40|The variable 'ex' is declared but never used
+CS0168|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\NotificationWindow.xaml.cs|15|The variable 'ex' is declared but never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\InputTwoColumnsUC.xaml.cs|70|The variable 'methodName' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Result\FoundedFilesResults2.xaml.cs|50|The variable 'i' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\EnterOneValueUC.xaml.cs|157|The variable 'methodName' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\BaseControls\FrameworkElementHelperShared.cs|68|The variable 'uc' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ContainerControls\GridHelperShared.cs|103|The variable 'i' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\PicturesDesktop.cs|195|The variable 'ratioW' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\PicturesDesktop.cs|196|The variable 'ratioH' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\PicturesDesktop.cs|197|The variable 'ts16' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\PicturesDesktop.cs|399|The variable 'margin' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Storage\SunamoWpf.Storage\Storage\ApplicationDataContainerListShared.cs|288|The variable 'throwExcIfFalse' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Controls\Buttons\ImageButtons.xaml.cs|143|The variable 'methodName' is assigned but its value is never used
+CS0219|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\WindowWithUserControl.cs|311|The variable 'i' is assigned but its value is never used
+CS0414|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SunamoLoginDialog.xaml.cs|78|The field 'LoginDialog.loginClicked' is assigned but its value is never used
+CS0414|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Core\SunamoWpf.Core\WriterEventLogShared.cs|8|The field 'WriterEventLog.scz' is assigned but its value is never used
+CS0414|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\Helpers\ControlsWithGet\ComboBoxHelper.cs|8|The field 'ComboBoxHelper.tagy' is assigned but its value is never used
+CS0414|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Helpers\SunamoWpf.Helpers\StartupHelper\StartupHelper.cs|72|The field 'StartupHelper.app' is assigned but its value is never used
+CS0414|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Windows\SunamoWpf.Windows\Windows\NotificationWindow.xaml.cs|6|The field 'NotificationWindow.presentationSource' is assigned but its value is never used
+CS0649|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SunamoPasswordBox.xaml.cs|10|Field 'SunamoPasswordBox.tbc' is never assigned to, and will always have its default value null
+CS0649|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SunamoPasswordBox.xaml.cs|8|Field 'SunamoPasswordBox.pwbc' is never assigned to, and will always have its default value null
+CS0649|E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWpf.Controls\SunamoWpf.Controls\Controls\Input\SunamoPasswordBox.xaml.cs|9|Field 'SunamoPasswordBox.btnc' is never assigned to, and will always have its default value null

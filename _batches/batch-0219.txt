@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Data\UploadFile.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Interfaces\IPercentCalculatorHttp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Interfaces\IProgressBarShared.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\Values\HttpKnownHeaderNames.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\FS.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SharedAlgorithms.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SHReplace.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\SHSplit.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoHttp\SunamoHttp\_sunamo\StringExtensions.cs

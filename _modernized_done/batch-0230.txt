@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_sunamo\SunamoArgs\MSSloupecDBArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_sunamo\SunamoArgs\PsInvokeArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_sunamo\SunamoDelegates\VoidBoolNullable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_sunamo\SunamoEnums\Enums\Signed.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoInterfaces\SunamoInterfaces\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\RunnerJson\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\JsonGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoJson\SunamoJson\SerializerHelperJson.cs

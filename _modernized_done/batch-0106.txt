@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\_sunamo\PH.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDebugIO\SunamoDebugIO\_sunamo\SunamoValues\AppStringsFolders.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\RunnerDelegates\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\ByteArrayByteArrayByteArrayHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\DateTimeDoubleDateTimeHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\DateTimeIntDateTimeHandler.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\ListStringListString.cs

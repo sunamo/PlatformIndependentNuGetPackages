@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCode\SunamoDevCode\_sunamo\SunamoXml\XmlNamespacesHolder.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\RunnerSunamoCodeGenerator\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\CodeGenerator\CSharpClassesGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\CodeGenerator\EnumItem.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\CodeGenerator\GeneratorCpp.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\CodeGenerator\SqlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCodeGenerator\SunamoCodeGenerator\CodeGenerator\TypeScriptGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionOnDrive\RunnerCollectionOnDrive\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCollectionOnDrive\SunamoCollectionOnDrive\CollectionOnDrive.cs

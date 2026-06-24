@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\UStringT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidBool.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidBoolNullable.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidBoolNullableObject.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidColor.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidDouble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidInt.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidIntDouble.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidListT.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoDelegates\SunamoDelegates\VoidString.cs

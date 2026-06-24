@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoArgs\SunamoArgs\RemoveStartingWithArgs.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\RunnerAsync\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\AsyncHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\AsyncHelper1.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAsync\SunamoAsync\_sunamo\SunamoExtensions\TaskExtensions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoAttributes\RunnerAttributes\Program.cs

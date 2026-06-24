@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoExceptions\Exceptions.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoExceptions\ThrowEx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoHtml\HtmlAgilityHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoInterfaces\Interfaces\IXmlGenerator.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoRegex\RegexHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoValues\Constants\HtmlTags.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWikipedia\SunamoWikipedia\_sunamo\SunamoValues\Values\ConstsAspx.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\RunnerWinStd\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\RunnerWinStd\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoWinStd\RunnerWinStd\Program2.cs

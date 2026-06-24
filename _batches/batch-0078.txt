@@ -1,0 +1,10 @@
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\RunnerCrypt\Program.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\BTS2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\CryptHelper.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\CryptHelper2.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\CryptHelper21.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\CryptHelper22.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\GlobalUsings.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\Net48Polyfills.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\Data\CryptData.cs
+E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoCrypt\SunamoCrypt\Enums\Provider.cs
