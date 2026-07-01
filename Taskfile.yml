@@ -15,6 +15,7 @@ tasks:
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;dev' + [char]7)"
       - powershell -Command "Clear-Host"
+      - pwsh -NoProfile "E:\vs\Scripts_Projects\PowershellScripts\check-branch-main.ps1"
       - dotnet run -c Debug
 
   build-kondo:
