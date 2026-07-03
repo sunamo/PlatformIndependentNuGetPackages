@@ -15,7 +15,7 @@ tasks:
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;dev' + [char]7)"
       - powershell -Command "Clear-Host"
-      - pwsh -NoProfile "E:\vs\Scripts_Projects\PowershellScripts\checkout-and-pull-main.ps1"
+      - pwsh -NoProfile "E:\vs\Scripts_Projects\PowershellScripts\dev-preflight.ps1" -TaskName dev
       - dotnet run -c Debug
 
   build-kondo:
