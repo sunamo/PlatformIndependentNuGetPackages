@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Compile Include="..\SunamoNumbers\SunamoNumbers\**\*.cs"
-             Exclude="..\SunamoNumbers\SunamoNumbers\obj\**\*;..\SunamoNumbers\SunamoNumbers\bin\**\*" />
+             Exclude="..\SunamoNumbers\SunamoNumbers\obj\**\*;..\SunamoNumbers\SunamoNumbers\bin\**\*;..\SunamoNumbers\SunamoNumbers\**\*Tests*.cs" />
   </ItemGroup>
 
   <ItemGroup>
