@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Compile Include="..\SunamoRegex\SunamoRegex\**\*.cs"
-             Exclude="..\SunamoRegex\SunamoRegex\obj\**\*;..\SunamoRegex\SunamoRegex\bin\**\*" />
+             Exclude="..\SunamoRegex\SunamoRegex\obj\**\*;..\SunamoRegex\SunamoRegex\bin\**\*;..\SunamoRegex\SunamoRegex\**\*Tests*.cs" />
   </ItemGroup>
 
   <ItemGroup>
