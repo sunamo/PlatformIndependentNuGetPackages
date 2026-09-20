@@ -478,3 +478,6 @@
 [submodule "SunamoWpf.Windows"]
 	path = SunamoWpf.Windows
 	url = git@github.com:sunamo/SunamoWpf.Windows.git
+[submodule "SunamoDevCode"]
+	path = SunamoDevCode
+	url = git@github.com:sunamo/SunamoDevCode.git
