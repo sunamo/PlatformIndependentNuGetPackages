@@ -1,0 +1,26 @@
+# PlatformIndependentNuGetPackages
+
+- **SunamoAps** — APS (All Projects Search) utility funkce, vyčleněné ze SunamoDevCode.
+- **SunamoAzureDevOpsApi** — klient pro Azure DevOps API (načítání repozitářů, generování git clone příkazů).
+- **SunamoCode** — obecný kód pro práci s C# (SunamoDevCode), v budoucnu ke sloučení se SunamoCode a SunamoCSharp.
+- **SunamoCodeGenerator** — generátory kódu, vyčleněné ze SunamoDevCode.
+- **SunamoCryptAlgorithms** — kryptografické algoritmy (asymetrické, symetrické, hash, hesla, šifrování dat).
+- **SunamoCSharp** — práce se strukturou a obsahem C#/.NET souborů.
+- **SunamoDevCodeBase** — základní typy, `_sunamo` utility a `_public` interfaces, vyčleněné ze SunamoDevCode.
+- **SunamoDevCodeCore** — jádrové utility a pomocné třídy, vyčleněné ze SunamoDevCode.
+- **SunamoDevCodeFileFormats** — práce s formátem souborů XLF, vyčleněná ze SunamoDevCode.
+- **SunamoEntity** — entitní třídy (skladby, umělci, timestampy) a sdílené `_public` typy.
+- **SunamoEssential** — základní sdílené utility a algoritmy (cleanup, resources, web app helpers).
+- **SunamoGenerators** — generátory (názvy ovládacích prvků, chybové zprávy, speciální složky) a XLF klíče.
+- **SunamoGeo** — geografická data pro české kraje a světové státy s podporou lokalizace.
+- **SunamoHelpers** — sbírka pomocných tříd pro formátování, serializaci, SMTP, YAML, locale a kreslení.
+- **SunamoLazy** — pomocníci pro líné (lazy) inicializace konfigurace a cachovaných hodnot řetězců.
+- **SunamoMsBuild** — enumy a hodnoty pro MSBuild, vyčleněné ze SunamoDevCode.
+- **SunamoRL** — loader zdrojů (resource loader) s podporou lokalizace.
+- **SunamoSE** — pomocník pro práci s vlákny, definice TypesD a sdílené utility pro běh.
+- **SunamoSharedMisc** — různorodé sdílené utility: zpracování výjimek, progress bar, Windows security a další.
+- **SunamoSolutionsIndexer** — indexer solutions a projektů, vyčleněný ze SunamoDevCode.
+- **SunamoStorage** — utility pro ukládání souborů s pojmenováním podle data/času a porovnávacími strategiemi.
+- **SunamoStreams** — utility pro práci se streamy a polyfilly pro net48 (asynchronní práce se soubory).
+- **SunamoToNetCore** — migrační utility pro přechod na .NET Core, vyčleněné ze SunamoDevCode.
+- **SunamoYt** — helpery pro práci s YouTube (vyhledávání, komentáře, dostupnost, rotace API klíčů).

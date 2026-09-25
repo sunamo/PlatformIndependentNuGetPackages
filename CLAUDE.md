@@ -869,3 +869,11 @@ public static string TimeToString(DateTime dateTime, LangsDt lang, DateTime dtMi
 ```
 
 **Důvod:** `LangsDt` je doménově specifický typ který reprezentuje jazyk (Language). Název `lang` je standardní zkratka pro "language" a je dostatečně samopopisný. `l` je jednopísmenná zkratka která je ZAKÁZANÁ.
+
+## 1 worktree = 1 větev = 1 PR — nikdy víc souběžných PR
+
+- Toto repo trpělo tím, že vznikalo víc souběžných PR z jednoho repa (např. #15 a #14).
+- Každý rebase/push jednoho PR rozbije ostatní a vznikají řetězové merge konflikty („šílené mergování").
+- **Závazné pravidlo pro AI:** vždy jen JEDNA worktree (`PlatformIndependentNuGetPackages-claude` s větví `claude`) a jeden PR najednou.
+- Před založením nového PR/větve nejdřív dokonči, zamerguj nebo zavři předchozí.
+- Nikdy nezakládej druhou souběžnou větev/PR ze stejné worktree ani z jiné větve.
