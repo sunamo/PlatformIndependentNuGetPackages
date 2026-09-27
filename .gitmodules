@@ -481,3 +481,6 @@
 [submodule "SunamoDevCode"]
 	path = SunamoDevCode
 	url = git@github.com:sunamo/SunamoDevCode.git
+[submodule "SunamoTesseract"]
+	path = SunamoTesseract
+	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoTesseract/SunamoTesseract
