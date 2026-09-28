@@ -448,3 +448,6 @@
 [submodule "SunamoBitLockerManager"]
 	path = SunamoBitLockerManager
 	url = git@github.com:sunamo/SunamoBitLockerManager.git
+[submodule "SunamoPerformance"]
+	path = SunamoPerformance
+	url = git@github.com:sunamo/SunamoPerformance.git
