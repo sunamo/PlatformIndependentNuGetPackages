@@ -1,4 +1,4 @@
-﻿[submodule "SunamoAI"]
+[submodule "SunamoAI"]
 	path = SunamoAI
 	url = git@github.com:sunamo/SunamoAI.git
 [submodule "SunamoArgs"]
