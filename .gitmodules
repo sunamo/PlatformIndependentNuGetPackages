@@ -445,3 +445,6 @@
 [submodule "SunamoTesseract"]
 	path = SunamoTesseract
 	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoTesseract/SunamoTesseract
+[submodule "SunamoBitLockerManager"]
+	path = SunamoBitLockerManager
+	url = git@github.com:sunamo/SunamoBitLockerManager.git
