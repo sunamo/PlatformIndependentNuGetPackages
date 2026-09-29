@@ -289,3 +289,11 @@ nul
 NUL
 
 *-claude*/
+
+# Doplneno automaticky - odstraneny trackovane build/cache slozky
+obj/
+target/
+Debug/
+Release/
+.dart_tool/
+.gradle/
