@@ -451,3 +451,6 @@
 [submodule "SunamoPerformance"]
 	path = SunamoPerformance
 	url = git@github.com:sunamo/SunamoPerformance.git
+[submodule "SunamoIco"]
+	path = SunamoIco
+	url = git@github.com:sunamo/SunamoIco.git
