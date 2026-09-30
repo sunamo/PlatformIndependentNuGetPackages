@@ -1,5 +1,5 @@
 ---
-schema_version: 4
+schema_version: 5
 type: library
 file_count: 1567
 delete_recommendation_percent: 2
@@ -7,6 +7,9 @@ generated_date: 2026-09-30
 generated_time: 16:46:11
 github_origin: no
 github_source_url: 
+first_commit_date: 2024-07-10
+last_commit_date: 2026-09-30
+commit_count: 2683
 ---
 
 ## Description
@@ -27,3 +30,11 @@ Doporučení ke smazání: **2 %** — nemazat, je to centrální sbírka sdíle
 - Aktivní (poslední commity 2026-09-30) a s dlouhou historií (2691 commitů).
 - Odkazují na něj submoduly i konzumující aplikace.
 - V rootu jsou dočasné soubory (build výstupy, dávky `_batches`, `_modernized_done`, skripty), které by šlo uklidit, ale nejsou důvodem k mazání.
+
+## Historie commitů
+
+- První commit: 2024-07-10
+- Poslední commit: 2026-09-30
+- Celkem commitů: 2683
+
+- Počítá se bez commitů, které jen generovaly RESUME.cs.md nebo README.md.
