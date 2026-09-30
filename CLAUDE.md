@@ -902,3 +902,13 @@ public static string TimeToString(DateTime dateTime, LangsDt lang, DateTime dtMi
 - Bez `-Apply` jen vypíše rozdíly (dry-run).
 - Poté v `-claude` rodiči posuň ukazatele submodulů na `origin/master` submodulu (PR `claude`→`master`) a fast-forwardni hlavní checkout.
 - `ptgan` se kvůli tomu neupravuje.
+
+
+## Jen submoduly — žádné samostatné git klony přímo v repu (uživatel 2026-09-30, ABSOLUTNÍ)
+
+Každý podadresář `PlatformIndependentNuGetPackages`, který je samostatným gitem, musí být submodul (záznam v `.gitmodules` a gitlink), nikdy přímý klon se složkou `.git` uvnitř.
+
+- Nový kód/web/balíček = nové repo na remote + `git submodule add` v `-claude` worktree na větvi `claude`. Nezakládej `git init`/`git clone` do podsložky.
+- Kontrola: podsložka s `.git` jako SLOŽKOU je přímý git (zakázaný); `.git` jako soubor je submodul/worktree (v pořádku).
+- Nalezený přímý git nejdřív ověř (stash, nepushnuté větve, nečistý strom), pak ho přesuň mimo repo do `E:\vs_ObsoleteDueToAI` se zachováním celé cesty (nemaž) a nahlas. Je-li to duplicita existujícího submodulu (přejmenovaný starý klon), submodul už existuje — nepřidávej druhý.
+- Incident 2026-09-30: `BeScz` v `sunamo.net` (starý klon repa `sunamo.net-lyrics`, dnes submodul `BeLyr`) a `SunamoCode` v `PlatformIndependentNuGetPackages` (starý klon monolitu `SunamoDevCode`). Oba přesunuty do `E:\vs_ObsoleteDueToAI\Projects\...`.
