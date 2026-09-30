@@ -15,9 +15,9 @@ Sbírka sdílených NuGet balíčků `Sunamo*` pro všechny aplikace a zařízen
 
 ## Původ zdrojáků
 
-Staženo z GitHubu: **ne** — vlastní knihovny uživatele, repo i submoduly patří účtu `sunamo` (GitHub) a `.gitmodules` míří na `git@github.com:sunamo/...`.
+Staženo z GitHubu: **ne** — vlastní knihovny uživatele, repo patří účtu `sunamo` (GitHub) a `.gitmodules` míří z 151 submodulů na `git@github.com:sunamo/...` a ze 4 (SunamoComgate, SunamoPayments, SunamoTesseract, SunamoYt) na vlastní Azure DevOps `sunamocz`.
 
-- Ověřeno: `git remote -v` (`git@github.com:sunamo/PlatformIndependentNuGetPackages.git`, vlastní účet), `git log` (2691 commitů od 2024-07-10, autoři Radek Jancik/Radek Jančík/smutekutek/sunamo.cz), `.gitmodules` (155 submodulů všechny z `github.com:sunamo`).
+- Ověřeno: `git remote -v` (`git@github.com:sunamo/PlatformIndependentNuGetPackages.git`, vlastní účet), `git log` (2691 commitů od 2024-07-10, autoři Radek Jancik/Radek Jančík/smutekutek/sunamo.cz), `.gitmodules` (155 submodulů: 151 z `github.com:sunamo`, 4 z Azure DevOps `sunamocz`).
 - `gh search repos "PlatformIndependentNuGetPackages"` vrátil jen vlastní repa `sunamo/*` (SunamoDevCodeCore, SunamoToNetCore, SunamoCodeGenerator, SunamoMsBuild, SunamoCSharp, SunamoSolutionsIndexer), žádné cizí; hash porovnání proto nebylo potřeba.
 
 ## Doporučení ke smazání
