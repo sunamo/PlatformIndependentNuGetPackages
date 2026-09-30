@@ -15,8 +15,10 @@
              Exclude="..\SunamoToNetCore\SunamoToNetCore\obj\**\*;..\SunamoToNetCore\SunamoToNetCore\bin\**\*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SunamoDevCodeBase.Net48.csproj" />
-    <ProjectReference Include="SunamoSolutionsIndexer.Net48.csproj" />
-    <ProjectReference Include="SunamoAps.Net48.csproj" />
+    <PackageReference Include="CaseDotNet.Extensions" Version="0.2.46" />
+    <PackageReference Include="Diacritics" Version="4.1.4" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="TextCopy" Version="6.2.1" />
   </ItemGroup>
 </Project>
