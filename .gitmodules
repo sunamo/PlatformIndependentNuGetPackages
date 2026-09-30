@@ -460,3 +460,6 @@
 [submodule "SunamoPayments"]
 	path = SunamoPayments
 	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoPayments/SunamoPayments
+[submodule "SunamoYt"]
+	path = SunamoYt
+	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoYt/SunamoYt
