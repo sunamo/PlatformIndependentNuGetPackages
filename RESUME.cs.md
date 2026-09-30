@@ -9,7 +9,11 @@ github_origin: no
 github_source_url: 
 first_commit_date: 2024-07-10
 last_commit_date: 2026-09-30
+<<<<<<< HEAD
+commit_count: 2686
+=======
 commit_count: 2683
+>>>>>>> origin/master
 ---
 
 ## Description
@@ -35,6 +39,10 @@ Doporučení ke smazání: **2 %** — nemazat, je to centrální sbírka sdíle
 
 - První commit: 2024-07-10
 - Poslední commit: 2026-09-30
+<<<<<<< HEAD
+- Celkem commitů: 2686
+=======
 - Celkem commitů: 2683
+>>>>>>> origin/master
 
 - Počítá se bez commitů, které jen generovaly RESUME.cs.md nebo README.md.
