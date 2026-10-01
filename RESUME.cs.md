@@ -1,19 +1,17 @@
 ---
-schema_version: 5
+schema_version: 6
 type: library
 file_count: 1567
-delete_recommendation_percent: 2
-generated_date: 2026-09-30
-generated_time: 16:46:11
-github_origin: no
+avg_lines_per_file: 170
+move_to_legacy_percent: 2
+generated_date: 2026-10-01
+generated_time: 16:40:22
 github_source_url: 
-first_commit_date: 2024-07-10
-last_commit_date: 2026-09-30
-<<<<<<< HEAD
-commit_count: 2686
-=======
-commit_count: 2683
->>>>>>> origin/master
+last_build_ok: 
+last_build_date: 
+last_tests_run_date: 
+covered_lines: 
+total_lines: 
 ---
 
 ## Description
@@ -27,22 +25,15 @@ Staženo z GitHubu: **ne** — vlastní knihovny uživatele, repo patří účtu
 - Ověřeno: `git remote -v` (`git@github.com:sunamo/PlatformIndependentNuGetPackages.git`, vlastní účet), `git log` (2691 commitů od 2024-07-10, autoři Radek Jancik/Radek Jančík/smutekutek/sunamo.cz), `.gitmodules` (155 submodulů: 151 z `github.com:sunamo`, 4 z Azure DevOps `sunamocz`).
 - `gh search repos "PlatformIndependentNuGetPackages"` vrátil jen vlastní repa `sunamo/*` (SunamoDevCodeCore, SunamoToNetCore, SunamoCodeGenerator, SunamoMsBuild, SunamoCSharp, SunamoSolutionsIndexer), žádné cizí; hash porovnání proto nebylo potřeba.
 
-## Doporučení ke smazání
+## Doporučení přesunu do legacy
 
-Doporučení ke smazání: **2 %** — nemazat, je to centrální sbírka sdílených knihoven, na které stojí ostatní projekty.
+Doporučení přesunu do sunamocz-legacy.visualstudio.com: **2 %** — nepřesouvat, je to centrální sbírka sdílených knihoven, na které stojí ostatní projekty.
 
 - Aktivní (poslední commity 2026-09-30) a s dlouhou historií (2691 commitů).
 - Odkazují na něj submoduly i konzumující aplikace.
 - V rootu jsou dočasné soubory (build výstupy, dávky `_batches`, `_modernized_done`, skripty), které by šlo uklidit, ale nejsou důvodem k mazání.
 
-## Historie commitů
+## Vazby na moje repa
 
-- První commit: 2024-07-10
-- Poslední commit: 2026-09-30
-<<<<<<< HEAD
-- Celkem commitů: 2686
-=======
-- Celkem commitů: 2683
->>>>>>> origin/master
-
-- Počítá se bez commitů, které jen generovaly RESUME.cs.md nebo README.md.
+- Submoduly: SunamoAI, SunamoAps, SunamoArgs, SunamoAsync, SunamoAttributes, SunamoAzureDevOpsApi, SunamoBazosCrawler, SunamoBitLockerManager, SunamoBts, SunamoCSharp, SunamoChar, SunamoCl, SunamoClearScript, SunamoClipboard, SunamoCodeGenerator, SunamoCollectionOnDrive, SunamoCollectionWithoutDuplicates, SunamoCollections, SunamoCollectionsChangeContent, SunamoCollectionsGeneric, SunamoCollectionsIndexesWithNull, SunamoCollectionsNonGeneric, SunamoCollectionsTo, SunamoCollectionsValuesTableGrid, SunamoColors, SunamoComgate, SunamoCompare, SunamoConverters, SunamoCrypt, SunamoCryptAlgorithms, SunamoCsproj, SunamoCssGenerator, SunamoCsv, SunamoData, SunamoDateTime, SunamoDebugCollection, SunamoDebugIO, SunamoDebugging, SunamoDelegates, SunamoDependencyInjection, SunamoDevCode, SunamoDevCodeBase, SunamoDevCodeCore, SunamoDevCodeFileFormats, SunamoDictionary, SunamoDotNetZip, SunamoDotnetCmdBuilder, SunamoEditorConfig, SunamoEmbeddedResources, SunamoEmoticons, SunamoEntity, SunamoEnums, SunamoEnumsHelper, SunamoEssential, SunamoExceptions, SunamoExtensions, SunamoFileExtensions, SunamoFileIO, SunamoFileSystem, SunamoFilesIndex, SunamoFluentFtp, SunamoFtp, SunamoGenerators, SunamoGeo, SunamoGetFiles, SunamoGetFolders, SunamoGitConfig, SunamoGoPayApi, SunamoGoogleMyMaps, SunamoGoogleSheets, SunamoGpx, SunamoHelpers, SunamoHtml, SunamoHttp, SunamoIco, SunamoIni, SunamoInterfaces, SunamoJson, SunamoLaTeX, SunamoLang, SunamoLazy, SunamoLogging, SunamoMail, SunamoMarkdown, SunamoMathpix, SunamoMime, SunamoMsBuild, SunamoMsSqlServer, SunamoMsgReader, SunamoNuGetProtocol, SunamoNumbers, SunamoOctokit, SunamoPInvoke, SunamoPS, SunamoPackageJson, SunamoParsing, SunamoPaths, SunamoPayments, SunamoPercentCalculator, SunamoPerformance, SunamoPlatformUwpInterop, SunamoRL, SunamoRandom, SunamoReflection, SunamoRegex, SunamoResult, SunamoRobotsTxt, SunamoRoslyn, SunamoRss, SunamoRuleset, SunamoSE, SunamoSecurity, SunamoSelenium, SunamoSerializer, SunamoSharedMisc, SunamoSolutionsIndexer, SunamoStopwatch, SunamoStorage, SunamoStreams, SunamoString, SunamoStringFormat, SunamoStringGetLines, SunamoStringGetString, SunamoStringJoin, SunamoStringJoinPairs, SunamoStringParts, SunamoStringReplace, SunamoStringSplit, SunamoStringSubstring, SunamoStringTrim, SunamoTesseract, SunamoTest, SunamoText, SunamoTextIndexing, SunamoTextOutputGenerator, SunamoThisApp, SunamoThread, SunamoThreading, SunamoTidy, SunamoToNetCore, SunamoToUnixLineEnding, SunamoTwoWayDictionary, SunamoTypes, SunamoUnderscore, SunamoUri, SunamoUriWebServices, SunamoValues, SunamoVcf, SunamoWikipedia, SunamoWinStd, SunamoXlfKeys, SunamoXliffParser, SunamoXml, SunamoYaml, SunamoYouTube, SunamoYt
+- ProjectReference / PackageReference: FluentAssertions, FluentFTP, SunamoAps, SunamoAzureDevOpsApi, SunamoBitLockerManager, SunamoCSharp, SunamoCodeGenerator, SunamoCryptAlgorithms, SunamoDevCodeBase, SunamoDevCodeCore, SunamoDevCodeFileFormats, SunamoEntity, SunamoEssential, SunamoGenerators, SunamoGeo, SunamoHelpers, SunamoLazy, SunamoMsBuild, SunamoPerformance, SunamoRL, SunamoSE, SunamoSharedMisc, SunamoSolutionsIndexer, SunamoStorage, SunamoStreams, SunamoToNetCore
