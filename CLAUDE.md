@@ -909,6 +909,6 @@ public static string TimeToString(DateTime dateTime, LangsDt lang, DateTime dtMi
 Každý podadresář `PlatformIndependentNuGetPackages`, který je samostatným gitem, musí být submodul (záznam v `.gitmodules` a gitlink), nikdy přímý klon se složkou `.git` uvnitř.
 
 - Nový kód/web/balíček = nové repo na remote + `git submodule add` v `-claude` worktree na větvi `claude`. Nezakládej `git init`/`git clone` do podsložky.
-- Kontrola: podsložka s `.git` jako SLOŽKOU je přímý git (zakázaný); `.git` jako soubor je submodul/worktree (v pořádku).
+- Kontrola: přímý git je podsložka se `.git`, která NENÍ gitlink (`git ls-files -s | grep ^160000` ji neobsahuje, v `.gitmodules` chybí). Samotná `.git` složka nestačí — submoduly v hlavním checkoutu ji mívají také.
 - Nalezený přímý git nejdřív ověř (stash, nepushnuté větve, nečistý strom), pak ho přesuň mimo repo do `E:\vs_ObsoleteDueToAI` se zachováním celé cesty (nemaž) a nahlas. Je-li to duplicita existujícího submodulu (přejmenovaný starý klon), submodul už existuje — nepřidávej druhý.
 - Incident 2026-09-30: `BeScz` v `sunamo.net` (starý klon repa `sunamo.net-lyrics`, dnes submodul `BeLyr`) a `SunamoCode` v `PlatformIndependentNuGetPackages` (starý klon monolitu `SunamoDevCode`). Oba přesunuty do `E:\vs_ObsoleteDueToAI\Projects\...`.
