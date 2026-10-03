@@ -124,6 +124,7 @@
   <Project Path="SunamoPaths\SunamoPaths\SunamoPaths.csproj" />
   <Project Path="SunamoDotNetZip\SunamoDotNetZip\SunamoDotNetZip.csproj" />
   <Project Path="SunamoMsSqlServer\SunamoMsSqlServer\SunamoMsSqlServer.csproj" />
+  <Project Path="SunamoMsSqlLegacySunamoMsSqlLegacySunamoMsSqlLegacy.csproj" />
   <Project Path="SunamoTest\SunamoTest\SunamoTest.csproj" />
   <Project Path="SunamoAzureDevOpsApi\SunamoAzureDevOpsApi\SunamoAzureDevOpsApi.csproj" />
   <Project Path="SunamoAI\SunamoAI\SunamoAI.csproj" />

@@ -464,3 +464,6 @@
 	path = SunamoGoPayApi
 	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoGoPayApi/SunamoGoPayApi
 	branch = master
+[submodule "SunamoMsSqlLegacy"]
+	path = SunamoMsSqlLegacy
+	url = git@github.com:sunamo/SunamoMsSqlLegacy.git
