@@ -467,3 +467,12 @@
 [submodule "SunamoMsSqlLegacy"]
 	path = SunamoMsSqlLegacy
 	url = git@github.com:sunamo/SunamoMsSqlLegacy.git
+[submodule "SunamoSlnGen"]
+	path = SunamoSlnGen
+	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoSlnGen/SunamoSlnGen
+[submodule "SunamoNTextCat"]
+	path = SunamoNTextCat
+	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoNTextCat/SunamoNTextCat
+[submodule "SunamoTranslate"]
+	path = SunamoTranslate
+	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoTranslate/SunamoTranslate
