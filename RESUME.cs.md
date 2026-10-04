@@ -1,17 +1,26 @@
 ---
-schema_version: 7
+schema_version: 11
 type: my-library
+category_override: none
 file_count: 1567
+file_extensions: txt:853, ps1:198, csproj:146, md:139, cs:15, json:15, js:11, noext:8, yml:6, slnx:5, bat:3, props:2, sh:2, 1:1, backup:1, backup_20250730_155445:1, backup_20250730_173610:1, backup_mainpathfix_20250730_175225:1, backup_pathfix_20250730_175138:1, jancikappdatalocaltempclaude-0b6c-cwd:1, ruleset:1, template:1
+file_extensions_updated: 2026-10-04
 avg_lines_per_file: 170
+total_lines: 32420
+metrics_lm: 2026-10-01 16:40:22
 move_to_legacy_percent: 2
-generated_date: 2026-10-01
-generated_time: 16:40:22
-github_source_url: 
+description_updated: 2026-10-01
+links_updated: 2026-10-01
+github_source_url: not found
+origin_status: found
+origin_checked: 2026-10-01
+article_source_url: not run
+article_status: pending
+article_checked: not run
 last_build_ok: no
 last_build_date: 2026-10-02
-last_tests_run_date: n/a
-covered_lines: n/a
-total_lines: 32420
+last_tests_run_date: not run
+covered_lines: not run
 ---
 
 ## Description
