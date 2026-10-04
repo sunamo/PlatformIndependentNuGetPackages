@@ -1,6 +1,6 @@
 ---
 schema_version: 11
-type: my-library
+type: real-app
 category_override: none
 file_count: 1567
 file_extensions: txt:853, ps1:198, csproj:146, md:139, cs:15, json:15, js:11, noext:8, yml:6, slnx:5, bat:3, props:2, sh:2, 1:1, backup:1, backup_20250730_155445:1, backup_20250730_173610:1, backup_mainpathfix_20250730_175225:1, backup_pathfix_20250730_175138:1, jancikappdatalocaltempclaude-0b6c-cwd:1, ruleset:1, template:1
