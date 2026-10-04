@@ -172,11 +172,6 @@
     <Project Path="SunamoDependencyInjection\SunamoDependencyInjection.Tests\SunamoDependencyInjection.Tests.csproj" />
     <Project Path="SunamoDependencyInjection\SunamoDependencyInjection\SunamoDependencyInjection.csproj" />
   </Folder>
-  <Folder Name="/SunamoDevCode/">
-    <Project Path="SunamoCode\RunnerDevCode\RunnerDevCode.csproj" />
-    <Project Path="SunamoCode\SunamoDevCode.Tests\SunamoDevCode.Tests.csproj" />
-    <Project Path="SunamoCode\SunamoDevCode\SunamoDevCode.csproj" />
-  </Folder>
   <Folder Name="/SunamoDictionary/">
     <Project Path="SunamoDictionary\RunnerDictionary\RunnerDictionary.csproj" />
     <Project Path="SunamoDictionary\SunamoDictionary.Tests\SunamoDictionary.Tests.csproj" />
