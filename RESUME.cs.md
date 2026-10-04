@@ -1,6 +1,6 @@
 ---
 schema_version: 7
-type: library
+type: my-library
 file_count: 1567
 avg_lines_per_file: 170
 move_to_legacy_percent: 2
