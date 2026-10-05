@@ -8,13 +8,11 @@ tasks:
   rel:
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;rel' + [char]7)"
-      - powershell -Command "Clear-Host"
       - dotnet build -c Release
 
   dev:
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;dev' + [char]7)"
-      - powershell -Command "Clear-Host"
       - pwsh -NoProfile "E:\vs\Scripts_Projects\PowershellScripts\dev-preflight.ps1" -TaskName dev
       - dotnet run -c Debug
 
@@ -22,13 +20,11 @@ tasks:
     desc: "Build our kondo fork (requires Rust/cargo)"
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;build-kondo' + [char]7)"
-      - powershell -Command "Clear-Host"
       - cargo build --release --manifest-path "{{.KONDO_SRC}}\Cargo.toml"
 
   clean:
     desc: "Clean build artifacts using our kondo fork"
     cmds:
       - powershell -Command "[Console]::Write([char]27 + ']0;clean' + [char]7)"
-      - powershell -Command "Clear-Host"
       - powershell -Command "if (-not (Test-Path '{{.KONDO_BIN}}')) { Write-Error 'kondo.exe nenalezeno - spust nejdrive: task build-kondo'; exit 1 }"
       - "{{.KONDO_BIN}}" --all --quiet .
