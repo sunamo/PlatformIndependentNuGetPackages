@@ -28,3 +28,7 @@ tasks:
       - powershell -Command "[Console]::Write([char]27 + ']0;clean' + [char]7)"
       - powershell -Command "if (-not (Test-Path '{{.KONDO_BIN}}')) { Write-Error 'kondo.exe nenalezeno - spust nejdrive: task build-kondo'; exit 1 }"
       - "{{.KONDO_BIN}}" --all --quiet .
+  pub:
+    desc: Publikace release verze do D:\SyncTrayzor\_sunamo (logika ve sdilenem skriptu)
+    cmds:
+      - pwsh -NoProfile -File "E:\vs\Scripts_Projects\PowershellScripts\publish-to-synctrayzor.ps1" -WorkingDir "{{.USER_WORKING_DIR}}"
