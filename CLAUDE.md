@@ -912,3 +912,23 @@ Každý podadresář `PlatformIndependentNuGetPackages`, který je samostatným 
 - Kontrola: přímý git je podsložka se `.git`, která NENÍ gitlink (`git ls-files -s | grep ^160000` ji neobsahuje, v `.gitmodules` chybí). Samotná `.git` složka nestačí — submoduly v hlavním checkoutu ji mívají také.
 - Nalezený přímý git nejdřív ověř (stash, nepushnuté větve, nečistý strom), pak ho přesuň mimo repo do `E:\vs_ObsoleteDueToAI` se zachováním celé cesty (nemaž) a nahlas. Je-li to duplicita existujícího submodulu (přejmenovaný starý klon), submodul už existuje — nepřidávej druhý.
 - Incident 2026-09-30: `BeScz` v `sunamo.net` (starý klon repa `sunamo.net-lyrics`, dnes submodul `BeLyr`) a `SunamoCode` v `PlatformIndependentNuGetPackages` (starý klon monolitu `SunamoDevCode`). Oba přesunuty do `E:\vs_ObsoleteDueToAI\Projects\...`.
+
+## Veškerý kód včetně komentářů je VŽDY jen anglicky — NEPORUŠITELNÉ (uživatel 2026-11-20, ABSOLUTNÍ)
+
+Každý `.cs` soubor, který AI vytvoří nebo upraví, má identifikátory, komentáře, `///` dokumentaci a texty výjimek jen anglicky. Žádné `// CZ:`, žádné dvojjazyčné páry, žádné české komentáře.
+
+- Narazíš-li na `// CZ:` nebo český komentář v souboru, který stejně upravuješ, přepiš ho do angličtiny nebo smaž.
+- Komentář je jen `// text`, bez prefixu `EN:`.
+- Přebíjí starší věty v tomto souboru o českých komentářích a příklady s `// CZ:`.
+
+## Úklid komentářů 2026-11-20 — pevné commit zprávy a evidence hashů (ABSOLUTNÍ)
+
+Ze všech `.cs` souborů (parent i všechny submoduly) byl odstraněn zakomentovaný kód a české komentáře, každé zvlášť jedním commitem s pevnou zprávou:
+
+- `remove: zakomentovaný kód ze souborů .cs`
+- `remove: české komentáře, ponechány jen anglické`
+
+Při dalším hromadném úklidu používej přesně tytéž zprávy a hash každého commitu zapiš do `.docs\removed-code-commits.md` (tabulka repo → hash). Smazaný kód se tak dohledá přes `git show <hash>` nebo `git log --grep="zakomentovaný kód ze souborů"`.
+
+- Nástroj: `.scripts\clean-comments.py` (`code` / `english`, bez `--apply` je suchý běh) a `.scripts\commit-cs-changes-all-repos.py` (commit a push jen změněných `.cs` ve všech repech).
+- Starší skript `.scripts\remove-commented-code-blocks.ps1` maže i prózu a obsahuje české komentáře; nový kód úklidu patří do `clean-comments.py`.
