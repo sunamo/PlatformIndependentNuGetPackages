@@ -932,3 +932,5 @@ Při dalším hromadném úklidu používej přesně tytéž zprávy a hash kaž
 
 - Nástroj: `.scripts\clean-comments.py` (`code` / `english`, bez `--apply` je suchý běh) a `.scripts\commit-cs-changes-all-repos.py` (commit a push jen změněných `.cs` ve všech repech).
 - Starší skript `.scripts\remove-commented-code-blocks.ps1` maže i prózu a obsahuje české komentáře; nový kód úklidu patří do `clean-comments.py`.
+
+- Třetí commit téhož úklidu: `refactor: české komentáře přeloženy do angličtiny` (zbylé české komentáře přeloženy do EN; české originály jsou v rodiči commitu). Nástroj: `.scripts\czech-comments.py` (`extract` / `apply`).

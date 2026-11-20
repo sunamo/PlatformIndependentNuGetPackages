@@ -184,7 +184,15 @@ def clean_english_mode(lines):
                 new_lines.append(f"{m.group(1)}// {m.group(3)}{eol}")
                 continue
         elif stripped.startswith("///"):
-            pass
+            body = stripped[3:].strip()
+            if re.match(r"^CZ:", body):
+                removed.append(line)
+                continue
+            m = re.match(r"^(\s*///\s*)EN:\s?(.*)$", line.rstrip(chr(13) + chr(10)))
+            if m:
+                eol = line[len(line.rstrip(chr(13) + chr(10))):]
+                new_lines.append(f"{m.group(1)}{m.group(2)}{eol}")
+                continue
         else:
             m = INLINE_PAIR.search(line.rstrip("\r\n"))
             if m:
