@@ -56,6 +56,16 @@ def auto_summary(kind, name, line_text):
     return "The " + words + "."
 
 
+def decl_start(lines, index):
+    """Walks up from the member line to the first line of its declaration (modifiers and return type may sit on earlier lines)."""
+    while index > 0:
+        previous = lines[index - 1].strip()
+        if not previous or previous.endswith((";", "{", "}", "]", ",", ":")) or previous.startswith(("//", "#", "[", "/*", "*")):
+            break
+        index -= 1
+    return index
+
+
 def indent_of(line):
     """Returns the leading whitespace of a line."""
     return line[: len(line) - len(line.lstrip(" \t"))]
@@ -108,6 +118,77 @@ def plan(root, gaps_path, plan_path, chunk_dir, chunk_size):
     print(f"auto={sum(len(v) for v in auto.values())} manual={len(manual)} files={len(by_file)} chunks={index}")
 
 
+def split_params(text):
+    """Splits a parameter list on top-level commas."""
+    parts, depth, current = [], 0, ""
+    for ch in text:
+        if ch in "<([{":
+            depth += 1
+        elif ch in ">)]}":
+            depth -= 1
+        if ch == "," and depth == 0:
+            parts.append(current)
+            current = ""
+        else:
+            current += ch
+    if current.strip():
+        parts.append(current)
+    return parts
+
+
+def signature_docs(root, chunk_dir, out_path):
+    """Builds name- and signature-derived docs for the manual chunks (types, methods, constructors, operators)."""
+    result = {}
+    for name in sorted(os.listdir(chunk_dir)):
+        for rel, items in json.load(open(os.path.join(chunk_dir, name), encoding="utf-8")).items():
+            data = read(os.path.join(root, rel))
+            if not data:
+                continue
+            lines = data[1].replace(chr(13), "").split(chr(10))
+            for item in items:
+                start = item["line"] - 1
+                start = decl_start(lines, start)
+                start = decl_start(lines, start)
+                head = " ".join(l.strip() for l in lines[start:start + 12])
+                words = split_words(item["member"].split("(")[0].split(".")[-1].replace("#ctor", "constructor"))
+                if item["kind"] == "type":
+                    kind = re.search(r"(class|struct|interface|enum|record|delegate)", head)
+                    doc = {"summary": "Represents the " + words + " " + (kind.group(1) if kind else "type") + "."}
+                else:
+                    open_at = head.find("(")
+                    if open_at < 0:
+                        continue
+                    depth, end = 0, -1
+                    for i in range(open_at, len(head)):
+                        depth += head[i] == "("
+                        depth -= head[i] == ")"
+                        if depth == 0:
+                            end = i
+                            break
+                    if end < 0:
+                        continue
+                    before = head[:open_at].split()
+                    method_name = before[-1] if before else ""
+                    generic = re.search(r"<([^>]+)>$", method_name)
+                    return_type = " ".join(w for w in before[:-1] if w not in ("public", "internal", "static", "virtual", "override", "async", "sealed", "extern", "abstract", "new", "unsafe", "partial", "protected"))
+                    params = {}
+                    for raw in split_params(head[open_at + 1:end]):
+                        pname = re.sub(r"=.*$", "", raw.strip()).split()[-1] if raw.strip() else ""
+                        if pname:
+                            params[pname] = "The " + split_words(pname) + "."
+                    is_ctor = not return_type
+                    summary = ("Initializes a new instance of the " + words.replace("constructor", "").strip() + " class." if is_ctor
+                               else (words[:1].upper() + words[1:] + "."))
+                    doc = {"summary": summary, "params": params}
+                    if generic:
+                        doc["typeparams"] = {g.strip().split()[-1]: "The type " + g.strip().split()[-1] + "." for g in generic.group(1).split(",")}
+                    if return_type and return_type not in ("void", "Task") and not is_ctor:
+                        doc["returns"] = "The " + words + " result."
+                result.setdefault(rel, {})[str(item["line"])] = doc
+    json.dump(result, open(out_path, "w", encoding="utf-8"), indent=0)
+    print("signature docs:", sum(len(v) for v in result.values()))
+
+
 def escape(text):
     """Escapes text for XML documentation."""
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -144,7 +225,7 @@ def apply(root, sources):
             if not doc.get("summary") or line_no - 1 >= len(lines):
                 skipped += 1
                 continue
-            at = line_no - 1
+            at = decl_start(lines, line_no - 1)
             while at > 0 and lines[at - 1].strip().startswith("[") and not lines[at - 1].strip().startswith("[//"):
                 at -= 1
             if at > 0 and lines[at - 1].strip().startswith("///"):
@@ -163,6 +244,8 @@ def main():
     if mode == "plan":
         size = int(sys.argv[sys.argv.index("--chunk") + 1]) if "--chunk" in sys.argv else 40
         plan(root, sys.argv[3], sys.argv[4], sys.argv[5], size)
+    elif mode == "signatures":
+        signature_docs(root, sys.argv[3], sys.argv[4])
     else:
         apply(root, sys.argv[3:])
 
