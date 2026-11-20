@@ -960,3 +960,8 @@ Při dalším hromadném úklidu používej přesně tytéž zprávy a hash kaž
 - Appky se skutečným vyhledáváním podle klíče (Selling `RLData`, GeoCachingTool `.resw`, legacy `sunamo.cz`) mají klíče ponechané jako řetězce; migrace na `.resx` je samostatný úkol.
 - Nástroj: `.scripts\remove-xlfkeys.py <root> [--keys] [--apply]` (`--keys` ponechá klíč jako řetězec).
 - `SunamoDotNetZip` má `NoWarn CS1591` (cizí fork, dokumentace veřejných členů se nedopisuje); důvod je v `nowarn-reasons.md` balíčku.
+
+## Cizí balíčky jsou v samostatném repu (uživatel 2026-11-20)
+
+- Balíčky, které jsou forkem cizí knihovny (`SunamoDotNetZip`, `SunamoBitLockerManager`), žijí v repu `PlatformIndependentNuGetPackagesForks` (`E:\vs\Projects\PlatformIndependentNuGetPackagesForks-claude`), ne zde. Zde jsou jen balíčky celé vlastní.
+- Nový fork cizího balíčku zakládej tam. Balíček `SunamoXliffParser` byl smazán spolu s XlfKeys.

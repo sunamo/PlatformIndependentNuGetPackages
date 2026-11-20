@@ -53,7 +53,6 @@ Each package has its own page with two entry points:
 | [**SunamoDevCode**](../SunamoDevCode/) | Another code mainly for working with C# in all ways. Will be in future merged with       SunamoCode and SunamoCSharp. |
 | [**SunamoDictionary**](../SunamoDictionary/) | Your help for working with dictionary |
 | [**SunamoDotnetCmdBuilder**](../SunamoDotnetCmdBuilder/) | Command generation with dotnet tool |
-| [**SunamoDotNetZip**](../SunamoDotNetZip/) | .NET 9 fork for DotNetZip because have high security vulnerability |
 | [**SunamoEditorConfig**](../SunamoEditorConfig/) | Parser and generator for .editorconfig files |
 | [**SunamoEmbeddedResources**](../SunamoEmbeddedResources/) | Working with resources that have been added to the application as "Embedded" |
 | [**SunamoEmoticons**](../SunamoEmoticons/) | Text emoticons for various types of moods |
@@ -139,7 +138,6 @@ Each package has its own page with two entry points:
 | [**SunamoVcf**](../SunamoVcf/) | Working with VCF (Virtual Card File) file format |
 | [**SunamoWikipedia**](../SunamoWikipedia/) | Parsing content from Wikipedia |
 | [**SunamoWinStd**](../SunamoWinStd/) | Windows-specific code on net9.0 moniker |
-| [**SunamoXliffParser**](../SunamoXliffParser/) | Just fork from https://www.nuget.org/packages/fmdev.XliffParser, due to .NET 5+ |
 | [**SunamoXml**](../SunamoXml/) | Working with XML |
 | [**SunamoYaml**](../SunamoYaml/) | Working with yaml |
 | [**SunamoYouTube**](../SunamoYouTube/) | Working with YouTube |

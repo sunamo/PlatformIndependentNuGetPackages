@@ -100,7 +100,6 @@ nav:
       - SunamoDevCode: packages/SunamoDevCode.md
       - SunamoDictionary: packages/SunamoDictionary.md
       - SunamoDotnetCmdBuilder: packages/SunamoDotnetCmdBuilder.md
-      - SunamoDotNetZip: packages/SunamoDotNetZip.md
       - SunamoEditorConfig: packages/SunamoEditorConfig.md
       - SunamoEmbeddedResources: packages/SunamoEmbeddedResources.md
       - SunamoEmoticons: packages/SunamoEmoticons.md
@@ -186,7 +185,6 @@ nav:
       - SunamoVcf: packages/SunamoVcf.md
       - SunamoWikipedia: packages/SunamoWikipedia.md
       - SunamoWinStd: packages/SunamoWinStd.md
-      - SunamoXliffParser: packages/SunamoXliffParser.md
       - SunamoXml: packages/SunamoXml.md
       - SunamoYaml: packages/SunamoYaml.md
       - SunamoYouTube: packages/SunamoYouTube.md

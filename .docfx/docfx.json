@@ -41,7 +41,6 @@
             "SunamoDevCode/SunamoDevCode/SunamoDevCode.csproj",
             "SunamoDictionary/SunamoDictionary/SunamoDictionary.csproj",
             "SunamoDotnetCmdBuilder/SunamoDotnetCmdBuilder/SunamoDotnetCmdBuilder.csproj",
-            "SunamoDotNetZip/SunamoDotNetZip/SunamoDotNetZip.csproj",
             "SunamoEditorConfig/SunamoEditorConfig/SunamoEditorConfig.csproj",
             "SunamoEmbeddedResources/SunamoEmbeddedResources/SunamoEmbeddedResources.csproj",
             "SunamoEmoticons/SunamoEmoticons/SunamoEmoticons.csproj",
@@ -127,8 +126,6 @@
             "SunamoVcf/SunamoVcf/SunamoVcf.csproj",
             "SunamoWikipedia/SunamoWikipedia/SunamoWikipedia.csproj",
             "SunamoWinStd/SunamoWinStd/SunamoWinStd.csproj",
-            "SunamoXlfKeys/SunamoXlfKeys/SunamoXlfKeys.csproj",
-            "SunamoXliffParser/SunamoXliffParser/SunamoXliffParser.csproj",
             "SunamoXml/SunamoXml/SunamoXml.csproj",
             "SunamoYaml/SunamoYaml/SunamoYaml.csproj",
             "SunamoYouTube/SunamoYouTube/SunamoYouTube.csproj"
