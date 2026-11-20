@@ -965,3 +965,33 @@ Při dalším hromadném úklidu používej přesně tytéž zprávy a hash kaž
 
 - Balíčky, které jsou forkem cizí knihovny (`SunamoDotNetZip`, `SunamoBitLockerManager`), žijí v repu `PlatformIndependentNuGetPackagesForks` (`E:\vs\Projects\PlatformIndependentNuGetPackagesForks-claude`), ne zde. Zde jsou jen balíčky celé vlastní.
 - Nový fork cizího balíčku zakládej tam. Balíček `SunamoXliffParser` byl smazán spolu s XlfKeys.
+
+## Profesionalizace pinp, wnp a pinpf — stav k 2026-11-20 (co se udělalo, co ne)
+
+Repa: `PlatformIndependentNuGetPackages` (pinp), `WindowsNuGetPackages` (wnp), `PlatformIndependentNuGetPackagesForks` (pinpf, cizí balíčky `SunamoDotNetZip` a `SunamoBitLockerManager`). Vše je na větvi `claude`, v `master` nic; publikace na NuGet a `aap` proběhnou až na výslovný pokyn.
+
+### Hotovo
+- **Kód:** zakomentovaný kód a české komentáře pryč, vše anglicky; `XlfKeys`, `Translate`, `KeysXlf`, `ResourceLoaderRL`, `SunamoXlfKeys` a `SunamoXliffParser` smazány (viz pravidlo „XlfKeys neexistují").
+- **Aplikace:** Selling, EveryLine a legacy sunamo.cz přešly na standardní `.resx`.
+- **Cizí balíčky:** přesunuty do pinpf (z wnp i pinp odstraněny); `SunamoDotNetZip` má `NoWarn CS1591`, licenci `MS-PL AND BSD-3-Clause AND Apache-2.0` a `THIRD-PARTY-NOTICES.md`; `SunamoBitLockerManager` má MIT `LICENSE` s kreditem původního autora.
+- **Dokumentace API:** všechny veřejné členy v pinp a wnp mají XML komentář (CS1591 = 0); nástroje `.scripts\doc-gaps.py` (sběr mezer) a `.scripts\doc-apply.py` (`plan`, `signatures`, `apply`). Popisy jsou odvozené z názvů a podpisů, ne ručně psané; vkládá se ve správném místě deklarace (`decl_start`), `plan` a `apply` se pouští nad týmž přehledem mezer (čísla řádků se po vložení posouvají).
+- **Velké soubory:** `CA`, `FS`, `SH`, `CsprojInstance`, `ThrowEx`, `Exceptions1`, `GPConnector` rozděleny na `<Třída>.PartN.cs` nástrojem `.scripts\split-partial.py` (řezy jen mezi členy, mimo `#if` a `#region`).
+- **Balíčky:** `PackageTags`, `PackageIcon` (`.scripts\shared\icon.png`, vlastní jednoduché „S", kopie v každém balíčku), `EnablePackageValidation` (ověřeno zabalením všech balíčků pinp); nástroje `.scripts\add-package-icon.py`, `.scripts\add-package-validation.py`. V `.gitattributes` je `*.png binary`, jinak `* text eol=lf` PNG poškodí.
+- **Zranitelnosti:** `.scripts\scan-vulnerable-packages.py` (přímé reference proti NuGet datům), 0 nálezů, krok je i v CI (`.github\workflows\build-test-changed.yml`).
+- **Hlídač pravidel:** `.scripts\check-rules.py` (flat, prefix `Sunamo`, XlfKeys, čeština, velikost); 0 chyb, 20 varování o velikosti u datových tabulek.
+- **Testy:** `.scripts\run-tests.py` (souhrn všech `*.Tests`), `.scripts\test-failures.py` (příčiny selhání). Opraveny `SunamoCollections.Tests` (22/22), `SunamoSolutionsIndexer.Tests` (9/9), `SunamoWpf.Core.Tests` (6/6), testy převodníků přesunuty do `SunamoConverters.Tests` (7/7). wnp: 10 prošlo, 0 neprošlo. Výsledek pinp: 856 prošlo, zbylé neprošlé testy jsou v `.docs\failing-tests.md`.
+- **Kořen repa:** vymazáno ~70 jednorázových skriptů, záloh solutionů, logů a exportů; nové `CONTRIBUTING.md` a `SECURITY.md` v pinp, wnp i pinpf; README pinpf popisuje původ, verze a autory.
+
+### Neudělalo se (zbývá)
+- Sloučení `claude` do `master`, publikace na NuGet a `aap` (čeká na výslovné „je to ok").
+- Opravit nebo smazat 55 neprošlých testů z `.docs\failing-tests.md` (21 závisí na cestách na disku uživatele, 26 má neaktuální očekávání nebo skrytou chybu, 6 vyhazuje výjimku z testovaného kódu, 2 jsou nedodělané zástupné třídy v `SunamoYaml`).
+- Datové tabulky nad 500 řádků (`AllLists1`, `MimeTypes1`, `Iso3166_1_Alpha_2`, `CurrenciesIso4217`, `Country`, `LatexHelper1`, `Properties`) a `PropertyGroupData.cs` (dvě třídy v jednom souboru) zůstaly nerozdělené.
+- `EnablePackageValidation` ve wnp není zapnutá (neověřeno zabalením); `SunamoTextOutputGenerator` měl zbloudilý kořenový testovací projekt, ten je smazán.
+- Test `IsPascalWithNumberTest` v `SunamoConverters.Tests` má očekávání změněné na skutečné chování (`HelloWorld2` je PascalCase); zda je to správně, rozhodne uživatel.
+- Rozbor příčin 55 testů je jen skriptem; žádný test se nepřeskakuje ani nemaže jen kvůli zelenému výsledku.
+
+### Pasti, které se při práci ukázaly
+- `commit-push-submodules.py` občas hlásí `push=128`; stačí jednorázově znovu pushnout dotčený submodul.
+- `git submodule foreach` s `grep` končí při první shodě bez nálezu; seznam změněných submodulů sestavuj Pythonem přes `git status --porcelain`.
+- Heredoc v Bashi ničí zpětná lomítka (regexy, cesty); skripty s regexy piš nástrojem Write.
+- Kontrola buildu po mazání tříd musí zahrnout `GlobalUsings.cs` (zbylé `using` na smazané jmenné prostory).
