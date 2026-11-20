@@ -139,7 +139,6 @@ Each package has its own page with two entry points:
 | [**SunamoVcf**](../SunamoVcf/) | Working with VCF (Virtual Card File) file format |
 | [**SunamoWikipedia**](../SunamoWikipedia/) | Parsing content from Wikipedia |
 | [**SunamoWinStd**](../SunamoWinStd/) | Windows-specific code on net9.0 moniker |
-| [**SunamoXlfKeys**](../SunamoXlfKeys/) | Constants used in my i18n applications |
 | [**SunamoXliffParser**](../SunamoXliffParser/) | Just fork from https://www.nuget.org/packages/fmdev.XliffParser, due to .NET 5+ |
 | [**SunamoXml**](../SunamoXml/) | Working with XML |
 | [**SunamoYaml**](../SunamoYaml/) | Working with yaml |

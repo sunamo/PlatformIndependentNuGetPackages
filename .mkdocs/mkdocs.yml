@@ -186,7 +186,6 @@ nav:
       - SunamoVcf: packages/SunamoVcf.md
       - SunamoWikipedia: packages/SunamoWikipedia.md
       - SunamoWinStd: packages/SunamoWinStd.md
-      - SunamoXlfKeys: packages/SunamoXlfKeys.md
       - SunamoXliffParser: packages/SunamoXliffParser.md
       - SunamoXml: packages/SunamoXml.md
       - SunamoYaml: packages/SunamoYaml.md

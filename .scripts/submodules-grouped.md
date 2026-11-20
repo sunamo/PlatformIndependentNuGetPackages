@@ -189,7 +189,6 @@ Total submodules: 135
 - SunamoVcf (0% - 0/9) [✓]
 - SunamoWikipedia (0% - 0/12) [✓]
 - SunamoWinStd (0% - 0/38) [✓]
-- SunamoXlfKeys (0% - 0/1) [✓]
 - SunamoXliffParser (0% - 0/19) [✓]
 - SunamoXml (0% - 0/21) [✓]
 - SunamoYaml (0% - 0/2) [✓]

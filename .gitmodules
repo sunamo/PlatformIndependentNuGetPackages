@@ -361,9 +361,6 @@
 [submodule "SunamoWinStd"]
 	path = SunamoWinStd
 	url = git@github.com:sunamo/SunamoWinStd.git
-[submodule "SunamoXlfKeys"]
-	path = SunamoXlfKeys
-	url = git@github.com:sunamo/SunamoXlfKeys.git
 [submodule "SunamoXliffParser"]
 	path = SunamoXliffParser
 	url = git@github.com:sunamo/SunamoXliffParser.git
