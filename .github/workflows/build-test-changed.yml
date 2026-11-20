@@ -29,6 +29,11 @@ jobs:
         git diff --name-only origin/${{ github.base_ref }}...HEAD | cut -d/ -f1 | sort -u | grep '^Sunamo' > changed.txt || true
         echo "Changed packages:"; cat changed.txt
 
+    - name: Check package rules
+      shell: bash
+      run: |
+        if [ -s changed.txt ]; then python -I .scripts/check-rules.py . --changed $(xargs < changed.txt); fi
+
     - name: Build and test
       shell: bash
       run: |
