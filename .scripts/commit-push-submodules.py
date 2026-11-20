@@ -23,7 +23,7 @@ def git(folder, *args):
 
 def process(folder):
     """Stages, commits and pushes one submodule."""
-    for pattern in ("*.cs", "*.csproj", "*.md", "*.resx", "LICENSE", "*.yml"):
+    for pattern in ("*.cs", "*.csproj", "*.md", "*.resx", "*.png", "LICENSE", "*.yml"):
         git(folder, "add", "-A", "--", pattern)
     code, out = git(folder, "commit", "-F", "-")
     if code != 0:
