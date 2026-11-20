@@ -952,3 +952,11 @@ Při dalším hromadném úklidu používej přesně tytéž zprávy a hash kaž
 - **Oprava:** `.scripts\czech-fix.py` (`comments-extract`/`comments-apply` pro komentáře včetně názvů `#region`; `idents-list`/`idents-apply` s mapováním z `.scripts\shared\czech-identifiers.json`, při kolizi jména přidá příponu `Cs`). Po přejmenování identifikátorů vždy sestav dotčené projekty (`.scripts\build-repos.py`).
 - **Pravidlo:** před commitem nového kódu spusť audit; nový soubor s nálezem česky je chyba k okamžité opravě. Řetězcové literály s českým textem pro české uživatele zůstávají (audit je jen počítá).
 - **Hranice jistoty:** nástroj neví o českém slově mimo slovník ani o výrazu, který je zároveň anglickým slovem; 100% jistotu dává jen kombinace slovníku, výjimek a ručního posouzení zbytku.
+
+## XlfKeys neexistují (uživatel 2026-11-20, ABSOLUTNÍ)
+
+- Generované konstanty `XlfKeys*`/`KeysXlf*` byly smazány z balíčků i appek; `Translate.FromKey(XlfKeys.X)` je nahrazeno anglickým textem. **Nikdy nezakládej nové `XlfKeys`, `Translate.FromKey` ani XLF klíče.**
+- Texty ve výjimkách a logech balíčků jsou rovnou anglické řetězce. Lokalizace appek se dělá standardně: `.resx` a `IStringLocalizer` (Microsoft.Extensions.Localization), ne vlastními slovníky.
+- Appky se skutečným vyhledáváním podle klíče (Selling `RLData`, GeoCachingTool `.resw`, legacy `sunamo.cz`) mají klíče ponechané jako řetězce; migrace na `.resx` je samostatný úkol.
+- Nástroj: `.scripts\remove-xlfkeys.py <root> [--keys] [--apply]` (`--keys` ponechá klíč jako řetězec).
+- `SunamoDotNetZip` má `NoWarn CS1591` (cizí fork, dokumentace veřejných členů se nedopisuje); důvod je v `nowarn-reasons.md` balíčku.
