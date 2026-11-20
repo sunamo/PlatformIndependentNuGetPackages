@@ -3,7 +3,7 @@
 Measured on net10.0 on 2026-11-20 with `.scripts/run-tests.py` and `.scripts/test-failures.py`.
 These are older tests; the list is the starting point for fixing or deleting them one by one.
 
-Total: 62 failing tests in 19 packages.
+Total: 55 failing tests in 18 packages.
 
 ## Expected value differs from the actual result (outdated expectation or real defect, needs review) (26)
 
@@ -58,15 +58,8 @@ Total: 62 failing tests in 19 packages.
 - `SunamoWinStd`: PHWinTests.CodeWithLineTest
 - `SunamoWinStd`: PHWinTests.CodiumTest
 
-## Unfinished stub (NotImplementedException) (9)
+## Unfinished stub (NotImplementedException) (2)
 
-- `SunamoHelpers`: ConvertCamelConventionTests.IsCamelTest
-- `SunamoHelpers`: ConvertOnlyLowercaseTests.FromTest2
-- `SunamoHelpers`: ConvertOnlyLowercaseTests.ToTest
-- `SunamoHelpers`: ConvertPascalConventionTests.FromToPascalWithNumbersTest
-- `SunamoHelpers`: ConvertPascalConventionTests.IsPascalTest
-- `SunamoHelpers`: ConvertPascalConventionTests.IsPascalWithNumberTest
-- `SunamoHelpers`: ConvertPascalConventionTests.ToConventionTest
 - `SunamoYaml`: YamlHelperTests.LoadYaml
 - `SunamoYaml`: YamlHelperTests.SaveYaml
 
