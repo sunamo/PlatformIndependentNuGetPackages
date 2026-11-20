@@ -942,3 +942,13 @@ Při dalším hromadném úklidu používej přesně tytéž zprávy a hash kaž
 - **Sdílené soubory:** `.editorconfig` v kořeni kontejneru; kopie `Net48Polyfills.cs` se kontrolují `.scripts\sync-polyfills.py` proti `.scripts\shared\Net48Polyfills.cs` (7 kopií je záměrně odlišných variant).
 - **CI:** `.github\workflows\build-test-changed.yml` sestaví a otestuje změněné balíčky v každém PR.
 - **Zbývá (nedokončeno 2026-11-20):** dokumentace veřejného API (CS1591), rozdělení 35 souborů nad 500 řádků, čeština bez diakritiky v komentářích a názvech.
+
+## Audit češtiny v kódu — mapa prověřených souborů (uživatel 2026-11-20, ABSOLUTNÍ)
+
+Čeština v komentářích a identifikátorech `.cs` souborů se hlídá nástrojem, ne ručním čtením; nikdy nečti soubory znovu jen kvůli kontrole.
+
+- **Mapa:** `.docs\czech-audit.json` (soubor → hash obsahu souboru, který je prověřen jako čistý). Nezměněný soubor se při dalším běhu přeskočí. Výjimky s důvodem jsou v `.docs\czech-audit-exempt.txt` (externí názvy polí API ComGate a GoPay EET).
+- **Kontrola:** `python -I .scripts\czech-audit.py . --map-update` (po opravě vypíše počet souborů s nálezy a aktualizuje mapu). Detekuje diakritiku, krátká česká slova a české slovo bez diakritiky podle slovníku `.scripts\shared\czech-words.txt` (106 tisíc slov, filtrováno proti angličtině). Výjimky (technické pojmy, názvy českých webů) jsou v `.scripts\shared\czech-allow.txt`.
+- **Oprava:** `.scripts\czech-fix.py` (`comments-extract`/`comments-apply` pro komentáře včetně názvů `#region`; `idents-list`/`idents-apply` s mapováním z `.scripts\shared\czech-identifiers.json`, při kolizi jména přidá příponu `Cs`). Po přejmenování identifikátorů vždy sestav dotčené projekty (`.scripts\build-repos.py`).
+- **Pravidlo:** před commitem nového kódu spusť audit; nový soubor s nálezem česky je chyba k okamžité opravě. Řetězcové literály s českým textem pro české uživatele zůstávají (audit je jen počítá).
+- **Hranice jistoty:** nástroj neví o českém slově mimo slovník ani o výrazu, který je zároveň anglickým slovem; 100% jistotu dává jen kombinace slovníku, výjimek a ručního posouzení zbytku.

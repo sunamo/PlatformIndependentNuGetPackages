@@ -547,3 +547,57 @@ SourceLink 10.0.102 -> 11.0.100 (NU1902 vulnerability)
 | SunamoYaml | 07e8e925a0e4ea84510b3d313288d6a5c9080f49 |
 | SunamoYouTube | 53458883e43f7cff4971ce378a1cde496cf56069 |
 | SunamoYt | 0f80e11c950ad5eb32454514c9350ad673398f85 |
+
+### `refactor: české identifikátory a komentáře přeloženy do angličtiny`
+
+Renamed Czech identifiers (mapping in `.scripts/shared/czech-identifiers.json`) and translated the remaining Czech comments and `#region` names; MSSloupecDB* files renamed to MSColumnDB*.
+
+| Repo | Commit |
+|---|---|
+| . | fe49de96ad3bddda0068f5adbd0b8ed44c6af23f |
+| SunamoAI | 8459cccb3bfc35f93bd2fa516345d7d7766c9635 |
+| SunamoAps | 9d3bacf0c0627dbd54592fa11c55d8b2600138b8 |
+| SunamoArgs | 3697dab0209a988e99b1a9f436226396ec07730e |
+| SunamoChar | abd53bdd284a321c584019bdb2628f9bca1e8a13 |
+| SunamoCollections | 40ddfee8c4b595dc301eba0969b6d00307df14fb |
+| SunamoComgate | df5ed0118c746015979a2c08780980edda8ecf58 |
+| SunamoConverters | 7096ee5540ad201fed5c35b183370a1f6ad20243 |
+| SunamoCryptAlgorithms | dfc3c5ea1248c48641855dedd53cc13952b995e5 |
+| SunamoCSharp | cf18cad435efc4813ffe21d66bd7f44dc00d3951 |
+| SunamoCsproj | 61fcb07c9fd97b22e49eae3ddb6c47300632d08b |
+| SunamoData | 8e831d38d39d27b7014a451f194615084888dee4 |
+| SunamoDateTime | 3306cf9cba482c77871c6e843372e4d6235c924c |
+| SunamoDelegates | 41be10ef837526fc272bed2cb6b721951ca51f0e |
+| SunamoDevCodeBase | 01c25b4c60e631d6c9ce92f5d5c46054d9b4ac97 |
+| SunamoDevCodeCore | 14ebb1398ffc04528fcf86e9f4b7c10a600068d9 |
+| SunamoDevCodeFileFormats | 5a22697ebcb0df6aebec4f8a56318933f6a8ad64 |
+| SunamoDotNetZip | 03d81602b716745d5884d1fbe9129978ca9f6c7c |
+| SunamoEntity | e87a75b5407e29c251bde9f3aabc07af054f7bcb |
+| SunamoEnums | 1762afa6060526523264371dea102636eba3d984 |
+| SunamoEssential | e400a5e2e5bed8e97d59fa1c529dba6e9a3c87cc |
+| SunamoFileExtensions | cc456c3b55274e23a57e6007a9cf8503078e37ac |
+| SunamoFileSystem | 55d2445ac20c5354e054c309ca28c1c982d61377 |
+| SunamoFtp | 72d15d936108591becd3587281869ed2be591122 |
+| SunamoGenerators | 445d581e77e6402362c2a84570fbd00c02518a82 |
+| SunamoGeo | 72dbf18efc56205a917410b26cb88ae02b3bd9b6 |
+| SunamoGoogleSheets | c6bca4ac69c808fe3f6de9b82d5af69d7f7e7858 |
+| SunamoGoPayApi | 951a7777e2868c02b7706bca79dfdafaeda7f4d6 |
+| SunamoHelpers | 5bd2b96d0ac25e9331b1c98645f39da76ddd6ba3 |
+| SunamoHtml | 26723ff88f2d3a61b5dee056bbbc4da0951fe35b |
+| SunamoHttp | 8befcc3b440bc907df130dc0e469b8dd75ccf99c |
+| SunamoLang | 24b509cd2e9c187cdc504ea328de19ae5d1cc090 |
+| SunamoMsSqlLegacy | ec6bec8d6d88e4ced283be50549e5e8dc5dee8ed |
+| SunamoNTextCat | ac48c4ee71bc7cb8f3bc8d8ef3be95b0cafbf392 |
+| SunamoRandom | 80dbcd7a02531c35728bd9638043abde545452e6 |
+| SunamoRL | 3ab029b2da6ae1cf59570c00b06ec2ef9fa0c6e3 |
+| SunamoSharedMisc | ea7d7e4e30a29ee683a50c8918ca01e626f7525d |
+| SunamoSlnGen | 5f3304e8a3efe87db2fb2f5a98c8304a72c5aed0 |
+| SunamoSolutionsIndexer | 621cf06dfd06442d6f70d6237895a2d9eb4ac57d |
+| SunamoStorage | 09a768532be412e2d13e48a8200b2f790f35e283 |
+| SunamoTesseract | de7b7de6902e9f4811aaf997102e0d0d0f5e228f |
+| SunamoToNetCore | 74ac9429a4048ba7b9bd9f7290d2551da6489fcf |
+| SunamoTranslate | 51dbee7a4400b3ab569af4e0f33c0712bdf6b1e2 |
+| SunamoValues | f6743fb0174d2270b89f833d83e9a87688dc38cb |
+| SunamoWinStd | 2908116a084dff9910c2fe478b9b9752eb8ab091 |
+| SunamoXml | ad94c4a539660c732fbcf2d68f3f6cd18ec7fd3e |
+| SunamoYt | 9f163d976f63da47d285161669ed34197c3178cc |
