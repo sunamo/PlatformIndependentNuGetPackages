@@ -2,7 +2,7 @@
 
 ///// <summary>
 ///// 
-///// Stale se to strida #text, div
+///// It keeps alternating #text, div
 ///// </summary>
 
 
