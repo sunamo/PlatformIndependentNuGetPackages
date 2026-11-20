@@ -113,7 +113,7 @@ partial class Program
             if (leadingTrivia.Count == 0)
             {
                 // Add standard header
-                leadingTrivia = SyntaxFactory.TriviaList(SyntaxFactory.Comment("// EN: Variable names have been checked and replaced with self-descriptive names"), SyntaxFactory.CarriageReturnLineFeed, SyntaxFactory.Comment("// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy"), SyntaxFactory.CarriageReturnLineFeed);
+                leadingTrivia = SyntaxFactory.TriviaList(SyntaxFactory.Comment("// Variable names have been checked and replaced with self-descriptive names"), SyntaxFactory.CarriageReturnLineFeed);
             }
 
             // Add usings
