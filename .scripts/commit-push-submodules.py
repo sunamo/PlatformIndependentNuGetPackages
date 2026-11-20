@@ -1,5 +1,5 @@
 """
-Commits and pushes the given submodules of the container (only *.cs, *.csproj and *.md changes), 20 s timeout per git call.
+Commits and pushes the given submodules of the container (only *.cs, *.csproj, *.md and *.resx changes), 20 s timeout per git call.
 Usage: python -I .scripts/commit-push-submodules.py "<message>" <submodule> [<submodule> ...]
 Prints "<submodule> <commit hash> push=<exit code>" per submodule.
 """
@@ -23,7 +23,7 @@ def git(folder, *args):
 
 def process(folder):
     """Stages, commits and pushes one submodule."""
-    git(folder, "add", "-A", "--", "*.cs", "*.csproj", "*.md")
+    git(folder, "add", "-A", "--", "*.cs", "*.csproj", "*.md", "*.resx")
     code, out = git(folder, "commit", "-F", "-")
     if code != 0:
         return f"{folder} commit={code} {out[:80]}"
