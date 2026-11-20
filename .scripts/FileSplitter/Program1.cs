@@ -1,4 +1,3 @@
-// Variable names have been checked and replaced with self-descriptive names
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
