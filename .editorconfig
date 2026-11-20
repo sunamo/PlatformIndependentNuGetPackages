@@ -1,0 +1,28 @@
+# Shared editor and analyzer settings for the whole container (applies to every package folder below).
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+
+# Naming (reported as suggestions so existing code does not flood the build)
+dotnet_naming_symbols.public_and_internal_members.applicable_kinds = property, method, field, event
+dotnet_naming_symbols.public_and_internal_members.applicable_accessibilities = public, internal, protected
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_rule.public_and_internal_members_pascal.symbols = public_and_internal_members
+dotnet_naming_rule.public_and_internal_members_pascal.style = pascal_case
+dotnet_naming_rule.public_and_internal_members_pascal.severity = suggestion
+
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_style.interface_prefix.required_prefix = I
+dotnet_naming_style.interface_prefix.capitalization = pascal_case
+dotnet_naming_rule.interfaces_start_with_i.symbols = interfaces
+dotnet_naming_rule.interfaces_start_with_i.style = interface_prefix
+dotnet_naming_rule.interfaces_start_with_i.severity = suggestion
+
+# Public API must be documented (build output of packages ships the XML documentation)
+dotnet_diagnostic.CS1591.severity = warning

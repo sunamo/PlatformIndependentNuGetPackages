@@ -18,11 +18,10 @@
 
 ### Obecná pravidla
 
-#### KRITICKÉ: Komentář "variables names: ok"
-- **PRACUJ POUZE SE SOUBORY BEZ TOHOTO KOMENTÁŘE**: Při opravování názvů proměnných pracuj POUZE s .cs soubory které **NEMAJÍ** komentář `// variables names: ok` na začátku
-- **IGNORUJ SOUBORY S KOMENTÁŘEM**: Soubory které mají `// variables names: ok` jsou již zkontrolované uživatelem a NESMÍŠ je měnit
-- **NIKDY NEPŘIDÁVEJ** komentář `// variables names: ok` do souborů!
-- Tento komentář přidává POUZE uživatel při ruční kontrole
+#### KRITICKÉ: Evidence zkontrolovaných souborů místo markeru v kódu (uživatel 2026-11-20)
+- **Marker `// variables names: ok` už v kódu NEEXISTUJE** (odstraněn ze 669 souborů). Kontrolované soubory jsou vypsané v `.docs/variable-names-checked.md` (po repech, cesty relativní k repu).
+- **PRACUJ POUZE SE SOUBORY, KTERÉ V TÉTO EVIDENCI NEJSOU**; soubory v evidenci jsou zkontrolované uživatelem a NESMÍŠ je měnit.
+- **NIKDY nepřidávej žádný marker do kódu a do evidence nic nezapisuj** — zapisuje ji jen uživatel po ruční kontrole.
 - Tvoje práce je opravit všechny špatné názvy, NE označovat soubory jako hotové
 
 #### Mazání nepoužívaných parametrů
@@ -75,8 +74,7 @@
 - **VŽDY** pojmenovávej proměnné podle jejich skutečného účelu, ne podle jednoho konkrétního případu použití
 
 ### Enum soubory
-- Do souborů které obsahují **pouze enum** definice automaticky přidej na začátek komentář: `// variables names: ok`
-- Použij skript `.scripts/add-enum-comments.ps1` pro hromadné přidání komentářů
+- Soubory, které obsahují **pouze enum** definice, se považují za zkontrolované; žádný marker se do nich nepřidává.
 
 ### Příklady správného pojmenování
 
@@ -934,3 +932,13 @@ Při dalším hromadném úklidu používej přesně tytéž zprávy a hash kaž
 - Starší skript `.scripts\remove-commented-code-blocks.ps1` maže i prózu a obsahuje české komentáře; nový kód úklidu patří do `clean-comments.py`.
 
 - Třetí commit téhož úklidu: `refactor: české komentáře přeloženy do angličtiny` (zbylé české komentáře přeloženy do EN; české originály jsou v rodiči commitu). Nástroj: `.scripts\czech-comments.py` (`extract` / `apply`).
+
+## Profesionalizace balíčků 2026-11-20 (uživatel, ABSOLUTNÍ)
+
+- **Číslování verzí zůstává `rok.měsíc.den.sestavení`** (např. `26.5.18.4`); SemVer ani `CHANGELOG.md` se nezavádí.
+- **Commit zprávy píš anglicky** ve formátu `<typ>: popis` (Conventional Commits); dřívější úklidové commity z 2026-11-20 mají pevné české zprávy, viz `.docs\removed-code-commits.md`.
+- **Balíčky se publikují optimalizované:** v `csproj` nikdy `<Optimize>false</Optimize>` a nikdy `<PackageReleaseNotes>` s textem z commitu ani `y`.
+- **Každý balíček má** `readme.md` (zapojený přes `PackageReadmeFile`), `GenerateDocumentationFile`, SourceLink (`Microsoft.SourceLink.GitHub` 11.0.100+). Hromadná oprava: `.scripts\fix-package-csproj.py`.
+- **Sdílené soubory:** `.editorconfig` v kořeni kontejneru; kopie `Net48Polyfills.cs` se kontrolují `.scripts\sync-polyfills.py` proti `.scripts\shared\Net48Polyfills.cs` (7 kopií je záměrně odlišných variant).
+- **CI:** `.github\workflows\build-test-changed.yml` sestaví a otestuje změněné balíčky v každém PR.
+- **Zbývá (nedokončeno 2026-11-20):** dokumentace veřejného API (CS1591), rozdělení 35 souborů nad 500 řádků, čeština bez diakritiky v komentářích a názvech.

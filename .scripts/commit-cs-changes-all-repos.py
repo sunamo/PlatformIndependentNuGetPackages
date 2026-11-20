@@ -1,5 +1,5 @@
 """
-Commits (and pushes to origin/claude) modified tracked .cs files in the parent repo and in every submodule.
+Commits (and pushes to origin/claude) modified tracked files matching COMMIT_PATTERNS (default *.cs; COMMIT_UNTRACKED=1 adds untracked ones) in the parent repo and in every submodule.
 Usage: python -I .scripts/commit-cs-changes-all-repos.py <root> <message-file> <result-json>
 Only .cs files are staged; other local changes stay untouched. Commit and push each have a hard 20 s timeout.
 The result JSON maps repo path -> {"hash": ..., "pushed": bool}.
@@ -20,7 +20,10 @@ def git(repo, *args, timeout=20):
 
 def handle(repo, message_file):
     """Stages modified .cs files, commits and pushes; returns a result dict or None when nothing changed."""
-    files = [f for f in git(repo, "diff", "--name-only", "-z", "--", "*.cs").stdout.split(chr(0)) if f]
+    patterns = os.environ.get("COMMIT_PATTERNS", "*.cs").split(",")
+    files = [f for f in git(repo, "diff", "--name-only", "-z", "--", *patterns).stdout.split(chr(0)) if f]
+    if os.environ.get("COMMIT_UNTRACKED") == "1":
+        files += [f for f in git(repo, "ls-files", "--others", "--exclude-standard", "-z", "--", *patterns).stdout.split(chr(0)) if f]
     if not files:
         return None
     result = {"hash": None, "pushed": False, "files": len(files)}
