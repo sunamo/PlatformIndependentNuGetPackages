@@ -1,6 +1,8 @@
-name: Publish changed packages to nuget.org
+name: Publish packages to nuget.org
 
-# Publishes every package (submodule) whose pointer changed on master and whose csproj version is not on nuget.org yet.
+# Publishes the named packages from the default branch of their own repositories (sunamo/<package>),
+# when the version in the csproj is not on nuget.org yet.
+# Started by Publish-SunamoPackage.ps1 (workflow_dispatch) or by a push to master that moves submodule pointers.
 # Authentication is nuget.org Trusted Publishing (OIDC); no API key is stored anywhere.
 # The policy on nuget.org is bound to this repository and to the file name publish.yml - do not rename the file.
 
@@ -10,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       packages:
-        description: "Package folders to publish, separated by spaces (empty = packages changed by the last commit)"
+        description: "Package names to publish, separated by spaces (empty = packages whose pointer changed in the last commit)"
         required: false
         default: ""
 
@@ -38,9 +40,6 @@ jobs:
         REQUESTED: ${{ github.event.inputs.packages }}
         BEFORE: ${{ github.event.before }}
       run: |
-        # Submodule urls are SSH; the runner has no key, the repositories are public.
-        git config --global url."https://github.com/".insteadOf "git@github.com:"
-
         if ($env:REQUESTED) {
           $candidates = $env:REQUESTED -split '\s+' | Where-Object { $_ }
         } else {
@@ -50,21 +49,16 @@ jobs:
         }
         Write-Host "Candidates: $($candidates -join ', ')"
 
-        New-Item -ItemType Directory -Force artifacts | Out-Null
+        New-Item -ItemType Directory -Force artifacts, sources | Out-Null
         $toPack = @()
         foreach ($package in $candidates) {
-          $mode = (git ls-files -s -- $package) -split '\s+' | Select-Object -First 1
-          if ($mode -ne '160000') { Write-Host "::notice::$package is not a submodule (removed or renamed), skipped"; continue }
+          if ($package -notmatch '^Sunamo[A-Za-z0-9_.]*$') { Write-Host "::error::'$package' is not a valid package name"; exit 1 }
 
-          git submodule update --init -- $package
-          if ($LASTEXITCODE -ne 0) { Write-Host "::error::$package could not be checked out"; exit 1 }
+          # Only code on the default branch of the package repository is released, never a working branch.
+          git clone --quiet --depth 1 "https://github.com/sunamo/$package.git" "sources/$package"
+          if ($LASTEXITCODE -ne 0) { Write-Host "::warning::Repository sunamo/$package could not be cloned, skipped"; continue }
 
-          # Only code that reached the master branch of the package is released.
-          git -C $package fetch --quiet origin master
-          git -C $package merge-base --is-ancestor HEAD origin/master
-          if ($LASTEXITCODE -ne 0) { Write-Host "::warning::$package points to a commit that is not on its master branch, skipped"; continue }
-
-          $project = Get-ChildItem $package -Recurse -Filter "$package.csproj" | Select-Object -First 1
+          $project = Get-ChildItem "sources/$package" -Recurse -Filter "$package.csproj" | Select-Object -First 1
           if (-not $project) { Write-Host "::warning::$package has no $package.csproj, skipped"; continue }
 
           [xml]$xml = Get-Content $project.FullName -Raw
