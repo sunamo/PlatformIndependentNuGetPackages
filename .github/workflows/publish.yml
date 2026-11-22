@@ -16,8 +16,9 @@ on:
         required: false
         default: ""
 
+# One group per requested package set, so that releases of different packages run in parallel and never cancel each other.
 concurrency:
-  group: publish-to-nuget
+  group: publish-${{ github.event.inputs.packages || github.sha }}
   cancel-in-progress: false
 
 jobs:
