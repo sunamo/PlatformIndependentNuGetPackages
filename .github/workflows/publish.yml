@@ -1,0 +1,134 @@
+name: Publish changed packages to nuget.org
+
+# Publishes every package (submodule) whose pointer changed on master and whose csproj version is not on nuget.org yet.
+# Authentication is nuget.org Trusted Publishing (OIDC); no API key is stored anywhere.
+# The policy on nuget.org is bound to this repository and to the file name publish.yml - do not rename the file.
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: "Package folders to publish, separated by spaces (empty = packages changed by the last commit)"
+        required: false
+        default: ""
+
+concurrency:
+  group: publish-to-nuget
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # A commit message containing [skip publish] moves pointers without releasing anything.
+    if: ${{ !contains(github.event.head_commit.message, '[skip publish]') }}
+    runs-on: windows-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Find packages to publish
+      id: find
+      shell: pwsh
+      env:
+        REQUESTED: ${{ github.event.inputs.packages }}
+        BEFORE: ${{ github.event.before }}
+      run: |
+        # Submodule urls are SSH; the runner has no key, the repositories are public.
+        git config --global url."https://github.com/".insteadOf "git@github.com:"
+
+        if ($env:REQUESTED) {
+          $candidates = $env:REQUESTED -split '\s+' | Where-Object { $_ }
+        } else {
+          $before = $env:BEFORE
+          if (-not $before -or $before -match '^0+$') { $before = 'HEAD~1' }
+          $candidates = git diff --name-only $before HEAD | Where-Object { $_ -match '^Sunamo[^/]*$' }
+        }
+        Write-Host "Candidates: $($candidates -join ', ')"
+
+        New-Item -ItemType Directory -Force artifacts | Out-Null
+        $toPack = @()
+        foreach ($package in $candidates) {
+          $mode = (git ls-files -s -- $package) -split '\s+' | Select-Object -First 1
+          if ($mode -ne '160000') { Write-Host "::notice::$package is not a submodule (removed or renamed), skipped"; continue }
+
+          git submodule update --init -- $package
+          if ($LASTEXITCODE -ne 0) { Write-Host "::error::$package could not be checked out"; exit 1 }
+
+          # Only code that reached the master branch of the package is released.
+          git -C $package fetch --quiet origin master
+          git -C $package merge-base --is-ancestor HEAD origin/master
+          if ($LASTEXITCODE -ne 0) { Write-Host "::warning::$package points to a commit that is not on its master branch, skipped"; continue }
+
+          $project = Get-ChildItem $package -Recurse -Filter "$package.csproj" | Select-Object -First 1
+          if (-not $project) { Write-Host "::warning::$package has no $package.csproj, skipped"; continue }
+
+          [xml]$xml = Get-Content $project.FullName -Raw
+          $version = ($xml.Project.PropertyGroup.Version | Where-Object { $_ } | Select-Object -First 1)
+          $id = ($xml.Project.PropertyGroup.PackageId | Where-Object { $_ } | Select-Object -First 1)
+          if (-not $id) { $id = $package }
+          if (-not $version) { Write-Host "::warning::$package has no Version in its csproj, skipped"; continue }
+
+          $published = @()
+          try {
+            $published = (Invoke-RestMethod "https://api.nuget.org/v3-flatcontainer/$($id.ToLowerInvariant())/index.json").versions
+          } catch {
+            if ($_.Exception.Response.StatusCode.value__ -ne 404) { throw }
+            Write-Host "$id is not on nuget.org yet (new package)"
+          }
+          if ($published -contains $version) { Write-Host "::notice::$id $version is already on nuget.org, skipped"; continue }
+
+          Write-Host "Will publish $id $version"
+          $toPack += $project.FullName
+        }
+
+        $toPack | Set-Content projects.txt
+        "count=$($toPack.Count)" | Add-Content $env:GITHUB_OUTPUT
+        exit 0
+
+    - name: Setup .NET
+      if: steps.find.outputs.count != '0'
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          8.0.x
+          9.0.x
+          10.0.x
+
+    - name: Pack
+      if: steps.find.outputs.count != '0'
+      shell: pwsh
+      run: |
+        foreach ($project in Get-Content projects.txt) {
+          dotnet pack $project -c Release -o artifacts
+          if ($LASTEXITCODE -ne 0) { Write-Host "::error::Pack failed: $project"; exit 1 }
+        }
+        Get-ChildItem artifacts | ForEach-Object { Write-Host $_.Name }
+        exit 0
+
+    # The temporary key is valid for one hour, so it is requested only after everything is packed.
+    - name: NuGet login (OIDC, temporary API key)
+      if: steps.find.outputs.count != '0'
+      uses: NuGet/login@v1
+      id: login
+      with:
+        user: sunamo
+
+    - name: Push
+      if: steps.find.outputs.count != '0'
+      shell: pwsh
+      env:
+        NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
+      run: |
+        $failed = 0
+        foreach ($nupkg in Get-ChildItem artifacts -Filter *.nupkg) {
+          # The matching .snupkg in the same folder is pushed together with the package.
+          dotnet nuget push $nupkg.FullName --api-key $env:NUGET_API_KEY --source https://api.nuget.org/v3/index.json --skip-duplicate
+          if ($LASTEXITCODE -ne 0) { Write-Host "::error::Push failed: $($nupkg.Name)"; $failed++ }
+        }
+        if ($failed -gt 0) { exit 1 }
+        exit 0
