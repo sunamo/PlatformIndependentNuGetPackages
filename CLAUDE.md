@@ -995,3 +995,16 @@ Repa: `PlatformIndependentNuGetPackages` (pinp), `WindowsNuGetPackages` (wnp), `
 - `git submodule foreach` s `grep` končí při první shodě bez nálezu; seznam změněných submodulů sestavuj Pythonem přes `git status --porcelain`.
 - Heredoc v Bashi ničí zpětná lomítka (regexy, cesty); skripty s regexy piš nástrojem Write.
 - Kontrola buildu po mazání tříd musí zahrnout `GlobalUsings.cs` (zbylé `using` na smazané jmenné prostory).
+
+## Kompletní revize souborů — evidence `.docs\file-reviews.jsonl` (uživatel 2026-11-22, ABSOLUTNÍ)
+
+Každý `.cs` soubor, který AI přečte celý kvůli kvalitě kódu, se hned po dotažení zapíše do `.docs\file-reviews.jsonl` (obecné pravidlo a formát záznamu: G).
+
+- Zápis: `python -I .scripts\file-reviews.py add --repo . --scope full-quality-review --reason "<proč>" --changes "<co se změnilo>" --tool <model> <soubory>`; cesty jsou relativní ke kontejneru (včetně složky submodulu).
+- Co ještě zbývá: `python -I .scripts\file-reviews.py pending --repo . --scope full-quality-review --under <Balíček>`; přehled po balíčcích: `status`.
+- Revize `full-quality-review` jde po balíčcích: přečíst každý soubor celý, opravit chyby, mrtvý kód, prázdné `catch`, práci s `null`, `async`, názvy a strojově vzniklou dokumentaci, pak sestavit balíček a pustit jeho testy, teprve potom zapsat záznamy.
+- Veřejné API balíčku (názvy a podpisy veřejných členů) se při revizi nemění; nález, který by ho rozbil, se zapíše do `changes` jako návrh.
+- V souborech z `.docs\variable-names-checked.md` se nepřejmenovávají proměnné (zkontroloval je uživatel); ostatní opravy se v nich dělají.
+- Evidence se needituje ručně a nemaže; soubor změněný po průchodu se bere jako neprojitý a projde se znovu.
+- **Postup do odvolání (uživatel 2026-11-22):** revize jde vždy po jednom balíčku a hodnotí ho i jako celek (návrh API, závislosti, kopie v jiných balíčcích, testy, projektové soubory, README, CI), nejen soubor po souboru. AI nejdřív nic neopravuje: přečte balíček celý, zapíše průchod se `scope` `full-quality-review-proposals` a všechny návrhy dá uživateli jako Claude artifact se zaškrtávátky a polem pro poznámku u každého návrhu. Opravuje až zaškrtnuté návrhy podle poznámek; pak zapíše `full-quality-review`.
+- Šablona stránky s návrhy: poslední publikovaný artifact „Revize balíčku …“ (rozhodnutí se ukládají do jeho databáze, dokument `reviews/<Balíček>`, čte se nástrojem `ArtifactData`).
