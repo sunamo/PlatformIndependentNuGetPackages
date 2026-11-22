@@ -1,2 +1,0 @@
-E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\_sunamo\SunamoUri\QSHelper.cs
-E:\vs\Projects\PlatformIndependentNuGetPackages\SunamoYouTube\SunamoYouTube\_sunamo\SunamoUri\UH.cs

@@ -1,4 +1,4 @@
-// Net48 compat: GlobalUsings bez Aps, SunamoSolutionsIndexer, ToNetCore, SunamoCollectionOnDrive
+// Net48 compat: GlobalUsings without Aps, SunamoSolutionsIndexer, ToNetCore, SunamoCollectionOnDrive
 global using System.Collections.Generic;
 global using System;
 global using System.Linq;

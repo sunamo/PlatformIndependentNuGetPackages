@@ -1,0 +1,3 @@
+SunamoComgate/SunamoComgate/_/Api/Core/Models/Payment/EetData.cs	external ComGate EET API field names (snake_case Czech)
+SunamoGoPayApi/SunamoGoPayApi/EET.cs	external GoPay EET API field names
+SunamoGoPayApi/SunamoGoPayApi/EETReceipt.cs	external GoPay EET API field names

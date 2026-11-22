@@ -1,0 +1,55 @@
+name: Build and test changed packages
+
+on:
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-test:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          8.0.x
+          9.0.x
+          10.0.x
+
+    - name: Find changed packages
+      id: changed
+      shell: bash
+      run: |
+        # A package is changed when its folder (submodule pointer) differs from the PR base.
+        git diff --name-only origin/${{ github.base_ref }}...HEAD | cut -d/ -f1 | sort -u | grep '^Sunamo' > changed.txt || true
+        echo "Changed packages:"; cat changed.txt
+
+    - name: Check package rules
+      shell: bash
+      run: |
+        if [ -s changed.txt ]; then python -I .scripts/check-rules.py . --changed $(xargs < changed.txt); fi
+
+    - name: Scan vulnerable package versions
+      shell: bash
+      run: python -I .scripts/scan-vulnerable-packages.py .
+
+    - name: Build and test
+      shell: bash
+      run: |
+        status=0
+        while read -r package; do
+          [ -z "$package" ] && continue
+          for project in "$package"/*/*.csproj; do
+            case "$project" in
+              *Runner*) continue ;;
+              *.Tests.csproj) dotnet test "$project" -c Release || status=1 ;;
+              *) dotnet build "$project" -c Release || status=1 ;;
+            esac
+          done
+        done < changed.txt
+        exit $status

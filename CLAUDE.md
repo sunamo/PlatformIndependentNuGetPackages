@@ -18,11 +18,10 @@
 
 ### Obecná pravidla
 
-#### KRITICKÉ: Komentář "variables names: ok"
-- **PRACUJ POUZE SE SOUBORY BEZ TOHOTO KOMENTÁŘE**: Při opravování názvů proměnných pracuj POUZE s .cs soubory které **NEMAJÍ** komentář `// variables names: ok` na začátku
-- **IGNORUJ SOUBORY S KOMENTÁŘEM**: Soubory které mají `// variables names: ok` jsou již zkontrolované uživatelem a NESMÍŠ je měnit
-- **NIKDY NEPŘIDÁVEJ** komentář `// variables names: ok` do souborů!
-- Tento komentář přidává POUZE uživatel při ruční kontrole
+#### KRITICKÉ: Evidence zkontrolovaných souborů místo markeru v kódu (uživatel 2026-11-20)
+- **Marker `// variables names: ok` už v kódu NEEXISTUJE** (odstraněn ze 669 souborů). Kontrolované soubory jsou vypsané v `.docs/variable-names-checked.md` (po repech, cesty relativní k repu).
+- **PRACUJ POUZE SE SOUBORY, KTERÉ V TÉTO EVIDENCI NEJSOU**; soubory v evidenci jsou zkontrolované uživatelem a NESMÍŠ je měnit.
+- **NIKDY nepřidávej žádný marker do kódu a do evidence nic nezapisuj** — zapisuje ji jen uživatel po ruční kontrole.
 - Tvoje práce je opravit všechny špatné názvy, NE označovat soubory jako hotové
 
 #### Mazání nepoužívaných parametrů
@@ -75,8 +74,7 @@
 - **VŽDY** pojmenovávej proměnné podle jejich skutečného účelu, ne podle jednoho konkrétního případu použití
 
 ### Enum soubory
-- Do souborů které obsahují **pouze enum** definice automaticky přidej na začátek komentář: `// variables names: ok`
-- Použij skript `.scripts/add-enum-comments.ps1` pro hromadné přidání komentářů
+- Soubory, které obsahují **pouze enum** definice, se považují za zkontrolované; žádný marker se do nich nepřidává.
 
 ### Příklady správného pojmenování
 
@@ -912,3 +910,88 @@ Každý podadresář `PlatformIndependentNuGetPackages`, který je samostatným 
 - Kontrola: přímý git je podsložka se `.git`, která NENÍ gitlink (`git ls-files -s | grep ^160000` ji neobsahuje, v `.gitmodules` chybí). Samotná `.git` složka nestačí — submoduly v hlavním checkoutu ji mívají také.
 - Nalezený přímý git nejdřív ověř (stash, nepushnuté větve, nečistý strom), pak ho přesuň mimo repo do `E:\vs_ObsoleteDueToAI` se zachováním celé cesty (nemaž) a nahlas. Je-li to duplicita existujícího submodulu (přejmenovaný starý klon), submodul už existuje — nepřidávej druhý.
 - Incident 2026-09-30: `BeScz` v `sunamo.net` (starý klon repa `sunamo.net-lyrics`, dnes submodul `BeLyr`) a `SunamoCode` v `PlatformIndependentNuGetPackages` (starý klon monolitu `SunamoDevCode`). Oba přesunuty do `E:\vs_ObsoleteDueToAI\Projects\...`.
+
+## Veškerý kód včetně komentářů je VŽDY jen anglicky — NEPORUŠITELNÉ (uživatel 2026-11-20, ABSOLUTNÍ)
+
+Každý `.cs` soubor, který AI vytvoří nebo upraví, má identifikátory, komentáře, `///` dokumentaci a texty výjimek jen anglicky. Žádné `// CZ:`, žádné dvojjazyčné páry, žádné české komentáře.
+
+- Narazíš-li na `// CZ:` nebo český komentář v souboru, který stejně upravuješ, přepiš ho do angličtiny nebo smaž.
+- Komentář je jen `// text`, bez prefixu `EN:`.
+- Přebíjí starší věty v tomto souboru o českých komentářích a příklady s `// CZ:`.
+
+## Úklid komentářů 2026-11-20 — pevné commit zprávy a evidence hashů (ABSOLUTNÍ)
+
+Ze všech `.cs` souborů (parent i všechny submoduly) byl odstraněn zakomentovaný kód a české komentáře, každé zvlášť jedním commitem s pevnou zprávou:
+
+- `remove: zakomentovaný kód ze souborů .cs`
+- `remove: české komentáře, ponechány jen anglické`
+
+Při dalším hromadném úklidu používej přesně tytéž zprávy a hash každého commitu zapiš do `.docs\removed-code-commits.md` (tabulka repo → hash). Smazaný kód se tak dohledá přes `git show <hash>` nebo `git log --grep="zakomentovaný kód ze souborů"`.
+
+- Nástroj: `.scripts\clean-comments.py` (`code` / `english`, bez `--apply` je suchý běh) a `.scripts\commit-cs-changes-all-repos.py` (commit a push jen změněných `.cs` ve všech repech).
+- Starší skript `.scripts\remove-commented-code-blocks.ps1` maže i prózu a obsahuje české komentáře; nový kód úklidu patří do `clean-comments.py`.
+
+- Třetí commit téhož úklidu: `refactor: české komentáře přeloženy do angličtiny` (zbylé české komentáře přeloženy do EN; české originály jsou v rodiči commitu). Nástroj: `.scripts\czech-comments.py` (`extract` / `apply`).
+
+## Profesionalizace balíčků 2026-11-20 (uživatel, ABSOLUTNÍ)
+
+- **Číslování verzí zůstává `rok.měsíc.den.sestavení`** (např. `26.5.18.4`); SemVer ani `CHANGELOG.md` se nezavádí.
+- **Commit zprávy píš anglicky** ve formátu `<typ>: popis` (Conventional Commits); dřívější úklidové commity z 2026-11-20 mají pevné české zprávy, viz `.docs\removed-code-commits.md`.
+- **Balíčky se publikují optimalizované:** v `csproj` nikdy `<Optimize>false</Optimize>` a nikdy `<PackageReleaseNotes>` s textem z commitu ani `y`.
+- **Každý balíček má** `readme.md` (zapojený přes `PackageReadmeFile`), `GenerateDocumentationFile`, SourceLink (`Microsoft.SourceLink.GitHub` 11.0.100+). Hromadná oprava: `.scripts\fix-package-csproj.py`.
+- **Sdílené soubory:** `.editorconfig` v kořeni kontejneru; kopie `Net48Polyfills.cs` se kontrolují `.scripts\sync-polyfills.py` proti `.scripts\shared\Net48Polyfills.cs` (7 kopií je záměrně odlišných variant).
+- **CI:** `.github\workflows\build-test-changed.yml` sestaví a otestuje změněné balíčky v každém PR.
+- **Zbývá (nedokončeno 2026-11-20):** dokumentace veřejného API (CS1591), rozdělení 35 souborů nad 500 řádků, čeština bez diakritiky v komentářích a názvech.
+
+## Audit češtiny v kódu — mapa prověřených souborů (uživatel 2026-11-20, ABSOLUTNÍ)
+
+Čeština v komentářích a identifikátorech `.cs` souborů se hlídá nástrojem, ne ručním čtením; nikdy nečti soubory znovu jen kvůli kontrole.
+
+- **Mapa:** `.docs\czech-audit.json` (soubor → hash obsahu souboru, který je prověřen jako čistý). Nezměněný soubor se při dalším běhu přeskočí. Výjimky s důvodem jsou v `.docs\czech-audit-exempt.txt` (externí názvy polí API ComGate a GoPay EET).
+- **Kontrola:** `python -I .scripts\czech-audit.py . --map-update` (po opravě vypíše počet souborů s nálezy a aktualizuje mapu). Detekuje diakritiku, krátká česká slova a české slovo bez diakritiky podle slovníku `.scripts\shared\czech-words.txt` (106 tisíc slov, filtrováno proti angličtině). Výjimky (technické pojmy, názvy českých webů) jsou v `.scripts\shared\czech-allow.txt`.
+- **Oprava:** `.scripts\czech-fix.py` (`comments-extract`/`comments-apply` pro komentáře včetně názvů `#region`; `idents-list`/`idents-apply` s mapováním z `.scripts\shared\czech-identifiers.json`, při kolizi jména přidá příponu `Cs`). Po přejmenování identifikátorů vždy sestav dotčené projekty (`.scripts\build-repos.py`).
+- **Pravidlo:** před commitem nového kódu spusť audit; nový soubor s nálezem česky je chyba k okamžité opravě. Řetězcové literály s českým textem pro české uživatele zůstávají (audit je jen počítá).
+- **Hranice jistoty:** nástroj neví o českém slově mimo slovník ani o výrazu, který je zároveň anglickým slovem; 100% jistotu dává jen kombinace slovníku, výjimek a ručního posouzení zbytku.
+
+## XlfKeys neexistují (uživatel 2026-11-20, ABSOLUTNÍ)
+
+- Generované konstanty `XlfKeys*`/`KeysXlf*` byly smazány z balíčků i appek; `Translate.FromKey(XlfKeys.X)` je nahrazeno anglickým textem. **Nikdy nezakládej nové `XlfKeys`, `Translate.FromKey` ani XLF klíče.**
+- Texty ve výjimkách a logech balíčků jsou rovnou anglické řetězce. Lokalizace appek se dělá standardně: `.resx` a `IStringLocalizer` (Microsoft.Extensions.Localization), ne vlastními slovníky.
+- Appky se skutečným vyhledáváním podle klíče (Selling `RLData`, GeoCachingTool `.resw`, legacy `sunamo.cz`) mají klíče ponechané jako řetězce; migrace na `.resx` je samostatný úkol.
+- Nástroj: `.scripts\remove-xlfkeys.py <root> [--keys] [--apply]` (`--keys` ponechá klíč jako řetězec).
+- `SunamoDotNetZip` má `NoWarn CS1591` (cizí fork, dokumentace veřejných členů se nedopisuje); důvod je v `nowarn-reasons.md` balíčku.
+
+## Cizí balíčky jsou v samostatném repu (uživatel 2026-11-20)
+
+- Balíčky, které jsou forkem cizí knihovny (`SunamoDotNetZip`, `SunamoBitLockerManager`), žijí v repu `PlatformIndependentNuGetPackagesForks` (`E:\vs\Projects\PlatformIndependentNuGetPackagesForks-claude`), ne zde. Zde jsou jen balíčky celé vlastní.
+- Nový fork cizího balíčku zakládej tam. Balíček `SunamoXliffParser` byl smazán spolu s XlfKeys.
+
+## Profesionalizace pinp, wnp a pinpf — stav k 2026-11-20 (co se udělalo, co ne)
+
+Repa: `PlatformIndependentNuGetPackages` (pinp), `WindowsNuGetPackages` (wnp), `PlatformIndependentNuGetPackagesForks` (pinpf, cizí balíčky `SunamoDotNetZip` a `SunamoBitLockerManager`). Vše je na větvi `claude`, v `master` nic; publikace na NuGet a `aap` proběhnou až na výslovný pokyn.
+
+### Hotovo
+- **Kód:** zakomentovaný kód a české komentáře pryč, vše anglicky; `XlfKeys`, `Translate`, `KeysXlf`, `ResourceLoaderRL`, `SunamoXlfKeys` a `SunamoXliffParser` smazány (viz pravidlo „XlfKeys neexistují").
+- **Aplikace:** Selling, EveryLine a legacy sunamo.cz přešly na standardní `.resx`.
+- **Cizí balíčky:** přesunuty do pinpf (z wnp i pinp odstraněny); `SunamoDotNetZip` má `NoWarn CS1591`, licenci `MS-PL AND BSD-3-Clause AND Apache-2.0` a `THIRD-PARTY-NOTICES.md`; `SunamoBitLockerManager` má MIT `LICENSE` s kreditem původního autora.
+- **Dokumentace API:** všechny veřejné členy v pinp a wnp mají XML komentář (CS1591 = 0); nástroje `.scripts\doc-gaps.py` (sběr mezer) a `.scripts\doc-apply.py` (`plan`, `signatures`, `apply`). Popisy jsou odvozené z názvů a podpisů, ne ručně psané; vkládá se ve správném místě deklarace (`decl_start`), `plan` a `apply` se pouští nad týmž přehledem mezer (čísla řádků se po vložení posouvají).
+- **Velké soubory:** `CA`, `FS`, `SH`, `CsprojInstance`, `ThrowEx`, `Exceptions1`, `GPConnector` rozděleny na `<Třída>.PartN.cs` nástrojem `.scripts\split-partial.py` (řezy jen mezi členy, mimo `#if` a `#region`).
+- **Balíčky:** `PackageTags`, `PackageIcon` (`.scripts\shared\icon.png`, vlastní jednoduché „S", kopie v každém balíčku), `EnablePackageValidation` (ověřeno zabalením všech balíčků pinp); nástroje `.scripts\add-package-icon.py`, `.scripts\add-package-validation.py`. V `.gitattributes` je `*.png binary`, jinak `* text eol=lf` PNG poškodí.
+- **Zranitelnosti:** `.scripts\scan-vulnerable-packages.py` (přímé reference proti NuGet datům), 0 nálezů, krok je i v CI (`.github\workflows\build-test-changed.yml`).
+- **Hlídač pravidel:** `.scripts\check-rules.py` (flat, prefix `Sunamo`, XlfKeys, čeština, velikost); 0 chyb, 20 varování o velikosti u datových tabulek.
+- **Testy:** `.scripts\run-tests.py` (souhrn všech `*.Tests`), `.scripts\test-failures.py` (příčiny selhání). Opraveny `SunamoCollections.Tests` (22/22), `SunamoSolutionsIndexer.Tests` (9/9), `SunamoWpf.Core.Tests` (6/6), testy převodníků přesunuty do `SunamoConverters.Tests` (7/7). wnp: 10 prošlo, 0 neprošlo. Výsledek pinp: 856 prošlo, zbylé neprošlé testy jsou v `.docs\failing-tests.md`.
+- **Kořen repa:** vymazáno ~70 jednorázových skriptů, záloh solutionů, logů a exportů; nové `CONTRIBUTING.md` a `SECURITY.md` v pinp, wnp i pinpf; README pinpf popisuje původ, verze a autory.
+
+### Neudělalo se (zbývá)
+- Sloučení `claude` do `master`, publikace na NuGet a `aap` (čeká na výslovné „je to ok").
+- Opravit nebo smazat 55 neprošlých testů z `.docs\failing-tests.md` (21 závisí na cestách na disku uživatele, 26 má neaktuální očekávání nebo skrytou chybu, 6 vyhazuje výjimku z testovaného kódu, 2 jsou nedodělané zástupné třídy v `SunamoYaml`).
+- Datové tabulky nad 500 řádků (`AllLists1`, `MimeTypes1`, `Iso3166_1_Alpha_2`, `CurrenciesIso4217`, `Country`, `LatexHelper1`, `Properties`) a `PropertyGroupData.cs` (dvě třídy v jednom souboru) zůstaly nerozdělené.
+- `EnablePackageValidation` ve wnp není zapnutá (neověřeno zabalením); `SunamoTextOutputGenerator` měl zbloudilý kořenový testovací projekt, ten je smazán.
+- Test `IsPascalWithNumberTest` v `SunamoConverters.Tests` má očekávání změněné na skutečné chování (`HelloWorld2` je PascalCase); zda je to správně, rozhodne uživatel.
+- Rozbor příčin 55 testů je jen skriptem; žádný test se nepřeskakuje ani nemaže jen kvůli zelenému výsledku.
+
+### Pasti, které se při práci ukázaly
+- `commit-push-submodules.py` občas hlásí `push=128`; stačí jednorázově znovu pushnout dotčený submodul.
+- `git submodule foreach` s `grep` končí při první shodě bez nálezu; seznam změněných submodulů sestavuj Pythonem přes `git status --porcelain`.
+- Heredoc v Bashi ničí zpětná lomítka (regexy, cesty); skripty s regexy piš nástrojem Write.
+- Kontrola buildu po mazání tříd musí zahrnout `GlobalUsings.cs` (zbylé `using` na smazané jmenné prostory).

@@ -58,7 +58,6 @@ Total submodules: 135
 - SunamoDevCode (7.62% - 25/328) [✓]
 - SunamoDictionary (16.67% - 2/12) [✓]
 - SunamoDotnetCmdBuilder (16.67% - 1/6) [✓]
-- SunamoDotNetZip (9.52% - 6/63) [✓]
 - SunamoEditorConfig (11.11% - 1/9) [✓]
 - SunamoEmbeddedResources (25% - 1/4) [✓]
 
@@ -189,8 +188,6 @@ Total submodules: 135
 - SunamoVcf (0% - 0/9) [✓]
 - SunamoWikipedia (0% - 0/12) [✓]
 - SunamoWinStd (0% - 0/38) [✓]
-- SunamoXlfKeys (0% - 0/1) [✓]
-- SunamoXliffParser (0% - 0/19) [✓]
 - SunamoXml (0% - 0/21) [✓]
 - SunamoYaml (0% - 0/2) [✓]
 - SunamoYouTube (0% - 0/6) [✓]
