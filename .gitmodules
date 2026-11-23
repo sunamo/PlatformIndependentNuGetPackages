@@ -464,3 +464,7 @@
 [submodule "SunamoTranslate"]
 	path = SunamoTranslate
 	url = git@ssh.dev.azure.com:v3/sunamocz/SunamoTranslate/SunamoTranslate
+[submodule "SunamoSqlite"]
+	path = SunamoSqlite
+	url = git@github.com:sunamo/SunamoSqlite.git
+	branch = claude
